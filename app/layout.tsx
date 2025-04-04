@@ -12,9 +12,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Mücahit Kökdemir - Frontend & Mobile Developer',
+  title: 'Mucahit Kokdemir - Frontend & Mobile Developer',
   description:
-    'Mücahit Kökdemir is a frontend & mobile developer with a passion for building beautiful and functional web and mobile applications.',
+    'Mucahit Kokdemir is a frontend & mobile developer with a passion for building beautiful and functional web and mobile applications.',
 }
 
 const geist = Geist({

@@ -44,8 +44,7 @@ type SocialLink = {
 export const PROJECTS: Project[] = [
   {
     name: 'speeza',
-    description:
-      'iOS ta TTS modüllerini kullanan offline text to speech uygulaması',
+    description: 'An offline text-to-speech application using iOS TTS modules',
     id: 'project1',
     type: 'personal',
     platform: 'mobile',
@@ -57,7 +56,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Speedy Bunny',
-    description: 'Onlime yemek sipariş uygulaması. Kuveytte kullanılıyor',
+    description: 'Online food delivery application used in Kuwait',
     id: 'project2',
     type: 'professional',
     platform: 'mobile',
@@ -75,7 +74,8 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'LTB Jeans',
-    description: 'LTB Jeans e-ticaret uygulamaları. Hem iOS hem Android için.',
+    description:
+      'E-commerce applications for LTB Jeans, available for both iOS and Android',
     id: 'project3',
     type: 'professional',
     platform: 'mobile',
@@ -92,7 +92,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Koç Diyalog',
     description:
-      'Koç Holding çalışanlarına özel OKR metodolojisine dayalı bir performans geliştirme uygulaması.',
+      'A performance improvement application based on OKR methodology, designed for Koç Holding employees.',
     id: 'project4',
     type: 'professional',
     platform: 'web',
@@ -108,10 +108,8 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'TST',
-    // TST, implant malzemeleri üreten bir şirkettir. Bu web projesi, üretim izleme süreçlerini dijitalleştirmek için tasarlanmıştır.
-    // Kısaca yaz
     description:
-      'TST, implant malzemeleri üreten bir şirkettir. Bu web projesi, üretim izleme süreçlerini dijitalleştirmek için tasarlanmıştır.',
+      'TST is a company that produces implant materials. This web project is designed to digitalize production monitoring processes.',
     id: 'project5',
     type: 'professional',
     platform: 'web',
@@ -126,7 +124,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Alo Junior Destek',
     description:
-      'Junior arkadaşların linkedin de ve githubta ağlarını genişletmek için linklerini paylaşabilecekleri platform.',
+      'A platform where junior developers can share their links to expand their network on LinkedIn and GitHub.',
     id: 'project6',
     type: 'personal',
     platform: 'web',
@@ -141,7 +139,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Milyoneero',
-    description: 'Minik bir Kim Milyoner OLmak ister deneyimi.',
+    description: 'A small-scale "Who Wants to Be a Millionaire" experience.',
     id: 'project7',
     type: 'personal',
     platform: 'web',
@@ -164,10 +162,10 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Present',
     id: 'work1',
     details: [
-      'Eski native projelerin yeniden yapılandırılması ve yenileme',
-      'Firebase, CDC (Customer Data Cloud) ve Gigya entegrasyonları',
-      'Harita ve konum tabanlı servislerin entegrasyonu',
-      'App Store ve Google Play Store yönetimi',
+      'Restructuring and renewal of legacy native projects',
+      'Firebase, CDC (Customer Data Cloud), and Gigya integrations',
+      'Integration of map and location-based services',
+      'App Store and Google Play Store management',
     ],
     technologies: [
       { name: 'React Native', icon: 'react' },
@@ -186,10 +184,10 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: '2023',
     id: 'work2',
     details: [
-      'Responsive ve modern UI bileşenleri oluşturma',
-      'API entegrasyonları ve veri yönetimi',
-      'Gerçek zamanlı veri senkronizasyonu (SignalR, WebSocket vb.)',
-      'Eski projelerin yeniden yapılandırılması ve yenileme',
+      'Creating responsive and modern UI components',
+      'API integrations and data management',
+      'Real-time data synchronization (SignalR, WebSocket, etc.)',
+      'Restructuring and renewal of legacy projects',
     ],
     technologies: [
       { name: 'React', icon: 'react' },
@@ -206,9 +204,10 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'App Store 2025: Yeni Nesil Uygulama Geliştirme ve Yayınlama Süreci',
+    title:
+      'App Store 2025: Next-Generation App Development and Publishing Process',
     description:
-      "2025 yılında App Store'a uygulama yükleme sürecindeki değişiklikler ve yenilikler",
+      'Changes and innovations in the App Store app submission process in 2025',
     link: '/blog/app-store-2025',
     uid: 'blog-4',
   },
