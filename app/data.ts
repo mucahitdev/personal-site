@@ -21,7 +21,6 @@ type WorkExperience = {
   title: string
   start: string
   end: string
-  link: string
   id: string
   details: string[]
   technologies: {
@@ -44,116 +43,163 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'speeza',
     description:
-      'Advanced components and templates to craft beautiful websites.',
+      'iOS ta TTS modüllerini kullanan offline text to speech uygulaması',
     id: 'project1',
-    type: 'professional',
-    platform: 'web',
-    technologies: [
-      { name: 'Next.js', icon: 'nextjs' },
-      { name: 'React', icon: 'react' },
-      { name: 'TypeScript', icon: 'typescript' },
-      { name: 'Tailwind', icon: 'tailwind' },
-    ],
-    links: {
-      website: 'https://pro.motion-primitives.com/',
-    },
-  },
-  {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    id: 'project2',
     type: 'personal',
-    platform: 'web',
-    technologies: [
-      { name: 'React', icon: 'react' },
-      { name: 'TypeScript', icon: 'typescript' },
-      { name: 'Tailwind', icon: 'tailwind' },
-    ],
+    platform: 'mobile',
+    technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'SwiftData' }],
     links: {
-      website: 'https://motion-primitives.com/',
-      github: 'https://github.com/example/project2',
+      ios: 'https://apps.apple.com/us/app/speeza/id6743993564',
+      github: 'https://github.com/mucahitdev/speeza',
     },
   },
   {
-    name: 'Mobile App Example',
-    description: 'A sample mobile application with modern features.',
-    id: 'project3',
+    name: 'Speedy Bunny',
+    description: 'Onlime yemek sipariş uygulaması. Kuveytte kullanılıyor',
+    id: 'project2',
     type: 'professional',
     platform: 'mobile',
     technologies: [
       { name: 'React Native', icon: 'react' },
       { name: 'TypeScript', icon: 'typescript' },
       { name: 'Expo', icon: 'expo' },
+      { name: 'Firebase', icon: 'firebase' },
     ],
     links: {
-      github: 'https://github.com/example/project3',
-      android: 'https://play.google.com/store/apps/details?id=com.example.app',
-      ios: 'https://apps.apple.com/app/example-app/id123456789',
+      ios: 'https://apps.apple.com/us/app/speedy-bunny-%D8%B3%D8%A8%D9%8A%D8%AF%D9%8A-%D8%A8%D8%A7%D9%86%D9%8A/id6502349008',
+      android:
+        'https://play.google.com/store/apps/details?id=com.koutfood.koutfood',
+    },
+  },
+  {
+    name: 'LTB Jeans',
+    description: 'LTB Jeans e-ticaret uygulamaları. Hem iOS hem Android için.',
+    id: 'project3',
+    type: 'professional',
+    platform: 'mobile',
+    technologies: [
+      { name: 'Swift', icon: 'swift' },
+      { name: 'UIKit' },
+      { name: 'Kotlin', icon: 'kotlin' },
+    ],
+    links: {
+      android: 'https://play.google.com/store/apps/details?id=com.nextlua.ltb',
+      ios: 'https://apps.apple.com/tr/app/ltb-jeans/id1619764937?l=tr',
+    },
+  },
+  {
+    name: 'Koç Diyalog',
+    description:
+      'Koç Holding çalışanlarına özel OKR metodolojisine dayalı bir performans geliştirme uygulaması.',
+    id: 'project4',
+    type: 'professional',
+    platform: 'web',
+    technologies: [
+      { name: 'React', icon: 'react' },
+      { name: 'TypeScript', icon: 'typescript' },
+      { name: 'Figma', icon: 'figma' },
+      { name: 'Redux', icon: 'redux' },
+    ],
+    links: {
+      website: 'https://www.kocdiyalog.com',
+    },
+  },
+  {
+    name: 'TST',
+    // TST, implant malzemeleri üreten bir şirkettir. Bu web projesi, üretim izleme süreçlerini dijitalleştirmek için tasarlanmıştır.
+    // Kısaca yaz
+    description:
+      'TST, implant malzemeleri üreten bir şirkettir. Bu web projesi, üretim izleme süreçlerini dijitalleştirmek için tasarlanmıştır.',
+    id: 'project5',
+    type: 'professional',
+    platform: 'web',
+    technologies: [
+      { name: 'React', icon: 'react' },
+      { name: 'TypeScript', icon: 'typescript' },
+      { name: 'Figma', icon: 'figma' },
+      { name: 'Redux', icon: 'redux' },
+    ],
+    links: {},
+  },
+  {
+    name: 'Alo Junior Destek',
+    description:
+      'Junior arkadaşların linkedin de ve githubta ağlarını genişletmek için linklerini paylaşabilecekleri platform.',
+    id: 'project6',
+    type: 'personal',
+    platform: 'web',
+    technologies: [
+      { name: 'React', icon: 'react' },
+      { name: 'TypeScript', icon: 'typescript' },
+    ],
+    links: {
+      website: 'https://alo-junior-destek.netlify.app',
+      github: 'https://github.com/mucahitdev/alo-junior-destek',
+    },
+  },
+  {
+    name: 'Milyoneero',
+    description: 'Minik bir Kim Milyoner OLmak ister deneyimi.',
+    id: 'project7',
+    type: 'personal',
+    platform: 'web',
+    technologies: [
+      { name: 'React', icon: 'react' },
+      { name: 'TypeScript', icon: 'typescript' },
+    ],
+    links: {
+      website: 'https://milyoneero.netlify.app',
+      github: 'https://github.com/mucahitdev/kim-milyoner-olmak-ister',
     },
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'NTT DATA Business Solutions',
+    title: 'Frontend & Mobile Developer',
+    start: '2023',
     end: 'Present',
-    link: 'https://ibelick.com',
     id: 'work1',
     details: [
-      'Şirketin genel stratejisini ve vizyonunu belirledim',
-      'Ekip yönetimi ve işe alım süreçlerini yönettim',
-      'Müşteri ilişkilerini geliştirdim ve yeni iş fırsatları yarattım',
+      'Eski native projelerin yeniden yapılandırılması ve yenileme',
+      'Firebase, CDC (Customer Data Cloud) ve Gigya entegrasyonları',
+      'Harita ve konum tabanlı servislerin entegrasyonu',
+      'App Store ve Google Play Store yönetimi',
     ],
     technologies: [
-      { name: 'Next.js', icon: 'nextjs' },
-      { name: 'React', icon: 'react' },
+      { name: 'React Native', icon: 'react' },
+      { name: 'Swift', icon: 'swift' },
+      { name: 'Kotlin', icon: 'kotlin' },
+      { name: 'Expo', icon: 'expo' },
       { name: 'TypeScript', icon: 'typescript' },
-      { name: 'Tailwind', icon: 'tailwind' },
-      { name: 'Node.js', icon: 'nodejs' },
+      { name: 'Figma', icon: 'figma' },
+      { name: 'Firebase', icon: 'firebase' },
     ],
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
+    company: 'NTT DATA Business Solutions',
+    title: 'Frontend Developer',
     start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    end: '2023',
     id: 'work2',
     details: [
-      'Kullanıcı deneyimi tasarımları oluşturdum',
-      'Frontend geliştirme projeleri tamamladım',
-      'Müşterilerle birebir çalışarak projeleri yönettim',
+      'Responsive ve modern UI bileşenleri oluşturma',
+      'API entegrasyonları ve veri yönetimi',
+      'Gerçek zamanlı veri senkronizasyonu (SignalR, WebSocket vb.)',
+      'Eski projelerin yeniden yapılandırılması ve yenileme',
     ],
     technologies: [
-      { name: 'Figma', icon: 'figma' },
       { name: 'React', icon: 'react' },
       { name: 'JavaScript', icon: 'javascript' },
+      { name: 'TypeScript', icon: 'typescript' },
+      { name: 'Next.js', icon: 'nextjs' },
+      { name: 'Tailwind', icon: 'tailwind' },
+      { name: 'Figma', icon: 'figma' },
       { name: 'CSS', icon: 'css' },
       { name: 'HTML', icon: 'html' },
-    ],
-  },
-  {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
-    details: [
-      'Modern web teknolojileri ile responsive web siteleri geliştirdim',
-      'SEO optimizasyonları yaptım',
-      'Performance iyileştirmeleri gerçekleştirdim',
-    ],
-    technologies: [
-      { name: 'JavaScript', icon: 'javascript' },
-      { name: 'HTML', icon: 'html' },
-      { name: 'CSS', icon: 'css' },
-      { name: 'jQuery', icon: 'jquery' },
-      { name: 'Bootstrap', icon: 'bootstrap' },
     ],
   },
 ]

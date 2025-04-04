@@ -261,6 +261,119 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
+        <h3 className="mb-5 text-lg font-medium">Work Experience</h3>
+        <div className="flex flex-col space-y-2">
+          {WORK_EXPERIENCE.map((job) => (
+            <div
+              key={job.id}
+              className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
+              onClick={() => toggleWork(job.id)}
+            >
+              <Spotlight
+                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
+                size={64}
+              />
+              <div className="relative h-full w-full cursor-pointer rounded-[15px] bg-white p-4 dark:bg-zinc-950">
+                <div className="relative flex w-full flex-row items-center justify-between">
+                  <div>
+                    <h4 className="font-normal dark:text-zinc-100">
+                      {job.title}
+                    </h4>
+                    <p className="text-zinc-500 dark:text-zinc-400">
+                      {job.company}
+                    </p>
+                  </div>
+                  <div className="flex items-center">
+                    <p className="mr-2 text-zinc-600 dark:text-zinc-400">
+                      {job.start} - {job.end}
+                    </p>
+                    <motion.div
+                      animate={{ rotate: expandedWork === job.id ? 180 : 0 }}
+                      transition={{
+                        duration: 0.3,
+                        type: 'spring',
+                        stiffness: 200,
+                        damping: 20,
+                      }}
+                    >
+                      <ChevronDown className="h-5 w-5 text-zinc-500" />
+                    </motion.div>
+                  </div>
+                </div>
+
+                {/* Technologies Section */}
+                <motion.div
+                  className="mt-3 flex flex-wrap gap-2"
+                  initial={false}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <AnimatePresence mode="popLayout">
+                    {job.technologies
+                      .slice(0, expandedWork === job.id ? undefined : 2)
+                      .map((tech, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 20 }}
+                          transition={{ duration: 0.3, delay: index * 0.1 }}
+                        >
+                          <TechnologyChip {...tech} />
+                        </motion.div>
+                      ))}
+                    {expandedWork !== job.id && job.technologies.length > 2 && (
+                      <motion.div
+                        key="more"
+                        initial={{ opacity: 0, scale: 0.8, x: -20 }}
+                        animate={{ opacity: 1, scale: 1, x: 0 }}
+                        exit={{ opacity: 0, scale: 0.8, x: -20 }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
+                        className="relative"
+                      >
+                        <div className="relative z-10 flex items-center rounded-full bg-zinc-100 px-3 py-1 text-sm text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
+                          +{job.technologies.length - 2}
+                        </div>
+                        <motion.div
+                          className="absolute inset-0 z-0 rounded-full bg-zinc-100 dark:bg-zinc-800"
+                          initial={{ scale: 1 }}
+                          animate={{ scale: 1.2 }}
+                          exit={{ scale: 1 }}
+                          transition={{ duration: 0.3 }}
+                        />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Collapsible Details Section */}
+                <motion.div
+                  initial={false}
+                  animate={{ height: expandedWork === job.id ? 'auto' : 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="overflow-hidden"
+                >
+                  {job.details && (
+                    <ul className="mt-4 space-y-2 text-zinc-600 dark:text-zinc-400">
+                      {job.details.map((detail, index) => (
+                        <li key={index} className="flex items-start">
+                          <span className="mr-2">•</span>
+                          <span>{detail}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </motion.div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
         <h3 className="mb-5 text-lg font-medium">Projects</h3>
 
         {/* Filters */}
@@ -368,153 +481,59 @@ export default function Personal() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {filteredProjects.map((project) => (
-            <div
-              key={project.id}
-              className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
-            >
-              <Spotlight
-                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
-                size={64}
-              />
-              <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
-                <div className="flex flex-col space-y-3">
-                  <div>
-                    <h4 className="font-base font-[450] text-zinc-900 dark:text-zinc-50">
-                      {project.name}
-                    </h4>
-                    <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">
-                      {project.description}
-                    </p>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, index) => (
-                      <TechnologyChip key={index} {...tech} />
-                    ))}
-                  </div>
-
-                  <ProjectLinks
-                    links={project.links}
-                    platform={project.platform}
-                  />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.section>
-
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <h3 className="mb-5 text-lg font-medium">Work Experience</h3>
-        <div className="flex flex-col space-y-2">
-          {WORK_EXPERIENCE.map((job) => (
-            <div
-              key={job.id}
-              className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
-              onClick={() => toggleWork(job.id)}
-            >
-              <Spotlight
-                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
-                size={64}
-              />
-              <div className="relative h-full w-full cursor-pointer rounded-[15px] bg-white p-4 dark:bg-zinc-950">
-                <div className="relative flex w-full flex-row items-center justify-between">
-                  <div>
-                    <h4 className="font-normal dark:text-zinc-100">
-                      {job.title}
-                    </h4>
-                    <p className="text-zinc-500 dark:text-zinc-400">
-                      {job.company}
-                    </p>
-                  </div>
-                  <div className="flex items-center">
-                    <p className="mr-2 text-zinc-600 dark:text-zinc-400">
-                      {job.start} - {job.end}
-                    </p>
-                    <motion.div
-                      animate={{ rotate: expandedWork === job.id ? 180 : 0 }}
-                      transition={{
-                        duration: 0.3,
-                        type: 'spring',
-                        stiffness: 200,
-                        damping: 20,
-                      }}
-                    >
-                      <ChevronDown className="h-5 w-5 text-zinc-500" />
-                    </motion.div>
-                  </div>
-                </div>
-
-                {/* Technologies Section */}
-                <motion.div
-                  className="mt-3 flex flex-wrap gap-2"
-                  initial={false}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                >
-                  <AnimatePresence mode="popLayout">
-                    {job.technologies
-                      .slice(0, expandedWork === job.id ? undefined : 2)
-                      .map((tech, index) => (
-                        <motion.div
-                          key={index}
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: 20 }}
-                          transition={{ duration: 0.3, delay: index * 0.1 }}
-                        >
-                          <TechnologyChip {...tech} />
-                        </motion.div>
-                      ))}
-                    {expandedWork !== job.id && job.technologies.length > 2 && (
-                      <motion.div
-                        key="more"
-                        initial={{ opacity: 0, scale: 0.8, x: -20 }}
-                        animate={{ opacity: 1, scale: 1, x: 0 }}
-                        exit={{ opacity: 0, scale: 0.8, x: -20 }}
-                        transition={{ duration: 0.3, delay: 0.2 }}
-                        className="relative"
-                      >
-                        <div className="relative z-10 flex items-center rounded-full bg-zinc-100 px-3 py-1 text-sm text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
-                          +{job.technologies.length - 2}
+          <AnimatePresence mode="popLayout">
+            {filteredProjects.map((project) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                transition={{ duration: 0.3 }}
+                className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
+              >
+                <Spotlight
+                  className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
+                  size={64}
+                />
+                <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
+                  <div className="flex h-full flex-col">
+                    <div className="flex flex-col space-y-3">
+                      <div>
+                        <div className="flex items-center justify-between">
+                          <h4 className="font-base font-[450] text-zinc-900 dark:text-zinc-50">
+                            {project.name}
+                          </h4>
+                          {projectFilter.type === 'all' && (
+                            <span className="rounded-full bg-zinc-100 px-2 py-1 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
+                              {project.type === 'personal'
+                                ? 'Personal'
+                                : 'Professional'}
+                            </span>
+                          )}
                         </div>
-                        <motion.div
-                          className="absolute inset-0 z-0 rounded-full bg-zinc-100 dark:bg-zinc-800"
-                          initial={{ scale: 1 }}
-                          animate={{ scale: 1.2 }}
-                          exit={{ scale: 1 }}
-                          transition={{ duration: 0.3 }}
-                        />
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
+                        <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">
+                          {project.description}
+                        </p>
+                      </div>
 
-                {/* Collapsible Details Section */}
-                <motion.div
-                  initial={false}
-                  animate={{ height: expandedWork === job.id ? 'auto' : 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="overflow-hidden"
-                >
-                  {job.details && (
-                    <ul className="mt-4 space-y-2 text-zinc-600 dark:text-zinc-400">
-                      {job.details.map((detail, index) => (
-                        <li key={index} className="flex items-start">
-                          <span className="mr-2">•</span>
-                          <span>{detail}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </motion.div>
-              </div>
-            </div>
-          ))}
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech, index) => (
+                          <TechnologyChip key={index} {...tech} />
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mt-auto pt-4">
+                      <ProjectLinks
+                        links={project.links}
+                        platform={project.platform}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </motion.section>
 
