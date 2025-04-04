@@ -1,9 +1,19 @@
-type Project = {
+export type Project = {
   name: string
   description: string
-  link: string
-  video: string
   id: string
+  type: 'personal' | 'professional'
+  platform: 'web' | 'mobile'
+  technologies: {
+    name: string
+    icon?: string
+  }[]
+  links?: {
+    website?: string
+    github?: string
+    android?: string
+    ios?: string
+  }
 }
 
 type WorkExperience = {
@@ -13,6 +23,11 @@ type WorkExperience = {
   end: string
   link: string
   id: string
+  details: string[]
+  technologies: {
+    name: string
+    icon?: string
+  }[]
 }
 
 type BlogPost = {
@@ -32,18 +47,51 @@ export const PROJECTS: Project[] = [
     name: 'Motion Primitives Pro',
     description:
       'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
     id: 'project1',
+    type: 'professional',
+    platform: 'web',
+    technologies: [
+      { name: 'Next.js', icon: 'nextjs' },
+      { name: 'React', icon: 'react' },
+      { name: 'TypeScript', icon: 'typescript' },
+      { name: 'Tailwind', icon: 'tailwind' },
+    ],
+    links: {
+      website: 'https://pro.motion-primitives.com/',
+    },
   },
   {
     name: 'Motion Primitives',
     description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
     id: 'project2',
+    type: 'personal',
+    platform: 'web',
+    technologies: [
+      { name: 'React', icon: 'react' },
+      { name: 'TypeScript', icon: 'typescript' },
+      { name: 'Tailwind', icon: 'tailwind' },
+    ],
+    links: {
+      website: 'https://motion-primitives.com/',
+      github: 'https://github.com/example/project2',
+    },
+  },
+  {
+    name: 'Mobile App Example',
+    description: 'A sample mobile application with modern features.',
+    id: 'project3',
+    type: 'professional',
+    platform: 'mobile',
+    technologies: [
+      { name: 'React Native', icon: 'react' },
+      { name: 'TypeScript', icon: 'typescript' },
+      { name: 'Expo', icon: 'expo' },
+    ],
+    links: {
+      github: 'https://github.com/example/project3',
+      android: 'https://play.google.com/store/apps/details?id=com.example.app',
+      ios: 'https://apps.apple.com/app/example-app/id123456789',
+    },
   },
 ]
 
@@ -55,6 +103,18 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Present',
     link: 'https://ibelick.com',
     id: 'work1',
+    details: [
+      'Şirketin genel stratejisini ve vizyonunu belirledim',
+      'Ekip yönetimi ve işe alım süreçlerini yönettim',
+      'Müşteri ilişkilerini geliştirdim ve yeni iş fırsatları yarattım',
+    ],
+    technologies: [
+      { name: 'Next.js', icon: 'nextjs' },
+      { name: 'React', icon: 'react' },
+      { name: 'TypeScript', icon: 'typescript' },
+      { name: 'Tailwind', icon: 'tailwind' },
+      { name: 'Node.js', icon: 'nodejs' },
+    ],
   },
   {
     company: 'Freelance',
@@ -63,6 +123,18 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: '2024',
     link: 'https://ibelick.com',
     id: 'work2',
+    details: [
+      'Kullanıcı deneyimi tasarımları oluşturdum',
+      'Frontend geliştirme projeleri tamamladım',
+      'Müşterilerle birebir çalışarak projeleri yönettim',
+    ],
+    technologies: [
+      { name: 'Figma', icon: 'figma' },
+      { name: 'React', icon: 'react' },
+      { name: 'JavaScript', icon: 'javascript' },
+      { name: 'CSS', icon: 'css' },
+      { name: 'HTML', icon: 'html' },
+    ],
   },
   {
     company: 'Freelance',
@@ -71,10 +143,30 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Present',
     link: 'https://ibelick.com',
     id: 'work3',
+    details: [
+      'Modern web teknolojileri ile responsive web siteleri geliştirdim',
+      'SEO optimizasyonları yaptım',
+      'Performance iyileştirmeleri gerçekleştirdim',
+    ],
+    technologies: [
+      { name: 'JavaScript', icon: 'javascript' },
+      { name: 'HTML', icon: 'html' },
+      { name: 'CSS', icon: 'css' },
+      { name: 'jQuery', icon: 'jquery' },
+      { name: 'Bootstrap', icon: 'bootstrap' },
+    ],
   },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    title: 'App Store 2025: Yeni Nesil Uygulama Geliştirme ve Yayınlama Süreci',
+    description:
+      "2025 yılında App Store'a uygulama yükleme sürecindeki değişiklikler ve yenilikler",
+    link: '/blog/app-store-2025',
+    uid: 'blog-4',
+  },
+  /*
   {
     title: 'Exploring the Intersection of Design, AI, and Design Engineering',
     description: 'How AI is changing the way we design',
@@ -95,25 +187,26 @@ export const BLOG_POSTS: BlogPost[] = [
     link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
     uid: 'blog-3',
   },
+  */
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/mucahitdev',
   },
   {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    label: 'X (Twitter)',
+    link: 'https://x.com/dev_zimablue',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/mucahitdev',
   },
   {
     label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.instagram.com/kalimufs',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'kokdemir20@gmail.com'

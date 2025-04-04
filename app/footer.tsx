@@ -53,7 +53,7 @@ function ThemeSwitch() {
         return (
           <button
             key={theme.id}
-            className="inline-flex h-7 w-7 items-center justify-center text-zinc-500 transition-colors duration-100 focus-visible:outline-2 data-[checked=true]:text-zinc-950 dark:text-zinc-400 dark:data-[checked=true]:text-zinc-50"
+            className="inline-flex h-7 w-7 items-center justify-center text-zinc-500 transition-colors duration-100 hover:cursor-pointer hover:text-zinc-800 focus-visible:outline-2 data-[checked=true]:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-200 dark:data-[checked=true]:text-zinc-50"
             type="button"
             aria-label={`Switch to ${theme.label} theme`}
             data-id={theme.id}
@@ -70,10 +70,10 @@ export function Footer() {
   return (
     <footer className="mt-24 border-t border-zinc-100 px-0 py-4 dark:border-zinc-800">
       <div className="flex items-center justify-between">
-        <a href="https://github.com/ibelick/nim" target="_blank">
+        <a href="https://github.com/mucahitdev" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
-            <span>© 2024 Nim.</span>
-            <span>Built with Motion-Primitives.</span>
+            <span>© 2025 Mücahit Kökdemir</span>
+            <span>Frontend & Mobile Developer</span>
           </TextLoop>
         </a>
         <div className="text-xs text-zinc-400">
