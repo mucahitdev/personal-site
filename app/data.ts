@@ -110,38 +110,6 @@ export const PROJECTS: Project[] = [
     },
   },
   {
-    name: 'ChatBridge',
-    description:
-      'A multi-channel bulk messaging platform for sending planned, organized messages across WhatsApp, Telegram, and more.',
-    id: 'chatbridge',
-    type: 'personal',
-    platform: 'mobile',
-    technologies: [
-      { name: 'React Native', icon: 'react' },
-      { name: 'Expo', icon: 'expo' },
-    ],
-    links: {
-      ios: 'https://apps.apple.com/app/id6760261400',
-      website: 'https://chatbridge.tr',
-    },
-  },
-  {
-    name: 'eWMS',
-    description:
-      'A warehouse management app for tracking stock and streamlining depot operations.',
-    id: 'ewms',
-    type: 'professional',
-    platform: 'mobile',
-    technologies: [
-      { name: 'React Native', icon: 'react' },
-      { name: 'Expo', icon: 'expo' },
-      { name: 'TypeScript', icon: 'typescript' },
-    ],
-    links: {
-      ios: 'https://apps.apple.com/app/id6778177918',
-    },
-  },
-  {
     name: 'speeza',
     description: 'An offline text-to-speech application using iOS TTS modules',
     id: 'project1',
