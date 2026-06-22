@@ -137,61 +137,32 @@ const ProjectLinks = ({
 }) => {
   if (!links) return null
 
-  const availableLinks = Object.entries(links).filter(([_, value]) => value)
+  const order: ('website' | 'github' | 'android' | 'ios')[] =
+    platform === 'web'
+      ? ['website', 'github']
+      : ['ios', 'android', 'website', 'github']
+
+  const availableLinks = order.filter((type) => links[type])
   if (availableLinks.length === 0) return null
 
   return (
     <div className="mt-4 flex divide-x divide-zinc-200 overflow-hidden rounded-full bg-zinc-900 dark:divide-zinc-700 dark:bg-zinc-100">
-      {platform === 'web' ? (
-        <>
-          {links.website && (
-            <LinkButton
-              href={links.website}
-              type="website"
-              position={links.github ? 'start' : 'single'}
-            />
-          )}
-          {links.github && (
-            <LinkButton
-              href={links.github}
-              type="github"
-              position={links.website ? 'end' : 'single'}
-            />
-          )}
-        </>
-      ) : (
-        <>
-          {links.android && (
-            <LinkButton
-              href={links.android}
-              type="android"
-              position={links.ios || links.github ? 'start' : 'single'}
-            />
-          )}
-          {links.ios && (
-            <LinkButton
-              href={links.ios}
-              type="ios"
-              position={
-                links.android && links.github
-                  ? 'middle'
-                  : links.android
-                    ? 'end'
-                    : links.github
-                      ? 'start'
-                      : 'single'
-              }
-            />
-          )}
-          {links.github && (
-            <LinkButton
-              href={links.github}
-              type="github"
-              position={links.android || links.ios ? 'end' : 'single'}
-            />
-          )}
-        </>
-      )}
+      {availableLinks.map((type, index) => (
+        <LinkButton
+          key={type}
+          href={links[type] as string}
+          type={type}
+          position={
+            availableLinks.length === 1
+              ? 'single'
+              : index === 0
+                ? 'start'
+                : index === availableLinks.length - 1
+                  ? 'end'
+                  : 'middle'
+          }
+        />
+      ))}
     </div>
   )
 }

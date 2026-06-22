@@ -43,6 +43,105 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
+    name: 'FolderMini',
+    description:
+      'Organize your installed apps into colorful folders and launch them straight from Home Screen and Lock Screen widgets.',
+    id: 'foldermini',
+    type: 'personal',
+    platform: 'mobile',
+    technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'WidgetKit' }],
+    links: {
+      website: 'https://mucahitk.com/foldermini',
+    },
+  },
+  {
+    name: 'Tycoon Heir',
+    description:
+      'A swipe-to-decide story game — inherit a family company and rule it one decision at a time while keeping every meter in balance.',
+    id: 'tradelands',
+    type: 'personal',
+    platform: 'mobile',
+    technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'GameKit' }],
+    links: {
+      ios: 'https://apps.apple.com/app/id6779888422',
+      website: 'https://mucahitk.com/tradelands',
+    },
+  },
+  {
+    name: 'DualShot',
+    description:
+      'Record portrait and landscape at once — capture 9:16 and 16:9 simultaneously in photo or video mode.',
+    id: 'dualshot',
+    type: 'personal',
+    platform: 'mobile',
+    technologies: [
+      { name: 'SwiftUI', icon: 'swift' },
+      { name: 'AVFoundation' },
+    ],
+    links: {
+      ios: 'https://apps.apple.com/app/id6762179530',
+      website: 'https://mucahitk.com/dualshot',
+    },
+  },
+  {
+    name: 'Spendi',
+    description:
+      'An intuitive expense tracker and budget planner — log income and expenses in seconds and see exactly where your money goes.',
+    id: 'spendi',
+    type: 'personal',
+    platform: 'mobile',
+    technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'SwiftData' }],
+    links: {
+      ios: 'https://apps.apple.com/app/id6760630364',
+      website: 'https://spendi.mucahitk.com',
+    },
+  },
+  {
+    name: 'Lecto',
+    description:
+      'Turn your photos into stunning mosaic collages — everything runs entirely on-device to keep your privacy intact.',
+    id: 'lecto',
+    type: 'personal',
+    platform: 'mobile',
+    technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'SwiftData' }],
+    links: {
+      ios: 'https://apps.apple.com/app/id6760270162',
+      website: 'https://lecto.mucahitk.com',
+    },
+  },
+  {
+    name: 'ChatBridge',
+    description:
+      'A multi-channel bulk messaging platform for sending planned, organized messages across WhatsApp, Telegram, and more.',
+    id: 'chatbridge',
+    type: 'personal',
+    platform: 'mobile',
+    technologies: [
+      { name: 'React Native', icon: 'react' },
+      { name: 'Expo', icon: 'expo' },
+    ],
+    links: {
+      ios: 'https://apps.apple.com/app/id6760261400',
+      website: 'https://chatbridge.tr',
+    },
+  },
+  {
+    name: 'eWMS',
+    description:
+      'A warehouse management app for tracking stock and streamlining depot operations.',
+    id: 'ewms',
+    type: 'professional',
+    platform: 'mobile',
+    technologies: [
+      { name: 'React Native', icon: 'react' },
+      { name: 'Expo', icon: 'expo' },
+      { name: 'TypeScript', icon: 'typescript' },
+    ],
+    links: {
+      ios: 'https://apps.apple.com/app/id6778177918',
+    },
+  },
+  {
     name: 'speeza',
     description: 'An offline text-to-speech application using iOS TTS modules',
     id: 'project1',
