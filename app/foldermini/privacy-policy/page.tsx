@@ -14,7 +14,7 @@ export default function FolderMiniPrivacyPolicyPage() {
           <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
             FolderMini Privacy Policy
           </h1>
-          <p>Effective date: June 22, 2026</p>
+          <p>Effective date: June 27, 2026</p>
         </div>
 
         <p>
@@ -81,6 +81,34 @@ export default function FolderMiniPrivacyPolicyPage() {
             . Where required, FolderMini asks for your permission before using
             tracking identifiers, and you can change this at any time in iOS
             Settings.
+          </p>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className="text-lg font-medium text-zinc-900 dark:text-zinc-100">
+            Subscriptions and Purchases
+          </h2>
+          <p>
+            FolderMini offers an optional premium upgrade (&quot;FolderMini
+            Pro&quot;) as an auto-renewable subscription and as a one-time
+            lifetime purchase. Payments are processed by Apple through your App
+            Store account; we never receive or store your payment card details.
+          </p>
+          <p>
+            To validate purchases, restore them across your devices, and manage
+            your premium access, FolderMini uses{' '}
+            <a
+              className="underline"
+              href="https://adapty.io/privacy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Adapty
+            </a>
+            , a third-party subscription-management service. Adapty processes
+            purchase and transaction information and an app-generated identifier
+            for this purpose, in accordance with its own privacy policy. We do
+            not use this information to identify you personally.
           </p>
         </section>
 
