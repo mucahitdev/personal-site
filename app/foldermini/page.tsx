@@ -4,11 +4,29 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'FolderMini',
   description: 'FolderMini app overview, support, and legal links.',
+  itunes: { appId: '6782827870' },
+  alternates: { canonical: 'https://mucahitk.com/foldermini' },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'FolderMini',
+  operatingSystem: 'iOS',
+  applicationCategory: 'UtilitiesApplication',
+  url: 'https://mucahitk.com/foldermini',
+  downloadUrl: 'https://apps.apple.com/app/id6782827870',
+  installUrl: 'https://apps.apple.com/app/id6782827870',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
 }
 
 export default function FolderMiniPage() {
   return (
     <main className="pb-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <article className="space-y-8 text-sm leading-7 text-zinc-700 dark:text-zinc-300">
         <section className="space-y-3">
           <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
