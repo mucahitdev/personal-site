@@ -1,1 +1,1 @@
-export const WEBSITE_URL = 'https://personal-site-seven-gray.vercel.app/'
+export const WEBSITE_URL = 'https://mucahitk.com'

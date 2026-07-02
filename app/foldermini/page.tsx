@@ -1,24 +1,112 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+const APP_STORE_URL = 'https://apps.apple.com/app/id6782827870'
+const PAGE_URL = 'https://mucahitk.com/foldermini'
+
 export const metadata: Metadata = {
-  title: 'FolderMini',
-  description: 'FolderMini app overview, support, and legal links.',
+  title: {
+    absolute: 'FolderMini — App Folder Launcher & Home Screen Widgets',
+  },
+  description:
+    'FolderMini organizes your iPhone apps into colorful folders you launch straight from Home Screen and Lock Screen widgets — real app icons, one-tap launch, multiple sizes. Free on the App Store.',
+  keywords: [
+    'FolderMini',
+    'app folder launcher',
+    'home screen widgets',
+    'lock screen widgets',
+    'iphone app organizer',
+    'folder widget',
+    'app launcher ios',
+    'icon organizer',
+  ],
+  alternates: { canonical: '/foldermini' },
   itunes: { appId: '6782827870' },
-  alternates: { canonical: 'https://mucahitk.com/foldermini' },
+  openGraph: {
+    type: 'website',
+    title: 'FolderMini — App Folder Launcher for iPhone',
+    description:
+      'Organize your apps into colorful folders and launch them from Home Screen and Lock Screen widgets. Free on the App Store.',
+    url: '/foldermini',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'FolderMini — App Folder Launcher for iPhone',
+    description:
+      'Organize your apps into colorful folders and launch them from Home Screen and Lock Screen widgets.',
+  },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: 'FolderMini',
-  operatingSystem: 'iOS',
-  applicationCategory: 'UtilitiesApplication',
-  url: 'https://mucahitk.com/foldermini',
-  downloadUrl: 'https://apps.apple.com/app/id6782827870',
-  installUrl: 'https://apps.apple.com/app/id6782827870',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-}
+const FAQS = [
+  {
+    q: 'What is FolderMini?',
+    a: 'FolderMini is an iOS app that organizes your installed apps into colorful folders you can place on your Home Screen and Lock Screen as widgets, then launch any app with a single tap.',
+  },
+  {
+    q: 'Is FolderMini free?',
+    a: 'Yes, FolderMini is free to download on the App Store.',
+  },
+  {
+    q: 'How do FolderMini widgets work?',
+    a: 'You build a folder of apps, add a FolderMini widget to your Home Screen or Lock Screen, and each tile shows the real app icon. Tapping a tile opens that app directly.',
+  },
+  {
+    q: 'What widget sizes does FolderMini support?',
+    a: 'FolderMini offers small, medium, and large Home Screen grids, plus Lock Screen accessory widgets for your most-used apps.',
+  },
+  {
+    q: 'Does FolderMini work on the Lock Screen?',
+    a: 'Yes. You can add Lock Screen accessory widgets so your favorite apps are one tap away.',
+  },
+]
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'FolderMini',
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'iOS',
+    url: PAGE_URL,
+    downloadUrl: APP_STORE_URL,
+    installUrl: APP_STORE_URL,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    featureList: [
+      'Organize apps into colorful custom folders',
+      'Home Screen and Lock Screen widgets',
+      'One-tap app launch from widgets',
+      'Real, pixel-perfect app icons',
+      'Small, medium, and large widget sizes',
+    ],
+    author: {
+      '@type': 'Person',
+      name: 'Mücahit Kökdemir',
+      url: 'https://mucahitk.com',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQS.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://mucahitk.com',
+      },
+      { '@type': 'ListItem', position: 2, name: 'FolderMini', item: PAGE_URL },
+    ],
+  },
+]
 
 export default function FolderMiniPage() {
   return (
@@ -45,7 +133,7 @@ export default function FolderMiniPage() {
           </p>
           <div className="pt-1">
             <a
-              href="https://apps.apple.com/app/id6782827870"
+              href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-black dark:hover:bg-zinc-200"
@@ -76,6 +164,22 @@ export default function FolderMiniPage() {
             <li>Multiple widget sizes — small, medium, and large grids</li>
             <li>Lock Screen accessory widgets for your most-used apps</li>
           </ul>
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="text-lg font-medium text-zinc-900 dark:text-zinc-100">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {FAQS.map((faq) => (
+              <div key={faq.q} className="space-y-1">
+                <h3 className="font-medium text-zinc-900 dark:text-zinc-100">
+                  {faq.q}
+                </h3>
+                <p>{faq.a}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="space-y-2">
