@@ -1,0 +1,139 @@
+export const meta = {
+  title:
+    "Comment lancer n’importe quelle app depuis un widget de l’écran d’accueil ou de l’écran verrouillé sur iPhone",
+  description:
+    "Un guide étape par étape pour lancer des apps directement depuis les widgets de l’écran d’accueil et de l’écran verrouillé iOS — grâce aux widgets de dossiers, chaque app est à un seul appui, sans avoir à parcourir des pages d’icônes.",
+  keywords: [
+    "lancer une app depuis un widget iphone",
+    "widget lanceur d’app écran verrouillé",
+    "ouvrir une app depuis un widget écran d’accueil",
+    "widget dossier ios",
+    "widget lanceur d’applications iphone",
+    "appuyer sur un widget pour ouvrir une app",
+  ],
+  ogTitle: "Comment lancer n’importe quelle app depuis un widget iPhone",
+  ogDescription:
+    "Guide étape par étape pour ouvrir des apps directement depuis les widgets de l’écran d’accueil et de l’écran verrouillé sur iOS.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline:
+      "Comment lancer n’importe quelle app depuis un widget de l’écran d’accueil ou de l’écran verrouillé sur iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/fr/blog/launch-apps-from-widgets-ios",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Lancer une app depuis un widget de l’écran d’accueil ou de l’écran verrouillé sur iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Installer une app de widget-dossier",
+        text: "Téléchargez un widget lanceur d’applications comme FolderMini depuis l’App Store.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Créer un dossier d’apps",
+        text: "Ouvrez l’app et ajoutez dans un dossier les apps auxquelles vous voulez accéder rapidement.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajouter le widget",
+        text: "Appuyez longuement sur votre écran d’accueil ou votre écran verrouillé, touchez le bouton plus, puis ajoutez le widget de dossier.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Appuyer pour lancer",
+        text: "Chaque tuile affiche la véritable icône de l’app. Touchez une tuile pour ouvrir cette app directement.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Peut-on ouvrir une app directement depuis un widget sur iPhone ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui. Avec un widget lanceur d’applications comme FolderMini, chaque tuile du widget affiche une véritable icône d’app et il suffit d’appuyer dessus pour ouvrir cette app directement, sans passer d’abord par un menu.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Puis-je placer un lanceur d’applications sur l’écran verrouillé de l’iPhone ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui. iOS prend en charge les widgets d’accessoires sur l’écran verrouillé, et des apps comme FolderMini vous permettent d’y placer vos apps les plus utilisées pour qu’elles soient à un seul appui depuis l’écran verrouillé.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Comment lancer n’importe quelle app depuis un widget de l’écran d’accueil ou de l’écran verrouillé sur iPhone
+
+**Réponse rapide :** iOS ne permet pas d’ouvrir une app précise depuis un widget standard en un seul appui, mais un widget dédié au lancement d’applications le permet. Des apps comme [FolderMini](/foldermini) transforment un widget en une grille de véritables icônes d’apps — touchez n’importe quelle tuile et l’app s’ouvre instantanément, directement depuis votre écran d’accueil ou votre écran verrouillé.
+
+Si vous avez déjà rêvé de toucher un widget pour accéder directement à une app — au lieu de faire défiler des pages d’icônes ou d’ouvrir la Bibliothèque d’apps — ce guide est fait pour vous.
+
+---
+
+## Pourquoi les widgets iOS standards ne peuvent pas lancer une app précise
+
+Les widgets intégrés d’Apple sont conçus pour *afficher des informations* (météo, calendrier, batterie) et, lorsqu’on les touche, pour ouvrir l’app à laquelle ils appartiennent. Ils n’ont jamais été pensés pour servir de lanceur vers vos autres apps. C’est pourquoi vous ne pouvez pas, tel quel, créer un widget où chaque tuile ouvre une app différente.
+
+La solution de contournement, c’est une **app de widget-dossier** — un petit utilitaire qui affiche une grille de tuiles d’apps à l’intérieur d’un widget et qui ouvre l’app correspondante lorsque vous touchez une tuile.
+
+## Étape par étape : lancer des apps depuis un widget
+
+1. **Installez une app de widget-dossier.** Téléchargez un widget lanceur d’applications comme [FolderMini](/foldermini) depuis l’App Store. C’est gratuit.
+2. **Créez un dossier.** Ouvrez l’app et ajoutez les apps auxquelles vous voulez accéder rapidement — regroupez-les par routine, par projet ou par humeur.
+3. **Ajoutez le widget à votre écran d’accueil.** Appuyez longuement sur une zone vide de l’écran d’accueil, touchez le **+** dans le coin supérieur, recherchez l’app, puis choisissez une taille de widget (petit, moyen ou grand).
+4. **Ou ajoutez-le à votre écran verrouillé.** Appuyez longuement sur l’écran verrouillé, touchez **Personnaliser**, puis ajoutez un widget d’accessoire pour vos apps les plus utilisées.
+5. **Appuyez pour lancer.** Chaque tuile affiche la véritable icône de l’app. Un seul appui ouvre cette app directement.
+
+## Que rechercher dans un widget lanceur d’applications
+
+| Fonctionnalité | Pourquoi c’est important |
+| --- | --- |
+| Véritables icônes d’apps | Des tuiles que vous reconnaissez vraiment, pas des espaces réservés génériques |
+| Lancement en un appui | L’app s’ouvre directement — aucun menu intermédiaire |
+| Prise en charge de l’écran verrouillé | Vos apps favorites sont accessibles sans avoir à déverrouiller jusqu’à l’écran d’accueil |
+| Plusieurs tailles | Placez 2 apps ou 20, selon la taille du widget |
+| Gratuit à l’essai | Aucun engagement pour tester s’il convient à votre façon de travailler |
+
+[FolderMini](/foldermini) réunit tout cela : des dossiers personnalisés et colorés, de véritables icônes au pixel près, un lancement en un appui, ainsi que des widgets pour l’écran d’accueil et l’écran verrouillé en tailles petite, moyenne et grande.
+
+## Questions fréquentes
+
+**Peut-on ouvrir une app directement depuis un widget sur iPhone ?**
+Oui — avec un widget lanceur d’applications comme FolderMini, il suffit de toucher une tuile pour ouvrir cette app directement.
+
+**Puis-je placer un lanceur d’applications sur l’écran verrouillé ?**
+Oui. iOS prend en charge les widgets d’accessoires sur l’écran verrouillé, et FolderMini vous permet d’y placer vos apps les plus utilisées.
+
+**Est-ce que cela fonctionne sans raccourcis ni automatisations ?**
+Oui. Une app de widget-dossier gère le lancement de façon native, vous n’avez donc rien à créer dans l’app Raccourcis.
+
+---
+
+Prêt à essayer ? [Téléchargez FolderMini sur l’App Store](/foldermini/download) et transformez n’importe quel widget en lanceur en un appui.

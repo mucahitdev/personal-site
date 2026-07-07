@@ -5,10 +5,12 @@ import { useEffect, useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import { ArrowLeft, ArrowUp } from 'lucide-react'
 import { motion, useScroll, AnimatePresence } from 'motion/react'
+import { useTranslations } from 'next-intl'
 import { BLOG_POSTS } from '@/app/data'
 
 function BackButton() {
   const router = useRouter()
+  const t = useTranslations('Blog')
 
   return (
     <button
@@ -17,32 +19,33 @@ function BackButton() {
       type="button"
     >
       <ArrowLeft size={16} />
-      <span>Back</span>
+      <span>{t('back')}</span>
     </button>
   )
 }
 
 function CopyButton() {
-  const [text, setText] = useState('Copy')
+  const t = useTranslations('Blog')
+  const [copied, setCopied] = useState(false)
   const currentUrl = typeof window !== 'undefined' ? window.location.href : ''
 
   useEffect(() => {
-    setTimeout(() => {
-      setText('Copy')
-    }, 2000)
-  }, [text])
+    if (!copied) return
+    const id = setTimeout(() => setCopied(false), 2000)
+    return () => clearTimeout(id)
+  }, [copied])
 
   return (
     <button
       onClick={() => {
-        setText('Copied')
+        setCopied(true)
         navigator.clipboard.writeText(currentUrl)
       }}
       className="font-base flex items-center gap-1 text-center text-sm text-zinc-500 transition-colors hover:cursor-pointer dark:text-zinc-400"
       type="button"
     >
-      <TextMorph>{text}</TextMorph>
-      <span>URL</span>
+      <TextMorph>{copied ? t('copied') : t('copy')}</TextMorph>
+      <span>{t('url')}</span>
     </button>
   )
 }

@@ -19,7 +19,7 @@ import {
   EMAIL,
   SOCIAL_LINKS,
   type Project,
-} from './data'
+} from '../data'
 import { useState } from 'react'
 import Image from 'next/image'
 import { LinkButton } from '@/components/link-button'
