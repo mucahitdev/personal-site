@@ -1,8 +1,11 @@
 'use client'
 import { TextEffect } from '@/components/ui/text-effect'
-import Link from 'next/link'
+import { LanguageSwitcher } from '@/components/language-switcher'
+import { Link } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
 
 export function Header() {
+  const t = useTranslations('Header')
   return (
     <header className="mb-8 flex items-center justify-between">
       <div>
@@ -16,9 +19,10 @@ export function Header() {
           className="text-zinc-600 dark:text-zinc-500"
           delay={0.5}
         >
-          Frontend & Mobile Developer
+          {t('role')}
         </TextEffect>
       </div>
+      <LanguageSwitcher />
     </header>
   )
 }

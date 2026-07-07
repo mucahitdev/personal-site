@@ -1,0 +1,148 @@
+export const metadata = {
+  title:
+    'How to Launch Any App from a Home Screen or Lock Screen Widget on iPhone',
+  description:
+    'A step-by-step guide to launching apps directly from iOS Home Screen and Lock Screen widgets — using folder widgets so any app is one tap away, without digging through pages of icons.',
+  keywords: [
+    'launch app from widget iphone',
+    'lock screen widget app launcher',
+    'home screen widget open app',
+    'ios folder widget',
+    'app launcher widget iphone',
+    'tap widget to open app',
+  ],
+  alternates: {
+    canonical: '/blog/launch-apps-from-widgets-ios',
+    languages: {
+      en: '/blog/launch-apps-from-widgets-ios',
+      tr: '/blog/iphone-widgettan-uygulama-acma',
+      'x-default': '/blog/launch-apps-from-widgets-ios',
+    },
+  },
+  openGraph: {
+    type: 'article',
+    title: 'How to Launch Any App from an iPhone Widget',
+    description:
+      'Step-by-step guide to opening apps directly from Home Screen and Lock Screen widgets on iOS.',
+    url: '/blog/launch-apps-from-widgets-ios',
+  },
+}
+
+export const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline:
+      'How to Launch Any App from a Home Screen or Lock Screen Widget on iPhone',
+    description: metadata.description,
+    author: {
+      '@type': 'Person',
+      name: 'Mücahit Kökdemir',
+      url: 'https://mucahitk.com',
+    },
+    mainEntityOfPage: 'https://mucahitk.com/blog/launch-apps-from-widgets-ios',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Launch an app from an iPhone Home Screen or Lock Screen widget',
+    step: [
+      {
+        '@type': 'HowToStep',
+        name: 'Install a folder-widget app',
+        text: 'Download an app-launcher widget such as FolderMini from the App Store.',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Build a folder of apps',
+        text: 'Open the app and add the apps you want quick access to into a folder.',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Add the widget',
+        text: 'Long-press your Home Screen or Lock Screen, tap the plus button, and add the folder widget.',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Tap to launch',
+        text: 'Each tile shows the real app icon. Tap a tile to open that app directly.',
+      },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Can you open an app directly from a widget on iPhone?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. With an app-launcher widget like FolderMini, each tile in the widget shows a real app icon and tapping it opens that app directly, without going through a menu first.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I put an app launcher on the iPhone Lock Screen?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. iOS supports Lock Screen accessory widgets, and apps like FolderMini let you place your most-used apps there so they are one tap away from the Lock Screen.',
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Launch Any App from a Home Screen or Lock Screen Widget on iPhone
+
+**Quick answer:** iOS does not let you open a specific app from a stock widget with a single tap, but a dedicated app-launcher widget can. Apps like [FolderMini](/foldermini) turn a widget into a grid of real app icons — tap any tile and that app opens instantly, straight from your Home Screen or Lock Screen.
+
+If you have ever wished you could tap a widget and jump straight into an app — instead of swiping through pages of icons or opening the App Library — this guide is for you.
+
+---
+
+## Why stock iOS widgets can't launch a specific app
+
+Apple's built-in widgets are designed to *show information* (weather, calendar, battery) and, when tapped, open the app that owns the widget. They were never meant to work as a launcher for your other apps. That is why you cannot, out of the box, build a widget where each tile opens a different app.
+
+The workaround is a **folder-widget app** — a small utility that renders a grid of app tiles inside a widget and opens the matching app when you tap a tile.
+
+## Step-by-step: launch apps from a widget
+
+1. **Install a folder-widget app.** Download an app-launcher widget such as [FolderMini](/foldermini) from the App Store. It's free.
+2. **Build a folder.** Open the app and add the apps you want fast access to — group them by routine, project, or mood.
+3. **Add the widget to your Home Screen.** Long-press an empty area of the Home Screen, tap the **+** in the top corner, search for the app, and choose a widget size (small, medium, or large).
+4. **Or add it to your Lock Screen.** Long-press the Lock Screen, tap **Customize**, and add an accessory widget for your most-used apps.
+5. **Tap to launch.** Every tile shows the real app icon. One tap opens that app directly.
+
+## What to look for in an app-launcher widget
+
+| Feature | Why it matters |
+| --- | --- |
+| Real app icons | Tiles you actually recognize, not generic placeholders |
+| One-tap launch | The app opens directly — no intermediate menu |
+| Lock Screen support | Your top apps are reachable without unlocking to the Home Screen |
+| Multiple sizes | Fit 2 apps or 20, depending on the widget size |
+| Free to try | No commitment to test whether it fits your workflow |
+
+[FolderMini](/foldermini) covers all of these: colorful custom folders, pixel-perfect real icons, one-tap launch, and Home Screen plus Lock Screen widgets in small, medium, and large sizes.
+
+## Common questions
+
+**Can you open an app directly from a widget on iPhone?**
+Yes — with an app-launcher widget like FolderMini, tapping a tile opens that app directly.
+
+**Can I put an app launcher on the Lock Screen?**
+Yes. iOS supports Lock Screen accessory widgets, and FolderMini lets you place your most-used apps there.
+
+**Does this work without shortcuts or automations?**
+Yes. A folder-widget app handles the launching natively, so you don't need to build anything in the Shortcuts app.
+
+---
+
+Ready to try it? [Download FolderMini on the App Store](/foldermini/download) and turn any widget into a one-tap launcher.

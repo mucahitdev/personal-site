@@ -272,6 +272,21 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    title: 'Best Ways to Organize Your iPhone Home Screen in 2026',
+    description:
+      'Practical methods to declutter and organize your iPhone Home Screen — from the App Library to widget-based app launchers.',
+    link: '/blog/organize-iphone-home-screen-2026',
+    uid: 'blog-6',
+  },
+  {
+    title:
+      'How to Launch Any App from a Home Screen or Lock Screen Widget on iPhone',
+    description:
+      'A step-by-step guide to opening apps directly from iOS widgets, so any app is one tap away.',
+    link: '/blog/launch-apps-from-widgets-ios',
+    uid: 'blog-5',
+  },
+  {
     title:
       'App Store 2025: Next-Generation App Development and Publishing Process',
     description:
