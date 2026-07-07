@@ -1,0 +1,137 @@
+export const meta = {
+  title: "如何在 iPhone 上通过主屏幕或锁定屏幕小组件启动任意 App",
+  description:
+    "一份分步指南，教你如何直接从 iOS 主屏幕和锁定屏幕的小组件启动 App —— 借助文件夹小组件，让任意 App 一键即达，无需在一页页图标中翻找。",
+  keywords: [
+    "iphone 小组件启动 app",
+    "锁定屏幕小组件 app 启动器",
+    "主屏幕小组件打开 app",
+    "ios 文件夹小组件",
+    "iphone app 启动器小组件",
+    "点击小组件打开 app",
+  ],
+  ogTitle: "如何通过 iPhone 小组件启动任意 App",
+  ogDescription:
+    "一份分步指南，教你如何直接从 iOS 主屏幕和锁定屏幕的小组件打开 App。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "如何在 iPhone 上通过主屏幕或锁定屏幕小组件启动任意 App",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/zh/blog/launch-apps-from-widgets-ios",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "通过 iPhone 主屏幕或锁定屏幕小组件启动 App",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "安装一款文件夹小组件 App",
+        text: "从 App Store 下载一款 App 启动器小组件，例如 FolderMini。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "创建一个 App 文件夹",
+        text: "打开 App，将你想要快速访问的 App 添加到一个文件夹中。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加小组件",
+        text: "长按主屏幕或锁定屏幕，点击加号按钮，添加文件夹小组件。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "点击启动",
+        text: "每个磁贴都显示真实的 App 图标。点击某个磁贴即可直接打开对应的 App。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "可以在 iPhone 上直接从小组件打开 App 吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。借助像 FolderMini 这样的 App 启动器小组件，小组件中的每个磁贴都显示真实的 App 图标，点击后即可直接打开对应的 App，无需先进入某个菜单。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "可以在 iPhone 锁定屏幕上放置 App 启动器吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。iOS 支持锁定屏幕的附加小组件，像 FolderMini 这样的 App 可以让你把最常用的 App 放在那里，从锁定屏幕一键即达。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何在 iPhone 上通过主屏幕或锁定屏幕小组件启动任意 App
+
+**快速解答：** iOS 不允许你通过系统自带的小组件一键打开某个特定 App，但一款专门的 App 启动器小组件可以做到。像 [FolderMini](/foldermini) 这样的 App 能把小组件变成一整片真实 App 图标的网格 —— 点击任意磁贴，对应的 App 就会立即打开，直接从你的主屏幕或锁定屏幕启动。
+
+如果你曾经希望能点一下小组件就直接跳进某个 App —— 而不是在一页页图标中滑动、或是打开 App 资源库 —— 那么这篇指南正适合你。
+
+---
+
+## 为什么 iOS 自带小组件无法启动特定 App
+
+苹果内置的小组件设计目的是*展示信息*（天气、日历、电量），点击时会打开拥有该小组件的那个 App。它们从来就不是为了充当其他 App 的启动器而设计的。这正是为什么你无法开箱即用地做出一个每个磁贴都能打开不同 App 的小组件。
+
+变通办法是使用一款 **文件夹小组件 App** —— 这是一种小巧的工具，它会在小组件内呈现一片 App 磁贴网格，并在你点击某个磁贴时打开对应的 App。
+
+## 分步操作：通过小组件启动 App
+
+1. **安装一款文件夹小组件 App。** 从 App Store 下载一款 App 启动器小组件，例如 [FolderMini](/foldermini)。它是免费的。
+2. **创建一个文件夹。** 打开 App，把你想要快速访问的 App 添加进来 —— 按日常习惯、项目或心情来分组。
+3. **把小组件添加到主屏幕。** 长按主屏幕的空白区域，点击顶部角落的 **+**，搜索该 App，然后选择一个小组件尺寸（小、中或大）。
+4. **或者添加到锁定屏幕。** 长按锁定屏幕，点击**自定义**，为你最常用的 App 添加一个附加小组件。
+5. **点击启动。** 每个磁贴都显示真实的 App 图标。轻点一下即可直接打开对应的 App。
+
+## 挑选 App 启动器小组件时应关注什么
+
+| 功能 | 为什么重要 |
+| --- | --- |
+| 真实 App 图标 | 你一眼就能认出的磁贴，而不是通用占位图 |
+| 一键启动 | App 直接打开 —— 没有中间菜单 |
+| 支持锁定屏幕 | 无需解锁进入主屏幕就能触及你最常用的 App |
+| 多种尺寸 | 根据小组件尺寸，可容纳 2 个到 20 个 App |
+| 免费试用 | 无需承诺即可测试它是否契合你的使用习惯 |
+
+[FolderMini](/foldermini) 涵盖了所有这些要点：色彩丰富的自定义文件夹、像素级精准的真实图标、一键启动，以及小、中、大三种尺寸的主屏幕和锁定屏幕小组件。
+
+## 常见问题
+
+**可以在 iPhone 上直接从小组件打开 App 吗？**
+可以 —— 借助像 FolderMini 这样的 App 启动器小组件，点击磁贴即可直接打开对应的 App。
+
+**可以在锁定屏幕上放置 App 启动器吗？**
+可以。iOS 支持锁定屏幕的附加小组件，FolderMini 能让你把最常用的 App 放在那里。
+
+**这需要用到快捷指令或自动化吗？**
+不需要。文件夹小组件 App 会原生处理启动逻辑，所以你无需在快捷指令 App 中搭建任何东西。
+
+---
+
+准备好试试了吗？[前往 App Store 下载 FolderMini](/foldermini/download)，把任意小组件变成一键启动器。

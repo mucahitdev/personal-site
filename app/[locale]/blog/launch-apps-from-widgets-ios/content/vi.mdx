@@ -1,0 +1,139 @@
+export const meta = {
+  title:
+    "Cách mở bất kỳ ứng dụng nào từ widget trên Màn hình chính hoặc Màn hình khóa của iPhone",
+  description:
+    "Hướng dẫn từng bước để mở ứng dụng trực tiếp từ widget trên Màn hình chính và Màn hình khóa iOS — dùng widget thư mục để mọi ứng dụng chỉ cách bạn một lần chạm, không cần lật qua nhiều trang biểu tượng.",
+  keywords: [
+    "mở ứng dụng từ widget iphone",
+    "widget mở app màn hình khóa",
+    "widget màn hình chính mở ứng dụng",
+    "widget thư mục ios",
+    "widget mở nhanh ứng dụng iphone",
+    "chạm widget để mở app",
+  ],
+  ogTitle: "Cách mở bất kỳ ứng dụng nào từ widget trên iPhone",
+  ogDescription:
+    "Hướng dẫn từng bước để mở ứng dụng trực tiếp từ widget trên Màn hình chính và Màn hình khóa iOS.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Cách mở bất kỳ ứng dụng nào từ widget trên Màn hình chính hoặc Màn hình khóa của iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/vi/blog/launch-apps-from-widgets-ios",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Mở một ứng dụng từ widget trên Màn hình chính hoặc Màn hình khóa của iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Cài đặt ứng dụng widget thư mục",
+        text: "Tải một ứng dụng widget mở app như FolderMini từ App Store.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tạo một thư mục ứng dụng",
+        text: "Mở ứng dụng và thêm những app bạn muốn truy cập nhanh vào một thư mục.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm widget",
+        text: "Nhấn giữ Màn hình chính hoặc Màn hình khóa, chạm nút dấu cộng, rồi thêm widget thư mục.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chạm để mở",
+        text: "Mỗi ô hiển thị biểu tượng app thật. Chạm vào một ô để mở app đó trực tiếp.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Bạn có thể mở một ứng dụng trực tiếp từ widget trên iPhone không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. Với một widget mở app như FolderMini, mỗi ô trong widget hiển thị biểu tượng app thật và chạm vào ô đó sẽ mở app trực tiếp, không cần qua menu trung gian.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tôi có thể đặt trình mở app lên Màn hình khóa iPhone không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. iOS hỗ trợ widget phụ trợ trên Màn hình khóa, và các ứng dụng như FolderMini cho phép bạn đặt những app hay dùng nhất ở đó để chúng chỉ cách Màn hình khóa một lần chạm.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách mở bất kỳ ứng dụng nào từ widget trên Màn hình chính hoặc Màn hình khóa của iPhone
+
+**Câu trả lời nhanh:** iOS không cho phép bạn mở một ứng dụng cụ thể từ widget mặc định chỉ bằng một lần chạm, nhưng một widget mở app chuyên dụng thì có thể. Các ứng dụng như [FolderMini](/foldermini) biến widget thành một lưới biểu tượng app thật — chạm vào ô nào là app đó mở ngay lập tức, thẳng từ Màn hình chính hoặc Màn hình khóa của bạn.
+
+Nếu bạn từng ước có thể chạm vào một widget và nhảy thẳng vào ứng dụng — thay vì vuốt qua nhiều trang biểu tượng hay mở Thư viện ứng dụng — thì hướng dẫn này dành cho bạn.
+
+---
+
+## Vì sao widget iOS mặc định không thể mở một ứng dụng cụ thể
+
+Các widget tích hợp sẵn của Apple được thiết kế để *hiển thị thông tin* (thời tiết, lịch, pin) và khi chạm vào sẽ mở ứng dụng sở hữu widget đó. Chúng chưa bao giờ được tạo ra để hoạt động như một trình mở cho các app khác của bạn. Đó là lý do bạn không thể, ngay từ đầu, tạo một widget mà mỗi ô mở một app khác nhau.
+
+Giải pháp là một **ứng dụng widget thư mục** — một tiện ích nhỏ hiển thị một lưới ô ứng dụng bên trong widget và mở app tương ứng khi bạn chạm vào một ô.
+
+## Từng bước: mở ứng dụng từ widget
+
+1. **Cài đặt một ứng dụng widget thư mục.** Tải một widget mở app như [FolderMini](/foldermini) từ App Store. Nó miễn phí.
+2. **Tạo một thư mục.** Mở ứng dụng và thêm những app bạn muốn truy cập nhanh — nhóm chúng theo thói quen, dự án hoặc tâm trạng.
+3. **Thêm widget vào Màn hình chính.** Nhấn giữ vùng trống trên Màn hình chính, chạm nút **+** ở góc trên, tìm ứng dụng, rồi chọn kích thước widget (nhỏ, vừa hoặc lớn).
+4. **Hoặc thêm vào Màn hình khóa.** Nhấn giữ Màn hình khóa, chạm **Tùy chỉnh**, rồi thêm một widget phụ trợ cho những app bạn hay dùng nhất.
+5. **Chạm để mở.** Mỗi ô hiển thị biểu tượng app thật. Một lần chạm là mở app đó trực tiếp.
+
+## Cần tìm gì ở một widget mở app
+
+| Tính năng | Vì sao quan trọng |
+| --- | --- |
+| Biểu tượng app thật | Những ô bạn thực sự nhận ra, không phải hình mờ chung chung |
+| Mở bằng một lần chạm | App mở trực tiếp — không có menu trung gian |
+| Hỗ trợ Màn hình khóa | Những app hàng đầu của bạn có thể mở mà không cần mở khóa vào Màn hình chính |
+| Nhiều kích thước | Chứa 2 app hay 20 app, tùy vào kích thước widget |
+| Dùng thử miễn phí | Không ràng buộc khi kiểm tra xem nó có hợp với quy trình của bạn không |
+
+[FolderMini](/foldermini) đáp ứng tất cả những điều này: thư mục tùy chỉnh nhiều màu sắc, biểu tượng thật sắc nét đến từng pixel, mở bằng một lần chạm, cùng widget Màn hình chính và Màn hình khóa ở các kích thước nhỏ, vừa và lớn.
+
+## Câu hỏi thường gặp
+
+**Bạn có thể mở một ứng dụng trực tiếp từ widget trên iPhone không?**
+Có — với một widget mở app như FolderMini, chạm vào một ô sẽ mở app đó trực tiếp.
+
+**Tôi có thể đặt trình mở app lên Màn hình khóa không?**
+Có. iOS hỗ trợ widget phụ trợ trên Màn hình khóa, và FolderMini cho phép bạn đặt những app hay dùng nhất ở đó.
+
+**Cách này có hoạt động mà không cần phím tắt hay tự động hóa không?**
+Có. Một ứng dụng widget thư mục xử lý việc mở app một cách tự nhiên, nên bạn không cần tạo bất cứ thứ gì trong ứng dụng Phím tắt.
+
+---
+
+Sẵn sàng dùng thử chưa? [Tải FolderMini trên App Store](/foldermini/download) và biến bất kỳ widget nào thành trình mở app chỉ bằng một lần chạm.

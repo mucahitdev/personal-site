@@ -1,4 +1,4 @@
-export const metadata = {
+export const meta = {
   title:
     "iPhone'da Ana Ekran veya Kilit Ekranı Widget'ından Uygulama Nasıl Açılır?",
   description:
@@ -10,86 +10,73 @@ export const metadata = {
     "ios klasör widget",
     "iphone uygulama başlatıcı widget",
   ],
-  alternates: {
-    canonical: '/blog/iphone-widgettan-uygulama-acma',
-    languages: {
-      en: '/blog/launch-apps-from-widgets-ios',
-      tr: '/blog/iphone-widgettan-uygulama-acma',
-      'x-default': '/blog/launch-apps-from-widgets-ios',
-    },
-  },
-  openGraph: {
-    type: 'article',
-    locale: 'tr_TR',
-    title: "iPhone'da Widget'tan Uygulama Nasıl Açılır?",
-    description:
-      "iOS ana ekran ve kilit ekranı widget'larından uygulamaları tek dokunuşla açmanın adım adım rehberi.",
-    url: '/blog/iphone-widgettan-uygulama-acma',
-  },
+  ogTitle: "iPhone'da Widget'tan Uygulama Nasıl Açılır?",
+  ogDescription:
+    "iOS ana ekran ve kilit ekranı widget'larından uygulamaları tek dokunuşla açmanın adım adım rehberi.",
 }
 
 export const jsonLd = [
   {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    inLanguage: 'tr',
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
     headline:
       "iPhone'da Ana Ekran veya Kilit Ekranı Widget'ından Uygulama Nasıl Açılır?",
-    description: metadata.description,
+    description: meta.description,
     author: {
-      '@type': 'Person',
-      name: 'Mücahit Kökdemir',
-      url: 'https://mucahitk.com',
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
     },
     mainEntityOfPage:
-      'https://mucahitk.com/blog/iphone-widgettan-uygulama-acma',
+      "https://mucahitk.com/tr/blog/launch-apps-from-widgets-ios",
   },
   {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    inLanguage: 'tr',
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
     name: "iPhone ana ekran veya kilit ekranı widget'ından uygulama başlatma",
     step: [
       {
-        '@type': 'HowToStep',
-        name: 'Klasör widget uygulaması indir',
+        "@type": "HowToStep",
+        name: "Klasör widget uygulaması indir",
         text: "App Store'dan FolderMini gibi bir uygulama başlatıcı widget indirin.",
       },
       {
-        '@type': 'HowToStep',
-        name: 'Uygulama klasörü oluştur',
-        text: 'Uygulamayı açın ve hızlı erişmek istediğiniz uygulamaları bir klasöre ekleyin.',
+        "@type": "HowToStep",
+        name: "Uygulama klasörü oluştur",
+        text: "Uygulamayı açın ve hızlı erişmek istediğiniz uygulamaları bir klasöre ekleyin.",
       },
       {
-        '@type': 'HowToStep',
+        "@type": "HowToStep",
         name: "Widget'ı ekle",
         text: "Ana ekrana veya kilit ekranına basılı tutun, artı butonuna dokunun ve klasör widget'ını ekleyin.",
       },
       {
-        '@type': 'HowToStep',
-        name: 'Dokunup aç',
-        text: 'Her kutucuk gerçek uygulama ikonunu gösterir. Bir kutucuğa dokunduğunuzda o uygulama doğrudan açılır.',
+        "@type": "HowToStep",
+        name: "Dokunup aç",
+        text: "Her kutucuk gerçek uygulama ikonunu gösterir. Bir kutucuğa dokunduğunuzda o uygulama doğrudan açılır.",
       },
     ],
   },
   {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    inLanguage: 'tr',
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
     mainEntity: [
       {
-        '@type': 'Question',
+        "@type": "Question",
         name: "iPhone'da widget'tan doğrudan uygulama açılabilir mi?",
         acceptedAnswer: {
-          '@type': 'Answer',
+          "@type": "Answer",
           text: "Evet. FolderMini gibi bir uygulama başlatıcı widget ile widget'taki her kutucuk gerçek bir uygulama ikonu gösterir ve dokunduğunuzda o uygulama önce bir menü açmadan doğrudan açılır.",
         },
       },
       {
-        '@type': 'Question',
+        "@type": "Question",
         name: "iPhone kilit ekranına uygulama başlatıcı koyabilir miyim?",
         acceptedAnswer: {
-          '@type': 'Answer',
+          "@type": "Answer",
           text: "Evet. iOS kilit ekranı aksesuar widget'larını destekler ve FolderMini gibi uygulamalar en çok kullandığınız uygulamaları oraya yerleştirmenize izin verir.",
         },
       },

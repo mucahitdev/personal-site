@@ -1,0 +1,139 @@
+export const meta = {
+  title:
+    "Elke app openen vanuit een widget op het beginscherm of toegangsscherm op iPhone",
+  description:
+    "Een stapsgewijze handleiding om apps rechtstreeks te openen vanuit widgets op het iOS-beginscherm en -toegangsscherm — met mapwidgets zodat elke app met één tik bereikbaar is, zonder door pagina's vol pictogrammen te bladeren.",
+  keywords: [
+    "app openen vanuit widget iphone",
+    "app-launcher widget toegangsscherm",
+    "widget beginscherm app openen",
+    "ios mapwidget",
+    "app launcher widget iphone",
+    "op widget tikken om app te openen",
+  ],
+  ogTitle: "Elke app openen vanuit een iPhone-widget",
+  ogDescription:
+    "Stapsgewijze handleiding om apps rechtstreeks te openen vanuit widgets op het beginscherm en toegangsscherm in iOS.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline:
+      "Elke app openen vanuit een widget op het beginscherm of toegangsscherm op iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/nl/blog/launch-apps-from-widgets-ios",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "Een app openen vanuit een widget op het iPhone-beginscherm of -toegangsscherm",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Installeer een mapwidget-app",
+        text: "Download een app-launcher widget zoals FolderMini uit de App Store.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Maak een map met apps",
+        text: "Open de app en voeg de apps waarvoor je snelle toegang wilt toe aan een map.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Voeg de widget toe",
+        text: "Houd je beginscherm of toegangsscherm ingedrukt, tik op de plusknop en voeg de mapwidget toe.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tik om te openen",
+        text: "Elke tegel toont het echte app-pictogram. Tik op een tegel om die app rechtstreeks te openen.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kun je een app rechtstreeks openen vanuit een widget op iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Met een app-launcher widget zoals FolderMini toont elke tegel in de widget een echt app-pictogram en opent een tik erop die app rechtstreeks, zonder eerst een menu te doorlopen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kan ik een app launcher op het iPhone-toegangsscherm zetten?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. iOS ondersteunt accessoirewidgets op het toegangsscherm, en apps zoals FolderMini laten je je meestgebruikte apps daar plaatsen zodat ze met één tik bereikbaar zijn vanaf het toegangsscherm.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Elke app openen vanuit een widget op het beginscherm of toegangsscherm op iPhone
+
+**Snel antwoord:** iOS laat je niet met één tik een specifieke app openen vanuit een standaardwidget, maar een speciale app-launcher widget kan dat wel. Apps zoals [FolderMini](/foldermini) veranderen een widget in een raster van echte app-pictogrammen — tik op een tegel en die app opent direct, rechtstreeks vanaf je beginscherm of toegangsscherm.
+
+Als je ooit hebt gewild dat je op een widget kon tikken en meteen in een app kon springen — in plaats van door pagina's met pictogrammen te vegen of de App-bibliotheek te openen — dan is deze handleiding voor jou.
+
+---
+
+## Waarom standaard iOS-widgets geen specifieke app kunnen openen
+
+De ingebouwde widgets van Apple zijn ontworpen om *informatie te tonen* (weer, agenda, batterij) en openen bij een tik de app waartoe de widget behoort. Ze waren nooit bedoeld om als launcher voor je andere apps te werken. Daarom kun je standaard geen widget bouwen waarbij elke tegel een andere app opent.
+
+De oplossing is een **mapwidget-app** — een klein hulpprogramma dat een raster van app-tegels in een widget weergeeft en de bijbehorende app opent wanneer je op een tegel tikt.
+
+## Stap voor stap: apps openen vanuit een widget
+
+1. **Installeer een mapwidget-app.** Download een app-launcher widget zoals [FolderMini](/foldermini) uit de App Store. Het is gratis.
+2. **Maak een map.** Open de app en voeg de apps toe waarvoor je snelle toegang wilt — groepeer ze op routine, project of stemming.
+3. **Voeg de widget toe aan je beginscherm.** Houd een leeg gebied van het beginscherm ingedrukt, tik op de **+** in de bovenhoek, zoek naar de app en kies een widgetformaat (klein, gemiddeld of groot).
+4. **Of voeg hem toe aan je toegangsscherm.** Houd het toegangsscherm ingedrukt, tik op **Pas aan** en voeg een accessoirewidget toe voor je meestgebruikte apps.
+5. **Tik om te openen.** Elke tegel toont het echte app-pictogram. Eén tik opent die app rechtstreeks.
+
+## Waar je op moet letten bij een app-launcher widget
+
+| Functie | Waarom het belangrijk is |
+| --- | --- |
+| Echte app-pictogrammen | Tegels die je echt herkent, geen algemene tijdelijke aanduidingen |
+| Openen met één tik | De app opent rechtstreeks — geen tussenmenu |
+| Ondersteuning voor toegangsscherm | Je belangrijkste apps zijn bereikbaar zonder te ontgrendelen naar het beginscherm |
+| Meerdere formaten | Plaats 2 apps of 20, afhankelijk van het widgetformaat |
+| Gratis te proberen | Geen verplichting om te testen of het bij je workflow past |
+
+[FolderMini](/foldermini) dekt dit allemaal: kleurrijke aangepaste mappen, pixelperfecte echte pictogrammen, openen met één tik en widgets voor het beginscherm én toegangsscherm in klein, gemiddeld en groot formaat.
+
+## Veelgestelde vragen
+
+**Kun je een app rechtstreeks openen vanuit een widget op iPhone?**
+Ja — met een app-launcher widget zoals FolderMini opent een tik op een tegel die app rechtstreeks.
+
+**Kan ik een app launcher op het toegangsscherm zetten?**
+Ja. iOS ondersteunt accessoirewidgets op het toegangsscherm, en met FolderMini kun je je meestgebruikte apps daar plaatsen.
+
+**Werkt dit zonder opdrachten of automatiseringen?**
+Ja. Een mapwidget-app regelt het openen op een native manier, dus je hoeft niets te bouwen in de Opdrachten-app.
+
+---
+
+Klaar om het te proberen? [Download FolderMini in de App Store](/foldermini/download) en verander elke widget in een launcher met één tik.

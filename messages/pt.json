@@ -1,0 +1,11 @@
+{
+  "Header": {
+    "role": "Desenvolvedor Frontend e Mobile"
+  },
+  "Blog": {
+    "back": "Voltar",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "url": "URL"
+  }
+}

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { WEBSITE_URL } from '@/lib/constants'
+import { routing } from '@/i18n/routing'
 
 const base = WEBSITE_URL.replace(/\/$/, '')
 
@@ -7,21 +8,31 @@ const base = WEBSITE_URL.replace(/\/$/, '')
 const projects = ['dualshot', 'stamper', 'tradelands']
 const legal = ['privacy-policy', 'terms-of-use']
 
-// English blog posts (unprefixed slugs).
+// English-only legacy blog posts (single MDX files, unprefixed).
 const enPosts = [
-  'organize-iphone-home-screen-2026',
-  'launch-apps-from-widgets-ios',
   'app-store-2025',
   'exploring-the-intersection-of-design-ai-and-design-engineering',
 ]
 
-// Turkish posts paired with their English counterpart for hreflang.
-// Both live under the default (unprefixed) locale — the slug carries the
-// language — so each is listed with its cross-language alternate.
-const postPairs: { tr: string; en: string }[] = [
-  { tr: 'iphone-ana-ekran-duzenleme-2026', en: 'organize-iphone-home-screen-2026' },
-  { tr: 'iphone-widgettan-uygulama-acma', en: 'launch-apps-from-widgets-ios' },
+// Blog posts translated into every locale (same slug per locale).
+const multilingualPosts = [
+  'launch-apps-from-widgets-ios',
+  'organize-iphone-home-screen-2026',
 ]
+
+function localePath(locale: string, path: string): string {
+  const clean = path.replace(/^\//, '')
+  return locale === routing.defaultLocale
+    ? `${base}/${clean}`
+    : `${base}/${locale}/${clean}`
+}
+
+function languagesFor(path: string): Record<string, string> {
+  const languages: Record<string, string> = {}
+  for (const l of routing.locales) languages[l] = localePath(l, path)
+  languages['x-default'] = localePath(routing.defaultLocale, path)
+  return languages
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
@@ -33,33 +44,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
       alternates: { languages: { en: `${base}/`, tr: `${base}/tr` } },
     },
-    // FolderMini is translated: English at /foldermini, Turkish at /tr/foldermini.
-    {
-      url: `${base}/foldermini`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-      alternates: {
-        languages: {
-          en: `${base}/foldermini`,
-          tr: `${base}/tr/foldermini`,
-        },
-      },
-    },
-    {
-      url: `${base}/tr/foldermini`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-      alternates: {
-        languages: {
-          en: `${base}/foldermini`,
-          tr: `${base}/tr/foldermini`,
-        },
-      },
-    },
   ]
 
+  // FolderMini: translated in en + tr (other locales fall back to English,
+  // so only the two authored languages are advertised).
+  for (const locale of ['en', 'tr']) {
+    entries.push({
+      url: localePath(locale, 'foldermini'),
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      alternates: {
+        languages: {
+          en: `${base}/foldermini`,
+          tr: `${base}/tr/foldermini`,
+        },
+      },
+    })
+  }
   for (const l of legal) {
     entries.push({
       url: `${base}/foldermini/${l}`,
@@ -69,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
+  // Other apps — English only.
   for (const p of projects) {
     entries.push({
       url: `${base}/${p}`,
@@ -86,27 +89,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // Multilingual blog posts — one entry per locale, each with the full
+  // hreflang alternates map.
+  for (const slug of multilingualPosts) {
+    const languages = languagesFor(`blog/${slug}`)
+    for (const locale of routing.locales) {
+      entries.push({
+        url: localePath(locale, `blog/${slug}`),
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: { languages },
+      })
+    }
+  }
+
+  // English-only legacy posts.
   for (const post of enPosts) {
     entries.push({
       url: `${base}/blog/${post}`,
       lastModified: now,
       changeFrequency: 'yearly',
-      priority: 0.7,
-    })
-  }
-
-  for (const { tr, en } of postPairs) {
-    entries.push({
-      url: `${base}/blog/${tr}`,
-      lastModified: now,
-      changeFrequency: 'yearly',
-      priority: 0.7,
-      alternates: {
-        languages: {
-          en: `${base}/blog/${en}`,
-          tr: `${base}/blog/${tr}`,
-        },
-      },
+      priority: 0.6,
     })
   }
 

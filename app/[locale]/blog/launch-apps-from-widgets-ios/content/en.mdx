@@ -1,92 +1,83 @@
-export const metadata = {
+export const meta = {
   title:
-    'How to Launch Any App from a Home Screen or Lock Screen Widget on iPhone',
+    "How to Launch Any App from a Home Screen or Lock Screen Widget on iPhone",
   description:
-    'A step-by-step guide to launching apps directly from iOS Home Screen and Lock Screen widgets — using folder widgets so any app is one tap away, without digging through pages of icons.',
+    "A step-by-step guide to launching apps directly from iOS Home Screen and Lock Screen widgets — using folder widgets so any app is one tap away, without digging through pages of icons.",
   keywords: [
-    'launch app from widget iphone',
-    'lock screen widget app launcher',
-    'home screen widget open app',
-    'ios folder widget',
-    'app launcher widget iphone',
-    'tap widget to open app',
+    "launch app from widget iphone",
+    "lock screen widget app launcher",
+    "home screen widget open app",
+    "ios folder widget",
+    "app launcher widget iphone",
+    "tap widget to open app",
   ],
-  alternates: {
-    canonical: '/blog/launch-apps-from-widgets-ios',
-    languages: {
-      en: '/blog/launch-apps-from-widgets-ios',
-      tr: '/blog/iphone-widgettan-uygulama-acma',
-      'x-default': '/blog/launch-apps-from-widgets-ios',
-    },
-  },
-  openGraph: {
-    type: 'article',
-    title: 'How to Launch Any App from an iPhone Widget',
-    description:
-      'Step-by-step guide to opening apps directly from Home Screen and Lock Screen widgets on iOS.',
-    url: '/blog/launch-apps-from-widgets-ios',
-  },
+  ogTitle: "How to Launch Any App from an iPhone Widget",
+  ogDescription:
+    "Step-by-step guide to opening apps directly from Home Screen and Lock Screen widgets on iOS.",
 }
 
 export const jsonLd = [
   {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
     headline:
-      'How to Launch Any App from a Home Screen or Lock Screen Widget on iPhone',
-    description: metadata.description,
+      "How to Launch Any App from a Home Screen or Lock Screen Widget on iPhone",
+    description: meta.description,
     author: {
-      '@type': 'Person',
-      name: 'Mücahit Kökdemir',
-      url: 'https://mucahitk.com',
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
     },
-    mainEntityOfPage: 'https://mucahitk.com/blog/launch-apps-from-widgets-ios',
+    mainEntityOfPage: "https://mucahitk.com/blog/launch-apps-from-widgets-ios",
   },
   {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: 'Launch an app from an iPhone Home Screen or Lock Screen widget',
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Launch an app from an iPhone Home Screen or Lock Screen widget",
     step: [
       {
-        '@type': 'HowToStep',
-        name: 'Install a folder-widget app',
-        text: 'Download an app-launcher widget such as FolderMini from the App Store.',
+        "@type": "HowToStep",
+        name: "Install a folder-widget app",
+        text: "Download an app-launcher widget such as FolderMini from the App Store.",
       },
       {
-        '@type': 'HowToStep',
-        name: 'Build a folder of apps',
-        text: 'Open the app and add the apps you want quick access to into a folder.',
+        "@type": "HowToStep",
+        name: "Build a folder of apps",
+        text: "Open the app and add the apps you want quick access to into a folder.",
       },
       {
-        '@type': 'HowToStep',
-        name: 'Add the widget',
-        text: 'Long-press your Home Screen or Lock Screen, tap the plus button, and add the folder widget.',
+        "@type": "HowToStep",
+        name: "Add the widget",
+        text: "Long-press your Home Screen or Lock Screen, tap the plus button, and add the folder widget.",
       },
       {
-        '@type': 'HowToStep',
-        name: 'Tap to launch',
-        text: 'Each tile shows the real app icon. Tap a tile to open that app directly.',
+        "@type": "HowToStep",
+        name: "Tap to launch",
+        text: "Each tile shows the real app icon. Tap a tile to open that app directly.",
       },
     ],
   },
   {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
     mainEntity: [
       {
-        '@type': 'Question',
-        name: 'Can you open an app directly from a widget on iPhone?',
+        "@type": "Question",
+        name: "Can you open an app directly from a widget on iPhone?",
         acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. With an app-launcher widget like FolderMini, each tile in the widget shows a real app icon and tapping it opens that app directly, without going through a menu first.',
+          "@type": "Answer",
+          text: "Yes. With an app-launcher widget like FolderMini, each tile in the widget shows a real app icon and tapping it opens that app directly, without going through a menu first.",
         },
       },
       {
-        '@type': 'Question',
-        name: 'Can I put an app launcher on the iPhone Lock Screen?',
+        "@type": "Question",
+        name: "Can I put an app launcher on the iPhone Lock Screen?",
         acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. iOS supports Lock Screen accessory widgets, and apps like FolderMini let you place your most-used apps there so they are one tap away from the Lock Screen.',
+          "@type": "Answer",
+          text: "Yes. iOS supports Lock Screen accessory widgets, and apps like FolderMini let you place your most-used apps there so they are one tap away from the Lock Screen.",
         },
       },
     ],

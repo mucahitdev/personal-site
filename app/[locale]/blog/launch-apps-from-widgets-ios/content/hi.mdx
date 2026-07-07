@@ -1,0 +1,139 @@
+export const meta = {
+  title:
+    "iPhone पर Home Screen या Lock Screen widget से कोई भी ऐप कैसे खोलें",
+  description:
+    "iOS Home Screen और Lock Screen widget से सीधे ऐप्स खोलने की स्टेप-बाय-स्टेप गाइड — folder widget का इस्तेमाल करके कोई भी ऐप बस एक टैप की दूरी पर, आइकनों के पन्ने पलटे बिना।",
+  keywords: [
+    "iphone widget se app kaise kholen",
+    "lock screen widget app launcher",
+    "home screen widget se app open",
+    "ios folder widget",
+    "iphone app launcher widget",
+    "widget par tap karke app kholna",
+  ],
+  ogTitle: "iPhone widget से कोई भी ऐप कैसे खोलें",
+  ogDescription:
+    "iOS पर Home Screen और Lock Screen widget से सीधे ऐप्स खोलने की स्टेप-बाय-स्टेप गाइड।",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "hi",
+    headline:
+      "iPhone पर Home Screen या Lock Screen widget से कोई भी ऐप कैसे खोलें",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/hi/blog/launch-apps-from-widgets-ios",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "hi",
+    name: "iPhone के Home Screen या Lock Screen widget से कोई ऐप खोलें",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "एक folder-widget ऐप इंस्टॉल करें",
+        text: "App Store से FolderMini जैसा कोई app-launcher widget डाउनलोड करें।",
+      },
+      {
+        "@type": "HowToStep",
+        name: "ऐप्स का एक folder बनाएं",
+        text: "ऐप खोलें और जिन ऐप्स तक जल्दी पहुंच चाहिए उन्हें एक folder में जोड़ें।",
+      },
+      {
+        "@type": "HowToStep",
+        name: "widget जोड़ें",
+        text: "अपनी Home Screen या Lock Screen को देर तक दबाएं, प्लस बटन पर टैप करें, और folder widget जोड़ें।",
+      },
+      {
+        "@type": "HowToStep",
+        name: "खोलने के लिए टैप करें",
+        text: "हर टाइल असली ऐप का आइकन दिखाती है। किसी टाइल पर टैप करते ही वह ऐप सीधे खुल जाता है।",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "hi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "क्या iPhone पर widget से सीधे कोई ऐप खोला जा सकता है?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "हां। FolderMini जैसे app-launcher widget के साथ, widget की हर टाइल असली ऐप का आइकन दिखाती है और उस पर टैप करते ही वह ऐप सीधे खुल जाता है, पहले कोई मेन्यू खोले बिना।",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "क्या मैं iPhone की Lock Screen पर एक app launcher रख सकता हूं?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "हां। iOS Lock Screen accessory widget को सपोर्ट करता है, और FolderMini जैसे ऐप्स आपको अपने सबसे ज़्यादा इस्तेमाल होने वाले ऐप्स वहां रखने देते हैं ताकि वे Lock Screen से बस एक टैप की दूरी पर हों।",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone पर Home Screen या Lock Screen widget से कोई भी ऐप कैसे खोलें
+
+**संक्षिप्त जवाब:** iOS आपको किसी स्टॉक widget से एक ही टैप में कोई खास ऐप खोलने नहीं देता, लेकिन एक समर्पित app-launcher widget यह कर सकता है। [FolderMini](/foldermini) जैसे ऐप्स एक widget को असली ऐप आइकनों के ग्रिड में बदल देते हैं — किसी भी टाइल पर टैप करें और वह ऐप तुरंत खुल जाता है, सीधे आपकी Home Screen या Lock Screen से।
+
+अगर आपने कभी चाहा है कि आप किसी widget पर टैप करके सीधे किसी ऐप में पहुंच जाएं — आइकनों के पन्ने पलटे बिना या App Library खोले बिना — तो यह गाइड आपके लिए है।
+
+---
+
+## स्टॉक iOS widget किसी खास ऐप को क्यों नहीं खोल सकते
+
+Apple के बिल्ट-इन widget *जानकारी दिखाने* के लिए बने हैं (मौसम, कैलेंडर, बैटरी) और टैप करने पर वे उस ऐप को खोलते हैं जिसका वह widget है। इन्हें कभी आपके दूसरे ऐप्स के लॉन्चर की तरह काम करने के लिए नहीं बनाया गया था। यही वजह है कि आप बिना किसी अतिरिक्त सेटअप के ऐसा widget नहीं बना सकते जिसमें हर टाइल एक अलग ऐप खोले।
+
+इसका उपाय है एक **folder-widget ऐप** — एक छोटी सी यूटिलिटी जो एक widget के अंदर ऐप टाइलों का ग्रिड बनाती है और जब आप किसी टाइल पर टैप करते हैं तो उससे मेल खाता ऐप खोल देती है।
+
+## स्टेप-बाय-स्टेप: widget से ऐप्स खोलें
+
+1. **एक folder-widget ऐप इंस्टॉल करें।** App Store से [FolderMini](/foldermini) जैसा कोई app-launcher widget डाउनलोड करें। यह मुफ्त है।
+2. **एक folder बनाएं।** ऐप खोलें और जिन ऐप्स तक तेज़ पहुंच चाहिए उन्हें जोड़ें — इन्हें रूटीन, प्रोजेक्ट या मूड के हिसाब से समूह में रखें।
+3. **widget को अपनी Home Screen पर जोड़ें।** Home Screen के किसी खाली हिस्से को देर तक दबाएं, ऊपर के कोने में **+** पर टैप करें, ऐप को खोजें, और widget का आकार चुनें (छोटा, मध्यम या बड़ा)।
+4. **या इसे अपनी Lock Screen पर जोड़ें।** Lock Screen को देर तक दबाएं, **Customize** पर टैप करें, और अपने सबसे ज़्यादा इस्तेमाल होने वाले ऐप्स के लिए एक accessory widget जोड़ें।
+5. **खोलने के लिए टैप करें।** हर टाइल असली ऐप का आइकन दिखाती है। एक टैप में वह ऐप सीधे खुल जाता है।
+
+## app-launcher widget में क्या देखना चाहिए
+
+| फीचर | यह क्यों मायने रखता है |
+| --- | --- |
+| असली ऐप आइकन | ऐसी टाइलें जिन्हें आप सच में पहचानते हैं, न कि सामान्य प्लेसहोल्डर |
+| एक-टैप लॉन्च | ऐप सीधे खुलता है — बीच में कोई मेन्यू नहीं |
+| Lock Screen सपोर्ट | आपके टॉप ऐप्स Home Screen तक अनलॉक किए बिना पहुंच में रहते हैं |
+| कई आकार | widget के आकार के हिसाब से 2 ऐप्स या 20 समा जाएं |
+| मुफ्त आज़माएं | यह जांचने के लिए कोई प्रतिबद्धता नहीं कि यह आपके तरीके से फिट होता है या नहीं |
+
+[FolderMini](/foldermini) इन सबको कवर करता है: रंगीन कस्टम folder, पिक्सेल-परफेक्ट असली आइकन, एक-टैप लॉन्च, और छोटे, मध्यम व बड़े आकारों में Home Screen के साथ-साथ Lock Screen widget।
+
+## आम सवाल
+
+**क्या iPhone पर widget से सीधे कोई ऐप खोला जा सकता है?**
+हां — FolderMini जैसे app-launcher widget के साथ, किसी टाइल पर टैप करते ही वह ऐप सीधे खुल जाता है।
+
+**क्या मैं Lock Screen पर एक app launcher रख सकता हूं?**
+हां। iOS Lock Screen accessory widget को सपोर्ट करता है, और FolderMini आपको अपने सबसे ज़्यादा इस्तेमाल होने वाले ऐप्स वहां रखने देता है।
+
+**क्या यह shortcuts या automations के बिना काम करता है?**
+हां। एक folder-widget ऐप लॉन्चिंग को खुद नेटिवली संभालता है, इसलिए आपको Shortcuts ऐप में कुछ भी बनाने की ज़रूरत नहीं।
+
+---
+
+आज़माने के लिए तैयार हैं? [FolderMini को App Store पर डाउनलोड करें](/foldermini/download) और किसी भी widget को एक-टैप लॉन्चर में बदल दें।

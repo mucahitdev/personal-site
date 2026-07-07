@@ -1,35 +1,37 @@
 'use client'
 
 import { useLocale } from 'next-intl'
-import { Link, usePathname } from '@/i18n/navigation'
-import { routing } from '@/i18n/routing'
+import { useTransition } from 'react'
+import { usePathname, useRouter } from '@/i18n/navigation'
+import { routing, LOCALE_LABELS } from '@/i18n/routing'
 
-// Toggles between locales on the current path. Works cleanly for pages that
-// share a slug across locales (home, foldermini). Blog posts use per-locale
-// slugs, so their canonical cross-language link is the hreflang tag; this
-// switcher still lets readers jump to the same URL under the other prefix.
+// Dropdown language switcher. Navigates to the current path under the chosen
+// locale. Works cleanly for pages that share a slug across locales (home,
+// foldermini, and blog posts — which all use the same slug per locale).
 export function LanguageSwitcher() {
   const pathname = usePathname()
   const active = useLocale()
+  const router = useRouter()
+  const [isPending, startTransition] = useTransition()
 
   return (
-    <div className="flex items-center gap-1.5 text-xs">
-      {routing.locales.map((locale, i) => (
-        <span key={locale} className="flex items-center gap-1.5">
-          {i > 0 && <span className="text-zinc-300 dark:text-zinc-700">/</span>}
-          <Link
-            href={pathname}
-            locale={locale}
-            className={
-              locale === active
-                ? 'font-medium text-zinc-900 dark:text-zinc-100'
-                : 'text-zinc-400 transition-colors hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-300'
-            }
-          >
-            {locale.toUpperCase()}
-          </Link>
-        </span>
+    <select
+      aria-label="Language"
+      value={active}
+      disabled={isPending}
+      onChange={(e) => {
+        const nextLocale = e.target.value
+        startTransition(() => {
+          router.replace(pathname, { locale: nextLocale })
+        })
+      }}
+      className="cursor-pointer rounded-md border border-zinc-200 bg-transparent py-1 pr-6 pl-2 text-xs text-zinc-600 transition-colors hover:text-zinc-900 focus:outline-none dark:border-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-100"
+    >
+      {routing.locales.map((locale) => (
+        <option key={locale} value={locale} className="text-black">
+          {LOCALE_LABELS[locale] ?? locale.toUpperCase()}
+        </option>
       ))}
-    </div>
+    </select>
   )
 }

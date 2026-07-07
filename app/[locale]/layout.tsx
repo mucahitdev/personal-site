@@ -8,7 +8,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { LayoutShell } from '../layout-shell'
-import { routing } from '@/i18n/routing'
+import { routing, isRtl } from '@/i18n/routing'
 import { WEBSITE_URL } from '@/lib/constants'
 
 export const viewport: Viewport = {
@@ -105,7 +105,7 @@ export default async function RootLayout({
   setRequestLocale(locale)
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} dir={isRtl(locale) ? 'rtl' : 'ltr'} suppressHydrationWarning>
       <body
         className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >

@@ -1,0 +1,139 @@
+export const meta = {
+  title:
+    "Jak uruchomić dowolną aplikację z widżetu na ekranie początkowym lub ekranie blokady iPhone",
+  description:
+    "Instrukcja krok po kroku, jak uruchamiać aplikacje bezpośrednio z widżetów na ekranie początkowym i ekranie blokady iOS — dzięki widżetom folderów każda aplikacja jest o jedno dotknięcie, bez przewijania stron pełnych ikon.",
+  keywords: [
+    "uruchomienie aplikacji z widżetu iphone",
+    "widżet ekranu blokady do aplikacji",
+    "widżet ekranu początkowego otwieranie aplikacji",
+    "widżet folderu ios",
+    "widżet launcher aplikacji iphone",
+    "dotknij widżet aby otworzyć aplikację",
+  ],
+  ogTitle: "Jak uruchomić dowolną aplikację z widżetu na iPhone",
+  ogDescription:
+    "Instrukcja krok po kroku, jak otwierać aplikacje bezpośrednio z widżetów na ekranie początkowym i ekranie blokady w iOS.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak uruchomić dowolną aplikację z widżetu na ekranie początkowym lub ekranie blokady iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pl/blog/launch-apps-from-widgets-ios",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Uruchom aplikację z widżetu na ekranie początkowym lub ekranie blokady iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Zainstaluj aplikację z widżetem folderu",
+        text: "Pobierz z App Store aplikację będącą launcherem w widżecie, na przykład FolderMini.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zbuduj folder z aplikacjami",
+        text: "Otwórz aplikację i dodaj do folderu aplikacje, do których chcesz mieć szybki dostęp.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj widżet",
+        text: "Przytrzymaj palec na ekranie początkowym lub ekranie blokady, dotknij przycisku plus i dodaj widżet folderu.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dotknij, aby uruchomić",
+        text: "Każdy kafelek pokazuje prawdziwą ikonę aplikacji. Dotknij kafelka, aby otworzyć daną aplikację bezpośrednio.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy można otworzyć aplikację bezpośrednio z widżetu na iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. Dzięki widżetowi-launcherowi aplikacji, takiemu jak FolderMini, każdy kafelek w widżecie pokazuje prawdziwą ikonę aplikacji, a jego dotknięcie otwiera daną aplikację bezpośrednio, bez przechodzenia najpierw przez menu.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy mogę umieścić launcher aplikacji na ekranie blokady iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. iOS obsługuje dodatkowe widżety na ekranie blokady, a aplikacje takie jak FolderMini pozwalają umieścić tam najczęściej używane aplikacje, dzięki czemu są one o jedno dotknięcie od ekranu blokady.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak uruchomić dowolną aplikację z widżetu na ekranie początkowym lub ekranie blokady iPhone
+
+**Szybka odpowiedź:** iOS nie pozwala otworzyć konkretnej aplikacji z systemowego widżetu jednym dotknięciem, ale dedykowany widżet-launcher aplikacji już tak. Aplikacje takie jak [FolderMini](/foldermini) zamieniają widżet w siatkę prawdziwych ikon aplikacji — dotknij dowolnego kafelka, a dana aplikacja otworzy się natychmiast, prosto z ekranu początkowego lub ekranu blokady.
+
+Jeśli kiedykolwiek marzyłeś, aby móc dotknąć widżetu i od razu przejść do aplikacji — zamiast przewijać strony pełne ikon albo otwierać Bibliotekę apek — ten poradnik jest dla Ciebie.
+
+---
+
+## Dlaczego systemowe widżety iOS nie mogą uruchomić konkretnej aplikacji
+
+Wbudowane widżety Apple zostały zaprojektowane, aby *pokazywać informacje* (pogodę, kalendarz, poziom baterii), a po dotknięciu otwierać aplikację, do której należy dany widżet. Nigdy nie miały działać jako launcher pozostałych aplikacji. Właśnie dlatego bez dodatkowych narzędzi nie da się zbudować widżetu, w którym każdy kafelek otwiera inną aplikację.
+
+Rozwiązaniem jest **aplikacja z widżetem folderu** — niewielkie narzędzie, które wyświetla wewnątrz widżetu siatkę kafelków aplikacji i otwiera odpowiednią aplikację po dotknięciu kafelka.
+
+## Krok po kroku: uruchamianie aplikacji z widżetu
+
+1. **Zainstaluj aplikację z widżetem folderu.** Pobierz z App Store widżet-launcher aplikacji, na przykład [FolderMini](/foldermini). Jest darmowy.
+2. **Zbuduj folder.** Otwórz aplikację i dodaj aplikacje, do których chcesz mieć szybki dostęp — pogrupuj je według rutyny, projektu lub nastroju.
+3. **Dodaj widżet do ekranu początkowego.** Przytrzymaj palec na pustym obszarze ekranu początkowego, dotknij **+** w górnym rogu, wyszukaj aplikację i wybierz rozmiar widżetu (mały, średni lub duży).
+4. **Albo dodaj go do ekranu blokady.** Przytrzymaj palec na ekranie blokady, dotknij **Dostosuj** i dodaj dodatkowy widżet z najczęściej używanymi aplikacjami.
+5. **Dotknij, aby uruchomić.** Każdy kafelek pokazuje prawdziwą ikonę aplikacji. Jedno dotknięcie otwiera daną aplikację bezpośrednio.
+
+## Na co zwrócić uwagę w widżecie-launcherze aplikacji
+
+| Funkcja | Dlaczego ma znaczenie |
+| --- | --- |
+| Prawdziwe ikony aplikacji | Kafelki, które faktycznie rozpoznajesz, a nie ogólne zastępniki |
+| Uruchamianie jednym dotknięciem | Aplikacja otwiera się bezpośrednio — bez pośredniego menu |
+| Obsługa ekranu blokady | Twoje najważniejsze aplikacje są dostępne bez odblokowywania do ekranu początkowego |
+| Wiele rozmiarów | Zmieść 2 aplikacje albo 20, zależnie od rozmiaru widżetu |
+| Darmowe wypróbowanie | Bez zobowiązań sprawdzisz, czy pasuje do Twojego sposobu pracy |
+
+[FolderMini](/foldermini) obejmuje to wszystko: kolorowe, własne foldery, idealnie dopracowane prawdziwe ikony, uruchamianie jednym dotknięciem oraz widżety na ekran początkowy i ekran blokady w małym, średnim i dużym rozmiarze.
+
+## Częste pytania
+
+**Czy można otworzyć aplikację bezpośrednio z widżetu na iPhone?**
+Tak — dzięki widżetowi-launcherowi aplikacji, takiemu jak FolderMini, dotknięcie kafelka otwiera daną aplikację bezpośrednio.
+
+**Czy mogę umieścić launcher aplikacji na ekranie blokady?**
+Tak. iOS obsługuje dodatkowe widżety na ekranie blokady, a FolderMini pozwala umieścić tam najczęściej używane aplikacje.
+
+**Czy działa to bez skrótów i automatyzacji?**
+Tak. Aplikacja z widżetem folderu obsługuje uruchamianie natywnie, więc nie musisz niczego budować w aplikacji Skróty.
+
+---
+
+Gotowy, aby to wypróbować? [Pobierz FolderMini z App Store](/foldermini/download) i zamień dowolny widżet w launcher działający jednym dotknięciem.
