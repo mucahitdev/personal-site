@@ -71,6 +71,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
+  // FaceIdent: translated in en + tr (page + legal pages authored in both).
+  for (const locale of ['en', 'tr']) {
+    entries.push({
+      url: localePath(locale, 'faceident'),
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      alternates: {
+        languages: {
+          en: `${base}/faceident`,
+          tr: `${base}/tr/faceident`,
+        },
+      },
+    })
+  }
+  for (const l of legal) {
+    for (const locale of ['en', 'tr']) {
+      entries.push({
+        url: localePath(locale, `faceident/${l}`),
+        lastModified: now,
+        changeFrequency: 'yearly',
+        priority: 0.3,
+        alternates: {
+          languages: {
+            en: `${base}/faceident/${l}`,
+            tr: `${base}/tr/faceident/${l}`,
+          },
+        },
+      })
+    }
+  }
+
   // Other apps — English only.
   for (const p of projects) {
     entries.push({
