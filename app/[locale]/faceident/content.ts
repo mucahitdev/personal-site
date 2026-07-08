@@ -10,7 +10,7 @@ export type FaceIdentContent = {
   ogTitle: string
   ogDescription: string
   intro: string[]
-  comingSoon: string
+  downloadCta: string
   featuresHeading: string
   features: string[]
   privacyHeading: string
@@ -52,7 +52,7 @@ export const FACEIDENT_CONTENT: Record<'en' | 'tr', FaceIdentContent> = {
       'FaceIdent organizes your photo library the private way: it recognizes and groups the same person or pet across all your photos, tags objects and scenes, reads text inside images, and powers a fast, natural search — all entirely on your iPhone.',
       'There is no account, no sign-up, and no server. Every face, every group, and every search runs on-device using Apple’s Vision framework and machine-learning models bundled inside the app. Your photos and everything FaceIdent learns about them never leave your device.',
     ],
-    comingSoon: 'Coming soon to the App Store',
+    downloadCta: 'Download on the App Store',
     featuresHeading: 'Key Features',
     features: [
       'Recognize and group the same person across your entire library',
@@ -143,7 +143,7 @@ export const FACEIDENT_CONTENT: Record<'en' | 'tr', FaceIdentContent> = {
       'FaceIdent, fotoğraf kitaplığını gizli yoldan düzenler: aynı kişiyi veya evcil hayvanı tüm fotoğrafların arasında tanıyıp gruplar, nesne ve sahneleri etiketler, görüntülerdeki metni okur ve hızlı, doğal bir aramayı güçlendirir — hepsi tamamen iPhone’unda.',
       'Hesap yok, kayıt yok, sunucu yok. Her yüz, her grup ve her arama, Apple’ın Vision çerçevesi ve uygulamanın içine gömülü makine öğrenmesi modelleriyle cihaz-içinde çalışır. Fotoğrafların ve FaceIdent’in onlar hakkında öğrendiği her şey cihazından asla çıkmaz.',
     ],
-    comingSoon: 'Yakında App Store’da',
+    downloadCta: 'App Store’dan İndir',
     featuresHeading: 'Öne Çıkan Özellikler',
     features: [
       'Aynı kişiyi tüm kitaplığın boyunca tanı ve grupla',
