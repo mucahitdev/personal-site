@@ -56,6 +56,19 @@ export const PROJECTS: Project[] = [
     },
   },
   {
+    name: 'FaceIdent',
+    description:
+      'Recognize and group faces and pets, tag objects, read text, and search your photos — entirely on-device, nothing ever leaves your iPhone.',
+    id: 'faceident',
+    type: 'personal',
+    platform: 'mobile',
+    technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'Vision' }],
+    links: {
+      ios: 'https://apps.apple.com/app/id6788569032',
+      website: 'https://mucahitk.com/faceident',
+    },
+  },
+  {
     name: 'Tycoon Heir',
     description:
       'A swipe-to-decide story game — inherit a family company and rule it one decision at a time while keeping every meter in balance.',
