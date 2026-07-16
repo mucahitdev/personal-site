@@ -3,24 +3,24 @@ import Link from 'next/link'
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'DualShot Terms of Use',
-  description: 'Terms of Use for the DualShot iOS application.',
+  title: 'Verso Terms of Use',
+  description: 'Terms of Use for the Verso iOS application.',
 }
 
-export default function DualShotTermsOfUsePage() {
+export default function VersoTermsOfUsePage() {
   return (
     <main className="pb-10">
       <article className="space-y-6 text-sm leading-7 text-zinc-700 dark:text-zinc-300">
         <div className="space-y-2">
           <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
-            DualShot Terms of Use
+            Verso Terms of Use
           </h1>
           <p>Effective date: June 28, 2026</p>
         </div>
 
         <p>
-          These Terms of Use govern your use of the DualShot mobile
-          application. By using DualShot, you agree to these terms.
+          These Terms of Use govern your use of the Verso mobile
+          application. By using Verso, you agree to these terms.
         </p>
 
         <section className="space-y-2">
@@ -29,7 +29,7 @@ export default function DualShotTermsOfUsePage() {
           </h2>
           <ul className="list-disc space-y-1 pl-5">
             <li>
-              DualShot is provided for personal, lawful use to capture photos
+              Verso is provided for personal, lawful use to capture photos
               and videos with supported iOS devices.
             </li>
             <li>
@@ -44,7 +44,7 @@ export default function DualShotTermsOfUsePage() {
             2. Permissions and Device Access
           </h2>
           <p>
-            DualShot requires camera, microphone, and photo library permissions
+            Verso requires camera, microphone, and photo library permissions
             to provide core functionality. If permissions are denied, some or
             all features may not work.
           </p>
@@ -57,7 +57,7 @@ export default function DualShotTermsOfUsePage() {
           <ul className="list-disc space-y-1 pl-5">
             <li>
               You retain ownership of photos and videos you create using
-              DualShot.
+              Verso.
             </li>
             <li>
               You are solely responsible for the content you record, store, and
@@ -71,13 +71,13 @@ export default function DualShotTermsOfUsePage() {
             4. Advertising
           </h2>
           <p>
-            DualShot may display advertising provided by third parties such as
+            Verso may display advertising provided by third parties such as
             Google AdMob. Your use of the app is subject to the privacy practices
             of those providers as described in our{' '}
-            <Link className="underline" href="/dualshot/privacy-policy">
+            <Link className="underline" href="/verso/privacy-policy">
               Privacy Policy
             </Link>
-            . A DualShot Pro subscription removes ads.
+            . A Verso Pro subscription removes ads.
           </p>
         </section>
 
@@ -87,7 +87,7 @@ export default function DualShotTermsOfUsePage() {
           </h2>
           <ul className="list-disc space-y-1 pl-5">
             <li>
-              DualShot offers an optional premium upgrade (&quot;DualShot
+              Verso offers an optional premium upgrade (&quot;Verso
               Pro&quot;) as an auto-renewable subscription, available on monthly
               and yearly plans, and as a one-time lifetime purchase, sold through
               Apple&apos;s In-App Purchase.
@@ -121,7 +121,7 @@ export default function DualShotTermsOfUsePage() {
           <h2 className="text-lg font-medium text-zinc-900 dark:text-zinc-100">
             6. Prohibited Conduct
           </h2>
-          <p>You agree not to use DualShot to:</p>
+          <p>You agree not to use Verso to:</p>
           <ul className="list-disc space-y-1 pl-5">
             <li>Violate laws, privacy rights, or intellectual property rights.</li>
             <li>Attempt to reverse engineer or misuse the app.</li>
@@ -134,7 +134,7 @@ export default function DualShotTermsOfUsePage() {
             7. Disclaimers
           </h2>
           <p>
-            DualShot is provided &quot;as is&quot; and &quot;as available&quot; without warranties of
+            Verso is provided &quot;as is&quot; and &quot;as available&quot; without warranties of
             any kind, to the fullest extent permitted by law. We do not
             guarantee uninterrupted operation or compatibility with every device
             model.
@@ -146,7 +146,7 @@ export default function DualShotTermsOfUsePage() {
             8. Limitation of Liability
           </h2>
           <p>
-            To the maximum extent permitted by law, DualShot and its developer
+            To the maximum extent permitted by law, Verso and its developer
             will not be liable for indirect, incidental, special, consequential,
             or punitive damages resulting from your use of the app.
           </p>
@@ -175,8 +175,8 @@ export default function DualShotTermsOfUsePage() {
         </section>
 
         <p className="pt-2">
-          <Link className="underline" href="/dualshot/privacy-policy">
-            Read DualShot Privacy Policy
+          <Link className="underline" href="/verso/privacy-policy">
+            Read Verso Privacy Policy
           </Link>
         </p>
       </article>

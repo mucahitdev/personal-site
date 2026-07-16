@@ -2,25 +2,25 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'DualShot',
-  description: 'DualShot app overview, support, and legal links.',
+  title: 'Verso',
+  description: 'Verso app overview, support, and legal links.',
 }
 
-export default function DualShotPage() {
+export default function VersoPage() {
   return (
     <main className="pb-10">
       <article className="space-y-8 text-sm leading-7 text-zinc-700 dark:text-zinc-300">
         <section className="space-y-3">
           <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
-            DualShot
+            Verso
           </h1>
           <p>
-            DualShot is an iOS camera app that lets you capture with two cameras
+            Verso is an iOS camera app that lets you capture with two cameras
             at the same time. You can shoot photos or videos, reposition PiP,
             and save your results directly to your Photo Library.
           </p>
           <p>
-            Built for fast content creation, DualShot focuses on an easy
+            Built for fast content creation, Verso focuses on an easy
             dual-camera workflow with quality and frame rate controls.
           </p>
         </section>
@@ -55,10 +55,10 @@ export default function DualShotPage() {
             Legal
           </h2>
           <div className="flex flex-col gap-1">
-            <Link className="underline" href="/dualshot/privacy-policy">
+            <Link className="underline" href="/verso/privacy-policy">
               Privacy Policy
             </Link>
-            <Link className="underline" href="/dualshot/terms-of-use">
+            <Link className="underline" href="/verso/terms-of-use">
               Terms of Use
             </Link>
           </div>

@@ -5,7 +5,7 @@ import { routing } from '@/i18n/routing'
 const base = WEBSITE_URL.replace(/\/$/, '')
 
 // App pages that only exist in English (not yet translated).
-const projects = ['dualshot', 'stamper', 'tradelands']
+const projects = ['verso', 'stamper', 'tradelands']
 const legal = ['privacy-policy', 'terms-of-use']
 
 // English-only legacy blog posts (single MDX files, unprefixed).

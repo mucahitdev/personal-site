@@ -4,12 +4,12 @@ import { Link, usePathname } from '@/i18n/navigation'
 import { Footer } from './footer'
 import { Header } from './header'
 
-function DualShotHeader() {
+function VersoHeader() {
   return (
     <header className="mb-8 flex items-center justify-between">
       <div>
-        <Link href="/dualshot" className="font-medium text-black dark:text-white">
-          DualShot
+        <Link href="/verso" className="font-medium text-black dark:text-white">
+          Verso
         </Link>
         <p className="text-zinc-600 dark:text-zinc-500">
           Dual camera capture app
@@ -25,19 +25,19 @@ function DualShotHeader() {
   )
 }
 
-function DualShotFooter() {
+function VersoFooter() {
   return (
     <footer className="mt-24 border-t border-zinc-100 px-0 py-4 dark:border-zinc-800">
       <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-zinc-500 dark:text-zinc-400">
-        <span>© 2026 DualShot</span>
+        <span>© 2026 Verso</span>
         <div className="flex items-center gap-4">
           <a className="underline" href="mailto:infokoksoft@gmail.com">
             Support
           </a>
-          <Link className="underline" href="/dualshot/privacy-policy">
+          <Link className="underline" href="/verso/privacy-policy">
             Privacy
           </Link>
-          <Link className="underline" href="/dualshot/terms-of-use">
+          <Link className="underline" href="/verso/terms-of-use">
             Terms
           </Link>
         </div>
@@ -93,17 +93,17 @@ function TradelandsFooter() {
 
 export function LayoutShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
-  const isDualShotRoute = pathname.startsWith('/dualshot')
+  const isVersoRoute = pathname.startsWith('/verso')
   const isTradelandsRoute = pathname.startsWith('/tradelands')
 
   function renderHeader() {
-    if (isDualShotRoute) return <DualShotHeader />
+    if (isVersoRoute) return <VersoHeader />
     if (isTradelandsRoute) return <TradelandsHeader />
     return <Header />
   }
 
   function renderFooter() {
-    if (isDualShotRoute) return <DualShotFooter />
+    if (isVersoRoute) return <VersoFooter />
     if (isTradelandsRoute) return <TradelandsFooter />
     return <Footer />
   }

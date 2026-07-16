@@ -2,26 +2,26 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'DualShot Privacy Policy',
-  description: 'Privacy Policy for the DualShot iOS application.',
+  title: 'Verso Privacy Policy',
+  description: 'Privacy Policy for the Verso iOS application.',
 }
 
-export default function DualShotPrivacyPolicyPage() {
+export default function VersoPrivacyPolicyPage() {
   return (
     <main className="pb-10">
       <article className="space-y-6 text-sm leading-7 text-zinc-700 dark:text-zinc-300">
         <div className="space-y-2">
           <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
-            DualShot Privacy Policy
+            Verso Privacy Policy
           </h1>
           <p>Effective date: June 28, 2026</p>
         </div>
 
         <p>
-          DualShot is designed to record and capture content from multiple
+          Verso is designed to record and capture content from multiple
           device cameras at the same time. We respect your privacy and keep your
           captured media on your device. To run the app, show advertising, and
-          manage optional subscriptions, DualShot uses a small number of
+          manage optional subscriptions, Verso uses a small number of
           third-party services described below, which may process limited
           technical data and identifiers.
         </p>
@@ -55,8 +55,8 @@ export default function DualShotPrivacyPolicyPage() {
               formatting, and saving.
             </li>
             <li>
-              DualShot does not require account creation and does not upload
-              your media to a DualShot server.
+              Verso does not require account creation and does not upload
+              your media to a Verso server.
             </li>
             <li>
               We do not sell your personal data and do not use your media for
@@ -70,7 +70,7 @@ export default function DualShotPrivacyPolicyPage() {
             Third-Party Services
           </h2>
           <p>
-            DualShot uses Google Firebase (Analytics, Crashlytics, Performance,
+            Verso uses Google Firebase (Analytics, Crashlytics, Performance,
             and Remote Config) to understand aggregate, anonymous usage, diagnose
             crashes, and improve stability. These tools may process limited
             device and diagnostic information in accordance with{' '}
@@ -91,7 +91,7 @@ export default function DualShotPrivacyPolicyPage() {
             Advertising
           </h2>
           <p>
-            DualShot may display ads through Google AdMob. To serve and measure
+            Verso may display ads through Google AdMob. To serve and measure
             ads, AdMob may process limited device information and identifiers,
             such as the advertising identifier, in accordance with{' '}
             <a
@@ -102,9 +102,9 @@ export default function DualShotPrivacyPolicyPage() {
             >
               Google&apos;s Privacy Policy
             </a>
-            . Where required, DualShot asks for your permission before using
+            . Where required, Verso asks for your permission before using
             tracking identifiers, and you can change this at any time in iOS
-            Settings. A DualShot Pro subscription removes ads.
+            Settings. A Verso Pro subscription removes ads.
           </p>
         </section>
 
@@ -113,14 +113,14 @@ export default function DualShotPrivacyPolicyPage() {
             Subscriptions and Purchases
           </h2>
           <p>
-            DualShot offers an optional premium upgrade (&quot;DualShot
+            Verso offers an optional premium upgrade (&quot;Verso
             Pro&quot;) as an auto-renewable subscription and as a one-time
             lifetime purchase. Payments are processed by Apple through your App
             Store account; we never receive or store your payment card details.
           </p>
           <p>
             To validate purchases, restore them across your devices, and manage
-            your premium access, DualShot uses{' '}
+            your premium access, Verso uses{' '}
             <a
               className="underline"
               href="https://adapty.io/privacy/"
@@ -152,7 +152,7 @@ export default function DualShotPrivacyPolicyPage() {
             Children&apos;s Privacy
           </h2>
           <p>
-            DualShot is not directed to children under 13, and we do not
+            Verso is not directed to children under 13, and we do not
             knowingly collect personal information from children.
           </p>
         </section>
@@ -180,8 +180,8 @@ export default function DualShotPrivacyPolicyPage() {
         </section>
 
         <p className="pt-2">
-          <Link className="underline" href="/dualshot/terms-of-use">
-            Read DualShot Terms of Use
+          <Link className="underline" href="/verso/terms-of-use">
+            Read Verso Terms of Use
           </Link>
         </p>
       </article>

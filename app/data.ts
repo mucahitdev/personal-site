@@ -82,10 +82,10 @@ export const PROJECTS: Project[] = [
     },
   },
   {
-    name: 'DualShot',
+    name: 'Verso',
     description:
       'Record portrait and landscape at once — capture 9:16 and 16:9 simultaneously in photo or video mode.',
-    id: 'dualshot',
+    id: 'verso',
     type: 'personal',
     platform: 'mobile',
     technologies: [
@@ -94,7 +94,7 @@ export const PROJECTS: Project[] = [
     ],
     links: {
       ios: 'https://apps.apple.com/app/id6762179530',
-      website: 'https://mucahitk.com/dualshot',
+      website: 'https://mucahitk.com/verso',
     },
   },
   {
