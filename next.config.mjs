@@ -8,9 +8,28 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/widgetloft/download',
+        destination: 'https://apps.apple.com/app/id6782827870',
+        permanent: false,
+      },
+      // Legacy download link (kept direct to avoid a double hop).
+      {
         source: '/foldermini/download',
         destination: 'https://apps.apple.com/app/id6782827870',
         permanent: false,
+      },
+      // FolderMini was renamed to WidgetLoft; the App Store listing and older
+      // links still point at /foldermini, so keep them resolving.
+      {
+        source: '/foldermini/:path*',
+        destination: '/widgetloft/:path*',
+        permanent: true,
+      },
+      {
+        source:
+          '/:locale(tr|es|pt|de|fr|it|nl|ru|pl|ja|ko|zh|ar|hi|id|vi)/foldermini/:path*',
+        destination: '/:locale/widgetloft/:path*',
+        permanent: true,
       },
       // The app shipped as DualShot; its App Store listing still points at the
       // old paths. Keep them resolving until that metadata is updated.

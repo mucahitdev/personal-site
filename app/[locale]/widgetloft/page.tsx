@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import { Link } from '@/i18n/navigation'
 import { setRequestLocale } from 'next-intl/server'
-import { FOLDERMINI_CONTENT } from './content'
+import { WIDGETLOFT_CONTENT } from './content'
 
 const APP_STORE_URL = 'https://apps.apple.com/app/id6782827870'
-const EN_URL = 'https://mucahitk.com/foldermini'
-const TR_URL = 'https://mucahitk.com/tr/foldermini'
+const EN_URL = 'https://mucahitk.com/widgetloft'
+const TR_URL = 'https://mucahitk.com/tr/widgetloft'
 
 function pickLocale(locale: string): 'en' | 'tr' {
   return locale === 'tr' ? 'tr' : 'en'
@@ -17,8 +17,8 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const c = FOLDERMINI_CONTENT[pickLocale(locale)]
-  const canonical = locale === 'tr' ? '/tr/foldermini' : '/foldermini'
+  const c = WIDGETLOFT_CONTENT[pickLocale(locale)]
+  const canonical = locale === 'tr' ? '/tr/widgetloft' : '/widgetloft'
 
   return {
     title: { absolute: c.metaTitle },
@@ -27,9 +27,9 @@ export async function generateMetadata({
     alternates: {
       canonical,
       languages: {
-        en: '/foldermini',
-        tr: '/tr/foldermini',
-        'x-default': '/foldermini',
+        en: '/widgetloft',
+        tr: '/tr/widgetloft',
+        'x-default': '/widgetloft',
       },
     },
     itunes: { appId: '6782827870' },
@@ -48,7 +48,7 @@ export async function generateMetadata({
   }
 }
 
-export default async function FolderMiniPage({
+export default async function WidgetLoftPage({
   params,
 }: {
   params: Promise<{ locale: string }>
@@ -56,7 +56,7 @@ export default async function FolderMiniPage({
   const { locale } = await params
   setRequestLocale(locale)
   const key = pickLocale(locale)
-  const c = FOLDERMINI_CONTENT[key]
+  const c = WIDGETLOFT_CONTENT[key]
   const pageUrl = key === 'tr' ? TR_URL : EN_URL
 
   const jsonLd = [
@@ -64,7 +64,7 @@ export default async function FolderMiniPage({
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
       inLanguage: key,
-      name: 'FolderMini',
+      name: 'WidgetLoft',
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'iOS',
       url: pageUrl,
@@ -98,7 +98,7 @@ export default async function FolderMiniPage({
           name: c.breadcrumbHome,
           item: 'https://mucahitk.com',
         },
-        { '@type': 'ListItem', position: 2, name: 'FolderMini', item: pageUrl },
+        { '@type': 'ListItem', position: 2, name: 'WidgetLoft', item: pageUrl },
       ],
     },
   ]
@@ -112,7 +112,7 @@ export default async function FolderMiniPage({
       <article className="space-y-8 text-sm leading-7 text-zinc-700 dark:text-zinc-300">
         <section className="space-y-3">
           <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
-            FolderMini
+            WidgetLoft
           </h1>
           {c.intro.map((p) => (
             <p key={p.slice(0, 24)}>{p}</p>
@@ -194,10 +194,10 @@ export default async function FolderMiniPage({
             {c.legalHeading}
           </h2>
           <div className="flex flex-col gap-1">
-            <Link className="underline" href="/foldermini/privacy-policy">
+            <Link className="underline" href="/widgetloft/privacy-policy">
               {c.privacyLabel}
             </Link>
-            <Link className="underline" href="/foldermini/terms-of-use">
+            <Link className="underline" href="/widgetloft/terms-of-use">
               {c.termsLabel}
             </Link>
           </div>

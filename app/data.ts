@@ -43,16 +43,16 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'FolderMini',
+    name: 'WidgetLoft',
     description:
       'Organize your installed apps into colorful folders and launch them straight from Home Screen and Lock Screen widgets.',
-    id: 'foldermini',
+    id: 'widgetloft',
     type: 'personal',
     platform: 'mobile',
     technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'WidgetKit' }],
     links: {
       ios: 'https://apps.apple.com/app/id6782827870',
-      website: 'https://mucahitk.com/foldermini',
+      website: 'https://mucahitk.com/widgetloft',
     },
   },
   {

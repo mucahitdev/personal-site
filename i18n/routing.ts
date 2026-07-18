@@ -23,8 +23,8 @@ export const routing = defineRouting({
     'vi',
   ],
   defaultLocale: 'en',
-  // Default locale (en) keeps clean URLs (/foldermini); other locales are
-  // prefixed (/tr/foldermini). This preserves every existing English URL.
+  // Default locale (en) keeps clean URLs (/widgetloft); other locales are
+  // prefixed (/tr/widgetloft). This preserves every existing English URL.
   localePrefix: 'as-needed',
   // Keep URLs deterministic: no automatic Accept-Language redirects, so `/`
   // always serves English and localized URLs are reached explicitly.

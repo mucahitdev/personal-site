@@ -46,25 +46,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // FolderMini: translated in en + tr (other locales fall back to English,
+  // WidgetLoft: translated in en + tr (other locales fall back to English,
   // so only the two authored languages are advertised).
   for (const locale of ['en', 'tr']) {
     entries.push({
-      url: localePath(locale, 'foldermini'),
+      url: localePath(locale, 'widgetloft'),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
       alternates: {
         languages: {
-          en: `${base}/foldermini`,
-          tr: `${base}/tr/foldermini`,
+          en: `${base}/widgetloft`,
+          tr: `${base}/tr/widgetloft`,
         },
       },
     })
   }
   for (const l of legal) {
     entries.push({
-      url: `${base}/foldermini/${l}`,
+      url: `${base}/widgetloft/${l}`,
       lastModified: now,
       changeFrequency: 'yearly',
       priority: 0.3,

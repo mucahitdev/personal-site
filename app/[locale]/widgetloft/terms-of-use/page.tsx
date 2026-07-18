@@ -3,24 +3,24 @@ import Link from 'next/link'
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'FolderMini Terms of Use',
-  description: 'Terms of Use for the FolderMini iOS application.',
+  title: 'WidgetLoft Terms of Use',
+  description: 'Terms of Use for the WidgetLoft iOS application.',
 }
 
-export default function FolderMiniTermsOfUsePage() {
+export default function WidgetLoftTermsOfUsePage() {
   return (
     <main className="pb-10">
       <article className="space-y-6 text-sm leading-7 text-zinc-700 dark:text-zinc-300">
         <div className="space-y-2">
           <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
-            FolderMini Terms of Use
+            WidgetLoft Terms of Use
           </h1>
           <p>Effective date: June 27, 2026</p>
         </div>
 
         <p>
-          These Terms of Use govern your use of the FolderMini mobile
-          application. By using FolderMini, you agree to these terms.
+          These Terms of Use govern your use of the WidgetLoft mobile
+          application. By using WidgetLoft, you agree to these terms.
         </p>
 
         <section className="space-y-2">
@@ -29,7 +29,7 @@ export default function FolderMiniTermsOfUsePage() {
           </h2>
           <ul className="list-disc space-y-1 pl-5">
             <li>
-              FolderMini is provided for personal, lawful use to organize and
+              WidgetLoft is provided for personal, lawful use to organize and
               launch apps from folders and widgets on supported iOS devices.
             </li>
             <li>
@@ -44,7 +44,7 @@ export default function FolderMiniTermsOfUsePage() {
             2. Widgets and Device Access
           </h2>
           <p>
-            FolderMini stores your folder configuration on your device and uses
+            WidgetLoft stores your folder configuration on your device and uses
             it to render Home Screen and Lock Screen widgets. Some features
             depend on iOS behavior and may vary by device, iOS version, or
             system limitations outside our control.
@@ -56,10 +56,10 @@ export default function FolderMiniTermsOfUsePage() {
             3. Advertising
           </h2>
           <p>
-            FolderMini may display advertising provided by third parties such as
+            WidgetLoft may display advertising provided by third parties such as
             Google AdMob. Your use of the app is subject to the privacy practices
             of those providers as described in our{' '}
-            <Link className="underline" href="/foldermini/privacy-policy">
+            <Link className="underline" href="/widgetloft/privacy-policy">
               Privacy Policy
             </Link>
             .
@@ -72,7 +72,7 @@ export default function FolderMiniTermsOfUsePage() {
           </h2>
           <ul className="list-disc space-y-1 pl-5">
             <li>
-              FolderMini offers an optional premium upgrade (&quot;FolderMini
+              WidgetLoft offers an optional premium upgrade (&quot;WidgetLoft
               Pro&quot;) as an auto-renewable subscription and as a one-time
               lifetime purchase, sold through Apple&apos;s In-App Purchase.
             </li>
@@ -105,7 +105,7 @@ export default function FolderMiniTermsOfUsePage() {
           <h2 className="text-lg font-medium text-zinc-900 dark:text-zinc-100">
             5. Prohibited Conduct
           </h2>
-          <p>You agree not to use FolderMini to:</p>
+          <p>You agree not to use WidgetLoft to:</p>
           <ul className="list-disc space-y-1 pl-5">
             <li>Violate laws, privacy rights, or intellectual property rights.</li>
             <li>Attempt to reverse engineer or misuse the app.</li>
@@ -118,7 +118,7 @@ export default function FolderMiniTermsOfUsePage() {
             6. Disclaimers
           </h2>
           <p>
-            FolderMini is provided &quot;as is&quot; and &quot;as available&quot; without
+            WidgetLoft is provided &quot;as is&quot; and &quot;as available&quot; without
             warranties of any kind, to the fullest extent permitted by law. We do
             not guarantee uninterrupted operation or compatibility with every
             device model or iOS version.
@@ -130,7 +130,7 @@ export default function FolderMiniTermsOfUsePage() {
             7. Limitation of Liability
           </h2>
           <p>
-            To the maximum extent permitted by law, FolderMini and its developer
+            To the maximum extent permitted by law, WidgetLoft and its developer
             will not be liable for indirect, incidental, special, consequential,
             or punitive damages resulting from your use of the app.
           </p>
@@ -159,8 +159,8 @@ export default function FolderMiniTermsOfUsePage() {
         </section>
 
         <p className="pt-2">
-          <Link className="underline" href="/foldermini/privacy-policy">
-            Read FolderMini Privacy Policy
+          <Link className="underline" href="/widgetloft/privacy-policy">
+            Read WidgetLoft Privacy Policy
           </Link>
         </p>
       </article>

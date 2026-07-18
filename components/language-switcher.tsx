@@ -7,7 +7,7 @@ import { routing, LOCALE_LABELS } from '@/i18n/routing'
 
 // Dropdown language switcher. Navigates to the current path under the chosen
 // locale. Works cleanly for pages that share a slug across locales (home,
-// foldermini, and blog posts — which all use the same slug per locale).
+// widgetloft, and blog posts — which all use the same slug per locale).
 export function LanguageSwitcher() {
   const pathname = usePathname()
   const active = useLocale()

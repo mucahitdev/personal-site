@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 
 const TITLE = 'Mücahit Kökdemir — Frontend & Mobile Developer'
 const DESCRIPTION =
-  'Mücahit Kökdemir is a frontend & mobile developer building beautiful, functional web and iOS apps — including FolderMini, Verso, Spendi, and Lecto.'
+  'Mücahit Kökdemir is a frontend & mobile developer building beautiful, functional web and iOS apps — including WidgetLoft, Verso, Spendi, and Lecto.'
 
 export const metadata: Metadata = {
   metadataBase: new URL(WEBSITE_URL),
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     'SwiftUI',
     'React',
     'Next.js',
-    'FolderMini',
+    'WidgetLoft',
   ],
   alternates: { canonical: '/' },
   openGraph: {
