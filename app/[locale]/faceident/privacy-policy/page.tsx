@@ -14,7 +14,7 @@ const PRIVACY = {
     metaDescription:
       'Privacy Policy for the FaceIdent iOS app — everything runs on your device and no data ever leaves it.',
     title: 'FaceIdent Privacy Policy',
-    effective: 'Effective date: July 4, 2026',
+    effective: 'Effective date: August 29, 2026',
     intro: `FaceIdent organizes your photo library — recognizing and grouping faces and pets, identifying objects and scenes, reading text, and powering search — entirely on your device. FaceIdent has no account, no sign-up, and no servers. Your photos and everything FaceIdent learns about them stay on your device.`,
     onDeviceH: 'Everything Runs On Your Device',
     onDevice: `All processing — face and pet detection and recognition, object and scene recognition, text recognition (OCR), and search — runs locally on your device using Apple's Vision framework and machine-learning models bundled inside the app. FaceIdent makes no network requests and has no backend. No photo, face data, or analysis result is ever uploaded, transmitted, or shared.`,
@@ -33,11 +33,12 @@ const PRIVACY = {
     notH: 'What FaceIdent Does Not Do',
     not: [
       `No account or sign-up`,
-      `No servers, cloud storage, or network transmission of your data`,
+      `Your photos, face data, and analysis results never leave your device — no servers, no cloud storage, no transmission of that data`,
       `No analytics, tracking, or advertising`,
-      `No third-party SDKs`,
-      `We never sell or share your personal data`,
+      `We never sell your data, and we never share your photos or face data with anyone`,
     ],
+    subsH: 'Subscriptions & Purchases',
+    subs: `FaceIdent offers an optional paid "Pro" subscription. To process and validate purchases, the app uses Adapty, a third-party subscription-management service. When you make or restore a purchase, Adapty receives only the information needed to manage your subscription — your purchase and transaction details and an anonymous device identifier. Adapty never receives your photos, your face or pet data, or any result of the app's on-device analysis; that data stays on your device as described above. Adapty processes this purchase data as our service provider. You can learn more in Adapty's privacy policy at https://adapty.io/privacy/.`,
     retentionH: 'Data Retention & Deletion',
     retention: `Your analysis results remain on your device until you clear them. You can erase everything at any time using "Reset Data" in Settings, and uninstalling FaceIdent removes all of its local data.`,
     childrenH: `Children's Privacy`,
@@ -53,7 +54,7 @@ const PRIVACY = {
     metaDescription:
       'FaceIdent iOS uygulaması için Gizlilik Politikası — her şey cihazında çalışır, hiçbir veri dışarı çıkmaz.',
     title: 'FaceIdent Gizlilik Politikası',
-    effective: 'Yürürlük tarihi: 4 Temmuz 2026',
+    effective: 'Yürürlük tarihi: 29 Ağustos 2026',
     intro: `FaceIdent, fotoğraf kitaplığını düzenler — yüzleri ve evcil hayvanları tanıyıp gruplar, nesneleri ve sahneleri tanır, metin okur ve aramayı güçlendirir — tamamen senin cihazında. FaceIdent'in hesabı, kaydı ve sunucusu yoktur. Fotoğrafların ve FaceIdent'in onlar hakkında öğrendiği her şey cihazında kalır.`,
     onDeviceH: 'Her Şey Cihazında Çalışır',
     onDevice: `Tüm işlemler — yüz ve evcil hayvan tespiti/tanıması, nesne ve sahne tanıma, metin tanıma (OCR) ve arama — Apple'ın Vision çerçevesi ve uygulamanın içine gömülü makine öğrenmesi modelleri kullanılarak cihazında yerel olarak çalışır. FaceIdent hiçbir ağ isteği yapmaz ve arka uç (sunucu) yoktur. Hiçbir fotoğraf, yüz verisi veya analiz sonucu yüklenmez, iletilmez veya paylaşılmaz.`,
@@ -72,11 +73,12 @@ const PRIVACY = {
     notH: 'FaceIdent Neleri Yapmaz',
     not: [
       `Hesap veya kayıt yok`,
-      `Sunucu, bulut depolama veya verilerinin ağ üzerinden iletimi yok`,
+      `Fotoğrafların, yüz verin ve analiz sonuçların cihazından hiç çıkmaz — sunucu yok, bulut depolama yok, bu verilerin iletimi yok`,
       `Analitik, izleme veya reklam yok`,
-      `Üçüncü taraf SDK yok`,
-      `Kişisel verilerini asla satmaz veya paylaşmayız`,
+      `Verilerini asla satmayız ve fotoğraflarını ya da yüz verini kimseyle paylaşmayız`,
     ],
+    subsH: 'Abonelikler ve Satın Almalar',
+    subs: `FaceIdent, isteğe bağlı ücretli bir "Pro" aboneliği sunar. Satın almaları işlemek ve doğrulamak için uygulama, üçüncü taraf bir abonelik yönetim hizmeti olan Adapty'yi kullanır. Bir satın alma yaptığında veya geri yüklediğinde, Adapty yalnızca aboneliğini yönetmek için gereken bilgileri alır — satın alma ve işlem bilgilerin ve anonim bir cihaz tanımlayıcısı. Adapty; fotoğraflarını, yüz veya evcil hayvan verini ya da uygulamanın cihaz-içi analizinin herhangi bir sonucunu asla almaz; bu veriler yukarıda açıklandığı gibi cihazında kalır. Adapty bu satın alma verisini hizmet sağlayıcımız olarak işler. Daha fazla bilgi için Adapty'nin gizlilik politikasına bakabilirsin: https://adapty.io/privacy/.`,
     retentionH: 'Veri Saklama ve Silme',
     retention: `Analiz sonuçların, sen temizleyene kadar cihazında kalır. Ayarlar'daki "Verileri Sıfırla" ile her şeyi istediğin zaman silebilirsin; FaceIdent'i kaldırmak da tüm yerel verilerini kaldırır.`,
     childrenH: 'Çocukların Gizliliği',
@@ -167,6 +169,11 @@ export default async function FaceIdentPrivacyPolicyPage({
               <li key={li}>{li}</li>
             ))}
           </ul>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className={h2}>{c.subsH}</h2>
+          <p>{c.subs}</p>
         </section>
 
         <section className="space-y-2">
