@@ -6,7 +6,7 @@ import { FACEIDENT_CONTENT } from './content'
 const APP_STORE_URL = 'https://apps.apple.com/app/id6788569032'
 const EN_URL = 'https://mucahitk.com/faceident'
 const TR_URL = 'https://mucahitk.com/tr/faceident'
-const SUPPORT_EMAIL = 'kokdemir20@gmail.com'
+const SUPPORT_EMAIL = 'infokoksoft@gmail.com'
 
 function pickLocale(locale: string): 'en' | 'tr' {
   return locale === 'tr' ? 'tr' : 'en'

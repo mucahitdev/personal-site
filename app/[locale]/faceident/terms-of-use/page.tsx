@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Link } from '@/i18n/navigation'
 import { setRequestLocale } from 'next-intl/server'
 
-const SUPPORT_EMAIL = 'kokdemir20@gmail.com'
+const SUPPORT_EMAIL = 'infokoksoft@gmail.com'
 
 function pickLocale(locale: string): 'en' | 'tr' {
   return locale === 'tr' ? 'tr' : 'en'
