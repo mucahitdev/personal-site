@@ -19,9 +19,11 @@ const nextConfig = {
     ];
   },
   async redirects() {
-    // The Lecto site used to live on its own project at lecto.mucahitk.com with
-    // /<locale>/privacy style paths, and those URLs are in the App Store
-    // listing. Now that the domain points here, keep every one of them working.
+    // Lecto used to have its own project at lecto.mucahitk.com with
+    // /<locale>/privacy style paths, and those URLs are still in the App Store
+    // listing. Keep the subdomain pointed here until App Store Connect is
+    // updated to the mucahitk.com/lecto addresses, then this block and the
+    // domain itself can go.
     const lectoHost = [{ type: 'host', value: 'lecto.mucahitk.com' }];
     const lectoLegacy = [
       { from: '/', to: '/lecto' },
