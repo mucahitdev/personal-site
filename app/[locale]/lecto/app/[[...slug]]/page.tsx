@@ -6,7 +6,9 @@ const APP_STORE_URL = 'https://apps.apple.com/app/id6760270162'
 // Landing pages behind the universal links declared in
 // /.well-known/apple-app-site-association. With Lecto installed iOS opens the
 // app instead of the browser; these pages are what everyone else sees, so no
-// /app/* address is ever allowed to dead-end.
+// /lecto/app/* address is ever allowed to dead-end. The deep links live under
+// their own segment so the sibling /lecto pages — privacy policy in
+// particular — are never swallowed by the app.
 const TARGETS: Record<string, { title: string; lead: string; body: string[] }> =
   {
     'mosaic-video': {

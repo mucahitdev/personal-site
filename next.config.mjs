@@ -19,7 +19,29 @@ const nextConfig = {
     ];
   },
   async redirects() {
+    // Lecto used to have its own project at lecto.mucahitk.com with
+    // /<locale>/privacy style paths, and those URLs are still in the App Store
+    // listing. Keep the subdomain pointed here until App Store Connect is
+    // updated to the mucahitk.com/lecto addresses, then this block and the
+    // domain itself can go.
+    const lectoHost = [{ type: 'host', value: 'lecto.mucahitk.com' }];
+    const lectoLegacy = [
+      { from: '/', to: '/lecto' },
+      { from: '/privacy', to: '/lecto/privacy-policy' },
+      { from: '/terms', to: '/lecto/terms-of-use' },
+      { from: '/support', to: '/lecto/support' },
+    ].flatMap(({ from, to }) => [
+      { source: from, has: lectoHost, destination: to, permanent: true },
+      {
+        source: `/:locale(en|tr)${from === '/' ? '' : from}`,
+        has: lectoHost,
+        destination: to,
+        permanent: true,
+      },
+    ]);
+
     return [
+      ...lectoLegacy,
       {
         source: '/widgetloft/download',
         destination: 'https://apps.apple.com/app/id6782827870',
