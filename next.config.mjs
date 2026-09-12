@@ -5,6 +5,19 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  async headers() {
+    return [
+      {
+        // Apple fetches this without following redirects and requires JSON.
+        // It has no extension, so the content type has to be set explicitly.
+        source: '/.well-known/apple-app-site-association',
+        headers: [
+          { key: 'Content-Type', value: 'application/json' },
+          { key: 'Cache-Control', value: 'public, max-age=3600' },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       {
