@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["N4M9TL479J.com.koksoft.Lecto"],
+        "components": [{ "/": "/app/*" }]
+      }
+    ]
+  }
+}

@@ -5,7 +5,7 @@ import { routing } from '@/i18n/routing'
 const base = WEBSITE_URL.replace(/\/$/, '')
 
 // App pages that only exist in English (not yet translated).
-const projects = ['verso', 'stamper', 'tradelands']
+const projects = ['verso', 'stamper', 'tradelands', 'lecto']
 const legal = ['privacy-policy', 'terms-of-use']
 
 // English-only legacy blog posts (single MDX files, unprefixed).
@@ -120,6 +120,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })
     }
   }
+
+  // Lecto also has a support page next to the usual legal pair.
+  entries.push({
+    url: `${base}/lecto/support`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  })
 
   // Multilingual blog posts — one entry per locale, each with the full
   // hreflang alternates map.
