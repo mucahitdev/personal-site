@@ -1,0 +1,147 @@
+export const meta = {
+  title:
+    "如何在 iPhone 上搜索照片中的文字（截图和收据）",
+  description:
+    "通过照片中的文字查找任何截图、收据或笔记——一份使用设备端文字识别搜索 iPhone 照片中文字的指南，绝不上传你的照片库。",
+  keywords: [
+    "iphone 照片文字搜索",
+    "iphone 按文字查找截图",
+    "iphone 照片 ocr",
+    "iphone 照片搜索收据",
+    "查找图片中的文字",
+    "设备端照片文字搜索",
+  ],
+  ogTitle: "搜索 iPhone 照片中的文字",
+  ogDescription:
+    "通过照片中的文字查找截图、收据和笔记——在设备端进行，无需上传。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何在 iPhone 上搜索照片中的文字（截图和收据）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/search-text-in-photos-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "搜索 iPhone 照片中的文字",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "安装一款照片文字搜索应用",
+        text: "从 App Store 下载 FaceIdent，并允许访问你的照片库。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "让它在设备端读取你的照片",
+        text: "该应用会识别你的截图、收据和笔记中的文字，并在你的 iPhone 上建立索引。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "搜索一个词或短语",
+        text: "输入你记得见过的词——店名、代码、标题——匹配的照片就会出现。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "打开结果",
+        text: "点按照片查看，然后复制或分享你要找的文字。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "我可以搜索 iPhone 照片中的文字吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。像 FaceIdent 这样的应用通过设备端 OCR 读取照片中的文字，让你能够通过其中的词语搜索截图、收据和笔记。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "搜索照片中的文字可以离线使用吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。FaceIdent 在你的 iPhone 上识别并索引文字，因此即使没有网络连接，搜索也能继续使用。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "我照片中的文字会被发送到服务器吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不会。FaceIdent 完全在设备端进行文字识别，因此你照片中的任何内容都不会被上传。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何在 iPhone 上搜索照片中的文字（截图和收据）
+
+**快速解答：** 要通过照片中的文字查找照片，请使用一款具备设备端文字识别（OCR）的应用，它会读取并索引你的截图、收据和笔记。[FaceIdent](/faceident) 让你输入记得的词语——店名、代码、标题——并显示匹配的照片。一切都在你的 iPhone 上处理，不会上传任何内容。
+
+现代照片库中有一半是截图、收据、票据和白板照片。查找其中一张最快的方式，就是搜索它所包含的文字。
+
+---
+
+## 照片文字搜索的工作原理
+
+文字识别（OCR）会读取图像中印刷的文字——招牌、截图、收据——并将其转换为可搜索的文本。照片库建立索引后，输入一个词就能找到包含该词的每一张照片，即使文件没有标题或文件名。
+
+[FaceIdent](/faceident) 在设备端运行这项识别，因此你的截图和收据绝不会被上传。
+
+## 分步操作：搜索照片中的文字
+
+1. **安装一款照片文字搜索应用。** 从 App Store 下载 [FaceIdent](/faceident)，并允许访问你的照片。
+2. **让它在设备端读取。** 该应用会识别你的截图、收据和笔记中的文字，并在你的 iPhone 上建立索引。
+3. **搜索一个词或短语。** 输入你记得见过的内容——品牌、地址、确认码。
+4. **打开结果。** 点按匹配的照片，然后复制或分享文字。
+
+## 选择照片文字搜索应用时应关注什么
+
+| 功能 | 为什么重要 |
+| --- | --- |
+| 设备端 OCR | 你的截图和收据绝不会被上传 |
+| 快速全库搜索 | 在成千上万张照片中找到一个词 |
+| 离线可用 | 没有网络连接时搜索仍可继续使用 |
+| 与人物和物体结合 | 按照片中的人或物缩小结果范围 |
+| 免费试用 | 先在你自己的截图上测试 |
+
+[FaceIdent](/faceident) 涵盖了所有这些功能，同时还支持设备端人脸与宠物分组以及自然语言照片搜索。
+
+## 常见问题
+
+**我可以搜索照片中的文字吗？**
+可以。FaceIdent 通过设备端 OCR 读取文字，让你能够按内容搜索截图和收据。
+
+**它可以离线使用吗？**
+可以。识别和搜索都在你的 iPhone 上运行。
+
+**我照片中的文字会被上传吗？**
+不会。OCR 完全在设备端进行。
+
+---
+
+准备好试试了吗？[在 App Store 下载 FaceIdent](https://apps.apple.com/app/id6788569032)，通过照片中的文字查找任何截图或收据——私密地，在你的设备上完成。

@@ -1,0 +1,150 @@
+export const meta = {
+  title: "如何在 iPhone 上找出某个人的所有照片（设备端人脸分组）",
+  description:
+    "一份分步指南，教你在 iPhone 上找出并归类某个特定人物的每一张照片——采用从不上传照片的设备端人脸识别，让你在几秒内调出任何认识的人。",
+  keywords: [
+    "iphone 查找某人的照片",
+    "iphone 按人脸给照片分组",
+    "iphone 人脸识别照片应用",
+    "iphone 找出某人所有照片",
+    "设备端人脸分组",
+    "iphone 按人物整理照片",
+  ],
+  ogTitle: "在 iPhone 上找出某个人的每一张照片",
+  ogDescription:
+    "完全在设备端按人脸给照片图库分组，几秒内找到任何你认识的人。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "如何在 iPhone 上找出某个人的所有照片（设备端人脸分组）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/find-photos-of-a-person-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在 iPhone 上找出并归类某个人的每一张照片",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "安装一款设备端的人脸分组应用",
+        text: "从 App Store 下载 FaceIdent，并授予它读取照片图库的权限。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "让它在设备端扫描",
+        text: "FaceIdent 直接在你的 iPhone 上检测人脸并按人物分组——不上传、不需要账户。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "打开某个人",
+        text: "点按任意人脸分组即可看到该人物出现的每一张照片，然后给分组命名，方便下次轻松找到。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "修正拆分或混淆",
+        text: "如果同一个人被拆成两个分组，就把它们合并；如果两个人被混在一起，就把放错的照片移出去。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "我能在 iPhone 上找出某一个人的所有照片吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。“照片”应用有一个“人物”相簿，而像 FaceIdent 这样的专用应用会在设备端按人脸给你的图库分组，让你打开一个人就能看到他出现的每一张照片。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "人脸分组会上传我的照片吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不一定。FaceIdent 完全在你的 iPhone 上进行人脸检测和分组，因此你的照片和人脸数据从不离开设备。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "为什么同一个人被分成了两个分组？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不同的光线、角度或年龄会让同一张脸在模型看来有所不同。你可以把两个分组合并为一个，应用会记住你的更正。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何在 iPhone 上找出某个人的所有照片（设备端人脸分组）
+
+**快速解答：** 要在 iPhone 上找出某个特定人物的每一张照片，请使用一款会扫描图库并按人脸排序的人脸分组应用。[FaceIdent](/faceident) 完全在设备端完成这一切——它检测人脸、按人物分组，并让你打开一个人，几秒内看到他的所有照片。不上传任何内容，也不需要账户。
+
+为了找某一个人的照片而在成千上万张照片里滑动，太慢了。把图库按人脸分组，能把这件事变成一次点按。
+
+---
+
+## 最快的方法：把图库按人脸分组
+
+现代 iPhone 足够快，无需任何服务器就能识别人脸。人脸分组应用会查看每一张照片，找出其中的人脸，并把属于同一个人的聚在一起。你得到的不再是平铺的时间线，而是一个人物网格——点按一张脸，就能看到他出现的每一张照片。
+
+[FaceIdent](/faceident) 正是围绕这个理念打造的，并把整个过程都保留在你的设备上。
+
+## 分步操作：找出某个人的每一张照片
+
+1. **安装一款人脸分组应用。** 从 App Store 下载 [FaceIdent](/faceident) 并允许访问你的照片。可免费试用。
+2. **让它在设备端扫描。** 应用会直接在你的 iPhone 上检测人脸并按人物分组。较大的图库首次会稍慢一些，之后便一直很快。
+3. **打开某个人。** 点按任意人脸分组即可看到该人物出现的每一张照片。
+4. **给分组命名。** 给这个人起个名字，下次就能立刻找到他。
+5. **整理一下。** 如果同一个人被拆成两个分组，就合并它们。如果两个人被混在一起，就把放错的照片移出去——应用会记住你的更正。
+
+## 挑选人脸分组应用时要看什么
+
+| 特性 | 为什么重要 |
+| --- | --- |
+| 设备端处理 | 你的照片和人脸数据从不离开 iPhone |
+| 合并与拆分控制 | 你可以更正错误，而不必将就 |
+| 分组命名 | 一次点按即可找到某个特定人物 |
+| 宠物同样适用 | 像给人分组一样给你的狗或猫分组 |
+| 免费试用 | 在决定之前先在自己的图库上测试 |
+
+[FaceIdent](/faceident) 涵盖了这一切：设备端的人脸与宠物分组、合并与移动控制、带名字的人物，此外还有文字和物体搜索。
+
+## 设备端人脸分组能保护隐私吗？
+
+能——当识别在本地运行时，照片以及代表每张脸的数学数据都留在设备上。[FaceIdent](/faceident) 没有云端、也没有账户：它从不上传你的图库，因此给人物分组不会拿你的隐私去换取便利。
+
+## 常见问题
+
+**我能在 iPhone 上找出某一个人的所有照片吗？**
+可以。苹果的“照片”应用有一个“人物”相簿，而像 FaceIdent 这样的应用会把你的整个图库按人脸分组，让你打开一个人就能看到他的所有照片。
+
+**这会上传我的照片吗？**
+不会。FaceIdent 完全在设备端运行，因此不会向任何服务器发送内容。
+
+**为什么一个人会出现在两个分组里？**
+不同的角度或光线可能会迷惑模型。合并这两个分组，应用会保留你的更正。
+
+---
+
+准备好试试了吗？[在 App Store 下载 FaceIdent](https://apps.apple.com/app/id6788569032)，几秒内找到任何你认识的人——私密地，就在你的设备上。

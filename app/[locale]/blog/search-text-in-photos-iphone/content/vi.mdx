@@ -1,0 +1,147 @@
+export const meta = {
+  title:
+    "Cách tìm văn bản bên trong ảnh của bạn trên iPhone (ảnh chụp màn hình & hóa đơn)",
+  description:
+    "Tìm bất kỳ ảnh chụp màn hình, hóa đơn hay ghi chú nào bằng những từ bên trong chúng — hướng dẫn tìm văn bản trong ảnh iPhone bằng nhận dạng văn bản trên thiết bị, không bao giờ tải thư viện của bạn lên.",
+  keywords: [
+    "tìm văn bản trong ảnh iphone",
+    "tìm ảnh chụp màn hình bằng văn bản iphone",
+    "ocr ảnh iphone",
+    "tìm hóa đơn trong ảnh iphone",
+    "tìm chữ bên trong hình ảnh",
+    "tìm kiếm văn bản ảnh trên thiết bị",
+  ],
+  ogTitle: "Tìm văn bản bên trong ảnh iPhone của bạn",
+  ogDescription:
+    "Tìm ảnh chụp màn hình, hóa đơn và ghi chú bằng những từ bên trong chúng — trên thiết bị, không tải lên.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Cách tìm văn bản bên trong ảnh của bạn trên iPhone (ảnh chụp màn hình & hóa đơn)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/vi/blog/search-text-in-photos-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Tìm văn bản bên trong ảnh iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Cài đặt ứng dụng tìm văn bản trong ảnh",
+        text: "Tải FaceIdent từ App Store và cho phép truy cập thư viện ảnh của bạn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Để ứng dụng đọc ảnh của bạn trên thiết bị",
+        text: "Ứng dụng nhận dạng văn bản trong ảnh chụp màn hình, hóa đơn và ghi chú của bạn rồi lập chỉ mục trên iPhone của bạn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tìm một từ hoặc cụm từ",
+        text: "Gõ một từ bạn nhớ đã thấy — tên cửa hàng, một mã, một tiêu đề — và các ảnh khớp sẽ hiện ra.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mở kết quả",
+        text: "Chạm vào ảnh để xem, sau đó sao chép hoặc chia sẻ văn bản bạn đang tìm.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Tôi có thể tìm văn bản bên trong ảnh iPhone của mình không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. Các ứng dụng như FaceIdent đọc văn bản trong ảnh của bạn bằng OCR trên thiết bị và cho phép bạn tìm ảnh chụp màn hình, hóa đơn và ghi chú bằng những từ bên trong chúng.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tìm văn bản trong ảnh có hoạt động ngoại tuyến không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. FaceIdent nhận dạng và lập chỉ mục văn bản trên iPhone của bạn, nên việc tìm kiếm vẫn hoạt động mà không cần kết nối.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Văn bản trong ảnh của tôi có được gửi đến máy chủ không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. FaceIdent thực hiện nhận dạng văn bản hoàn toàn trên thiết bị, nên không có gì từ ảnh của bạn được tải lên.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách tìm văn bản bên trong ảnh của bạn trên iPhone (ảnh chụp màn hình & hóa đơn)
+
+**Câu trả lời nhanh:** Để tìm một tấm ảnh bằng những từ bên trong nó, hãy dùng ứng dụng có nhận dạng văn bản trên thiết bị (OCR) để đọc và lập chỉ mục ảnh chụp màn hình, hóa đơn và ghi chú của bạn. [FaceIdent](/faceident) cho phép bạn gõ một từ bạn nhớ — tên cửa hàng, một mã, một tiêu đề — và hiển thị tấm ảnh khớp. Mọi thứ được xử lý trên iPhone của bạn; không có gì được tải lên.
+
+Một nửa thư viện ảnh hiện đại là ảnh chụp màn hình, hóa đơn, vé và bảng trắng. Cách nhanh nhất để tìm một trong số đó là tìm những từ mà nó chứa.
+
+---
+
+## Cách tìm văn bản trong ảnh hoạt động
+
+Nhận dạng văn bản (OCR) đọc các từ được in bên trong một hình ảnh — một tấm biển, một ảnh chụp màn hình, một hóa đơn — và biến chúng thành văn bản có thể tìm kiếm. Sau khi thư viện của bạn được lập chỉ mục, việc gõ một từ sẽ tìm ra mọi tấm ảnh chứa nó, ngay cả khi tệp không có chú thích hay tên tệp.
+
+[FaceIdent](/faceident) chạy quá trình nhận dạng này trên thiết bị, nên ảnh chụp màn hình và hóa đơn của bạn không bao giờ được tải lên.
+
+## Từng bước: tìm văn bản trong ảnh của bạn
+
+1. **Cài đặt ứng dụng tìm văn bản trong ảnh.** Tải [FaceIdent](/faceident) từ App Store và cho phép truy cập ảnh của bạn.
+2. **Để ứng dụng đọc trên thiết bị.** Ứng dụng nhận dạng văn bản trong ảnh chụp màn hình, hóa đơn và ghi chú của bạn rồi lập chỉ mục trên iPhone của bạn.
+3. **Tìm một từ hoặc cụm từ.** Gõ điều gì đó bạn nhớ đã thấy — một thương hiệu, một địa chỉ, một mã xác nhận.
+4. **Mở kết quả.** Chạm vào tấm ảnh khớp, sau đó sao chép hoặc chia sẻ văn bản.
+
+## Những điều cần lưu ý ở ứng dụng tìm văn bản trong ảnh
+
+| Tính năng | Vì sao quan trọng |
+| --- | --- |
+| OCR trên thiết bị | Ảnh chụp màn hình và hóa đơn của bạn không bao giờ được tải lên |
+| Tìm kiếm nhanh toàn thư viện | Tìm một từ trong hàng nghìn tấm ảnh |
+| Hoạt động ngoại tuyến | Việc tìm kiếm vẫn hoạt động mà không cần kết nối |
+| Kết hợp với người & vật thể | Thu hẹp kết quả theo ai hoặc cái gì có trong ảnh |
+| Miễn phí dùng thử | Thử trước trên ảnh chụp màn hình của chính bạn |
+
+[FaceIdent](/faceident) bao quát tất cả những điều này, cùng với việc nhóm khuôn mặt và thú cưng trên thiết bị và tìm ảnh bằng ngôn ngữ tự nhiên.
+
+## Câu hỏi thường gặp
+
+**Tôi có thể tìm văn bản bên trong ảnh của mình không?**
+Có. FaceIdent đọc văn bản bằng OCR trên thiết bị và cho phép bạn tìm ảnh chụp màn hình và hóa đơn theo nội dung của chúng.
+
+**Nó có hoạt động ngoại tuyến không?**
+Có. Việc nhận dạng và tìm kiếm chạy trên iPhone của bạn.
+
+**Văn bản trong ảnh của tôi có được tải lên không?**
+Không. OCR diễn ra hoàn toàn trên thiết bị.
+
+---
+
+Sẵn sàng dùng thử? [Tải FaceIdent trên App Store](https://apps.apple.com/app/id6788569032) và tìm bất kỳ ảnh chụp màn hình hay hóa đơn nào bằng những từ bên trong nó — một cách riêng tư, trên thiết bị của bạn.

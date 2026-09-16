@@ -1,0 +1,155 @@
+export const meta = {
+  title:
+    "How to Search Your iPhone Photos by What's In Them (Objects & Natural Language)",
+  description:
+    "Search your iPhone photo library by what appears in each shot — objects, scenes, and plain-language descriptions like 'sunset at the beach' — using on-device visual search that never uploads your photos.",
+  keywords: [
+    "search photos by content iphone",
+    "search iphone photos by object",
+    "natural language photo search",
+    "find a photo by description iphone",
+    "on-device visual search",
+    "semantic photo search iphone",
+  ],
+  ogTitle: "Search iPhone Photos by What's In Them",
+  ogDescription:
+    "Find any shot by object, scene, or a plain-language description — on-device, no upload.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "How to Search Your iPhone Photos by What's In Them (Objects & Natural Language)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/search-photos-by-content-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Search iPhone photos by what's in them",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Install an on-device visual search app",
+        text: "Download FaceIdent from the App Store and allow access to your photo library.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Let it index on-device",
+        text: "The app tags objects and scenes and builds a searchable index on your iPhone, without uploading anything.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Search in plain language",
+        text: "Type what you remember — 'dog on the beach', 'birthday cake', 'red car' — and matching photos appear.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Refine with people or text",
+        text: "Combine visual search with a person's face or text found inside the photo to narrow results.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can I search iPhone photos by what's in them?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Apps like FaceIdent tag the objects and scenes in each photo and let you search by plain-language descriptions such as 'sunset at the beach', all processed on-device.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is semantic photo search?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Semantic search matches the meaning of your words to the content of a photo, so 'a dog running in the park' can find the right shot even if those exact words were never typed anywhere.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does visual search send my photos to a server?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It does not have to. FaceIdent builds its search index entirely on your iPhone, so your photos never leave the device.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Search Your iPhone Photos by What's In Them (Objects & Natural Language)
+
+**Quick answer:** To search your photos by content, use an app that recognizes the objects and scenes in each shot and lets you describe what you want in plain language. [FaceIdent](/faceident) indexes your library on-device and finds photos from descriptions like "dog on the beach" or "birthday cake" — no upload, no account.
+
+You rarely remember the date a photo was taken, but you do remember what was *in* it. Content search matches that memory instead of a timeline.
+
+---
+
+## Three ways to search by content
+
+A good on-device photo search combines a few signals:
+
+- **Objects and scenes.** The app recognizes things like *beach*, *cake*, *car*, or *mountains* and lets you browse or search by them.
+- **Natural language (semantic search).** You type a description — "sunset at the beach" — and it matches the *meaning*, not just exact tags.
+- **Text inside photos.** Words on signs, screenshots, and receipts become searchable too.
+
+[FaceIdent](/faceident) brings these together and runs all of it on your device.
+
+## Step-by-step: search photos by what's in them
+
+1. **Install a visual search app.** Download [FaceIdent](/faceident) from the App Store and allow access to your photos.
+2. **Let it index on-device.** The app tags objects and scenes and prepares natural-language search on your iPhone. Nothing is uploaded.
+3. **Search in plain language.** Type what you remember — "red car", "snow on the mountains", "coffee on a table".
+4. **Refine.** Narrow results by a person's face or by text found inside the photo.
+
+## What to look for in a photo search app
+
+| Feature | Why it matters |
+| --- | --- |
+| Object & scene tags | Browse and search by what's actually in the shot |
+| Natural-language search | Describe a photo instead of remembering keywords |
+| Text (OCR) search | Find screenshots and receipts by the words inside them |
+| People + content together | Combine a face with a scene to pinpoint one photo |
+| On-device | Your library and index never leave the phone |
+
+[FaceIdent](/faceident) covers all of these, and adds on-device face and pet grouping so people and content search work side by side.
+
+## Is content search private?
+
+It can be. When the indexing runs locally, the photos and everything derived from them stay on the device. [FaceIdent](/faceident) has no cloud and no account, so searching by content never uploads your library.
+
+## Common questions
+
+**Can I search iPhone photos by what's in them?**
+Yes. FaceIdent tags objects and scenes and supports plain-language search, all on-device.
+
+**What is semantic search?**
+It matches the meaning of your words to the content of a photo, so a description finds the right shot even without exact keywords.
+
+**Does it upload my photos?**
+No. The index is built entirely on your iPhone.
+
+---
+
+Ready to try it? [Download FaceIdent on the App Store](https://apps.apple.com/app/id6788569032) and find any photo by describing it — privately, on your device.

@@ -1,0 +1,147 @@
+export const meta = {
+  title:
+    "iPhone'da Fotoğraflarınızın İçindeki Metni Nasıl Arayabilirsiniz (Ekran Görüntüleri ve Fişler)",
+  description:
+    "Herhangi bir ekran görüntüsünü, fişi veya notu içindeki kelimelerle bulun — iPhone fotoğraflarınızdaki metni, kütüphanenizi asla yüklemeyen cihaz üzerinde metin tanıma ile arama rehberi.",
+  keywords: [
+    "iphone fotoğrafta metin arama",
+    "iphone ekran görüntüsünü metinle bulma",
+    "iphone fotoğraf ocr",
+    "iphone fişlerde metin arama",
+    "resim içindeki yazıyı bulma",
+    "cihaz üzerinde fotoğraf metin arama",
+  ],
+  ogTitle: "iPhone Fotoğraflarınızın İçindeki Metni Arayın",
+  ogDescription:
+    "Ekran görüntülerini, fişleri ve notları içindeki kelimelerle bulun — cihaz üzerinde, yükleme yok.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iPhone'da Fotoğraflarınızın İçindeki Metni Nasıl Arayabilirsiniz (Ekran Görüntüleri ve Fişler)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/tr/blog/search-text-in-photos-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone fotoğraflarının içindeki metni arama",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Fotoğraf metin arama uygulaması yükleyin",
+        text: "App Store'dan FaceIdent'i indirin ve fotoğraf kütüphanenize erişime izin verin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Fotoğraflarınızı cihaz üzerinde okumasına izin verin",
+        text: "Uygulama, ekran görüntülerinizdeki, fişlerinizdeki ve notlarınızdaki metni tanır ve iPhone'unuzda dizine ekler.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bir kelime veya ifade arayın",
+        text: "Gördüğünüzü hatırladığınız bir kelimeyi yazın — bir mağaza adı, bir kod, bir başlık — ve eşleşen fotoğraflar görünsün.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Sonucu açın",
+        text: "Fotoğrafa dokunarak görüntüleyin, ardından aradığınız metni kopyalayın veya paylaşın.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone fotoğraflarımın içindeki metni arayabilir miyim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. FaceIdent gibi uygulamalar, fotoğraflarınızdaki metni cihaz üzerinde OCR ile okur ve ekran görüntülerinizi, fişlerinizi ve notlarınızı içlerindeki kelimelerle aramanıza olanak tanır.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Fotoğraflarda metin arama çevrimdışı çalışır mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. FaceIdent metni iPhone'unuzda tanır ve dizine ekler, böylece arama bağlantı olmadan da çalışmaya devam eder.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Fotoğraf metnim bir sunucuya gönderiliyor mu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. FaceIdent metin tanımayı tamamen cihaz üzerinde gerçekleştirir, bu nedenle fotoğraflarınızdan hiçbir şey yüklenmez.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone'da Fotoğraflarınızın İçindeki Metni Nasıl Arayabilirsiniz (Ekran Görüntüleri ve Fişler)
+
+**Kısa yanıt:** Bir fotoğrafı içindeki kelimelerle bulmak için, ekran görüntülerinizi, fişlerinizi ve notlarınızı okuyup dizine ekleyen, cihaz üzerinde metin tanıma (OCR) özellikli bir uygulama kullanın. [FaceIdent](/faceident), hatırladığınız bir kelimeyi — bir mağaza adı, bir kod, bir başlık — yazmanıza ve eşleşen fotoğrafı bulmanıza olanak tanır. Her şey iPhone'unuzda işlenir; hiçbir şey yüklenmez.
+
+Modern bir fotoğraf kütüphanesinin yarısı ekran görüntüleri, fişler, biletler ve beyaz tahtalardan oluşur. Bunlardan birini bulmanın en hızlı yolu, içerdiği kelimeleri aramaktır.
+
+---
+
+## Fotoğraflarda metin arama nasıl çalışır
+
+Metin tanıma (OCR), bir görüntünün içinde yazılı olan kelimeleri okur — bir tabela, bir ekran görüntüsü, bir fiş — ve bunları aranabilir metne dönüştürür. Kütüphaneniz dizine eklendikten sonra, bir kelime yazmak, dosyanın altyazısı veya dosya adı olmasa bile o kelimeyi içeren her fotoğrafı bulur.
+
+[FaceIdent](/faceident) bu tanımayı cihaz üzerinde çalıştırır, böylece ekran görüntüleriniz ve fişleriniz asla yüklenmez.
+
+## Adım adım: fotoğraflarınızda metin arama
+
+1. **Fotoğraf metin arama uygulaması yükleyin.** App Store'dan [FaceIdent](/faceident)'i indirin ve fotoğraflarınıza erişime izin verin.
+2. **Cihaz üzerinde okumasına izin verin.** Uygulama, ekran görüntülerinizdeki, fişlerinizdeki ve notlarınızdaki metni tanır ve iPhone'unuzda dizine ekler.
+3. **Bir kelime veya ifade arayın.** Gördüğünüzü hatırladığınız bir şeyi yazın — bir marka, bir adres, bir onay kodu.
+4. **Sonucu açın.** Eşleşen fotoğrafa dokunun, ardından metni kopyalayın veya paylaşın.
+
+## Fotoğraf metin arama uygulamasında nelere dikkat etmeli
+
+| Özellik | Neden önemli |
+| --- | --- |
+| Cihaz üzerinde OCR | Ekran görüntüleriniz ve fişleriniz asla yüklenmez |
+| Hızlı tüm kütüphane araması | Binlerce fotoğraf içinde tek bir kelimeyi bulun |
+| Çevrimdışı çalışır | Arama bağlantı olmadan da çalışmaya devam eder |
+| Kişiler ve nesnelerle birleşir | Bir sonucu fotoğraftaki kişiye veya nesneye göre daraltın |
+| Ücretsiz deneme | Önce kendi ekran görüntülerinizde test edin |
+
+[FaceIdent](/faceident), cihaz üzerinde yüz ve evcil hayvan gruplaması ve doğal dilde fotoğraf aramasının yanı sıra tüm bunları kapsar.
+
+## Sık sorulan sorular
+
+**Fotoğraflarımın içindeki metni arayabilir miyim?**
+Evet. FaceIdent, metni cihaz üzerinde OCR ile okur ve ekran görüntülerinizi ve fişlerinizi içeriklerine göre aramanıza olanak tanır.
+
+**Çevrimdışı çalışır mı?**
+Evet. Tanıma ve arama iPhone'unuzda çalışır.
+
+**Fotoğraf metnim yükleniyor mu?**
+Hayır. OCR tamamen cihaz üzerinde gerçekleşir.
+
+---
+
+Denemeye hazır mısınız? [FaceIdent'i App Store'dan indirin](https://apps.apple.com/app/id6788569032) ve herhangi bir ekran görüntüsünü veya fişi içindeki kelimelerle bulun — gizli bir şekilde, cihazınızda.

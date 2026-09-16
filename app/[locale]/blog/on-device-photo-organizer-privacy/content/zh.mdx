@@ -1,0 +1,149 @@
+export const meta = {
+  title:
+    "在 iPhone 上私密地设备端整理照片：为什么重要，以及如何运作",
+  description:
+    "了解设备端照片整理如何让你的图库保持私密——人脸分组、物体标记和搜索完全在你的 iPhone 上运行，不向云端上传任何内容，也无需账户。",
+  keywords: [
+    "iphone 设备端照片整理",
+    "iphone 私密照片应用",
+    "无云端照片整理应用",
+    "iphone 离线照片整理",
+    "隐私照片应用",
+    "不上传就能整理照片",
+  ],
+  ogTitle: "在 iPhone 上私密地设备端整理照片",
+  ogDescription:
+    "分组人脸、标记物体、搜索照片——任何内容都不会离开你的 iPhone。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "在 iPhone 上私密地设备端整理照片：为什么重要，以及如何运作",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/on-device-photo-organizer-privacy",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在设备端私密地整理你的 iPhone 照片",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "选择一款设备端整理应用",
+        text: "选择一款声明所有处理都在设备端完成、不使用云端的照片应用，例如 FaceIdent。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "授予照片访问权限",
+        text: "允许访问你的图库。你可以使用 iOS 的“有限照片访问”，只共享选定的照片。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "让它在本地整理",
+        text: "应用会在你的 iPhone 上直接分组人脸、标记物体并读取文字，不上传任何内容。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "离线搜索和浏览",
+        text: "由于不依赖任何服务器，即使在飞行模式下也能找到人物、宠物、物体和文字。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "设备端照片整理是什么意思？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "意思是应用使用 iPhone 自身的处理器来分析你的照片——分组人脸、标记物体、读取文字——因此照片和结果永远不会发送到服务器。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "设备端照片整理应用是否比云端应用更私密？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "通常是的。如果什么都不上传，就没有你图库的服务器副本可供泄露、被传唤或用于训练。FaceIdent 没有云端，也没有账户。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "设备端整理应用能离线使用吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。由于处理和搜索都在本地运行，像 FaceIdent 这样的应用在飞行模式下仍可正常工作。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 在 iPhone 上私密地设备端整理照片：为什么重要，以及如何运作
+
+**简短回答：** 设备端照片整理使用 iPhone 自身的芯片来分析你的图库——分组人脸、标记物体、读取文字——因此不会向服务器上传任何内容。[FaceIdent](/faceident) 就是这样运作的：没有云端、没有账户，即使在飞行模式下也能继续整理和搜索。
+
+你的照片图库是你所拥有的最私人的东西之一。整理它不应意味着把一份副本交给别人的服务器。
+
+---
+
+## 为什么设备端处理很重要
+
+当照片应用在云端处理你的图库时，你最私密时刻的一份副本就存放在你无法掌控的服务器上。那份副本可能被泄露、被第三方索取，或被用于训练模型。**设备端处理彻底消除了那份副本**——分析在你的手机上进行，结果也留在那里。
+
+过去这样做的代价是功能：云端应用能做得更多。这一差距已经消失。如今 iPhone 能够在本地分组人脸、识别物体、读取文字并运行自然语言搜索。
+
+## 设备端整理如何运作
+
+1. **检测与分组。** 应用使用设备的神经网络引擎找到人脸，并将其聚类为人物（以及宠物）。
+2. **物体与场景标记。** 每张照片会按其内容打上标签——*海滩*、*蛋糕*、*狗*——用于浏览和搜索。
+3. **文字识别（OCR）。** 照片、截图和收据中的文字变得可搜索。
+4. **本地搜索索引。** 所有这些都存储在手机上，因此搜索即时且私密。
+
+[FaceIdent](/faceident) 的每一步都在设备端完成。
+
+## 挑选私密照片应用时应关注什么
+
+| 功能 | 为什么重要 |
+| --- | --- |
+| 无云端、无账户 | 没有你图库的服务器副本可供泄露 |
+| 设备端处理 | 人脸、物体和文字都留在你的手机上 |
+| 可离线使用 | 整理和搜索在飞行模式下仍能工作 |
+| 支持有限照片访问 | 只与应用共享你选择的照片 |
+| 清晰的隐私政策 | 在信任之前你可以核实其声明 |
+
+[FaceIdent](/faceident) 满足每一项：它完全在你的 iPhone 上运行，没有云端也没有账户，其[隐私政策](/faceident/privacy-policy)清楚说明了哪些内容留在设备上。
+
+## 常见问题
+
+**设备端整理是什么意思？**
+应用使用 iPhone 自身的处理器分析你的照片，因此照片和结果永远不会到达服务器。
+
+**它比云端应用更私密吗？**
+是的——由于什么都不上传，就没有可被入侵或再利用的服务器副本。FaceIdent 没有云端，也没有账户。
+
+**它能离线使用吗？**
+可以。所有处理和搜索都在本地运行，因此在飞行模式下也能工作。
+
+---
+
+准备好试试了吗？[在 App Store 下载 FaceIdent](https://apps.apple.com/app/id6788569032)，整理你的照片而不让任何内容离开你的 iPhone。

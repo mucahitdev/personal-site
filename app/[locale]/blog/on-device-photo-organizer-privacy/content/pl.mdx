@@ -1,0 +1,149 @@
+export const meta = {
+  title:
+    "Prywatne, lokalne porządkowanie zdjęć na iPhonie: dlaczego to ważne i jak działa",
+  description:
+    "Dowiedz się, jak porządkowanie zdjęć na urządzeniu chroni prywatność Twojej biblioteki: grupowanie twarzy, tagowanie obiektów i wyszukiwanie działają w całości na iPhonie, bez wysyłania czegokolwiek do chmury i bez konta.",
+  keywords: [
+    "organizator zdjęć na urządzeniu iphone",
+    "prywatna aplikacja do zdjęć iphone",
+    "organizator zdjęć bez chmury",
+    "organizator zdjęć offline iphone",
+    "aplikacja do zdjęć prywatność",
+    "porządkowanie zdjęć bez wysyłania",
+  ],
+  ogTitle: "Prywatne, lokalne porządkowanie zdjęć na iPhonie",
+  ogDescription:
+    "Grupuj twarze, taguj obiekty i przeszukuj zdjęcia — a nic nie opuszcza Twojego iPhone'a.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Prywatne, lokalne porządkowanie zdjęć na iPhonie: dlaczego to ważne i jak działa",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pl/blog/on-device-photo-organizer-privacy",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Uporządkuj zdjęcia na iPhonie prywatnie, na urządzeniu",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Wybierz organizator działający na urządzeniu",
+        text: "Wybierz aplikację do zdjęć, która deklaruje przetwarzanie wszystkiego na urządzeniu bez chmury, na przykład FaceIdent.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Przyznaj dostęp do zdjęć",
+        text: "Zezwól na dostęp do biblioteki. Możesz użyć ograniczonego dostępu do Zdjęć w iOS, aby udostępnić tylko wybrane zdjęcia.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pozwól porządkować lokalnie",
+        text: "Aplikacja grupuje twarze, taguje obiekty i odczytuje tekst bezpośrednio na Twoim iPhonie, niczego nie wysyłając.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wyszukuj i przeglądaj offline",
+        text: "Znajduj osoby, zwierzęta, obiekty i tekst nawet w trybie samolotowym, bo nic nie zależy od serwera.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Co oznacza porządkowanie zdjęć na urządzeniu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oznacza to, że aplikacja analizuje Twoje zdjęcia — grupując twarze, tagując obiekty, odczytując tekst — za pomocą własnego procesora iPhone'a, więc zdjęcia i wyniki nigdy nie trafiają na serwer.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy organizator zdjęć na urządzeniu jest bardziej prywatny niż w chmurze?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Zazwyczaj tak. Jeśli nic nie jest wysyłane, nie istnieje serwerowa kopia Twojej biblioteki, którą można wyciec, uzyskać na wezwanie sądowe lub wykorzystać do trenowania modeli. FaceIdent nie ma chmury ani konta.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy organizator na urządzeniu działa offline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. Ponieważ przetwarzanie i wyszukiwanie działają lokalnie, aplikacja taka jak FaceIdent nadal działa w trybie samolotowym.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Prywatne, lokalne porządkowanie zdjęć na iPhonie: dlaczego to ważne i jak działa
+
+**Szybka odpowiedź:** Porządkowanie zdjęć na urządzeniu analizuje Twoją bibliotekę przy użyciu układu samego iPhone'a — grupuje twarze, taguje obiekty i odczytuje tekst — dzięki czemu nic nie jest wysyłane na serwer. [FaceIdent](/faceident) działa właśnie tak: bez chmury, bez konta, i nadal porządkuje oraz wyszukuje nawet w trybie samolotowym.
+
+Twoja biblioteka zdjęć to jedna z najbardziej osobistych rzeczy, jakie posiadasz. Jej porządkowanie nie powinno oznaczać oddawania kopii na cudze serwery.
+
+---
+
+## Dlaczego przetwarzanie na urządzeniu ma znaczenie
+
+Gdy aplikacja przetwarza Twoją bibliotekę w chmurze, kopia Twoich najbardziej prywatnych chwil znajduje się na serwerze, którego nie kontrolujesz. Ta kopia może wyciec, zostać zażądana przez osoby trzecie lub wykorzystana do trenowania modeli. **Przetwarzanie na urządzeniu całkowicie usuwa tę kopię** — analiza odbywa się na Twoim telefonie, a wyniki tam pozostają.
+
+Kiedyś ceną były możliwości: aplikacje chmurowe potrafiły więcej. Ta różnica zniknęła. Dziś iPhone potrafi grupować twarze, rozpoznawać obiekty, odczytywać tekst i uruchamiać wyszukiwanie w języku naturalnym lokalnie.
+
+## Jak działa porządkowanie na urządzeniu
+
+1. **Wykrywanie i grupowanie.** Aplikacja znajduje twarze i łączy je w osoby (oraz zwierzęta) przy użyciu silnika neuronowego Twojego urządzenia.
+2. **Tagowanie obiektów i scen.** Każde zdjęcie zostaje oznaczone tym, co zawiera — *plaża*, *tort*, *pies* — do przeglądania i wyszukiwania.
+3. **Rozpoznawanie tekstu (OCR).** Słowa na zdjęciach, zrzutach ekranu i paragonach stają się przeszukiwalne.
+4. **Lokalny indeks wyszukiwania.** Wszystko to jest przechowywane na telefonie, dzięki czemu wyszukiwanie jest błyskawiczne i prywatne.
+
+[FaceIdent](/faceident) wykonuje każdy krok na urządzeniu.
+
+## Na co zwracać uwagę w prywatnej aplikacji do zdjęć
+
+| Funkcja | Dlaczego to ważne |
+| --- | --- |
+| Bez chmury, bez konta | Nie ma serwerowej kopii Twojej biblioteki, która mogłaby wyciec |
+| Przetwarzanie na urządzeniu | Twarze, obiekty i tekst pozostają na Twoim telefonie |
+| Działa offline | Porządkowanie i wyszukiwanie działają w trybie samolotowym |
+| Obsługa ograniczonego dostępu do Zdjęć | Udostępniaj aplikacji tylko wybrane zdjęcia |
+| Przejrzysta polityka prywatności | Możesz zweryfikować deklaracje, zanim zaufasz |
+
+[FaceIdent](/faceident) spełnia każdy punkt: działa w całości na Twoim iPhonie, nie ma chmury ani konta, a jego [polityka prywatności](/faceident/privacy-policy) dokładnie określa, co pozostaje na urządzeniu.
+
+## Częste pytania
+
+**Co oznacza porządkowanie na urządzeniu?**
+Aplikacja analizuje Twoje zdjęcia przy użyciu własnego procesora iPhone'a, więc zdjęcia i wyniki nigdy nie trafiają na serwer.
+
+**Czy to bardziej prywatne niż aplikacja chmurowa?**
+Tak — skoro nic nie jest wysyłane, nie ma serwerowej kopii do naruszenia lub ponownego wykorzystania. FaceIdent nie ma chmury ani konta.
+
+**Czy działa offline?**
+Tak. Całe przetwarzanie i wyszukiwanie działają lokalnie, więc działa w trybie samolotowym.
+
+---
+
+Gotowy, aby spróbować? [Pobierz FaceIdent w App Store](https://apps.apple.com/app/id6788569032) i uporządkuj swoje zdjęcia bez wysyłania czegokolwiek poza iPhone'a.

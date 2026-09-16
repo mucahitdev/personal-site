@@ -285,6 +285,54 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    title:
+      'How to Find All Photos of a Person on iPhone (On-Device Face Grouping)',
+    description:
+      'Find and group every photo of a specific person on iPhone with on-device face recognition — nothing is uploaded.',
+    link: '/blog/find-photos-of-a-person-iphone',
+    uid: 'blog-7',
+  },
+  {
+    title:
+      "How to Search Your iPhone Photos by What's In Them (Objects & Natural Language)",
+    description:
+      'Search your photo library by objects, scenes, and plain-language descriptions — on-device, no upload.',
+    link: '/blog/search-photos-by-content-iphone',
+    uid: 'blog-8',
+  },
+  {
+    title:
+      'Private, On-Device Photo Organizing on iPhone: Why It Matters and How It Works',
+    description:
+      'How face grouping, object tagging, and search can run entirely on your iPhone, with nothing sent to the cloud.',
+    link: '/blog/on-device-photo-organizer-privacy',
+    uid: 'blog-9',
+  },
+  {
+    title:
+      'How to Find and Remove Duplicate Photos on iPhone (Free Up Storage)',
+    description:
+      'Find duplicate and near-identical photos on iPhone and clear them to free up storage — on-device, no upload.',
+    link: '/blog/find-remove-duplicate-photos-iphone',
+    uid: 'blog-10',
+  },
+  {
+    title:
+      'How to Find All Photos of Your Pet on iPhone (Dog & Cat Grouping)',
+    description:
+      'Group every photo of your dog or cat automatically with on-device pet recognition — nothing is uploaded.',
+    link: '/blog/find-photos-of-your-pet-iphone',
+    uid: 'blog-11',
+  },
+  {
+    title:
+      'How to Search Text Inside Your Photos on iPhone (Screenshots & Receipts)',
+    description:
+      'Find any screenshot, receipt, or note by the words inside it with on-device text recognition — no upload.',
+    link: '/blog/search-text-in-photos-iphone',
+    uid: 'blog-12',
+  },
+  {
     title: 'Best Ways to Organize Your iPhone Home Screen in 2026',
     description:
       'Practical methods to declutter and organize your iPhone Home Screen — from the App Library to widget-based app launchers.',

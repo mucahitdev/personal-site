@@ -1,0 +1,147 @@
+export const meta = {
+  title:
+    "Cách tìm và xóa ảnh trùng lặp trên iPhone (giải phóng bộ nhớ)",
+  description:
+    "Hướng dẫn thực tế để tìm ảnh trùng lặp và gần giống nhau trên iPhone rồi xóa chúng nhằm giải phóng bộ nhớ — với công nghệ phát hiện trùng lặp ngay trên thiết bị, không bao giờ tải thư viện của bạn lên mạng.",
+  keywords: [
+    "tìm ảnh trùng lặp iphone",
+    "xóa ảnh trùng lặp iphone",
+    "xóa ảnh giống nhau iphone",
+    "giải phóng bộ nhớ iphone ảnh",
+    "dọn ảnh trùng lặp iphone",
+    "ảnh gần trùng lặp iphone",
+  ],
+  ogTitle: "Tìm và xóa ảnh trùng lặp trên iPhone",
+  ogDescription:
+    "Phát hiện ảnh trùng lặp và gần giống nhau ngay trên thiết bị và giành lại bộ nhớ — không tải lên.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Cách tìm và xóa ảnh trùng lặp trên iPhone (giải phóng bộ nhớ)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/vi/blog/find-remove-duplicate-photos-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Tìm và xóa ảnh trùng lặp trên iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Cài ứng dụng tìm ảnh trùng lặp",
+        text: "Tải FaceIdent từ App Store và cho phép truy cập thư viện ảnh của bạn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Quét ảnh trùng lặp ngay trên thiết bị",
+        text: "Ứng dụng so sánh ảnh của bạn trên iPhone và nhóm các ảnh giống hệt và gần giống nhau lại với nhau.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Xem lại từng nhóm",
+        text: "Mở một nhóm trùng lặp, giữ lại tấm đẹp nhất và chọn phần còn lại.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Xóa hoặc ẩn ảnh thừa",
+        text: "Xóa ảnh trùng lặp để giải phóng bộ nhớ. Ảnh đã xóa sẽ chuyển vào Đã xóa gần đây trong 30 ngày.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Làm sao tìm ảnh trùng lặp trên iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS có album Trùng lặp trong ứng dụng Ảnh, và các ứng dụng như FaceIdent quét thư viện của bạn ngay trên thiết bị để nhóm các ảnh giống hệt và gần giống nhau, giúp bạn giữ tấm đẹp nhất và xóa phần còn lại.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tôi có thể tìm ảnh gần giống nhau chứ không chỉ bản sao y hệt không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. FaceIdent phát hiện các ảnh chụp liên tục và gần trùng lặp trông gần như giống nhau, những ảnh mà album Trùng lặp mặc định có thể bỏ sót.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ảnh của tôi có bị xóa vĩnh viễn ngay lập tức không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Ảnh đã xóa sẽ chuyển vào album Đã xóa gần đây trong ứng dụng Ảnh và có thể khôi phục trong 30 ngày trước khi bị xóa hẳn.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách tìm và xóa ảnh trùng lặp trên iPhone (giải phóng bộ nhớ)
+
+**Trả lời nhanh:** Để dọn ảnh trùng lặp trên iPhone, hãy dùng một ứng dụng quét thư viện của bạn và nhóm các ảnh giống hệt và gần giống nhau để bạn giữ tấm đẹp nhất và xóa phần còn lại. [FaceIdent](/faceident) làm điều này ngay trên thiết bị — không tải gì lên mạng — và ảnh đã xóa sẽ chuyển vào Đã xóa gần đây trong 30 ngày, nên bạn có thể yên tâm xem lại và dọn dẹp.
+
+Ảnh chụp liên tục, chụp lại và các bản sao đã lưu âm thầm ngốn hàng gigabyte. Nhóm chúng lại biến việc dọn dẹp thành vài lần chạm thay vì cả một buổi chiều.
+
+---
+
+## Vì sao ảnh trùng lặp cứ chồng chất
+
+Mỗi lần bạn chụp ba tấm để có một tấm đẹp, lưu một ảnh hai lần, hoặc giữ ảnh chụp màn hình của một ảnh chụp màn hình, bạn lại thêm các bản sao gần giống nhau. Chúng khó nhận ra trong một dòng thời gian dài vì nằm cạnh hàng chục khung hình tương tự.
+
+Công cụ tìm trùng lặp so sánh ảnh và **nhóm những ảnh trông giống nhau**, để bạn quyết định một lần cho mỗi nhóm thay vì cuộn mãi không dứt.
+
+## Từng bước: xóa ảnh trùng lặp
+
+1. **Cài ứng dụng tìm ảnh trùng lặp.** Tải [FaceIdent](/faceident) từ App Store và cho phép truy cập ảnh của bạn.
+2. **Quét trên thiết bị.** Ứng dụng so sánh thư viện của bạn trên iPhone và nhóm các ảnh giống hệt và gần giống nhau. Không tải gì lên mạng.
+3. **Xem lại từng nhóm.** Mở một nhóm, giữ tấm sắc nét nhất hoặc bố cục đẹp nhất và chọn các tấm còn lại.
+4. **Xóa hoặc ẩn.** Bỏ những tấm thừa để giành lại bộ nhớ. Ảnh đã xóa vẫn ở Đã xóa gần đây trong 30 ngày phòng khi bạn đổi ý.
+
+## Cần tìm gì ở một công cụ dọn ảnh trùng lặp
+
+| Tính năng | Vì sao quan trọng |
+| --- | --- |
+| Phát hiện gần trùng lặp | Bắt được ảnh chụp liên tục và ảnh giống nhau, không chỉ bản sao y hệt |
+| Xem theo nhóm | Quyết định một lần cho mỗi nhóm thay vì từng ảnh một |
+| Giữ tấm đẹp nhất | So sánh chất lượng trước khi xóa |
+| Xóa an toàn | Ảnh thừa vào Đã xóa gần đây, khôi phục được trong 30 ngày |
+| Trên thiết bị | Thư viện của bạn không bao giờ được tải lên để so sánh |
+
+[FaceIdent](/faceident) làm tất cả những điều này ngay trên thiết bị, cùng với việc nhóm khuôn mặt và thú cưng và tìm kiếm ảnh — nên việc dọn dẹp chỉ là một phần trong việc giữ cả thư viện gọn gàng.
+
+## Câu hỏi thường gặp
+
+**Làm sao tìm ảnh trùng lặp trên iPhone?**
+Dùng album Trùng lặp trong ứng dụng Ảnh, hoặc một ứng dụng như FaceIdent để nhóm các ảnh giống hệt và gần giống nhau ngay trên thiết bị.
+
+**Nó có bắt được các tấm gần giống nhau không?**
+Có. FaceIdent tìm ra những ảnh giống nhau kiểu chụp liên tục mà album mặc định có thể bỏ sót.
+
+**Ảnh có biến mất ngay không?**
+Không. Chúng chuyển vào Đã xóa gần đây và có thể khôi phục trong 30 ngày.
+
+---
+
+Sẵn sàng giành lại một chút bộ nhớ chưa? [Tải FaceIdent trên App Store](https://apps.apple.com/app/id6788569032) và dọn ảnh trùng lặp ngay trên thiết bị của bạn — một cách riêng tư.

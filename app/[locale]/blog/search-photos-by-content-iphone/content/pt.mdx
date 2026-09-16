@@ -1,0 +1,155 @@
+export const meta = {
+  title:
+    "Como pesquisar as fotos do seu iPhone pelo conteúdo (objetos e linguagem natural)",
+  description:
+    "Pesquise na biblioteca de fotos do seu iPhone pelo que aparece em cada imagem — objetos, cenas e descrições em linguagem simples como 'pôr do sol na praia' — usando busca visual no próprio aparelho, que nunca envia suas fotos.",
+  keywords: [
+    "pesquisar fotos por conteúdo iphone",
+    "buscar fotos por objeto iphone",
+    "busca de fotos por linguagem natural",
+    "encontrar foto por descrição iphone",
+    "busca visual no aparelho",
+    "busca semântica de fotos iphone",
+  ],
+  ogTitle: "Pesquise as fotos do iPhone pelo que aparece nelas",
+  ogDescription:
+    "Encontre qualquer imagem por objeto, cena ou uma descrição em linguagem simples — no aparelho, sem envio.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pt",
+    headline:
+      "Como pesquisar as fotos do seu iPhone pelo conteúdo (objetos e linguagem natural)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pt/blog/search-photos-by-content-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pt",
+    name: "Pesquisar fotos do iPhone pelo conteúdo",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Instale um app de busca visual no aparelho",
+        text: "Baixe o FaceIdent na App Store e permita o acesso à sua biblioteca de fotos.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Deixe indexar no aparelho",
+        text: "O app marca objetos e cenas e cria um índice pesquisável no seu iPhone, sem enviar nada.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pesquise em linguagem natural",
+        text: "Digite o que você lembra — 'cachorro na praia', 'bolo de aniversário', 'carro vermelho' — e as fotos correspondentes aparecem.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Refine com pessoas ou texto",
+        text: "Combine a busca visual com o rosto de uma pessoa ou com o texto encontrado dentro da foto para restringir os resultados.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pt",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Posso pesquisar fotos do iPhone pelo que aparece nelas?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sim. Apps como o FaceIdent marcam os objetos e as cenas de cada foto e permitem pesquisar por descrições em linguagem simples, como 'pôr do sol na praia', tudo processado no próprio aparelho.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "O que é busca semântica de fotos?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A busca semântica relaciona o significado das suas palavras ao conteúdo de uma foto, de modo que 'um cachorro correndo no parque' pode encontrar a imagem certa mesmo que essas palavras exatas nunca tenham sido digitadas em lugar nenhum.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "A busca visual envia minhas fotos para um servidor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Não precisa. O FaceIdent cria seu índice de busca inteiramente no seu iPhone, então suas fotos nunca saem do aparelho.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Como pesquisar as fotos do seu iPhone pelo conteúdo (objetos e linguagem natural)
+
+**Resposta rápida:** Para pesquisar suas fotos pelo conteúdo, use um app que reconheça os objetos e as cenas de cada imagem e permita descrever o que você quer em linguagem simples. O [FaceIdent](/faceident) indexa sua biblioteca no próprio aparelho e encontra fotos a partir de descrições como "cachorro na praia" ou "bolo de aniversário" — sem envio, sem conta.
+
+Você raramente lembra a data em que uma foto foi tirada, mas lembra *o que* havia nela. A busca por conteúdo corresponde a essa memória, e não a uma linha do tempo.
+
+---
+
+## Três maneiras de pesquisar por conteúdo
+
+Uma boa busca de fotos no aparelho combina alguns sinais:
+
+- **Objetos e cenas.** O app reconhece coisas como *praia*, *bolo*, *carro* ou *montanhas* e permite navegar ou pesquisar por elas.
+- **Linguagem natural (busca semântica).** Você digita uma descrição — "pôr do sol na praia" — e ela corresponde ao *significado*, não só a marcações exatas.
+- **Texto dentro das fotos.** Palavras em placas, capturas de tela e recibos também ficam pesquisáveis.
+
+O [FaceIdent](/faceident) reúne tudo isso e executa tudo no seu aparelho.
+
+## Passo a passo: pesquise fotos pelo que aparece nelas
+
+1. **Instale um app de busca visual.** Baixe o [FaceIdent](/faceident) na App Store e permita o acesso às suas fotos.
+2. **Deixe indexar no aparelho.** O app marca objetos e cenas e prepara a busca em linguagem natural no seu iPhone. Nada é enviado.
+3. **Pesquise em linguagem natural.** Digite o que você lembra — "carro vermelho", "neve nas montanhas", "café sobre a mesa".
+4. **Refine.** Restrinja os resultados pelo rosto de uma pessoa ou pelo texto encontrado dentro da foto.
+
+## O que procurar em um app de busca de fotos
+
+| Recurso | Por que importa |
+| --- | --- |
+| Marcações de objetos e cenas | Navegue e pesquise pelo que realmente está na imagem |
+| Busca em linguagem natural | Descreva uma foto em vez de lembrar palavras-chave |
+| Busca de texto (OCR) | Encontre capturas de tela e recibos pelas palavras dentro deles |
+| Pessoas + conteúdo juntos | Combine um rosto com uma cena para localizar uma única foto |
+| No aparelho | Sua biblioteca e o índice nunca saem do telefone |
+
+O [FaceIdent](/faceident) cobre todos esses pontos e ainda adiciona o agrupamento de rostos e pets no aparelho, para que a busca de pessoas e a de conteúdo funcionem lado a lado.
+
+## A busca por conteúdo é privada?
+
+Pode ser. Quando a indexação roda localmente, as fotos e tudo o que deriva delas permanecem no aparelho. O [FaceIdent](/faceident) não tem nuvem nem conta, então pesquisar por conteúdo nunca envia sua biblioteca.
+
+## Perguntas frequentes
+
+**Posso pesquisar fotos do iPhone pelo que aparece nelas?**
+Sim. O FaceIdent marca objetos e cenas e oferece busca em linguagem simples, tudo no aparelho.
+
+**O que é busca semântica?**
+Ela relaciona o significado das suas palavras ao conteúdo de uma foto, de modo que uma descrição encontra a imagem certa mesmo sem palavras-chave exatas.
+
+**Ele envia minhas fotos?**
+Não. O índice é criado inteiramente no seu iPhone.
+
+---
+
+Pronto para experimentar? [Baixe o FaceIdent na App Store](https://apps.apple.com/app/id6788569032) e encontre qualquer foto descrevendo-a — de forma privada, no seu aparelho.
