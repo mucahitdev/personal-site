@@ -1,0 +1,147 @@
+export const meta = {
+  title:
+    "如何在 iPhone 上查找并删除重复照片（释放存储空间）",
+  description:
+    "一份实用指南，教你在 iPhone 上查找重复和近乎相同的照片并清理，从而释放存储空间——采用在设备本地进行的重复检测，绝不会上传你的照片图库。",
+  keywords: [
+    "iphone 查找重复照片",
+    "iphone 删除重复照片",
+    "iphone 删除相似照片",
+    "iphone 释放存储空间 照片",
+    "iphone 重复照片清理",
+    "iphone 近乎相同照片",
+  ],
+  ogTitle: "在 iPhone 上查找并删除重复照片",
+  ogDescription:
+    "在设备本地找出重复和近乎相同的照片并收回存储空间——无需上传。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何在 iPhone 上查找并删除重复照片（释放存储空间）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/find-remove-duplicate-photos-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在 iPhone 上查找并删除重复照片",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "安装一款查找重复照片的应用",
+        text: "从 App Store 下载 FaceIdent，并允许其访问你的照片图库。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "在设备本地扫描重复照片",
+        text: "应用会在你的 iPhone 上比较照片，把完全相同和近乎相同的照片归为一组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "逐组查看",
+        text: "打开一个重复照片组，保留最好的一张，选中其余的。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "删除或隐藏多余照片",
+        text: "删除重复照片以释放存储空间。删除的照片会进入“最近删除”并保留 30 天。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "如何在 iPhone 上查找重复照片？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS 的“照片”中有一个“重复项”相簿，而像 FaceIdent 这样的应用会在设备本地扫描你的图库，把完全相同和近乎相同的照片归为一组，让你保留最好的一张并删除其余的。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "我能找到近乎相同的照片，而不只是完全一样的副本吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。FaceIdent 能识别连拍和看起来几乎一样的近似重复照片，而系统自带的“重复项”相簿可能会漏掉这些。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "我的照片会立刻被永久删除吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不会。删除的照片会进入“照片”中的“最近删除”相簿，在被彻底清除前可以在 30 天内恢复。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何在 iPhone 上查找并删除重复照片（释放存储空间）
+
+**快速解答：** 要清理 iPhone 上的重复照片，可以使用一款能扫描你的图库、把相同和近乎相同的照片归为一组的应用，这样你就能保留最好的一张并删除其余的。[FaceIdent](/faceident) 在设备本地完成这一切——不会上传任何内容——删除的照片会进入“最近删除”并保留 30 天，所以查看和清理都很安全。
+
+连拍、反复重拍和保存的副本会悄悄吃掉好几个 GB。把它们归组后，清理只需轻点几下，而不用花上一下午。
+
+---
+
+## 重复照片为什么会越攒越多
+
+每当你为了拍好一张而连拍三张、把一张照片保存两次，或者留下截图的截图，都会多出近乎相同的副本。在长长的时间线里很难发现它们，因为它们就夹在几十张相似的画面之间。
+
+重复照片查找工具会比较照片并**把看起来一样的归为一组**，让你每组只需决定一次，而不必无休止地滑动。
+
+## 分步操作：删除重复照片
+
+1. **安装一款查找重复照片的应用。** 从 App Store 下载 [FaceIdent](/faceident)，并允许其访问你的照片。
+2. **在设备本地扫描。** 应用会在你的 iPhone 上比较图库，把相同和近乎相同的照片归为一组。不会上传任何内容。
+3. **逐组查看。** 打开一个组，保留最清晰或构图最好的一张，选中其余的。
+4. **删除或隐藏。** 清掉多余的照片以收回存储空间。删除的照片会在“最近删除”里保留 30 天，以防你改变主意。
+
+## 挑选重复照片清理工具时该看什么
+
+| 功能 | 为什么重要 |
+| --- | --- |
+| 近似重复检测 | 不只找完全一样的副本，还能捕捉连拍和相似照片 |
+| 分组查看 | 每组只决定一次，而不用一张张看 |
+| 保留最好的一张 | 删除前先比较画质 |
+| 安全删除 | 多余照片进入“最近删除”，30 天内可恢复 |
+| 设备本地处理 | 你的图库绝不会被上传去做比对 |
+
+[FaceIdent](/faceident) 在设备本地完成上述所有工作，同时还支持人脸和宠物归组以及照片搜索——所以清理只是让整个图库保持整洁的一部分。
+
+## 常见问题
+
+**如何在 iPhone 上查找重复照片？**
+使用“照片”中的“重复项”相簿，或者像 FaceIdent 这样在设备本地把相同和近乎相同照片归组的应用。
+
+**它能识别近乎相同的照片吗？**
+可以。FaceIdent 能找到系统自带相簿可能漏掉的连拍类相似照片。
+
+**照片会马上消失吗？**
+不会。它们会进入“最近删除”，并可在 30 天内恢复。
+
+---
+
+准备好收回一些存储空间了吗？[在 App Store 下载 FaceIdent](https://apps.apple.com/app/id6788569032)，在你的设备上清理重复照片——私密无忧。

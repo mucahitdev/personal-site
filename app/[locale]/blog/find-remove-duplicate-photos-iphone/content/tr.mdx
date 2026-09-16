@@ -1,0 +1,147 @@
+export const meta = {
+  title:
+    "iPhone'da Yinelenen Fotoğrafları Bulma ve Silme (Depolama Alanı Açın)",
+  description:
+    "iPhone'da yinelenen ve neredeyse aynı olan fotoğrafları bulup temizleyerek depolama alanı açmanın pratik rehberi — kitaplığınızı hiçbir zaman yüklemeyen cihaz üzerinde yinelenen tespiti ile.",
+  keywords: [
+    "iphone yinelenen fotoğraf bulma",
+    "iphone yinelenen fotoğraf silme",
+    "iphone benzer fotoğraf silme",
+    "iphone depolama alanı açma fotoğraf",
+    "iphone yinelenen fotoğraf temizleyici",
+    "iphone neredeyse aynı fotoğraflar",
+  ],
+  ogTitle: "iPhone'da Yinelenen Fotoğrafları Bulun ve Silin",
+  ogDescription:
+    "Yinelenen ve neredeyse aynı olan kareleri cihaz üzerinde tespit edin ve depolama alanı geri kazanın — yükleme yok.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iPhone'da Yinelenen Fotoğrafları Bulma ve Silme (Depolama Alanı Açın)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/tr/blog/find-remove-duplicate-photos-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone'da yinelenen fotoğrafları bulma ve silme",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Yinelenen bulucu uygulaması yükleyin",
+        text: "App Store'dan FaceIdent'i indirin ve fotoğraf kitaplığınıza erişime izin verin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Cihaz üzerinde yinelenenleri tarayın",
+        text: "Uygulama fotoğraflarınızı iPhone'unuzda karşılaştırır ve birebir aynı ile neredeyse aynı olan kareleri gruplar.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Her grubu inceleyin",
+        text: "Bir yinelenen grubunu açın, en iyi kareyi tutun ve geri kalanını seçin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Fazlalıkları silin veya gizleyin",
+        text: "Depolama alanı açmak için yinelenenleri kaldırın. Silinen fotoğraflar 30 gün boyunca Son Silinenler'e taşınır.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone'da yinelenen fotoğrafları nasıl bulurum?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS'un Fotoğraflar uygulamasında bir Yinelenenler albümü vardır ve FaceIdent gibi uygulamalar kitaplığınızı cihaz üzerinde tarayarak birebir aynı ve neredeyse aynı olan kareleri gruplar; böylece en iyisini tutup geri kalanını kaldırabilirsiniz.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Yalnızca birebir kopyaları değil, neredeyse aynı fotoğrafları da bulabilir miyim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. FaceIdent, standart Yinelenenler albümünün gözden kaçırabileceği seri çekim tarzı ve neredeyse aynı görünen kareleri tespit eder.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Fotoğraflarım hemen kalıcı olarak mı siliniyor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Kaldırılan fotoğraflar Fotoğraflar'daki Son Silinenler albümüne gider ve tamamen silinmeden önce 30 gün boyunca kurtarılabilir.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone'da Yinelenen Fotoğrafları Bulma ve Silme (Depolama Alanı Açın)
+
+**Kısa cevap:** iPhone'daki yinelenen fotoğrafları temizlemek için, kitaplığınızı tarayan ve aynı ile neredeyse aynı olan kareleri gruplayan bir uygulama kullanın; böylece en iyisini tutup geri kalanını silebilirsiniz. [FaceIdent](/faceident) bunu cihaz üzerinde yapar — hiçbir şey yüklenmez — ve kaldırılan fotoğraflar 30 gün boyunca Son Silinenler'e gider; bu yüzden incelemek ve temizlemek güvenlidir.
+
+Seri çekimler, tekrar denemeler ve kaydedilmiş kopyalar sessizce gigabaytlarca yer kaplar. Bunları gruplamak, temizliği bir öğleden sonra yerine birkaç dokunuşa indirir.
+
+---
+
+## Yinelenenler neden birikir
+
+Ne zaman iyi bir kare yakalamak için üç fotoğraf çekseniz, bir fotoğrafı iki kez kaydetseniz veya bir ekran görüntüsünün ekran görüntüsünü tutsanız, neredeyse aynı kopyalar eklersiniz. Uzun bir zaman akışında bunları fark etmek zordur, çünkü düzinelerce benzer karenin yanında dururlar.
+
+Bir yinelenen bulucu fotoğrafları karşılaştırır ve **aynı görünenleri gruplar**, böylece sonsuza dek kaydırmak yerine grup başına bir kez karar verirsiniz.
+
+## Adım adım: yinelenen fotoğrafları silme
+
+1. **Yinelenen bulucu uygulaması yükleyin.** App Store'dan [FaceIdent](/faceident)'i indirin ve fotoğraflarınıza erişime izin verin.
+2. **Cihaz üzerinde tarayın.** Uygulama kitaplığınızı iPhone'unuzda karşılaştırır ve birebir aynı ile neredeyse aynı olan kareleri gruplar. Hiçbir şey yüklenmez.
+3. **Her grubu inceleyin.** Bir grubu açın, en net veya en iyi çerçevelenmiş kareyi tutun ve diğerlerini seçin.
+4. **Silin veya gizleyin.** Depolama alanı geri kazanmak için fazlalıkları kaldırın. Silinen fotoğraflar, fikrinizi değiştirirsiniz diye 30 gün boyunca Son Silinenler'de kalır.
+
+## Bir yinelenen temizleyicide nelere bakmalı
+
+| Özellik | Neden önemli |
+| --- | --- |
+| Neredeyse aynı tespiti | Yalnızca birebir kopyaları değil, seri çekimleri ve benzerlerini de yakalar |
+| Gruplu inceleme | Fotoğraf fotoğraf yerine grup başına bir kez karar verin |
+| En iyi kareyi tutar | Silmeden önce kaliteyi karşılaştırın |
+| Güvenli silme | Fazlalıklar Son Silinenler'e gider, 30 gün boyunca kurtarılabilir |
+| Cihaz üzerinde | Kitaplığınız karşılaştırmak için asla yüklenmez |
+
+[FaceIdent](/faceident) tüm bunları cihaz üzerinde yapar; ayrıca yüz ve evcil hayvan gruplama ile fotoğraf aramayla birlikte — böylece temizlik, tüm kitaplığı düzenli tutmanın bir parçası olur.
+
+## Sık sorulan sorular
+
+**iPhone'da yinelenen fotoğrafları nasıl bulurum?**
+Fotoğraflar'daki Yinelenenler albümünü veya birebir aynı ile neredeyse aynı olan kareleri cihaz üzerinde gruplayan FaceIdent gibi bir uygulamayı kullanın.
+
+**Neredeyse aynı kareleri yakalayabilir mi?**
+Evet. FaceIdent, standart albümün gözden kaçırabileceği seri çekim tarzı benzerleri bulur.
+
+**Fotoğraflar hemen yok mu oluyor?**
+Hayır. Son Silinenler'e taşınırlar ve 30 gün boyunca geri yüklenebilirler.
+
+---
+
+Biraz depolama alanı geri kazanmaya hazır mısınız? [FaceIdent'i App Store'dan indirin](https://apps.apple.com/app/id6788569032) ve yinelenenleri cihazınızda temizleyin — gizlice.

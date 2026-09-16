@@ -1,0 +1,155 @@
+export const meta = {
+  title:
+    "iPhone Fotoğraflarınızı İçeriğine Göre Nasıl Ararsınız (Nesneler ve Doğal Dil)",
+  description:
+    "iPhone fotoğraf kütüphanenizi her karede görünenlere göre arayın — nesneler, sahneler ve 'sahilde gün batımı' gibi günlük dille yazılmış açıklamalar — fotoğraflarınızı hiçbir zaman yüklemeyen cihaz üzerinde görsel arama ile.",
+  keywords: [
+    "iphone fotoğrafları içeriğe göre arama",
+    "nesneye göre fotoğraf bulma iphone",
+    "doğal dille fotoğraf arama",
+    "açıklamayla fotoğraf bulma iphone",
+    "cihaz üzerinde görsel arama",
+    "anlamsal fotoğraf arama iphone",
+  ],
+  ogTitle: "iPhone Fotoğraflarını İçeriğine Göre Arayın",
+  ogDescription:
+    "Herhangi bir kareyi nesne, sahne veya günlük dille yazılmış bir açıklamayla bulun — cihaz üzerinde, yükleme yok.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iPhone Fotoğraflarınızı İçeriğine Göre Nasıl Ararsınız (Nesneler ve Doğal Dil)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/tr/blog/search-photos-by-content-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone fotoğraflarını içeriğine göre arayın",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Cihaz üzerinde görsel arama uygulaması yükleyin",
+        text: "App Store'dan FaceIdent'i indirin ve fotoğraf kütüphanenize erişime izin verin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Cihaz üzerinde dizinlemesine izin verin",
+        text: "Uygulama nesneleri ve sahneleri etiketler ve hiçbir şey yüklemeden iPhone'unuzda aranabilir bir dizin oluşturur.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Günlük dille arayın",
+        text: "Hatırladığınızı yazın — 'sahilde köpek', 'doğum günü pastası', 'kırmızı araba' — ve eşleşen fotoğraflar görünür.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kişiler veya metinle daraltın",
+        text: "Görsel aramayı bir kişinin yüzü veya fotoğrafın içindeki metinle birleştirerek sonuçları daraltın.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone fotoğraflarını içindekilere göre arayabilir miyim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. FaceIdent gibi uygulamalar her fotoğraftaki nesneleri ve sahneleri etiketler ve 'sahilde gün batımı' gibi günlük dille yazılmış açıklamalarla arama yapmanıza olanak tanır; hepsi cihaz üzerinde işlenir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Anlamsal fotoğraf arama nedir?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Anlamsal arama, kelimelerinizin anlamını bir fotoğrafın içeriğiyle eşleştirir; böylece 'parkta koşan bir köpek' ifadesi, o kelimeler hiçbir yere yazılmamış olsa bile doğru kareyi bulabilir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Görsel arama fotoğraflarımı bir sunucuya gönderir mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Göndermek zorunda değildir. FaceIdent arama dizinini tamamen iPhone'unuzda oluşturur, böylece fotoğraflarınız cihazdan hiç çıkmaz.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone Fotoğraflarınızı İçeriğine Göre Nasıl Ararsınız (Nesneler ve Doğal Dil)
+
+**Kısa yanıt:** Fotoğraflarınızı içeriğine göre aramak için, her karedeki nesneleri ve sahneleri tanıyan ve istediğinizi günlük dille tanımlamanıza olanak tanıyan bir uygulama kullanın. [FaceIdent](/faceident) kütüphanenizi cihaz üzerinde dizinler ve "sahilde köpek" ya da "doğum günü pastası" gibi açıklamalardan fotoğrafları bulur — yükleme yok, hesap yok.
+
+Bir fotoğrafın hangi tarihte çekildiğini nadiren hatırlarsınız, ama içinde *ne olduğunu* hatırlarsınız. İçerik araması bir zaman çizelgesi yerine bu hafızayla eşleşir.
+
+---
+
+## İçeriğe göre aramanın üç yolu
+
+İyi bir cihaz üzerinde fotoğraf araması birkaç sinyali birleştirir:
+
+- **Nesneler ve sahneler.** Uygulama *sahil*, *pasta*, *araba* veya *dağlar* gibi şeyleri tanır ve bunlara göre göz atmanıza ya da arama yapmanıza olanak tanır.
+- **Doğal dil (anlamsal arama).** Bir açıklama yazarsınız — "sahilde gün batımı" — ve o yalnızca kesin etiketlerle değil, *anlamla* eşleşir.
+- **Fotoğrafların içindeki metin.** Tabelalardaki, ekran görüntülerindeki ve fişlerdeki kelimeler de aranabilir hale gelir.
+
+[FaceIdent](/faceident) bunları bir araya getirir ve tümünü cihazınızda çalıştırır.
+
+## Adım adım: fotoğrafları içindekilere göre arayın
+
+1. **Bir görsel arama uygulaması yükleyin.** App Store'dan [FaceIdent](/faceident)'i indirin ve fotoğraflarınıza erişime izin verin.
+2. **Cihaz üzerinde dizinlemesine izin verin.** Uygulama nesneleri ve sahneleri etiketler ve iPhone'unuzda doğal dille aramayı hazırlar. Hiçbir şey yüklenmez.
+3. **Günlük dille arayın.** Hatırladığınızı yazın — "kırmızı araba", "dağlarda kar", "masada kahve".
+4. **Daraltın.** Sonuçları bir kişinin yüzüyle veya fotoğrafın içinde bulunan metinle daraltın.
+
+## Bir fotoğraf arama uygulamasında nelere dikkat etmeli
+
+| Özellik | Neden önemli |
+| --- | --- |
+| Nesne ve sahne etiketleri | Karede gerçekten olanlara göre göz atın ve arayın |
+| Doğal dille arama | Anahtar kelimeleri hatırlamak yerine bir fotoğrafı tanımlayın |
+| Metin (OCR) araması | Ekran görüntülerini ve fişleri içindeki kelimelerle bulun |
+| Kişiler + içerik birlikte | Tek bir fotoğrafı belirlemek için bir yüzü bir sahneyle birleştirin |
+| Cihaz üzerinde | Kütüphaneniz ve dizininiz telefondan hiç çıkmaz |
+
+[FaceIdent](/faceident) bunların hepsini kapsar ve kişilerle içerik aramasının yan yana çalışması için cihaz üzerinde yüz ve evcil hayvan gruplaması ekler.
+
+## İçerik araması gizli mi?
+
+Olabilir. Dizinleme yerel olarak çalıştığında, fotoğraflar ve onlardan türetilen her şey cihazda kalır. [FaceIdent](/faceident)'in bulutu ve hesabı yoktur, bu yüzden içeriğe göre arama kütüphanenizi hiçbir zaman yüklemez.
+
+## Sık sorulan sorular
+
+**iPhone fotoğraflarını içindekilere göre arayabilir miyim?**
+Evet. FaceIdent nesneleri ve sahneleri etiketler ve günlük dille aramayı destekler; hepsi cihaz üzerinde.
+
+**Anlamsal arama nedir?**
+Kelimelerinizin anlamını bir fotoğrafın içeriğiyle eşleştirir; böylece bir açıklama, kesin anahtar kelimeler olmasa bile doğru kareyi bulur.
+
+**Fotoğraflarımı yükler mi?**
+Hayır. Dizin tamamen iPhone'unuzda oluşturulur.
+
+---
+
+Denemeye hazır mısınız? [FaceIdent'i App Store'dan indirin](https://apps.apple.com/app/id6788569032) ve herhangi bir fotoğrafı tanımlayarak bulun — gizlice, cihazınızda.

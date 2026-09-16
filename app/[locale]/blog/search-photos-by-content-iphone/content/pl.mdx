@@ -1,0 +1,155 @@
+export const meta = {
+  title:
+    "Jak przeszukiwać zdjęcia w iPhonie według ich zawartości (obiekty i język naturalny)",
+  description:
+    "Przeszukuj bibliotekę zdjęć w iPhonie według tego, co widać na każdym ujęciu — obiektów, scen i opisów zwykłym językiem, jak „zachód słońca na plaży” — dzięki wyszukiwaniu wizualnemu na urządzeniu, które nigdy nie wysyła Twoich zdjęć.",
+  keywords: [
+    "wyszukiwanie zdjęć według zawartości iphone",
+    "znajdź zdjęcie według obiektu iphone",
+    "wyszukiwanie zdjęć językiem naturalnym",
+    "znaleźć zdjęcie po opisie iphone",
+    "wyszukiwanie wizualne na urządzeniu",
+    "semantyczne wyszukiwanie zdjęć iphone",
+  ],
+  ogTitle: "Przeszukuj zdjęcia w iPhonie według tego, co na nich jest",
+  ogDescription:
+    "Znajdź dowolne ujęcie po obiekcie, scenie lub opisie zwykłym językiem — na urządzeniu, bez wysyłania.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak przeszukiwać zdjęcia w iPhonie według ich zawartości (obiekty i język naturalny)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pl/blog/search-photos-by-content-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Przeszukiwanie zdjęć w iPhonie według zawartości",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Zainstaluj aplikację do wyszukiwania wizualnego na urządzeniu",
+        text: "Pobierz FaceIdent z App Store i zezwól na dostęp do biblioteki zdjęć.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pozwól jej zindeksować na urządzeniu",
+        text: "Aplikacja oznacza obiekty i sceny oraz buduje przeszukiwalny indeks na Twoim iPhonie, niczego nie wysyłając.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Szukaj zwykłym językiem",
+        text: "Wpisz to, co pamiętasz — „pies na plaży”, „tort urodzinowy”, „czerwony samochód” — i pojawią się pasujące zdjęcia.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zawęź według osób lub tekstu",
+        text: "Połącz wyszukiwanie wizualne z twarzą osoby lub tekstem znalezionym na zdjęciu, aby zawęzić wyniki.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy mogę przeszukiwać zdjęcia w iPhonie według tego, co na nich jest?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. Aplikacje takie jak FaceIdent oznaczają obiekty i sceny na każdym zdjęciu i pozwalają szukać za pomocą opisów zwykłym językiem, jak „zachód słońca na plaży”, a wszystko jest przetwarzane na urządzeniu.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czym jest semantyczne wyszukiwanie zdjęć?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Wyszukiwanie semantyczne dopasowuje znaczenie Twoich słów do zawartości zdjęcia, więc „pies biegnący w parku” znajdzie właściwe ujęcie, nawet jeśli te dokładne słowa nigdzie nie zostały wpisane.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy wyszukiwanie wizualne wysyła moje zdjęcia na serwer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie musi. FaceIdent buduje indeks wyszukiwania w całości na Twoim iPhonie, więc Twoje zdjęcia nigdy nie opuszczają urządzenia.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak przeszukiwać zdjęcia w iPhonie według ich zawartości (obiekty i język naturalny)
+
+**Szybka odpowiedź:** Aby przeszukiwać zdjęcia według zawartości, użyj aplikacji, która rozpoznaje obiekty i sceny na każdym ujęciu i pozwala opisać to, czego szukasz, zwykłym językiem. [FaceIdent](/faceident) indeksuje Twoją bibliotekę na urządzeniu i znajduje zdjęcia na podstawie opisów, takich jak „pies na plaży” czy „tort urodzinowy” — bez wysyłania, bez konta.
+
+Rzadko pamiętasz datę zrobienia zdjęcia, ale pamiętasz, *co* było na nim widać. Wyszukiwanie według zawartości odpowiada tej pamięci, a nie osi czasu.
+
+---
+
+## Trzy sposoby wyszukiwania według zawartości
+
+Dobre wyszukiwanie zdjęć na urządzeniu łączy kilka sygnałów:
+
+- **Obiekty i sceny.** Aplikacja rozpoznaje rzeczy takie jak *plaża*, *tort*, *samochód* czy *góry* i pozwala je przeglądać lub wyszukiwać.
+- **Język naturalny (wyszukiwanie semantyczne).** Wpisujesz opis — „zachód słońca na plaży” — a on dopasowuje *znaczenie*, a nie tylko dokładne etykiety.
+- **Tekst na zdjęciach.** Słowa na znakach, zrzutach ekranu i paragonach również stają się przeszukiwalne.
+
+[FaceIdent](/faceident) łączy to wszystko i uruchamia w całości na Twoim urządzeniu.
+
+## Krok po kroku: przeszukuj zdjęcia według tego, co na nich jest
+
+1. **Zainstaluj aplikację do wyszukiwania wizualnego.** Pobierz [FaceIdent](/faceident) z App Store i zezwól na dostęp do zdjęć.
+2. **Pozwól jej zindeksować na urządzeniu.** Aplikacja oznacza obiekty i sceny oraz przygotowuje wyszukiwanie językiem naturalnym na Twoim iPhonie. Nic nie jest wysyłane.
+3. **Szukaj zwykłym językiem.** Wpisz to, co pamiętasz — „czerwony samochód”, „śnieg na górach”, „kawa na stole”.
+4. **Zawęź.** Ogranicz wyniki według twarzy osoby lub tekstu znalezionego na zdjęciu.
+
+## Na co zwracać uwagę w aplikacji do wyszukiwania zdjęć
+
+| Funkcja | Dlaczego jest ważna |
+| --- | --- |
+| Etykiety obiektów i scen | Przeglądaj i szukaj według tego, co naprawdę jest na ujęciu |
+| Wyszukiwanie językiem naturalnym | Opisz zdjęcie zamiast pamiętać słowa kluczowe |
+| Wyszukiwanie tekstu (OCR) | Znajdź zrzuty ekranu i paragony po słowach w ich wnętrzu |
+| Osoby + zawartość razem | Połącz twarz ze sceną, aby wskazać jedno zdjęcie |
+| Na urządzeniu | Twoja biblioteka i indeks nigdy nie opuszczają telefonu |
+
+[FaceIdent](/faceident) obejmuje to wszystko i dodaje grupowanie twarzy oraz zwierząt na urządzeniu, dzięki czemu wyszukiwanie osób i zawartości działa równolegle.
+
+## Czy wyszukiwanie według zawartości jest prywatne?
+
+Może być. Gdy indeksowanie odbywa się lokalnie, zdjęcia i wszystko, co z nich wynika, pozostają na urządzeniu. [FaceIdent](/faceident) nie ma chmury ani konta, więc wyszukiwanie według zawartości nigdy nie wysyła Twojej biblioteki.
+
+## Częste pytania
+
+**Czy mogę przeszukiwać zdjęcia w iPhonie według tego, co na nich jest?**
+Tak. FaceIdent oznacza obiekty i sceny oraz obsługuje wyszukiwanie zwykłym językiem, a wszystko dzieje się na urządzeniu.
+
+**Czym jest wyszukiwanie semantyczne?**
+Dopasowuje znaczenie Twoich słów do zawartości zdjęcia, więc opis znajduje właściwe ujęcie nawet bez dokładnych słów kluczowych.
+
+**Czy wysyła moje zdjęcia?**
+Nie. Indeks jest budowany w całości na Twoim iPhonie.
+
+---
+
+Gotów, by spróbować? [Pobierz FaceIdent z App Store](https://apps.apple.com/app/id6788569032) i znajdź dowolne zdjęcie, opisując je — prywatnie, na swoim urządzeniu.

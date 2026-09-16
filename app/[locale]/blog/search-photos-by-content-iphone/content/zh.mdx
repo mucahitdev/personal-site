@@ -1,0 +1,155 @@
+export const meta = {
+  title:
+    "如何按内容搜索 iPhone 照片（物体与自然语言）",
+  description:
+    "按每张照片里出现的内容搜索你的 iPhone 相册——物体、场景，以及像“海滩上的日落”这样的日常语言描述——使用永不上传照片的设备端视觉搜索。",
+  keywords: [
+    "iphone 按内容搜索照片",
+    "按物体查找照片 iphone",
+    "自然语言搜索照片",
+    "按描述查找照片 iphone",
+    "设备端视觉搜索",
+    "语义搜索照片 iphone",
+  ],
+  ogTitle: "按照片里的内容搜索 iPhone 照片",
+  ogDescription:
+    "用物体、场景或一句日常语言描述找到任何照片——设备端处理，无需上传。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何按内容搜索 iPhone 照片（物体与自然语言）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/search-photos-by-content-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "按内容搜索 iPhone 照片",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "安装一款设备端视觉搜索应用",
+        text: "从 App Store 下载 FaceIdent，并允许访问你的相册。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "让它在设备上建立索引",
+        text: "应用会为物体和场景打标签，并在你的 iPhone 上建立可搜索的索引，全程不上传任何内容。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "用日常语言搜索",
+        text: "输入你记得的内容——“海滩上的狗”“生日蛋糕”“红色汽车”——匹配的照片就会出现。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "用人物或文字进一步筛选",
+        text: "将视觉搜索与某个人的面孔或照片中出现的文字结合，缩小结果范围。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "我能按照片里的内容搜索 iPhone 照片吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。像 FaceIdent 这样的应用会为每张照片里的物体和场景打标签，让你用“海滩上的日落”这样的日常语言描述进行搜索，全部在设备上处理。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "什么是语义照片搜索？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "语义搜索会把你所用词语的含义与照片内容进行匹配，因此即便“一只在公园里奔跑的狗”这些确切字眼从未在任何地方输入过，也能找到对应的照片。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "视觉搜索会把我的照片发送到服务器吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不必如此。FaceIdent 完全在你的 iPhone 上建立搜索索引，因此你的照片永远不会离开设备。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何按内容搜索 iPhone 照片（物体与自然语言）
+
+**快速回答：** 要按内容搜索照片，请使用一款能识别每张照片里的物体和场景、并让你用日常语言描述所需内容的应用。[FaceIdent](/faceident) 会在设备上为你的相册建立索引，并根据“海滩上的狗”或“生日蛋糕”这样的描述找到照片——无需上传，无需账号。
+
+你很少记得一张照片是哪天拍的，但你记得里面*有什么*。按内容搜索契合的正是这份记忆，而不是时间线。
+
+---
+
+## 按内容搜索的三种方式
+
+好的设备端照片搜索会结合几种线索：
+
+- **物体和场景。** 应用能识别*海滩*、*蛋糕*、*汽车*或*群山*等，让你据此浏览或搜索。
+- **自然语言（语义搜索）。** 你输入一句描述——“海滩上的日落”——它匹配的是*含义*，而不仅仅是精确标签。
+- **照片中的文字。** 招牌、截图和收据上的文字也变得可搜索。
+
+[FaceIdent](/faceident) 将这些融为一体，并全部在你的设备上运行。
+
+## 分步操作：按照片里的内容搜索
+
+1. **安装一款视觉搜索应用。** 从 App Store 下载 [FaceIdent](/faceident)，并允许访问你的照片。
+2. **让它在设备上建立索引。** 应用会为物体和场景打标签，并在你的 iPhone 上准备好自然语言搜索。不上传任何内容。
+3. **用日常语言搜索。** 输入你记得的内容——“红色汽车”“山上的雪”“桌上的咖啡”。
+4. **进一步筛选。** 通过某个人的面孔或照片中出现的文字缩小结果范围。
+
+## 挑选照片搜索应用时要看什么
+
+| 功能 | 为什么重要 |
+| --- | --- |
+| 物体与场景标签 | 按照片里真正出现的东西浏览和搜索 |
+| 自然语言搜索 | 描述一张照片，而不必记住关键词 |
+| 文字（OCR）搜索 | 通过内部文字找到截图和收据 |
+| 人物 + 内容结合 | 将面孔与场景结合，精准定位某一张照片 |
+| 设备端 | 你的相册和索引永不离开手机 |
+
+[FaceIdent](/faceident) 涵盖上述全部功能，还加入了设备端的人脸与宠物分组，让人物搜索和内容搜索并肩协作。
+
+## 按内容搜索私密吗？
+
+可以做到。当索引在本地运行时，照片以及由此衍生的一切都留在设备上。[FaceIdent](/faceident) 没有云端、没有账号，因此按内容搜索永远不会上传你的相册。
+
+## 常见问题
+
+**我能按照片里的内容搜索 iPhone 照片吗？**
+可以。FaceIdent 会为物体和场景打标签并支持日常语言搜索，全部在设备上进行。
+
+**什么是语义搜索？**
+它把你所用词语的含义与照片内容匹配，因此即使没有确切关键词，一句描述也能找到对应的照片。
+
+**它会上传我的照片吗？**
+不会。索引完全在你的 iPhone 上建立。
+
+---
+
+准备好试试了吗？[在 App Store 下载 FaceIdent](https://apps.apple.com/app/id6788569032)，只需描述就能找到任何照片——私密地，在你的设备上。

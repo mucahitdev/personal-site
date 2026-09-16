@@ -18,6 +18,12 @@ const enPosts = [
 const multilingualPosts = [
   'launch-apps-from-widgets-ios',
   'organize-iphone-home-screen-2026',
+  'find-photos-of-a-person-iphone',
+  'search-photos-by-content-iphone',
+  'on-device-photo-organizer-privacy',
+  'find-remove-duplicate-photos-iphone',
+  'find-photos-of-your-pet-iphone',
+  'search-text-in-photos-iphone',
 ]
 
 function localePath(locale: string, path: string): string {

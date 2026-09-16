@@ -1,0 +1,147 @@
+export const meta = {
+  title:
+    "Jak wyszukiwać tekst w zdjęciach na iPhonie (zrzuty ekranu i paragony)",
+  description:
+    "Znajdź dowolny zrzut ekranu, paragon lub notatkę po zawartych w nich słowach — przewodnik po wyszukiwaniu tekstu w zdjęciach na iPhonie z rozpoznawaniem tekstu na urządzeniu, które nigdy nie przesyła Twojej biblioteki.",
+  keywords: [
+    "wyszukiwanie tekstu w zdjęciach iphone",
+    "znajdź zrzut ekranu po tekście iphone",
+    "ocr zdjęcia iphone",
+    "wyszukiwanie paragonów w zdjęciach iphone",
+    "znajdź tekst w obrazach",
+    "wyszukiwanie tekstu w zdjęciach na urządzeniu",
+  ],
+  ogTitle: "Wyszukuj tekst w zdjęciach na iPhonie",
+  ogDescription:
+    "Znajdź zrzuty ekranu, paragony i notatki po zawartych w nich słowach — na urządzeniu, bez przesyłania.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak wyszukiwać tekst w zdjęciach na iPhonie (zrzuty ekranu i paragony)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pl/blog/search-text-in-photos-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Wyszukiwanie tekstu w zdjęciach na iPhonie",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Zainstaluj aplikację do wyszukiwania tekstu w zdjęciach",
+        text: "Pobierz FaceIdent z App Store i zezwól na dostęp do biblioteki zdjęć.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pozwól jej odczytać Twoje zdjęcia na urządzeniu",
+        text: "Aplikacja rozpoznaje tekst na Twoich zrzutach ekranu, paragonach i w notatkach oraz indeksuje go na Twoim iPhonie.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wyszukaj słowo lub frazę",
+        text: "Wpisz słowo, które pamiętasz — nazwę sklepu, kod, tytuł — a pojawią się pasujące zdjęcia.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Otwórz wynik",
+        text: "Dotknij zdjęcia, aby je wyświetlić, a następnie skopiuj lub udostępnij szukany tekst.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy mogę wyszukiwać tekst w moich zdjęciach na iPhonie?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. Aplikacje takie jak FaceIdent odczytują tekst na Twoich zdjęciach za pomocą OCR na urządzeniu i pozwalają wyszukiwać zrzuty ekranu, paragony i notatki po zawartych w nich słowach.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy wyszukiwanie tekstu w zdjęciach działa offline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. FaceIdent rozpoznaje i indeksuje tekst na Twoim iPhonie, więc wyszukiwanie działa nawet bez połączenia.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy tekst z moich zdjęć jest wysyłany na serwer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. FaceIdent wykonuje rozpoznawanie tekstu w całości na urządzeniu, więc nic z Twoich zdjęć nie jest przesyłane.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak wyszukiwać tekst w zdjęciach na iPhonie (zrzuty ekranu i paragony)
+
+**Szybka odpowiedź:** Aby znaleźć zdjęcie po zawartych w nim słowach, użyj aplikacji z rozpoznawaniem tekstu na urządzeniu (OCR), która odczytuje i indeksuje Twoje zrzuty ekranu, paragony i notatki. [FaceIdent](/faceident) pozwala wpisać zapamiętane słowo — nazwę sklepu, kod, tytuł — i pokazuje pasujące zdjęcie. Wszystko jest przetwarzane na Twoim iPhonie; nic nie jest przesyłane.
+
+Połowa nowoczesnej biblioteki zdjęć to zrzuty ekranu, paragony, bilety i tablice. Najszybszym sposobem na znalezienie jednego z nich jest wyszukanie zawartych w nim słów.
+
+---
+
+## Jak działa wyszukiwanie tekstu w zdjęciach
+
+Rozpoznawanie tekstu (OCR) odczytuje słowa wydrukowane wewnątrz obrazu — szyld, zrzut ekranu, paragon — i zamienia je w tekst możliwy do przeszukania. Po zindeksowaniu biblioteki wpisanie słowa znajduje każde zdjęcie, które je zawiera, nawet jeśli plik nie ma podpisu ani nazwy.
+
+[FaceIdent](/faceident) uruchamia to rozpoznawanie na urządzeniu, więc Twoje zrzuty ekranu i paragony nigdy nie są przesyłane.
+
+## Krok po kroku: wyszukiwanie tekstu w zdjęciach
+
+1. **Zainstaluj aplikację do wyszukiwania tekstu w zdjęciach.** Pobierz [FaceIdent](/faceident) z App Store i zezwól na dostęp do zdjęć.
+2. **Pozwól jej odczytać na urządzeniu.** Aplikacja rozpoznaje tekst na Twoich zrzutach ekranu, paragonach i w notatkach oraz indeksuje go na Twoim iPhonie.
+3. **Wyszukaj słowo lub frazę.** Wpisz coś, co pamiętasz — markę, adres, kod potwierdzenia.
+4. **Otwórz wynik.** Dotknij pasującego zdjęcia, a następnie skopiuj lub udostępnij tekst.
+
+## Na co zwrócić uwagę w aplikacji do wyszukiwania tekstu w zdjęciach
+
+| Funkcja | Dlaczego jest ważna |
+| --- | --- |
+| OCR na urządzeniu | Twoje zrzuty ekranu i paragony nigdy nie są przesyłane |
+| Szybkie wyszukiwanie w całej bibliotece | Znajdź jedno słowo wśród tysięcy zdjęć |
+| Działa offline | Wyszukiwanie działa nawet bez połączenia |
+| Łączy się z osobami i obiektami | Zawęź wynik według tego, kto lub co jest na zdjęciu |
+| Darmowe do wypróbowania | Przetestuj najpierw na własnych zrzutach ekranu |
+
+[FaceIdent](/faceident) obejmuje to wszystko, obok grupowania twarzy i zwierząt na urządzeniu oraz wyszukiwania zdjęć w języku naturalnym.
+
+## Częste pytania
+
+**Czy mogę wyszukiwać tekst w moich zdjęciach?**
+Tak. FaceIdent odczytuje tekst za pomocą OCR na urządzeniu i pozwala wyszukiwać zrzuty ekranu i paragony według ich zawartości.
+
+**Czy działa offline?**
+Tak. Rozpoznawanie i wyszukiwanie działają na Twoim iPhonie.
+
+**Czy tekst z moich zdjęć jest przesyłany?**
+Nie. OCR odbywa się w całości na urządzeniu.
+
+---
+
+Gotowy, aby spróbować? [Pobierz FaceIdent w App Store](https://apps.apple.com/app/id6788569032) i znajdź dowolny zrzut ekranu lub paragon po zawartych w nim słowach — prywatnie, na swoim urządzeniu.
