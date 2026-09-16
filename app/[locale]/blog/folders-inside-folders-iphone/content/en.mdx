@@ -1,0 +1,157 @@
+export const meta = {
+  title: "How to Put Folders Inside Folders on iPhone (Nested Folders)",
+  description:
+    "iOS Home Screen folders cannot hold other folders. Here is how to get real nested folders on iPhone with a widget: tap a folder tile, it opens in place with a back tile, as many levels deep as you like.",
+  keywords: [
+    "folder inside folder iphone",
+    "nested folders iphone home screen",
+    "subfolders iphone",
+    "put a folder in a folder ios",
+    "iphone folder within folder",
+    "sub folders home screen widget",
+  ],
+  ogTitle: "Folders Inside Folders on iPhone, Finally",
+  ogDescription:
+    "iOS won't nest folders. A WidgetLoft widget will: tap a folder, it opens in place with a back tile.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline: "How to Put Folders Inside Folders on iPhone (Nested Folders)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/folders-inside-folders-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Create nested folders on iPhone with a widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Create a group and a folder",
+        text: "Install WidgetLoft (formerly FolderMini), create a group, open it and tap New Folder.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add apps and more folders",
+        text: "Add apps to the folder. Tap New Folder again inside it to go another level deeper.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choose how the folder tile looks",
+        text: "Show the folder as a 2×2 or 3×3 mini-grid of its apps, or give it its own icon from a photo or an SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Place the widget",
+        text: "Long-press the Home Screen, tap the plus button, add the WidgetLoft widget and pick your group.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tune the back tile and auto-return",
+        text: "Style the back tile in the Back Button editor and drag it to any slot, then set Settings, Widget, Auto-return to folder.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can you put a folder inside a folder on iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not with regular Home Screen folders: iOS does not let you drop one folder into another. A folder widget like WidgetLoft does support it. Tap a folder tile and it opens inside the widget, with a back tile to go up a level.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many apps and sub-folders can a WidgetLoft folder hold?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Each folder holds up to 100 apps and 20 sub-folders, and there is no limit on how deep you nest. The free version allows 6 groups and 21 library apps; WidgetLoft Pro removes those limits.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do nested folders work on the Lock Screen widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. The Lock Screen widget shows one row of top-level apps only. Folders inside folders work in the Home Screen widgets.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Put Folders Inside Folders on iPhone (Nested Folders)
+
+**Quick answer:** You can't put a folder inside another folder on the iPhone Home Screen. iOS simply doesn't allow it. You can get real nested folders inside a widget with [WidgetLoft](/widgetloft) (formerly FolderMini): tap a folder tile and it opens right there in the widget, with a back tile to go up, as many levels deep as you want.
+
+Dragged a folder onto another folder and watched it bounce back? You're not doing it wrong. Here is the workaround that works.
+
+---
+
+## Why iOS won't nest folders
+
+Home Screen folders are one level deep: you can't drag a folder into another, and no setting changes that. So a "Work" folder can't contain a "Meetings" folder and a "Docs" folder, and you end up with either one giant folder or a Home Screen full of small ones.
+
+A widget can do what a folder can't. In [WidgetLoft](/widgetloft), a group becomes a Home Screen widget, and a group can contain folders, which can contain more folders. Tapping a folder tile opens that folder in place, and a back tile takes you up one level.
+
+## Step-by-step: create nested folders on iPhone
+
+1. **Create a group and a folder.** Install [WidgetLoft](/widgetloft), create a group, open it and tap **New Folder**.
+2. **Add apps and more folders.** Add apps to the folder. Tap **New Folder** again inside it to go another level deeper.
+3. **Choose how the folder tile looks.** Show the folder as a 2×2 or 3×3 mini-grid of the apps inside, or give it its own icon from a photo or an SF Symbol.
+4. **Place the widget.** Long-press the Home Screen, tap **+**, add the WidgetLoft widget and pick your group.
+5. **Tune the back tile and auto-return.** In the **Back Button** editor pick a symbol (12 presets or any SF Symbol), a symbol color, a background color, background opacity from 0 to 100% and a size, or tap **Reset to Default**. Drag the back tile to any slot. Then go to **Settings → Widget → Auto-return to folder**.
+
+## iOS folders vs WidgetLoft folders
+
+| | iOS Home Screen folders | WidgetLoft folders |
+| --- | --- | --- |
+| Folders inside folders | Not possible | Yes, unlimited depth |
+| Capacity | Apps only, no sub-folders | Up to 100 apps and 20 sub-folders per folder |
+| Where it lives | On the Home Screen as an icon | Inside a Home Screen widget, opens in place |
+| Custom look | A small preview of the apps inside | 2×2 or 3×3 mini-grid, or its own photo or symbol icon |
+| Getting back | Tap outside the folder | A back tile you can style and move |
+
+With [WidgetLoft](/widgetloft), one widget can hold your whole day, sorted into folders, and every app tile still opens its app directly.
+
+## Keep it tidy
+
+- **Group by routine, not by app type.** A "Morning" folder with news, weather and your calendar is faster than a "Utilities" folder you have to search through.
+- **Use auto-return.** With **Auto-return to folder**, the widget goes back to the top after you open an app, after a period of inactivity (10 to 60 seconds, 30 by default), or both. No more landing in a forgotten sub-folder.
+
+For a bigger cleanup, see [how to organize your iPhone Home Screen](/blog/organize-iphone-home-screen-2026).
+
+## Common questions
+
+**Can you put a folder inside a folder on iPhone?**
+Not with regular Home Screen folders. A folder widget like WidgetLoft supports it: tap a folder tile and it opens inside the widget, with a back tile to go up.
+
+**How many apps and sub-folders can a folder hold?**
+Up to 100 apps and 20 sub-folders per folder, with no depth limit. The free version allows 6 groups and 21 library apps; WidgetLoft Pro removes those limits.
+
+**Do nested folders work on the Lock Screen widget?**
+No. The Lock Screen widget shows one row of top-level apps only. Nested folders work in the Home Screen widgets.
+
+---
+
+Ready to nest? [Download WidgetLoft on the App Store](/widgetloft/download) and put folders inside folders today.

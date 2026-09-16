@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Cách mở trang web bằng Chrome (hoặc bất kỳ trình duyệt nào) từ widget iPhone",
+  description:
+    "Trang web bạn thêm vào Màn hình chính iPhone luôn mở trong Safari hoặc trình duyệt mặc định. Đây là cách mở trang web ngay từ widget bằng Chrome, Firefox, Brave hoặc toàn màn hình, cho mọi trang hoặc chỉ một trang.",
+  keywords: [
+    "mở trang web bằng chrome từ màn hình chính iphone",
+    "widget iphone mở link bằng chrome",
+    "thêm trang web vào màn hình chính chrome iphone",
+    "lối tắt màn hình chính mở bằng safari",
+    "widget trang web iphone chọn trình duyệt",
+    "mở trang web toàn màn hình từ widget iphone",
+  ],
+  ogTitle: "Mở trang web bằng Chrome từ widget iPhone",
+  ogDescription:
+    "Chọn Chrome, Firefox, Brave hoặc chế độ toàn màn hình cho các trang web trong widget, cho mọi trang hoặc chỉ một trang.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Cách mở trang web bằng Chrome (hoặc bất kỳ trình duyệt nào) từ widget iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/vi/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Mở trang web bằng Chrome hoặc trình duyệt khác từ widget iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Thêm trang web thành một ô",
+        text: "Trong WidgetLoft (trước đây là FolderMini), vào Thư viện, chạm Thêm ô, chọn Trang web rồi dán địa chỉ. Biểu tượng và tên được điền sẵn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Đưa vào widget",
+        text: "Thêm ô trang web vào một nhóm, rồi thêm widget WidgetLoft vào Màn hình chính.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn trình duyệt cho mọi trang web",
+        text: "Vào Cài đặt, Widget, Mở trang web rồi chọn Chrome, Firefox, Brave hoặc trình duyệt khác, hoặc Trong WidgetLoft để xem toàn màn hình.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Đổi riêng một trang nếu muốn",
+        text: "Mở ô trang web, chạm Mở bằng và chọn tùy chọn khác chỉ cho trang đó, hoặc để nguyên Theo cài đặt.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm trình duyệt tùy chỉnh nếu thiếu trình duyệt của bạn",
+        text: "Trong Trình duyệt tùy chỉnh, chạm Thêm trình duyệt, nhập tên và định dạng địa chỉ có chứa {url}, rồi chạm Thử.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Vì sao trang web trên Màn hình chính của tôi luôn mở trong Safari?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dấu trang tạo bằng Thêm vào MH chính của Safari sẽ mở trong Safari, còn phần lớn widget liên kết chuyển địa chỉ cho trình duyệt mặc định. Để dùng trình duyệt khác chỉ cho những liên kết đó, bạn cần một widget cho phép chọn, như WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Nếu trình duyệt tôi chọn chưa được cài thì sao?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Trang web sẽ mở trong trình duyệt mặc định, nên chạm vào ô không bao giờ bị vô ích.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tôi có được đăng nhập sẵn vào các trang trong WidgetLoft không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Đăng nhập trong trình duyệt của WidgetLoft tách biệt với Safari, nên có thể bạn cần đăng nhập một lần ở đó. Nếu muốn dùng phiên đăng nhập hiện có, hãy chọn trình duyệt bạn vẫn dùng.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách mở trang web bằng Chrome (hoặc bất kỳ trình duyệt nào) từ widget iPhone
+
+**Trả lời nhanh:** trang web bạn thêm vào Màn hình chính iPhone sẽ mở trong Safari hoặc trình duyệt mặc định, và bạn không thể đổi điều đó cho từng liên kết. Với [WidgetLoft](/widgetloft) (trước đây là FolderMini), bạn thêm trang web thành một ô trong widget, rồi chọn Chrome, Firefox, Brave, trình duyệt khác hoặc chế độ toàn màn hình trong Cài đặt → Widget → Mở trang web, cho mọi trang hoặc chỉ một trang.
+
+Có thể Safari là trình duyệt mặc định của bạn, nhưng bảng điều khiển công việc lại nằm trong Chrome. Một lần chạm trên Màn hình chính vẫn nên đưa bạn đến đúng chỗ.
+
+---
+
+## Vì sao trang web trên Màn hình chính luôn mở trong Safari
+
+**Thêm vào MH chính** của Safari tạo một dấu trang thuộc về Safari. Phần lớn widget liên kết cũng kết thúc ở cùng chỗ: chuyển địa chỉ cho **trình duyệt mặc định** của bạn.
+
+Đổi trình duyệt mặc định sẽ thay đổi mọi liên kết trong mọi ứng dụng. Điều bạn thường cần hẹp hơn: *trang này* mở bằng Chrome, còn lại vẫn như cũ. Các ô trang web của WidgetLoft làm đúng như vậy: một trình duyệt cho mọi trang web, kèm ngoại lệ cho bất kỳ trang riêng lẻ nào.
+
+## Từng bước: mở trang web bằng Chrome từ widget
+
+1. **Thêm trang web thành một ô.** Trong [WidgetLoft](/widgetloft), vào **Thư viện** → **Thêm ô** → **Trang web** và dán địa chỉ. Biểu tượng và tên trang được điền sẵn.
+2. **Đưa vào widget.** Thêm ô vào một nhóm, rồi thêm widget WidgetLoft vào Màn hình chính (chạm và giữ Màn hình chính, chạm **+**, tìm WidgetLoft).
+3. **Chọn trình duyệt cho mọi trang web.** Vào **Cài đặt** → **Widget** → **Mở trang web** và chọn Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha hoặc Yandex. Hoặc chọn **Trong WidgetLoft** để xem toàn màn hình.
+4. **Đổi riêng một trang (tùy chọn).** Mở ô trang web, chạm **Mở bằng** và chọn tùy chọn khác. Thay đổi chỉ áp dụng cho trang đó. **Theo cài đặt** sẽ đưa về như cũ.
+5. **Thêm trình duyệt tùy chỉnh (tùy chọn).** Không có trong danh sách? Vào **Trình duyệt tùy chỉnh** → **Thêm trình duyệt**, nhập tên và định dạng địa chỉ có chứa `{url}`, rồi chạm **Thử**.
+
+## Nên chọn tùy chọn nào
+
+| Tùy chọn | Khi nào nên dùng |
+| --- | --- |
+| Trình duyệt mặc định | Bạn hài lòng với trình duyệt mà phần còn lại của iPhone đang dùng |
+| Một trình duyệt bạn chọn (Chrome, Firefox, Brave và khác) | Dấu trang, mật khẩu hoặc tiện ích mở rộng của bạn nằm trong trình duyệt không phải mặc định |
+| Trong WidgetLoft | Bạn muốn xem trang toàn màn hình không có tab, kèm nút **Mở trong trình duyệt** khi cần |
+| Trình duyệt tùy chỉnh | Trình duyệt của bạn không có trong danh sách và bạn biết định dạng địa chỉ của nó |
+
+Bạn có thể kết hợp tùy ý. Để cài đặt chung của [WidgetLoft](/widgetloft) ở trình duyệt yêu thích, rồi cho một trang ngân hàng hoặc công việc mở ở nơi khác bằng **Mở bằng**.
+
+## Những điều cần biết
+
+- **WidgetLoft sẽ mở thoáng qua trước** khi bạn chọn bất kỳ tùy chọn nào khác trình duyệt mặc định. Với trình duyệt mặc định, trang mở trực tiếp.
+- **Nếu trình duyệt đã chọn chưa được cài**, trang sẽ mở trong trình duyệt mặc định.
+- **Đăng nhập trong trình duyệt của WidgetLoft tách biệt với Safari**, nên có thể bạn cần đăng nhập lại một lần ở đó.
+- **Đây không phải chế độ ứng dụng web.** Trong WidgetLoft là chế độ xem trình duyệt toàn màn hình, không phải ứng dụng web cài riêng.
+- **Dùng được cả từ Dynamic Island.** Nếu bạn dùng Thanh Mở nhanh, các ô trang web trong Dynamic Island và trên biểu ngữ Màn hình khóa cũng mở trong trình duyệt bạn đã chọn.
+
+Trang web nằm cạnh ứng dụng trong cùng một widget. Với ô ứng dụng, hãy xem [cách mở ứng dụng từ widget](/blog/launch-apps-from-widgets-ios).
+
+## Câu hỏi thường gặp
+
+**Vì sao trang web trên Màn hình chính của tôi luôn mở trong Safari?**
+Dấu trang tạo bằng Thêm vào MH chính của Safari sẽ mở trong Safari, còn phần lớn widget liên kết dùng trình duyệt mặc định. Ô trang web của [WidgetLoft](/widgetloft) cho phép bạn tự chọn trình duyệt.
+
+**Nếu trình duyệt tôi chọn chưa được cài thì sao?**
+Trang web sẽ mở trong trình duyệt mặc định, nên ô vẫn hoạt động.
+
+**Tôi có được đăng nhập sẵn vào các trang trong WidgetLoft không?**
+Đăng nhập ở đó tách biệt với Safari, nên có thể bạn cần đăng nhập một lần. Muốn dùng phiên hiện có? Hãy chọn trình duyệt bạn vẫn dùng.
+
+---
+
+Sẵn sàng đặt các trang web yêu thích cách bạn một lần chạm, trong trình duyệt bạn muốn? [Tải WidgetLoft trên App Store](/widgetloft/download).

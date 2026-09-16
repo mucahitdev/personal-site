@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Wat is er nieuw voor widgets in iOS 27 (en hoe gebruik je het)",
+  description:
+    "iOS 27 voegt een extra grote widget toe die een hele pagina van het beginscherm vult, een Melding-trigger voor Opdrachten-automatiseringen en een compacte klok op het toegangsscherm. Dit is er veranderd en zo gebruik je het.",
+  keywords: [
+    "ios 27 widgets",
+    "ios 27 extra grote widget",
+    "ios 27 nieuwe widgetfuncties",
+    "ios 27 toegangsscherm compacte klok",
+    "opdrachten melding automatisering ios 27",
+    "ios 27 beginscherm widgets",
+  ],
+  ogTitle: "Wat is er nieuw voor widgets in iOS 27",
+  ogDescription:
+    "Extra grote widgets, automatiseringen op meldingen en een compacte klok op het toegangsscherm, stap voor stap uitgelegd.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline: "Wat is er nieuw voor widgets in iOS 27 (en hoe gebruik je het)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/nl/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "De nieuwe widgetfuncties van iOS 27 gebruiken",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Werk bij naar iOS 27",
+        text: "Open Instellingen, Algemeen, Software-update en installeer iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Voeg een extra grote widget toe",
+        text: "Maak een groep apps in WidgetLoft (voorheen FolderMini), houd daarna het beginscherm ingedrukt, tik op +, zoek WidgetLoft en kies het formaat Extra groot.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Stel één meldingsstip in",
+        text: "Ga in Opdrachten naar Automatisering, Apps, Melding, kies de app, laat Automatisering aan en Meld uit en voeg de WidgetLoft-actie Meldingsstip tonen toe voor dezelfde app.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pas het toegangsscherm aan",
+        text: "Houd het toegangsscherm ingedrukt, tik op Pas aan, kies de compacte klok en voeg een WidgetLoft-widget met maximaal 4 apps toe.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Welke apps ondersteunen de extra grote widget in iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Agenda, Foto's, Muziek en Weer van Apple ondersteunen hem, plus apps van derden. WidgetLoft ondersteunt hem ook en zet met kleine symbolen tot 77 apps op een hele pagina van het beginscherm.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kunnen widgets in iOS 27 het aantal meldingen tonen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Geen aantal. Met de nieuwe Melding-trigger in Opdrachten kan WidgetLoft een stip op de tegel van een app tonen. De stip verdwijnt als je de app via de widget opent. Een melding alleen op het toegangsscherm of de Apple Watch lezen wist hem niet, en websites, Opdrachten-tegels en contacten kunnen geen stip krijgen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb ik iOS 27 nodig voor WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. WidgetLoft werkt op iOS 18 en nieuwer. Alleen het formaat Extra groot en de meldingsstippen hebben iOS 27 nodig.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Wat is er nieuw voor widgets in iOS 27 (en hoe gebruik je het)
+
+**Snel antwoord:** iOS 27, uitgebracht op 14 september 2026, brengt drie veranderingen voor widgets: een extra groot formaat dat een hele pagina van het beginscherm vult, een Melding-trigger voor Opdrachten-automatiseringen en een compacte klokmodus op het toegangsscherm. App-starterwidgets zoals [WidgetLoft](/widgetloft) (voorheen FolderMini) gebruiken de eerste twee: één extra grote widget bevat tot 77 apps, en tegels kunnen een stip tonen als een app een melding krijgt.
+
+iOS 27 vindt widgets niet opnieuw uit, maar de veranderingen zijn praktisch. Dit is er nieuw, dit betekent het voor app-starterwidgets en zo stel je het in.
+
+---
+
+## Wat er verandert voor widgets in iOS 27
+
+**Extra groot widgetformaat.** Het nieuwe formaat vult een hele pagina van het beginscherm, een rastergebied van 4×6. Agenda, Foto's, Muziek en Weer van Apple ondersteunen het, en apps van derden kunnen het ook ondersteunen.
+
+**Een Melding-trigger in Opdrachten.** Opdrachten-automatiseringen kunnen nu starten zodra een app een melding stuurt. Daardoor kunnen ook widget-apps op je meldingen reageren.
+
+**Compacte klok op het toegangsscherm.** De compacte klokmodus toont de tijd kleiner bovenaan, naast de datum en je widgets.
+
+## Wat het betekent voor app-starterwidgets
+
+[WidgetLoft](/widgetloft) maakt van groepen apps widgets voor het beginscherm en het toegangsscherm, en een tik op een tegel opent de app meteen. iOS 27 voegt daar twee dingen aan toe:
+
+- **Extra groot bevat tot 77 apps.** Met kleine symbolen passen 77 tegels in één paginagrote widget (54 met middelgrote symbolen, 40 met grote, 24 met extra grote). Op de iPad bevat de brede extra grote widget tot 72 apps.
+- **Meldingsstippen op tegels.** WidgetLoft gebruikt de nieuwe Melding-trigger om een stip op de tegel van een app te zetten als die app een melding krijgt. Het is een stip, geen getal, en hij verdwijnt als je de app via de widget opent.
+
+WidgetLoft 2.1.0 voegt ook twee functies toe die goed passen bij een grote widget:
+
+- **Donkere symbolen voor elke app.** Populaire apps hebben kant-en-klare donkere symbolen en de apps van Apple gebruiken de echte donkere symbolen van Apple. Apps die je via de App Store-zoekfunctie toevoegt, krijgen nu een donker symbool dat op je eigen telefoon wordt gemaakt. Er wordt niets geüpload.
+- **Dynamic Island met één tik.** Met de Snelstartbalk aan openen apps in het Dynamic Island met één tik, direct.
+
+## Stap voor stap: gebruik de nieuwe widgetfuncties van iOS 27
+
+1. **Werk bij naar iOS 27.** Open **Instellingen → Algemeen → Software-update** en installeer iOS 27.
+2. **Voeg een extra grote widget toe.** Maak in [WidgetLoft](/widgetloft) een groep in het tabblad **Groepen** en voeg je apps toe. Houd daarna het beginscherm ingedrukt, tik op **+**, zoek WidgetLoft en kies het formaat Extra groot.
+3. **Stel één meldingsstip in.** Open in WidgetLoft **Instellingen → Meldingsstippen**. Ga in Opdrachten naar **Automatisering → Apps → Melding**, kies de app, laat Automatisering aan en Meld uit en voeg de WidgetLoft-actie **Meldingsstip tonen** toe voor dezelfde app. Dat kost ongeveer een minuut per app.
+4. **Pas het toegangsscherm aan.** Houd het toegangsscherm ingedrukt, tik op **Pas aan**, kies de compacte klok en voeg een WidgetLoft-widget toe met één rij van maximaal 4 apps (3 met grote symbolen).
+
+## De widgetveranderingen van iOS 27 in één oogopslag
+
+| Verandering in iOS 27 | Wat je ermee kunt |
+| --- | --- |
+| Extra groot widgetformaat | Tot 77 apps op één pagina van het beginscherm zetten met WidgetLoft |
+| Agenda, Foto's, Muziek en Weer ondersteunen Extra groot | Een hele pagina geven aan de Apple-app die je het vaakst bekijkt |
+| Melding-trigger in Opdrachten | Een stip op een WidgetLoft-tegel tonen als die app een melding krijgt |
+| Compacte klok op het toegangsscherm | De tijd klein houden naast je widgets, inclusief een rij met je favoriete apps |
+
+De widgets van Apple tonen vooral informatie. [WidgetLoft](/widgetloft) gebruikt hetzelfde nieuwe formaat en dezelfde trigger om je apps te openen, en werkt nog steeds op iOS 18 en nieuwer. Lees voor de volledige stip-instelling onze gids over [meldingsbadges op widgets](/blog/notification-badges-on-widgets-iphone).
+
+## Veelgestelde vragen
+
+**Welke apps ondersteunen de extra grote widget in iOS 27?**
+Agenda, Foto's, Muziek en Weer, plus apps van derden. WidgetLoft zet er tot 77 apps in.
+
+**Kunnen widgets in iOS 27 het aantal meldingen tonen?**
+Geen aantal. WidgetLoft toont een stip, die verdwijnt als je de app via de widget opent. Een melding alleen op het toegangsscherm of de Apple Watch lezen wist hem niet, en websites, Opdrachten-tegels en contacten kunnen geen stip krijgen.
+
+**Heb ik iOS 27 nodig voor WidgetLoft?**
+Nee. WidgetLoft werkt op iOS 18 en nieuwer. Alleen het formaat Extra groot en de meldingsstippen hebben iOS 27 nodig.
+
+---
+
+Klaar om een hele pagina met je apps te vullen? [Download WidgetLoft in de App Store](/widgetloft/download) en haal alles uit de widgets van iOS 27.

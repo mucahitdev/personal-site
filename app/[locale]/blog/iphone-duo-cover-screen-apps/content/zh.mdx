@@ -1,0 +1,152 @@
+export const meta = {
+  title: "如何在 iPhone Duo 外屏上更快地打开 App",
+  description:
+    "单手更快地使用折叠状态下 iPhone Duo 的 5.4 英寸外屏：第一页放一个启动器小组件，添加锁定屏幕小组件，再在灵动岛里打开快速启动栏。",
+  keywords: [
+    "iphone duo 外屏 app",
+    "iphone duo 外屏",
+    "iphone duo 单手操作",
+    "iphone duo 小组件",
+    "折叠屏 iphone 外屏 技巧",
+    "iphone duo 快速打开 app",
+  ],
+  ogTitle: "在 iPhone Duo 外屏上更快地打开 App",
+  ogDescription:
+    "在折叠的 iPhone Duo 上用一根拇指够到 App 的三种方法。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "如何在 iPhone Duo 外屏上更快地打开 App",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/zh/blog/iphone-duo-cover-screen-apps",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在 iPhone Duo 外屏上设置单手快速打开 App",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "用常用 App 建一个分组",
+        text: "安装 WidgetLoft （原 FolderMini），在“分组”标签页中新建分组，然后在 App 内搜索 App Store，添加你最常打开的 App。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "把小组件放到主屏幕第一页",
+        text: "长按主屏幕，轻点加号按钮，找到 WidgetLoft 并选择尺寸。小号小组件可放 9 个 App，中号可放 21 个；使用大图标时分别为 4 个和 10 个。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加锁定屏幕小组件",
+        text: "长按锁定屏幕，轻点“自定”，添加 WidgetLoft 小组件。它以一行显示最多 4 个 App，使用大图标时为 3 个。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "打开快速启动栏",
+        text: "在 WidgetLoft 中前往设置里的“灵动岛与实时活动”，打开快速启动栏并选择一个文件夹。灵动岛最多显示 5 个 App，锁定屏幕横幅最多显示 10 个。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "让启动栏保持运行",
+        text: "在 iOS 设置中允许 WidgetLoft 使用实时活动。iOS 会在几个小时后结束实时活动，而你每次打开 WidgetLoft，它都会重新启动启动栏。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone Duo 什么时候发售？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "预购于 2026 年 10 月 16 日开始，iPhone Duo 于 2026 年 10 月 23 日发售，搭载 iOS 27.1。在此之前，所有关于外屏的建议（包括本文）都基于 Apple 的发布信息，而不是日常使用。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft 能在 iPhone Duo 上使用吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "WidgetLoft 的小组件是标准 iOS 小组件，可在任何运行 iOS 18 或更高版本（包括 iOS 27）的 iPhone 上使用。WidgetLoft 尚未在 iPhone Duo 上测试，也没有针对 Duo 的专属功能。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "打开 App 之前需要先解锁吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "从锁定屏幕小组件或锁定屏幕横幅打开时需要：iOS 会先要求解锁，然后再打开 App。灵动岛和主屏幕小组件里的 App 轻点一下即可打开。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何在 iPhone Duo 外屏上更快地打开 App
+
+**快速回答：** 在折叠的 iPhone Duo 上，把最常用的 App 放在轻点一下就能够到的地方。把它们集中到主屏幕第一页的一个启动器小组件里，添加一个最多放 4 个 App 的锁定屏幕小组件，再打开快速启动栏，把最多 5 个 App 放进灵动岛。[WidgetLoft](/widgetloft) （原 FolderMini）用标准 iOS 小组件就能完成这三件事。
+
+折叠屏手机展开时最出彩。但一天中的大部分时间，它都是合上的、握在一只手里，而这正是翻动一页页图标显得很慢的时候。
+
+---
+
+## iPhone Duo 折叠后有什么不同
+
+iPhone Duo 是 Apple 首款折叠屏 iPhone，于 2026 年 9 月 9 日发布。它配备 7.6 英寸内屏和 5.4 英寸外屏，两块屏幕的宽高比相同，出厂搭载 iOS 27.1。
+
+展开时，Duo 的主屏幕会同时显示两页。合上后，你又回到一块 5.4 英寸的屏幕，而且常常只用一根拇指操作。每多一次翻页、搜索或打开 App 资源库，时间都在累积。
+
+解决办法很简单：把最常打开的 App 放在轻点一下就能够到的位置。[WidgetLoft](/widgetloft) 的小组件是标准 iOS 小组件，可在任何运行 iOS 18 或更高版本（包括 iOS 27）的 iPhone 上使用，所以这和你在其他 iPhone 上的设置完全一样。
+
+## 分步教程：设置单手快速打开 App
+
+1. **用常用 App 建一个分组。** 安装 WidgetLoft，在“分组”标签页中新建分组，然后在 App 内搜索 App Store，添加你最常打开的 App。
+2. **把小组件放到主屏幕第一页。** 长按主屏幕，轻点 **+**，找到 WidgetLoft 并选择尺寸。小号小组件可放 9 个 App，中号可放 21 个。想让拇指点得更准？选择大图标：小号放 4 个，中号放 10 个。
+3. **添加锁定屏幕小组件。** 长按锁定屏幕，轻点 **自定**，添加 WidgetLoft 小组件。它以一行显示最多 4 个 App（大图标时为 3 个）。轻点后会先要求解锁，然后打开 App。
+4. **打开快速启动栏。** 在 WidgetLoft 中前往设置 → “灵动岛与实时活动”，打开“快速启动栏”（Beta）并选择一个“文件夹”。长按灵动岛可看到一行最多 5 个 App，轻点其中一个即可直接打开。同一个启动栏也会以锁定屏幕横幅的形式出现，最多显示 10 个 App。
+5. **让启动栏保持运行。** 在 iOS 设置中允许 WidgetLoft 使用实时活动。iOS 会在几个小时后结束实时活动，而你每次打开 WidgetLoft，它都会重新启动启动栏。更多内容请看[我们关于灵动岛 App 的指南](/blog/apps-in-dynamic-island-iphone)。
+
+## 哪种方法最快？
+
+| 方法 | 可直达的 App 数 | 轻点次数 |
+| --- | --- | --- |
+| 主屏幕小组件（小号） | 9（大图标时为 4） | 1 |
+| 主屏幕小组件（中号） | 21（大图标时为 10） | 1 |
+| 锁定屏幕小组件 | 4（大图标时为 3） | 1 次，然后解锁 |
+| 灵动岛快速启动栏 | 5 | 长按，然后 1 次 |
+| 锁定屏幕快速启动栏 | 10 | 1 次，然后解锁 |
+
+组合使用效果最好：每天用的 4 个 App 放锁定屏幕，最常用的 5 个放灵动岛，其余常用的 App 放在第一页的中号小组件里。[WidgetLoft](/widgetloft) 可免费试用，最多 6 个分组和 21 个资源库 App，足够搭建这整套设置。
+
+## 常见问题
+
+**iPhone Duo 什么时候发售？**
+预购于 2026 年 10 月 16 日开始，手机于 2026 年 10 月 23 日发售，搭载 iOS 27.1。在此之前，所有关于外屏的建议（包括本文）都基于 Apple 的发布信息，而不是日常使用。
+
+**WidgetLoft 能在 iPhone Duo 上使用吗？**
+WidgetLoft 的小组件是标准 iOS 小组件，可在任何运行 iOS 18 或更高版本（包括 iOS 27）的 iPhone 上使用。WidgetLoft 尚未在 iPhone Duo 上测试，也没有针对 Duo 的专属功能。
+
+**打开 App 之前需要先解锁吗？**
+从锁定屏幕小组件或锁定屏幕横幅打开时需要：iOS 会先要求解锁，然后再打开 App。灵动岛和主屏幕小组件里的 App 轻点一下即可打开。
+
+---
+
+准备好让外屏更快了吗？[在 App Store 下载 WidgetLoft](/widgetloft/download)，让常用 App 始终一点即达。

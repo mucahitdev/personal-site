@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Cách đổi biểu tượng ứng dụng trên iPhone mà không cần app Phím tắt",
+  description:
+    "Cách phổ biến để đổi biểu tượng ứng dụng trên iPhone là tạo phím tắt \"Mở ứng dụng\" với ảnh riêng. Bài viết giải thích cách đó hoạt động ra sao, và một lựa chọn bằng widget giúp tạo biểu tượng từ ảnh, ký hiệu, emoji hoặc chữ cái với bản Sáng và Tối riêng, mà vẫn mở ứng dụng trực tiếp.",
+  keywords: [
+    "đổi icon iphone không cần phím tắt",
+    "cách đổi biểu tượng ứng dụng iphone",
+    "icon aesthetic màn hình chính iphone",
+    "tùy chỉnh icon ứng dụng iphone",
+    "widget icon tùy chỉnh iphone",
+    "icon tùy chỉnh chế độ tối",
+  ],
+  ogTitle: "Biểu tượng ứng dụng tùy chỉnh trên iPhone, không cần Phím tắt",
+  ogDescription:
+    "Tạo biểu tượng từ ảnh, SF Symbol, emoji hoặc chữ cái cho ứng dụng, với bản Sáng và Tối riêng, và mở ứng dụng trực tiếp chỉ bằng một chạm.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline: "Cách đổi biểu tượng ứng dụng trên iPhone mà không cần app Phím tắt",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/vi/blog/custom-app-icons-without-shortcuts-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Tùy chỉnh biểu tượng ứng dụng trên iPhone mà không cần app Phím tắt",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Thêm ứng dụng",
+        text: "Mở WidgetLoft (trước đây là FolderMini), tìm trên App Store ngay trong ứng dụng hoặc dùng Chia sẻ, WidgetLoft trên một trang App Store, rồi thêm ứng dụng vào một nhóm.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mở Đổi biểu tượng",
+        text: "Vào tab Thư viện, chạm vào ô của ứng dụng, rồi chạm Đổi biểu tượng.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn nguồn",
+        text: "Chọn Ảnh rồi cắt, Ký hiệu (hơn 5.700 SF Symbols), Emoji hoặc Mono (chữ cái đầu, mỗi từ, hoặc chữ tùy chỉnh tối đa 3 ký tự).",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Đặt màu cho Sáng và Tối",
+        text: "Chọn Màu biểu tượng và Nền, hoặc Không có nền, rồi thiết kế riêng bản Sáng và bản Tối.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Đặt widget",
+        text: "Thêm widget WidgetLoft vào Màn hình chính. Chạm vào một ô là ứng dụng mở trực tiếp.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Biểu tượng tùy chỉnh trong WidgetLoft có mở app Phím tắt không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Ô ứng dụng của WidgetLoft trên Màn hình chính mở ứng dụng trực tiếp bằng mã định danh gói (bundle ID), dù có biểu tượng tùy chỉnh hay không. App Phím tắt không tham gia.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Cách này có đổi biểu tượng thật của ứng dụng trên iPhone không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Thiết kế tùy chỉnh áp dụng cho ô bên trong widget. Biểu tượng gốc của ứng dụng vẫn giữ nguyên, và bạn có thể để nó trong Thư viện ứng dụng để trang của bạn chỉ hiện widget.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Biểu tượng tùy chỉnh có thể trông khác ở Chế độ tối không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. Studio biểu tượng có thiết kế riêng cho Sáng và Tối. Nếu bạn không thiết kế bản tối, các ứng dụng phổ biến đã có sẵn biểu tượng tối.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách đổi biểu tượng ứng dụng trên iPhone mà không cần app Phím tắt
+
+**Trả lời nhanh:** Bạn có thể đặt biểu tượng tùy chỉnh cho ứng dụng mà không cần app Phím tắt bằng cách đưa chúng vào một widget cho phép thiết kế từng ô. [WidgetLoft](/widgetloft) (trước đây là FolderMini) có sẵn studio biểu tượng: chọn ảnh, SF Symbol, emoji hoặc chữ cái, đặt màu, và làm bản riêng cho Sáng và Tối. Ô vẫn mở ứng dụng trực tiếp.
+
+Một Màn hình chính aesthetic thường bắt đầu từ những biểu tượng đồng bộ. Dưới đây là cách mà hầu hết hướng dẫn chỉ, những gì nó thực sự mang lại, và cách dùng widget để có cùng phong cách.
+
+---
+
+## Cách dùng Phím tắt hoạt động thế nào
+
+Hướng dẫn được chia sẻ nhiều nhất như sau: mở app Phím tắt, tạo phím tắt mới với tác vụ "Mở ứng dụng", chọn ứng dụng, rồi thêm phím tắt đó vào Màn hình chính với một cái tên và một ảnh từ thư viện ảnh. Biểu tượng mới trông như biểu tượng ứng dụng tùy chỉnh.
+
+Cách này dùng được, và bạn nên biết mình nhận được gì:
+
+- **Đó là phím tắt, không phải ứng dụng.** Khi chạm, nó chạy qua app Phím tắt, rồi app Phím tắt mới mở ứng dụng của bạn.
+- **Giờ bạn có hai biểu tượng.** Ứng dụng gốc vẫn được cài, nên biểu tượng thường của nó vẫn nằm đâu đó. Đa số mọi người chuyển nó vào Thư viện ứng dụng để trang gọn gàng.
+- **Mỗi lần một biểu tượng.** Mỗi ứng dụng cần một phím tắt riêng, tạo và đặt tên riêng, với một ảnh duy nhất cho cả giao diện sáng và tối.
+
+Với một hai biểu tượng thì không sao. Với cả một trang theo chủ đề, widget thường dễ hơn.
+
+## Từng bước: biểu tượng ứng dụng tùy chỉnh với WidgetLoft
+
+1. **Thêm ứng dụng.** Mở [WidgetLoft](/widgetloft), tìm trên App Store ngay trong ứng dụng (hoặc dùng Chia sẻ → WidgetLoft trên bất kỳ trang App Store nào), rồi thêm ứng dụng vào một nhóm.
+2. **Mở Đổi biểu tượng.** Vào tab **Thư viện**, chạm vào ô của ứng dụng, rồi chạm **Đổi biểu tượng**.
+3. **Chọn nguồn.** Chọn **Ảnh** (khi cắt, kéo để di chuyển và chụm để phóng to), **Ký hiệu** (hơn 5.700 SF Symbols trong 27 danh mục, tìm bằng tiếng Anh), **Emoji**, hoặc **Mono** (chữ cái đầu, mỗi từ, hoặc chữ tùy chỉnh tối đa 3 ký tự).
+4. **Đặt màu cho Sáng và Tối.** Chọn **Màu biểu tượng** và **Nền**, hoặc **Không có nền** để ký hiệu nằm ngay trên widget. Thiết kế riêng bản Sáng và bản Tối để biểu tượng hợp với cả hai giao diện.
+5. **Đặt widget.** Chạm và giữ một chỗ trống trên Màn hình chính, thêm widget, chọn WidgetLoft và một kích thước. Chạm vào một ô và ứng dụng mở trực tiếp.
+
+## Cách dùng Phím tắt so với studio biểu tượng WidgetLoft
+
+| | Cách dùng Phím tắt | Studio biểu tượng WidgetLoft |
+| --- | --- | --- |
+| Cách ứng dụng mở | Chạy qua app Phím tắt | Ô mở ứng dụng trực tiếp |
+| Bản tối | Một ảnh cho cả hai giao diện | Thiết kế Sáng và Tối riêng |
+| Số bước cho mỗi biểu tượng | Phím tắt mới, chọn ứng dụng, thêm vào Màn hình chính, ảnh và tên | Chạm vào ô, Đổi biểu tượng, chọn nguồn và màu |
+| Nguồn biểu tượng | Một ảnh trong thư viện ảnh | Ảnh, hơn 5.700 SF Symbols, Emoji, chữ Mono |
+| Nhiều ứng dụng cùng lúc | Mỗi phím tắt một biểu tượng trên Màn hình chính | Nhiều ô trong một widget |
+
+Khác biệt nằm ở chỗ công sức được dồn vào đâu. Với [WidgetLoft](/widgetloft), thiết kế và việc mở ứng dụng nằm chung trong một ô: không cần thêm phím tắt cho từng ứng dụng, và không có app Phím tắt chen giữa khi bạn chạm. Những ứng dụng chưa có thiết kế tùy chỉnh vẫn hiện biểu tượng thật, nên bạn chỉ cần đổi những cái mình muốn.
+
+## Câu hỏi thường gặp
+
+**Biểu tượng tùy chỉnh trong WidgetLoft có mở app Phím tắt không?**
+Không. Ô ứng dụng của WidgetLoft trên Màn hình chính mở ứng dụng trực tiếp bằng mã định danh gói (bundle ID), dù có biểu tượng tùy chỉnh hay không.
+
+**Cách này có đổi biểu tượng thật của ứng dụng trên iPhone không?**
+Không. Thiết kế áp dụng cho ô bên trong widget. Biểu tượng gốc của ứng dụng vẫn giữ nguyên, và bạn có thể để nó trong Thư viện ứng dụng để trang của bạn chỉ hiện widget.
+
+**Biểu tượng tùy chỉnh có thể trông khác ở Chế độ tối không?**
+Có. Studio biểu tượng có thiết kế riêng cho Sáng và Tối. Nếu bạn không thiết kế bản tối, các ứng dụng phổ biến đã có sẵn biểu tượng tối (xem [biểu tượng ứng dụng ở chế độ tối trên iPhone](/blog/dark-mode-app-icons-iphone)).
+
+---
+
+Sẵn sàng thiết kế bộ biểu tượng của bạn? [Tải WidgetLoft trên App Store](/widgetloft/download) và cho mỗi ứng dụng biểu tượng bạn thích.

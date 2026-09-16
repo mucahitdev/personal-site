@@ -1,0 +1,157 @@
+export const meta = {
+  title: "iOS 27 小组件有哪些新变化（以及如何使用）",
+  description:
+    "iOS 27 新增了占满整页主屏幕的超大小组件、快捷指令自动化的“通知”触发条件，以及锁定屏幕上的紧凑时钟。本文介绍这些变化以及每项功能的用法。",
+  keywords: [
+    "iOS 27 小组件",
+    "iOS 27 超大小组件",
+    "iOS 27 小组件新功能",
+    "iOS 27 锁定屏幕 紧凑时钟",
+    "快捷指令 通知 自动化 iOS 27",
+    "iOS 27 主屏幕 小组件",
+  ],
+  ogTitle: "iOS 27 小组件有哪些新变化",
+  ogDescription:
+    "超大小组件、通知自动化和锁定屏幕紧凑时钟，附详细步骤。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "iOS 27 小组件有哪些新变化（以及如何使用）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/zh/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "使用 iOS 27 的小组件新功能",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "更新到 iOS 27",
+        text: "打开设置、通用、软件更新，安装 iOS 27。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加超大小组件",
+        text: "在 WidgetLoft（原 FolderMini）中创建一个应用分组，然后长按主屏幕，轻点 +，搜索 WidgetLoft 并选择超大尺寸。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "设置一个通知圆点",
+        text: "在快捷指令中前往自动化、App、通知，选择应用，保持自动化开启、通知关闭，然后为同一个应用添加 WidgetLoft 的“显示通知圆点”操作。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "自定义锁定屏幕",
+        text: "长按锁定屏幕，轻点自定，切换到紧凑时钟，并添加一个最多放 4 个应用的 WidgetLoft 小组件。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iOS 27 中哪些应用支持超大小组件？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple 的日历、照片、音乐和天气都支持，第三方应用也可以支持。WidgetLoft 同样支持，使用小图标时可以在一整页主屏幕上放下最多 77 个应用。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iOS 27 的小组件能显示通知数量吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不能显示数量。借助快捷指令新的“通知”触发条件，WidgetLoft 可以在应用的图块上显示一个圆点。从小组件打开该应用后圆点会消失。只在锁定屏幕或 Apple Watch 上阅读通知不会清除圆点，网站、快捷指令图块和联系人也无法显示圆点。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "使用 WidgetLoft 需要 iOS 27 吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不需要。WidgetLoft 支持 iOS 18 及更高版本。只有超大尺寸和通知圆点需要 iOS 27。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27 小组件有哪些新变化（以及如何使用）
+
+**快速回答：** 2026 年 9 月 14 日发布的 iOS 27 带来了三项与小组件相关的变化：占满整页主屏幕的超大小组件尺寸、快捷指令自动化的“通知”触发条件，以及锁定屏幕上的紧凑时钟模式。像 [WidgetLoft](/widgetloft)（原 FolderMini）这样的应用启动器小组件用上了前两项：一个超大小组件最多可放 77 个应用，应用收到通知时图块上还能显示一个圆点。
+
+iOS 27 并没有彻底改造小组件，但这些变化都很实用。下面介绍有哪些新内容、它们对应用启动器小组件意味着什么，以及如何设置。
+
+---
+
+## iOS 27 的小组件有哪些变化
+
+**超大小组件尺寸。** 新尺寸占满一整页主屏幕，也就是 4×6 的网格区域。Apple 的日历、照片、音乐和天气都支持它，第三方应用也可以支持。
+
+**快捷指令中的“通知”触发条件。** 快捷指令自动化现在可以在某个应用发送通知时运行。这也让小组件应用能够对你的通知做出反应。
+
+**锁定屏幕上的紧凑时钟。** 紧凑时钟模式会把时间缩小显示在顶部，位于日期和小组件旁边。
+
+## 这对应用启动器小组件意味着什么
+
+[WidgetLoft](/widgetloft) 把应用分组变成主屏幕和锁定屏幕小组件，轻点图块即可直接打开对应应用。iOS 27 为此增加了两点：
+
+- **超大尺寸最多放 77 个应用。** 使用小图标时，一个整页小组件可放 77 个图块（中图标 54 个，大图标 40 个，超大图标 24 个）。在 iPad 上，宽版超大尺寸最多可放 72 个。
+- **图块上的通知圆点。** WidgetLoft 利用新的“通知”触发条件，在应用收到通知时给它的图块加上一个圆点。它只是圆点，不是数字，从小组件打开该应用后就会消失。
+
+WidgetLoft 2.1.0 还新增了两项与大尺寸小组件很搭的功能：
+
+- **所有应用都有深色图标。** 热门应用自带现成的深色图标，Apple 的应用使用 Apple 真正的深色图标。通过 App Store 搜索添加的应用，现在也会在手机上直接生成深色图标。不会上传任何内容。
+- **一键打开灵动岛中的应用。** 开启快速启动栏后，灵动岛中的应用轻点一下即可直接打开。
+
+## 分步操作：使用 iOS 27 的小组件新功能
+
+1. **更新到 iOS 27。** 打开**设置 → 通用 → 软件更新**，安装 iOS 27。
+2. **添加超大小组件。** 在 [WidgetLoft](/widgetloft) 的**分组**标签页中创建分组并添加应用。然后长按主屏幕，轻点 **+**，搜索 WidgetLoft 并选择超大尺寸。
+3. **设置一个通知圆点。** 在 WidgetLoft 中打开**设置 → 通知圆点**。在快捷指令中前往**自动化 → App → 通知**，选择应用，保持自动化开启、通知关闭，然后为同一个应用添加 WidgetLoft 操作**显示通知圆点**。每个应用大约需要一分钟。
+4. **自定义锁定屏幕。** 长按锁定屏幕，轻点**自定**，切换到紧凑时钟，再添加一个 WidgetLoft 小组件，一行最多放 4 个应用（大图标为 3 个）。
+
+## iOS 27 小组件变化一览
+
+| iOS 27 变化 | 你可以用它做什么 |
+| --- | --- |
+| 超大小组件尺寸 | 用 WidgetLoft 在一页主屏幕上放最多 77 个应用 |
+| 日历、照片、音乐和天气支持超大尺寸 | 把一整页留给你最常看的 Apple 应用 |
+| 快捷指令“通知”触发条件 | 应用收到通知时，在 WidgetLoft 图块上显示圆点 |
+| 锁定屏幕紧凑时钟 | 让时间变小并放在小组件旁边，同时放一排常用应用 |
+
+Apple 的小组件主要用来显示信息。[WidgetLoft](/widgetloft) 利用同样的新尺寸和触发条件来打开你的应用，并且依然支持 iOS 18 及更高版本。完整的圆点设置方法，请阅读我们的[小组件通知标记](/blog/notification-badges-on-widgets-iphone)指南。
+
+## 常见问题
+
+**iOS 27 中哪些应用支持超大小组件？**
+日历、照片、音乐和天气，以及第三方应用。WidgetLoft 一个小组件最多可放 77 个应用。
+
+**iOS 27 的小组件能显示通知数量吗？**
+不能显示数量。WidgetLoft 显示的是圆点，从小组件打开该应用后就会消失。只在锁定屏幕或 Apple Watch 上阅读通知不会清除圆点，网站、快捷指令图块和联系人也无法显示圆点。
+
+**使用 WidgetLoft 需要 iOS 27 吗？**
+不需要。WidgetLoft 支持 iOS 18 及更高版本。只有超大尺寸和通知圆点需要 iOS 27。
+
+---
+
+想用应用填满一整页吗？[在 App Store 下载 WidgetLoft](/widgetloft/download)，充分利用 iOS 27 的小组件。

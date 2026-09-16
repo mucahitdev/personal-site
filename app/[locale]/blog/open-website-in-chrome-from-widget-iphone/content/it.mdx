@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Come aprire un sito web in Chrome (o in qualsiasi browser) da un widget dell’iPhone",
+  description:
+    "I siti aggiunti alla schermata Home dell’iPhone si aprono sempre in Safari o nel browser predefinito. Ecco come aprire un sito in Chrome, Firefox, Brave o a schermo intero direttamente da un widget, per tutti i siti o solo per uno.",
+  keywords: [
+    "aprire sito in chrome dalla schermata home iphone",
+    "widget iphone aprire link in chrome",
+    "aggiungere sito alla schermata home chrome iphone",
+    "collegamento schermata home si apre in safari",
+    "widget sito web iphone scegliere browser",
+    "aprire sito a schermo intero da widget iphone",
+  ],
+  ogTitle: "Apri un sito in Chrome da un widget dell’iPhone",
+  ogDescription:
+    "Scegli Chrome, Firefox, Brave o una vista a schermo intero per i siti del tuo widget, per tutti o solo per uno.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline:
+      "Come aprire un sito web in Chrome (o in qualsiasi browser) da un widget dell’iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/it/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "it",
+    name: "Aprire un sito web in Chrome o in un altro browser da un widget dell’iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Aggiungi il sito come riquadro",
+        text: "In WidgetLoft (già FolderMini), vai in Libreria, tocca Aggiungi riquadri, scegli Sito web e incolla l’indirizzo. Icona e nome vengono compilati per te.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mettilo in un widget",
+        text: "Aggiungi il riquadro del sito a un gruppo, poi aggiungi il widget di WidgetLoft alla schermata Home.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Scegli un browser per tutti i siti",
+        text: "Vai in Impostazioni, Widget, Apertura siti web e scegli Chrome, Firefox, Brave o un altro browser, oppure Dentro WidgetLoft per una vista a schermo intero.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Cambia un solo sito se vuoi",
+        text: "Apri il riquadro del sito, tocca Si apre in e scegli un’altra opzione solo per quel sito, oppure lascia Usa l’impostazione.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Aggiungi un browser personalizzato se il tuo manca",
+        text: "In Browser personalizzati tocca Aggiungi browser, inserisci un nome e un formato di indirizzo che contiene {url}, poi tocca Prova.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Perché il sito nella mia schermata Home si apre sempre in Safari?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Un segnalibro creato con Aggiungi alla schermata Home di Safari si apre in Safari, e la maggior parte dei widget di link passa l’indirizzo al browser predefinito. Per usare un altro browser solo per quei link serve un widget che ti lasci scegliere, come WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Cosa succede se il browser che ho scelto non è installato?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Il sito si apre nel browser predefinito, quindi il riquadro non resta mai senza effetto.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ho già effettuato l’accesso ai siti dentro WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Gli accessi nel browser di WidgetLoft sono separati da Safari, quindi potresti dover accedere una volta lì. Se preferisci le sessioni che hai già, scegli il tuo browser abituale.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Come aprire un sito web in Chrome (o in qualsiasi browser) da un widget dell’iPhone
+
+**Risposta rapida:** i siti che aggiungi alla schermata Home dell’iPhone si aprono in Safari o nel browser predefinito, e non puoi cambiarlo link per link. Con [WidgetLoft](/widgetloft) (già FolderMini) aggiungi il sito come riquadro di un widget, poi scegli Chrome, Firefox, Brave, un altro browser o una vista a schermo intero in Impostazioni → Widget → Apertura siti web, per tutti i siti o solo per uno.
+
+Forse Safari è il tuo browser predefinito, ma la dashboard di lavoro sta in Chrome. Un tocco sulla schermata Home dovrebbe portarti nel posto giusto.
+
+---
+
+## Perché i siti della schermata Home si aprono sempre in Safari
+
+**Aggiungi alla schermata Home** di Safari crea un segnalibro che appartiene a Safari. La maggior parte dei widget di link finisce nello stesso punto: passa l’indirizzo al tuo **browser predefinito**.
+
+Cambiare il browser predefinito cambia ogni link in ogni app. Di solito vuoi qualcosa di più mirato: *questo* sito in Chrome, tutto il resto come sempre. I riquadri dei siti di WidgetLoft fanno proprio questo: un browser per tutti i siti, con un’eccezione per qualsiasi singolo sito.
+
+## Passo dopo passo: aprire un sito in Chrome da un widget
+
+1. **Aggiungi il sito come riquadro.** In [WidgetLoft](/widgetloft), vai in **Libreria** → **Aggiungi riquadri** → **Sito web** e incolla l’indirizzo. Icona e nome del sito vengono compilati per te.
+2. **Mettilo in un widget.** Aggiungi il riquadro a un gruppo, poi aggiungi il widget di WidgetLoft alla schermata Home (tieni premuto sulla schermata Home, tocca **+**, cerca WidgetLoft).
+3. **Scegli un browser per tutti i siti.** Vai in **Impostazioni** → **Widget** → **Apertura siti web** e scegli Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha o Yandex. Oppure scegli **Dentro WidgetLoft** per una vista a schermo intero.
+4. **Cambia un solo sito (facoltativo).** Apri il riquadro del sito, tocca **Si apre in** e scegli un’altra opzione. Vale solo per quel sito. **Usa l’impostazione** lo riporta com’era.
+5. **Aggiungi un browser personalizzato (facoltativo).** Non è nella lista? Vai in **Browser personalizzati** → **Aggiungi browser**, dagli un nome e un formato di indirizzo che contiene `{url}`, poi tocca **Prova**.
+
+## Quale opzione scegliere
+
+| Opzione | Quando usarla |
+| --- | --- |
+| Browser predefinito | Ti va bene il browser usato dal resto dell’iPhone |
+| Un browser scelto (Chrome, Firefox, Brave e altri) | Segnalibri, password o estensioni stanno in un browser che non è il predefinito |
+| Dentro WidgetLoft | Vuoi il sito a schermo intero senza schede, con un pulsante **Apri nel browser** quando serve |
+| Browser personalizzato | Il tuo browser non è nella lista e conosci il suo formato di indirizzo |
+
+Puoi combinarle liberamente. Lascia l’impostazione generale di [WidgetLoft](/widgetloft) sul tuo browser preferito, poi fai aprire un singolo sito di banca o di lavoro altrove con **Si apre in**.
+
+## Cosa aspettarsi
+
+- **WidgetLoft si apre un attimo prima** quando scegli qualcosa di diverso dal browser predefinito. Con il browser predefinito, il sito si apre direttamente.
+- **Se il browser scelto non è installato**, il sito si apre nel browser predefinito.
+- **Gli accessi nel browser di WidgetLoft sono separati da Safari**, quindi potresti dover accedere un’altra volta lì.
+- **Non è una modalità web app.** Dentro WidgetLoft è una vista browser a schermo intero, non una web app installata a parte.
+- **Funziona anche dalla Dynamic Island.** Se usi la Barra di avvio rapido, i riquadri dei siti nella Dynamic Island e nel banner della schermata di blocco si aprono nel browser che hai scelto.
+
+I siti stanno accanto alle tue app nello stesso widget. Per i riquadri delle app, leggi [come aprire le app da un widget](/blog/launch-apps-from-widgets-ios).
+
+## Domande frequenti
+
+**Perché il sito nella mia schermata Home si apre sempre in Safari?**
+Un segnalibro creato con Aggiungi alla schermata Home di Safari si apre in Safari, e la maggior parte dei widget di link usa il browser predefinito. Un riquadro sito di [WidgetLoft](/widgetloft) ti lascia scegliere il browser.
+
+**Cosa succede se il browser che ho scelto non è installato?**
+Il sito si apre nel browser predefinito, quindi il riquadro funziona comunque.
+
+**Ho già effettuato l’accesso ai siti dentro WidgetLoft?**
+Gli accessi lì sono separati da Safari, quindi potresti dover accedere una volta. Preferisci le sessioni che hai già? Scegli il tuo browser abituale.
+
+---
+
+Pronto ad avere i tuoi siti a un tocco, nel browser che vuoi? [Scarica WidgetLoft dall'App Store](/widgetloft/download).

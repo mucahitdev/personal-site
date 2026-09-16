@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Jak zadzwonić lub napisać na WhatsAppie do kontaktu z widżetu na ekranie początkowym iPhone'a",
+  description:
+    "Zmień ulubiony kontakt w szybkie wybieranie na ekranie początkowym iPhone'a. Jedno dotknięcie kafelka w widżecie dzwoni, uruchamia FaceTime albo otwiera czat na WhatsAppie lub Telegramie.",
+  keywords: [
+    "szybkie wybieranie iphone ekran początkowy",
+    "zadzwoń do kontaktu z widżetu iphone",
+    "widżet kontaktu whatsapp iphone",
+    "ulubiony kontakt na ekranie początkowym iphone",
+    "połączenie jednym dotknięciem widżet iphone",
+    "widżet facetime kontakt iphone",
+  ],
+  ogTitle: "Zadzwoń lub napisz na WhatsAppie do kontaktu z widżetu iPhone'a",
+  ogDescription:
+    "Umieść najbliższe osoby na ekranie początkowym jako kafelki, które jednym dotknięciem dzwonią, piszą, uruchamiają FaceTime albo otwierają czat na WhatsAppie.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak zadzwonić lub napisać na WhatsAppie do kontaktu z widżetu na ekranie początkowym iPhone'a",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pl/blog/call-whatsapp-contact-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Dodaj kafelek kontaktu działający jednym dotknięciem do widżetu na ekranie początkowym iPhone'a",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Dodaj kafelek kontaktu",
+        text: "W WidgetLoft (dawniej FolderMini) otwórz kartę Biblioteka, stuknij Dodaj kafelki, a potem Kontakt.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz osobę",
+        text: "Stuknij Wybierz z Kontaktów, co nie wymaga żadnego uprawnienia, albo wpisz imię i dane samodzielnie.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz działania",
+        text: "Zaznacz spośród Zadzwoń, Wiadomość, FaceTime, FaceTime audio, E-mail, WhatsApp i Telegram, a następnie wybierz Jedno działanie lub Folder ze wszystkimi działaniami.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz ikonę",
+        text: "Wybierz dla kafelka Ikona aplikacji, Zdjęcie albo Zdjęcie + plakietka.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Umieść go w widżecie",
+        text: "Dodaj kafelek do grupy, potem przytrzymaj ekran początkowy, dodaj widżet WidgetLoft i wybierz tę grupę.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy mogę mieć szybkie wybieranie na ekranie początkowym iPhone'a?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. Widżet Kontakty od Apple pokazuje osoby, ale po dotknięciu nadal wybierasz, co zrobić. Kafelek kontaktu WidgetLoft wykonuje jedno działanie na jedno dotknięcie, na przykład dzwoni do kogoś albo otwiera czat.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy widżet może otworzyć czat na WhatsAppie z konkretną osobą?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. Wybierz WhatsApp jako działanie, a kafelek otworzy twój czat z tym kontaktem. Otwiera rozmowę, a nie rozpoczyna połączenia. Telegram działa tak samo i przyjmuje nazwę użytkownika lub numer telefonu.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy WidgetLoft potrzebuje dostępu do moich kontaktów?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Wybierz z Kontaktów działa bez przyznawania WidgetLoft uprawnień do kontaktów, a dane możesz też wpisać ręcznie.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak zadzwonić lub napisać na WhatsAppie do kontaktu z widżetu na ekranie początkowym iPhone'a
+
+**Szybka odpowiedź:** iPhone nie ma klasycznego szybkiego wybierania, ale kafelek kontaktu w widżecie działa dokładnie tak. W [WidgetLoft](/widgetloft) (dawniej FolderMini) przejdź do Biblioteka, Dodaj kafelki, Kontakt, wybierz osobę i działanie, na przykład Zadzwoń albo WhatsApp, a potem umieść kafelek w widżecie. Jedno dotknięcie dzwoni do niej lub otwiera wasz czat.
+
+Osoby, z którymi rozmawiasz najczęściej, nie powinny być trzy ekrany dalej. Oto jak umieścić je prosto na ekranie początkowym.
+
+---
+
+## Dlaczego widżet Kontakty to nie prawdziwe szybkie wybieranie
+
+Widżet Kontakty od Apple pokazuje wybrane przez ciebie osoby i to dobry początek. Ale dotknięcie prowadzi tylko do połowy drogi: po otwarciu nadal wybierasz, co zrobić (zadzwonić, napisać, FaceTime). Jeśli dzwonisz do partnera kilka razy dziennie, ten dodatkowy krok się sumuje.
+
+Kafelek kontaktu WidgetLoft go pomija. Działanie wybierasz raz, podczas konfiguracji kafelka, a każde kolejne dotknięcie robi dokładnie to. Jeśli wolisz mieć wybór, możesz zamiast tego zrobić z kontaktu mały folder ze wszystkimi jego działaniami.
+
+## Krok po kroku: dodaj kontakt do widżetu na ekranie początkowym
+
+1. **Dodaj kafelek kontaktu.** Otwórz [WidgetLoft](/widgetloft), przejdź do karty **Biblioteka**, stuknij **Dodaj kafelki**, a potem **Kontakt**.
+2. **Wybierz osobę.** Stuknij **Wybierz z Kontaktów**, aby kogoś wskazać. Nie jest do tego potrzebne uprawnienie do kontaktów. Imię, numer telefonu lub e-mail możesz też wpisać samodzielnie.
+3. **Wybierz działania.** Zaznacz, co ma robić kafelek: Zadzwoń, Wiadomość, FaceTime, FaceTime audio, E-mail, WhatsApp lub Telegram. Następnie wybierz **Jedno działanie** (jedno dotknięcie robi jedną rzecz) albo **Folder ze wszystkimi działaniami** (dotykasz kontaktu, a potem działania).
+4. **Wybierz ikonę.** Wybierz **Ikona aplikacji**, **Zdjęcie** ze zdjęciem osoby albo **Zdjęcie + plakietka**, aby połączyć zdjęcie z małą plakietką.
+5. **Umieść go w widżecie.** Dodaj kafelek do grupy. Potem przytrzymaj ekran początkowy, dodaj widżet WidgetLoft i wybierz tę grupę.
+
+## Co robi każde działanie po dotknięciu
+
+| Działanie | Co robi dotknięcie |
+| --- | --- |
+| Zadzwoń | Rozpoczyna połączenie telefoniczne z kontaktem |
+| Wiadomość | Otwiera waszą rozmowę w Wiadomościach |
+| FaceTime lub FaceTime audio | Rozpoczyna połączenie wideo lub audio FaceTime |
+| E-mail | Otwiera wiadomość e-mail na adres tej osoby |
+| WhatsApp | Otwiera twój czat na WhatsAppie z tą osobą |
+| Telegram | Otwiera czat w Telegramie po nazwie użytkownika lub numerze |
+
+Kafelki kontaktów świetnie sąsiadują ze zwykłymi kafelkami aplikacji, więc jedna grupa [WidgetLoft](/widgetloft) może zmieścić twarze twojej rodziny i aplikacje, przez które się z nimi kontaktujesz. Zrób mały widżet z trzema najważniejszymi osobami albo średni, który łączy kontakty i aplikacje. Jeśli widżety-launchery są dla ciebie nowością, przeczytaj, [jak uruchomić dowolną aplikację z widżetu](/blog/launch-apps-from-widgets-ios).
+
+## Czego kafelki kontaktów nie potrafią
+
+Kilka uczciwych ograniczeń, żeby nic cię nie zaskoczyło:
+
+- **Tylko Telefon i FaceTime od razu rozpoczynają połączenie.** Kafelki WhatsApp i Telegram otwierają rozmowę. Jeśli chcesz tam zadzwonić głosowo lub wideo, stuknij przycisk połączenia w czacie.
+- **Telegram potrzebuje nazwy użytkownika albo numeru telefonu.** Pasuje jedno i drugie. Jeśli konto tej osoby w Telegramie używa innego numeru, wpisz ten numer.
+- **Nie każdy komunikator jest obsługiwany.** Nie ma działań dla Vibera, Messengera ani LINE. W ich przypadku dodaj samą aplikację jako zwykły kafelek.
+
+## Częste pytania
+
+**Czy mogę mieć szybkie wybieranie na ekranie początkowym iPhone'a?**
+Tak. Widżet Kontakty od Apple pokazuje osoby, ale działanie wybierasz dopiero po dotknięciu. Kafelek kontaktu WidgetLoft wykonuje jedno działanie na jedno dotknięcie, na przykład dzwoni do kogoś albo otwiera czat.
+
+**Czy widżet może otworzyć czat na WhatsAppie z konkretną osobą?**
+Tak. Wybierz WhatsApp jako działanie, a kafelek otworzy twój czat z tym kontaktem. Otwiera rozmowę, a nie rozpoczyna połączenia. Telegram działa tak samo i przyjmuje nazwę użytkownika lub numer telefonu.
+
+**Czy WidgetLoft potrzebuje dostępu do moich kontaktów?**
+Nie. Wybierz z Kontaktów działa bez żadnych uprawnień do kontaktów, a dane możesz też wpisać ręcznie.
+
+---
+
+Gotowy na własne szybkie wybieranie? [Pobierz WidgetLoft z App Store](/widgetloft/download) i miej najbliższe osoby zawsze jedno dotknięcie od siebie.

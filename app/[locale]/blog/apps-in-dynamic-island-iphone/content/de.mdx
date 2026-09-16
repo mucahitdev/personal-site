@@ -1,0 +1,150 @@
+export const meta = {
+  title: "So legst du deine Lieblings-Apps in die Dynamic Island auf dem iPhone",
+  description:
+    "iOS erlaubt keine App-Kurzbefehle in der Dynamic Island, eine Live-Aktivität aber schon. So hast du bis zu 5 Apps in der Island und bis zu 10 auf dem Sperrbildschirm.",
+  keywords: [
+    "apps in dynamic island",
+    "dynamic island app verknüpfung",
+    "dynamic island app starter iphone",
+    "apps in die dynamic island legen",
+    "sperrbildschirm app starter live aktivität",
+    "schnellstart dynamic island",
+  ],
+  ogTitle: "Lieblings-Apps in die Dynamic Island legen",
+  ogDescription:
+    "Ein App-Starter als Live-Aktivität fürs iPhone: bis zu 5 Apps in der Dynamic Island, bis zu 10 auf dem Sperrbildschirm.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline: "So legst du deine Lieblings-Apps in die Dynamic Island auf dem iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/de/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "Lieblings-Apps in die Dynamic Island auf dem iPhone legen",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Gruppe anlegen",
+        text: "Öffne WidgetLoft (früher FolderMini), lege eine Gruppe an und füge die Apps hinzu, die du am häufigsten nutzt.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Schnellstartleiste einschalten",
+        text: "Gehe in WidgetLoft zu Einstellungen, dann zu Dynamic Island und Live-Aktivität, und schalte die Schnellstartleiste ein.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ordner auswählen",
+        text: "Wähle unter Ordner die Gruppe, die du in der Dynamic Island und auf dem Sperrbildschirm sehen willst.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Live-Aktivitäten erlauben",
+        text: "Stelle in der iOS-App Einstellungen sicher, dass Live-Aktivitäten für WidgetLoft erlaubt sind.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Island gedrückt halten und App antippen",
+        text: "Halte die Dynamic Island gedrückt, um die Reihe mit bis zu 5 Apps aufzuklappen, und tippe eine App an, um sie zu öffnen.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Warum sind meine Apps aus der Dynamic Island verschwunden?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS beendet Live-Aktivitäten nach einigen Stunden (aktiv etwa 8). WidgetLoft startet die Schnellstartleiste jedes Mal neu, wenn du die App öffnest, ein kurzer Besuch bringt sie also zurück.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kann ich mehr als 5 Apps in die Dynamic Island legen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nein. Die aufgeklappte Dynamic Island zeigt eine Reihe mit bis zu 5 Apps. Das Banner auf dem Sperrbildschirm zeigt bis zu 10 Apps derselben Gruppe in zwei Reihen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ist die Schnellstartleiste fertig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sie ist in WidgetLoft als Beta gekennzeichnet. Sie baut auf den Live-Aktivitäten von iOS auf, braucht deshalb die Erlaubnis für Live-Aktivitäten und folgt den Zeitlimits, die iOS dafür setzt.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# So legst du deine Lieblings-Apps in die Dynamic Island auf dem iPhone
+
+**Kurze Antwort:** iOS hat keine Einstellung, mit der du App-Kurzbefehle in der Dynamic Island festpinnen kannst. Dort erscheinen nur Live-Aktivitäten. [WidgetLoft](/widgetloft) (früher FolderMini) nutzt genau das: Seine Schnellstartleiste ist eine Live-Aktivität, die eine deiner Gruppen spiegelt. So liegen bis zu 5 Apps in der Dynamic Island und bis zu 10 auf dem Sperrbildschirm.
+
+Die Dynamic Island ist immer im Blick und damit ein idealer Platz für die Apps, die du den ganzen Tag öffnest. So bringst du sie in etwa einer Minute dorthin.
+
+---
+
+## Warum die Dynamic Island keine App-Kurzbefehle annimmt
+
+Apple hat die Dynamic Island für Live-Aktivitäten gebaut: einen Timer, eine Essenslieferung, einen Live-Spielstand. Du kannst kein App-Symbol hineinziehen, und es gibt keine Einstellung, die eines dort festpinnt. Das Gleiche gilt für das Live-Aktivität-Banner auf dem Sperrbildschirm.
+
+Der Trick ist also eine Live-Aktivität, deren Inhalt eine Reihe deiner eigenen Apps ist. Genau das macht die **Schnellstartleiste** von WidgetLoft. Sie spiegelt eine Gruppe aus der App mit denselben Symbolen und hält sie in der Island und auf dem Sperrbildschirm.
+
+## Schritt für Schritt: Apps in die Dynamic Island legen
+
+1. **Gruppe anlegen.** Öffne [WidgetLoft](/widgetloft), lege im Tab Gruppen eine Gruppe an und füge die Apps hinzu, zu denen du am häufigsten greifst. Die Island zeigt bis zu 5, eine Gruppe mit 5 Apps passt also vollständig hinein.
+2. **Schnellstartleiste einschalten.** Gehe zu Einstellungen → **Dynamic Island und Live-Aktivität** und schalte die **Schnellstartleiste** ein.
+3. **Ordner auswählen.** Wähle unter **Ordner** die Gruppe, die du gerade angelegt hast.
+4. **Live-Aktivitäten erlauben.** Erscheint nichts, öffne die iOS-App Einstellungen, suche WidgetLoft und prüfe, ob Live-Aktivitäten erlaubt sind.
+5. **Island gedrückt halten und App antippen.** Die kompakte Island zeigt ein Rastersymbol und die Anzahl der Apps. Halte sie gedrückt, um die Reihe aufzuklappen, und tippe auf ein beliebiges Symbol.
+
+## Dynamic Island oder Sperrbildschirm-Banner
+
+| | Dynamic Island | Sperrbildschirm-Banner |
+| --- | --- | --- |
+| Angezeigte Apps | Bis zu 5 | Bis zu 10 |
+| Reihen | Eine Reihe | Eine Reihe bis 5, zwei Reihen bei 6 bis 10 |
+| So funktioniert ein Tippen | Öffnet die App direkt, mit einem Tippen | Fragt zuerst nach Entsperren mit Face ID, dann öffnet sich die App |
+| Website-Kacheln | Öffnen sich im gewählten Browser | Öffnen sich im gewählten Browser |
+| Aussehen | Kompakt: ein Rastersymbol und die Anzahl der Apps | In der Farbe der Gruppe getönt, oder System-Liquid-Glass bei einer transparenten Gruppe |
+
+Das Öffnen mit einem Tippen aus der Dynamic Island ist neu in [WidgetLoft](/widgetloft) 2.1.0: Die App startet sofort, ohne vorher über WidgetLoft zu gehen. Auf dem Sperrbildschirm ist dein iPhone noch gesperrt, also bestätigst du mit Face ID, und dann öffnet sich die App. Wenn du deinen ganzen Sperrbildschirm neu gestaltest, lies auch, [wie du den Sperrbildschirm von iOS 27 einrichtest](/blog/ios-27-lock-screen-setup).
+
+## Häufige Fragen
+
+**Warum sind meine Apps aus der Dynamic Island verschwunden?**
+iOS beendet Live-Aktivitäten nach einigen Stunden (aktiv etwa 8). WidgetLoft startet die Schnellstartleiste jedes Mal neu, wenn du die App öffnest, ein kurzer Besuch bringt sie also zurück.
+
+**Kann ich mehr als 5 Apps in die Dynamic Island legen?**
+Nein. Die aufgeklappte Island zeigt eine Reihe mit bis zu 5 Apps. Das Banner auf dem Sperrbildschirm zeigt bis zu 10 Apps derselben Gruppe in zwei Reihen.
+
+**Ist die Schnellstartleiste fertig?**
+Sie ist in der App als Beta gekennzeichnet. Sie baut auf den Live-Aktivitäten von iOS auf, braucht deshalb die Erlaubnis für Live-Aktivitäten und folgt den Zeitlimits, die iOS dafür setzt.
+
+---
+
+Bereit zum Ausprobieren? [Lade WidgetLoft im App Store](/widgetloft/download) herunter und halte deine Lieblings-Apps in der Dynamic Island nur einen Tipp entfernt.

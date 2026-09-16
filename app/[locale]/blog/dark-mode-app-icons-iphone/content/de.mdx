@@ -1,0 +1,158 @@
+export const meta = {
+  title: "So bekommst du dunkle App-Icons für jede App auf dem iPhone",
+  description:
+    "Dunkle Icons in iOS eingeschaltet, aber manche Apps bleiben grellweiß? Hier erfährst du, warum, und wie du für jede App ein dunkles Icon in einem Home-Bildschirm-Widget bekommst: fertige dunkle Icons, Apples eigene und direkt auf dem iPhone erstellte.",
+  keywords: [
+    "dunkle app icons iphone",
+    "dunkelmodus icons alle apps",
+    "app icons werden nicht dunkel ios",
+    "dunkle icons drittanbieter apps ios",
+    "dunkler home bildschirm iphone",
+    "widget mit dunklen icons iphone",
+  ],
+  ogTitle: "Dunkle App-Icons für jede App auf dem iPhone",
+  ogDescription:
+    "Warum manche Icons im iOS-Dunkelmodus hell bleiben und wie du jede App als dunkles Icon in ein Widget bekommst.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline: "So bekommst du dunkle App-Icons für jede App auf dem iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/de/blog/dark-mode-app-icons-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "Dunkle Icons für jede App auf deinem iPhone-Home-Bildschirm",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Gruppe erstellen",
+        text: "Installiere WidgetLoft (früher FolderMini) aus dem App Store und erstelle im Tab Gruppen eine Gruppe.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Apps hinzufügen",
+        text: "Suche in WidgetLoft im App Store oder nutze auf einer beliebigen App-Store-Seite Teilen und dann WidgetLoft. Jede App bekommt beim Hinzufügen ihr dunkles Icon.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Widget platzieren",
+        text: "Halte den Home-Bildschirm gedrückt, tippe auf das Plus, suche nach WidgetLoft und füge das Widget für deine Gruppe hinzu.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Icon-Darstellung wählen",
+        text: "Öffne in WidgetLoft Einstellungen, dann Widget, dann Dunkles Symbol-Erscheinungsbild, und wähle Automatisch, Hell oder Dunkel.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Einzelne Kacheln anpassen",
+        text: "Öffne bei Bedarf eine Kachel in der Bibliothek, tippe auf Icon ändern und lege ein eigenes Foto für Hell und für Dunkel fest.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Warum bleiben manche App-Icons im iPhone-Dunkelmodus weiß?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dunkle Icons sehen nur dann richtig aus, wenn der Entwickler der App eine dunkle Version mitliefert, und viele Apps tun das nicht. Ein WidgetLoft-Widget zeigt dunkle Icons für beliebte Apps, Apples echte dunkle Icons für Apples Apps und erstellt für andere Apps beim Hinzufügen ein dunkles Icon auf deinem iPhone.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Lädt WidgetLoft meine App-Icons hoch, um dunkle Versionen zu erstellen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nein. Das dunkle Icon für eine App, die der Katalog nicht abdeckt, wird direkt auf deinem Handy aus dem eigenen Icon der App erstellt, und nichts wird hochgeladen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Warum wechselt mein Liquid Glass Widget nicht automatisch zu dunklen Icons?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Das Liquid Glass Widget kann der Systemdarstellung nicht selbst folgen. Öffne in WidgetLoft Einstellungen, dann Widget, dann Dunkles Symbol-Erscheinungsbild, und wähle dafür Hell oder Dunkel.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# So bekommst du dunkle App-Icons für jede App auf dem iPhone
+
+**Kurze Antwort:** iOS kann ein richtiges dunkles Icon nur zeigen, wenn der Entwickler der App eines mitliefert, deshalb bleiben viele Apps hell. Für dunkle Icons bei jeder App legst du deine Apps in ein [WidgetLoft](/widgetloft) (früher FolderMini) Widget: Beliebte Apps haben fertige dunkle Icons, Apples Apps nutzen Apples echte dunkle Icons, und alle anderen bekommen beim Hinzufügen ein dunkles Icon, das direkt auf deinem iPhone erstellt wird.
+
+Du hast dunkle Icons eingeschaltet, und der Home-Bildschirm sieht großartig aus, bis die eine weiße Banking-App oder das grelle Shopping-Icon in der Ecke leuchtet. Hier liest du, warum das passiert und wie du es behebst.
+
+---
+
+## Warum manche App-Icons im Dunkelmodus hell bleiben
+
+Ein dunkles App-Icon malt iOS nicht von selbst. Der Entwickler gestaltet eine dunkle Variante und liefert sie mit der App aus. Apples Apps haben eine, viele große Apps auch, aber etliche Apps haben dieses Update nie bekommen. Ihr Icon behält den weißen oder hellen Hintergrund, egal welche Darstellung du wählst.
+
+Das Icon selbst kannst du nicht ändern. Du kannst diese Apps aber aus einem Widget starten, dessen Kacheln eine dunkle Version zeigen. [WidgetLoft](/widgetloft) macht aus einer Gruppe von Apps ein Home-Bildschirm-Widget, und ein Tipp auf eine Kachel öffnet die App direkt, ohne Kurzbefehle dazwischen.
+
+## Schritt für Schritt: dunkle Icons für jede App
+
+1. **Gruppe erstellen.** Installiere [WidgetLoft](/widgetloft) aus dem App Store (kostenlos testbar) und erstelle im Tab **Gruppen** eine Gruppe.
+2. **Apps hinzufügen.** Suche in der App im App Store oder nutze **Teilen → WidgetLoft** auf einer beliebigen App-Store-Seite. Neu in 2.1.0: Apps, die der Katalog nicht abdeckt, bekommen beim Hinzufügen ein dunkles Icon, das auf deinem Handy aus ihrem eigenen Icon erstellt wird. Nichts wird hochgeladen.
+3. **Widget platzieren.** Halte den Home-Bildschirm gedrückt, tippe auf **+**, suche nach WidgetLoft und füge das Widget für deine Gruppe hinzu.
+4. **Icon-Darstellung wählen.** Geh zu **Einstellungen → Widget → Dunkles Symbol-Erscheinungsbild**. Für das normale Widget wählst du **Automatisch** (folgt deinem Gerät), **Hell** oder **Dunkel**.
+5. **Einzelne Kacheln anpassen.** Lieber ein eigener Look? Tippe in der **Bibliothek** auf eine Kachel, dann auf **Icon ändern**, und lege ein eigenes Foto für Hell und für Dunkel fest.
+
+## Dunkle iOS-Icons vs dunkle Icons im WidgetLoft-Widget
+
+| Dunkle iOS-Icons | Dunkle Icons im WidgetLoft-Widget |
+| --- | --- |
+| Nur so dunkel, wie der Entwickler sie gemacht hat | Fertige dunkle Icons für beliebte Apps |
+| Apples Apps nutzen Apples dunkle Icons | Apples Apps nutzen auch hier Apples echte dunkle Icons |
+| Apps ohne dunkle Variante bleiben hell | Andere Apps bekommen beim Hinzufügen ein auf deinem iPhone erstelltes dunkles Icon |
+| Das Icon ist das, was die App mitbringt | Ein eigenes Foto für Hell und Dunkel auf jeder Kachel |
+| Folgt der Systemdarstellung | Automatisch, Hell oder Dunkel, gewählt unter Einstellungen → Widget |
+
+Das Ergebnis ist ein Home-Bildschirm, auf dem jede Kachel passt, auch die Apps, die nie ein dunkles Icon veröffentlicht haben. Wenn du WidgetLoft schon nutzt, zeigt dir ein einmaliger Bildschirm die Apps, die gerade ihr dunkles Icon bekommen haben. Mehr Layout-Inspiration gefällig? Sieh dir unsere [Ideen für den iOS 27 Home-Bildschirm](/blog/ios-27-home-screen-ideas) an.
+
+## Was bleibt, wie es ist
+
+Dunkle Icons sollen sauber aussehen, deshalb bleiben ein paar Dinge unangetastet:
+
+- **Icons, die schon dunkel sind**, oder zu komplex für ein sauberes Umfärben, bleiben unverändert.
+- **Websites** behalten ihr Website-Icon.
+- **Das Liquid Glass Widget** kann dem System nicht automatisch folgen, wähle dafür also **Hell** oder **Dunkel** unter Dunkles Symbol-Erscheinungsbild.
+
+## Häufige Fragen
+
+**Warum bleiben manche App-Icons im iPhone-Dunkelmodus weiß?**
+Dunkle Icons sehen nur richtig aus, wenn der Entwickler eine dunkle Version mitliefert, und viele Apps tun das nicht. Ein WidgetLoft-Widget schließt diese Lücke mit fertigen, Apples und auf dem Gerät erstellten dunklen Icons.
+
+**Lädt WidgetLoft meine App-Icons hoch, um dunkle Versionen zu erstellen?**
+Nein. Für Apps, die der Katalog nicht abdeckt, wird das dunkle Icon direkt auf deinem Handy aus dem eigenen Icon der App erstellt. Nichts wird hochgeladen.
+
+**Warum wechselt mein Liquid Glass Widget nicht automatisch zu dunklen Icons?**
+Das Liquid Glass Widget kann der Systemdarstellung nicht selbst folgen. Öffne Einstellungen → Widget → Dunkles Symbol-Erscheinungsbild und wähle dafür Hell oder Dunkel.
+
+---
+
+Bereit für einen komplett dunklen Home-Bildschirm? [Lade WidgetLoft im App Store](/widgetloft/download) und gib jeder App ein dunkles Icon.

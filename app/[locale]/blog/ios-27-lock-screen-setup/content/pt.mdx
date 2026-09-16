@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "Como configurar uma Tela Bloqueada limpa no iOS 27 (relógio compacto e apps com um toque)",
+  description:
+    "Configure uma Tela Bloqueada limpa no iOS 27: escolha um papel de parede, ative o relógio compacto e adicione seus apps com o widget de Tela Bloqueada do WidgetLoft e a Barra de Início Rápido.",
+  keywords: [
+    "tela bloqueada ios 27",
+    "relógio compacto ios 27",
+    "personalizar tela bloqueada ios 27",
+    "lançador de apps tela bloqueada iphone",
+    "abrir apps pela tela bloqueada iphone",
+    "widget de apps tela bloqueada iphone",
+  ],
+  ogTitle: "Uma Tela Bloqueada limpa no iOS 27 com apps a um toque",
+  ogDescription:
+    "Relógio compacto, papel de parede em tela cheia e seus apps favoritos a um toque na Tela Bloqueada do iOS 27.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pt",
+    headline:
+      "Como configurar uma Tela Bloqueada limpa no iOS 27 (relógio compacto e apps com um toque)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pt/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pt",
+    name: "Configure uma Tela Bloqueada limpa no iOS 27 com apps a um toque",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Escolha um papel de parede",
+        text: "Toque e segure a Tela Bloqueada, toque em Personalizar e escolha uma foto. Se ela não preencher a tela, deixe a extensão de papel de parede do iOS 27 ampliá-la.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ative o relógio compacto",
+        text: "No mesmo editor, escolha a opção de relógio compacto para que a hora suba para perto da data e dos seus widgets.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Adicione o widget de Tela Bloqueada do WidgetLoft",
+        text: "Crie um grupo com seus apps principais no WidgetLoft (antes FolderMini), adicione o widget WidgetLoft no editor da Tela Bloqueada e escolha esse grupo. Ele mostra uma fileira de até 4 apps.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ative a Barra de Início Rápido",
+        text: "No WidgetLoft, abra Ajustes, depois Dynamic Island e Atividade ao Vivo, e ative a Barra de Início Rápido. As Atividades ao Vivo precisam estar permitidas para o WidgetLoft nos Ajustes do iOS.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Escolha o grupo",
+        text: "Em Pasta, escolha o grupo que quer mostrar. Até 10 apps aparecem na Tela Bloqueada e até 5 na Dynamic Island.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pt",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Posso abrir apps pela Tela Bloqueada sem desbloquear?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Não. Na Tela Bloqueada, tanto o widget do WidgetLoft quanto a Barra de Início Rápido pedem que você desbloqueie primeiro, por exemplo com Face ID, e depois abrem o app. O WidgetLoft pode aparecer por um instante no caminho. Na Dynamic Island, os apps abrem com um toque.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Por que a Barra de Início Rápido sumiu da minha Tela Bloqueada?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "O iOS encerra as Atividades ao Vivo depois de algumas horas. O WidgetLoft inicia a barra de novo sempre que você abre o app. Se ela nunca aparecer, verifique se as Atividades ao Vivo estão permitidas para o WidgetLoft nos Ajustes do iOS.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Preciso do iOS 27 para essa configuração?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Só para o relógio compacto e a extensão de papel de parede, que são recursos do iOS 27. O WidgetLoft funciona no iOS 18 e posterior. Saiba que o widget de Tela Bloqueada mostra apenas apps do nível principal, então pastas dentro de um grupo não aparecem ali.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Como configurar uma Tela Bloqueada limpa no iOS 27 (relógio compacto e apps com um toque)
+
+**Resposta rápida:** Toque e segure a Tela Bloqueada, toque em **Personalizar**, escolha um papel de parede e ative a opção de relógio compacto do iOS 27 para a hora ocupar menos espaço. Depois adicione seus apps: o widget de Tela Bloqueada do [WidgetLoft](/widgetloft) (antes FolderMini) mostra uma fileira de até 4 apps, e a Barra de Início Rápido coloca até 10 apps na Tela Bloqueada.
+
+O iOS 27 dá mais respiro à Tela Bloqueada. O melhor jeito de usar esse espaço é com os apps que você realmente abre, e não só com um relógio maior.
+
+---
+
+## O que o iOS 27 muda na Tela Bloqueada
+
+Duas mudanças do iOS 27 importam para uma configuração limpa:
+
+- **Modo de relógio compacto.** A hora fica menor e vai para o topo, ao lado da data e dos seus widgets, em vez de ocupar o meio da tela.
+- **Extensão de papel de parede.** O iOS pode ampliar uma foto para preencher toda a Tela Bloqueada, o que ajuda com imagens que não se encaixam bem.
+
+O que o iOS ainda não oferece é uma fileira de apps que você toca para abrir. Os widgets padrão da Tela Bloqueada mostram informações, não abrem seus outros apps. É essa lacuna que o [WidgetLoft](/widgetloft) preenche, com duas ferramentas: um widget de Tela Bloqueada que está sempre lá e a Barra de Início Rápido, uma Atividade ao Vivo com uma lista maior de apps.
+
+## Passo a passo: configure uma Tela Bloqueada limpa no iOS 27
+
+1. **Escolha um papel de parede.** Toque e segure a Tela Bloqueada, toque em **Personalizar** e escolha uma foto. Se ela não preencher a tela, deixe a extensão de papel de parede do iOS 27 ampliá-la.
+2. **Ative o relógio compacto.** No mesmo editor, escolha a opção de relógio compacto. A hora sobe para o topo, ao lado da data e dos seus widgets.
+3. **Adicione o widget de Tela Bloqueada do WidgetLoft.** No WidgetLoft, crie um grupo com seus apps principais. De volta ao editor da Tela Bloqueada, adicione o widget **WidgetLoft** e escolha esse grupo. Ele mostra uma fileira de até 4 apps (3 com ícones grandes).
+4. **Ative a Barra de Início Rápido.** Abra o WidgetLoft, vá em **Ajustes → Dynamic Island e Atividade ao Vivo** e ative a **Barra de Início Rápido** (Beta).
+5. **Escolha o grupo.** Em **Pasta**, escolha o grupo que quiser. Até 10 apps aparecem em um banner na Tela Bloqueada e até 5 na Dynamic Island.
+
+## Widget de Tela Bloqueada ou Barra de Início Rápido
+
+| | Widget de Tela Bloqueada | Barra de Início Rápido |
+| --- | --- | --- |
+| Apps | Uma fileira de até 4 (3 com ícones grandes) | Até 10 na Tela Bloqueada, até 5 na Dynamic Island |
+| Quando aparece | Sempre, como parte da sua Tela Bloqueada | Por algumas horas depois que você abre o WidgetLoft |
+| Toque na Tela Bloqueada | Primeiro você desbloqueia, depois o app abre | Primeiro você desbloqueia com Face ID, depois o app abre |
+| Dynamic Island | Não incluída | Toque e segure a ilha e toque em um app para abri-lo com um toque |
+
+Você não precisa escolher. Coloque no widget os 4 apps que abre o dia todo e use a Barra de Início Rápido para uma lista maior que quer por perto por um tempo. Para saber mais sobre a ilha, leia [como colocar apps na Dynamic Island](/blog/apps-in-dynamic-island-iphone).
+
+## Perguntas frequentes
+
+**Posso abrir apps pela Tela Bloqueada sem desbloquear?**
+Não. Na Tela Bloqueada, tanto o widget quanto a Barra de Início Rápido pedem que você desbloqueie primeiro (por exemplo com Face ID) e depois abrem o app. O WidgetLoft pode aparecer por um instante no caminho. Na Dynamic Island, os apps abrem com um toque.
+
+**Por que a Barra de Início Rápido sumiu da minha Tela Bloqueada?**
+O iOS encerra as Atividades ao Vivo depois de algumas horas. O WidgetLoft inicia a barra de novo sempre que você abre o app. Se ela nunca aparecer, verifique se as Atividades ao Vivo estão permitidas para o WidgetLoft nos Ajustes do iOS.
+
+**Preciso do iOS 27 para essa configuração?**
+Só para o relógio compacto e a extensão de papel de parede. O [WidgetLoft](/widgetloft) funciona no iOS 18 e posterior. Um limite para saber: o widget de Tela Bloqueada mostra apenas apps do nível principal, então pastas dentro de um grupo não aparecem ali.
+
+---
+
+Pronto para uma Tela Bloqueada mais limpa? [Baixe o WidgetLoft na App Store](/widgetloft/download) e deixe seus apps principais a um toque.

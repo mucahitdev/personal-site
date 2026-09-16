@@ -1,0 +1,157 @@
+export const meta = {
+  title: "iOS 27'de Widget'lar İçin Neler Yeni (ve Nasıl Kullanılır)",
+  description:
+    "iOS 27, Ana Ekran sayfasının tamamını dolduran Ekstra Büyük widget'ı, Kısayollar otomasyonları için Bildirim tetikleyicisini ve kompakt Kilit Ekranı saatini getiriyor. Nelerin değiştiğini ve her birini nasıl kullanacağınızı anlatıyoruz.",
+  keywords: [
+    "ios 27 widget",
+    "ios 27 ekstra büyük widget",
+    "ios 27 yeni widget özellikleri",
+    "ios 27 kilit ekranı kompakt saat",
+    "kestirmeler bildirim tetikleyicisi ios 27",
+    "ios 27 ana ekran widget",
+  ],
+  ogTitle: "iOS 27'de Widget'lar İçin Neler Yeni",
+  ogDescription:
+    "Ekstra Büyük widget'lar, bildirim otomasyonları ve kompakt Kilit Ekranı saati, basit adımlarla anlatıldı.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline: "iOS 27'de Widget'lar İçin Neler Yeni (ve Nasıl Kullanılır)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/tr/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iOS 27'nin yeni widget özelliklerini kullanın",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "iOS 27'ye güncelleyin",
+        text: "Ayarlar, Genel, Yazılım Güncelleme'yi açın ve iOS 27'yi yükleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ekstra Büyük widget ekleyin",
+        text: "WidgetLoft (eski adıyla FolderMini) içinde bir uygulama grubu oluşturun, ardından Ana Ekran'a uzun basın, + simgesine dokunun, WidgetLoft'u arayın ve Ekstra Büyük boyutu seçin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bir bildirim noktası kurun",
+        text: "Kısayollar'da Otomasyon, Uygulamalar, Bildirim'e gidin, uygulamayı seçin, Otomasyon açık ve Bildir kapalı kalsın, aynı uygulama için WidgetLoft'un Bildirim noktasını göster eylemini ekleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kilit Ekranı'nı özelleştirin",
+        text: "Kilit Ekranı'na uzun basın, Özelleştir'e dokunun, kompakt saate geçin ve en fazla 4 uygulamalı bir WidgetLoft widget'ı ekleyin.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iOS 27'de hangi uygulamalar Ekstra Büyük widget'ı destekliyor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple'ın Takvim, Fotoğraflar, Müzik ve Hava Durumu uygulamaları ile üçüncü taraf uygulamalar destekliyor. WidgetLoft da destekliyor ve küçük ikonlarla tek bir Ana Ekran sayfasına 77 uygulamaya kadar sığdırıyor.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iOS 27 widget'ları bildirim sayısı gösterebilir mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sayı gösteremez. Yeni Kısayollar Bildirim tetikleyicisiyle WidgetLoft, uygulamanın kutucuğunda bir nokta gösterebilir. Nokta, uygulamayı widget'tan açtığınızda kaybolur. Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı silmez; web siteleri, Kısayol kutucukları ve kişiler nokta alamaz.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft'u kullanmak için iOS 27 gerekli mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. WidgetLoft iOS 18 ve sonrasında çalışır. Yalnızca Ekstra Büyük boyut ve bildirim noktaları iOS 27 gerektirir.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27'de Widget'lar İçin Neler Yeni (ve Nasıl Kullanılır)
+
+**Kısa cevap:** 14 Eylül 2026'da yayınlanan iOS 27, widget'larla ilgili üç değişiklik getiriyor: Ana Ekran sayfasının tamamını dolduran Ekstra Büyük widget boyutu, Kısayollar otomasyonları için Bildirim tetikleyicisi ve Kilit Ekranı'nda kompakt saat modu. [WidgetLoft](/widgetloft) (eski adıyla FolderMini) gibi uygulama başlatıcı widget'lar ilk ikisini kullanıyor: tek bir Ekstra Büyük widget 77 uygulamaya kadar alıyor ve bir uygulamaya bildirim geldiğinde kutucuğunda nokta görünebiliyor.
+
+iOS 27 widget'ları baştan yenilemiyor, ama getirdikleri işe yarar. İşte neyin yeni olduğu, uygulama başlatıcı widget'lar için ne anlama geldiği ve nasıl kurulacağı.
+
+---
+
+## iOS 27'de widget'lar için neler değişti
+
+**Ekstra Büyük widget boyutu.** Yeni boyut Ana Ekran sayfasının tamamını, yani 4×6'lık bir ızgara alanını dolduruyor. Apple'ın Takvim, Fotoğraflar, Müzik ve Hava Durumu uygulamaları destekliyor, üçüncü taraf uygulamalar da destekleyebiliyor.
+
+**Kısayollar'da Bildirim tetikleyicisi.** Kısayollar otomasyonları artık bir uygulama bildirim gönderdiğinde çalışabiliyor. Bu, widget uygulamalarının da bildirimlerinize tepki verebilmesini sağlıyor.
+
+**Kilit Ekranı'nda kompakt saat.** Kompakt saat modu, saati üstte tarihin ve widget'larınızın yanında daha küçük gösteriyor.
+
+## Uygulama başlatıcı widget'lar için ne anlama geliyor
+
+[WidgetLoft](/widgetloft), uygulama gruplarını Ana Ekran ve Kilit Ekranı widget'larına dönüştürür; bir kutucuğa dokunmak uygulamayı doğrudan açar. iOS 27 buna iki şey ekliyor:
+
+- **Ekstra Büyük 77 uygulamaya kadar alır.** Küçük ikonlarla tam sayfa tek bir widget'a 77 kutucuk sığar (orta ikonlarla 54, büyükle 40, ekstra büyükle 24). iPad'de geniş Ekstra Büyük 72 uygulamaya kadar alır.
+- **Kutucuklarda bildirim noktaları.** WidgetLoft, yeni Bildirim tetikleyicisini kullanarak bir uygulamaya bildirim geldiğinde o uygulamanın kutucuğuna nokta koyar. Bu bir sayı değil, bir noktadır ve uygulamayı widget'tan açtığınızda kaybolur.
+
+WidgetLoft 2.1.0 ayrıca büyük bir widget'la iyi eşleşen iki özellik ekliyor:
+
+- **Her uygulama için koyu ikonlar.** Popüler uygulamalar hazır koyu ikonlarla gelir, Apple'ın uygulamaları Apple'ın gerçek koyu ikonlarını kullanır. App Store aramasıyla eklediğiniz uygulamalar artık doğrudan telefonunuzda üretilen bir koyu ikon alır. Hiçbir şey yüklenmez.
+- **Tek dokunuşla Dynamic Island.** Hızlı Erişim çubuğu açıkken Dynamic Island'daki uygulamalar tek dokunuşla, doğrudan açılır.
+
+## Adım adım: iOS 27'nin yeni widget özelliklerini kullanın
+
+1. **iOS 27'ye güncelleyin.** **Ayarlar → Genel → Yazılım Güncelleme**'yi açın ve iOS 27'yi yükleyin.
+2. **Ekstra Büyük widget ekleyin.** [WidgetLoft](/widgetloft) içinde **Gruplar** sekmesinde bir grup oluşturun ve uygulamalarınızı ekleyin. Ardından Ana Ekran'a uzun basın, **+** simgesine dokunun, WidgetLoft'u arayın ve Ekstra Büyük boyutu seçin.
+3. **Bir bildirim noktası kurun.** WidgetLoft'ta **Ayarlar → Bildirim Noktaları**'nı açın. Kısayollar'da **Otomasyon → Uygulamalar → Bildirim**'e gidin, uygulamayı seçin, Otomasyon açık ve Bildir kapalı kalsın, aynı uygulama için WidgetLoft'un **Bildirim noktasını göster** eylemini ekleyin. Uygulama başına yaklaşık bir dakika sürer.
+4. **Kilit Ekranı'nı özelleştirin.** Kilit Ekranı'na uzun basın, **Özelleştir**'e dokunun, kompakt saate geçin ve en fazla 4 uygulamalık tek sıralı bir WidgetLoft widget'ı ekleyin (büyük ikonlarla 3).
+
+## Bir bakışta iOS 27 widget değişiklikleri
+
+| iOS 27 değişikliği | Bununla neler yapabilirsiniz |
+| --- | --- |
+| Ekstra Büyük widget boyutu | WidgetLoft ile tek bir Ana Ekran sayfasına 77 uygulamaya kadar yerleştirin |
+| Takvim, Fotoğraflar, Müzik ve Hava Durumu Ekstra Büyük'ü destekliyor | En sık baktığınız Apple uygulamasına tam bir sayfa ayırın |
+| Kısayollar Bildirim tetikleyicisi | Uygulamaya bildirim geldiğinde WidgetLoft kutucuğunda nokta gösterin |
+| Kilit Ekranı kompakt saat | Saati widget'larınızın yanında küçük tutun, en çok kullandığınız uygulamaların sırası da dahil |
+
+Apple'ın widget'ları çoğunlukla bilgi gösterir. [WidgetLoft](/widgetloft) aynı yeni boyutu ve tetikleyiciyi uygulamalarınızı açmak için kullanır ve iOS 18 ve sonrasında çalışmaya devam eder. Nokta kurulumunun tamamı için [widget'larda bildirim rozetleri](/blog/notification-badges-on-widgets-iphone) rehberimize göz atın.
+
+## Sık sorulan sorular
+
+**iOS 27'de hangi uygulamalar Ekstra Büyük widget'ı destekliyor?**
+Takvim, Fotoğraflar, Müzik ve Hava Durumu ile üçüncü taraf uygulamalar. WidgetLoft tek bir widget'a 77 uygulamaya kadar sığdırıyor.
+
+**iOS 27 widget'ları bildirim sayısı gösterebilir mi?**
+Sayı gösteremez. WidgetLoft bir nokta gösterir ve uygulamayı widget'tan açtığınızda nokta kaybolur. Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı silmez; web siteleri, Kısayol kutucukları ve kişiler nokta alamaz.
+
+**WidgetLoft'u kullanmak için iOS 27 gerekli mi?**
+Hayır. WidgetLoft iOS 18 ve sonrasında çalışır. Yalnızca Ekstra Büyük boyut ve bildirim noktaları iOS 27 gerektirir.
+
+---
+
+Tam bir sayfayı uygulamalarınızla doldurmaya hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve iOS 27 widget'larından en iyi şekilde yararlanın.

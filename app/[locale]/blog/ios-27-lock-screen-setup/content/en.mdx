@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "How to Set Up a Clean iOS 27 Lock Screen (Compact Clock and One-Tap Apps)",
+  description:
+    "Set up a clean iOS 27 Lock Screen: pick a wallpaper, turn on the compact clock, then add your apps with a WidgetLoft Lock Screen widget and the Quick Launch bar.",
+  keywords: [
+    "ios 27 lock screen",
+    "ios 27 compact clock",
+    "customize lock screen ios 27",
+    "lock screen app launcher iphone",
+    "open apps from lock screen iphone",
+    "lock screen widget apps iphone",
+  ],
+  ogTitle: "A Clean iOS 27 Lock Screen with One-Tap Apps",
+  ogDescription:
+    "Compact clock, a full-screen wallpaper and your favorite apps one tap away on the iOS 27 Lock Screen.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "How to Set Up a Clean iOS 27 Lock Screen (Compact Clock and One-Tap Apps)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Set up a clean iOS 27 Lock Screen with one-tap apps",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Pick a wallpaper",
+        text: "Long-press the Lock Screen, tap Customize and choose a photo. If it does not fill the screen, let the iOS 27 wallpaper extension expand it.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Turn on the compact clock",
+        text: "In the same editor, choose the compact clock option so the time moves to the top next to the date and your widgets.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add the WidgetLoft Lock Screen widget",
+        text: "Make a group of your top apps in WidgetLoft (formerly FolderMini), then add the WidgetLoft widget in the Lock Screen editor and choose that group. It shows one row of up to 4 apps.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Turn on the Quick Launch bar",
+        text: "In WidgetLoft, open Settings, then Dynamic Island & Live Activity, and turn on Quick Launch bar. Live Activities must be allowed for WidgetLoft in iOS Settings.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choose the group",
+        text: "Under Folder, pick the group to show. Up to 10 apps appear on the Lock Screen and up to 5 in the Dynamic Island.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can I open apps from the Lock Screen without unlocking?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. On the Lock Screen, both the WidgetLoft widget and the Quick Launch bar ask you to unlock first, for example with Face ID, and then open the app. WidgetLoft may show for a moment on the way. In the Dynamic Island, apps open in one tap.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why did the Quick Launch bar disappear from my Lock Screen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS ends Live Activities after some hours. WidgetLoft starts the Quick Launch bar again every time you open the app. If it never appears, check that Live Activities are allowed for WidgetLoft in iOS Settings.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need iOS 27 for this setup?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Only for the compact clock and the wallpaper extension, which are iOS 27 features. WidgetLoft itself works on iOS 18 and later. Note that the Lock Screen widget shows top-level apps only, so folders inside a group do not appear there.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Set Up a Clean iOS 27 Lock Screen (Compact Clock and One-Tap Apps)
+
+**Quick answer:** Long-press the Lock Screen, tap **Customize**, pick a wallpaper and turn on the iOS 27 compact clock option so the time takes up less room. Then add your apps: the [WidgetLoft](/widgetloft) (formerly FolderMini) Lock Screen widget holds one row of up to 4 apps, and its Quick Launch bar puts up to 10 apps on the Lock Screen.
+
+iOS 27 gives the Lock Screen more breathing room. The best way to use that space is for the apps you actually open, not just a bigger clock.
+
+---
+
+## What iOS 27 changes on the Lock Screen
+
+Two Lock Screen changes in iOS 27 matter for a clean setup:
+
+- **Compact clock mode.** The time gets smaller and sits at the top next to the date and your widgets, instead of filling the middle of the screen.
+- **Wallpaper extension.** iOS can expand a photo so it fills the whole Lock Screen, which helps with pictures that don't quite fit.
+
+What iOS still doesn't give you is a row of apps you can tap to open. Stock Lock Screen widgets show information, they don't launch your other apps. That's the gap [WidgetLoft](/widgetloft) fills, with two tools: a Lock Screen widget that is always there, and the Quick Launch bar, a Live Activity with a longer list of apps.
+
+## Step-by-step: set up a clean iOS 27 Lock Screen
+
+1. **Pick a wallpaper.** Long-press the Lock Screen, tap **Customize** and choose a photo. If it doesn't fill the screen, let the iOS 27 wallpaper extension expand it.
+2. **Turn on the compact clock.** In the same editor, choose the compact clock option. The time moves to the top, next to the date and your widgets.
+3. **Add the WidgetLoft Lock Screen widget.** In WidgetLoft, make a group with your top apps. Back in the Lock Screen editor, add the **WidgetLoft** widget and choose that group. It shows one row of up to 4 apps (3 with large icons).
+4. **Turn on the Quick Launch bar.** Open WidgetLoft, go to **Settings → Dynamic Island & Live Activity** and turn on **Quick Launch bar** (Beta).
+5. **Choose the group.** Under **Folder**, pick the group you want. Up to 10 apps appear in a banner on the Lock Screen, and up to 5 in the Dynamic Island.
+
+## Lock Screen widget vs Quick Launch bar
+
+| | Lock Screen widget | Quick Launch bar |
+| --- | --- | --- |
+| Apps | One row of up to 4 (3 with large icons) | Up to 10 on the Lock Screen, up to 5 in the Dynamic Island |
+| When it shows | Always, as part of your Lock Screen | For a few hours after you open WidgetLoft |
+| Tap on the Lock Screen | Unlock first, then the app opens | Unlock with Face ID first, then the app opens |
+| Dynamic Island | Not included | Long-press the island and tap an app to open it in one tap |
+
+You don't have to choose. Put the 4 apps you open all day in the widget, and use the Quick Launch bar for a longer list you want close for a while. For more on the island side, read [how to put apps in the Dynamic Island](/blog/apps-in-dynamic-island-iphone).
+
+## Common questions
+
+**Can I open apps from the Lock Screen without unlocking?**
+No. On the Lock Screen, both the widget and the Quick Launch bar ask you to unlock first (for example with Face ID), then open the app. WidgetLoft may show for a moment on the way. In the Dynamic Island, apps open in one tap.
+
+**Why did the Quick Launch bar disappear from my Lock Screen?**
+iOS ends Live Activities after some hours. WidgetLoft starts the bar again every time you open the app. If it never appears, check that Live Activities are allowed for WidgetLoft in iOS Settings.
+
+**Do I need iOS 27 for this setup?**
+Only for the compact clock and the wallpaper extension. [WidgetLoft](/widgetloft) itself works on iOS 18 and later. One limit to know: the Lock Screen widget shows top-level apps only, so folders inside a group don't appear there.
+
+---
+
+Ready for a cleaner Lock Screen? [Download WidgetLoft on the App Store](/widgetloft/download) and keep your top apps one tap away.

@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Zo open je een website in Chrome (of een andere browser) vanuit een iPhone-widget",
+  description:
+    "Websites op je iPhone-beginscherm openen altijd in Safari of in je standaardbrowser. Zo open je een site rechtstreeks vanuit een widget in Chrome, Firefox, Brave of schermvullend, voor alle sites of voor één.",
+  keywords: [
+    "website openen in chrome vanaf beginscherm iphone",
+    "iphone widget link openen in chrome",
+    "website aan beginscherm toevoegen chrome iphone",
+    "beginscherm snelkoppeling opent in safari",
+    "website widget iphone browser kiezen",
+    "website schermvullend openen vanuit widget iphone",
+  ],
+  ogTitle: "Open een website in Chrome vanuit een iPhone-widget",
+  ogDescription:
+    "Kies Chrome, Firefox, Brave of een schermvullende weergave voor de websites in je widget, voor alle sites of voor één.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline:
+      "Zo open je een website in Chrome (of een andere browser) vanuit een iPhone-widget",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/nl/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "Een website in Chrome of een andere browser openen vanuit een iPhone-widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Voeg de website toe als tegel",
+        text: "Ga in WidgetLoft (voorheen FolderMini) naar Bibliotheek, tik op Tegels toevoegen, kies Website en plak het adres. Het symbool en de naam worden voor je ingevuld.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zet hem in een widget",
+        text: "Voeg de websitetegel toe aan een groep en zet daarna de WidgetLoft-widget op je beginscherm.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kies een browser voor alle websites",
+        text: "Ga naar Instellingen, Widget, Websites openen en kies Chrome, Firefox, Brave of een andere browser, of In WidgetLoft voor een schermvullende weergave.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pas eventueel één site aan",
+        text: "Open de websitetegel, tik op Opent in en kies alleen voor die site een andere optie, of laat het op Instelling volgen staan.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Voeg een eigen browser toe als de jouwe ontbreekt",
+        text: "Tik onder Eigen browsers op Browser toevoegen, vul een naam en een adresformaat met {url} in en tik op Proberen.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Waarom opent de website op mijn beginscherm altijd in Safari?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een bladwijzer die je maakt met Zet op beginscherm in Safari opent in Safari, en de meeste linkwidgets geven het adres door aan je standaardbrowser. Wil je alleen voor die links een andere browser, dan heb je een widget nodig waarin je kunt kiezen, zoals WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat gebeurt er als de gekozen browser niet is geïnstalleerd?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De website opent dan in je standaardbrowser, dus de tegel doet nooit niets.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ben ik ingelogd op websites in WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Aanmeldingen in de browser van WidgetLoft staan los van Safari, dus je moet daar misschien één keer inloggen. Wil je liever je bestaande sessies gebruiken, kies dan je gewone browser.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Zo open je een website in Chrome (of een andere browser) vanuit een iPhone-widget
+
+**Kort antwoord:** websites die je aan het beginscherm van je iPhone toevoegt, openen in Safari of in je standaardbrowser, en dat kun je niet per link veranderen. Met [WidgetLoft](/widgetloft) (voorheen FolderMini) voeg je de site toe als widgettegel en kies je bij Instellingen → Widget → Websites openen voor Chrome, Firefox, Brave, een andere browser of een schermvullende weergave, voor alle sites of voor één.
+
+Misschien is Safari je standaardbrowser, maar staat je werkdashboard in Chrome. Eén tik op je beginscherm moet je dan toch op de juiste plek brengen.
+
+---
+
+## Waarom websites op het beginscherm altijd in Safari openen
+
+**Zet op beginscherm** in Safari maakt een bladwijzer die bij Safari hoort. De meeste linkwidgets komen op hetzelfde uit: ze geven het adres door aan je **standaardbrowser**.
+
+Als je de standaardbrowser wijzigt, verandert elke link in elke app. Meestal wil je iets gerichters: *deze* site in Chrome, de rest zoals altijd. Precies dat doen de websitetegels van WidgetLoft: één browser voor alle websites, met een uitzondering voor elke losse site.
+
+## Stap voor stap: een website in Chrome openen vanuit een widget
+
+1. **Voeg de website toe als tegel.** Ga in [WidgetLoft](/widgetloft) naar **Bibliotheek** → **Tegels toevoegen** → **Website** en plak het adres. Het symbool en de naam van de site worden voor je ingevuld.
+2. **Zet hem in een widget.** Voeg de tegel toe aan een groep en zet daarna de WidgetLoft-widget op je beginscherm (houd het beginscherm ingedrukt, tik op **+**, zoek naar WidgetLoft).
+3. **Kies een browser voor alle websites.** Ga naar **Instellingen** → **Widget** → **Websites openen** en kies Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha of Yandex. Of kies **In WidgetLoft** voor een schermvullende weergave.
+4. **Pas één site aan (optioneel).** Open de websitetegel, tik op **Opent in** en kies een andere optie. Dat geldt alleen voor die website. **Instelling volgen** zet het terug.
+5. **Voeg een eigen browser toe (optioneel).** Staat hij niet in de lijst? Ga naar **Eigen browsers** → **Browser toevoegen**, geef een naam en een adresformaat met `{url}` op en tik op **Proberen**.
+
+## Welke optie kies je
+
+| Optie | Wanneer gebruik je hem |
+| --- | --- |
+| Standaardbrowser | Je bent tevreden met de browser die de rest van je iPhone gebruikt |
+| Een gekozen browser (Chrome, Firefox, Brave en meer) | Je bladwijzers, wachtwoorden of extensies zitten in een browser die niet je standaard is |
+| In WidgetLoft | Je wilt de site schermvullend zonder tabbladen, met een knop **Openen in browser** als je die nodig hebt |
+| Eigen browser | Je browser staat niet in de lijst en je kent het adresformaat |
+
+Je kunt ze vrij combineren. Laat de algemene instelling in [WidgetLoft](/widgetloft) op je favoriete browser staan en laat één bank- of werksite met **Opent in** ergens anders openen.
+
+## Wat je kunt verwachten
+
+- **WidgetLoft opent eerst heel even** als je iets anders kiest dan de standaardbrowser. Met de standaardbrowser opent de site direct.
+- **Is de gekozen browser niet geïnstalleerd**, dan opent de site in je standaardbrowser.
+- **Aanmeldingen in de browser van WidgetLoft staan los van Safari**, dus je moet daar misschien nog één keer inloggen.
+- **Het is geen web-app-modus.** In WidgetLoft is een schermvullende browserweergave, geen losstaande geïnstalleerde web-app.
+- **Het werkt ook vanuit het Dynamic Island.** Gebruik je de Snelstartbalk, dan openen websitetegels in het Dynamic Island en in de banner op het toegangsscherm in de browser die je hebt gekozen.
+
+Websites staan naast je apps in dezelfde widget. Voor app-tegels lees je [hoe je apps opent vanuit een widget](/blog/launch-apps-from-widgets-ios).
+
+## Veelgestelde vragen
+
+**Waarom opent de website op mijn beginscherm altijd in Safari?**
+Een bladwijzer via Zet op beginscherm in Safari opent in Safari, en de meeste linkwidgets gebruiken je standaardbrowser. Met een websitetegel in [WidgetLoft](/widgetloft) kies je zelf de browser.
+
+**Wat gebeurt er als de gekozen browser niet is geïnstalleerd?**
+De website opent in je standaardbrowser, dus de tegel blijft werken.
+
+**Ben ik ingelogd op websites in WidgetLoft?**
+Aanmeldingen daar staan los van Safari, dus je moet misschien één keer inloggen. Liever je bestaande sessies? Kies je gewone browser.
+
+---
+
+Klaar om je sites één tik weg te zetten, in de browser die jij wilt? [Download WidgetLoft in de App Store](/widgetloft/download).

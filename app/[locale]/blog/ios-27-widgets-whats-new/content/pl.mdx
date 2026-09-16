@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Co nowego w widżetach w iOS 27 (i jak z tego korzystać)",
+  description:
+    "iOS 27 dodaje widżet Bardzo duży, który wypełnia całą stronę ekranu początkowego, wyzwalacz Powiadomienie dla automatyzacji w Skrótach i kompaktowy zegar na ekranie blokady. Zobacz, co się zmieniło i jak z tego korzystać.",
+  keywords: [
+    "widżety ios 27",
+    "bardzo duży widżet ios 27",
+    "nowe funkcje widżetów ios 27",
+    "kompaktowy zegar ekran blokady ios 27",
+    "skróty automatyzacja powiadomienie ios 27",
+    "widżety ekran początkowy ios 27",
+  ],
+  ogTitle: "Co nowego w widżetach w iOS 27",
+  ogDescription:
+    "Bardzo duże widżety, automatyzacje na powiadomienia i kompaktowy zegar na ekranie blokady, krok po kroku.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline: "Co nowego w widżetach w iOS 27 (i jak z tego korzystać)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pl/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Korzystanie z nowych funkcji widżetów w iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Zaktualizuj do iOS 27",
+        text: "Otwórz Ustawienia, Ogólne, Uaktualnienia i zainstaluj iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj widżet Bardzo duży",
+        text: "Utwórz grupę aplikacji w WidgetLoft (dawniej FolderMini), a potem przytrzymaj ekran początkowy, stuknij +, wyszukaj WidgetLoft i wybierz rozmiar Bardzo duży.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Skonfiguruj jedną kropkę powiadomień",
+        text: "W Skrótach przejdź do Automatyzacja, Aplikacje, Powiadomienie, wybierz aplikację, zostaw włączoną automatyzację i wyłączone powiadamianie, a następnie dodaj akcję WidgetLoft Pokaż kropkę powiadomienia dla tej samej aplikacji.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dostosuj ekran blokady",
+        text: "Przytrzymaj ekran blokady, stuknij Dostosuj, przełącz na kompaktowy zegar i dodaj widżet WidgetLoft z maksymalnie 4 aplikacjami.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Które aplikacje obsługują widżet Bardzo duży w iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Obsługują go Kalendarz, Zdjęcia, Muzyka i Pogoda od Apple, a także aplikacje innych firm. WidgetLoft też go obsługuje i z małymi ikonami mieści do 77 aplikacji na całej stronie ekranu początkowego.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy widżety w iOS 27 pokazują liczbę powiadomień?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Liczby nie. Dzięki nowemu wyzwalaczowi Powiadomienie w Skrótach WidgetLoft może pokazać kropkę na kafelku aplikacji. Kropka znika, gdy otworzysz aplikację z widżetu. Przeczytanie powiadomienia tylko na ekranie blokady lub na Apple Watch jej nie usuwa, a strony internetowe, kafelki Skrótów i kontakty nie mogą mieć kropek.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy do WidgetLoft potrzebuję iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. WidgetLoft działa na iOS 18 i nowszych. iOS 27 jest potrzebny tylko do rozmiaru Bardzo duży i kropek powiadomień.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Co nowego w widżetach w iOS 27 (i jak z tego korzystać)
+
+**Krótka odpowiedź:** iOS 27, wydany 14 września 2026 roku, wprowadza trzy zmiany związane z widżetami: rozmiar Bardzo duży, który wypełnia całą stronę ekranu początkowego, wyzwalacz Powiadomienie dla automatyzacji w Skrótach oraz tryb kompaktowego zegara na ekranie blokady. Widżety do uruchamiania aplikacji, takie jak [WidgetLoft](/widgetloft) (dawniej FolderMini), korzystają z dwóch pierwszych: jeden widżet Bardzo duży mieści do 77 aplikacji, a kafelki mogą pokazać kropkę, gdy aplikacja dostanie powiadomienie.
+
+iOS 27 nie wymyśla widżetów na nowo, ale zmiany są praktyczne. Oto co jest nowe, co to oznacza dla widżetów uruchamiających aplikacje i jak to skonfigurować.
+
+---
+
+## Co zmieniło się w widżetach w iOS 27
+
+**Rozmiar widżetu Bardzo duży.** Nowy rozmiar wypełnia całą stronę ekranu początkowego, czyli obszar siatki 4×6. Obsługują go Kalendarz, Zdjęcia, Muzyka i Pogoda od Apple, a mogą go obsługiwać także aplikacje innych firm.
+
+**Wyzwalacz Powiadomienie w Skrótach.** Automatyzacje w Skrótach mogą teraz uruchamiać się, gdy aplikacja wyśle powiadomienie. Dzięki temu także aplikacje z widżetami mogą reagować na Twoje powiadomienia.
+
+**Kompaktowy zegar na ekranie blokady.** Tryb kompaktowego zegara pokazuje mniejszą godzinę u góry, obok daty i Twoich widżetów.
+
+## Co to oznacza dla widżetów uruchamiających aplikacje
+
+[WidgetLoft](/widgetloft) zamienia grupy aplikacji w widżety na ekran początkowy i ekran blokady, a stuknięcie kafelka otwiera aplikację bezpośrednio. iOS 27 dodaje do tego dwie rzeczy:
+
+- **Bardzo duży mieści do 77 aplikacji.** Z małymi ikonami jeden widżet na całą stronę mieści 77 kafelków (54 ze średnimi ikonami, 40 z dużymi, 24 z bardzo dużymi). Na iPadzie szeroki widżet Bardzo duży mieści do 72.
+- **Kropki powiadomień na kafelkach.** WidgetLoft używa nowego wyzwalacza Powiadomienie, aby umieścić kropkę na kafelku aplikacji, gdy ta aplikacja dostanie powiadomienie. To kropka, a nie liczba, i znika, gdy otworzysz aplikację z widżetu.
+
+WidgetLoft 2.1.0 dodaje też dwie funkcje, które dobrze pasują do dużego widżetu:
+
+- **Ciemne ikony dla każdej aplikacji.** Popularne aplikacje mają gotowe ciemne ikony, a aplikacje Apple używają prawdziwych ciemnych ikon Apple. Aplikacje dodane przez wyszukiwanie w App Store dostają teraz ciemną ikonę tworzoną bezpośrednio na telefonie. Nic nie jest wysyłane.
+- **Dynamic Island jednym stuknięciem.** Gdy pasek szybkiego uruchamiania jest włączony, aplikacje w Dynamic Island otwierają się jednym stuknięciem, bezpośrednio.
+
+## Krok po kroku: korzystaj z nowych funkcji widżetów w iOS 27
+
+1. **Zaktualizuj do iOS 27.** Otwórz **Ustawienia → Ogólne → Uaktualnienia** i zainstaluj iOS 27.
+2. **Dodaj widżet Bardzo duży.** W [WidgetLoft](/widgetloft) utwórz grupę na karcie **Grupy** i dodaj aplikacje. Następnie przytrzymaj ekran początkowy, stuknij **+**, wyszukaj WidgetLoft i wybierz rozmiar Bardzo duży.
+3. **Skonfiguruj jedną kropkę powiadomień.** W WidgetLoft otwórz **Ustawienia → Kropki powiadomień**. W Skrótach przejdź do **Automatyzacja → Aplikacje → Powiadomienie**, wybierz aplikację, zostaw włączoną automatyzację i wyłączone powiadamianie, a potem dodaj akcję WidgetLoft **Pokaż kropkę powiadomienia** dla tej samej aplikacji. Zajmuje to około minuty na aplikację.
+4. **Dostosuj ekran blokady.** Przytrzymaj ekran blokady, stuknij **Dostosuj**, przełącz na kompaktowy zegar i dodaj widżet WidgetLoft z jednym rzędem do 4 aplikacji (3 z dużymi ikonami).
+
+## Zmiany w widżetach iOS 27 w skrócie
+
+| Zmiana w iOS 27 | Co możesz z nią zrobić |
+| --- | --- |
+| Rozmiar widżetu Bardzo duży | Umieścić do 77 aplikacji na jednej stronie ekranu początkowego z WidgetLoft |
+| Kalendarz, Zdjęcia, Muzyka i Pogoda obsługują Bardzo duży | Oddać całą stronę aplikacji Apple, którą sprawdzasz najczęściej |
+| Wyzwalacz Powiadomienie w Skrótach | Pokazać kropkę na kafelku WidgetLoft, gdy aplikacja dostanie powiadomienie |
+| Kompaktowy zegar na ekranie blokady | Mieć małą godzinę obok widżetów, w tym rząd ulubionych aplikacji |
+
+Widżety Apple głównie pokazują informacje. [WidgetLoft](/widgetloft) używa tego samego nowego rozmiaru i wyzwalacza, aby otwierać Twoje aplikacje, i nadal działa na iOS 18 i nowszych. Pełną konfigurację kropek znajdziesz w naszym poradniku o [plakietkach powiadomień na widżetach](/blog/notification-badges-on-widgets-iphone).
+
+## Częste pytania
+
+**Które aplikacje obsługują widżet Bardzo duży w iOS 27?**
+Kalendarz, Zdjęcia, Muzyka i Pogoda, a także aplikacje innych firm. WidgetLoft mieści w nim do 77 aplikacji.
+
+**Czy widżety w iOS 27 pokazują liczbę powiadomień?**
+Liczby nie. WidgetLoft pokazuje kropkę, która znika, gdy otworzysz aplikację z widżetu. Przeczytanie powiadomienia tylko na ekranie blokady lub na Apple Watch jej nie usuwa, a strony internetowe, kafelki Skrótów i kontakty nie mogą mieć kropek.
+
+**Czy do WidgetLoft potrzebuję iOS 27?**
+Nie. WidgetLoft działa na iOS 18 i nowszych. iOS 27 jest potrzebny tylko do rozmiaru Bardzo duży i kropek powiadomień.
+
+---
+
+Gotowy, by wypełnić całą stronę swoimi aplikacjami? [Pobierz WidgetLoft z App Store](/widgetloft/download) i wykorzystaj widżety iOS 27 w pełni.

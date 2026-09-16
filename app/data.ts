@@ -286,6 +286,126 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     title:
+      'How to Set Up the iPhone Duo Home Screen (Inner and Outer Display)',
+    description:
+      'Plan your foldable iPhone Duo\'s cover screen and 7.6-inch inner screen, with widgets and one-tap app launchers.',
+    link: '/blog/iphone-duo-home-screen-setup',
+    uid: 'blog-27',
+  },
+  {
+    title:
+      'How to Open Apps Faster on the iPhone Duo Cover Screen',
+    description:
+      'One-hand ways to reach your apps on the 5.4-inch outer display: launcher widgets, the Lock Screen and the Dynamic Island.',
+    link: '/blog/iphone-duo-cover-screen-apps',
+    uid: 'blog-26',
+  },
+  {
+    title:
+      'Best Widgets for the iPhone Duo\'s 7.6-Inch Inner Screen',
+    description:
+      'Apple\'s new Extra Large widgets and an app-launcher widget that make the most of the iPhone Duo\'s big inner display.',
+    link: '/blog/best-widgets-iphone-duo',
+    uid: 'blog-25',
+  },
+  {
+    title:
+      'iOS 27 Home Screen Ideas: 7 Setups Worth Copying',
+    description:
+      'Seven iOS 27 Home Screen setups, from a one-page launcher to an all-dark, glass or nested-folder layout.',
+    link: '/blog/ios-27-home-screen-ideas',
+    uid: 'blog-24',
+  },
+  {
+    title:
+      'What\'s New for Widgets in iOS 27 (and How to Use Them)',
+    description:
+      'The Extra Large widget, notification automations and the compact Lock Screen clock, and what you can build with them.',
+    link: '/blog/ios-27-widgets-whats-new',
+    uid: 'blog-23',
+  },
+  {
+    title:
+      'How to Set Up a Clean iOS 27 Lock Screen (Compact Clock and One-Tap Apps)',
+    description:
+      'Use iOS 27\'s compact clock, a Lock Screen app widget and a Quick Launch bar for a tidy Lock Screen.',
+    link: '/blog/ios-27-lock-screen-setup',
+    uid: 'blog-22',
+  },
+  {
+    title:
+      'How to Use the iOS 27 Extra Large Widget as a One-Page App Launcher',
+    description:
+      'Fill a whole Home Screen page with up to 77 apps using iOS 27\'s new Extra Large widget size.',
+    link: '/blog/extra-large-widget-ios-27',
+    uid: 'blog-21',
+  },
+  {
+    title:
+      'How to Get Dark Mode App Icons for Every App on iPhone',
+    description:
+      'Stop bright icons from breaking a dark Home Screen: dark icons for every app, even ones that don\'t ship one.',
+    link: '/blog/dark-mode-app-icons-iphone',
+    uid: 'blog-20',
+  },
+  {
+    title:
+      'How to Put Your Favorite Apps in the Dynamic Island on iPhone',
+    description:
+      'Launch your favorite apps from the Dynamic Island and the Lock Screen in one tap with a Quick Launch bar.',
+    link: '/blog/apps-in-dynamic-island-iphone',
+    uid: 'blog-19',
+  },
+  {
+    title:
+      'How to Open a Website in Chrome (or Any Browser) from an iPhone Widget',
+    description:
+      'Make Home Screen website shortcuts open in Chrome, Firefox, Brave or full screen instead of always Safari.',
+    link: '/blog/open-website-in-chrome-from-widget-iphone',
+    uid: 'blog-18',
+  },
+  {
+    title:
+      'How to Put Folders Inside Folders on iPhone (Nested Folders)',
+    description:
+      'iOS folders can\'t nest, but a widget can: sub-folders with a back button, right on your Home Screen.',
+    link: '/blog/folders-inside-folders-iphone',
+    uid: 'blog-17',
+  },
+  {
+    title:
+      'How to Make a Transparent Widget on iPhone (iOS 26 Liquid Glass)',
+    description:
+      'See-through and frosted Liquid Glass widgets that let your wallpaper show through.',
+    link: '/blog/transparent-widget-iphone',
+    uid: 'blog-16',
+  },
+  {
+    title:
+      'How to Call or WhatsApp a Contact from Your iPhone Home Screen Widget',
+    description:
+      'Speed dial on iPhone: call, message, FaceTime or open a WhatsApp chat with one tap from a widget.',
+    link: '/blog/call-whatsapp-contact-from-widget-iphone',
+    uid: 'blog-15',
+  },
+  {
+    title:
+      'How to Customize App Icons on iPhone Without the Shortcuts App',
+    description:
+      'Custom photo, symbol, emoji or letter icons that open the app directly, with separate light and dark designs.',
+    link: '/blog/custom-app-icons-without-shortcuts-iphone',
+    uid: 'blog-14',
+  },
+  {
+    title:
+      'How to Show Notification Dots on iPhone Widgets (iOS 27)',
+    description:
+      'Use iOS 27\'s notification automation to put a dot on the widget tile of apps with new notifications.',
+    link: '/blog/notification-badges-on-widgets-iphone',
+    uid: 'blog-13',
+  },
+  {
+    title:
       'How to Find All Photos of a Person on iPhone (On-Device Face Grouping)',
     description:
       'Find and group every photo of a specific person on iPhone with on-device face recognition — nothing is uploaded.',

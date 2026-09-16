@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Cách hiện chấm thông báo trên widget iPhone (iOS 27)",
+  description:
+    "Biểu tượng app bên trong widget không bao giờ hiện huy hiệu thông báo. Hướng dẫn từng bước cách gắn chấm thông báo lên ô trong widget iPhone bằng trình kích hoạt thông báo mới của Phím tắt trên iOS 27 và WidgetLoft, kèm những giới hạn thực tế.",
+  keywords: [
+    "huy hiệu thông báo trên widget iphone",
+    "biểu tượng app trong widget không có huy hiệu",
+    "chấm thông báo trên widget",
+    "tự động hóa thông báo phím tắt ios 27",
+    "xem app nào có thông báo widget",
+    "widget mở app chưa đọc iphone",
+  ],
+  ogTitle: "Chấm thông báo trên widget iPhone (iOS 27)",
+  ogDescription:
+    "Dùng trình kích hoạt thông báo của Phím tắt trên iOS 27 để gắn chấm lên các ô app trong widget của bạn.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline: "Cách hiện chấm thông báo trên widget iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/vi/blog/notification-badges-on-widgets-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Hiện chấm thông báo trên các ô app của widget iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Bật Chấm thông báo",
+        text: "Trong WidgetLoft (trước đây là FolderMini), mở Cài đặt rồi vào Chấm thông báo (Beta). Phần thiết lập có trên iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tạo tự động hóa thông báo",
+        text: "Trong app Phím tắt, vào Tự động hóa, Ứng dụng, Thông báo, rồi chọn app bạn muốn gắn chấm.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Để nó chạy âm thầm",
+        text: "Đặt trình kích hoạt với Tự động hóa bật và Thông báo tắt, để nó chạy mà không hỏi bạn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm tác vụ WidgetLoft",
+        text: "Thêm tác vụ Hiển thị chấm thông báo của WidgetLoft cho cùng app đó. Lặp lại với từng app, mỗi app khoảng một phút.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tùy chọn: xóa chấm khi mở app từ nơi khác",
+        text: "Thêm cho app đó một tự động hóa Khi mở app với tác vụ Xóa chấm thông báo.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Widget có hiện được số thông báo chưa đọc của một app không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Widget bên thứ ba không thể đọc số chưa đọc của app khác. Trên iOS 27, WidgetLoft có thể gắn chấm lên ô của app khi có thông báo đến, nhưng đó là một chấm, không phải con số.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Vì sao chấm không biến mất sau khi tôi đã đọc thông báo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Chỉ đọc thông báo trên Màn hình khóa hoặc Apple Watch sẽ không xóa chấm. Hãy mở app từ widget, thêm tự động hóa Khi mở app với Xóa chấm thông báo, hoặc dùng Xóa tất cả chấm trong WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Chấm thông báo có hoạt động trên iOS 26 hoặc cũ hơn không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Phần thiết lập dựa vào trình kích hoạt thông báo của Phím tắt có từ iOS 27. Bản thân WidgetLoft chạy trên iOS 18 trở lên, chỉ là không có chấm.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách hiện chấm thông báo trên widget iPhone (iOS 27)
+
+**Câu trả lời nhanh:** Widget không thể đọc số chưa đọc của app khác, nên biểu tượng app trong widget mở app không bao giờ hiện huy hiệu. Trên iOS 27, [WidgetLoft](/widgetloft) (trước đây là FolderMini) khắc phục điều này bằng một tự động hóa trong Phím tắt: khi một app gửi thông báo, tự động hóa sẽ gắn chấm lên ô của app đó, và chấm biến mất khi bạn mở app từ widget.
+
+Bạn đã gom app vào widget cho Màn hình chính gọn gàng, và giờ không biết app nào có tin mới. Đây là cách lấy lại tín hiệu đó.
+
+---
+
+## Vì sao biểu tượng app trong widget không hiện huy hiệu
+
+Huy hiệu số màu đỏ trên biểu tượng ở Màn hình chính do chính iOS vẽ. Widget là một khung hiển thị riêng do một app khác vẽ, và iOS không cho widget bên thứ ba đọc số thông báo chưa đọc của các app khác của bạn. Vì vậy mọi widget mở app chỉ hiện biểu tượng trơn.
+
+iOS 27 đã thay đổi một mảnh ghép. Phím tắt giờ có các tự động hóa chạy khi một app gửi thông báo (xem [những điểm mới của widget trong iOS 27](/blog/ios-27-widgets-whats-new)). Con số vẫn là riêng tư, nhưng tự động hóa có thể phản ứng đúng lúc thông báo đến, và Chấm thông báo của WidgetLoft được xây dựng dựa trên chính trình kích hoạt đó.
+
+## Từng bước: thêm chấm thông báo vào các ô trong widget
+
+1. **Bật Chấm thông báo.** Mở [WidgetLoft](/widgetloft), vào **Cài đặt → Chấm thông báo** (Beta). Phần thiết lập có trên iOS 27.
+2. **Tạo tự động hóa thông báo.** Mở app Phím tắt, vào **Tự động hóa → Ứng dụng → Thông báo**, rồi chọn app bạn muốn gắn chấm.
+3. **Để nó chạy âm thầm.** Đặt trình kích hoạt với **Tự động hóa** bật và **Thông báo** tắt, để nó chạy mà không hỏi bạn mỗi lần.
+4. **Thêm tác vụ WidgetLoft.** Thêm tác vụ **Hiển thị chấm thông báo** của WidgetLoft và chọn cùng app đó. Lặp lại bước 2 đến 4 cho từng app bạn muốn theo dõi. Mỗi app mất khoảng một phút.
+5. **Tùy chọn: xóa chấm khi mở app từ nơi khác.** Chấm biến mất khi bạn mở app từ widget. Nếu bạn hay mở app theo cách khác, hãy thêm cho app đó một tự động hóa **Khi mở app** với tác vụ **Xóa chấm thông báo**.
+
+## Chấm thông báo và huy hiệu số
+
+| Huy hiệu số trên biểu tượng ở Màn hình chính | Chấm thông báo trên ô WidgetLoft |
+| --- | --- |
+| Hiện một con số, ví dụ 3 | Hiện một chấm, không có số |
+| Do chính app cập nhật | Biến mất khi mở app từ widget hoặc nhờ tự động hóa Xóa chấm thông báo |
+| Không cần thiết lập gì | Mỗi app một tự động hóa Phím tắt, khoảng một phút mỗi cái |
+| Chạy trên mọi phiên bản iOS gần đây | Cần iOS 27 |
+| Hiện trên biểu tượng app | Hiện trên ô app, không có trên trang web, ô Phím tắt hay danh bạ |
+
+Một chấm trả lời đúng câu hỏi khi bạn liếc nhìn: app này có gì mới không? Các ô của [WidgetLoft](/widgetloft) vẫn mở app trực tiếp chỉ với một lần chạm, và giờ còn hiện được tín hiệu đó.
+
+## Những điều chấm thông báo không làm được
+
+Đây là một chấm, không phải bộ đếm: bạn biết có gì đó mới đến, nhưng không biết bao nhiêu. Việc thiết lập cần iOS 27, và mỗi app cần một tự động hóa riêng.
+
+Chỉ đọc thông báo trên Màn hình khóa hoặc Apple Watch sẽ không xóa chấm. Hãy mở app từ widget hoặc dùng nút **Xóa tất cả chấm** trong WidgetLoft. Trang web, ô Phím tắt và danh bạ không thể có chấm, và toàn bộ tính năng này vẫn đang được đánh dấu Beta.
+
+## Câu hỏi thường gặp
+
+**Widget có hiện được số thông báo chưa đọc của một app không?**
+Không. Widget bên thứ ba không thể đọc số chưa đọc của app khác. Trên iOS 27, WidgetLoft có thể gắn chấm lên ô của app khi có thông báo đến, nhưng đó là một chấm, không phải con số.
+
+**Vì sao chấm không biến mất sau khi tôi đã đọc thông báo?**
+Chỉ đọc trên Màn hình khóa hoặc Apple Watch sẽ không xóa chấm. Hãy mở app từ widget, thêm tự động hóa Khi mở app với Xóa chấm thông báo, hoặc chạm vào Xóa tất cả chấm.
+
+**Chấm thông báo có hoạt động trên iOS 26 hoặc cũ hơn không?**
+Không. Phần thiết lập dựa vào trình kích hoạt thông báo của Phím tắt có từ iOS 27. Bản thân WidgetLoft chạy trên iOS 18 trở lên, chỉ là không có chấm.
+
+---
+
+Muốn thấy tin mới chỉ trong một cái liếc? [Tải WidgetLoft trên App Store](/widgetloft/download) và gắn chấm cho những app quan trọng.

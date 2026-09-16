@@ -1,0 +1,157 @@
+export const meta = {
+  title: "App-Icons auf dem iPhone ohne die Kurzbefehle-App anpassen",
+  description:
+    "Der übliche Weg zu eigenen App-Icons auf dem iPhone ist ein Kurzbefehl \"App öffnen\" mit eigenem Bild. So funktioniert das, und so geht die Widget-Alternative, die Foto-, Symbol-, Emoji- oder Buchstaben-Icons mit Hell- und Dunkel-Version gestaltet und die App trotzdem direkt öffnet.",
+  keywords: [
+    "app icons ändern iphone ohne kurzbefehle",
+    "iphone app icons anpassen",
+    "aesthetic home bildschirm icons",
+    "eigene app icons iphone",
+    "widget eigene icons iphone",
+    "eigene app icons dunkelmodus",
+  ],
+  ogTitle: "Eigene App-Icons auf dem iPhone, ohne Kurzbefehle-App",
+  ogDescription:
+    "Gestalte Foto-, SF-Symbol-, Emoji- oder Buchstaben-Icons für deine Apps, mit getrennter Hell- und Dunkel-Version, und öffne die App mit einem Tipp direkt.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline: "App-Icons auf dem iPhone ohne die Kurzbefehle-App anpassen",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/de/blog/custom-app-icons-without-shortcuts-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "App-Icons auf dem iPhone ohne die Kurzbefehle-App anpassen",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "App hinzufügen",
+        text: "Öffne WidgetLoft (früher FolderMini), suche direkt in der App im App Store oder nutze Teilen, WidgetLoft auf einer App-Store-Seite, und füge die App einer Gruppe hinzu.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Icon ändern öffnen",
+        text: "Geh zum Tab Bibliothek, tippe auf die Kachel der App und dann auf Icon ändern.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Quelle wählen",
+        text: "Wähle Foto und schneide es zu, Symbol (über 5.700 SF Symbols), Emoji oder Mono (erster Buchstabe, jedes Wort oder eigener Text mit bis zu 3 Zeichen).",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Farben für Hell und Dunkel festlegen",
+        text: "Wähle eine Icon-Farbe und einen Hintergrund oder Kein Hintergrund, und gestalte die Hell- und Dunkel-Version getrennt.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Widget platzieren",
+        text: "Füge das WidgetLoft-Widget zu deinem Home-Bildschirm hinzu. Ein Tipp auf eine Kachel öffnet die App direkt.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Öffnet ein eigenes Icon in WidgetLoft die Kurzbefehle-App?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nein. Eine App-Kachel von WidgetLoft auf dem Home-Bildschirm öffnet die App direkt über ihre Bundle-ID, mit oder ohne eigenes Icon. Die Kurzbefehle-App ist nicht beteiligt.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ändert das das echte Icon der App auf meinem iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nein. Das eigene Design gilt für die Kachel im Widget. Das Icon der App selbst bleibt, wie es ist, und du kannst es in der App-Mediathek lassen, damit deine Seite nur das Widget zeigt.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kann ein eigenes Icon im Dunkelmodus anders aussehen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Das Icon-Studio hat getrennte Designs für Hell und Dunkel. Wenn du keins gestaltest, bringen beliebte Apps bereits fertige dunkle Icons mit.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# App-Icons auf dem iPhone ohne die Kurzbefehle-App anpassen
+
+**Kurze Antwort:** Du kannst deinen Apps eigene Icons geben, ohne die Kurzbefehle-App zu nutzen, indem du sie in ein Widget legst, in dem du jede Kachel gestalten kannst. [WidgetLoft](/widgetloft) (früher FolderMini) hat ein eingebautes Icon-Studio: Wähle ein Foto, ein SF Symbol, ein Emoji oder einen Buchstaben, stell die Farben ein und erstelle getrennte Versionen für Hell und Dunkel. Die Kachel öffnet die App trotzdem direkt.
+
+Ein ästhetischer Home-Bildschirm beginnt meist mit Icons, die zusammenpassen. Hier ist die Methode aus den meisten Anleitungen, was sie dir wirklich bringt, und ein Weg über Widgets zum gleichen Look.
+
+---
+
+## So funktioniert die Kurzbefehle-Methode
+
+Die meistgeteilte Anleitung geht so: Öffne die Kurzbefehle-App, erstelle einen neuen Kurzbefehl mit der Aktion "App öffnen", wähle die App und füge den Kurzbefehl dann mit einem Namen und einem Bild aus deinen Fotos zum Home-Bildschirm hinzu. Das neue Icon sieht aus wie ein eigenes App-Icon.
+
+Das funktioniert, und es lohnt sich zu wissen, was du bekommst:
+
+- **Es ist ein Kurzbefehl, nicht die App.** Ein Tipp darauf läuft über die Kurzbefehle-App, die dann deine App öffnet.
+- **Du hast jetzt zwei Icons.** Die ursprüngliche App ist weiter installiert, ihr normales Icon liegt also noch irgendwo. Die meisten verschieben es in die App-Mediathek, damit die Seite aufgeräumt bleibt.
+- **Ein Icon nach dem anderen.** Jede App braucht einen eigenen Kurzbefehl, einzeln erstellt und benannt, mit einem Bild für helle und dunkle Darstellung.
+
+Für ein, zwei Icons ist das in Ordnung. Für eine ganze Themenseite ist ein Widget oft einfacher.
+
+## Schritt für Schritt: eigene App-Icons mit WidgetLoft
+
+1. **App hinzufügen.** Öffne [WidgetLoft](/widgetloft), suche direkt in der App im App Store (oder nutze Teilen → WidgetLoft auf einer beliebigen App-Store-Seite) und füge die App einer Gruppe hinzu.
+2. **Icon ändern öffnen.** Geh zum Tab **Bibliothek**, tippe auf die Kachel der App und dann auf **Icon ändern**.
+3. **Quelle wählen.** Wähle **Foto** (beim Zuschneiden ziehen zum Verschieben, auseinanderziehen zum Zoomen), **Symbol** (über 5.700 SF Symbols in 27 Kategorien, Suche auf Englisch), **Emoji** oder **Mono** (erster Buchstabe, jedes Wort oder eigener Text mit bis zu 3 Zeichen).
+4. **Farben für Hell und Dunkel festlegen.** Wähle eine **Icon-Farbe** und einen **Hintergrund**, oder **Kein Hintergrund** für ein Zeichen, das direkt auf dem Widget sitzt. Gestalte die Hell- und Dunkel-Version getrennt, damit das Icon zu beiden Darstellungen passt.
+5. **Widget platzieren.** Halte eine freie Stelle auf dem Home-Bildschirm gedrückt, füge ein Widget hinzu, wähle WidgetLoft und eine Größe. Tippe auf eine Kachel, und die App öffnet sich direkt.
+
+## Kurzbefehle-Methode vs WidgetLoft Icon-Studio
+
+| | Kurzbefehle-Methode | WidgetLoft Icon-Studio |
+| --- | --- | --- |
+| Wie die App öffnet | Läuft über die Kurzbefehle-App | Die Kachel öffnet die App direkt |
+| Dunkle Variante | Ein Bild für beide Darstellungen | Getrennte Designs für Hell und Dunkel |
+| Schritte pro Icon | Neuer Kurzbefehl, App wählen, zum Home-Bildschirm, Bild und Name | Kachel antippen, Icon ändern, Quelle und Farben |
+| Icon-Quellen | Ein Bild aus deinen Fotos | Foto, über 5.700 SF Symbols, Emoji, Mono-Buchstaben |
+| Viele Apps auf einmal | Ein Home-Bildschirm-Icon pro Kurzbefehl | Viele Kacheln in einem Widget |
+
+Der Unterschied liegt darin, wo die Arbeit steckt. Mit [WidgetLoft](/widgetloft) sitzen Design und Öffnen in derselben Kachel: kein zusätzlicher Kurzbefehl pro App und keine Kurzbefehle-App dazwischen, wenn du tippst. Apps ohne eigenes Design zeigen weiter ihre echten Icons, du passt also nur die an, die du willst.
+
+## Häufige Fragen
+
+**Öffnet ein eigenes Icon in WidgetLoft die Kurzbefehle-App?**
+Nein. Eine App-Kachel von WidgetLoft auf dem Home-Bildschirm öffnet die App direkt über ihre Bundle-ID, mit oder ohne eigenes Icon.
+
+**Ändert das das echte Icon der App auf meinem iPhone?**
+Nein. Das Design gilt für die Kachel im Widget. Das Icon der App selbst bleibt, wie es ist, und du kannst es in der App-Mediathek lassen, damit deine Seite nur das Widget zeigt.
+
+**Kann ein eigenes Icon im Dunkelmodus anders aussehen?**
+Ja. Das Icon-Studio hat getrennte Designs für Hell und Dunkel. Wenn du keins gestaltest, bringen beliebte Apps bereits fertige dunkle Icons mit (siehe [App-Icons im Dunkelmodus auf dem iPhone](/blog/dark-mode-app-icons-iphone)).
+
+---
+
+Bereit für dein eigenes Set? [Lade WidgetLoft im App Store](/widgetloft/download) herunter und gib jeder App das Icon, das du willst.

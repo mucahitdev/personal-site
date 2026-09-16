@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Cách gọi điện hoặc nhắn WhatsApp cho một liên hệ từ widget Màn hình chính iPhone",
+  description:
+    "Biến một liên hệ yêu thích thành phím quay số nhanh trên Màn hình chính iPhone. Một lần chạm vào ô widget sẽ gọi điện, bắt đầu FaceTime hoặc mở cuộc trò chuyện WhatsApp hay Telegram của bạn.",
+  keywords: [
+    "quay số nhanh iphone màn hình chính",
+    "gọi liên hệ từ widget iphone",
+    "widget liên hệ whatsapp iphone",
+    "thêm liên hệ ra màn hình chính iphone",
+    "widget gọi bằng một chạm iphone",
+    "widget facetime liên hệ iphone",
+  ],
+  ogTitle: "Gọi điện hoặc nhắn WhatsApp cho liên hệ từ widget iPhone",
+  ogDescription:
+    "Đặt những người quan trọng nhất lên Màn hình chính thành các ô chỉ cần một chạm để gọi, nhắn tin, FaceTime hoặc mở chat WhatsApp.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Cách gọi điện hoặc nhắn WhatsApp cho một liên hệ từ widget Màn hình chính iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/vi/blog/call-whatsapp-contact-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Thêm ô liên hệ một chạm vào widget Màn hình chính iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Thêm ô liên hệ",
+        text: "Trong WidgetLoft (trước đây là FolderMini), mở tab Thư viện, chạm Thêm ô, rồi chạm Liên hệ.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn người",
+        text: "Chạm Chọn từ Danh bạ, không cần cấp quyền nào, hoặc tự nhập tên và thông tin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn hành động",
+        text: "Chọn trong Gọi, Nhắn tin, FaceTime, FaceTime Âm thanh, Email, WhatsApp và Telegram, rồi chọn Một hành động hoặc Thư mục với mọi hành động.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn biểu tượng",
+        text: "Chọn Biểu tượng app, Ảnh hoặc Ảnh + huy hiệu cho ô.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Đặt vào widget",
+        text: "Thêm ô vào một nhóm, sau đó chạm và giữ Màn hình chính, thêm widget WidgetLoft và chọn nhóm đó.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Có thể tạo quay số nhanh trên Màn hình chính iPhone không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. Widget Danh bạ của Apple hiển thị mọi người, nhưng sau khi chạm bạn vẫn phải chọn làm gì. Ô liên hệ của WidgetLoft thực hiện một hành động cho mỗi lần chạm, ví dụ gọi cho ai đó hoặc mở cuộc trò chuyện với họ.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Widget có mở được cuộc trò chuyện WhatsApp với một người cụ thể không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. Chọn WhatsApp làm hành động và ô sẽ mở cuộc trò chuyện của bạn với liên hệ đó. Ô mở cuộc trò chuyện chứ không bắt đầu cuộc gọi. Telegram hoạt động tương tự và nhận tên người dùng hoặc số điện thoại.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft có cần quyền truy cập danh bạ của tôi không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Chọn từ Danh bạ hoạt động mà không cần cấp cho WidgetLoft quyền danh bạ nào, và bạn cũng có thể nhập thông tin bằng tay.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách gọi điện hoặc nhắn WhatsApp cho một liên hệ từ widget Màn hình chính iPhone
+
+**Trả lời nhanh:** iPhone không có quay số nhanh kiểu cổ điển, nhưng một ô liên hệ trong widget làm được đúng việc đó. Trong [WidgetLoft](/widgetloft) (trước đây là FolderMini), vào Thư viện, Thêm ô, Liên hệ, chọn người và một hành động như Gọi hoặc WhatsApp, rồi đặt ô vào widget. Một lần chạm là gọi cho họ hoặc mở cuộc trò chuyện.
+
+Những người bạn nói chuyện nhiều nhất không nên nằm cách ba màn hình. Đây là cách đặt họ ngay trên Màn hình chính.
+
+---
+
+## Vì sao widget Danh bạ không phải quay số nhanh thật sự
+
+Widget Danh bạ của Apple hiển thị những người bạn chọn, và đó là khởi đầu tốt. Nhưng một lần chạm chỉ đưa bạn đi được nửa đường: sau khi mở, bạn vẫn phải chọn làm gì (gọi, nhắn tin, FaceTime). Nếu bạn gọi cho người yêu vài lần mỗi ngày, bước thừa đó cộng dồn lại.
+
+Ô liên hệ của WidgetLoft bỏ qua bước đó. Bạn chọn hành động một lần khi thiết lập ô, và mọi lần chạm sau đó làm đúng việc ấy. Nếu thích có nhiều lựa chọn, bạn có thể biến liên hệ thành một thư mục nhỏ chứa mọi hành động của họ.
+
+## Từng bước: thêm liên hệ vào widget Màn hình chính
+
+1. **Thêm ô liên hệ.** Mở [WidgetLoft](/widgetloft), vào tab **Thư viện**, chạm **Thêm ô**, rồi **Liên hệ**.
+2. **Chọn người.** Chạm **Chọn từ Danh bạ** để chọn một người. Không cần quyền truy cập danh bạ cho việc này. Bạn cũng có thể tự nhập tên, số điện thoại hoặc email.
+3. **Chọn hành động.** Chọn những gì ô có thể làm: Gọi, Nhắn tin, FaceTime, FaceTime Âm thanh, Email, WhatsApp hoặc Telegram. Sau đó chọn **Một hành động** (một chạm làm một việc) hoặc **Thư mục với mọi hành động** (chạm vào liên hệ, rồi chạm hành động).
+4. **Chọn biểu tượng.** Chọn **Biểu tượng app**, **Ảnh** để dùng ảnh của người đó, hoặc **Ảnh + huy hiệu** để kết hợp ảnh với một huy hiệu nhỏ.
+5. **Đặt vào widget.** Thêm ô vào một nhóm. Sau đó chạm và giữ Màn hình chính, thêm widget WidgetLoft và chọn nhóm đó.
+
+## Mỗi hành động làm gì khi bạn chạm
+
+| Hành động | Một lần chạm sẽ |
+| --- | --- |
+| Gọi | Bắt đầu cuộc gọi điện thoại đến liên hệ |
+| Nhắn tin | Mở cuộc trò chuyện trong Tin nhắn với người đó |
+| FaceTime hoặc FaceTime Âm thanh | Bắt đầu cuộc gọi FaceTime video hoặc âm thanh |
+| Email | Mở một email gửi đến địa chỉ của họ |
+| WhatsApp | Mở cuộc trò chuyện WhatsApp với người đó |
+| Telegram | Mở chat Telegram theo tên người dùng hoặc số điện thoại |
+
+Ô liên hệ nằm cạnh ô app thông thường rất ổn, nên một nhóm [WidgetLoft](/widgetloft) có thể chứa cả gương mặt gia đình bạn lẫn các app bạn dùng để liên lạc với họ. Hãy tạo một widget nhỏ với ba người quan trọng nhất, hoặc một widget vừa trộn cả liên hệ và app. Nếu bạn mới làm quen với widget mở app, hãy xem [cách mở bất kỳ app nào từ widget](/blog/launch-apps-from-widgets-ios).
+
+## Những gì ô liên hệ không làm được
+
+Vài giới hạn nói thẳng, để bạn không bất ngờ:
+
+- **Chỉ Điện thoại và FaceTime bắt đầu cuộc gọi trực tiếp.** Ô WhatsApp và Telegram mở cuộc trò chuyện. Nếu muốn gọi thoại hoặc video ở đó, hãy chạm nút gọi bên trong đoạn chat.
+- **Telegram cần tên người dùng hoặc số điện thoại.** Dùng cái nào cũng được. Nếu tài khoản Telegram của họ dùng số khác, hãy nhập số đó.
+- **Không phải ứng dụng nhắn tin nào cũng được hỗ trợ.** Không có hành động cho Viber, Messenger hay LINE. Với những app này, hãy thêm chính app đó thành một ô thông thường.
+
+## Câu hỏi thường gặp
+
+**Có thể tạo quay số nhanh trên Màn hình chính iPhone không?**
+Có. Widget Danh bạ của Apple hiển thị mọi người, nhưng bạn chọn hành động sau khi chạm. Ô liên hệ của WidgetLoft thực hiện một hành động cho mỗi lần chạm, ví dụ gọi cho ai đó hoặc mở cuộc trò chuyện với họ.
+
+**Widget có mở được cuộc trò chuyện WhatsApp với một người cụ thể không?**
+Có. Chọn WhatsApp làm hành động và ô sẽ mở cuộc trò chuyện của bạn với liên hệ đó. Ô mở cuộc trò chuyện chứ không bắt đầu cuộc gọi. Telegram hoạt động tương tự và nhận tên người dùng hoặc số điện thoại.
+
+**WidgetLoft có cần quyền truy cập danh bạ của tôi không?**
+Không. Chọn từ Danh bạ hoạt động mà không cần quyền danh bạ nào, và bạn cũng có thể nhập thông tin bằng tay.
+
+---
+
+Sẵn sàng tạo quay số nhanh của bạn? [Tải WidgetLoft trên App Store](/widgetloft/download) và giữ những người thân yêu chỉ cách một lần chạm.

@@ -1,0 +1,157 @@
+export const meta = {
+  title: "O que há de novo nos widgets do iOS 27 (e como usar)",
+  description:
+    "O iOS 27 traz um widget Extragrande que ocupa uma página inteira da Tela de Início, um gatilho de Notificação para automações do Atalhos e um relógio compacto na Tela Bloqueada. Veja o que mudou e como usar cada novidade.",
+  keywords: [
+    "widgets ios 27",
+    "widget extragrande ios 27",
+    "novidades widgets ios 27",
+    "relógio compacto tela bloqueada ios 27",
+    "atalhos automação notificação ios 27",
+    "widgets tela de início ios 27",
+  ],
+  ogTitle: "O que há de novo nos widgets do iOS 27",
+  ogDescription:
+    "Widgets Extragrandes, automações com notificações e relógio compacto na Tela Bloqueada, explicados passo a passo.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pt",
+    headline: "O que há de novo nos widgets do iOS 27 (e como usar)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pt/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pt",
+    name: "Usar os novos recursos de widgets do iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Atualize para o iOS 27",
+        text: "Abra Ajustes, Geral, Atualização de Software e instale o iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Adicione um widget Extragrande",
+        text: "Crie um grupo de apps no WidgetLoft (antes FolderMini), toque e segure a Tela de Início, toque em +, busque WidgetLoft e escolha o tamanho Extragrande.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Configure um ponto de notificação",
+        text: "No Atalhos, vá em Automação, Apps, Notificação, escolha o app, deixe Automação ativada e Notificar desativado e adicione a ação do WidgetLoft Mostrar ponto de notificação para o mesmo app.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Personalize a Tela Bloqueada",
+        text: "Toque e segure a Tela Bloqueada, toque em Personalizar, mude para o relógio compacto e adicione um widget do WidgetLoft com até 4 apps.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pt",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Quais apps suportam o widget Extragrande no iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Calendário, Fotos, Música e Tempo da Apple suportam, além de apps de terceiros. O WidgetLoft também suporta e coloca até 77 apps com ícones pequenos em uma página inteira da Tela de Início.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Os widgets do iOS 27 mostram a contagem de notificações?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Contagem não. Com o novo gatilho de Notificação do Atalhos, o WidgetLoft pode mostrar um ponto no bloco de um app. O ponto some quando você abre o app pelo widget. Ler uma notificação só na Tela Bloqueada ou no Apple Watch não o apaga, e sites, blocos de Atalhos e contatos não podem ter pontos.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Preciso do iOS 27 para usar o WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Não. O WidgetLoft funciona no iOS 18 e posterior. Só o tamanho Extragrande e os pontos de notificação precisam do iOS 27.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# O que há de novo nos widgets do iOS 27 (e como usar)
+
+**Resposta rápida:** O iOS 27, lançado em 14 de setembro de 2026, traz três mudanças ligadas a widgets: um tamanho Extragrande que ocupa uma página inteira da Tela de Início, um gatilho de Notificação para automações do Atalhos e um modo de relógio compacto na Tela Bloqueada. Widgets lançadores de apps como o [WidgetLoft](/widgetloft) (antes FolderMini) usam os dois primeiros: um único widget Extragrande comporta até 77 apps, e os blocos podem mostrar um ponto quando um app recebe uma notificação.
+
+O iOS 27 não reinventa os widgets, mas as mudanças são práticas. Veja o que é novo, o que isso significa para widgets lançadores de apps e como configurar.
+
+---
+
+## O que mudou nos widgets com o iOS 27
+
+**Tamanho de widget Extragrande.** O novo tamanho ocupa uma página inteira da Tela de Início, uma área de grade 4×6. Calendário, Fotos, Música e Tempo da Apple suportam, e apps de terceiros também podem suportar.
+
+**Um gatilho de Notificação no Atalhos.** As automações do Atalhos agora podem rodar quando um app envia uma notificação. Isso também permite que apps de widgets reajam às suas notificações.
+
+**Relógio compacto na Tela Bloqueada.** O modo de relógio compacto mostra a hora menor no topo, ao lado da data e dos seus widgets.
+
+## O que isso significa para widgets lançadores de apps
+
+O [WidgetLoft](/widgetloft) transforma grupos de apps em widgets da Tela de Início e da Tela Bloqueada, e um toque no bloco abre o app diretamente. O iOS 27 acrescenta duas coisas:
+
+- **Extragrande comporta até 77 apps.** Com ícones pequenos, um widget de página inteira comporta 77 blocos (54 com ícones médios, 40 com grandes, 24 com extragrandes). No iPad, o Extragrande largo comporta até 72.
+- **Pontos de notificação nos blocos.** O WidgetLoft usa o novo gatilho de Notificação para colocar um ponto no bloco de um app quando esse app recebe uma notificação. É um ponto, não um número, e some quando você abre o app pelo widget.
+
+O WidgetLoft 2.1.0 também traz dois recursos que combinam com um widget grande:
+
+- **Ícones escuros para todos os apps.** Apps populares vêm com ícones escuros prontos e os apps da Apple usam os ícones escuros reais da Apple. Apps adicionados pela busca da App Store agora ganham um ícone escuro criado no próprio telefone. Nada é enviado.
+- **Dynamic Island com um toque.** Com a Barra de Início Rápido ativada, os apps na Dynamic Island abrem com um toque, diretamente.
+
+## Passo a passo: use os novos recursos de widgets do iOS 27
+
+1. **Atualize para o iOS 27.** Abra **Ajustes → Geral → Atualização de Software** e instale o iOS 27.
+2. **Adicione um widget Extragrande.** No [WidgetLoft](/widgetloft), crie um grupo na aba **Grupos** e adicione seus apps. Depois toque e segure a Tela de Início, toque em **+**, busque WidgetLoft e escolha o tamanho Extragrande.
+3. **Configure um ponto de notificação.** No WidgetLoft, abra **Ajustes → Pontos de Notificação**. No Atalhos, vá em **Automação → Apps → Notificação**, escolha o app, deixe Automação ativada e Notificar desativado e adicione a ação do WidgetLoft **Mostrar ponto de notificação** para o mesmo app. Leva cerca de um minuto por app.
+4. **Personalize a Tela Bloqueada.** Toque e segure a Tela Bloqueada, toque em **Personalizar**, mude para o relógio compacto e adicione um widget do WidgetLoft com uma fileira de até 4 apps (3 com ícones grandes).
+
+## As mudanças de widgets do iOS 27 num relance
+
+| Mudança do iOS 27 | O que você pode fazer com ela |
+| --- | --- |
+| Tamanho de widget Extragrande | Colocar até 77 apps em uma página da Tela de Início com o WidgetLoft |
+| Calendário, Fotos, Música e Tempo suportam Extragrande | Dedicar uma página inteira ao app da Apple que você mais consulta |
+| Gatilho de Notificação do Atalhos | Mostrar um ponto num bloco do WidgetLoft quando esse app recebe uma notificação |
+| Relógio compacto na Tela Bloqueada | Manter a hora pequena ao lado dos widgets, incluindo uma fileira com seus apps favoritos |
+
+Os widgets da Apple mostram principalmente informações. O [WidgetLoft](/widgetloft) usa o mesmo novo tamanho e o mesmo gatilho para abrir seus apps, e continua funcionando no iOS 18 e posterior. Para a configuração completa dos pontos, leia nosso guia sobre [indicadores de notificação em widgets](/blog/notification-badges-on-widgets-iphone).
+
+## Perguntas frequentes
+
+**Quais apps suportam o widget Extragrande no iOS 27?**
+Calendário, Fotos, Música e Tempo, além de apps de terceiros. O WidgetLoft comporta até 77 apps em um só.
+
+**Os widgets do iOS 27 mostram a contagem de notificações?**
+Contagem não. O WidgetLoft mostra um ponto, que some quando você abre o app pelo widget. Ler uma notificação só na Tela Bloqueada ou no Apple Watch não o apaga, e sites, blocos de Atalhos e contatos não podem ter pontos.
+
+**Preciso do iOS 27 para usar o WidgetLoft?**
+Não. O WidgetLoft funciona no iOS 18 e posterior. Só o tamanho Extragrande e os pontos de notificação precisam do iOS 27.
+
+---
+
+Pronto para encher uma página inteira com seus apps? [Baixe o WidgetLoft na App Store](/widgetloft/download) e aproveite ao máximo os widgets do iOS 27.

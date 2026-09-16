@@ -1,0 +1,161 @@
+export const meta = {
+  title:
+    "如何把 iOS 27 特大小组件用作一整页的 App 启动器",
+  description:
+    "iOS 27 新增了可铺满一整页主屏幕的特大小组件。了解如何添加它、哪些 Apple App 支持它，以及如何把它变成最多容纳 77 个 App 图块的启动器。",
+  keywords: [
+    "ios 27 特大小组件",
+    "iphone 特大小组件",
+    "ios 27 全屏小组件",
+    "特大小组件 怎么添加",
+    "iphone app 启动器 小组件",
+    "iphone 主屏幕 一页 整理",
+  ],
+  ogTitle: "把 iOS 27 特大小组件变成一页启动器",
+  ogDescription:
+    "添加全新的整页小组件，放入最多 77 个 App、文件夹和返回图块。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何把 iOS 27 特大小组件用作一整页的 App 启动器",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/zh/blog/extra-large-widget-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "把 iOS 27 特大小组件变成一页 App 启动器",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "更新到 iOS 27",
+        text: "特大尺寸的小组件只存在于 iOS 27，所以请先前往设置、通用、软件更新，更新你的 iPhone。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "在 WidgetLoft 中创建群组",
+        text: "打开 WidgetLoft（原 FolderMini），创建一个群组，并添加你想放在启动器页面上的 App。如果一页放不下，可以添加子文件夹。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "以特大尺寸添加小组件",
+        text: "长按主屏幕，轻点编辑，然后轻点添加小组件。选择 WidgetLoft，滑动浏览尺寸直到出现特大，然后添加。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择你的群组",
+        text: "长按新的小组件，轻点编辑小组件，然后选择你创建的群组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择图标大小",
+        text: "回到 WidgetLoft，为群组选择图标大小：小图标最多容纳 77 个图块，中图标 54 个，大图标 40 个，超大图标 24 个。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "特大小组件能在 iOS 26 或更早版本上使用吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不能。特大尺寸是 iOS 27 新增的，在旧版本的小组件库中不会出现。在 iOS 18 至 26 上，WidgetLoft 最大的小组件是大尺寸，最多 49 个图块。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "特大小组件能放多少个 App？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "使用 WidgetLoft，小图标最多 77 个图块，中图标 54 个，大图标 40 个，超大图标 24 个。子文件夹可以在一个图块后面放入更多 App。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "特大小组件可以放在锁定屏幕上吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不可以。特大是主屏幕专用的尺寸。WidgetLoft 的锁定屏幕小组件仍然是一行，最多 4 个 App，使用大图标时为 3 个。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何把 iOS 27 特大小组件用作一整页的 App 启动器
+
+**快速回答：** iOS 27 新增了可铺满一整页主屏幕的特大小组件。要添加它，请长按主屏幕，轻点编辑，然后轻点添加小组件，选择一个 App 并滑动到特大尺寸。借助 [WidgetLoft](/widgetloft)（原 FolderMini），这一页就能变成最多容纳 77 个 App 图块的启动器，还支持子文件夹和返回图块。
+
+以前，一整页只是一排排零散的图标。现在，它可以是一个小组件，用你亲手设计的整齐网格收纳你的 App。
+
+---
+
+## iOS 27 的特大小组件是什么？
+
+特大是一种新的小组件尺寸，占满一整页主屏幕，也就是 4×6 的网格区域。它只存在于 2026 年 9 月 14 日发布的 iOS 27 中。
+
+Apple 自家的 App 率先支持：日历、照片、音乐和天气都提供特大小组件，第三方 App 也可以支持。对启动器来说，这意味着可以放下大量 App。如果你想了解小组件的全部变化，请阅读 [iOS 27 小组件新功能](/blog/ios-27-widgets-whats-new)。
+
+## 分步教程：把特大小组件变成启动器
+
+1. **更新到 iOS 27。** 前往设置、通用、软件更新。旧版本中没有特大尺寸。
+2. **在 WidgetLoft 中创建群组。** 打开 [WidgetLoft](/widgetloft)，创建一个群组，并添加你想放在启动器页面上的 App。想放到下一层的内容，轻点 **新建文件夹**。
+3. **以特大尺寸添加小组件。** 长按主屏幕，轻点 **编辑**，然后轻点 **添加小组件**。选择 WidgetLoft，滑动浏览尺寸直到出现特大，然后添加。
+4. **选择你的群组。** 长按新的小组件，轻点 **编辑小组件**，然后选择你创建的群组。
+5. **选择图标大小。** 回到 WidgetLoft，为群组选择图标大小。小图标能放下最多的图块，超大图标最容易点中。
+
+轻点任意图块，对应的 App 就会直接打开。轻点文件夹图块，它会在小组件上原地打开，并带有一个返回图块，可以回到上一层。
+
+## 每种小组件尺寸能放多少个 App
+
+| 小组件尺寸 | 最多图块数（小图标） |
+| --- | --- |
+| 小 | 9 |
+| 中 | 21 |
+| 大 | 49 |
+| 特大（iOS 27） | 77 |
+
+图标越大，容量越小，但用起来越顺手。在特大小组件中，中图标可放 54 个图块，大图标 40 个，超大图标 24 个。在 iPad 上，横向的特大尺寸最多可放 72 个。[WidgetLoft](/widgetloft) 会用真实的 App 图标填满每个位置，你还可以放入网站、联系人、快捷指令图块或空白占位，来调整布局。
+
+## 整页上的子文件夹和返回图块
+
+你不必把 77 个图块全部用在单个 App 上。把游戏、旅行 App 或工作工具放进子文件夹吧。每个文件夹最多容纳 100 个 App 和 20 个子文件夹，嵌套层数没有限制。返回图块可以重新设置样式，并移动到任意位置。
+
+如果你希望小组件自动复位，请在设置、小组件中打开 **自动返回文件夹**。
+
+坦白说一句：WidgetLoft 免费版的资源库最多容纳 21 个 App。要填满一整页，WidgetLoft Pro 会取消这一限制。
+
+## 常见问题
+
+**特大小组件能在 iOS 26 或更早版本上使用吗？**
+不能。它是 iOS 27 新增的。在 iOS 18 至 26 上，WidgetLoft 最大的小组件是大尺寸，最多 49 个图块。
+
+**特大小组件能放多少个 App？**
+小图标最多 77 个图块，中图标 54 个，大图标 40 个，超大图标 24 个。子文件夹可以在一个图块后面放入更多 App。
+
+**特大小组件可以放在锁定屏幕上吗？**
+不可以。特大是主屏幕专用的尺寸。WidgetLoft 的锁定屏幕小组件仍然是一行，最多 4 个 App，使用大图标时为 3 个。
+
+---
+
+准备好打造你的一页启动器了吗？[在 App Store 下载 WidgetLoft](/widgetloft/download)，填满你的特大小组件。

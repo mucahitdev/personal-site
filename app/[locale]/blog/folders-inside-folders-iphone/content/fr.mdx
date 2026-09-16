@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Comment mettre des dossiers dans des dossiers sur iPhone (dossiers imbriqués)",
+  description:
+    "Les dossiers de l’écran d’accueil d’iOS ne peuvent pas contenir d’autres dossiers. Voici comment obtenir de vrais dossiers imbriqués sur iPhone avec un widget : touchez un dossier, il s’ouvre sur place avec un bouton retour, sur autant de niveaux que vous voulez.",
+  keywords: [
+    "dossier dans un dossier iphone",
+    "dossiers imbriqués iphone",
+    "sous-dossiers écran d’accueil iphone",
+    "mettre un dossier dans un dossier ios",
+    "créer un sous-dossier iphone",
+    "widget dossier iphone",
+  ],
+  ogTitle: "Des dossiers dans des dossiers sur iPhone, enfin",
+  ogDescription:
+    "iOS n’imbrique pas les dossiers. Un widget WidgetLoft, si : touchez un dossier, il s’ouvre sur place avec un bouton retour.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline: "Comment mettre des dossiers dans des dossiers sur iPhone (dossiers imbriqués)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/fr/blog/folders-inside-folders-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Créer des dossiers imbriqués sur iPhone avec un widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Créez un groupe et un dossier",
+        text: "Installez WidgetLoft (anciennement FolderMini), créez un groupe, ouvrez-le et touchez Nouveau dossier.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajoutez des apps et d’autres dossiers",
+        text: "Ajoutez des apps au dossier. Touchez à nouveau Nouveau dossier à l’intérieur pour descendre d’un niveau.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisissez l’apparence du dossier",
+        text: "Affichez le dossier sous forme de mini-grille 2×2 ou 3×3 de ses apps, ou donnez-lui sa propre icône à partir d’une photo ou d’un SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Placez le widget",
+        text: "Maintenez le doigt sur l’écran d’accueil, touchez le bouton plus, ajoutez le widget WidgetLoft et choisissez votre groupe.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Réglez le bouton retour et le retour automatique",
+        text: "Personnalisez le bouton retour dans son éditeur et faites-le glisser vers n’importe quel emplacement, puis réglez Réglages, Widget, Retour automatique au dossier.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Peut-on mettre un dossier dans un dossier sur iPhone ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pas avec les dossiers classiques de l’écran d’accueil : iOS ne permet pas de déposer un dossier dans un autre. Un widget de dossiers comme WidgetLoft le permet. Touchez un dossier et il s’ouvre dans le widget, avec un bouton retour pour remonter d’un niveau.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Combien d’apps et de sous-dossiers peut contenir un dossier WidgetLoft ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Chaque dossier contient jusqu’à 100 apps et 20 sous-dossiers, sans limite de profondeur. La version gratuite permet 6 groupes et 21 apps dans la bibliothèque ; WidgetLoft Pro supprime ces limites.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Les dossiers imbriqués fonctionnent-ils dans le widget de l’écran verrouillé ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non. Le widget de l’écran verrouillé affiche une seule rangée d’apps du niveau supérieur. Les dossiers imbriqués fonctionnent dans les widgets de l’écran d’accueil.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Comment mettre des dossiers dans des dossiers sur iPhone (dossiers imbriqués)
+
+**Réponse rapide :** Impossible de mettre un dossier dans un autre sur l’écran d’accueil de l’iPhone. iOS ne le permet tout simplement pas. En revanche, vous pouvez avoir de vrais dossiers imbriqués dans un widget avec [WidgetLoft](/widgetloft) (anciennement FolderMini) : touchez un dossier, il s’ouvre directement dans le widget, avec un bouton retour pour remonter, sur autant de niveaux que vous voulez.
+
+Vous avez glissé un dossier sur un autre et il est revenu à sa place ? Vous ne vous y prenez pas mal. Voici la solution qui marche.
+
+---
+
+## Pourquoi iOS n’imbrique pas les dossiers
+
+Les dossiers de l’écran d’accueil n’ont qu’un niveau : impossible de glisser un dossier dans un autre, et aucun réglage n’y change rien. Un dossier "Travail" ne peut donc pas contenir un dossier "Réunions" et un dossier "Documents", et vous finissez avec un dossier géant ou un écran d’accueil rempli de petits dossiers.
+
+Un widget peut faire ce qu’un dossier ne peut pas. Dans [WidgetLoft](/widgetloft), un groupe devient un widget de l’écran d’accueil, et un groupe peut contenir des dossiers, qui peuvent eux-mêmes contenir des dossiers. Toucher un dossier l’ouvre sur place, et un bouton retour vous fait remonter d’un niveau.
+
+## Étape par étape : créer des dossiers imbriqués sur iPhone
+
+1. **Créez un groupe et un dossier.** Installez [WidgetLoft](/widgetloft), créez un groupe, ouvrez-le et touchez **Nouveau dossier**.
+2. **Ajoutez des apps et d’autres dossiers.** Ajoutez des apps au dossier. Touchez à nouveau **Nouveau dossier** à l’intérieur pour descendre d’un niveau.
+3. **Choisissez l’apparence du dossier.** Affichez-le sous forme de mini-grille 2×2 ou 3×3 des apps qu’il contient, ou donnez-lui sa propre icône à partir d’une photo ou d’un SF Symbol.
+4. **Placez le widget.** Maintenez le doigt sur l’écran d’accueil, touchez **+**, ajoutez le widget WidgetLoft et choisissez votre groupe.
+5. **Réglez le bouton retour et le retour automatique.** Dans l’éditeur **Bouton retour**, choisissez un symbole (12 préréglages ou n’importe quel SF Symbol), la couleur du symbole, la couleur de fond, l’opacité du fond de 0 à 100 % et la taille, ou touchez **Réinitialiser les valeurs par défaut**. Faites glisser le bouton retour vers n’importe quel emplacement. Allez ensuite dans **Réglages → Widget → Retour automatique au dossier**.
+
+## Dossiers iOS ou dossiers WidgetLoft
+
+| | Dossiers de l’écran d’accueil iOS | Dossiers WidgetLoft |
+| --- | --- | --- |
+| Dossiers dans des dossiers | Impossible | Oui, profondeur illimitée |
+| Capacité | Apps uniquement, pas de sous-dossiers | Jusqu’à 100 apps et 20 sous-dossiers par dossier |
+| Emplacement | Sur l’écran d’accueil, sous forme d’icône | Dans un widget de l’écran d’accueil, s’ouvre sur place |
+| Apparence personnalisée | Un petit aperçu des apps qu’il contient | Mini-grille 2×2 ou 3×3, ou icône photo ou symbole |
+| Revenir en arrière | Toucher en dehors du dossier | Un bouton retour que vous pouvez styliser et déplacer |
+
+Avec [WidgetLoft](/widgetloft), un seul widget peut contenir toute votre journée, rangée en dossiers, et chaque tuile ouvre toujours son app directement.
+
+## Garder tout bien rangé
+
+- **Regroupez par routine, pas par type d’app.** Un dossier "Matin" avec les actualités, la météo et votre calendrier est plus rapide qu’un dossier "Utilitaires" où il faut chercher.
+- **Utilisez le retour automatique.** Avec **Retour automatique au dossier**, le widget revient au niveau supérieur après l’ouverture d’une app, après un moment d’inactivité (de 10 à 60 secondes, 30 par défaut), ou les deux. Fini les sous-dossiers oubliés.
+
+Pour un rangement plus complet, lisez [comment organiser l’écran d’accueil de l’iPhone](/blog/organize-iphone-home-screen-2026).
+
+## Questions fréquentes
+
+**Peut-on mettre un dossier dans un dossier sur iPhone ?**
+Pas avec les dossiers classiques de l’écran d’accueil. Un widget de dossiers comme WidgetLoft le permet : touchez un dossier, il s’ouvre dans le widget, avec un bouton retour pour remonter.
+
+**Combien d’apps et de sous-dossiers peut contenir un dossier ?**
+Jusqu’à 100 apps et 20 sous-dossiers par dossier, sans limite de profondeur. La version gratuite permet 6 groupes et 21 apps dans la bibliothèque ; WidgetLoft Pro supprime ces limites.
+
+**Les dossiers imbriqués fonctionnent-ils dans le widget de l’écran verrouillé ?**
+Non. Le widget de l’écran verrouillé affiche une seule rangée d’apps du niveau supérieur. Les dossiers imbriqués fonctionnent dans les widgets de l’écran d’accueil.
+
+---
+
+Prêt à imbriquer ? [Téléchargez WidgetLoft sur l’App Store](/widgetloft/download) et rangez des dossiers dans des dossiers dès aujourd’hui.

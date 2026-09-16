@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Jak pokazać kropki powiadomień na widżetach iPhone’a (iOS 27)",
+  description:
+    "Ikony aplikacji w widżetach nigdy nie pokazują plakietek powiadomień. Krok po kroku pokazujemy, jak dodać kropkę powiadomienia na kafelku widżetu dzięki nowemu wyzwalaczowi powiadomień w Skrótach w iOS 27 i WidgetLoft, razem z uczciwymi ograniczeniami.",
+  keywords: [
+    "plakietki powiadomień na widżetach iphone",
+    "ikony aplikacji w widżecie bez plakietek",
+    "kropka powiadomienia na widżecie",
+    "automatyzacja powiadomienie skróty ios 27",
+    "która aplikacja ma powiadomienia widżet",
+    "widżet launcher nieprzeczytane iphone",
+  ],
+  ogTitle: "Kropki powiadomień na widżetach iPhone’a (iOS 27)",
+  ogDescription:
+    "Użyj wyzwalacza powiadomień w Skrótach w iOS 27, aby dodać kropkę na kafelkach aplikacji w widżecie.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline: "Jak pokazać kropki powiadomień na widżetach iPhone’a (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pl/blog/notification-badges-on-widgets-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Pokazywanie kropek powiadomień na kafelkach aplikacji w widżecie iPhone’a",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Włącz Kropki powiadomień",
+        text: "W WidgetLoft (dawniej FolderMini) otwórz Ustawienia i przejdź do Kropki powiadomień (Beta). Konfiguracja jest dostępna w iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Utwórz automatyzację powiadomienia",
+        text: "W aplikacji Skróty przejdź do Automatyzacja, Aplikacje, Powiadomienie i wybierz aplikację, która ma dostać kropkę.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Niech działa po cichu",
+        text: "Ustaw wyzwalacz z włączoną opcją Automatyzacja i wyłączoną opcją Powiadamiaj, aby uruchamiał się bez pytania.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj czynność WidgetLoft",
+        text: "Dodaj czynność WidgetLoft Pokaż kropkę powiadomienia dla tej samej aplikacji. Powtórz dla każdej aplikacji, około minuty na każdą.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Opcjonalnie: usuwaj kropkę po otwarciu aplikacji w inny sposób",
+        text: "Dodaj dla tej aplikacji automatyzację Aplikacja zostaje otwarta z czynnością Usuń kropkę powiadomienia.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy widżet może pokazać liczbę nieprzeczytanych powiadomień aplikacji?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Widżet innej firmy nie może odczytać licznika nieprzeczytanych innej aplikacji. W iOS 27 WidgetLoft może dodać kropkę na kafelku aplikacji, gdy przyjdzie powiadomienie, ale to kropka, a nie liczba.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Dlaczego kropka nie znika po przeczytaniu powiadomienia?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Przeczytanie powiadomienia tylko na ekranie blokady lub na Apple Watch nie usuwa kropki. Otwórz aplikację z widżetu, dodaj automatyzację Aplikacja zostaje otwarta z Usuń kropkę powiadomienia albo użyj opcji Usuń wszystkie kropki w WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy kropki powiadomień działają w iOS 26 lub starszym?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Konfiguracja korzysta z wyzwalacza powiadomień w Skrótach, który pojawił się w iOS 27. Sam WidgetLoft działa w iOS 18 i nowszych, tylko bez kropek.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak pokazać kropki powiadomień na widżetach iPhone’a (iOS 27)
+
+**Szybka odpowiedź:** Widżety nie mogą odczytać licznika nieprzeczytanych innych aplikacji, dlatego ikony w widżecie-launcherze nigdy nie pokazują plakietek. W iOS 27 [WidgetLoft](/widgetloft) (dawniej FolderMini) obchodzi to automatyzacją w Skrótach: gdy aplikacja wyśle powiadomienie, automatyzacja dodaje kropkę na kafelku tej aplikacji, a kropka znika, gdy otworzysz aplikację z widżetu.
+
+Aplikacje trafiły do widżetu, żeby uporządkować ekran początkowy, a teraz nie widać, gdzie czeka coś nowego. Oto jak odzyskać ten sygnał.
+
+---
+
+## Dlaczego ikony aplikacji w widżetach nie pokazują plakietek
+
+Czerwoną plakietkę z liczbą na ikonie ekranu początkowego rysuje sam iOS. Widżet to osobny widok rysowany przez inną aplikację, a iOS nie pozwala widżetowi innej firmy odczytać, ile nieprzeczytanych powiadomień mają twoje pozostałe aplikacje. Dlatego każdy widżet-launcher pokazuje zwykłe ikony.
+
+iOS 27 zmienił jeden element układanki. Skróty oferują teraz automatyzacje uruchamiane, gdy aplikacja wyśle powiadomienie (więcej w artykule [co nowego w widżetach w iOS 27](/blog/ios-27-widgets-whats-new)). Licznik nadal jest prywatny, ale automatyzacja może zareagować na moment nadejścia powiadomienia, a Kropki powiadomień w WidgetLoft są zbudowane właśnie na tym wyzwalaczu.
+
+## Krok po kroku: kropki powiadomień na kafelkach widżetu
+
+1. **Włącz Kropki powiadomień.** Otwórz [WidgetLoft](/widgetloft) i przejdź do **Ustawienia → Kropki powiadomień** (Beta). Konfiguracja jest dostępna w iOS 27.
+2. **Utwórz automatyzację powiadomienia.** Otwórz aplikację Skróty, przejdź do **Automatyzacja → Aplikacje → Powiadomienie** i wybierz aplikację, która ma dostać kropkę.
+3. **Niech działa po cichu.** Ustaw wyzwalacz z włączoną opcją **Automatyzacja** i wyłączoną opcją **Powiadamiaj**, aby uruchamiał się bez pytania.
+4. **Dodaj czynność WidgetLoft.** Dodaj czynność WidgetLoft **Pokaż kropkę powiadomienia** i wybierz tę samą aplikację. Powtórz kroki od 2 do 4 dla każdej aplikacji, którą chcesz obserwować. Każda zajmuje około minuty.
+5. **Opcjonalnie: usuwaj kropkę, gdy otwierasz aplikację gdzie indziej.** Kropka znika, gdy otworzysz aplikację z widżetu. Jeśli często otwierasz ją inaczej, dodaj dla niej automatyzację **Aplikacja zostaje otwarta** z czynnością **Usuń kropkę powiadomienia**.
+
+## Kropka powiadomienia a plakietka z liczbą
+
+| Plakietka z liczbą na ikonie ekranu początkowego | Kropka powiadomienia na kafelku WidgetLoft |
+| --- | --- |
+| Pokazuje liczbę, np. 3 | Pokazuje kropkę, bez liczby |
+| Aktualizuje ją sama aplikacja | Znika po otwarciu aplikacji z widżetu lub dzięki automatyzacji Usuń kropkę powiadomienia |
+| Nic do konfigurowania | Jedna automatyzacja w Skrótach na aplikację, około minuty na każdą |
+| Działa w każdej aktualnej wersji iOS | Wymaga iOS 27 |
+| Pojawia się na ikonach aplikacji | Pojawia się na kafelkach aplikacji, nie na stronach, kafelkach Skrótów ani kontaktach |
+
+Kropka odpowiada na prawdziwe pytanie stojące za szybkim spojrzeniem: czy w tej aplikacji jest coś nowego? Kafelki [WidgetLoft](/widgetloft) nadal otwierają aplikację bezpośrednio jednym dotknięciem, a teraz pokazują też ten sygnał.
+
+## Czego kropki powiadomień nie potrafią
+
+To kropka, nie licznik: wiesz, że coś przyszło, ale nie ile. Konfiguracja wymaga iOS 27, a każda aplikacja potrzebuje własnej automatyzacji.
+
+Przeczytanie powiadomienia tylko na ekranie blokady lub na Apple Watch nie usuwa kropki. Otwórz aplikację z widżetu albo użyj przycisku **Usuń wszystkie kropki** w WidgetLoft. Strony internetowe, kafelki Skrótów i kontakty nie mogą mieć kropek, a cała funkcja nadal ma oznaczenie Beta.
+
+## Częste pytania
+
+**Czy widżet może pokazać liczbę nieprzeczytanych powiadomień aplikacji?**
+Nie. Widżet innej firmy nie może odczytać licznika nieprzeczytanych innej aplikacji. W iOS 27 WidgetLoft może dodać kropkę na kafelku aplikacji, gdy przyjdzie powiadomienie, ale to kropka, a nie liczba.
+
+**Dlaczego kropka nie znika po przeczytaniu powiadomienia?**
+Przeczytanie go tylko na ekranie blokady lub na Apple Watch nie usuwa kropki. Otwórz aplikację z widżetu, dodaj automatyzację Aplikacja zostaje otwarta z Usuń kropkę powiadomienia albo stuknij Usuń wszystkie kropki.
+
+**Czy kropki powiadomień działają w iOS 26 lub starszym?**
+Nie. Konfiguracja korzysta z wyzwalacza powiadomień w Skrótach, który pojawił się w iOS 27. Sam WidgetLoft działa w iOS 18 i nowszych, tylko bez kropek.
+
+---
+
+Chcesz widzieć nowości jednym spojrzeniem? [Pobierz WidgetLoft z App Store](/widgetloft/download) i dodaj kropkę do aplikacji, które się liczą.

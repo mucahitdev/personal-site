@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Cara Menampilkan Titik Notifikasi di Widget iPhone (iOS 27)",
+  description:
+    "Ikon aplikasi di dalam widget tidak pernah menampilkan lencana notifikasi. Berikut cara menaruh titik notifikasi di ubin widget iPhone dengan pemicu notifikasi baru di Pintasan iOS 27 dan WidgetLoft, langkah demi langkah, lengkap dengan batasannya.",
+  keywords: [
+    "lencana notifikasi di widget iphone",
+    "ikon aplikasi di widget tanpa lencana",
+    "titik notifikasi di widget",
+    "otomatisasi notifikasi pintasan ios 27",
+    "lihat aplikasi mana yang ada notifikasi widget",
+    "widget peluncur belum dibaca iphone",
+  ],
+  ogTitle: "Titik Notifikasi di Widget iPhone (iOS 27)",
+  ogDescription:
+    "Gunakan pemicu notifikasi di Pintasan iOS 27 untuk menaruh titik di ubin aplikasi pada widget Anda.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "id",
+    headline: "Cara Menampilkan Titik Notifikasi di Widget iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/id/blog/notification-badges-on-widgets-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "id",
+    name: "Menampilkan titik notifikasi di ubin aplikasi pada widget iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Nyalakan Titik Notifikasi",
+        text: "Di WidgetLoft (sebelumnya FolderMini), buka Pengaturan lalu Titik Notifikasi (Beta). Penyiapan tersedia di iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Buat otomatisasi notifikasi",
+        text: "Di app Pintasan, buka Otomatisasi, Aplikasi, Notifikasi, lalu pilih aplikasi yang ingin diberi titik.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Biarkan berjalan diam-diam",
+        text: "Atur pemicu dengan Otomatisasi aktif dan Beri Tahu nonaktif, agar berjalan tanpa bertanya.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tambahkan tindakan WidgetLoft",
+        text: "Tambahkan tindakan Tampilkan Titik Notifikasi dari WidgetLoft untuk aplikasi yang sama. Ulangi untuk setiap aplikasi, sekitar satu menit per aplikasi.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Opsional: hapus titik saat aplikasi dibuka dari tempat lain",
+        text: "Tambahkan otomatisasi Aplikasi dibuka untuk aplikasi itu dengan tindakan Hapus Titik Notifikasi.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "id",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Bisakah widget menampilkan jumlah notifikasi yang belum dibaca dari sebuah aplikasi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tidak. Widget pihak ketiga tidak bisa membaca jumlah belum dibaca milik aplikasi lain. Di iOS 27, WidgetLoft bisa menaruh titik di ubin aplikasi saat notifikasi masuk, tetapi itu titik, bukan angka.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Mengapa titiknya tidak hilang setelah saya membaca notifikasi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Membaca notifikasi hanya di Layar Terkunci atau Apple Watch tidak menghapus titik. Buka aplikasi dari widget, tambahkan otomatisasi Aplikasi dibuka dengan Hapus Titik Notifikasi, atau gunakan Hapus semua titik di WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apakah titik notifikasi berfungsi di iOS 26 atau versi lebih lama?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tidak. Penyiapannya bergantung pada pemicu notifikasi Pintasan yang hadir di iOS 27. WidgetLoft sendiri berjalan di iOS 18 dan yang lebih baru, hanya saja tanpa titik.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cara Menampilkan Titik Notifikasi di Widget iPhone (iOS 27)
+
+**Jawaban singkat:** Widget tidak bisa membaca jumlah belum dibaca milik aplikasi lain, jadi ikon aplikasi di dalam widget peluncur tidak pernah menampilkan lencana. Di iOS 27, [WidgetLoft](/widgetloft) (sebelumnya FolderMini) mengakalinya dengan otomatisasi Pintasan: saat sebuah aplikasi mengirim notifikasi, otomatisasi menaruh titik di ubin aplikasi itu, dan titiknya hilang saat Anda membuka aplikasi dari widget.
+
+Anda memindahkan aplikasi ke widget agar Layar Utama rapi, dan kini tidak tahu aplikasi mana yang punya kabar baru. Berikut cara mendapatkan kembali tanda itu.
+
+---
+
+## Mengapa ikon aplikasi di widget tidak menampilkan lencana
+
+Lencana merah berangka pada ikon Layar Utama digambar oleh iOS sendiri. Widget adalah tampilan terpisah yang digambar oleh aplikasi lain, dan iOS tidak mengizinkan widget pihak ketiga membaca berapa banyak notifikasi belum dibaca di aplikasi Anda yang lain. Karena itu setiap widget peluncur hanya menampilkan ikon polos.
+
+iOS 27 mengubah satu bagiannya. Pintasan kini menawarkan otomatisasi yang berjalan saat sebuah aplikasi mengirim notifikasi (lihat [yang baru untuk widget di iOS 27](/blog/ios-27-widgets-whats-new)). Jumlahnya tetap privat, tetapi otomatisasi bisa bereaksi pada saat notifikasi masuk, dan Titik Notifikasi di WidgetLoft dibangun tepat di atas pemicu itu.
+
+## Langkah demi langkah: menambahkan titik notifikasi ke ubin widget
+
+1. **Nyalakan Titik Notifikasi.** Buka [WidgetLoft](/widgetloft), lalu masuk ke **Pengaturan → Titik Notifikasi** (Beta). Penyiapan tersedia di iOS 27.
+2. **Buat otomatisasi notifikasi.** Buka app Pintasan, masuk ke **Otomatisasi → Aplikasi → Notifikasi**, lalu pilih aplikasi yang ingin diberi titik.
+3. **Biarkan berjalan diam-diam.** Atur pemicu dengan **Otomatisasi** aktif dan **Beri Tahu** nonaktif, agar berjalan tanpa bertanya setiap kali.
+4. **Tambahkan tindakan WidgetLoft.** Tambahkan tindakan **Tampilkan Titik Notifikasi** dari WidgetLoft dan pilih aplikasi yang sama. Ulangi langkah 2 sampai 4 untuk setiap aplikasi yang ingin dipantau. Masing-masing butuh sekitar satu menit.
+5. **Opsional: hapus titik saat membuka aplikasi dari tempat lain.** Titik hilang saat Anda membuka aplikasi dari widget. Jika Anda sering membukanya dengan cara lain, tambahkan otomatisasi **Aplikasi dibuka** untuk aplikasi itu dengan tindakan **Hapus Titik Notifikasi**.
+
+## Titik notifikasi vs lencana angka
+
+| Lencana angka pada ikon Layar Utama | Titik notifikasi pada ubin WidgetLoft |
+| --- | --- |
+| Menampilkan angka, misalnya 3 | Menampilkan titik, tanpa angka |
+| Diperbarui oleh aplikasinya sendiri | Hilang saat aplikasi dibuka dari widget atau lewat otomatisasi Hapus Titik Notifikasi |
+| Tidak perlu diatur | Satu otomatisasi Pintasan per aplikasi, sekitar satu menit masing-masing |
+| Berfungsi di versi iOS terbaru mana pun | Memerlukan iOS 27 |
+| Muncul di ikon aplikasi | Muncul di ubin aplikasi, tidak di situs web, ubin Pintasan, atau kontak |
+
+Titik menjawab pertanyaan sebenarnya di balik sekilas pandang: apakah aplikasi ini punya sesuatu yang baru? Ubin [WidgetLoft](/widgetloft) tetap membuka aplikasi langsung dengan satu ketukan, dan kini juga menampilkan tanda itu.
+
+## Yang tidak bisa dilakukan titik notifikasi
+
+Ini titik, bukan hitungan: Anda tahu ada yang masuk, tetapi tidak tahu berapa. Penyiapan memerlukan iOS 27, dan setiap aplikasi butuh otomatisasinya sendiri.
+
+Membaca notifikasi hanya di Layar Terkunci atau Apple Watch tidak menghapus titik. Buka aplikasi dari widget atau gunakan tombol **Hapus semua titik** di WidgetLoft. Situs web, ubin Pintasan, dan kontak tidak bisa punya titik, dan seluruh fitur ini masih bertanda Beta.
+
+## Pertanyaan umum
+
+**Bisakah widget menampilkan jumlah notifikasi yang belum dibaca dari sebuah aplikasi?**
+Tidak. Widget pihak ketiga tidak bisa membaca jumlah belum dibaca milik aplikasi lain. Di iOS 27, WidgetLoft bisa menaruh titik di ubin aplikasi saat notifikasi masuk, tetapi itu titik, bukan angka.
+
+**Mengapa titiknya tidak hilang setelah saya membaca notifikasi?**
+Membacanya hanya di Layar Terkunci atau Apple Watch tidak menghapus titik. Buka aplikasi dari widget, tambahkan otomatisasi Aplikasi dibuka dengan Hapus Titik Notifikasi, atau ketuk Hapus semua titik.
+
+**Apakah titik notifikasi berfungsi di iOS 26 atau versi lebih lama?**
+Tidak. Penyiapannya bergantung pada pemicu notifikasi Pintasan yang hadir di iOS 27. WidgetLoft sendiri berjalan di iOS 18 dan yang lebih baru, hanya saja tanpa titik.
+
+---
+
+Ingin melihat kabar baru dalam sekejap? [Unduh WidgetLoft di App Store](/widgetloft/download) dan beri titik pada aplikasi yang penting.

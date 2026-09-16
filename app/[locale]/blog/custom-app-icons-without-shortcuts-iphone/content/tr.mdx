@@ -1,0 +1,157 @@
+export const meta = {
+  title: "iPhone'da Kısayollar Uygulaması Olmadan Uygulama Simgeleri Nasıl Değiştirilir?",
+  description:
+    "iPhone'da uygulama simgesi değiştirmenin bilinen yolu, özel görselli bir Kısayollar \"Uygulamayı Aç\" kısayoludur. Bunun nasıl çalıştığını ve fotoğraf, sembol, emoji ya da harf simgelerini Açık ve Koyu sürümleriyle tasarlayıp uygulamayı yine doğrudan açan widget alternatifini anlatıyoruz.",
+  keywords: [
+    "kısayollar olmadan uygulama simgesi değiştirme",
+    "iphone uygulama simgesi değiştirme",
+    "estetik ana ekran simgeleri",
+    "iphone özel uygulama ikonu",
+    "iphone ikon değiştirme widget",
+    "koyu mod özel uygulama simgesi",
+  ],
+  ogTitle: "iPhone'da Kısayollar Olmadan Özel Uygulama Simgeleri",
+  ogDescription:
+    "Uygulamalarınız için fotoğraf, SF Symbol, emoji ya da harf simgeleri tasarlayın, Açık ve Koyu sürümleri ayrı olsun, dokununca uygulama doğrudan açılsın.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline: "iPhone'da Kısayollar Uygulaması Olmadan Uygulama Simgeleri Nasıl Değiştirilir?",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/tr/blog/custom-app-icons-without-shortcuts-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone'da Kısayollar uygulaması olmadan uygulama simgelerini özelleştirme",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Uygulamayı ekleyin",
+        text: "WidgetLoft'u (eski adıyla FolderMini) açın, uygulama içinden App Store'da arayın ya da bir App Store sayfasında Paylaş, WidgetLoft yolunu kullanın ve uygulamayı bir gruba ekleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Simgeyi Değiştir'i açın",
+        text: "Kütüphane sekmesine gidin, uygulamanın kutucuğuna dokunun, ardından Simgeyi Değiştir'e dokunun.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bir kaynak seçin",
+        text: "Fotoğraf seçip kırpın ya da Sembol (5.700'den fazla SF Symbol), Emoji veya Mono (ilk harf, her kelime ya da en fazla 3 karakterlik özel metin) seçin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Açık ve Koyu için renkleri ayarlayın",
+        text: "Bir Simge Rengi ve Arka Plan seçin ya da Arka Plan Yok deyin; Açık ve Koyu sürümleri ayrı ayrı tasarlayın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Widget'ı yerleştirin",
+        text: "WidgetLoft widget'ını Ana Ekran'a ekleyin. Bir kutucuğa dokunduğunuzda uygulama doğrudan açılır.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "WidgetLoft'taki özel simge Kısayollar uygulamasını açar mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Ana Ekran'daki bir WidgetLoft uygulama kutucuğu, özel simgesi olsun ya da olmasın, uygulamayı paket kimliğiyle (bundle ID) doğrudan açar. Kısayollar uygulaması devreye girmez.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bu, uygulamanın iPhone'daki gerçek simgesini değiştirir mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Özel tasarım widget içindeki kutucuk içindir. Uygulamanın kendi simgesi olduğu gibi kalır; sayfanızda yalnızca widget görünsün diye onu Uygulama Arşivi'nde tutabilirsiniz.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Özel simge Koyu Mod'da farklı görünebilir mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. Simge stüdyosunda Açık ve Koyu için ayrı tasarımlar var. Koyu tasarım yapmazsanız, popüler uygulamalar zaten hazır koyu simgelerle gelir.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone'da Kısayollar Uygulaması Olmadan Uygulama Simgeleri Nasıl Değiştirilir?
+
+**Kısa cevap:** Uygulamalarınızı, her kutucuğu tasarlamanıza izin veren bir widget'a yerleştirerek Kısayollar uygulaması olmadan özel simgeler verebilirsiniz. [WidgetLoft](/widgetloft) (eski adıyla FolderMini) yerleşik bir simge stüdyosuna sahiptir: bir fotoğraf, SF Symbol, emoji ya da harf seçin, renkleri ayarlayın ve Açık ile Koyu için ayrı sürümler yapın. Kutucuk yine uygulamayı doğrudan açar.
+
+Estetik bir Ana Ekran genellikle birbirine uyan simgelerle başlar. İşte çoğu rehberin gösterdiği yöntem, size aslında ne verdiği ve aynı görünümü widget ile elde etmenin yolu.
+
+---
+
+## Kısayollar yöntemi nasıl çalışır?
+
+En çok paylaşılan rehber şöyledir: Kısayollar uygulamasını açın, "Uygulamayı Aç" eylemiyle yeni bir kısayol oluşturun, uygulamayı seçin, sonra bu kısayolu bir ad ve fotoğraflarınızdan bir görselle Ana Ekran'a ekleyin. Yeni simge özel bir uygulama simgesi gibi görünür.
+
+İşe yarar, ama elinize ne geçtiğini bilmekte fayda var:
+
+- **Bu bir kısayol, uygulamanın kendisi değil.** Dokunduğunuzda Kısayollar uygulaması üzerinden çalışır, o da uygulamanızı açar.
+- **Artık iki simgeniz var.** Asıl uygulama hâlâ yüklü, yani normal simgesi de bir yerlerde duruyor. Çoğu kişi sayfayı sade tutmak için onu Uygulama Arşivi'ne taşır.
+- **Her seferinde tek simge.** Her uygulama için ayrı bir kısayol oluşturup adlandırmanız gerekir ve açık ile koyu görünüm için tek bir görsel kullanılır.
+
+Bir iki simge için bu sorun değil. Baştan sona temalı bir sayfa için widget çoğu zaman daha kolaydır.
+
+## Adım adım: WidgetLoft ile özel uygulama simgeleri
+
+1. **Uygulamayı ekleyin.** [WidgetLoft](/widgetloft)'u açın, uygulama içinden App Store'da arayın (ya da herhangi bir App Store sayfasında Paylaş → WidgetLoft'u kullanın) ve uygulamayı bir gruba ekleyin.
+2. **Simgeyi Değiştir'i açın.** **Kütüphane** sekmesine gidin, uygulamanın kutucuğuna dokunun, ardından **Simgeyi Değiştir**'e dokunun.
+3. **Bir kaynak seçin.** **Fotoğraf** (kırparken sürükleyerek taşıyın, iki parmakla yakınlaştırın), **Sembol** (27 kategoride 5.700'den fazla SF Symbol, İngilizce arama), **Emoji** ya da **Mono** (ilk harf, her kelime veya en fazla 3 karakterlik özel metin) seçin.
+4. **Açık ve Koyu için renkleri ayarlayın.** Bir **Simge Rengi** ve **Arka Plan** seçin ya da widget'ın üzerinde doğrudan duran bir simge için **Arka Plan Yok**'u seçin. Simge iki görünüme de uysun diye Açık ve Koyu sürümleri ayrı ayrı tasarlayın.
+5. **Widget'ı yerleştirin.** Ana Ekran'da boş bir yere basılı tutun, bir widget ekleyin, WidgetLoft'u seçin ve bir boyut belirleyin. Bir kutucuğa dokunun, uygulama doğrudan açılsın.
+
+## Kısayollar yöntemi ve WidgetLoft simge stüdyosu
+
+| | Kısayollar yöntemi | WidgetLoft simge stüdyosu |
+| --- | --- | --- |
+| Uygulama nasıl açılır | Kısayollar uygulaması üzerinden çalışır | Kutucuk uygulamayı doğrudan açar |
+| Koyu sürüm | İki görünüm için tek görsel | Ayrı Açık ve Koyu tasarımlar |
+| Simge başına adım | Yeni kısayol, uygulama seçimi, Ana Ekran'a ekleme, görsel ve ad | Kutucuğa dokunma, Simgeyi Değiştir, kaynak ve renk seçimi |
+| Simge kaynakları | Fotoğraflarınızdan bir görsel | Fotoğraf, 5.700'den fazla SF Symbol, Emoji, Mono harfler |
+| Birden çok uygulama | Kısayol başına bir Ana Ekran simgesi | Tek widget'ta birçok kutucuk |
+
+Fark, emeğin nerede harcandığında. [WidgetLoft](/widgetloft) ile tasarım ve açma işi aynı kutucukta buluşur: uygulama başına fazladan kısayol yok, dokunduğunuzda araya giren Kısayollar uygulaması yok. Özel tasarım vermediğiniz uygulamalar gerçek simgeleriyle görünmeye devam eder, yani yalnızca istediklerinizi özelleştirebilirsiniz.
+
+## Sık sorulan sorular
+
+**WidgetLoft'taki özel simge Kısayollar uygulamasını açar mı?**
+Hayır. Ana Ekran'daki bir WidgetLoft uygulama kutucuğu, özel simgesi olsun ya da olmasın, uygulamayı paket kimliğiyle (bundle ID) doğrudan açar.
+
+**Bu, uygulamanın iPhone'daki gerçek simgesini değiştirir mi?**
+Hayır. Tasarım widget içindeki kutucuk içindir. Uygulamanın kendi simgesi olduğu gibi kalır; sayfanızda yalnızca widget görünsün diye onu Uygulama Arşivi'nde tutabilirsiniz.
+
+**Özel simge Koyu Mod'da farklı görünebilir mi?**
+Evet. Simge stüdyosunda Açık ve Koyu için ayrı tasarımlar var. Koyu tasarım yapmazsanız, popüler uygulamalar zaten hazır koyu simgelerle gelir (bkz. [iPhone'da koyu mod uygulama simgeleri](/blog/dark-mode-app-icons-iphone)).
+
+---
+
+Setinizi tasarlamaya hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve her uygulamaya istediğiniz simgeyi verin.

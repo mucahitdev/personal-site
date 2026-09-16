@@ -1,0 +1,158 @@
+export const meta = {
+  title: "Comment avoir des icônes sombres pour toutes les apps sur iPhone",
+  description:
+    "Vous avez activé les icônes sombres dans iOS, mais certaines apps restent toutes blanches ? Voici pourquoi, et comment obtenir une version sombre de chaque icône dans un widget de l'écran d'accueil : icônes sombres prêtes, icônes d'Apple et icônes créées sur l'iPhone.",
+  keywords: [
+    "icônes sombres iphone",
+    "icônes mode sombre toutes les apps",
+    "icônes ne deviennent pas sombres ios",
+    "icônes sombres apps tierces ios",
+    "écran d'accueil sombre iphone",
+    "widget icônes sombres iphone",
+  ],
+  ogTitle: "Des icônes sombres pour toutes les apps sur iPhone",
+  ogDescription:
+    "Pourquoi certaines icônes restent claires en mode sombre sur iOS, et comment avoir une version sombre de chaque app dans un widget.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline: "Comment avoir des icônes sombres pour toutes les apps sur iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/fr/blog/dark-mode-app-icons-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Obtenir des icônes sombres pour toutes les apps de l'écran d'accueil",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Créer un groupe",
+        text: "Installez WidgetLoft (anciennement FolderMini) depuis l'App Store et créez un groupe dans l'onglet Groupes.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajouter vos apps",
+        text: "Cherchez dans l'App Store depuis WidgetLoft, ou utilisez Partager puis WidgetLoft sur n'importe quelle page de l'App Store. Chaque app reçoit son icône sombre au moment de l'ajout.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Placer le widget",
+        text: "Maintenez le doigt sur l'écran d'accueil, touchez le bouton plus, cherchez WidgetLoft et ajoutez le widget de votre groupe.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisir l'apparence des icônes",
+        text: "Dans WidgetLoft, ouvrez Réglages, puis Widget, puis Apparence d'icône sombre, et choisissez Automatique, Clair ou Sombre.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajuster n'importe quelle case",
+        text: "Si vous voulez, ouvrez une case dans la Bibliothèque, touchez Changer d'icône et définissez une photo distincte pour Clair et pour Sombre.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Pourquoi certaines icônes restent blanches en mode sombre sur iPhone ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Les icônes sombres ne rendent bien que si le développeur de l'app fournit une version sombre, et beaucoup d'apps ne le font pas. Un widget WidgetLoft affiche des icônes sombres pour les apps populaires, les vraies icônes sombres d'Apple pour ses apps, et crée une icône sombre sur votre iPhone pour les autres apps à mesure que vous les ajoutez.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft envoie-t-il mes icônes en ligne pour créer les versions sombres ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non. L'icône sombre d'une app que le catalogue ne couvre pas est créée directement sur votre téléphone à partir de l'icône de l'app, et rien n'est envoyé.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Pourquoi mon widget Liquid Glass ne passe-t-il pas tout seul aux icônes sombres ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Le widget Liquid Glass ne peut pas suivre seul l'apparence du système. Dans WidgetLoft, allez dans Réglages, puis Widget, puis Apparence d'icône sombre, et choisissez Clair ou Sombre pour lui.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Comment avoir des icônes sombres pour toutes les apps sur iPhone
+
+**Réponse rapide :** iOS n'affiche une vraie icône sombre que si le développeur de l'app en fournit une, c'est pourquoi beaucoup d'apps restent claires. Pour avoir des icônes sombres partout, placez vos apps dans un widget [WidgetLoft](/widgetloft) (anciennement FolderMini) : les apps populaires ont des icônes sombres prêtes, les apps d'Apple utilisent les vraies icônes sombres d'Apple, et les autres reçoivent une icône sombre créée directement sur votre iPhone quand vous les ajoutez.
+
+Vous avez activé les icônes sombres et l'écran d'accueil est superbe, jusqu'à ce que cette app bancaire blanche ou cette icône de shopping éclatante brille dans un coin. Voici pourquoi, et comment y remédier.
+
+---
+
+## Pourquoi certaines icônes restent claires en mode sombre
+
+Une icône sombre n'est pas quelque chose qu'iOS peint tout seul. Le développeur dessine une variante sombre et l'intègre à l'app. Les apps d'Apple en ont une, beaucoup de grandes apps aussi, mais de nombreuses apps n'ont jamais eu cette mise à jour. Leur icône garde son fond blanc ou clair, quelle que soit l'apparence choisie.
+
+Vous ne pouvez pas modifier cette icône elle-même. En revanche, vous pouvez ouvrir ces apps depuis un widget dont les cases affichent une version sombre. [WidgetLoft](/widgetloft) transforme un groupe d'apps en widget d'écran d'accueil, et toucher une case ouvre l'app directement, sans passer par Raccourcis.
+
+## Étape par étape : des icônes sombres pour toutes les apps
+
+1. **Créez un groupe.** Installez [WidgetLoft](/widgetloft) depuis l'App Store (essai gratuit) et créez un groupe dans l'onglet **Groupes**.
+2. **Ajoutez vos apps.** Cherchez dans l'App Store depuis l'app, ou utilisez **Partager → WidgetLoft** sur n'importe quelle page de l'App Store. Nouveau dans la 2.1.0 : les apps que le catalogue ne couvre pas reçoivent, au moment de l'ajout, une icône sombre créée sur votre téléphone à partir de leur propre icône. Rien n'est envoyé.
+3. **Placez le widget.** Maintenez le doigt sur l'écran d'accueil, touchez **+**, cherchez WidgetLoft et ajoutez le widget de votre groupe.
+4. **Choisissez l'apparence des icônes.** Allez dans **Réglages → Widget → Apparence d'icône sombre**. Pour le widget classique, choisissez **Automatique** (suit l'appareil), **Clair** ou **Sombre**.
+5. **Ajustez n'importe quelle case.** Envie d'un style perso ? Dans la **Bibliothèque**, touchez une case, puis **Changer d'icône**, et définissez une photo distincte pour Clair et pour Sombre.
+
+## Icônes sombres d'iOS vs icônes sombres du widget WidgetLoft
+
+| Icônes sombres d'iOS | Icônes sombres du widget WidgetLoft |
+| --- | --- |
+| Aussi sombres que le développeur les a faites, pas plus | Icônes sombres prêtes pour les apps populaires |
+| Les apps d'Apple utilisent les icônes sombres d'Apple | Les apps d'Apple utilisent aussi les vraies icônes sombres d'Apple |
+| Les apps sans variante sombre restent claires | Les autres apps reçoivent une icône sombre créée sur votre iPhone à l'ajout |
+| L'icône est celle fournie par l'app | Une photo distincte pour Clair et Sombre sur chaque case |
+| Suit l'apparence du système | Automatique, Clair ou Sombre, à choisir dans Réglages → Widget |
+
+Résultat : un écran d'accueil où chaque case s'accorde, y compris les apps qui n'ont jamais sorti d'icône sombre. Si vous utilisez déjà WidgetLoft, un écran unique liste les apps qui viennent de recevoir leur icône sombre. Besoin d'autres idées de mise en page ? Découvrez nos [idées d'écran d'accueil pour iOS 27](/blog/ios-27-home-screen-ideas).
+
+## Ce qui ne change pas
+
+Les icônes sombres doivent rester nettes, donc certaines choses restent intactes :
+
+- **Les icônes déjà sombres**, ou trop complexes pour être recolorées proprement, restent telles quelles.
+- **Les sites web** gardent l'icône du site.
+- **Le widget Liquid Glass** ne peut pas suivre le système automatiquement : choisissez **Clair** ou **Sombre** pour lui dans Apparence d'icône sombre.
+
+## Questions fréquentes
+
+**Pourquoi certaines icônes restent blanches en mode sombre sur iPhone ?**
+Les icônes sombres ne rendent bien que si le développeur fournit une version sombre, et beaucoup d'apps ne le font pas. Un widget WidgetLoft comble ce manque avec des icônes sombres prêtes, celles d'Apple et celles créées sur l'appareil.
+
+**WidgetLoft envoie-t-il mes icônes en ligne pour créer les versions sombres ?**
+Non. Pour les apps que le catalogue ne couvre pas, l'icône sombre est créée directement sur votre téléphone à partir de l'icône de l'app. Rien n'est envoyé.
+
+**Pourquoi mon widget Liquid Glass ne passe-t-il pas tout seul aux icônes sombres ?**
+Le widget Liquid Glass ne peut pas suivre seul l'apparence du système. Ouvrez Réglages → Widget → Apparence d'icône sombre et choisissez Clair ou Sombre pour lui.
+
+---
+
+Prêt pour un écran d'accueil entièrement sombre ? [Téléchargez WidgetLoft sur l'App Store](/widgetloft/download) et donnez une icône sombre à chaque app.

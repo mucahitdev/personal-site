@@ -1,0 +1,150 @@
+export const meta = {
+  title: "iPhone के Dynamic Island में अपने पसंदीदा ऐप्स कैसे रखें",
+  description:
+    "iOS आपको Dynamic Island में ऐप शॉर्टकट पिन नहीं करने देता, लेकिन एक Live Activity उन्हें दिखा सकती है। जानिए Dynamic Island में 5 तक और Lock Screen पर 10 तक ऐप्स कैसे रखें।",
+  keywords: [
+    "dynamic island में ऐप्स",
+    "dynamic island ऐप शॉर्टकट",
+    "dynamic island app launcher iphone",
+    "dynamic island में ऐप कैसे रखें",
+    "lock screen app launcher live activity",
+    "dynamic island quick launch",
+  ],
+  ogTitle: "अपने पसंदीदा ऐप्स Dynamic Island में रखें",
+  ogDescription:
+    "iPhone के लिए Live Activity लॉन्चर: Dynamic Island में 5 तक और Lock Screen पर 10 तक ऐप्स।",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "hi",
+    headline: "iPhone के Dynamic Island में अपने पसंदीदा ऐप्स कैसे रखें",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/hi/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "hi",
+    name: "iPhone के Dynamic Island में अपने पसंदीदा ऐप्स रखें",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "एक ग्रुप बनाएं",
+        text: "WidgetLoft (पहले FolderMini) खोलें, एक ग्रुप बनाएं और सबसे ज़्यादा इस्तेमाल होने वाले ऐप्स जोड़ें।",
+      },
+      {
+        "@type": "HowToStep",
+        name: "क्विक लॉन्च बार चालू करें",
+        text: "WidgetLoft में Settings, फिर Dynamic Island और Live Activity में जाएं और क्विक लॉन्च बार चालू करें।",
+      },
+      {
+        "@type": "HowToStep",
+        name: "फ़ोल्डर चुनें",
+        text: "Folder में वह ग्रुप चुनें जिसे आप Dynamic Island और Lock Screen पर देखना चाहते हैं।",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Live Activities की अनुमति दें",
+        text: "iOS की Settings ऐप में पक्का करें कि WidgetLoft के लिए Live Activities की अनुमति है।",
+      },
+      {
+        "@type": "HowToStep",
+        name: "आइलैंड को देर तक दबाएं और किसी ऐप पर टैप करें",
+        text: "Dynamic Island को देर तक दबाकर 5 तक ऐप्स वाली पंक्ति खोलें, फिर किसी ऐप पर टैप करके उसे खोलें।",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "hi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "मेरे ऐप्स Dynamic Island से गायब क्यों हो गए?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS कुछ घंटों के बाद (सक्रिय रहने पर लगभग 8 घंटे) Live Activities को बंद कर देता है। WidgetLoft हर बार ऐप खोलने पर क्विक लॉन्च बार को फिर से शुरू कर देता है, इसलिए ऐप को एक बार खोलते ही यह वापस आ जाता है।",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "क्या मैं Dynamic Island में 5 से ज़्यादा ऐप्स रख सकता हूं?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "नहीं। खुला हुआ Dynamic Island एक पंक्ति में 5 तक ऐप्स दिखाता है। Lock Screen बैनर उसी ग्रुप के 10 तक ऐप्स दो पंक्तियों में दिखाता है।",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "क्या क्विक लॉन्च बार पूरी तरह तैयार फ़ीचर है?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "WidgetLoft में इसे Beta के रूप में चिह्नित किया गया है। यह iOS की Live Activities पर चलता है, इसलिए WidgetLoft के लिए Live Activities की अनुमति ज़रूरी है और यह उन समय-सीमाओं का पालन करता है जो iOS तय करता है।",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone के Dynamic Island में अपने पसंदीदा ऐप्स कैसे रखें
+
+**झटपट जवाब:** iOS में Dynamic Island में ऐप शॉर्टकट पिन करने की कोई सेटिंग नहीं है। वहां सिर्फ़ Live Activities दिखती हैं। [WidgetLoft](/widgetloft) (पहले FolderMini) ठीक इसी का इस्तेमाल करता है: इसका क्विक लॉन्च बार एक Live Activity है जो आपके किसी एक ग्रुप को दिखाती है, जिससे Dynamic Island में 5 तक और Lock Screen पर 10 तक ऐप्स रहते हैं।
+
+Dynamic Island हमेशा नज़र के सामने रहता है, इसलिए यह उन ऐप्स के लिए बढ़िया जगह है जिन्हें आप दिन भर खोलते हैं। यहां बताया गया है कि लगभग एक मिनट में उन्हें वहां कैसे रखें।
+
+---
+
+## Dynamic Island ऐप शॉर्टकट क्यों नहीं लेता
+
+Apple ने Dynamic Island को Live Activities के लिए बनाया है: टाइमर, खाने की डिलीवरी, लाइव मैच स्कोर। आप इसमें किसी ऐप का आइकन खींचकर नहीं डाल सकते, और ऐसी कोई सेटिंग नहीं है जो आइकन को वहां पिन कर दे। Lock Screen पर Live Activity बैनर के साथ भी यही बात है।
+
+इसलिए तरकीब है एक ऐसी Live Activity, जिसके अंदर आपके अपने ऐप्स की एक पंक्ति हो। WidgetLoft का **क्विक लॉन्च बार** ठीक यही करता है। यह ऐप के एक ग्रुप को उन्हीं आइकनों के साथ दिखाता है और उसे आइलैंड और Lock Screen पर बनाए रखता है।
+
+## स्टेप-बाय-स्टेप: Dynamic Island में ऐप्स रखें
+
+1. **एक ग्रुप बनाएं।** [WidgetLoft](/widgetloft) खोलें, Groups टैब में एक ग्रुप बनाएं और वे ऐप्स जोड़ें जिन्हें आप सबसे ज़्यादा खोलते हैं। आइलैंड 5 तक ऐप्स दिखाता है, इसलिए 5 ऐप्स वाला ग्रुप पूरा समा जाता है।
+2. **क्विक लॉन्च बार चालू करें।** Settings → **Dynamic Island और Live Activity** में जाएं और **क्विक लॉन्च बार** चालू करें।
+3. **फ़ोल्डर चुनें।** **Folder** में वह ग्रुप चुनें जो आपने अभी बनाया है।
+4. **Live Activities की अनुमति दें।** अगर कुछ नहीं दिखता, तो iOS की Settings ऐप खोलें, WidgetLoft ढूंढें और देखें कि Live Activities की अनुमति है।
+5. **आइलैंड को देर तक दबाएं और किसी ऐप पर टैप करें।** छोटा आइलैंड एक ग्रिड आइकन और ऐप्स की संख्या दिखाता है। पंक्ति खोलने के लिए उसे देर तक दबाएं, फिर किसी भी आइकन पर टैप करें।
+
+## Dynamic Island बनाम Lock Screen बैनर
+
+| | Dynamic Island | Lock Screen बैनर |
+| --- | --- | --- |
+| दिखने वाले ऐप्स | 5 तक | 10 तक |
+| पंक्तियां | एक पंक्ति | 5 तक एक पंक्ति, 6 से 10 पर दो पंक्तियां |
+| टैप करने पर | एक टैप में ऐप सीधे खुलता है | पहले Face ID से अनलॉक करने को कहता है, फिर ऐप खोलता है |
+| वेबसाइट टाइलें | आपके चुने ब्राउज़र में खुलती हैं | आपके चुने ब्राउज़र में खुलती हैं |
+| लुक | छोटा रूप: ग्रिड आइकन और ऐप्स की संख्या | ग्रुप के रंग में रंगा हुआ, या Transparent ग्रुप के लिए सिस्टम Liquid Glass |
+
+Dynamic Island से एक टैप में ऐप खोलना [WidgetLoft](/widgetloft) 2.1.0 में नया है: ऐप तुरंत खुलता है, पहले WidgetLoft से होकर नहीं जाता। Lock Screen पर आपका iPhone अभी लॉक होता है, इसलिए आप Face ID से पुष्टि करते हैं और फिर ऐप खुलता है। अगर आप पूरी Lock Screen नए सिरे से सजा रहे हैं, तो [iOS 27 Lock Screen कैसे सेट करें](/blog/ios-27-lock-screen-setup) भी देखें।
+
+## आम सवाल
+
+**मेरे ऐप्स Dynamic Island से गायब क्यों हो गए?**
+iOS कुछ घंटों के बाद (सक्रिय रहने पर लगभग 8 घंटे) Live Activities को बंद कर देता है। WidgetLoft हर बार ऐप खोलने पर क्विक लॉन्च बार को फिर से शुरू कर देता है, इसलिए ऐप को एक बार खोलते ही यह वापस आ जाता है।
+
+**क्या मैं Dynamic Island में 5 से ज़्यादा ऐप्स रख सकता हूं?**
+नहीं। खुला हुआ आइलैंड एक पंक्ति में 5 तक ऐप्स दिखाता है। Lock Screen बैनर उसी ग्रुप के 10 तक ऐप्स दो पंक्तियों में दिखाता है।
+
+**क्या क्विक लॉन्च बार पूरी तरह तैयार फ़ीचर है?**
+ऐप में इसे Beta के रूप में चिह्नित किया गया है। यह iOS की Live Activities पर चलता है, इसलिए WidgetLoft के लिए Live Activities की अनुमति ज़रूरी है और यह उन समय-सीमाओं का पालन करता है जो iOS तय करता है।
+
+---
+
+आज़माने के लिए तैयार हैं? [WidgetLoft को App Store पर डाउनलोड करें](/widgetloft/download) और अपने पसंदीदा ऐप्स को Dynamic Island में बस एक टैप की दूरी पर रखें।

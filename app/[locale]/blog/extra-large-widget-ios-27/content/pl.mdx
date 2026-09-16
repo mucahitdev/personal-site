@@ -1,0 +1,161 @@
+export const meta = {
+  title:
+    "Jak używać bardzo dużego widżetu w iOS 27 jako launchera aplikacji na całą stronę",
+  description:
+    "iOS 27 dodaje bardzo duży widżet, który wypełnia całą stronę ekranu początkowego. Dowiedz się, jak go dodać, które aplikacje Apple go obsługują i jak zamienić go w launcher z maksymalnie 77 kafelkami aplikacji.",
+  keywords: [
+    "bardzo duży widżet ios 27",
+    "duży widżet iphone",
+    "widżet na cały ekran ios 27",
+    "jak dodać bardzo duży widżet",
+    "widżet launcher aplikacji iphone",
+    "ekran początkowy iphone jedna strona",
+  ],
+  ogTitle: "Bardzo duży widżet iOS 27 jako launcher na jedną stronę",
+  ogDescription:
+    "Dodaj nowy widżet na całą stronę i umieść w nim do 77 aplikacji, folderów i kafelek powrotu.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak używać bardzo dużego widżetu w iOS 27 jako launchera aplikacji na całą stronę",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pl/blog/extra-large-widget-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Zamień bardzo duży widżet iOS 27 w launcher aplikacji na jedną stronę",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Uaktualnij do iOS 27",
+        text: "Rozmiar bardzo duży istnieje tylko w iOS 27, więc najpierw uaktualnij iPhone’a w Ustawienia, Ogólne, Uaktualnienia.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Utwórz grupę w WidgetLoft",
+        text: "Otwórz WidgetLoft (dawniej FolderMini), utwórz grupę i dodaj aplikacje, które chcesz mieć na stronie launchera. Dodaj podfoldery, jeśli potrzebujesz więcej niż jednej strony aplikacji.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj widżet w rozmiarze bardzo dużym",
+        text: "Przytrzymaj palec na ekranie początkowym, stuknij Edycja, a potem Dodaj widżet. Wybierz WidgetLoft i przewijaj rozmiary, aż dojdziesz do bardzo dużego, a następnie go dodaj.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz swoją grupę",
+        text: "Przytrzymaj nowy widżet, stuknij Edytuj widżet i wybierz utworzoną grupę.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz rozmiar ikon",
+        text: "Wróć do WidgetLoft i wybierz rozmiar ikon dla grupy: małe ikony mieszczą do 77 kafelków, średnie 54, duże 40, a bardzo duże 24.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy bardzo duży widżet działa w iOS 26 lub starszym?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Rozmiar bardzo duży jest nowością w iOS 27 i nie pojawia się w galerii widżetów w starszych wersjach. W iOS od 18 do 26 największy widżet WidgetLoft to duży, z maksymalnie 49 kafelkami.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ile aplikacji mieści się w bardzo dużym widżecie?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "W WidgetLoft do 77 kafelków z małymi ikonami, 54 ze średnimi, 40 z dużymi i 24 z bardzo dużymi. Podfoldery dodają kolejne aplikacje za jednym kafelkiem.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy mogę użyć bardzo dużego widżetu na ekranie blokady?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Bardzo duży to rozmiar dla ekranu początkowego. Widżet WidgetLoft na ekranie blokady pozostaje jednym rzędem do 4 aplikacji lub 3 z dużymi ikonami.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak używać bardzo dużego widżetu w iOS 27 jako launchera aplikacji na całą stronę
+
+**Szybka odpowiedź:** iOS 27 dodaje bardzo duży widżet, który wypełnia całą stronę ekranu początkowego. Aby go dodać, przytrzymaj palec na ekranie początkowym, stuknij Edycja, a potem Dodaj widżet, wybierz aplikację i przewiń do rozmiaru bardzo dużego. Z [WidgetLoft](/widgetloft) (dawniej FolderMini) ta strona staje się launcherem z maksymalnie 77 kafelkami aplikacji, a do tego z podfolderami i kafelkiem powrotu.
+
+Cała strona oznaczała dotąd rzędy luźnych ikon. Teraz może to być jeden widżet, który trzyma Twoje aplikacje w uporządkowanej siatce zaprojektowanej przez Ciebie.
+
+---
+
+## Czym jest bardzo duży widżet w iOS 27?
+
+Bardzo duży to nowy rozmiar widżetu, który zajmuje całą stronę ekranu początkowego, czyli obszar siatki 4×6. Istnieje tylko w iOS 27, wydanym 14 września 2026 roku.
+
+Jako pierwsze pojawiły się aplikacje Apple: Kalendarz, Zdjęcia, Muzyka i Pogoda oferują bardzo duży widżet, a aplikacje innych firm też mogą go obsługiwać. W przypadku launchera oznacza to miejsce na mnóstwo aplikacji. Pełną listę zmian w widżetach znajdziesz w artykule [co nowego w widżetach iOS 27](/blog/ios-27-widgets-whats-new).
+
+## Krok po kroku: zamień bardzo duży widżet w launcher
+
+1. **Uaktualnij do iOS 27.** Przejdź do Ustawienia, Ogólne, Uaktualnienia. Rozmiar bardzo duży nie istnieje w starszych wersjach.
+2. **Utwórz grupę w WidgetLoft.** Otwórz [WidgetLoft](/widgetloft), utwórz grupę i dodaj aplikacje, które chcesz mieć na stronie launchera. Stuknij **Nowy folder** dla wszystkiego, co ma trafić poziom niżej.
+3. **Dodaj widżet w rozmiarze bardzo dużym.** Przytrzymaj palec na ekranie początkowym, stuknij **Edycja**, a potem **Dodaj widżet**. Wybierz WidgetLoft i przewijaj rozmiary, aż dojdziesz do bardzo dużego, a następnie go dodaj.
+4. **Wybierz swoją grupę.** Przytrzymaj nowy widżet, stuknij **Edytuj widżet** i wybierz utworzoną grupę.
+5. **Wybierz rozmiar ikon.** Wróć do WidgetLoft i wybierz rozmiar ikon dla grupy. Małe ikony mieszczą najwięcej kafelków, a bardzo duże najłatwiej trafić palcem.
+
+Stuknij dowolny kafelek, a aplikacja otworzy się od razu. Stuknij kafelek folderu, a otworzy się on w miejscu na widżecie, z kafelkiem powrotu, który przenosi poziom wyżej.
+
+## Ile aplikacji mieści się w każdym rozmiarze widżetu
+
+| Rozmiar widżetu | Maks. kafelków (małe ikony) |
+| --- | --- |
+| Mały | 9 |
+| Średni | 21 |
+| Duży | 49 |
+| Bardzo duży (iOS 27) | 77 |
+
+Większe ikony to mniejsza pojemność w zamian za wygodę. W bardzo dużym widżecie średnie ikony mieszczą 54 kafelki, duże 40, a bardzo duże 24. Na iPadzie szeroki rozmiar bardzo duży mieści do 72. [WidgetLoft](/widgetloft) wypełnia każde miejsce prawdziwymi ikonami aplikacji, a do tego możesz dodać strony internetowe, kontakty, kafelki Skrótów lub puste odstępy, aby ułożyć układ.
+
+## Podfoldery i kafelek powrotu na całej stronie
+
+Nie musisz przeznaczać wszystkich 77 kafelków na pojedyncze aplikacje. Umieść gry, aplikacje podróżnicze czy narzędzia do pracy w podfolderach. Każdy folder mieści do 100 aplikacji i 20 podfolderów, a zagnieżdżanie nie ma limitu głębokości. Kafelek powrotu można przestylizować i przenieść w dowolne miejsce.
+
+Jeśli chcesz, aby widżet sam wracał do początku, włącz **Automatyczny powrót do folderu** w Ustawienia, Widżet.
+
+Krótka, szczera uwaga: darmowa wersja WidgetLoft mieści do 21 aplikacji w bibliotece. Aby wypełnić całą stronę, WidgetLoft Pro znosi ten limit.
+
+## Najczęstsze pytania
+
+**Czy bardzo duży widżet działa w iOS 26 lub starszym?**
+Nie. To nowość w iOS 27. W iOS od 18 do 26 największy widżet WidgetLoft to duży, z maksymalnie 49 kafelkami.
+
+**Ile aplikacji mieści się w bardzo dużym widżecie?**
+Do 77 kafelków z małymi ikonami, 54 ze średnimi, 40 z dużymi i 24 z bardzo dużymi. Podfoldery dodają kolejne aplikacje za jednym kafelkiem.
+
+**Czy mogę użyć bardzo dużego widżetu na ekranie blokady?**
+Nie. Bardzo duży to rozmiar dla ekranu początkowego. Widżet WidgetLoft na ekranie blokady pozostaje jednym rzędem do 4 aplikacji lub 3 z dużymi ikonami.
+
+---
+
+Gotowy, aby zbudować launcher na jedną stronę? [Pobierz WidgetLoft z App Store](/widgetloft/download) i wypełnij swój bardzo duży widżet.

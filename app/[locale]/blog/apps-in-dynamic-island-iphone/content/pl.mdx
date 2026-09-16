@@ -1,0 +1,150 @@
+export const meta = {
+  title: "Jak umieścić ulubione aplikacje w Dynamic Island na iPhonie",
+  description:
+    "iOS nie pozwala przypiąć skrótów do aplikacji w Dynamic Island, ale Aktywność na żywo może je pokazać. Oto jak trzymać do 5 aplikacji w wyspie i do 10 na ekranie blokady.",
+  keywords: [
+    "aplikacje w dynamic island",
+    "skróty aplikacji dynamic island",
+    "launcher aplikacji dynamic island iphone",
+    "jak dodać aplikacje do dynamic island",
+    "launcher na ekranie blokady aktywność na żywo",
+    "szybkie uruchamianie dynamic island",
+  ],
+  ogTitle: "Ulubione aplikacje w Dynamic Island",
+  ogDescription:
+    "Launcher w formie Aktywności na żywo na iPhone'a: do 5 aplikacji w Dynamic Island i do 10 na ekranie blokady.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline: "Jak umieścić ulubione aplikacje w Dynamic Island na iPhonie",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pl/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Umieść ulubione aplikacje w Dynamic Island na iPhonie",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Utwórz grupę",
+        text: "Otwórz WidgetLoft (dawniej FolderMini), utwórz grupę i dodaj aplikacje, których używasz najczęściej.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Włącz pasek szybkiego uruchamiania",
+        text: "W WidgetLoft przejdź do Ustawień, potem do sekcji Dynamic Island i Aktywność na żywo, i włącz pasek szybkiego uruchamiania.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz folder",
+        text: "W polu Folder wybierz grupę, którą chcesz widzieć w Dynamic Island i na ekranie blokady.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zezwól na Aktywności na żywo",
+        text: "Upewnij się w aplikacji Ustawienia iOS, że Aktywności na żywo są dozwolone dla WidgetLoft.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Przytrzymaj wyspę i stuknij aplikację",
+        text: "Przytrzymaj Dynamic Island, aby rozwinąć rząd z maksymalnie 5 aplikacjami, i stuknij jedną, aby ją otworzyć.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Dlaczego moje aplikacje zniknęły z Dynamic Island?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS kończy Aktywności na żywo po kilku godzinach (około 8, gdy są aktywne). WidgetLoft uruchamia pasek szybkiego uruchamiania ponownie za każdym razem, gdy otwierasz aplikację, więc wystarczy ją na chwilę otworzyć.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy mogę umieścić w Dynamic Island więcej niż 5 aplikacji?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Rozwinięta Dynamic Island pokazuje jeden rząd z maksymalnie 5 aplikacjami. Baner na ekranie blokady pokazuje do 10 aplikacji z tej samej grupy, w dwóch rzędach.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy pasek szybkiego uruchamiania jest już gotowy?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "W WidgetLoft jest oznaczony jako Beta. Opiera się na Aktywnościach na żywo w iOS, więc muszą być one dozwolone dla WidgetLoft, a pasek podlega limitom czasu, jakie iOS dla nich ustala.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak umieścić ulubione aplikacje w Dynamic Island na iPhonie
+
+**Szybka odpowiedź:** iOS nie ma ustawienia, które przypina skróty do aplikacji w Dynamic Island. Pojawiają się tam tylko Aktywności na żywo. [WidgetLoft](/widgetloft) (dawniej FolderMini) wykorzystuje właśnie to: jego pasek szybkiego uruchamiania to Aktywność na żywo, która odzwierciedla jedną z twoich grup. Dzięki temu do 5 aplikacji trafia do Dynamic Island, a do 10 na ekran blokady.
+
+Dynamic Island jest zawsze na widoku, więc to świetne miejsce na aplikacje, które otwierasz przez cały dzień. Oto jak umieścić je tam w około minutę.
+
+---
+
+## Dlaczego Dynamic Island nie przyjmuje skrótów do aplikacji
+
+Apple stworzyło Dynamic Island dla Aktywności na żywo: minutnika, dostawy jedzenia, wyniku meczu na żywo. Nie da się przeciągnąć tam ikony aplikacji i nie ma ustawienia, które by ją przypięło. To samo dotyczy banera Aktywności na żywo na ekranie blokady.
+
+Sposób polega więc na Aktywności na żywo, której zawartością jest rząd twoich aplikacji. Dokładnie to robi **pasek szybkiego uruchamiania** w WidgetLoft. Odzwierciedla jedną grupę z aplikacji, z tymi samymi ikonami, i trzyma ją w wyspie oraz na ekranie blokady.
+
+## Krok po kroku: aplikacje w Dynamic Island
+
+1. **Utwórz grupę.** Otwórz [WidgetLoft](/widgetloft), utwórz grupę na karcie Grupy i dodaj aplikacje, po które sięgasz najczęściej. Wyspa pokazuje do 5, więc grupa z 5 aplikacjami zmieści się w całości.
+2. **Włącz pasek szybkiego uruchamiania.** Przejdź do Ustawienia → **Dynamic Island i Aktywność na żywo** i włącz **pasek szybkiego uruchamiania**.
+3. **Wybierz folder.** W polu **Folder** wybierz grupę, którą właśnie utworzyłeś.
+4. **Zezwól na Aktywności na żywo.** Jeśli nic się nie pojawia, otwórz aplikację Ustawienia iOS, znajdź WidgetLoft i sprawdź, czy Aktywności na żywo są dozwolone.
+5. **Przytrzymaj wyspę i stuknij aplikację.** Kompaktowa wyspa pokazuje symbol siatki i liczbę aplikacji. Przytrzymaj ją, aby rozwinąć rząd, i stuknij dowolną ikonę.
+
+## Dynamic Island czy baner na ekranie blokady
+
+| | Dynamic Island | Baner na ekranie blokady |
+| --- | --- | --- |
+| Liczba aplikacji | Do 5 | Do 10 |
+| Rzędy | Jeden rząd | Jeden rząd do 5, dwa rzędy przy 6 do 10 |
+| Jak działa stuknięcie | Otwiera aplikację bezpośrednio, jednym stuknięciem | Prosi o odblokowanie za pomocą Face ID, potem otwiera aplikację |
+| Kafelki stron www | Otwierają się w wybranej przeglądarce | Otwierają się w wybranej przeglądarce |
+| Wygląd | Kompaktowo: symbol siatki i liczba aplikacji | Zabarwiony kolorem grupy albo systemowe Liquid Glass dla grupy przezroczystej |
+
+Otwieranie jednym stuknięciem z Dynamic Island to nowość w [WidgetLoft](/widgetloft) 2.1.0: aplikacja uruchamia się od razu, bez przechodzenia najpierw przez WidgetLoft. Na ekranie blokady iPhone jest nadal zablokowany, więc potwierdzasz Face ID i dopiero wtedy aplikacja się otwiera. Jeśli urządzasz od nowa cały ekran blokady, zajrzyj też do poradnika [jak skonfigurować ekran blokady w iOS 27](/blog/ios-27-lock-screen-setup).
+
+## Częste pytania
+
+**Dlaczego moje aplikacje zniknęły z Dynamic Island?**
+iOS kończy Aktywności na żywo po kilku godzinach (około 8, gdy są aktywne). WidgetLoft uruchamia pasek szybkiego uruchamiania ponownie za każdym razem, gdy otwierasz aplikację, więc wystarczy ją na chwilę otworzyć.
+
+**Czy mogę umieścić w Dynamic Island więcej niż 5 aplikacji?**
+Nie. Rozwinięta wyspa pokazuje jeden rząd z maksymalnie 5 aplikacjami. Baner na ekranie blokady pokazuje do 10 aplikacji z tej samej grupy, w dwóch rzędach.
+
+**Czy pasek szybkiego uruchamiania jest już gotowy?**
+W aplikacji jest oznaczony jako Beta. Opiera się na Aktywnościach na żywo w iOS, więc muszą być one dozwolone dla WidgetLoft, a pasek podlega limitom czasu, jakie iOS dla nich ustala.
+
+---
+
+Gotowy, aby to wypróbować? [Pobierz WidgetLoft z App Store](/widgetloft/download) i miej ulubione aplikacje w Dynamic Island na jedno stuknięcie.

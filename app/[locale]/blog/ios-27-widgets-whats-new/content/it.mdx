@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Le novità dei widget in iOS 27 (e come usarle)",
+  description:
+    "iOS 27 aggiunge un widget Extra grande che occupa un'intera pagina della schermata Home, un trigger Notifica per le automazioni di Comandi e un orologio compatto nella schermata di blocco. Ecco cosa cambia e come usare ogni novità.",
+  keywords: [
+    "widget ios 27",
+    "widget extra grande ios 27",
+    "novità widget ios 27",
+    "orologio compatto schermata di blocco ios 27",
+    "comandi automazione notifica ios 27",
+    "widget schermata home ios 27",
+  ],
+  ogTitle: "Le novità dei widget in iOS 27",
+  ogDescription:
+    "Widget Extra grandi, automazioni sulle notifiche e orologio compatto nella schermata di blocco, spiegati passo per passo.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline: "Le novità dei widget in iOS 27 (e come usarle)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/it/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "it",
+    name: "Usare le nuove funzioni dei widget di iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Aggiorna a iOS 27",
+        text: "Apri Impostazioni, Generali, Aggiornamento software e installa iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Aggiungi un widget Extra grande",
+        text: "Crea un gruppo di app in WidgetLoft (in precedenza FolderMini), poi tieni premuto sulla schermata Home, tocca +, cerca WidgetLoft e scegli la dimensione Extra grande.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Imposta un punto di notifica",
+        text: "In Comandi vai su Automazione, App, Notifica, scegli l'app, lascia Automazione attiva e Notifica disattivata e aggiungi l'azione di WidgetLoft Mostra pallino di notifica per la stessa app.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Personalizza la schermata di blocco",
+        text: "Tieni premuto sulla schermata di blocco, tocca Personalizza, passa all'orologio compatto e aggiungi un widget di WidgetLoft con un massimo di 4 app.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Quali app supportano il widget Extra grande in iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Calendario, Foto, Musica e Meteo di Apple lo supportano, insieme ad app di terze parti. Anche WidgetLoft lo supporta e con le icone piccole mette fino a 77 app in un'intera pagina della schermata Home.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "I widget di iOS 27 possono mostrare il numero di notifiche?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Il numero no. Con il nuovo trigger Notifica di Comandi, WidgetLoft può mostrare un punto sul riquadro di un'app. Il punto sparisce quando apri l'app dal widget. Leggere una notifica solo nella schermata di blocco o su Apple Watch non lo cancella, e siti web, riquadri di Comandi e contatti non possono avere punti.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Serve iOS 27 per usare WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. WidgetLoft funziona su iOS 18 e versioni successive. Solo la dimensione Extra grande e i punti di notifica richiedono iOS 27.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Le novità dei widget in iOS 27 (e come usarle)
+
+**Risposta rapida:** iOS 27, rilasciato il 14 settembre 2026, porta tre cambiamenti legati ai widget: una dimensione Extra grande che occupa un'intera pagina della schermata Home, un trigger Notifica per le automazioni di Comandi e una modalità orologio compatto nella schermata di blocco. I widget per avviare le app come [WidgetLoft](/widgetloft) (in precedenza FolderMini) sfruttano i primi due: un solo widget Extra grande contiene fino a 77 app e i riquadri possono mostrare un punto quando un'app riceve una notifica.
+
+iOS 27 non rivoluziona i widget, ma le sue novità sono pratiche. Ecco cosa c'è di nuovo, cosa significa per i widget che avviano le app e come configurare tutto.
+
+---
+
+## Cosa cambia per i widget in iOS 27
+
+**Dimensione widget Extra grande.** La nuova dimensione occupa un'intera pagina della schermata Home, un'area di griglia 4×6. Calendario, Foto, Musica e Meteo di Apple la supportano, e possono farlo anche le app di terze parti.
+
+**Un trigger Notifica in Comandi.** Le automazioni di Comandi ora possono partire quando un'app invia una notifica. Questo permette anche alle app di widget di reagire alle tue notifiche.
+
+**Orologio compatto nella schermata di blocco.** La modalità orologio compatto mostra l'ora più piccola in alto, accanto alla data e ai tuoi widget.
+
+## Cosa significa per i widget che avviano le app
+
+[WidgetLoft](/widgetloft) trasforma gruppi di app in widget per la schermata Home e la schermata di blocco, e un tocco su un riquadro apre l'app direttamente. iOS 27 aggiunge due cose:
+
+- **Extra grande contiene fino a 77 app.** Con le icone piccole, un widget a tutta pagina ospita 77 riquadri (54 con icone medie, 40 con grandi, 24 con extra grandi). Su iPad, l'Extra grande largo contiene fino a 72 app.
+- **Punti di notifica sui riquadri.** WidgetLoft usa il nuovo trigger Notifica per mettere un punto sul riquadro di un'app quando quell'app riceve una notifica. È un punto, non un numero, e sparisce quando apri l'app dal widget.
+
+WidgetLoft 2.1.0 aggiunge anche due funzioni che si abbinano bene a un widget grande:
+
+- **Icone scure per ogni app.** Le app più popolari hanno icone scure già pronte e le app di Apple usano le vere icone scure di Apple. Le app aggiunte tramite la ricerca nell'App Store ora ricevono un'icona scura creata direttamente sul tuo telefono. Non viene caricato nulla.
+- **Dynamic Island con un tocco.** Con la barra di avvio rapido attiva, le app nella Dynamic Island si aprono con un tocco, direttamente.
+
+## Passo per passo: usa le nuove funzioni dei widget di iOS 27
+
+1. **Aggiorna a iOS 27.** Apri **Impostazioni → Generali → Aggiornamento software** e installa iOS 27.
+2. **Aggiungi un widget Extra grande.** In [WidgetLoft](/widgetloft), crea un gruppo nella scheda **Gruppi** e aggiungi le tue app. Poi tieni premuto sulla schermata Home, tocca **+**, cerca WidgetLoft e scegli la dimensione Extra grande.
+3. **Imposta un punto di notifica.** In WidgetLoft apri **Impostazioni → Pallini di notifica**. In Comandi vai su **Automazione → App → Notifica**, scegli l'app, lascia Automazione attiva e Notifica disattivata e aggiungi l'azione di WidgetLoft **Mostra pallino di notifica** per la stessa app. Serve circa un minuto per app.
+4. **Personalizza la schermata di blocco.** Tieni premuto sulla schermata di blocco, tocca **Personalizza**, passa all'orologio compatto e aggiungi un widget di WidgetLoft con una fila di massimo 4 app (3 con icone grandi).
+
+## Le novità dei widget di iOS 27 in breve
+
+| Novità di iOS 27 | Cosa puoi farci |
+| --- | --- |
+| Dimensione widget Extra grande | Mettere fino a 77 app in una pagina della schermata Home con WidgetLoft |
+| Calendario, Foto, Musica e Meteo supportano Extra grande | Dedicare un'intera pagina all'app Apple che guardi più spesso |
+| Trigger Notifica di Comandi | Mostrare un punto su un riquadro di WidgetLoft quando quell'app riceve una notifica |
+| Orologio compatto nella schermata di blocco | Tenere l'ora piccola accanto ai widget, inclusa una fila con le tue app preferite |
+
+I widget di Apple mostrano soprattutto informazioni. [WidgetLoft](/widgetloft) usa la stessa nuova dimensione e lo stesso trigger per aprire le tue app, e continua a funzionare su iOS 18 e versioni successive. Per la configurazione completa dei punti, leggi la nostra guida ai [badge di notifica sui widget](/blog/notification-badges-on-widgets-iphone).
+
+## Domande frequenti
+
+**Quali app supportano il widget Extra grande in iOS 27?**
+Calendario, Foto, Musica e Meteo, insieme ad app di terze parti. WidgetLoft ne contiene fino a 77 in uno solo.
+
+**I widget di iOS 27 possono mostrare il numero di notifiche?**
+Il numero no. WidgetLoft mostra un punto, che sparisce quando apri l'app dal widget. Leggere una notifica solo nella schermata di blocco o su Apple Watch non lo cancella, e siti web, riquadri di Comandi e contatti non possono avere punti.
+
+**Serve iOS 27 per usare WidgetLoft?**
+No. WidgetLoft funziona su iOS 18 e versioni successive. Solo la dimensione Extra grande e i punti di notifica richiedono iOS 27.
+
+---
+
+Pronto a riempire un'intera pagina con le tue app? [Scarica WidgetLoft dall'App Store](/widgetloft/download) e sfrutta al massimo i widget di iOS 27.

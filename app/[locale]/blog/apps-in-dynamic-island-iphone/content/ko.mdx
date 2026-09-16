@@ -1,0 +1,150 @@
+export const meta = {
+  title: "iPhone Dynamic Island에 즐겨 쓰는 앱을 넣는 방법",
+  description:
+    "iOS에서는 Dynamic Island에 앱 바로가기를 고정할 수 없지만, 실시간 현황은 앱을 보여 줄 수 있습니다. Dynamic Island에 최대 5개, 잠금 화면에 최대 10개의 앱을 두는 방법을 알려 드립니다.",
+  keywords: [
+    "다이나믹 아일랜드 앱 추가",
+    "다이나믹 아일랜드 바로가기",
+    "다이나믹 아일랜드 앱 런처 아이폰",
+    "dynamic island 앱 넣기",
+    "잠금 화면 앱 런처 실시간 현황",
+    "다이나믹 아일랜드 빠른 실행",
+  ],
+  ogTitle: "즐겨 쓰는 앱을 Dynamic Island에 넣으세요",
+  ogDescription:
+    "iPhone용 실시간 현황 런처: Dynamic Island에 최대 5개, 잠금 화면에 최대 10개의 앱.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "ko",
+    headline: "iPhone Dynamic Island에 즐겨 쓰는 앱을 넣는 방법",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/ko/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "ko",
+    name: "iPhone Dynamic Island에 즐겨 쓰는 앱 넣기",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "그룹 만들기",
+        text: "WidgetLoft(이전 이름 FolderMini)를 열고 그룹을 만든 뒤 가장 자주 쓰는 앱을 추가합니다.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "빠른 실행 바 켜기",
+        text: "WidgetLoft에서 설정, Dynamic Island 및 실시간 현황으로 이동해 빠른 실행 바를 켭니다.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "폴더 선택하기",
+        text: "폴더에서 Dynamic Island와 잠금 화면에 표시할 그룹을 선택합니다.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "실시간 현황 허용하기",
+        text: "iOS 설정 앱에서 WidgetLoft의 실시간 현황이 허용되어 있는지 확인합니다.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "아일랜드를 길게 누르고 앱 탭하기",
+        text: "Dynamic Island를 길게 눌러 최대 5개 앱이 있는 줄을 펼친 다음, 열고 싶은 앱을 탭합니다.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "ko",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Dynamic Island에서 앱이 사라진 이유는 무엇인가요?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS는 몇 시간이 지나면(활성 상태에서 약 8시간) 실시간 현황을 종료합니다. WidgetLoft는 앱을 열 때마다 빠른 실행 바를 다시 시작하므로 잠깐 앱을 열면 다시 나타납니다.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Dynamic Island에 앱을 5개보다 많이 넣을 수 있나요?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "아니요. 펼친 Dynamic Island에는 한 줄에 최대 5개의 앱이 표시됩니다. 잠금 화면 배너에는 같은 그룹의 앱이 두 줄로 최대 10개까지 표시됩니다.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "빠른 실행 바는 완성된 기능인가요?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "WidgetLoft에서는 베타로 표시되어 있습니다. iOS의 실시간 현황을 기반으로 하기 때문에 WidgetLoft의 실시간 현황을 허용해야 하고, iOS가 정한 시간 제한을 따릅니다.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone Dynamic Island에 즐겨 쓰는 앱을 넣는 방법
+
+**빠른 답변:** iOS에는 Dynamic Island에 앱 바로가기를 고정하는 설정이 없습니다. 그곳에는 실시간 현황만 표시됩니다. [WidgetLoft](/widgetloft)(이전 이름 FolderMini)는 바로 이 점을 활용합니다. 빠른 실행 바는 그룹 하나를 그대로 보여 주는 실시간 현황이라서, Dynamic Island에 최대 5개, 잠금 화면에 최대 10개의 앱을 둘 수 있습니다.
+
+Dynamic Island는 늘 눈앞에 있으니, 하루 종일 여는 앱을 두기에 딱 좋은 자리입니다. 1분 정도면 설정할 수 있는 방법을 소개합니다.
+
+---
+
+## Dynamic Island에 앱 바로가기를 넣을 수 없는 이유
+
+Apple은 Dynamic Island를 실시간 현황을 위해 만들었습니다. 타이머, 음식 배달, 실시간 경기 점수 같은 것들이죠. 앱 아이콘을 끌어다 넣을 수 없고, 아이콘을 고정하는 설정도 없습니다. 잠금 화면의 실시간 현황 배너도 마찬가지입니다.
+
+그래서 요령은 내용물이 내 앱들로 이루어진 줄인 실시간 현황을 쓰는 것입니다. WidgetLoft의 **빠른 실행 바**가 바로 그 역할을 합니다. 앱 안의 그룹 하나를 같은 아이콘 그대로 보여 주고, 아일랜드와 잠금 화면에 계속 띄워 둡니다.
+
+## 단계별 안내: Dynamic Island에 앱 넣기
+
+1. **그룹 만들기.** [WidgetLoft](/widgetloft)를 열고 그룹 탭에서 그룹을 만든 뒤 가장 자주 쓰는 앱을 추가하세요. 아일랜드에는 최대 5개까지 표시되므로 5개짜리 그룹이면 전부 들어갑니다.
+2. **빠른 실행 바 켜기.** 설정 → **Dynamic Island 및 실시간 현황**으로 이동해 **빠른 실행 바**를 켭니다.
+3. **폴더 선택하기.** **폴더**에서 방금 만든 그룹을 선택합니다.
+4. **실시간 현황 허용하기.** 아무것도 나타나지 않으면 iOS 설정 앱에서 WidgetLoft를 찾아 실시간 현황이 허용되어 있는지 확인하세요.
+5. **아일랜드를 길게 누르고 앱 탭하기.** 작은 아일랜드에는 격자 아이콘과 앱 개수가 표시됩니다. 길게 눌러 줄을 펼친 다음 원하는 아이콘을 탭하세요.
+
+## Dynamic Island와 잠금 화면 배너 비교
+
+| | Dynamic Island | 잠금 화면 배너 |
+| --- | --- | --- |
+| 표시되는 앱 | 최대 5개 | 최대 10개 |
+| 줄 | 한 줄 | 5개까지 한 줄, 6개에서 10개는 두 줄 |
+| 탭하면 | 한 번의 탭으로 앱을 바로 엽니다 | 먼저 Face ID로 잠금 해제를 요청한 뒤 앱을 엽니다 |
+| 웹사이트 타일 | 선택한 브라우저에서 열립니다 | 선택한 브라우저에서 열립니다 |
+| 모양 | 작은 상태: 격자 아이콘과 앱 개수 | 그룹 색상으로 물들거나, 투명 그룹이면 시스템 Liquid Glass |
+
+Dynamic Island에서 한 번의 탭으로 여는 기능은 [WidgetLoft](/widgetloft) 2.1.0의 새 기능입니다. WidgetLoft를 거치지 않고 앱이 곧바로 열립니다. 잠금 화면에서는 iPhone이 아직 잠겨 있으므로 Face ID로 확인한 뒤 앱이 열립니다. 잠금 화면 전체를 새로 꾸미고 있다면 [iOS 27 잠금 화면 설정 방법](/blog/ios-27-lock-screen-setup)도 함께 살펴보세요.
+
+## 자주 묻는 질문
+
+**Dynamic Island에서 앱이 사라진 이유는 무엇인가요?**
+iOS는 몇 시간이 지나면(활성 상태에서 약 8시간) 실시간 현황을 종료합니다. WidgetLoft는 앱을 열 때마다 빠른 실행 바를 다시 시작하므로 잠깐 앱을 열면 다시 나타납니다.
+
+**Dynamic Island에 앱을 5개보다 많이 넣을 수 있나요?**
+아니요. 펼친 아일랜드에는 한 줄에 최대 5개의 앱이 표시됩니다. 잠금 화면 배너에는 같은 그룹의 앱이 두 줄로 최대 10개까지 표시됩니다.
+
+**빠른 실행 바는 완성된 기능인가요?**
+앱에서는 베타로 표시되어 있습니다. iOS의 실시간 현황을 기반으로 하기 때문에 WidgetLoft의 실시간 현황을 허용해야 하고, iOS가 정한 시간 제한을 따릅니다.
+
+---
+
+써 볼 준비가 되셨나요? [App Store에서 WidgetLoft 다운로드하기](/widgetloft/download), 그리고 즐겨 쓰는 앱을 Dynamic Island에서 한 번의 탭으로 열어 보세요.

@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "Comment configurer un écran verrouillé épuré sous iOS 27 (horloge compacte et apps en un toucher)",
+  description:
+    "Configurez un écran verrouillé épuré sous iOS 27 : choisissez un fond d'écran, activez l'horloge compacte, puis ajoutez vos apps avec le widget d'écran verrouillé WidgetLoft et la barre de lancement rapide.",
+  keywords: [
+    "écran verrouillé ios 27",
+    "horloge compacte ios 27",
+    "personnaliser écran verrouillé ios 27",
+    "lanceur d'apps écran verrouillé iphone",
+    "ouvrir apps depuis écran verrouillé iphone",
+    "widget apps écran verrouillé iphone",
+  ],
+  ogTitle: "Un écran verrouillé iOS 27 épuré avec des apps en un toucher",
+  ogDescription:
+    "Horloge compacte, fond d'écran plein écran et vos apps préférées à un toucher sur l'écran verrouillé d'iOS 27.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline:
+      "Comment configurer un écran verrouillé épuré sous iOS 27 (horloge compacte et apps en un toucher)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/fr/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Configurer un écran verrouillé épuré sous iOS 27 avec des apps en un toucher",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Choisir un fond d'écran",
+        text: "Touchez longuement l'écran verrouillé, touchez Personnaliser et choisissez une photo. Si elle ne remplit pas l'écran, laissez l'extension de fond d'écran d'iOS 27 l'agrandir.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Activer l'horloge compacte",
+        text: "Dans le même éditeur, choisissez l'option d'horloge compacte pour que l'heure remonte à côté de la date et de vos widgets.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajouter le widget d'écran verrouillé WidgetLoft",
+        text: "Créez un groupe avec vos apps principales dans WidgetLoft (anciennement FolderMini), puis ajoutez le widget WidgetLoft dans l'éditeur de l'écran verrouillé et choisissez ce groupe. Il affiche une rangée de 4 apps au maximum.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Activer la barre de lancement rapide",
+        text: "Dans WidgetLoft, ouvrez Réglages, puis Dynamic Island et Activité en direct, et activez la barre de lancement rapide. Les Activités en direct doivent être autorisées pour WidgetLoft dans les Réglages d'iOS.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisir le groupe",
+        text: "Sous Dossier, choisissez le groupe à afficher. Jusqu'à 10 apps apparaissent sur l'écran verrouillé et jusqu'à 5 dans la Dynamic Island.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Puis-je ouvrir des apps depuis l'écran verrouillé sans déverrouiller ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non. Sur l'écran verrouillé, le widget WidgetLoft comme la barre de lancement rapide vous demandent d'abord de déverrouiller, par exemple avec Face ID, puis ouvrent l'app. WidgetLoft peut apparaître un instant au passage. Dans la Dynamic Island, les apps s'ouvrent en un toucher.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Pourquoi la barre de lancement rapide a-t-elle disparu de mon écran verrouillé ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS met fin aux Activités en direct après quelques heures. WidgetLoft relance la barre chaque fois que vous ouvrez l'app. Si elle n'apparaît jamais, vérifiez que les Activités en direct sont autorisées pour WidgetLoft dans les Réglages d'iOS.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ai-je besoin d'iOS 27 pour cette configuration ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Seulement pour l'horloge compacte et l'extension de fond d'écran, qui sont des fonctions d'iOS 27. WidgetLoft fonctionne sous iOS 18 et versions ultérieures. Sachez que le widget d'écran verrouillé n'affiche que les apps du premier niveau : les dossiers à l'intérieur d'un groupe n'y apparaissent pas.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Comment configurer un écran verrouillé épuré sous iOS 27 (horloge compacte et apps en un toucher)
+
+**Réponse rapide :** Touchez longuement l'écran verrouillé, touchez **Personnaliser**, choisissez un fond d'écran et activez l'option d'horloge compacte d'iOS 27 pour que l'heure prenne moins de place. Ajoutez ensuite vos apps : le widget d'écran verrouillé de [WidgetLoft](/widgetloft) (anciennement FolderMini) affiche une rangée de 4 apps au maximum, et sa barre de lancement rapide place jusqu'à 10 apps sur l'écran verrouillé.
+
+iOS 27 donne plus d'espace à l'écran verrouillé. La meilleure façon d'en profiter, c'est d'y mettre les apps que vous ouvrez vraiment, pas seulement une horloge plus grande.
+
+---
+
+## Ce qu'iOS 27 change sur l'écran verrouillé
+
+Deux nouveautés d'iOS 27 comptent pour une configuration épurée :
+
+- **Horloge compacte.** L'heure devient plus petite et se place en haut, à côté de la date et de vos widgets, au lieu d'occuper le milieu de l'écran.
+- **Extension de fond d'écran.** iOS peut agrandir une photo pour qu'elle remplisse tout l'écran verrouillé, pratique pour les images qui ne tombent pas tout à fait juste.
+
+Ce qu'iOS ne propose toujours pas, c'est une rangée d'apps à toucher pour les ouvrir. Les widgets standard de l'écran verrouillé affichent des informations, ils ne lancent pas vos autres apps. [WidgetLoft](/widgetloft) comble ce manque avec deux outils : un widget d'écran verrouillé toujours présent, et la barre de lancement rapide, une Activité en direct avec une liste d'apps plus longue.
+
+## Étape par étape : un écran verrouillé épuré sous iOS 27
+
+1. **Choisissez un fond d'écran.** Touchez longuement l'écran verrouillé, touchez **Personnaliser** et choisissez une photo. Si elle ne remplit pas l'écran, laissez l'extension de fond d'écran d'iOS 27 l'agrandir.
+2. **Activez l'horloge compacte.** Dans le même éditeur, choisissez l'option d'horloge compacte. L'heure remonte en haut, à côté de la date et de vos widgets.
+3. **Ajoutez le widget d'écran verrouillé WidgetLoft.** Dans WidgetLoft, créez un groupe avec vos apps principales. De retour dans l'éditeur de l'écran verrouillé, ajoutez le widget **WidgetLoft** et choisissez ce groupe. Il affiche une rangée de 4 apps au maximum (3 avec de grandes icônes).
+4. **Activez la barre de lancement rapide.** Ouvrez WidgetLoft, allez dans **Réglages → Dynamic Island et Activité en direct** et activez la **barre de lancement rapide** (Bêta).
+5. **Choisissez le groupe.** Sous **Dossier**, choisissez le groupe voulu. Jusqu'à 10 apps apparaissent dans une bannière sur l'écran verrouillé, et jusqu'à 5 dans la Dynamic Island.
+
+## Widget d'écran verrouillé ou barre de lancement rapide
+
+| | Widget d'écran verrouillé | Barre de lancement rapide |
+| --- | --- | --- |
+| Apps | Une rangée de 4 au maximum (3 avec de grandes icônes) | Jusqu'à 10 sur l'écran verrouillé, jusqu'à 5 dans la Dynamic Island |
+| Quand elle s'affiche | Toujours, comme partie de votre écran verrouillé | Pendant quelques heures après l'ouverture de WidgetLoft |
+| Toucher sur l'écran verrouillé | Vous déverrouillez d'abord, puis l'app s'ouvre | Vous déverrouillez d'abord avec Face ID, puis l'app s'ouvre |
+| Dynamic Island | Non incluse | Touchez longuement l'îlot, puis une app pour l'ouvrir en un toucher |
+
+Inutile de choisir. Mettez dans le widget les 4 apps que vous ouvrez toute la journée et utilisez la barre de lancement rapide pour une liste plus longue à garder sous la main un moment. Pour en savoir plus côté îlot, lisez [comment mettre des apps dans la Dynamic Island](/blog/apps-in-dynamic-island-iphone).
+
+## Questions fréquentes
+
+**Puis-je ouvrir des apps depuis l'écran verrouillé sans déverrouiller ?**
+Non. Sur l'écran verrouillé, le widget comme la barre de lancement rapide vous demandent d'abord de déverrouiller (par exemple avec Face ID), puis ouvrent l'app. WidgetLoft peut apparaître un instant au passage. Dans la Dynamic Island, les apps s'ouvrent en un toucher.
+
+**Pourquoi la barre de lancement rapide a-t-elle disparu de mon écran verrouillé ?**
+iOS met fin aux Activités en direct après quelques heures. WidgetLoft relance la barre chaque fois que vous ouvrez l'app. Si elle n'apparaît jamais, vérifiez que les Activités en direct sont autorisées pour WidgetLoft dans les Réglages d'iOS.
+
+**Ai-je besoin d'iOS 27 pour cette configuration ?**
+Seulement pour l'horloge compacte et l'extension de fond d'écran. [WidgetLoft](/widgetloft) fonctionne sous iOS 18 et versions ultérieures. Une limite à connaître : le widget d'écran verrouillé n'affiche que les apps du premier niveau, les dossiers à l'intérieur d'un groupe n'y apparaissent donc pas.
+
+---
+
+Prêt pour un écran verrouillé plus épuré ? [Téléchargez WidgetLoft sur l'App Store](/widgetloft/download) et gardez vos apps principales à un toucher.

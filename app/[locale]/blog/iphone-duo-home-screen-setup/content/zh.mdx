@@ -1,0 +1,155 @@
+export const meta = {
+  title:
+    "如何设置 iPhone Duo 主屏幕（内屏和外屏）",
+  description:
+    "iPhone Duo 主屏幕规划指南：5.4 英寸外屏放一个小巧的启动器，7.6 英寸内屏放大尺寸小组件和“今天”视图，再用超大小组件做一页式 App 启动器。",
+  keywords: [
+    "iphone duo 主屏幕设置",
+    "iphone duo 内屏小组件",
+    "iphone duo 外屏 app",
+    "折叠屏 iphone 主屏幕布局",
+    "iphone duo 今天视图 小组件",
+    "iphone duo app 启动器小组件",
+  ],
+  ogTitle: "规划你的 iPhone Duo 主屏幕，内屏外屏都顾到",
+  ogDescription:
+    "外屏单手快速打开，内屏放大尺寸小组件，一个启动器两块屏幕都能用。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何设置 iPhone Duo 主屏幕（内屏和外屏）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/iphone-duo-home-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "设置 iPhone Duo 内屏和外屏的主屏幕",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "规划外屏",
+        text: "列出合上手机时你单手打开的几个 App，并为它们规划一个小巧的启动器小组件或锁定屏幕小组件。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "规划内屏",
+        text: "决定左侧“今天”视图里放哪些大尺寸小组件，以及是否把主屏幕的一页做成超大启动器。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "创建分组",
+        text: "在 WidgetLoft（原 FolderMini）中，为外屏创建一个常用 App 分组，为内屏创建一个更大的分组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加小组件",
+        text: "长按主屏幕，轻点“编辑”，再轻点“添加小组件”，选择 WidgetLoft 并选好尺寸。锁定屏幕则长按后轻点“自定”。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加快速启动栏",
+        text: "在 WidgetLoft 中打开“设置”，进入“Dynamic Island & Live Activity”，打开“快速启动栏”并选择一个“文件夹”。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "WidgetLoft 小组件能在 iPhone Duo 上使用吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "WidgetLoft 的小组件是标准的 iOS 小组件，可在任何运行 iOS 18 或更高版本（包括 iOS 27）的 iPhone 上使用，而 iPhone Duo 出厂搭载 iOS 27.1。WidgetLoft 尚未在 Duo 上测试，也没有专为 Duo 设计的功能。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "内屏和外屏应该放不同的 App 吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "分开规划会更好用。外屏放一小组单手使用的 App，内屏放大尺寸小组件、“今天”视图和整页启动器。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iPhone Duo 的具体布局细节什么时候能确定？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iPhone Duo 于 2026年10月23日发售。一些布局细节要等大家真正拿到手机后才会更清楚，所以请把这份指南当作规划，到时再做调整。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何设置 iPhone Duo 主屏幕（内屏和外屏）
+
+**快速解答：** 把 iPhone Duo 当作两块分工不同的主屏幕来规划。5.4 英寸外屏用来单手快速打开 App，放一个小巧的启动器小组件或锁定屏幕小组件；7.6 英寸内屏用来放大尺寸小组件、“今天”视图，以及当作一页式启动器的超大小组件。一个 [WidgetLoft](/widgetloft)（原 FolderMini）分组在两块屏幕上都可以充当这个启动器。
+
+iPhone Duo 将于 2026年10月23日发售。在开始拖动图标之前，先想好什么放在哪里。
+
+---
+
+## iPhone Duo 的主屏幕有何不同
+
+iPhone Duo 是 Apple 首款折叠屏 iPhone。合上时使用 5.4 英寸外屏，展开后是长宽比相同的 7.6 英寸内屏。它出厂搭载 iOS 27.1。
+
+展开手机时，主屏幕会显示两页，左侧是“今天”视图（一个竖向滚动的小组件列表）。灵动岛竖着位于侧边，Split View 可以让两个 App 并排运行。
+
+由此可以得出一个简单的分工：外屏用来快速打开某个 App，内屏用来一次看到更多内容。关于挑选 App，请看 [iPhone Duo 外屏最佳 App](/blog/iphone-duo-cover-screen-apps)。
+
+## 分步操作：规划并搭建你的 iPhone Duo 主屏幕
+
+1. **规划外屏。** 列出合上手机时你单手打开的几个 App。小号小组件可放 9 个图块，锁定屏幕小组件一行最多放 4 个 App。
+2. **规划内屏。** 挑选你想放在左侧“今天”视图中的大尺寸小组件。iOS 27 还新增了能铺满整页主屏幕的超大小组件，所以想想要不要把其中一页做成启动器（使用小图标时最多 77 个图块）。
+3. **创建分组。** 在 [WidgetLoft](/widgetloft) 中为外屏创建一个精简分组，为内屏创建一个更大的分组。可在 App 内直接搜索 App Store 来添加 App。
+4. **添加小组件。** 长按主屏幕，轻点 **编辑**，再轻点 **添加小组件**，选择 WidgetLoft 并选好尺寸。锁定屏幕则长按它，轻点 **自定**，然后添加 WidgetLoft 小组件。
+5. **添加快速启动栏。** 在 WidgetLoft 中前往 **设置**，再进入 **Dynamic Island & Live Activity**，打开 **快速启动栏**（测试版）并选择一个 **文件夹**。锁定屏幕横幅最多可放 10 个 App。
+
+## 外屏与内屏：什么放在哪里
+
+| 屏幕 | 放什么 |
+| --- | --- |
+| 外屏主屏幕 | 一个小号或中号启动器，放你最常单手使用的 App |
+| 锁定屏幕 | 一个锁定屏幕小组件，放最多 4 个你最常打开的 App |
+| 内屏的“今天”视图 | 你喜欢滚动浏览的大尺寸信息类小组件 |
+| 内屏主屏幕 | 一个当作一页式启动器的超大小组件 |
+| 锁定屏幕横幅 | 最多放 10 个 App 的快速启动栏 |
+
+[WidgetLoft](/widgetloft) 的小组件是标准的 iOS 小组件，适用于任何运行 iOS 18 或更高版本（包括 iOS 27）的 iPhone，因此同一个分组在两块屏幕上都可以当作启动器。轻点主屏幕上的图块，App 就会直接打开，中间不经过快捷指令 App。WidgetLoft 尚未在 iPhone Duo 上测试，所以请把这些当作起步规划。
+
+## 常见问题
+
+**WidgetLoft 小组件能在 iPhone Duo 上使用吗？**
+它们是标准的 iOS 小组件，适用于任何运行 iOS 18 或更高版本（包括 iOS 27）的 iPhone，而 Duo 出厂搭载 iOS 27.1。WidgetLoft 尚未在 Duo 上测试，也没有专为 Duo 设计的功能。
+
+**内屏和外屏应该放不同的 App 吗？**
+分开规划会更好用：外屏放一小组单手使用的 App，内屏放大尺寸小组件和整页启动器。
+
+**iPhone Duo 的具体布局细节什么时候能确定？**
+iPhone Duo 于 2026年10月23日发售。一些布局细节要等大家真正拿到手机后才会更清楚，所以请把这份指南当作规划，到时再做调整。
+
+---
+
+准备好规划两块屏幕了吗？[前往 App Store 下载 WidgetLoft](/widgetloft/download)，为你的 iPhone Duo 搭建一个启动器分组。

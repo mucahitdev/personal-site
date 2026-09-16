@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Cómo abrir un sitio web en Chrome (o cualquier navegador) desde un widget del iPhone",
+  description:
+    "Los sitios web que añades a la pantalla de inicio del iPhone siempre se abren en Safari o en tu navegador predeterminado. Así puedes abrir un sitio en Chrome, Firefox, Brave o a pantalla completa directamente desde un widget, para todos los sitios o solo uno.",
+  keywords: [
+    "abrir sitio web en chrome desde pantalla de inicio iphone",
+    "widget iphone abrir enlace en chrome",
+    "añadir web a pantalla de inicio chrome iphone",
+    "acceso directo pantalla de inicio se abre en safari",
+    "widget de sitio web iphone elegir navegador",
+    "abrir web a pantalla completa desde widget iphone",
+  ],
+  ogTitle: "Abre un sitio web en Chrome desde un widget del iPhone",
+  ogDescription:
+    "Elige Chrome, Firefox, Brave o una vista a pantalla completa para los sitios web de tu widget, para todos o solo para uno.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "es",
+    headline:
+      "Cómo abrir un sitio web en Chrome (o cualquier navegador) desde un widget del iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/es/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "es",
+    name: "Abrir un sitio web en Chrome u otro navegador desde un widget del iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Añade el sitio web como mosaico",
+        text: "En WidgetLoft (antes FolderMini), ve a Biblioteca, toca Añadir mosaicos, elige Sitio web y pega la dirección. El icono y el nombre se rellenan solos.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ponlo en un widget",
+        text: "Añade el mosaico del sitio web a un grupo y luego añade el widget de WidgetLoft a tu pantalla de inicio.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Elige un navegador para todos los sitios web",
+        text: "Ve a Ajustes, Widget, Abrir sitios web y elige Chrome, Firefox, Brave u otro navegador, o Dentro de WidgetLoft para una vista a pantalla completa.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Cambia un solo sitio si quieres",
+        text: "Abre el mosaico del sitio web, toca Se abre en y elige otra opción solo para ese sitio, o deja Usar el ajuste general.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Añade un navegador propio si falta el tuyo",
+        text: "En Navegadores propios, toca Añadir navegador, escribe un nombre y un formato de dirección que contenga {url}, y toca Probar.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "es",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Por qué el sitio web de mi pantalla de inicio siempre se abre en Safari?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Un marcador creado con Añadir a pantalla de inicio de Safari se abre en Safari, y la mayoría de widgets de enlaces pasan la dirección a tu navegador predeterminado. Para usar otro navegador solo con esos enlaces necesitas un widget que te deje elegir, como WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué pasa si el navegador que elegí no está instalado?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "El sitio web se abre en tu navegador predeterminado, así que el mosaico nunca se queda sin hacer nada.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Tengo la sesión iniciada en los sitios web dentro de WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Las sesiones dentro del navegador de WidgetLoft son independientes de Safari, así que puede que tengas que iniciar sesión una vez allí. Si prefieres usar tus sesiones actuales, elige tu navegador habitual.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cómo abrir un sitio web en Chrome (o cualquier navegador) desde un widget del iPhone
+
+**Respuesta rápida:** los sitios web que añades a la pantalla de inicio del iPhone se abren en Safari o en tu navegador predeterminado, y no puedes cambiarlo enlace por enlace. Con [WidgetLoft](/widgetloft) (antes FolderMini) añades el sitio como mosaico de un widget y eliges Chrome, Firefox, Brave, otro navegador o una vista a pantalla completa en Ajustes → Widget → Abrir sitios web, para todos los sitios o solo para uno.
+
+Quizá Safari es tu navegador predeterminado, pero tu panel de trabajo vive en Chrome. Un solo toque en la pantalla de inicio debería llevarte al sitio correcto.
+
+---
+
+## Por qué los sitios web de la pantalla de inicio siempre se abren en Safari
+
+**Añadir a pantalla de inicio** de Safari crea un marcador que pertenece a Safari. La mayoría de widgets de enlaces acaban en el mismo lugar: pasan la dirección a tu **navegador predeterminado**.
+
+Cambiar el navegador predeterminado cambia cada enlace de cada app. Lo que sueles querer es algo más concreto: *este* sitio en Chrome y todo lo demás como siempre. Los mosaicos de sitio web de WidgetLoft hacen justo eso: un navegador para todos los sitios web y una excepción para cualquier sitio concreto.
+
+## Paso a paso: abrir un sitio web en Chrome desde un widget
+
+1. **Añade el sitio web como mosaico.** En [WidgetLoft](/widgetloft), ve a **Biblioteca** → **Añadir mosaicos** → **Sitio web** y pega la dirección. El icono y el nombre del sitio se rellenan solos.
+2. **Ponlo en un widget.** Añade el mosaico a un grupo y luego añade el widget de WidgetLoft a tu pantalla de inicio (mantén pulsada la pantalla de inicio, toca **+** y busca WidgetLoft).
+3. **Elige un navegador para todos los sitios web.** Ve a **Ajustes** → **Widget** → **Abrir sitios web** y elige Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha o Yandex. O elige **Dentro de WidgetLoft** para una vista a pantalla completa.
+4. **Cambia un solo sitio (opcional).** Abre el mosaico del sitio web, toca **Se abre en** y elige otra opción. Se aplica solo a ese sitio web. **Usar el ajuste general** lo devuelve a como estaba.
+5. **Añade un navegador propio (opcional).** ¿No está en la lista? Ve a **Navegadores propios** → **Añadir navegador**, ponle un nombre y un formato de dirección que contenga `{url}`, y toca **Probar**.
+
+## Qué opción elegir
+
+| Opción | Cuándo usarla |
+| --- | --- |
+| Navegador predeterminado | Te basta con el navegador que usa el resto del teléfono |
+| Un navegador elegido (Chrome, Firefox, Brave y más) | Tus marcadores, contraseñas o extensiones están en un navegador que no es el predeterminado |
+| Dentro de WidgetLoft | Quieres el sitio a pantalla completa sin pestañas, con un botón **Abrir en el navegador** cuando lo necesites |
+| Navegador propio | Tu navegador no está en la lista y conoces su formato de dirección |
+
+Puedes combinarlas como quieras. Deja el ajuste general de [WidgetLoft](/widgetloft) en tu navegador favorito y haz que un único sitio del banco o del trabajo se abra en otro lugar con **Se abre en**.
+
+## Qué esperar
+
+- **WidgetLoft se abre un momento primero** cuando eliges cualquier opción que no sea el navegador predeterminado. Con el navegador predeterminado, el sitio se abre directamente.
+- **Si el navegador elegido no está instalado**, el sitio se abre en tu navegador predeterminado.
+- **Las sesiones dentro del navegador de WidgetLoft son independientes de Safari**, así que puede que tengas que iniciar sesión una vez más allí.
+- **No es un modo de app web.** Dentro de WidgetLoft es una vista de navegador a pantalla completa, no una app web instalada por separado.
+- **También funciona desde la Dynamic Island.** Si usas la Barra de acceso rápido, los mosaicos de sitios web en la Dynamic Island y en el banner de la pantalla bloqueada se abren en el navegador que elegiste.
+
+Los sitios web conviven con tus apps en el mismo widget. Para los mosaicos de apps, consulta [cómo abrir apps desde un widget](/blog/launch-apps-from-widgets-ios).
+
+## Preguntas frecuentes
+
+**¿Por qué el sitio web de mi pantalla de inicio siempre se abre en Safari?**
+Un marcador creado con Añadir a pantalla de inicio de Safari se abre en Safari, y la mayoría de widgets de enlaces usan tu navegador predeterminado. Un mosaico de sitio web de [WidgetLoft](/widgetloft) te deja elegir el navegador.
+
+**¿Qué pasa si el navegador que elegí no está instalado?**
+El sitio web se abre en tu navegador predeterminado, así que el mosaico sigue funcionando.
+
+**¿Tengo la sesión iniciada en los sitios web dentro de WidgetLoft?**
+Las sesiones allí son independientes de Safari, así que puede que tengas que iniciar sesión una vez. ¿Prefieres tus sesiones actuales? Elige tu navegador habitual.
+
+---
+
+¿Listo para tener tus sitios a un toque, en el navegador que quieras? [Descarga WidgetLoft en la App Store](/widgetloft/download).

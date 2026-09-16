@@ -1,0 +1,157 @@
+export const meta = {
+  title: "What's New for Widgets in iOS 27 (and How to Use Them)",
+  description:
+    "iOS 27 adds an Extra Large widget that fills a full Home Screen page, a Notification trigger for Shortcuts automations and a compact Lock Screen clock. Here is what changed and how to use each one.",
+  keywords: [
+    "ios 27 widgets",
+    "ios 27 extra large widget",
+    "ios 27 new widget features",
+    "ios 27 lock screen compact clock",
+    "shortcuts notification trigger ios 27",
+    "ios 27 home screen widgets",
+  ],
+  ogTitle: "What's New for Widgets in iOS 27",
+  ogDescription:
+    "Extra Large widgets, notification automations and a compact Lock Screen clock, explained with simple steps.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline: "What's New for Widgets in iOS 27 (and How to Use Them)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Use the new iOS 27 widget features",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Update to iOS 27",
+        text: "Open Settings, General, Software Update and install iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add an Extra Large widget",
+        text: "Create a group of apps in WidgetLoft (formerly FolderMini), then long-press the Home Screen, tap +, search for WidgetLoft and choose the Extra Large size.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Set up one notification dot",
+        text: "In Shortcuts, go to Automation, Apps, Notification, pick the app, keep Automation on and Notify off, and add the WidgetLoft action Show Notification Dot for the same app.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Customize the Lock Screen",
+        text: "Long-press the Lock Screen, tap Customize, switch to the compact clock and add a WidgetLoft widget with up to 4 apps.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Which apps support the Extra Large widget in iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple's Calendar, Photos, Music and Weather support it, plus third-party apps. WidgetLoft supports it too and fits up to 77 apps with small icons on one full Home Screen page.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can iOS 27 widgets show notification counts?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not counts. With the new Shortcuts Notification trigger, WidgetLoft can show a dot on an app's tile. The dot clears when you open the app from the widget. Reading a notification only on the Lock Screen or Apple Watch does not clear it, and websites, Shortcuts tiles and contacts cannot have dots.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need iOS 27 to use WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. WidgetLoft works on iOS 18 and later. Only the Extra Large size and notification dots need iOS 27.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# What's New for Widgets in iOS 27 (and How to Use Them)
+
+**Quick answer:** iOS 27, released September 14, 2026, brings three widget-related changes: an Extra Large widget size that fills a full Home Screen page, a Notification trigger for Shortcuts automations, and a compact clock mode on the Lock Screen. App launcher widgets like [WidgetLoft](/widgetloft) (formerly FolderMini) use the first two: one Extra Large widget holds up to 77 apps, and tiles can show a dot when an app gets a notification.
+
+iOS 27 is not a widget overhaul, but its changes are practical. Here is what is new, what it means for app launcher widgets, and how to set it up.
+
+---
+
+## What changed for widgets in iOS 27
+
+**Extra Large widget size.** The new size fills a full Home Screen page, a 4×6 grid area. Apple's Calendar, Photos, Music and Weather support it, and third-party apps can support it too.
+
+**A Notification trigger in Shortcuts.** Shortcuts automations can now run when an app delivers a notification. That also lets widget apps react to your notifications.
+
+**Compact clock on the Lock Screen.** Compact clock mode shows a smaller time at the top, next to the date and your widgets.
+
+## What it means for app launcher widgets
+
+[WidgetLoft](/widgetloft) turns groups of apps into Home Screen and Lock Screen widgets, and a tap on a tile opens the app directly. iOS 27 adds two things to that:
+
+- **Extra Large holds up to 77 apps.** With small icons, one full-page widget fits 77 tiles (54 with medium icons, 40 with large, 24 with extra large). On iPad, the wide Extra Large holds up to 72.
+- **Notification dots on tiles.** WidgetLoft uses the new Notification trigger to put a dot on an app's tile when that app gets a notification. It is a dot, not a count, and it clears when you open the app from the widget.
+
+WidgetLoft 2.1.0 also adds two features that pair well with a big widget:
+
+- **Dark icons for every app.** Popular apps come with ready-made dark icons and Apple's apps use Apple's real dark icons. Apps you add by App Store search now get a dark icon made right on your phone. Nothing is uploaded.
+- **One-tap Dynamic Island.** With the Quick Launch bar turned on, apps in the Dynamic Island open in one tap, directly.
+
+## Step-by-step: use the new iOS 27 widget features
+
+1. **Update to iOS 27.** Open **Settings → General → Software Update** and install iOS 27.
+2. **Add an Extra Large widget.** In [WidgetLoft](/widgetloft), create a group in the **Groups** tab and add your apps. Then long-press the Home Screen, tap **+**, search for WidgetLoft and choose the Extra Large size.
+3. **Set up one notification dot.** In WidgetLoft, open **Settings → Notification Dots**. In Shortcuts, go to **Automation → Apps → Notification**, pick the app, keep Automation on and Notify off, and add the WidgetLoft action **Show Notification Dot** for the same app. It takes about a minute per app.
+4. **Customize the Lock Screen.** Long-press the Lock Screen, tap **Customize**, switch to the compact clock, and add a WidgetLoft widget with one row of up to 4 apps (3 with large icons).
+
+## iOS 27 widget changes at a glance
+
+| iOS 27 change | What you can do with it |
+| --- | --- |
+| Extra Large widget size | Put up to 77 apps on one Home Screen page with WidgetLoft |
+| Calendar, Photos, Music and Weather support Extra Large | Give a full page to the Apple app you check most |
+| Shortcuts Notification trigger | Show a dot on a WidgetLoft tile when that app gets a notification |
+| Lock Screen compact clock | Keep the time small next to your widgets, including a row of your top apps |
+
+Apple's widgets mostly show information. [WidgetLoft](/widgetloft) uses the same new size and trigger to open your apps, and it still works on iOS 18 and later. For the full dot setup, read our guide to [notification badges on widgets](/blog/notification-badges-on-widgets-iphone).
+
+## Common questions
+
+**Which apps support the Extra Large widget in iOS 27?**
+Calendar, Photos, Music and Weather, plus third-party apps. WidgetLoft fits up to 77 apps in one.
+
+**Can iOS 27 widgets show notification counts?**
+Not counts. WidgetLoft shows a dot, which clears when you open the app from the widget. Reading a notification only on the Lock Screen or Apple Watch does not clear it, and websites, Shortcuts tiles and contacts cannot have dots.
+
+**Do I need iOS 27 to use WidgetLoft?**
+No. WidgetLoft works on iOS 18 and later. Only the Extra Large size and notification dots need iOS 27.
+
+---
+
+Ready to fill a full page with your apps? [Download WidgetLoft on the App Store](/widgetloft/download) and get the most out of iOS 27 widgets.

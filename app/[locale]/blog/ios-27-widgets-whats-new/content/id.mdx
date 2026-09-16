@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Apa yang Baru untuk Widget di iOS 27 (dan Cara Menggunakannya)",
+  description:
+    "iOS 27 menambahkan widget Ekstra Besar yang memenuhi satu halaman penuh Layar Utama, pemicu Notifikasi untuk otomatisasi Pintasan, dan jam ringkas di Layar Terkunci. Ini yang berubah dan cara memakai masing-masing.",
+  keywords: [
+    "widget ios 27",
+    "widget ekstra besar ios 27",
+    "fitur widget baru ios 27",
+    "jam ringkas layar terkunci ios 27",
+    "otomatisasi pintasan notifikasi ios 27",
+    "widget layar utama ios 27",
+  ],
+  ogTitle: "Apa yang Baru untuk Widget di iOS 27",
+  ogDescription:
+    "Widget Ekstra Besar, otomatisasi notifikasi, dan jam ringkas di Layar Terkunci, dijelaskan langkah demi langkah.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "id",
+    headline: "Apa yang Baru untuk Widget di iOS 27 (dan Cara Menggunakannya)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/id/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "id",
+    name: "Menggunakan fitur widget baru di iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Perbarui ke iOS 27",
+        text: "Buka Pengaturan, Umum, Pemutakhiran Perangkat Lunak, lalu instal iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tambahkan widget Ekstra Besar",
+        text: "Buat grup app di WidgetLoft (sebelumnya FolderMini), lalu tekan lama Layar Utama, ketuk +, cari WidgetLoft, dan pilih ukuran Ekstra Besar.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Atur satu titik notifikasi",
+        text: "Di Pintasan, buka Otomatisasi, App, Notifikasi, pilih app, biarkan Otomatisasi menyala dan Beri Tahu mati, lalu tambahkan tindakan WidgetLoft Tampilkan Titik Notifikasi untuk app yang sama.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Sesuaikan Layar Terkunci",
+        text: "Tekan lama Layar Terkunci, ketuk Sesuaikan, beralih ke jam ringkas, dan tambahkan widget WidgetLoft berisi hingga 4 app.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "id",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "App apa saja yang mendukung widget Ekstra Besar di iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Kalender, Foto, Musik, dan Cuaca dari Apple mendukungnya, begitu juga app pihak ketiga. WidgetLoft juga mendukungnya dan dengan ikon kecil memuat hingga 77 app dalam satu halaman penuh Layar Utama.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bisakah widget iOS 27 menampilkan jumlah notifikasi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tidak dalam bentuk angka. Dengan pemicu Notifikasi baru di Pintasan, WidgetLoft bisa menampilkan titik di ubin sebuah app. Titik hilang saat kamu membuka app dari widget. Membaca notifikasi hanya di Layar Terkunci atau Apple Watch tidak menghapusnya, dan situs web, ubin Pintasan, serta kontak tidak bisa punya titik.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apakah saya perlu iOS 27 untuk memakai WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tidak. WidgetLoft berjalan di iOS 18 dan yang lebih baru. Hanya ukuran Ekstra Besar dan titik notifikasi yang memerlukan iOS 27.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Apa yang Baru untuk Widget di iOS 27 (dan Cara Menggunakannya)
+
+**Jawaban singkat:** iOS 27, yang dirilis pada 14 September 2026, membawa tiga perubahan terkait widget: ukuran widget Ekstra Besar yang memenuhi satu halaman penuh Layar Utama, pemicu Notifikasi untuk otomatisasi Pintasan, dan mode jam ringkas di Layar Terkunci. Widget peluncur app seperti [WidgetLoft](/widgetloft) (sebelumnya FolderMini) memanfaatkan dua yang pertama: satu widget Ekstra Besar memuat hingga 77 app, dan ubin bisa menampilkan titik saat sebuah app menerima notifikasi.
+
+iOS 27 tidak merombak widget, tetapi perubahannya praktis. Berikut apa yang baru, artinya bagi widget peluncur app, dan cara mengaturnya.
+
+---
+
+## Apa yang berubah untuk widget di iOS 27
+
+**Ukuran widget Ekstra Besar.** Ukuran baru ini memenuhi satu halaman penuh Layar Utama, yaitu area grid 4×6. Kalender, Foto, Musik, dan Cuaca dari Apple mendukungnya, dan app pihak ketiga juga bisa mendukungnya.
+
+**Pemicu Notifikasi di Pintasan.** Otomatisasi Pintasan kini bisa berjalan saat sebuah app mengirim notifikasi. Ini juga memungkinkan app widget bereaksi terhadap notifikasimu.
+
+**Jam ringkas di Layar Terkunci.** Mode jam ringkas menampilkan waktu lebih kecil di bagian atas, di samping tanggal dan widget-mu.
+
+## Artinya bagi widget peluncur app
+
+[WidgetLoft](/widgetloft) mengubah grup app menjadi widget Layar Utama dan Layar Terkunci, dan mengetuk ubin langsung membuka app-nya. iOS 27 menambahkan dua hal:
+
+- **Ekstra Besar memuat hingga 77 app.** Dengan ikon kecil, satu widget satu halaman memuat 77 ubin (54 dengan ikon sedang, 40 dengan ikon besar, 24 dengan ikon ekstra besar). Di iPad, Ekstra Besar versi lebar memuat hingga 72.
+- **Titik notifikasi di ubin.** WidgetLoft memakai pemicu Notifikasi baru untuk memberi titik pada ubin sebuah app saat app itu menerima notifikasi. Ini titik, bukan angka, dan hilang saat kamu membuka app dari widget.
+
+WidgetLoft 2.1.0 juga menambahkan dua fitur yang cocok dengan widget besar:
+
+- **Ikon gelap untuk setiap app.** App populer hadir dengan ikon gelap siap pakai, dan app Apple memakai ikon gelap asli dari Apple. App yang kamu tambahkan lewat pencarian App Store kini mendapat ikon gelap yang dibuat langsung di ponselmu. Tidak ada yang diunggah.
+- **Dynamic Island sekali ketuk.** Dengan bilah Peluncuran Cepat menyala, app di Dynamic Island terbuka dengan sekali ketuk, langsung.
+
+## Langkah demi langkah: gunakan fitur widget baru di iOS 27
+
+1. **Perbarui ke iOS 27.** Buka **Pengaturan → Umum → Pemutakhiran Perangkat Lunak** dan instal iOS 27.
+2. **Tambahkan widget Ekstra Besar.** Di [WidgetLoft](/widgetloft), buat grup di tab **Grup** dan tambahkan app-mu. Lalu tekan lama Layar Utama, ketuk **+**, cari WidgetLoft, dan pilih ukuran Ekstra Besar.
+3. **Atur satu titik notifikasi.** Di WidgetLoft, buka **Pengaturan → Titik Notifikasi**. Di Pintasan, buka **Otomatisasi → App → Notifikasi**, pilih app, biarkan Otomatisasi menyala dan Beri Tahu mati, lalu tambahkan tindakan WidgetLoft **Tampilkan Titik Notifikasi** untuk app yang sama. Butuh sekitar satu menit per app.
+4. **Sesuaikan Layar Terkunci.** Tekan lama Layar Terkunci, ketuk **Sesuaikan**, beralih ke jam ringkas, dan tambahkan widget WidgetLoft dengan satu baris berisi hingga 4 app (3 dengan ikon besar).
+
+## Perubahan widget iOS 27 sekilas
+
+| Perubahan iOS 27 | Yang bisa kamu lakukan |
+| --- | --- |
+| Ukuran widget Ekstra Besar | Menaruh hingga 77 app di satu halaman Layar Utama dengan WidgetLoft |
+| Kalender, Foto, Musik, dan Cuaca mendukung Ekstra Besar | Memberi satu halaman penuh untuk app Apple yang paling sering kamu lihat |
+| Pemicu Notifikasi di Pintasan | Menampilkan titik di ubin WidgetLoft saat app itu menerima notifikasi |
+| Jam ringkas di Layar Terkunci | Membuat waktu tetap kecil di samping widget, termasuk satu baris app favoritmu |
+
+Widget Apple sebagian besar menampilkan informasi. [WidgetLoft](/widgetloft) memakai ukuran dan pemicu baru yang sama untuk membuka app-mu, dan tetap berjalan di iOS 18 dan yang lebih baru. Untuk pengaturan titik selengkapnya, baca panduan kami tentang [lencana notifikasi di widget](/blog/notification-badges-on-widgets-iphone).
+
+## Pertanyaan umum
+
+**App apa saja yang mendukung widget Ekstra Besar di iOS 27?**
+Kalender, Foto, Musik, dan Cuaca, ditambah app pihak ketiga. WidgetLoft memuat hingga 77 app dalam satu widget.
+
+**Bisakah widget iOS 27 menampilkan jumlah notifikasi?**
+Tidak dalam bentuk angka. WidgetLoft menampilkan titik yang hilang saat kamu membuka app dari widget. Membaca notifikasi hanya di Layar Terkunci atau Apple Watch tidak menghapusnya, dan situs web, ubin Pintasan, serta kontak tidak bisa punya titik.
+
+**Apakah saya perlu iOS 27 untuk memakai WidgetLoft?**
+Tidak. WidgetLoft berjalan di iOS 18 dan yang lebih baru. Hanya ukuran Ekstra Besar dan titik notifikasi yang memerlukan iOS 27.
+
+---
+
+Siap memenuhi satu halaman penuh dengan app-mu? [Unduh WidgetLoft di App Store](/widgetloft/download) dan manfaatkan widget iOS 27 sepenuhnya.

@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "Cara Mengatur Layar Terkunci iOS 27 yang Rapi (Jam Ringkas dan Aplikasi Sekali Ketuk)",
+  description:
+    "Atur Layar Terkunci iOS 27 yang rapi: pilih wallpaper, nyalakan jam ringkas, lalu tambahkan aplikasi dengan widget Layar Terkunci WidgetLoft dan Bilah Peluncuran Cepat.",
+  keywords: [
+    "layar terkunci ios 27",
+    "jam ringkas ios 27",
+    "sesuaikan layar terkunci ios 27",
+    "peluncur aplikasi layar terkunci iphone",
+    "buka aplikasi dari layar terkunci iphone",
+    "widget aplikasi layar terkunci iphone",
+  ],
+  ogTitle: "Layar Terkunci iOS 27 yang Rapi dengan Aplikasi Sekali Ketuk",
+  ogDescription:
+    "Jam ringkas, wallpaper layar penuh, dan aplikasi favorit Anda sekali ketuk di Layar Terkunci iOS 27.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "id",
+    headline:
+      "Cara Mengatur Layar Terkunci iOS 27 yang Rapi (Jam Ringkas dan Aplikasi Sekali Ketuk)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/id/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "id",
+    name: "Atur Layar Terkunci iOS 27 yang rapi dengan aplikasi sekali ketuk",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Pilih wallpaper",
+        text: "Tekan lama Layar Terkunci, ketuk Sesuaikan, lalu pilih foto. Jika foto tidak memenuhi layar, biarkan fitur perluasan wallpaper di iOS 27 memperluasnya.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Nyalakan jam ringkas",
+        text: "Di editor yang sama, pilih opsi jam ringkas agar waktu pindah ke atas di samping tanggal dan widget Anda.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tambahkan widget Layar Terkunci WidgetLoft",
+        text: "Buat grup berisi aplikasi utama Anda di WidgetLoft (sebelumnya FolderMini), lalu tambahkan widget WidgetLoft di editor Layar Terkunci dan pilih grup itu. Widget menampilkan satu baris hingga 4 aplikasi.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Nyalakan Bilah Peluncuran Cepat",
+        text: "Di WidgetLoft, buka Pengaturan, lalu Dynamic Island & Aktivitas Langsung, dan nyalakan Bilah Peluncuran Cepat. Aktivitas Langsung harus diizinkan untuk WidgetLoft di Pengaturan iOS.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pilih grup",
+        text: "Di Folder, pilih grup yang ingin ditampilkan. Hingga 10 aplikasi muncul di Layar Terkunci dan hingga 5 di Dynamic Island.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "id",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Bisakah saya membuka aplikasi dari Layar Terkunci tanpa membuka kunci?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tidak. Di Layar Terkunci, widget WidgetLoft dan Bilah Peluncuran Cepat sama-sama meminta Anda membuka kunci dulu, misalnya dengan Face ID, lalu membuka aplikasinya. WidgetLoft mungkin tampil sesaat di tengah jalan. Di Dynamic Island, aplikasi terbuka dengan sekali ketuk.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Mengapa Bilah Peluncuran Cepat hilang dari Layar Terkunci saya?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS mengakhiri Aktivitas Langsung setelah beberapa jam. WidgetLoft memulai bilah itu lagi setiap kali Anda membuka aplikasinya. Jika tidak pernah muncul, pastikan Aktivitas Langsung diizinkan untuk WidgetLoft di Pengaturan iOS.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apakah saya perlu iOS 27 untuk pengaturan ini?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hanya untuk jam ringkas dan perluasan wallpaper, karena keduanya fitur iOS 27. WidgetLoft sendiri berjalan di iOS 18 dan yang lebih baru. Perlu diingat, widget Layar Terkunci hanya menampilkan aplikasi tingkat teratas, jadi folder di dalam grup tidak muncul di sana.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cara Mengatur Layar Terkunci iOS 27 yang Rapi (Jam Ringkas dan Aplikasi Sekali Ketuk)
+
+**Jawaban singkat:** Tekan lama Layar Terkunci, ketuk **Sesuaikan**, pilih wallpaper, dan nyalakan opsi jam ringkas iOS 27 agar waktu memakan lebih sedikit ruang. Lalu tambahkan aplikasi Anda: widget Layar Terkunci [WidgetLoft](/widgetloft) (sebelumnya FolderMini) memuat satu baris hingga 4 aplikasi, dan Bilah Peluncuran Cepatnya menaruh hingga 10 aplikasi di Layar Terkunci.
+
+iOS 27 memberi Layar Terkunci lebih banyak ruang lega. Cara terbaik memakai ruang itu adalah untuk aplikasi yang benar-benar Anda buka, bukan sekadar jam yang lebih besar.
+
+---
+
+## Apa yang diubah iOS 27 di Layar Terkunci
+
+Ada dua perubahan di iOS 27 yang penting untuk tampilan yang rapi:
+
+- **Jam ringkas.** Waktu menjadi lebih kecil dan berada di atas, di samping tanggal dan widget Anda, alih-alih memenuhi bagian tengah layar.
+- **Perluasan wallpaper.** iOS dapat memperluas foto agar memenuhi seluruh Layar Terkunci, berguna untuk gambar yang ukurannya kurang pas.
+
+Yang masih belum diberikan iOS adalah deretan aplikasi yang bisa dibuka dengan sekali ketuk. Widget Layar Terkunci standar menampilkan informasi, bukan membuka aplikasi lain. Celah inilah yang diisi [WidgetLoft](/widgetloft) dengan dua alat: widget Layar Terkunci yang selalu ada, dan Bilah Peluncuran Cepat, sebuah Aktivitas Langsung dengan daftar aplikasi yang lebih panjang.
+
+## Langkah demi langkah: atur Layar Terkunci iOS 27 yang rapi
+
+1. **Pilih wallpaper.** Tekan lama Layar Terkunci, ketuk **Sesuaikan**, lalu pilih foto. Jika tidak memenuhi layar, biarkan perluasan wallpaper iOS 27 memperluasnya.
+2. **Nyalakan jam ringkas.** Di editor yang sama, pilih opsi jam ringkas. Waktu pindah ke atas, di samping tanggal dan widget Anda.
+3. **Tambahkan widget Layar Terkunci WidgetLoft.** Di WidgetLoft, buat grup berisi aplikasi utama Anda. Kembali ke editor Layar Terkunci, tambahkan widget **WidgetLoft** dan pilih grup itu. Widget menampilkan satu baris hingga 4 aplikasi (3 dengan ikon besar).
+4. **Nyalakan Bilah Peluncuran Cepat.** Buka WidgetLoft, masuk ke **Pengaturan → Dynamic Island & Aktivitas Langsung**, dan nyalakan **Bilah Peluncuran Cepat** (Beta).
+5. **Pilih grup.** Di **Folder**, pilih grup yang Anda inginkan. Hingga 10 aplikasi muncul di banner Layar Terkunci, dan hingga 5 di Dynamic Island.
+
+## Widget Layar Terkunci vs Bilah Peluncuran Cepat
+
+| | Widget Layar Terkunci | Bilah Peluncuran Cepat |
+| --- | --- | --- |
+| Aplikasi | Satu baris hingga 4 (3 dengan ikon besar) | Hingga 10 di Layar Terkunci, hingga 5 di Dynamic Island |
+| Kapan terlihat | Selalu, sebagai bagian dari Layar Terkunci | Selama beberapa jam setelah Anda membuka WidgetLoft |
+| Ketuk di Layar Terkunci | Buka kunci dulu, lalu aplikasi terbuka | Buka kunci dengan Face ID dulu, lalu aplikasi terbuka |
+| Dynamic Island | Tidak termasuk | Tekan lama island, lalu ketuk aplikasi untuk membukanya sekali ketuk |
+
+Anda tidak harus memilih. Taruh 4 aplikasi yang Anda buka sepanjang hari di widget, dan gunakan Bilah Peluncuran Cepat untuk daftar lebih panjang yang ingin Anda dekatkan untuk sementara. Untuk sisi island, baca [cara menaruh aplikasi di Dynamic Island](/blog/apps-in-dynamic-island-iphone).
+
+## Pertanyaan umum
+
+**Bisakah saya membuka aplikasi dari Layar Terkunci tanpa membuka kunci?**
+Tidak. Di Layar Terkunci, widget dan Bilah Peluncuran Cepat sama-sama meminta Anda membuka kunci dulu (misalnya dengan Face ID), lalu membuka aplikasinya. WidgetLoft mungkin tampil sesaat di tengah jalan. Di Dynamic Island, aplikasi terbuka dengan sekali ketuk.
+
+**Mengapa Bilah Peluncuran Cepat hilang dari Layar Terkunci saya?**
+iOS mengakhiri Aktivitas Langsung setelah beberapa jam. WidgetLoft memulai bilah itu lagi setiap kali Anda membuka aplikasinya. Jika tidak pernah muncul, pastikan Aktivitas Langsung diizinkan untuk WidgetLoft di Pengaturan iOS.
+
+**Apakah saya perlu iOS 27 untuk pengaturan ini?**
+Hanya untuk jam ringkas dan perluasan wallpaper. [WidgetLoft](/widgetloft) sendiri berjalan di iOS 18 dan yang lebih baru. Satu batasan yang perlu diketahui: widget Layar Terkunci hanya menampilkan aplikasi tingkat teratas, jadi folder di dalam grup tidak muncul di sana.
+
+---
+
+Siap untuk Layar Terkunci yang lebih rapi? [Unduh WidgetLoft di App Store](/widgetloft/download) dan jadikan aplikasi utama Anda sekali ketuk saja.

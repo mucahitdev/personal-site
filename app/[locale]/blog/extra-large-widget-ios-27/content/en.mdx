@@ -1,0 +1,161 @@
+export const meta = {
+  title:
+    "How to Use the iOS 27 Extra Large Widget as a One-Page App Launcher",
+  description:
+    "iOS 27 adds an Extra Large widget that fills a whole Home Screen page. Learn how to add it, which Apple apps support it, and how to turn it into a launcher with up to 77 app tiles.",
+  keywords: [
+    "ios 27 extra large widget",
+    "extra large widget iphone",
+    "full page widget ios 27",
+    "how to add extra large widget",
+    "ios 27 app launcher widget",
+    "one page home screen iphone",
+  ],
+  ogTitle: "The iOS 27 Extra Large Widget as a One-Page Launcher",
+  ogDescription:
+    "Add the new full-page widget and fill it with up to 77 apps, folders and a back tile.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "How to Use the iOS 27 Extra Large Widget as a One-Page App Launcher",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/extra-large-widget-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Turn the iOS 27 Extra Large widget into a one-page app launcher",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Update to iOS 27",
+        text: "The Extra Large widget size only exists on iOS 27, so update your iPhone first in Settings, General, Software Update.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Build a group in WidgetLoft",
+        text: "Open WidgetLoft (formerly FolderMini), create a group and add the apps you want on your launcher page. Add sub-folders if you want more than one page of apps.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add the widget in the Extra Large size",
+        text: "Long-press the Home Screen, tap Edit, then Add Widget. Choose WidgetLoft and swipe through the sizes until you reach Extra Large, then add it.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pick your group",
+        text: "Long-press the new widget, tap Edit Widget and choose the group you built.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choose an icon size",
+        text: "Back in WidgetLoft, pick an icon size for the group: small icons fit up to 77 tiles, medium 54, large 40 and extra large 24.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Does the Extra Large widget work on iOS 26 or earlier?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. The Extra Large size is new in iOS 27 and does not appear in the widget gallery on older versions. On iOS 18 to 26 the biggest WidgetLoft widget is Large, with up to 49 tiles.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many apps fit in the Extra Large widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "With WidgetLoft, up to 77 tiles with small icons, 54 with medium icons, 40 with large icons and 24 with extra large icons. Sub-folders add more apps behind a single tile.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I use an Extra Large widget on the Lock Screen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Extra Large is a Home Screen size. The WidgetLoft Lock Screen widget stays one row of up to 4 apps, or 3 with large icons.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Use the iOS 27 Extra Large Widget as a One-Page App Launcher
+
+**Quick answer:** iOS 27 adds an Extra Large widget that fills a full Home Screen page. To add it, long-press the Home Screen, tap Edit, then Add Widget, pick an app and swipe to the Extra Large size. With [WidgetLoft](/widgetloft) (formerly FolderMini) that page becomes a launcher with up to 77 app tiles, plus sub-folders and a back tile.
+
+A whole page used to mean rows of loose icons. Now it can be one widget that holds your apps in a tidy grid you design yourself.
+
+---
+
+## What is the Extra Large widget in iOS 27?
+
+Extra Large is a new widget size that covers a full Home Screen page, a 4×6 grid area. It exists only on iOS 27, released on September 14, 2026.
+
+Apple's own apps were first in line: Calendar, Photos, Music and Weather all offer an Extra Large widget, and third-party apps can support it too. For a launcher, it means room for a lot of apps. If you want the full list of widget changes, read [what's new in iOS 27 widgets](/blog/ios-27-widgets-whats-new).
+
+## Step-by-step: turn the Extra Large widget into a launcher
+
+1. **Update to iOS 27.** Go to Settings, General, Software Update. The Extra Large size does not exist on older versions.
+2. **Build a group in WidgetLoft.** Open [WidgetLoft](/widgetloft), create a group and add the apps you want on your launcher page. Tap **New Folder** for anything you want one level down.
+3. **Add the widget in the Extra Large size.** Long-press the Home Screen, tap **Edit**, then **Add Widget**. Choose WidgetLoft and swipe through the sizes until you reach Extra Large, then add it.
+4. **Pick your group.** Long-press the new widget, tap **Edit Widget** and choose the group you built.
+5. **Choose an icon size.** Back in WidgetLoft, pick the icon size for the group. Small icons fit the most tiles, extra large icons are the easiest to hit.
+
+Tap any tile and that app opens directly. Tap a folder tile and it opens in place on the widget, with a back tile to go up one level.
+
+## How many apps fit in each widget size
+
+| Widget size | Max tiles (small icons) |
+| --- | --- |
+| Small | 9 |
+| Medium | 21 |
+| Large | 49 |
+| Extra Large (iOS 27) | 77 |
+
+Bigger icons trade capacity for comfort. In the Extra Large widget, medium icons fit 54 tiles, large icons 40 and extra large icons 24. On iPad, the wide Extra Large size holds up to 72. [WidgetLoft](/widgetloft) fills every slot with real app icons, and you can drop in websites, contacts, Shortcuts tiles or blank spacers to shape the layout.
+
+## Sub-folders and the back tile on a full page
+
+You do not have to spend all 77 tiles on single apps. Put games, travel apps or work tools into sub-folders. Each folder holds up to 100 apps and 20 sub-folders, and nesting has no depth limit. The back tile can be restyled and moved to any slot.
+
+If you want the widget to reset itself, turn on **Auto-return to folder** in Settings, Widget.
+
+A quick honest note: the free version of WidgetLoft holds up to 21 library apps. To fill a full page, WidgetLoft Pro removes that limit.
+
+## Common questions
+
+**Does the Extra Large widget work on iOS 26 or earlier?**
+No. It is new in iOS 27. On iOS 18 to 26 the biggest WidgetLoft widget is Large, with up to 49 tiles.
+
+**How many apps fit in the Extra Large widget?**
+Up to 77 tiles with small icons, 54 with medium, 40 with large and 24 with extra large icons. Sub-folders add more apps behind a single tile.
+
+**Can I use an Extra Large widget on the Lock Screen?**
+No. Extra Large is a Home Screen size. The WidgetLoft Lock Screen widget stays one row of up to 4 apps, or 3 with large icons.
+
+---
+
+Ready to build your one-page launcher? [Download WidgetLoft on the App Store](/widgetloft/download) and fill your Extra Large widget.

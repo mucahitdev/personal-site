@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Les nouveautés des widgets dans iOS 27 (et comment les utiliser)",
+  description:
+    "iOS 27 ajoute un widget Très grand qui remplit une page entière de l'écran d'accueil, un déclencheur Notification pour les automatisations Raccourcis et une horloge compacte sur l'écran verrouillé. Voici ce qui change et comment s'en servir.",
+  keywords: [
+    "widgets ios 27",
+    "widget très grand ios 27",
+    "nouveautés widgets ios 27",
+    "horloge compacte écran verrouillé ios 27",
+    "raccourcis automatisation notification ios 27",
+    "widgets écran d'accueil ios 27",
+  ],
+  ogTitle: "Les nouveautés des widgets dans iOS 27",
+  ogDescription:
+    "Widgets Très grands, automatisations sur notification et horloge compacte sur l'écran verrouillé, expliqués étape par étape.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline: "Les nouveautés des widgets dans iOS 27 (et comment les utiliser)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/fr/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Utiliser les nouvelles fonctions de widgets d'iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Passer à iOS 27",
+        text: "Ouvrez Réglages, Général, Mise à jour logicielle et installez iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajouter un widget Très grand",
+        text: "Créez un groupe d'apps dans WidgetLoft (anciennement FolderMini), puis touchez longuement l'écran d'accueil, touchez +, cherchez WidgetLoft et choisissez la taille Très grand.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Configurer un point de notification",
+        text: "Dans Raccourcis, allez dans Automatisation, Apps, Notification, choisissez l'app, laissez Automatisation activée et Notifier désactivé, puis ajoutez l'action WidgetLoft Afficher la pastille de notification pour la même app.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Personnaliser l'écran verrouillé",
+        text: "Touchez longuement l'écran verrouillé, touchez Personnaliser, passez à l'horloge compacte et ajoutez un widget WidgetLoft avec jusqu'à 4 apps.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Quelles apps prennent en charge le widget Très grand dans iOS 27 ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Calendrier, Photos, Musique et Météo d'Apple le prennent en charge, ainsi que des apps tierces. WidgetLoft aussi, avec jusqu'à 77 apps en petites icônes sur une page entière de l'écran d'accueil.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Les widgets d'iOS 27 peuvent-ils afficher le nombre de notifications ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pas de nombre. Grâce au nouveau déclencheur Notification de Raccourcis, WidgetLoft peut afficher un point sur la tuile d'une app. Le point disparaît quand vous ouvrez l'app depuis le widget. Lire une notification uniquement sur l'écran verrouillé ou l'Apple Watch ne l'efface pas, et les sites web, les tuiles Raccourcis et les contacts ne peuvent pas avoir de point.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Faut-il iOS 27 pour utiliser WidgetLoft ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non. WidgetLoft fonctionne sous iOS 18 et versions ultérieures. Seuls la taille Très grand et les points de notification nécessitent iOS 27.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Les nouveautés des widgets dans iOS 27 (et comment les utiliser)
+
+**Réponse rapide :** iOS 27, sorti le 14 septembre 2026, apporte trois changements liés aux widgets : une taille Très grand qui remplit une page entière de l'écran d'accueil, un déclencheur Notification pour les automatisations Raccourcis et un mode horloge compacte sur l'écran verrouillé. Les widgets lanceurs d'apps comme [WidgetLoft](/widgetloft) (anciennement FolderMini) exploitent les deux premiers : un seul widget Très grand contient jusqu'à 77 apps, et les tuiles peuvent afficher un point quand une app reçoit une notification.
+
+iOS 27 ne réinvente pas les widgets, mais ses changements sont concrets. Voici ce qui est nouveau, ce que cela change pour les widgets lanceurs d'apps et comment tout configurer.
+
+---
+
+## Ce qui change pour les widgets dans iOS 27
+
+**Taille de widget Très grand.** La nouvelle taille remplit une page entière de l'écran d'accueil, soit une zone de grille 4×6. Calendrier, Photos, Musique et Météo d'Apple la prennent en charge, et les apps tierces peuvent aussi le faire.
+
+**Un déclencheur Notification dans Raccourcis.** Les automatisations Raccourcis peuvent désormais se lancer quand une app envoie une notification. Cela permet aussi aux apps de widgets de réagir à vos notifications.
+
+**Horloge compacte sur l'écran verrouillé.** Le mode horloge compacte affiche l'heure en plus petit en haut, à côté de la date et de vos widgets.
+
+## Ce que cela change pour les widgets lanceurs d'apps
+
+[WidgetLoft](/widgetloft) transforme des groupes d'apps en widgets pour l'écran d'accueil et l'écran verrouillé, et toucher une tuile ouvre l'app directement. iOS 27 y ajoute deux choses :
+
+- **Très grand contient jusqu'à 77 apps.** Avec de petites icônes, un widget pleine page accueille 77 tuiles (54 avec des icônes moyennes, 40 avec des grandes, 24 avec des très grandes). Sur iPad, le Très grand large contient jusqu'à 72 apps.
+- **Des points de notification sur les tuiles.** WidgetLoft utilise le nouveau déclencheur Notification pour poser un point sur la tuile d'une app quand cette app reçoit une notification. C'est un point, pas un nombre, et il disparaît quand vous ouvrez l'app depuis le widget.
+
+WidgetLoft 2.1.0 ajoute aussi deux fonctions qui vont bien avec un grand widget :
+
+- **Des icônes sombres pour toutes les apps.** Les apps populaires ont des icônes sombres prêtes à l'emploi et les apps d'Apple utilisent les vraies icônes sombres d'Apple. Les apps ajoutées via la recherche App Store reçoivent désormais une icône sombre créée directement sur votre téléphone. Rien n'est envoyé.
+- **La Dynamic Island en un toucher.** Avec la barre de lancement rapide activée, les apps de la Dynamic Island s'ouvrent en un toucher, directement.
+
+## Étape par étape : utiliser les nouvelles fonctions de widgets d'iOS 27
+
+1. **Passez à iOS 27.** Ouvrez **Réglages → Général → Mise à jour logicielle** et installez iOS 27.
+2. **Ajoutez un widget Très grand.** Dans [WidgetLoft](/widgetloft), créez un groupe dans l'onglet **Groupes** et ajoutez vos apps. Touchez ensuite longuement l'écran d'accueil, touchez **+**, cherchez WidgetLoft et choisissez la taille Très grand.
+3. **Configurez un point de notification.** Dans WidgetLoft, ouvrez **Réglages → Points de notification**. Dans Raccourcis, allez dans **Automatisation → Apps → Notification**, choisissez l'app, laissez Automatisation activée et Notifier désactivé, puis ajoutez l'action WidgetLoft **Afficher la pastille de notification** pour la même app. Comptez environ une minute par app.
+4. **Personnalisez l'écran verrouillé.** Touchez longuement l'écran verrouillé, touchez **Personnaliser**, passez à l'horloge compacte et ajoutez un widget WidgetLoft avec une rangée de jusqu'à 4 apps (3 avec de grandes icônes).
+
+## Les changements de widgets d'iOS 27 en un coup d'œil
+
+| Changement d'iOS 27 | Ce que vous pouvez en faire |
+| --- | --- |
+| Taille de widget Très grand | Placer jusqu'à 77 apps sur une page de l'écran d'accueil avec WidgetLoft |
+| Calendrier, Photos, Musique et Météo prennent en charge Très grand | Consacrer une page entière à l'app Apple que vous consultez le plus |
+| Déclencheur Notification de Raccourcis | Afficher un point sur une tuile WidgetLoft quand cette app reçoit une notification |
+| Horloge compacte sur l'écran verrouillé | Garder l'heure petite à côté de vos widgets, dont une rangée de vos apps préférées |
+
+Les widgets d'Apple affichent surtout des informations. [WidgetLoft](/widgetloft) utilise la même nouvelle taille et le même déclencheur pour ouvrir vos apps, et fonctionne toujours sous iOS 18 et versions ultérieures. Pour la configuration complète des points, lisez notre guide sur les [pastilles de notification sur les widgets](/blog/notification-badges-on-widgets-iphone).
+
+## Questions fréquentes
+
+**Quelles apps prennent en charge le widget Très grand dans iOS 27 ?**
+Calendrier, Photos, Musique et Météo, ainsi que des apps tierces. WidgetLoft y place jusqu'à 77 apps.
+
+**Les widgets d'iOS 27 peuvent-ils afficher le nombre de notifications ?**
+Pas de nombre. WidgetLoft affiche un point, qui disparaît quand vous ouvrez l'app depuis le widget. Lire une notification uniquement sur l'écran verrouillé ou l'Apple Watch ne l'efface pas, et les sites web, les tuiles Raccourcis et les contacts ne peuvent pas avoir de point.
+
+**Faut-il iOS 27 pour utiliser WidgetLoft ?**
+Non. WidgetLoft fonctionne sous iOS 18 et versions ultérieures. Seuls la taille Très grand et les points de notification nécessitent iOS 27.
+
+---
+
+Prêt à remplir une page entière avec vos apps ? [Téléchargez WidgetLoft sur l'App Store](/widgetloft/download) et tirez le meilleur des widgets d'iOS 27.

@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "How to Open a Website in Chrome (or Any Browser) from an iPhone Widget",
+  description:
+    "Home Screen website shortcuts on iPhone always open in Safari or your default browser. Here is how to open a site in Chrome, Firefox, Brave or a full-screen view straight from a widget, for all sites or just one.",
+  keywords: [
+    "open website in chrome from home screen iphone",
+    "iphone widget open link in chrome",
+    "add website to home screen chrome iphone",
+    "home screen shortcut not opening in safari",
+    "website widget iphone choose browser",
+    "open website full screen from widget iphone",
+  ],
+  ogTitle: "Open a Website in Chrome from an iPhone Widget",
+  ogDescription:
+    "Pick Chrome, Firefox, Brave or a full-screen view for the websites on your Home Screen widget, for all sites or just one.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "How to Open a Website in Chrome (or Any Browser) from an iPhone Widget",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Open a website in Chrome or another browser from an iPhone widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Add the website as a tile",
+        text: "In WidgetLoft (formerly FolderMini), go to Library, tap Add Tiles, choose Website and paste the address. The icon and name are filled in for you.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Put it in a widget",
+        text: "Add the website tile to a group, then add the WidgetLoft widget to your Home Screen.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choose a browser for all websites",
+        text: "Go to Settings, Widget, Opening Websites and pick Chrome, Firefox, Brave or another browser, or Inside WidgetLoft for a full-screen view.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Override one site if you want",
+        text: "Open the website tile, tap Opens in and pick a different option for that site only, or keep Use the setting.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add a custom browser if yours is missing",
+        text: "Under Custom browsers, tap Add Browser, enter a name and an address format containing {url}, then tap Try It.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Why does my Home Screen website always open in Safari?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A bookmark made with Safari's Add to Home Screen opens in Safari, and most link widgets hand the address to your default browser. To use another browser for just those links, you need a widget that lets you choose, like WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What happens if the browser I picked is not installed?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The website opens in your default browser instead, so the tile never does nothing.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Am I signed in to websites inside WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sign-ins inside WidgetLoft's browser are separate from Safari, so you may need to sign in once there. If you would rather use your existing sessions, pick your usual browser instead.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Open a Website in Chrome (or Any Browser) from an iPhone Widget
+
+**Quick answer:** Websites you add to the iPhone Home Screen open in Safari or your default browser, and you can't change that per link. With [WidgetLoft](/widgetloft) (formerly FolderMini) you add the site as a widget tile, then choose Chrome, Firefox, Brave, another browser or a full-screen view in Settings → Widget → Opening Websites, for every site or just one.
+
+Maybe Safari is your default but your work dashboard lives in Chrome. One tap on your Home Screen should land in the right place.
+
+---
+
+## Why Home Screen websites always open in Safari
+
+Safari's **Add to Home Screen** creates a bookmark that belongs to Safari. Most link widgets end in the same place: they pass the address to your **default browser**.
+
+Changing the default browser changes every link in every app. What you usually want is narrower: *this* site in Chrome, everything else as usual. WidgetLoft's website tiles do exactly that: one browser for all websites, with an override for any single site.
+
+## Step-by-step: open a website in Chrome from a widget
+
+1. **Add the website as a tile.** In [WidgetLoft](/widgetloft), go to **Library** → **Add Tiles** → **Website** and paste the address. The site icon and name are filled in for you.
+2. **Put it in a widget.** Add the tile to a group, then add the WidgetLoft widget to your Home Screen (long-press the Home Screen, tap **+**, search for WidgetLoft).
+3. **Choose a browser for all websites.** Go to **Settings** → **Widget** → **Opening Websites** and pick Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha or Yandex. Or pick **Inside WidgetLoft** for a full-screen view.
+4. **Override one site (optional).** Open the website tile, tap **Opens in** and choose another option. It applies to that website only. **Use the setting** puts it back.
+5. **Add a custom browser (optional).** Not on the list? Go to **Custom browsers** → **Add Browser**, give it a name and an address format containing `{url}`, then tap **Try It**.
+
+## Which option to pick
+
+| Option | When to use it |
+| --- | --- |
+| Default browser | You're happy with the browser the rest of your phone uses |
+| A chosen browser (Chrome, Firefox, Brave and more) | Your bookmarks, passwords or extensions live in a browser that isn't your default |
+| Inside WidgetLoft | You want the site full-screen with no browser tabs, with an **Open in Browser** button when you need it |
+| Custom browser | Your browser isn't in the list and you know its address format |
+
+You can mix these freely. Keep the global setting on your favorite browser in [WidgetLoft](/widgetloft), then set a single banking or work site to open somewhere else with **Opens in**.
+
+## What to expect
+
+- **WidgetLoft opens for a moment first** when you choose anything other than the default browser. With the default browser, the site opens directly.
+- **If the chosen browser isn't installed**, the site opens in your default browser.
+- **Sign-ins inside WidgetLoft's browser are separate from Safari**, so you might sign in once more there.
+- **It is not a web-app mode.** Inside WidgetLoft is a full-screen browser view, not a standalone installed web app.
+- **It works from the Dynamic Island too.** If you use the Quick Launch bar, website tiles in the Dynamic Island and the Lock Screen banner open in the browser you picked.
+
+Websites sit next to your apps in the same widget. For app tiles, see [how to launch apps from a widget](/blog/launch-apps-from-widgets-ios).
+
+## Common questions
+
+**Why does my Home Screen website always open in Safari?**
+A bookmark made with Safari's Add to Home Screen opens in Safari, and most link widgets use your default browser. A [WidgetLoft](/widgetloft) website tile lets you choose the browser instead.
+
+**What happens if the browser I picked is not installed?**
+The website opens in your default browser, so the tile still works.
+
+**Am I signed in to websites inside WidgetLoft?**
+Sign-ins there are separate from Safari, so you may need to sign in once. Prefer your existing sessions? Pick your usual browser.
+
+---
+
+Ready to put your sites one tap away, in the browser you want? [Download WidgetLoft on the App Store](/widgetloft/download).

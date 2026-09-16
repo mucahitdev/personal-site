@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Como mostrar pontos de notificação nos widgets do iPhone (iOS 27)",
+  description:
+    "Ícones de apps dentro de widgets nunca mostram indicadores de notificação. Veja, passo a passo, como colocar um ponto de notificação em um ícone do widget no iPhone com o novo gatilho de notificação dos Atalhos no iOS 27 e o WidgetLoft, com os limites reais.",
+  keywords: [
+    "indicador de notificação no widget iphone",
+    "ícones de apps no widget sem notificação",
+    "ponto de notificação no widget",
+    "automação de notificação atalhos ios 27",
+    "ver qual app tem notificação widget",
+    "widget lançador não lidas iphone",
+  ],
+  ogTitle: "Pontos de notificação nos widgets do iPhone (iOS 27)",
+  ogDescription:
+    "Use o gatilho de notificação dos Atalhos no iOS 27 para colocar um ponto nos ícones de apps do seu widget.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pt",
+    headline: "Como mostrar pontos de notificação nos widgets do iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pt/blog/notification-badges-on-widgets-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pt",
+    name: "Mostrar pontos de notificação nos ícones de apps de um widget do iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Ative Pontos de Notificação",
+        text: "No WidgetLoft (antes FolderMini), abra Ajustes e vá em Pontos de Notificação (Beta). A configuração está disponível no iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Crie uma automação de notificação",
+        text: "No app Atalhos, vá em Automação, Apps, Notificação e escolha o app que deve ganhar um ponto.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Deixe rodar em silêncio",
+        text: "Configure o gatilho com Automação ativada e Notificar desativado, para que rode sem perguntar.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Adicione a ação do WidgetLoft",
+        text: "Adicione a ação Mostrar Ponto de Notificação do WidgetLoft para o mesmo app. Repita para cada app, cerca de um minuto cada.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Opcional: limpe o ponto ao abrir o app por outro caminho",
+        text: "Adicione uma automação App é aberto para esse app com a ação Limpar Ponto de Notificação.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pt",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Um widget pode mostrar a contagem de notificações não lidas de um app?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Não. Um widget de terceiros não consegue ler a contagem de não lidas de outro app. No iOS 27, o WidgetLoft pode colocar um ponto no ícone do app quando chega uma notificação, mas é um ponto, não um número.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Por que o ponto não some depois que eu leio a notificação?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ler uma notificação só na Tela Bloqueada ou no Apple Watch não limpa o ponto. Abra o app pelo widget, adicione uma automação App é aberto com Limpar Ponto de Notificação ou use Limpar todos os pontos no WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Os pontos de notificação funcionam no iOS 26 ou anterior?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Não. A configuração depende do gatilho de notificação dos Atalhos que chegou no iOS 27. O WidgetLoft em si funciona no iOS 18 e posterior, só que sem pontos.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Como mostrar pontos de notificação nos widgets do iPhone (iOS 27)
+
+**Resposta rápida:** Widgets não conseguem ler a contagem de não lidas de outro app, então os ícones dentro de um widget lançador nunca mostram indicadores. No iOS 27, o [WidgetLoft](/widgetloft) (antes FolderMini) contorna isso com uma automação dos Atalhos: quando um app envia uma notificação, a automação coloca um ponto no ícone desse app, e o ponto some quando você abre o app pelo widget.
+
+Você colocou seus apps em um widget para organizar a Tela de Início e agora não sabe qual deles tem algo novo. Veja como recuperar esse sinal.
+
+---
+
+## Por que ícones de apps em widgets não mostram indicadores
+
+O indicador vermelho com número em um ícone da Tela de Início é desenhado pelo próprio iOS. Um widget é uma visualização separada, desenhada por outro app, e o iOS não deixa um widget de terceiros ler quantas notificações não lidas seus outros apps têm. Por isso todo widget lançador mostra ícones simples.
+
+O iOS 27 mudou uma peça. Os Atalhos agora oferecem automações que rodam quando um app envia uma notificação (veja [as novidades dos widgets no iOS 27](/blog/ios-27-widgets-whats-new)). A contagem continua privada, mas uma automação pode reagir ao momento em que a notificação chega, e os Pontos de Notificação do WidgetLoft são construídos sobre esse gatilho.
+
+## Passo a passo: adicionar pontos de notificação aos ícones do widget
+
+1. **Ative Pontos de Notificação.** Abra o [WidgetLoft](/widgetloft) e vá em **Ajustes → Pontos de Notificação** (Beta). A configuração está disponível no iOS 27.
+2. **Crie uma automação de notificação.** Abra o app Atalhos, vá em **Automação → Apps → Notificação** e escolha o app que deve ganhar um ponto.
+3. **Deixe rodar em silêncio.** Configure o gatilho com **Automação** ativada e **Notificar** desativado, para que rode sem perguntar.
+4. **Adicione a ação do WidgetLoft.** Adicione a ação **Mostrar Ponto de Notificação** do WidgetLoft e escolha o mesmo app. Repita os passos 2 a 4 para cada app que quiser acompanhar. Cada um leva cerca de um minuto.
+5. **Opcional: limpe o ponto ao abrir o app por outro caminho.** O ponto some quando você abre o app pelo widget. Se costuma abri-lo de outro jeito, adicione uma automação **App é aberto** para esse app com a ação **Limpar Ponto de Notificação**.
+
+## Ponto de notificação x indicador com número
+
+| Indicador com número em um ícone da Tela de Início | Ponto de notificação em um ícone do WidgetLoft |
+| --- | --- |
+| Mostra um número, como 3 | Mostra um ponto, sem número |
+| Atualizado pelo próprio app | Some ao abrir o app pelo widget ou com uma automação Limpar Ponto de Notificação |
+| Nada para configurar | Uma automação dos Atalhos por app, cerca de um minuto cada |
+| Funciona em qualquer versão recente do iOS | Requer iOS 27 |
+| Aparece nos ícones de apps | Aparece nos ícones de apps, não em sites, ícones de Atalhos nem contatos |
+
+Um ponto responde à pergunta real por trás de uma olhada: esse app tem algo novo? Os ícones do [WidgetLoft](/widgetloft) continuam abrindo o app direto com um toque, e agora também mostram esse sinal.
+
+## O que os pontos de notificação não fazem
+
+É um ponto, não uma contagem: você sabe que algo chegou, não quanto. A configuração exige iOS 27, e cada app precisa da sua própria automação.
+
+Ler uma notificação só na Tela Bloqueada ou no Apple Watch não limpa o ponto. Abra o app pelo widget ou use o botão **Limpar todos os pontos** no WidgetLoft. Sites, ícones de Atalhos e contatos não podem ter pontos, e o recurso inteiro ainda está marcado como Beta.
+
+## Perguntas comuns
+
+**Um widget pode mostrar a contagem de notificações não lidas de um app?**
+Não. Um widget de terceiros não consegue ler a contagem de não lidas de outro app. No iOS 27, o WidgetLoft pode colocar um ponto no ícone do app quando chega uma notificação, mas é um ponto, não um número.
+
+**Por que o ponto não some depois que eu leio a notificação?**
+Ler só na Tela Bloqueada ou no Apple Watch não limpa o ponto. Abra o app pelo widget, adicione uma automação App é aberto com Limpar Ponto de Notificação ou toque em Limpar todos os pontos.
+
+**Os pontos de notificação funcionam no iOS 26 ou anterior?**
+Não. A configuração depende do gatilho de notificação dos Atalhos que chegou no iOS 27. O WidgetLoft em si funciona no iOS 18 e posterior, só que sem pontos.
+
+---
+
+Pronto para ver as novidades num relance? [Baixe o WidgetLoft na App Store](/widgetloft/download) e coloque um ponto nos apps que importam.

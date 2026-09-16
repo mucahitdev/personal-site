@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Widget trên iOS 27 có gì mới (và cách sử dụng)",
+  description:
+    "iOS 27 bổ sung widget Cực lớn lấp đầy cả một trang Màn hình chính, bộ kích hoạt Thông báo cho tự động hóa Phím tắt và đồng hồ thu gọn trên Màn hình khóa. Đây là những gì đã thay đổi và cách dùng từng tính năng.",
+  keywords: [
+    "widget ios 27",
+    "widget cực lớn ios 27",
+    "tính năng widget mới ios 27",
+    "đồng hồ thu gọn màn hình khóa ios 27",
+    "tự động hóa phím tắt thông báo ios 27",
+    "widget màn hình chính ios 27",
+  ],
+  ogTitle: "Widget trên iOS 27 có gì mới",
+  ogDescription:
+    "Widget Cực lớn, tự động hóa theo thông báo và đồng hồ thu gọn trên Màn hình khóa, giải thích từng bước.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline: "Widget trên iOS 27 có gì mới (và cách sử dụng)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/vi/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Sử dụng các tính năng widget mới của iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Cập nhật lên iOS 27",
+        text: "Mở Cài đặt, Cài đặt chung, Cập nhật phần mềm và cài iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm widget Cực lớn",
+        text: "Tạo một nhóm ứng dụng trong WidgetLoft (trước đây là FolderMini), rồi chạm và giữ Màn hình chính, chạm +, tìm WidgetLoft và chọn kích thước Cực lớn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thiết lập một chấm thông báo",
+        text: "Trong Phím tắt, vào Tự động hóa, Ứng dụng, Thông báo, chọn ứng dụng, giữ Tự động hóa bật và Thông báo tắt, rồi thêm tác vụ WidgetLoft Hiển thị chấm thông báo cho cùng ứng dụng đó.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tùy chỉnh Màn hình khóa",
+        text: "Chạm và giữ Màn hình khóa, chạm Tùy chỉnh, chuyển sang đồng hồ thu gọn và thêm một widget WidgetLoft với tối đa 4 ứng dụng.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Những ứng dụng nào hỗ trợ widget Cực lớn trên iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Lịch, Ảnh, Nhạc và Thời tiết của Apple hỗ trợ, cùng các ứng dụng bên thứ ba. WidgetLoft cũng hỗ trợ và với biểu tượng nhỏ có thể đặt tối đa 77 ứng dụng trên cả một trang Màn hình chính.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Widget iOS 27 có hiển thị số lượng thông báo không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không hiển thị số. Với bộ kích hoạt Thông báo mới trong Phím tắt, WidgetLoft có thể hiện một chấm trên ô của ứng dụng. Chấm biến mất khi bạn mở ứng dụng từ widget. Chỉ đọc thông báo trên Màn hình khóa hoặc Apple Watch sẽ không xóa chấm, và trang web, ô Phím tắt cũng như danh bạ không thể có chấm.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tôi có cần iOS 27 để dùng WidgetLoft không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. WidgetLoft chạy trên iOS 18 trở lên. Chỉ kích thước Cực lớn và chấm thông báo mới cần iOS 27.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Widget trên iOS 27 có gì mới (và cách sử dụng)
+
+**Trả lời nhanh:** iOS 27, phát hành ngày 14 tháng 9 năm 2026, mang đến ba thay đổi liên quan đến widget: kích thước widget Cực lớn lấp đầy cả một trang Màn hình chính, bộ kích hoạt Thông báo cho tự động hóa Phím tắt, và chế độ đồng hồ thu gọn trên Màn hình khóa. Các widget khởi chạy ứng dụng như [WidgetLoft](/widgetloft) (trước đây là FolderMini) tận dụng hai thay đổi đầu: một widget Cực lớn chứa tới 77 ứng dụng, và ô có thể hiện một chấm khi ứng dụng nhận thông báo.
+
+iOS 27 không làm lại widget từ đầu, nhưng các thay đổi rất thiết thực. Dưới đây là những gì mới, ý nghĩa của chúng với widget khởi chạy ứng dụng và cách thiết lập.
+
+---
+
+## Widget trên iOS 27 đã thay đổi những gì
+
+**Kích thước widget Cực lớn.** Kích thước mới lấp đầy cả một trang Màn hình chính, tức vùng lưới 4×6. Lịch, Ảnh, Nhạc và Thời tiết của Apple hỗ trợ kích thước này, và ứng dụng bên thứ ba cũng có thể hỗ trợ.
+
+**Bộ kích hoạt Thông báo trong Phím tắt.** Tự động hóa Phím tắt giờ có thể chạy khi một ứng dụng gửi thông báo. Điều này cũng giúp các ứng dụng widget phản hồi thông báo của bạn.
+
+**Đồng hồ thu gọn trên Màn hình khóa.** Chế độ đồng hồ thu gọn hiển thị giờ nhỏ hơn ở phía trên, bên cạnh ngày và các widget của bạn.
+
+## Ý nghĩa với widget khởi chạy ứng dụng
+
+[WidgetLoft](/widgetloft) biến các nhóm ứng dụng thành widget cho Màn hình chính và Màn hình khóa, và chạm vào một ô sẽ mở thẳng ứng dụng. iOS 27 bổ sung thêm hai điều:
+
+- **Cực lớn chứa tới 77 ứng dụng.** Với biểu tượng nhỏ, một widget cả trang chứa 77 ô (54 với biểu tượng vừa, 40 với lớn, 24 với cực lớn). Trên iPad, widget Cực lớn dạng rộng chứa tới 72.
+- **Chấm thông báo trên ô.** WidgetLoft dùng bộ kích hoạt Thông báo mới để đặt một chấm lên ô của ứng dụng khi ứng dụng đó nhận thông báo. Đó là chấm, không phải con số, và sẽ biến mất khi bạn mở ứng dụng từ widget.
+
+WidgetLoft 2.1.0 còn thêm hai tính năng rất hợp với widget lớn:
+
+- **Biểu tượng tối cho mọi ứng dụng.** Ứng dụng phổ biến có sẵn biểu tượng tối, và ứng dụng của Apple dùng biểu tượng tối thật của Apple. Ứng dụng bạn thêm qua tìm kiếm App Store giờ nhận biểu tượng tối được tạo ngay trên điện thoại. Không có gì được tải lên.
+- **Dynamic Island một chạm.** Khi bật Thanh Mở nhanh, ứng dụng trong Dynamic Island mở bằng một chạm, trực tiếp.
+
+## Từng bước: dùng các tính năng widget mới của iOS 27
+
+1. **Cập nhật lên iOS 27.** Mở **Cài đặt → Cài đặt chung → Cập nhật phần mềm** và cài iOS 27.
+2. **Thêm widget Cực lớn.** Trong [WidgetLoft](/widgetloft), tạo một nhóm ở tab **Nhóm** và thêm ứng dụng của bạn. Sau đó chạm và giữ Màn hình chính, chạm **+**, tìm WidgetLoft và chọn kích thước Cực lớn.
+3. **Thiết lập một chấm thông báo.** Trong WidgetLoft, mở **Cài đặt → Chấm thông báo**. Trong Phím tắt, vào **Tự động hóa → Ứng dụng → Thông báo**, chọn ứng dụng, giữ Tự động hóa bật và Thông báo tắt, rồi thêm tác vụ WidgetLoft **Hiển thị chấm thông báo** cho cùng ứng dụng đó. Mỗi ứng dụng mất khoảng một phút.
+4. **Tùy chỉnh Màn hình khóa.** Chạm và giữ Màn hình khóa, chạm **Tùy chỉnh**, chuyển sang đồng hồ thu gọn và thêm một widget WidgetLoft với một hàng tối đa 4 ứng dụng (3 với biểu tượng lớn).
+
+## Tóm tắt thay đổi widget trên iOS 27
+
+| Thay đổi trên iOS 27 | Bạn có thể làm gì với nó |
+| --- | --- |
+| Kích thước widget Cực lớn | Đặt tới 77 ứng dụng trên một trang Màn hình chính với WidgetLoft |
+| Lịch, Ảnh, Nhạc và Thời tiết hỗ trợ Cực lớn | Dành cả một trang cho ứng dụng Apple bạn xem nhiều nhất |
+| Bộ kích hoạt Thông báo trong Phím tắt | Hiện chấm trên ô WidgetLoft khi ứng dụng đó nhận thông báo |
+| Đồng hồ thu gọn trên Màn hình khóa | Giữ giờ nhỏ gọn bên cạnh widget, kể cả một hàng ứng dụng yêu thích |
+
+Widget của Apple chủ yếu hiển thị thông tin. [WidgetLoft](/widgetloft) dùng cùng kích thước và bộ kích hoạt mới đó để mở ứng dụng của bạn, và vẫn chạy trên iOS 18 trở lên. Để xem toàn bộ cách thiết lập chấm, hãy đọc hướng dẫn của chúng tôi về [huy hiệu thông báo trên widget](/blog/notification-badges-on-widgets-iphone).
+
+## Câu hỏi thường gặp
+
+**Những ứng dụng nào hỗ trợ widget Cực lớn trên iOS 27?**
+Lịch, Ảnh, Nhạc và Thời tiết, cùng các ứng dụng bên thứ ba. WidgetLoft chứa tới 77 ứng dụng trong một widget.
+
+**Widget iOS 27 có hiển thị số lượng thông báo không?**
+Không hiển thị số. WidgetLoft hiện một chấm, chấm biến mất khi bạn mở ứng dụng từ widget. Chỉ đọc thông báo trên Màn hình khóa hoặc Apple Watch sẽ không xóa chấm, và trang web, ô Phím tắt cũng như danh bạ không thể có chấm.
+
+**Tôi có cần iOS 27 để dùng WidgetLoft không?**
+Không. WidgetLoft chạy trên iOS 18 trở lên. Chỉ kích thước Cực lớn và chấm thông báo mới cần iOS 27.
+
+---
+
+Sẵn sàng lấp đầy cả một trang bằng ứng dụng của bạn? [Tải WidgetLoft trên App Store](/widgetloft/download) và tận dụng tối đa widget của iOS 27.

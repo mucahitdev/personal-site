@@ -1,0 +1,157 @@
+export const meta = {
+  title: "不用快捷指令 App，如何在 iPhone 上自定义 App 图标",
+  description:
+    "在 iPhone 上换 App 图标，最常见的做法是用快捷指令的“打开 App”加上自定义图片。本文介绍这种方法的原理，以及一个小组件替代方案：用照片、符号、表情符号或文字制作图标，浅色和深色分别设计，点按后仍直接打开 App。",
+  keywords: [
+    "不用快捷指令换图标",
+    "iphone 自定义 app 图标",
+    "iphone 主屏幕 图标 美化",
+    "iphone 换图标 教程",
+    "小组件 自定义图标 iphone",
+    "深色模式 自定义图标",
+  ],
+  ogTitle: "不用快捷指令，自定义 iPhone App 图标",
+  ogDescription:
+    "用照片、SF Symbol、表情符号或文字为 App 设计图标，浅色和深色分别设计，点按即可直接打开 App。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "不用快捷指令 App，如何在 iPhone 上自定义 App 图标",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/custom-app-icons-without-shortcuts-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "不用快捷指令 App 自定义 iPhone App 图标",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "添加 App",
+        text: "打开 WidgetLoft （原 FolderMini），在 App 内搜索 App Store，或在 App Store 页面使用“共享”并选择 WidgetLoft，然后把 App 添加到一个分组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "打开“更改图标”",
+        text: "前往“素材库”标签页，轻点该 App 的磁贴，然后轻点“更改图标”。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择来源",
+        text: "选择“照片”并裁剪，或选择“符号”（5,700 多个 SF Symbols）、“表情符号”或 Mono（首字母、每个单词，或最多 3 个字符的自定文字）。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "为浅色和深色设置颜色",
+        text: "选择“图标颜色”和“背景”，或选择“无背景”，并分别设计浅色和深色版本。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "放置小组件",
+        text: "将 WidgetLoft 小组件添加到主屏幕。轻点磁贴即可直接打开 App。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "WidgetLoft 里的自定义图标会打开快捷指令 App 吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不会。主屏幕上的 WidgetLoft App 磁贴无论是否使用自定义图标，都会通过 App 的包标识符（bundle ID）直接打开它，快捷指令 App 不参与其中。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "这会改变 iPhone 上 App 本身的图标吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不会。自定义设计只作用于小组件里的磁贴。App 自己的图标保持不变，你可以把它留在 App 资源库里，让页面上只显示小组件。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "自定义图标在深色模式下可以换个样子吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。图标工作室为浅色和深色提供独立的设计。即使你不设计深色版本，热门 App 也已经自带现成的深色图标。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 不用快捷指令 App，如何在 iPhone 上自定义 App 图标
+
+**简短回答：** 把 App 放进一个可以逐个设计磁贴的小组件，就能在不用快捷指令 App 的情况下自定义图标。[WidgetLoft](/widgetloft) （原 FolderMini）内置图标工作室：选择照片、SF Symbol、表情符号或文字，设置颜色，并分别制作浅色和深色版本。磁贴依然会直接打开 App。
+
+好看的主屏幕通常从风格统一的图标开始。下面介绍大多数教程里的方法、它实际带来的效果，以及用小组件实现同样风格的做法。
+
+---
+
+## 快捷指令方法是怎么运作的
+
+流传最广的教程是这样的：打开快捷指令 App，用“打开 App”操作新建一个快捷指令，选择 App，再给它起名并从照片中选一张图片，添加到主屏幕。新图标看起来就像自定义的 App 图标。
+
+这个方法可行，但最好了解你实际得到的是什么：
+
+- **它是快捷指令，不是 App 本身。** 点按后会先通过快捷指令 App 运行，再由它打开你的 App。
+- **你现在有两个图标。** 原来的 App 仍然安装着，它的普通图标也还在某个地方。大多数人会把它移到 App 资源库，让页面保持整洁。
+- **一次只能做一个图标。** 每个 App 都需要单独创建并命名一个快捷指令，而且浅色和深色外观共用同一张图片。
+
+只做一两个图标的话没问题。如果想让整页都统一主题，小组件往往更省事。
+
+## 分步教程：用 WidgetLoft 自定义 App 图标
+
+1. **添加 App。** 打开 [WidgetLoft](/widgetloft)，在 App 内搜索 App Store（或在任意 App Store 页面使用“共享”→ WidgetLoft），把 App 添加到一个分组。
+2. **打开“更改图标”。** 前往 **素材库** 标签页，轻点该 App 的磁贴，然后轻点 **更改图标**。
+3. **选择来源。** 选择 **照片**（裁剪时拖动以移动、双指捏合以缩放）、**符号**（27 个类别、5,700 多个 SF Symbols，支持英文搜索）、**表情符号** 或 **Mono**（首字母、每个单词，或最多 3 个字符的自定文字）。
+4. **为浅色和深色设置颜色。** 选择 **图标颜色** 和 **背景**，或选择 **无背景**，让符号直接显示在小组件上。分别设计浅色和深色版本，让图标在两种外观下都协调。
+5. **放置小组件。** 长按主屏幕空白处，添加小组件，选择 WidgetLoft 并选好尺寸。轻点磁贴，App 就会直接打开。
+
+## 快捷指令方法与 WidgetLoft 图标工作室对比
+
+| | 快捷指令方法 | WidgetLoft 图标工作室 |
+| --- | --- | --- |
+| App 的打开方式 | 通过快捷指令 App 运行 | 磁贴直接打开 App |
+| 深色版本 | 两种外观共用一张图片 | 浅色和深色分别设计 |
+| 每个图标的步骤 | 新建快捷指令、选择 App、添加到主屏幕、设置图片和名称 | 轻点磁贴、更改图标、选择来源和颜色 |
+| 图标来源 | 照片中的一张图片 | 照片、5,700 多个 SF Symbols、表情符号、Mono 文字 |
+| 同时放很多 App | 每个快捷指令一个主屏幕图标 | 一个小组件放很多磁贴 |
+
+区别在于功夫花在哪里。使用 [WidgetLoft](/widgetloft)，设计和打开都在同一个磁贴里完成：不必为每个 App 额外做快捷指令，点按时也没有快捷指令 App 挡在中间。没有自定义设计的 App 仍显示真实图标，所以你可以只改想改的那些。
+
+## 常见问题
+
+**WidgetLoft 里的自定义图标会打开快捷指令 App 吗？**
+不会。主屏幕上的 WidgetLoft App 磁贴无论是否使用自定义图标，都会通过 App 的包标识符（bundle ID）直接打开它。
+
+**这会改变 iPhone 上 App 本身的图标吗？**
+不会。设计只作用于小组件里的磁贴。App 自己的图标保持不变，你可以把它留在 App 资源库里，让页面上只显示小组件。
+
+**自定义图标在深色模式下可以换个样子吗？**
+可以。图标工作室为浅色和深色提供独立的设计。即使你不设计深色版本，热门 App 也已经自带现成的深色图标（参见 [iPhone 深色模式 App 图标](/blog/dark-mode-app-icons-iphone)）。
+
+---
+
+准备好设计你的图标了吗？[前往 App Store 下载 WidgetLoft](/widgetloft/download)，给每个 App 换上你想要的图标。

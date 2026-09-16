@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "iPhoneのウィジェットからWebサイトをChrome（または好きなブラウザ）で開く方法",
+  description:
+    "iPhoneのホーム画面に追加したWebサイトは、いつもSafariかデフォルトのブラウザで開きます。ウィジェットから直接Chrome、Firefox、Brave、または全画面表示でサイトを開く方法を、全サイト共通とサイトごとの両方で解説します。",
+  keywords: [
+    "ホーム画面 サイト chromeで開く iphone",
+    "iphone ウィジェット リンク chromeで開く",
+    "ホーム画面に追加 chrome iphone",
+    "ホーム画面 ショートカット safariで開いてしまう",
+    "webサイト ウィジェット iphone ブラウザ 選択",
+    "ウィジェット サイト 全画面で開く iphone",
+  ],
+  ogTitle: "iPhoneのウィジェットからサイトをChromeで開く",
+  ogDescription:
+    "ウィジェットのWebサイトを開くブラウザを、Chrome、Firefox、Brave、全画面表示から選べます。全サイト共通でも1サイトだけでもOK。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "ja",
+    headline:
+      "iPhoneのウィジェットからWebサイトをChrome（または好きなブラウザ）で開く方法",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/ja/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "ja",
+    name: "iPhoneのウィジェットからWebサイトをChromeなどのブラウザで開く",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Webサイトをタイルとして追加",
+        text: "WidgetLoft（旧FolderMini）でライブラリを開き、タイルを追加をタップしてWebサイトを選び、アドレスを貼り付けます。アイコンと名前は自動で入ります。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "ウィジェットに入れる",
+        text: "Webサイトのタイルをグループに追加し、WidgetLoftのウィジェットをホーム画面に追加します。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "全サイト共通のブラウザを選ぶ",
+        text: "設定、ウィジェット、Webサイトの開き方を開き、Chrome、Firefox、Braveなどのブラウザを選びます。全画面表示ならWidgetLoft内を選びます。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "必要なら1サイトだけ変更",
+        text: "Webサイトのタイルを開き、開く場所をタップして、そのサイトだけ別の選択肢を選びます。設定に従うのままでもかまいません。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "使っているブラウザがなければカスタムブラウザを追加",
+        text: "カスタムブラウザでブラウザを追加をタップし、名前と{url}を含むアドレス形式を入力して、試すをタップします。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "ja",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "ホーム画面のWebサイトがいつもSafariで開くのはなぜですか？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Safariのホーム画面に追加で作ったブックマークはSafariで開き、多くのリンク系ウィジェットはアドレスをデフォルトのブラウザに渡します。そのリンクだけ別のブラウザで開きたいなら、WidgetLoftのようにブラウザを選べるウィジェットが必要です。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "選んだブラウザがインストールされていないとどうなりますか？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "サイトはデフォルトのブラウザで開きます。タイルをタップして何も起きない、ということはありません。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft内のサイトではログインしたままですか？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "WidgetLoft内ブラウザのログインはSafariとは別なので、一度ログインが必要な場合があります。今のログイン状態を使いたいなら、いつものブラウザを選んでください。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhoneのウィジェットからWebサイトをChrome（または好きなブラウザ）で開く方法
+
+**結論：** iPhoneのホーム画面に追加したWebサイトはSafariかデフォルトのブラウザで開き、リンクごとに変えることはできません。[WidgetLoft](/widgetloft)（旧FolderMini）ならサイトをウィジェットのタイルとして追加し、設定 → ウィジェット → Webサイトの開き方で、Chrome、Firefox、Brave、その他のブラウザ、または全画面表示を選べます。全サイト共通でも、1サイトだけでも設定できます。
+
+デフォルトはSafariでも、仕事のダッシュボードはChromeで使っている。そんなときでも、ホーム画面のワンタップで正しい場所に着きたいですよね。
+
+---
+
+## ホーム画面のWebサイトがいつもSafariで開く理由
+
+Safariの**ホーム画面に追加**は、Safariに属するブックマークを作ります。多くのリンク系ウィジェットも結局同じで、アドレスを**デフォルトのブラウザ**に渡します。
+
+デフォルトのブラウザを変えると、すべてのアプリのすべてのリンクが変わってしまいます。本当に欲しいのはもっと限定的なこと、つまり*このサイト*だけChromeで、それ以外はいつも通り、ですよね。WidgetLoftのWebサイトタイルはまさにそれができます。全サイト共通のブラウザを1つ決め、特定のサイトだけ個別に変えられます。
+
+## 手順：ウィジェットからWebサイトをChromeで開く
+
+1. **Webサイトをタイルとして追加。** [WidgetLoft](/widgetloft)で**ライブラリ** → **タイルを追加** → **Webサイト**を開き、アドレスを貼り付けます。サイトのアイコンと名前は自動で入ります。
+2. **ウィジェットに入れる。** タイルをグループに追加し、WidgetLoftのウィジェットをホーム画面に追加します（ホーム画面を長押しし、**+** をタップしてWidgetLoftを検索）。
+3. **全サイト共通のブラウザを選ぶ。** **設定** → **ウィジェット** → **Webサイトの開き方**で、Safari、Chrome、Firefox、Edge、Brave、DuckDuckGo、Opera、Opera GX、Aloha、Yandexから選びます。全画面表示にしたい場合は**WidgetLoft内**を選びます。
+4. **1サイトだけ変更（任意）。** Webサイトのタイルを開き、**開く場所**をタップして別の選択肢を選びます。そのサイトにだけ適用されます。**設定に従う**で元に戻ります。
+5. **カスタムブラウザを追加（任意）。** 一覧にない場合は、**カスタムブラウザ** → **ブラウザを追加**で名前と`{url}`を含むアドレス形式を入力し、**試す**をタップします。
+
+## どの選択肢を選ぶか
+
+| 選択肢 | 向いているケース |
+| --- | --- |
+| デフォルトのブラウザ | iPhoneのほかの場面で使うブラウザで満足している |
+| 選んだブラウザ（Chrome、Firefox、Braveなど） | ブックマーク、パスワード、拡張機能がデフォルト以外のブラウザにある |
+| WidgetLoft内 | タブなしの全画面でサイトを見たい。必要なら**ブラウザで開く**ボタンも使える |
+| カスタムブラウザ | 使っているブラウザが一覧になく、そのアドレス形式がわかっている |
+
+組み合わせは自由です。[WidgetLoft](/widgetloft)の全体設定はお気に入りのブラウザにしておき、銀行や仕事のサイトだけ**開く場所**で別のブラウザにする、といった使い方ができます。
+
+## 知っておきたいこと
+
+- **WidgetLoftが一瞬開きます。** デフォルトのブラウザ以外を選んだ場合です。デフォルトのブラウザならサイトが直接開きます。
+- **選んだブラウザがインストールされていない場合**は、デフォルトのブラウザで開きます。
+- **WidgetLoft内ブラウザのログインはSafariとは別**なので、そこでもう一度ログインが必要になることがあります。
+- **Webアプリモードではありません。** WidgetLoft内は全画面のブラウザ表示で、独立してインストールされたWebアプリではありません。
+- **ダイナミックアイランドからも使えます。** クイック起動バーを使っている場合、ダイナミックアイランドとロック画面のバナーにあるWebサイトタイルも、選んだブラウザで開きます。
+
+Webサイトは同じウィジェットの中でアプリと並べられます。アプリのタイルについては[ウィジェットからアプリを起動する方法](/blog/launch-apps-from-widgets-ios)をご覧ください。
+
+## よくある質問
+
+**ホーム画面のWebサイトがいつもSafariで開くのはなぜですか？**
+Safariのホーム画面に追加で作ったブックマークはSafariで開き、多くのリンク系ウィジェットはデフォルトのブラウザを使います。[WidgetLoft](/widgetloft)のWebサイトタイルなら、ブラウザを自分で選べます。
+
+**選んだブラウザがインストールされていないとどうなりますか？**
+サイトはデフォルトのブラウザで開くので、タイルはそのまま使えます。
+
+**WidgetLoft内のサイトではログインしたままですか？**
+そこでのログインはSafariとは別なので、一度ログインが必要な場合があります。今のログイン状態を使いたいなら、いつものブラウザを選びましょう。
+
+---
+
+よく使うサイトを、好きなブラウザでワンタップの場所に置きませんか？ [App StoreでWidgetLoftをダウンロード](/widgetloft/download)

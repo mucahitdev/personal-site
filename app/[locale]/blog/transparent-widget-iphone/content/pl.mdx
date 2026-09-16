@@ -1,0 +1,159 @@
+export const meta = {
+  title: "Jak zrobić przezroczysty widżet na iPhonie (iOS 26 Liquid Glass)",
+  description:
+    "Instrukcja krok po kroku dla przezroczystych widżetów i widżetów z efektem matowego szkła na iPhonie. Ustaw grupę WidgetLoft na Przezroczysty w iOS 26 lub nowszym, aby prześwitywała tapeta, albo użyj widżetu Liquid Glass dla matowego wyglądu.",
+  keywords: [
+    "przezroczysty widżet iphone",
+    "przezroczysty widżet ios 26",
+    "widżet liquid glass iphone",
+    "widżet bez tła iphone",
+    "szklany widżet iphone",
+    "jak zrobić przezroczysty widget",
+  ],
+  ogTitle: "Przezroczysty widżet na iPhonie",
+  ogDescription:
+    "Przezroczyste widżety i widżety Liquid Glass, przez które widać tapetę, w iOS 26 lub nowszym.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline: "Jak zrobić przezroczysty widżet na iPhonie (iOS 26 Liquid Glass)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pl/blog/transparent-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Zrób przezroczysty widżet lub widżet Liquid Glass na iPhonie",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Otwórz grupę",
+        text: "Zainstaluj WidgetLoft (dawniej FolderMini), przejdź do karty Grupy i otwórz grupę, którą chcesz mieć na ekranie początkowym.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz Przezroczysty",
+        text: "Stuknij Edytuj grupę i ustaw materiał na Przezroczysty. Wymaga to iOS 26 lub nowszego.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj widżet",
+        text: "Otwórz galerię widżetów na ekranie początkowym, wyszukaj WidgetLoft i dodaj WidgetLoft (całkowicie przezroczysty) albo WidgetLoft · Liquid Glass (matowe szkło).",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz wygląd ikon",
+        text: "Dla widżetu Liquid Glass przejdź do Ustawienia, Widget, Wygląd ikony ciemny i wybierz ikony Jasny lub Ciemny pasujące do tapety.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pokaż nazwy, jeśli chcesz",
+        text: "Włącz Nazwy aplikacji dla grupy, aby pod każdą ikoną była widoczna nazwa aplikacji.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy można zrobić przezroczysty widżet na iPhonie?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak, w iOS 26 lub nowszym. Ustaw grupę WidgetLoft na materiał Przezroczysty: zwykły widżet WidgetLoft staje się całkowicie przezroczysty, a widżet WidgetLoft · Liquid Glass wygląda jak matowe szkło.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Dlaczego nie mogę wybrać opcji Przezroczysty?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Przezroczysty wymaga iOS 26 lub nowszego. W iOS od 18 do 25 możesz zamiast tego użyć materiału Kolor z 12 motywami, przełącznikiem Gradient i suwakiem Głębia.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy widżet Liquid Glass dopasowuje się do trybu ciemnego?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie automatycznie. Dla widżetu Liquid Glass wybierasz ikony Jasny lub Ciemny w Ustawienia, Widget, Wygląd ikony ciemny. Zwykły widżet WidgetLoft może podążać za urządzeniem dzięki opcji Automatyczny.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak zrobić przezroczysty widżet na iPhonie (iOS 26 Liquid Glass)
+
+**Szybka odpowiedź:** w iOS 26 lub nowszym otwórz grupę w [WidgetLoft](/widgetloft) (dawniej FolderMini), stuknij **Edytuj grupę** i wybierz materiał **Przezroczysty**. Dodaj zwykły widżet **WidgetLoft**, aby był całkowicie przezroczysty, albo **WidgetLoft · Liquid Glass**, aby uzyskać matowe szkło. W obu przypadkach widać tapetę, a na wierzchu zostają tylko ikony aplikacji.
+
+Pełne prostokąty widżetów potrafią zasłonić starannie wybraną tapetę. Przezroczysty widżet zostawia zdjęcie na widoku i nadal daje dostęp do aplikacji jednym stuknięciem.
+
+---
+
+## Jak wygląda przezroczysty widżet
+
+Większość widżetów leży na pełnej lub kolorowej karcie. Przezroczysty widżet usuwa tę kartę, więc ikony wyglądają, jakby stały bezpośrednio na tapecie, tak jak zwykłe ikony na ekranie początkowym, ale w uporządkowanej siatce, którą sam ustalasz.
+
+WidgetLoft oferuje dwa przezroczyste style dla każdej grupy ustawionej na Przezroczysty:
+
+- **WidgetLoft** (zwykły widżet): tło całkowicie znika.
+- **WidgetLoft · Liquid Glass**: tapeta prześwituje przez delikatną warstwę matowego szkła, dzięki czemu ikony są czytelne nawet na zdjęciach z wieloma szczegółami.
+
+Oba otwierają aplikacje bezpośrednio po stuknięciu kafelka, tak jak każdy inny widżet [WidgetLoft](/widgetloft).
+
+## Krok po kroku: zrób przezroczysty widżet
+
+1. **Otwórz grupę.** W WidgetLoft przejdź do karty **Grupy** i otwórz grupę, którą chcesz mieć na ekranie początkowym (lub utwórz nową).
+2. **Wybierz Przezroczysty.** Stuknij **Edytuj grupę** i ustaw materiał na **Przezroczysty**. Ta opcja wymaga iOS 26 lub nowszego.
+3. **Dodaj widżet.** Przytrzymaj puste miejsce na ekranie początkowym, otwórz galerię widżetów, wyszukaj WidgetLoft i wybierz **WidgetLoft** (całkowicie przezroczysty) lub **WidgetLoft · Liquid Glass** (matowy). Jeśli widżet pokazuje inną grupę, przytrzymaj go, stuknij **Edytuj widżet** i wybierz grupę, którą ustawiłeś jako przezroczystą.
+4. **Wybierz wygląd ikon.** Dla widżetu Liquid Glass przejdź do **Ustawienia → Widget → Wygląd ikony ciemny** i wybierz ikony **Jasny** lub **Ciemny**, zależnie od tego, co lepiej widać na Twojej tapecie.
+5. **Pokaż nazwy, jeśli chcesz.** Włącz **Nazwy aplikacji** dla grupy, aby pod każdą ikoną była widoczna nazwa aplikacji.
+
+## Przezroczysty, Liquid Glass czy Kolor
+
+| | Przezroczysty | Liquid Glass | Kolor |
+| --- | --- | --- | --- |
+| Widżet do dodania | WidgetLoft | WidgetLoft · Liquid Glass | WidgetLoft |
+| Wygląd | Całkowicie przezroczysty, ikony na tapecie | Matowe szkło nad tapetą | Pełny kolor motywu, gradient i głębia |
+| Najlepsza tapeta | Spokojne, proste tła | Zdjęcia z wieloma szczegółami i żywe wzory | Każda, gdy widżet ma się wyróżniać |
+| Ciemne ikony | Automatyczny, Jasny lub Ciemny | Tylko Jasny lub Ciemny | Automatyczny, Jasny lub Ciemny |
+| Wersja iOS | iOS 26 lub nowszy | iOS 26 lub nowszy | iOS 18 lub nowszy |
+
+W [WidgetLoft](/widgetloft) każda grupa ma własny materiał, więc możesz połączyć przezroczystą grupę na jednej stronie z kolorową na innej. Więcej inspiracji znajdziesz w naszych [pomysłach na ekran początkowy w iOS 27](/blog/ios-27-home-screen-ideas).
+
+## Masz iOS od 18 do 25? Użyj Koloru
+
+Przezroczystość nie jest dostępna przed iOS 26, ale materiał **Kolor** działa od iOS 18. W **Edytuj grupę** wybierz jeden z 12 motywów (Ember, Citrus, Bloom, Dusk, Tide, Aurora, Moss, Neon, Storm, Clay, Ink, Paper) lub Niestandardowy, włącz **Gradient** i ustaw jego kierunek, a potem suwakiem **Głębia** spraw, by karta była bardziej płaska lub bogatsza. Wybierz motyw pasujący do tapety, a widżet ładnie się z nią połączy.
+
+## Częste pytania
+
+**Czy można zrobić przezroczysty widżet na iPhonie?**
+Tak, w iOS 26 lub nowszym. Ustaw grupę WidgetLoft na Przezroczysty: zwykły widżet WidgetLoft staje się całkowicie przezroczysty, a WidgetLoft · Liquid Glass wygląda jak matowe szkło.
+
+**Dlaczego nie mogę wybrać opcji Przezroczysty?**
+Przezroczysty wymaga iOS 26 lub nowszego. W iOS od 18 do 25 użyj materiału Kolor z 12 motywami, gradientem i głębią.
+
+**Czy widżet Liquid Glass dopasowuje się do trybu ciemnego?**
+Nie automatycznie. Wybierz ikony Jasny lub Ciemny w Ustawienia → Widget → Wygląd ikony ciemny. Zwykły widżet WidgetLoft może podążać za urządzeniem dzięki opcji Automatyczny.
+
+---
+
+Chcesz znowu widzieć swoją tapetę? [Pobierz WidgetLoft z App Store](/widgetloft/download) i zrób swój pierwszy przezroczysty widżet.

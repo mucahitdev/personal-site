@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Cara Membuka Situs Web di Chrome (atau Browser Apa Pun) dari Widget iPhone",
+  description:
+    "Situs web yang Anda tambahkan ke Layar Utama iPhone selalu terbuka di Safari atau browser default. Begini cara membuka situs langsung dari widget di Chrome, Firefox, Brave, atau layar penuh, untuk semua situs atau satu situs saja.",
+  keywords: [
+    "buka situs di chrome dari layar utama iphone",
+    "widget iphone buka link di chrome",
+    "tambah situs ke layar utama chrome iphone",
+    "pintasan layar utama terbuka di safari",
+    "widget situs web iphone pilih browser",
+    "buka situs layar penuh dari widget iphone",
+  ],
+  ogTitle: "Buka Situs Web di Chrome dari Widget iPhone",
+  ogDescription:
+    "Pilih Chrome, Firefox, Brave, atau tampilan layar penuh untuk situs di widget Anda, untuk semua situs atau satu saja.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "id",
+    headline:
+      "Cara Membuka Situs Web di Chrome (atau Browser Apa Pun) dari Widget iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/id/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "id",
+    name: "Membuka situs web di Chrome atau browser lain dari widget iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Tambahkan situs sebagai ubin",
+        text: "Di WidgetLoft (sebelumnya FolderMini), buka Pustaka, ketuk Tambah Ubin, pilih Situs Web, lalu tempel alamatnya. Ikon dan nama terisi otomatis.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Masukkan ke widget",
+        text: "Tambahkan ubin situs ke sebuah grup, lalu tambahkan widget WidgetLoft ke Layar Utama.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pilih browser untuk semua situs",
+        text: "Buka Pengaturan, Widget, Membuka situs web, lalu pilih Chrome, Firefox, Brave, atau browser lain, atau Di dalam WidgetLoft untuk tampilan layar penuh.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ubah satu situs jika perlu",
+        text: "Buka ubin situs, ketuk Dibuka di, lalu pilih opsi lain khusus untuk situs itu, atau biarkan Ikuti pengaturan.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tambahkan browser kustom jika browser Anda tidak ada",
+        text: "Di Browser kustom, ketuk Tambah Browser, isi nama dan format alamat yang berisi {url}, lalu ketuk Coba.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "id",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Mengapa situs di Layar Utama saya selalu terbuka di Safari?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Markah yang dibuat dengan Tambah ke Layar Utama di Safari terbuka di Safari, dan sebagian besar widget tautan meneruskan alamat ke browser default. Untuk memakai browser lain hanya bagi tautan tersebut, Anda perlu widget yang bisa memilih browser, seperti WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apa yang terjadi jika browser pilihan saya tidak terpasang?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Situs akan terbuka di browser default Anda, jadi ketukan pada ubin tidak pernah sia-sia.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apakah saya tetap masuk ke situs di dalam WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Login di browser WidgetLoft terpisah dari Safari, jadi Anda mungkin perlu masuk sekali di sana. Jika ingin memakai sesi yang sudah ada, pilih browser yang biasa Anda pakai.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cara Membuka Situs Web di Chrome (atau Browser Apa Pun) dari Widget iPhone
+
+**Jawaban singkat:** situs web yang Anda tambahkan ke Layar Utama iPhone terbuka di Safari atau browser default, dan itu tidak bisa diubah per tautan. Dengan [WidgetLoft](/widgetloft) (sebelumnya FolderMini), Anda menambahkan situs sebagai ubin widget, lalu memilih Chrome, Firefox, Brave, browser lain, atau tampilan layar penuh di Pengaturan → Widget → Membuka situs web, untuk semua situs atau satu saja.
+
+Mungkin Safari adalah browser default Anda, tetapi dasbor kerja Anda ada di Chrome. Satu ketukan di Layar Utama seharusnya tetap membawa Anda ke tempat yang tepat.
+
+---
+
+## Mengapa situs di Layar Utama selalu terbuka di Safari
+
+**Tambah ke Layar Utama** di Safari membuat markah yang milik Safari. Sebagian besar widget tautan berakhir di tempat yang sama: meneruskan alamat ke **browser default** Anda.
+
+Mengganti browser default akan mengubah setiap tautan di setiap aplikasi. Yang biasanya Anda inginkan lebih spesifik: *situs ini* di Chrome, sisanya seperti biasa. Itulah yang dilakukan ubin situs web WidgetLoft: satu browser untuk semua situs, dengan pengecualian untuk situs mana pun.
+
+## Langkah demi langkah: membuka situs di Chrome dari widget
+
+1. **Tambahkan situs sebagai ubin.** Di [WidgetLoft](/widgetloft), buka **Pustaka** → **Tambah Ubin** → **Situs Web**, lalu tempel alamatnya. Ikon dan nama situs terisi otomatis.
+2. **Masukkan ke widget.** Tambahkan ubin ke sebuah grup, lalu tambahkan widget WidgetLoft ke Layar Utama (tekan lama Layar Utama, ketuk **+**, cari WidgetLoft).
+3. **Pilih browser untuk semua situs.** Buka **Pengaturan** → **Widget** → **Membuka situs web**, lalu pilih Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha, atau Yandex. Atau pilih **Di dalam WidgetLoft** untuk tampilan layar penuh.
+4. **Ubah satu situs (opsional).** Buka ubin situs, ketuk **Dibuka di**, lalu pilih opsi lain. Ini hanya berlaku untuk situs itu. **Ikuti pengaturan** mengembalikannya.
+5. **Tambahkan browser kustom (opsional).** Tidak ada di daftar? Buka **Browser kustom** → **Tambah Browser**, isi nama dan format alamat yang berisi `{url}`, lalu ketuk **Coba**.
+
+## Opsi mana yang dipilih
+
+| Opsi | Kapan dipakai |
+| --- | --- |
+| Browser default | Anda puas dengan browser yang dipakai bagian lain iPhone |
+| Browser pilihan (Chrome, Firefox, Brave, dan lainnya) | Markah, kata sandi, atau ekstensi Anda ada di browser yang bukan default |
+| Di dalam WidgetLoft | Anda ingin situs tampil layar penuh tanpa tab, dengan tombol **Buka di Browser** saat diperlukan |
+| Browser kustom | Browser Anda tidak ada di daftar dan Anda tahu format alamatnya |
+
+Anda bebas mencampurnya. Biarkan pengaturan umum [WidgetLoft](/widgetloft) di browser favorit Anda, lalu atur satu situs bank atau kerja agar terbuka di tempat lain lewat **Dibuka di**.
+
+## Yang perlu diketahui
+
+- **WidgetLoft terbuka sesaat lebih dulu** saat Anda memilih opsi selain browser default. Dengan browser default, situs langsung terbuka.
+- **Jika browser pilihan tidak terpasang**, situs terbuka di browser default Anda.
+- **Login di browser WidgetLoft terpisah dari Safari**, jadi Anda mungkin perlu masuk sekali lagi di sana.
+- **Ini bukan mode aplikasi web.** Di dalam WidgetLoft adalah tampilan browser layar penuh, bukan aplikasi web yang terpasang terpisah.
+- **Berfungsi juga dari Dynamic Island.** Jika Anda memakai Bilah Peluncuran Cepat, ubin situs di Dynamic Island dan banner Layar Terkunci juga terbuka di browser pilihan Anda.
+
+Situs web berdampingan dengan aplikasi Anda di widget yang sama. Untuk ubin aplikasi, lihat [cara membuka aplikasi dari widget](/blog/launch-apps-from-widgets-ios).
+
+## Pertanyaan umum
+
+**Mengapa situs di Layar Utama saya selalu terbuka di Safari?**
+Markah yang dibuat dengan Tambah ke Layar Utama di Safari terbuka di Safari, dan sebagian besar widget tautan memakai browser default Anda. Ubin situs web di [WidgetLoft](/widgetloft) memungkinkan Anda memilih browser.
+
+**Apa yang terjadi jika browser pilihan saya tidak terpasang?**
+Situs terbuka di browser default Anda, jadi ubin tetap berfungsi.
+
+**Apakah saya tetap masuk ke situs di dalam WidgetLoft?**
+Login di sana terpisah dari Safari, jadi Anda mungkin perlu masuk sekali. Lebih suka sesi yang sudah ada? Pilih browser yang biasa Anda pakai.
+
+---
+
+Siap menaruh situs favorit sejauh satu ketukan, di browser pilihan Anda? [Unduh WidgetLoft di App Store](/widgetloft/download).

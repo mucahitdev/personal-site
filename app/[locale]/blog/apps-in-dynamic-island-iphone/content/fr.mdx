@@ -1,0 +1,150 @@
+export const meta = {
+  title: "Comment mettre vos apps préférées dans la Dynamic Island de l’iPhone",
+  description:
+    "iOS ne permet pas d’épingler des raccourcis d’apps dans la Dynamic Island, mais une Activité en direct peut les afficher. Voici comment garder jusqu’à 5 apps dans l’île et jusqu’à 10 sur l’écran verrouillé.",
+  keywords: [
+    "apps dans la dynamic island",
+    "raccourcis apps dynamic island",
+    "lanceur d'apps dynamic island iphone",
+    "mettre des apps dans la dynamic island",
+    "lanceur d'apps écran verrouillé activité en direct",
+    "lancement rapide dynamic island",
+  ],
+  ogTitle: "Mettez vos apps préférées dans la Dynamic Island",
+  ogDescription:
+    "Un lanceur en Activité en direct pour iPhone : jusqu’à 5 apps dans la Dynamic Island, jusqu’à 10 sur l’écran verrouillé.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline: "Comment mettre vos apps préférées dans la Dynamic Island de l’iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/fr/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Mettre vos apps préférées dans la Dynamic Island de l’iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Créez un groupe",
+        text: "Ouvrez WidgetLoft (anciennement FolderMini), créez un groupe et ajoutez les apps que vous utilisez le plus.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Activez la barre de lancement rapide",
+        text: "Dans WidgetLoft, allez dans Réglages, puis Dynamic Island et Activité en direct, et activez la barre de lancement rapide.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisissez le dossier",
+        text: "Sous Dossier, choisissez le groupe que vous voulez voir dans la Dynamic Island et sur l’écran verrouillé.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Autorisez les Activités en direct",
+        text: "Vérifiez dans l’app Réglages d’iOS que les Activités en direct sont autorisées pour WidgetLoft.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Appuyez longuement sur l’île et touchez une app",
+        text: "Appuyez longuement sur la Dynamic Island pour déplier la rangée de 5 apps maximum, puis touchez-en une pour l’ouvrir.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Pourquoi mes apps ont-elles disparu de la Dynamic Island ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS met fin aux Activités en direct au bout de quelques heures (environ 8 lorsqu’elles sont actives). WidgetLoft relance la barre de lancement rapide chaque fois que vous ouvrez l’app, donc une petite visite suffit à la faire revenir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Puis-je mettre plus de 5 apps dans la Dynamic Island ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non. La Dynamic Island dépliée affiche une rangée de 5 apps maximum. La bannière de l’écran verrouillé affiche jusqu’à 10 apps du même groupe, sur deux rangées.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "La barre de lancement rapide est-elle finalisée ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Elle est indiquée comme Bêta dans WidgetLoft. Elle repose sur les Activités en direct d’iOS : elle a donc besoin qu’elles soient autorisées pour WidgetLoft et suit les limites de durée qu’iOS leur impose.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Comment mettre vos apps préférées dans la Dynamic Island de l’iPhone
+
+**Réponse rapide :** iOS n’a aucun réglage pour épingler des raccourcis d’apps dans la Dynamic Island. Seules les Activités en direct s’y affichent. [WidgetLoft](/widgetloft) (anciennement FolderMini) exploite justement cela : sa barre de lancement rapide est une Activité en direct qui reflète l’un de vos groupes. Vous avez ainsi jusqu’à 5 apps dans la Dynamic Island et jusqu’à 10 sur l’écran verrouillé.
+
+La Dynamic Island est toujours sous vos yeux, ce qui en fait l’endroit idéal pour les apps que vous ouvrez toute la journée. Voici comment les y placer en une minute environ.
+
+---
+
+## Pourquoi la Dynamic Island n’accepte pas de raccourcis d’apps
+
+Apple a conçu la Dynamic Island pour les Activités en direct : un minuteur, une livraison de repas, un score en direct. Impossible d’y glisser une icône d’app, et aucun réglage ne permet d’en épingler une. C’est pareil pour la bannière d’Activité en direct sur l’écran verrouillé.
+
+L’astuce consiste donc à utiliser une Activité en direct dont le contenu est une rangée de vos propres apps. C’est exactement ce que fait la **barre de lancement rapide** de WidgetLoft. Elle reflète un groupe de l’app, avec les mêmes icônes, et le garde dans l’île et sur l’écran verrouillé.
+
+## Étape par étape : mettre des apps dans la Dynamic Island
+
+1. **Créez un groupe.** Ouvrez [WidgetLoft](/widgetloft), créez un groupe dans l’onglet Groupes et ajoutez les apps que vous utilisez le plus. L’île en affiche jusqu’à 5, donc un groupe de 5 apps tient en entier.
+2. **Activez la barre de lancement rapide.** Allez dans Réglages → **Dynamic Island et Activité en direct** et activez la **barre de lancement rapide**.
+3. **Choisissez le dossier.** Sous **Dossier**, choisissez le groupe que vous venez de créer.
+4. **Autorisez les Activités en direct.** Si rien n’apparaît, ouvrez l’app Réglages d’iOS, trouvez WidgetLoft et vérifiez que les Activités en direct sont autorisées.
+5. **Appuyez longuement sur l’île et touchez une app.** L’île compacte affiche un symbole de grille et le nombre d’apps. Appuyez longuement pour déplier la rangée, puis touchez n’importe quelle icône.
+
+## Dynamic Island ou bannière de l’écran verrouillé
+
+| | Dynamic Island | Bannière de l’écran verrouillé |
+| --- | --- | --- |
+| Apps affichées | Jusqu’à 5 | Jusqu’à 10 |
+| Rangées | Une rangée | Une rangée jusqu’à 5, deux rangées de 6 à 10 |
+| Effet d’un toucher | Ouvre l’app directement, en un seul toucher | Demande de déverrouiller avec Face ID, puis ouvre l’app |
+| Tuiles de sites web | S’ouvrent dans le navigateur choisi | S’ouvrent dans le navigateur choisi |
+| Apparence | Compacte : un symbole de grille et le nombre d’apps | Teintée de la couleur du groupe, ou Liquid Glass du système pour un groupe Transparent |
+
+L’ouverture en un toucher depuis la Dynamic Island est une nouveauté de [WidgetLoft](/widgetloft) 2.1.0 : l’app s’ouvre immédiatement, sans passer d’abord par WidgetLoft. Sur l’écran verrouillé, votre iPhone est encore verrouillé : vous confirmez avec Face ID, puis l’app s’ouvre. Si vous refaites tout votre écran verrouillé, consultez aussi [comment configurer l’écran verrouillé d’iOS 27](/blog/ios-27-lock-screen-setup).
+
+## Questions fréquentes
+
+**Pourquoi mes apps ont-elles disparu de la Dynamic Island ?**
+iOS met fin aux Activités en direct au bout de quelques heures (environ 8 lorsqu’elles sont actives). WidgetLoft relance la barre de lancement rapide chaque fois que vous ouvrez l’app, donc une petite visite suffit à la faire revenir.
+
+**Puis-je mettre plus de 5 apps dans la Dynamic Island ?**
+Non. L’île dépliée affiche une rangée de 5 apps maximum. La bannière de l’écran verrouillé affiche jusqu’à 10 apps du même groupe, sur deux rangées.
+
+**La barre de lancement rapide est-elle finalisée ?**
+Elle est indiquée comme Bêta dans l’app. Elle repose sur les Activités en direct d’iOS : elle a donc besoin qu’elles soient autorisées pour WidgetLoft et suit les limites de durée qu’iOS leur impose.
+
+---
+
+Prêt à essayer ? [Téléchargez WidgetLoft sur l’App Store](/widgetloft/download) et gardez vos apps préférées à un toucher dans la Dynamic Island.

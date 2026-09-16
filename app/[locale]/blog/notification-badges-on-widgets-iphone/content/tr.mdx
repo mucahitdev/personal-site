@@ -1,0 +1,157 @@
+export const meta = {
+  title: "iPhone Widget'larında Bildirim Noktası Nasıl Gösterilir? (iOS 27)",
+  description:
+    "Widget içindeki uygulama ikonları hiçbir zaman bildirim rozeti göstermez. iOS 27'nin yeni Kısayollar bildirim tetikleyicisi ve WidgetLoft ile iPhone'da widget kutucuğuna bildirim noktası koymanın adım adım yolu ve dürüst sınırları.",
+  keywords: [
+    "widget bildirim rozeti iphone",
+    "widget uygulama ikonu bildirim göstermiyor",
+    "widget bildirim noktası",
+    "ios 27 kısayollar bildirim otomasyonu",
+    "hangi uygulamada bildirim var widget",
+    "başlatıcı widget okunmamış rozet iphone",
+  ],
+  ogTitle: "iPhone Widget'larında Bildirim Noktaları (iOS 27)",
+  ogDescription:
+    "iOS 27 Kısayollar bildirim tetikleyicisiyle widget'ınızdaki uygulama kutucuklarına nokta koyun.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline: "iPhone Widget'larında Bildirim Noktası Nasıl Gösterilir? (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/tr/blog/notification-badges-on-widgets-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone widget'ındaki uygulama kutucuklarında bildirim noktası gösterme",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Bildirim Noktaları'nı açın",
+        text: "WidgetLoft'ta (eski adıyla FolderMini) Ayarlar'ı açıp Bildirim Noktaları'na (Beta) gidin. Kurulum iOS 27'de kullanılabilir.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bildirim otomasyonu oluşturun",
+        text: "Kısayollar uygulamasında Otomasyon, Uygulamalar, Bildirim yolunu izleyin ve nokta istediğiniz uygulamayı seçin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Sessiz çalışmasını sağlayın",
+        text: "Tetikleyiciyi Otomasyon açık ve Bildir kapalı olacak şekilde ayarlayın, böylece size sormadan çalışır.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "WidgetLoft eylemini ekleyin",
+        text: "Aynı uygulama için WidgetLoft'un Bildirim noktasını göster eylemini ekleyin. Her uygulama için tekrarlayın, her biri yaklaşık bir dakika sürer.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "İsterseniz başka yerden açılınca noktayı temizleyin",
+        text: "Uygulama için Uygulama açıldığında otomasyonu oluşturup Bildirim Noktasını Temizle eylemini ekleyin.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Widget bir uygulamanın okunmamış bildirim sayısını gösterebilir mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Üçüncü taraf bir widget başka bir uygulamanın okunmamış sayısını okuyamaz. iOS 27'de WidgetLoft bildirim geldiğinde uygulamanın kutucuğuna nokta koyabilir, ama bu bir sayı değil, bir noktadır.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bildirimi okuduktan sonra nokta neden kaybolmuyor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı temizlemez. Uygulamayı widget'tan açın, Bildirim Noktasını Temizle eylemli bir Uygulama açıldığında otomasyonu ekleyin ya da WidgetLoft'taki Tüm noktaları temizle düğmesini kullanın.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bildirim noktaları iOS 26 veya öncesinde çalışır mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Kurulum, iOS 27 ile gelen Kısayollar bildirim tetikleyicisine dayanır. WidgetLoft'un kendisi iOS 18 ve sonrasında çalışır, yalnızca noktalar olmadan.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone Widget'larında Bildirim Noktası Nasıl Gösterilir? (iOS 27)
+
+**Kısa cevap:** Widget'lar başka bir uygulamanın okunmamış sayısını okuyamaz, bu yüzden başlatıcı widget içindeki uygulama ikonları rozet göstermez. iOS 27'de [WidgetLoft](/widgetloft) (eski adıyla FolderMini) bunu bir Kısayollar otomasyonuyla aşar: bir uygulama bildirim gönderdiğinde otomasyon o uygulamanın kutucuğuna bir nokta koyar, uygulamayı widget'tan açtığınızda da nokta temizlenir.
+
+Ana ekranı toparlamak için uygulamalarınızı bir widget'a taşıdınız, ama artık hangisinde yeni bir şey olduğunu göremiyorsunuz. İşte o sinyali geri almanın yolu.
+
+---
+
+## Widget'taki uygulama ikonları neden rozet göstermez?
+
+Ana ekrandaki bir ikonun üzerindeki kırmızı sayı rozetini iOS'un kendisi çizer. Widget ise başka bir uygulamanın çizdiği ayrı bir görünümdür ve iOS, üçüncü taraf bir widget'ın diğer uygulamalarınızda kaç okunmamış bildirim olduğunu okumasına izin vermez. Bu yüzden her başlatıcı widget düz ikonlar gösterir.
+
+iOS 27 bu tabloda bir parçayı değiştirdi. Kısayollar artık bir uygulama bildirim gönderdiğinde çalışan otomasyonlar sunuyor ([iOS 27'de widget'lardaki yenilikler](/blog/ios-27-widgets-whats-new) yazısına göz atın). Sayı hâlâ gizli, ama bir otomasyon bildirimin geldiği ana tepki verebilir ve WidgetLoft'un Bildirim Noktaları tam bu tetikleyici üzerine kurulu.
+
+## Adım adım: widget kutucuklarına bildirim noktası ekleme
+
+1. **Bildirim Noktaları'nı açın.** [WidgetLoft](/widgetloft)'u açın, **Ayarlar → Bildirim Noktaları** (Beta) bölümüne gidin. Kurulum iOS 27'de kullanılabilir.
+2. **Bildirim otomasyonu oluşturun.** Kısayollar uygulamasını açıp **Otomasyon → Uygulamalar → Bildirim** yolunu izleyin, ardından nokta istediğiniz uygulamayı seçin.
+3. **Sessiz çalışmasını sağlayın.** Tetikleyiciyi **Otomasyon** açık ve **Bildir** kapalı olacak şekilde ayarlayın, böylece size sormadan çalışır.
+4. **WidgetLoft eylemini ekleyin.** WidgetLoft'un **Bildirim noktasını göster** eylemini ekleyip aynı uygulamayı seçin. Takip etmek istediğiniz her uygulama için 2 ile 4 arasındaki adımları tekrarlayın. Her biri yaklaşık bir dakika sürer.
+5. **İsteğe bağlı: uygulamayı başka yerden açınca noktayı temizleyin.** Uygulamayı widget'tan açtığınızda nokta temizlenir. Sık sık başka bir yoldan açıyorsanız, o uygulama için **Bildirim Noktasını Temizle** eylemli bir **Uygulama açıldığında** otomasyonu ekleyin.
+
+## Bildirim noktası ve sayı rozeti karşılaştırması
+
+| Ana ekran ikonundaki sayı rozeti | WidgetLoft kutucuğundaki bildirim noktası |
+| --- | --- |
+| 3 gibi bir sayı gösterir | Sayı olmadan bir nokta gösterir |
+| Uygulamanın kendisi günceller | Uygulamayı widget'tan açınca ya da Bildirim Noktasını Temizle otomasyonuyla temizlenir |
+| Kurulum gerekmez | Uygulama başına bir Kısayollar otomasyonu, her biri yaklaşık bir dakika |
+| Güncel her iOS sürümünde çalışır | iOS 27 gerektirir |
+| Uygulama ikonlarında görünür | Uygulama kutucuklarında görünür, web siteleri, Kısayollar kutucukları ve kişilerde görünmez |
+
+Bir nokta, bir bakışın ardındaki asıl soruya cevap verir: bu uygulamada yeni bir şey var mı? [WidgetLoft](/widgetloft) kutucukları uygulamayı hâlâ tek dokunuşla doğrudan açar, artık bu sinyali de gösterir.
+
+## Bildirim noktalarının yapamadıkları
+
+Bu bir sayı değil, bir nokta: bir şeyin geldiğini bilirsiniz, ne kadar olduğunu değil. Kurulum iOS 27 gerektirir ve her uygulamanın kendi otomasyonu olmalıdır.
+
+Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı temizlemez. Uygulamayı widget'tan açın ya da WidgetLoft'taki **Tüm noktaları temizle** düğmesini kullanın. Web siteleri, Kısayollar kutucukları ve kişilerde nokta olamaz, özelliğin tamamı da hâlâ Beta olarak işaretli.
+
+## Sık sorulan sorular
+
+**Widget bir uygulamanın okunmamış bildirim sayısını gösterebilir mi?**
+Hayır. Üçüncü taraf bir widget başka bir uygulamanın okunmamış sayısını okuyamaz. iOS 27'de WidgetLoft bildirim geldiğinde uygulamanın kutucuğuna nokta koyabilir, ama bu bir sayı değil, bir noktadır.
+
+**Bildirimi okuduktan sonra nokta neden kaybolmuyor?**
+Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı temizlemez. Uygulamayı widget'tan açın, Bildirim Noktasını Temizle eylemli bir Uygulama açıldığında otomasyonu ekleyin ya da Tüm noktaları temizle'ye dokunun.
+
+**Bildirim noktaları iOS 26 veya öncesinde çalışır mı?**
+Hayır. Kurulum, iOS 27 ile gelen Kısayollar bildirim tetikleyicisine dayanır. WidgetLoft'un kendisi iOS 18 ve sonrasında çalışır, yalnızca noktalar olmadan.
+
+---
+
+Yenilikleri bir bakışta görmeye hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve önemli uygulamalarınıza bir nokta koyun.

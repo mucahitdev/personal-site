@@ -1,0 +1,157 @@
+export const meta = {
+  title: "如何在 iPhone 小组件上显示通知圆点（iOS 27）",
+  description:
+    "小组件里的 App 图标从来不会显示通知标记。本文一步步教你用 iOS 27 新增的快捷指令通知触发器和 WidgetLoft，在小组件的图标块上显示通知圆点，并坦诚说明它的限制。",
+  keywords: [
+    "小组件 通知标记 iphone",
+    "小组件 app 图标 不显示角标",
+    "小组件 通知圆点",
+    "ios 27 快捷指令 通知 自动化",
+    "小组件 查看哪个 app 有通知",
+    "启动器小组件 未读 iphone",
+  ],
+  ogTitle: "iPhone 小组件上的通知圆点（iOS 27）",
+  ogDescription:
+    "用 iOS 27 快捷指令的通知触发器，在小组件的 App 图标块上显示圆点。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "如何在 iPhone 小组件上显示通知圆点（iOS 27）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/notification-badges-on-widgets-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在 iPhone 小组件的 App 图标块上显示通知圆点",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "打开通知圆点",
+        text: "在 WidgetLoft（原 FolderMini）中打开设置，进入通知圆点（Beta）。该设置在 iOS 27 上可用。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "创建通知自动化",
+        text: "在快捷指令 App 中依次进入自动化、App、通知，然后选择要显示圆点的 App。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "让它静默运行",
+        text: "将触发器设为自动化开启、通知关闭，这样运行时不会每次询问你。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加 WidgetLoft 操作",
+        text: "为同一个 App 添加 WidgetLoft 的显示通知圆点操作。每个 App 重复一次，每个大约一分钟。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "可选：在别处打开 App 时清除圆点",
+        text: "为该 App 创建一个打开 App 时自动化，并添加清除通知圆点操作。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "小组件能显示某个 App 的未读通知数量吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不能。第三方小组件无法读取其他 App 的未读数量。在 iOS 27 上，WidgetLoft 可以在通知到达时给该 App 的图标块加上圆点，但它是圆点，不是数字。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "为什么我读了通知，圆点还不消失？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "只在锁定屏幕或 Apple Watch 上阅读通知不会清除圆点。请从小组件打开该 App，添加一个带清除通知圆点操作的打开 App 时自动化，或使用 WidgetLoft 中的清除所有圆点。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "通知圆点在 iOS 26 或更早版本上能用吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不能。设置依赖 iOS 27 新增的快捷指令通知触发器。WidgetLoft 本身支持 iOS 18 及更高版本，只是没有圆点功能。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何在 iPhone 小组件上显示通知圆点（iOS 27）
+
+**快速回答：** 小组件无法读取其他 App 的未读数量，所以启动器小组件里的 App 图标从不显示标记。在 iOS 27 上，[WidgetLoft](/widgetloft)（原 FolderMini）用一个快捷指令自动化解决这个问题：当某个 App 发来通知时，自动化会在该 App 的图标块上加一个圆点；你从小组件打开这个 App 后，圆点就会消失。
+
+你把 App 放进小组件来整理主屏幕，结果却看不出哪个 App 有新消息了。下面教你把这个提示找回来。
+
+---
+
+## 为什么小组件里的 App 图标不显示标记
+
+主屏幕图标上的红色数字标记是由 iOS 自己绘制的。小组件则是另一个 App 绘制的独立视图，iOS 不允许第三方小组件读取你其他 App 有多少条未读通知。因此，所有启动器小组件显示的都只是普通图标。
+
+iOS 27 改变了其中一环。快捷指令现在提供在 App 发送通知时运行的自动化（详见 [iOS 27 小组件新功能](/blog/ios-27-widgets-whats-new)）。未读数量仍然是私密的，但自动化可以在通知到达的那一刻做出反应，WidgetLoft 的通知圆点正是基于这个触发器。
+
+## 分步操作：给小组件图标块加上通知圆点
+
+1. **打开通知圆点。** 打开 [WidgetLoft](/widgetloft)，进入 **设置 → 通知圆点**（Beta）。该设置在 iOS 27 上可用。
+2. **创建通知自动化。** 打开快捷指令 App，依次进入 **自动化 → App → 通知**，然后选择要显示圆点的 App。
+3. **让它静默运行。** 将触发器设为 **自动化** 开启、**通知** 关闭，这样运行时不会每次询问你。
+4. **添加 WidgetLoft 操作。** 添加 WidgetLoft 的 **显示通知圆点** 操作，并选择同一个 App。对每个想关注的 App 重复第 2 到第 4 步，每个大约一分钟。
+5. **可选：在别处打开 App 时清除圆点。** 从小组件打开 App 时圆点会消失。如果你经常用其他方式打开它，请为该 App 创建一个 **打开 App 时** 自动化，并添加 **清除通知圆点** 操作。
+
+## 通知圆点与数字标记对比
+
+| 主屏幕图标上的数字标记 | WidgetLoft 图标块上的通知圆点 |
+| --- | --- |
+| 显示数字，例如 3 | 显示圆点，没有数字 |
+| 由 App 自己更新 | 从小组件打开 App，或通过清除通知圆点自动化后消失 |
+| 无需设置 | 每个 App 一个快捷指令自动化，每个大约一分钟 |
+| 适用于任何较新的 iOS 版本 | 需要 iOS 27 |
+| 显示在 App 图标上 | 显示在 App 图标块上，网站、快捷指令图标块和联系人不支持 |
+
+圆点回答了你扫一眼时真正想知道的问题：这个 App 有新内容吗？[WidgetLoft](/widgetloft) 的图标块依然一点即可直接打开 App，现在还能显示这个提示。
+
+## 通知圆点做不到的事
+
+它是圆点，不是计数：你知道有新内容到了，但不知道有多少。设置需要 iOS 27，并且每个 App 都需要单独的自动化。
+
+只在锁定屏幕或 Apple Watch 上阅读通知不会清除圆点。请从小组件打开该 App，或使用 WidgetLoft 中的 **清除所有圆点** 按钮。网站、快捷指令图标块和联系人无法显示圆点，整个功能目前仍标记为 Beta。
+
+## 常见问题
+
+**小组件能显示某个 App 的未读通知数量吗？**
+不能。第三方小组件无法读取其他 App 的未读数量。在 iOS 27 上，WidgetLoft 可以在通知到达时给该 App 的图标块加上圆点，但它是圆点，不是数字。
+
+**为什么我读了通知，圆点还不消失？**
+只在锁定屏幕或 Apple Watch 上阅读不会清除圆点。请从小组件打开该 App，添加一个带清除通知圆点操作的打开 App 时自动化，或轻点清除所有圆点。
+
+**通知圆点在 iOS 26 或更早版本上能用吗？**
+不能。设置依赖 iOS 27 新增的快捷指令通知触发器。WidgetLoft 本身支持 iOS 18 及更高版本，只是没有圆点功能。
+
+---
+
+想一眼看到新消息吗？[前往 App Store 下载 WidgetLoft](/widgetloft/download)，给重要的 App 加上圆点。

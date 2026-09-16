@@ -1,0 +1,150 @@
+export const meta = {
+  title: "iPhone'da Sık Kullandığınız Uygulamaları Dynamic Island'a Nasıl Koyarsınız",
+  description:
+    "iOS, Dynamic Island'a uygulama kısayolu sabitlemenize izin vermez, ama bir Canlı Etkinlik bunu yapabilir. Dynamic Island'da 5, Kilit Ekranı'nda 10 uygulamaya kadar nasıl yer açacağınızı anlatıyoruz.",
+  keywords: [
+    "dynamic island uygulama ekleme",
+    "dynamic island kısayol",
+    "dynamic island uygulama başlatıcı",
+    "iphone dynamic island uygulama koyma",
+    "kilit ekranı uygulama başlatıcı canlı etkinlik",
+    "dynamic island hızlı başlatma",
+  ],
+  ogTitle: "Sık Kullandığınız Uygulamaları Dynamic Island'a Koyun",
+  ogDescription:
+    "iPhone için Canlı Etkinlik başlatıcısı: Dynamic Island'da 5, Kilit Ekranı'nda 10 uygulamaya kadar.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline: "iPhone'da Sık Kullandığınız Uygulamaları Dynamic Island'a Nasıl Koyarsınız",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/tr/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone'da sık kullandığınız uygulamaları Dynamic Island'a koyun",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Bir grup oluşturun",
+        text: "WidgetLoft'u (eski adıyla FolderMini) açın, bir grup oluşturun ve en çok kullandığınız uygulamaları ekleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Hızlı Erişim çubuğunu açın",
+        text: "WidgetLoft'ta Ayarlar, ardından Dynamic Island ve Canlı Etkinlik bölümüne gidin ve Hızlı Erişim çubuğunu açın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Klasörü seçin",
+        text: "Klasör altında Dynamic Island'da ve Kilit Ekranı'nda görmek istediğiniz grubu seçin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Canlı Etkinliklere izin verin",
+        text: "iOS Ayarlar uygulamasında WidgetLoft için Canlı Etkinliklerin açık olduğundan emin olun.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Adaya uzun basın ve bir uygulamaya dokunun",
+        text: "5 uygulamaya kadar olan satırı açmak için Dynamic Island'a uzun basın, sonra açmak istediğiniz uygulamaya dokunun.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Uygulamalarım Dynamic Island'dan neden kayboldu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS, Canlı Etkinlikleri birkaç saat sonra (aktifken yaklaşık 8 saat) sonlandırır. WidgetLoft, uygulamayı her açtığınızda Hızlı Erişim çubuğunu yeniden başlatır, yani kısa bir ziyaret onu geri getirir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Dynamic Island'a 5'ten fazla uygulama koyabilir miyim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Genişletilmiş Dynamic Island tek satırda en fazla 5 uygulama gösterir. Kilit Ekranı bandı aynı gruptan iki satırda en fazla 10 uygulama gösterir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hızlı Erişim çubuğu tamamlanmış bir özellik mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "WidgetLoft'ta Beta olarak işaretli. iOS Canlı Etkinliklerine dayandığı için WidgetLoft'a Canlı Etkinlik izni vermeniz gerekir ve iOS'un bunlar için koyduğu süre sınırlarına tabidir.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone'da Sık Kullandığınız Uygulamaları Dynamic Island'a Nasıl Koyarsınız
+
+**Kısa cevap:** iOS'ta Dynamic Island'a uygulama kısayolu sabitleyen bir ayar yok. Orada yalnızca Canlı Etkinlikler görünür. [WidgetLoft](/widgetloft) (eski adıyla FolderMini) tam olarak bunu kullanır: Hızlı Erişim çubuğu, gruplarınızdan birini yansıtan bir Canlı Etkinliktir. Böylece Dynamic Island'da 5, Kilit Ekranı'nda 10 uygulamaya kadar yer alır.
+
+Dynamic Island hep gözünüzün önünde. Bu da onu gün boyu açtığınız uygulamalar için harika bir yer yapıyor. Onları yaklaşık bir dakikada oraya nasıl koyacağınızı anlatalım.
+
+---
+
+## Dynamic Island neden uygulama kısayolu almıyor
+
+Apple, Dynamic Island'ı Canlı Etkinlikler için tasarladı: bir zamanlayıcı, bir yemek siparişi, canlı bir maç skoru. Oraya uygulama simgesi sürükleyemezsiniz ve simge sabitleyen bir ayar da yoktur. Kilit Ekranı'ndaki Canlı Etkinlik bandı için de durum aynı.
+
+Çözüm, içeriği kendi uygulamalarınızdan oluşan bir satır olan bir Canlı Etkinlik. WidgetLoft'un **Hızlı Erişim çubuğu** tam olarak bunu yapar. Uygulamadaki gruplarınızdan birini aynı simgelerle yansıtır ve onu hem adada hem Kilit Ekranı'nda tutar.
+
+## Adım adım: uygulamaları Dynamic Island'a koyun
+
+1. **Bir grup oluşturun.** [WidgetLoft](/widgetloft)'u açın, Gruplar sekmesinde bir grup oluşturun ve en sık kullandığınız uygulamaları ekleyin. Ada en fazla 5 uygulama gösterir, bu yüzden 5 uygulamalık bir grup tamamen sığar.
+2. **Hızlı Erişim çubuğunu açın.** Ayarlar → **Dynamic Island ve Canlı Etkinlik** bölümüne gidin ve **Hızlı Erişim çubuğu**'nu açın.
+3. **Klasörü seçin.** **Klasör** altında az önce oluşturduğunuz grubu seçin.
+4. **Canlı Etkinliklere izin verin.** Hiçbir şey görünmüyorsa iOS Ayarlar uygulamasını açın, WidgetLoft'u bulun ve Canlı Etkinliklerin açık olduğundan emin olun.
+5. **Adaya uzun basın ve bir uygulamaya dokunun.** Küçük ada bir ızgara simgesi ve uygulama sayısını gösterir. Satırı açmak için uzun basın, sonra istediğiniz simgeye dokunun.
+
+## Dynamic Island ve Kilit Ekranı bandı karşılaştırması
+
+| | Dynamic Island | Kilit Ekranı bandı |
+| --- | --- | --- |
+| Gösterilen uygulama | En fazla 5 | En fazla 10 |
+| Satır | Tek satır | 5'e kadar tek satır, 6 ile 10 arası iki satır |
+| Dokunma nasıl çalışır | Uygulamayı tek dokunuşla doğrudan açar | Önce Face ID ile kilidi açmanızı ister, sonra uygulamayı açar |
+| Web sitesi kutucukları | Seçtiğiniz tarayıcıda açılır | Seçtiğiniz tarayıcıda açılır |
+| Görünüm | Küçük halde: ızgara simgesi ve uygulama sayısı | Grubun rengiyle renklenir, Şeffaf grupta sistemin Liquid Glass görünümü |
+
+Dynamic Island'dan tek dokunuşla açma [WidgetLoft](/widgetloft) 2.1.0 ile geldi: uygulama önce WidgetLoft'tan geçmeden doğrudan açılır. Kilit Ekranı'nda ise iPhone'unuz hâlâ kilitli olduğundan Face ID ile onaylarsınız ve ardından uygulama açılır. Kilit Ekranı'nızı baştan düzenliyorsanız [iOS 27 Kilit Ekranı kurulumu](/blog/ios-27-lock-screen-setup) yazısına da göz atın.
+
+## Sık sorulan sorular
+
+**Uygulamalarım Dynamic Island'dan neden kayboldu?**
+iOS, Canlı Etkinlikleri birkaç saat sonra (aktifken yaklaşık 8 saat) sonlandırır. WidgetLoft, uygulamayı her açtığınızda Hızlı Erişim çubuğunu yeniden başlatır, yani kısa bir ziyaret onu geri getirir.
+
+**Dynamic Island'a 5'ten fazla uygulama koyabilir miyim?**
+Hayır. Genişletilmiş ada tek satırda en fazla 5 uygulama gösterir. Kilit Ekranı bandı aynı gruptan iki satırda en fazla 10 uygulama gösterir.
+
+**Hızlı Erişim çubuğu tamamlanmış bir özellik mi?**
+Uygulamada Beta olarak işaretli. iOS Canlı Etkinliklerine dayandığı için WidgetLoft'a Canlı Etkinlik izni vermeniz gerekir ve iOS'un bunlar için koyduğu süre sınırlarına tabidir.
+
+---
+
+Denemeye hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve sık kullandığınız uygulamaları Dynamic Island'da tek dokunuş uzağınızda tutun.

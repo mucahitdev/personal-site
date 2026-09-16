@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "如何设置简洁的 iOS 27 锁定屏幕（紧凑时钟与一触即开的 App）",
+  description:
+    "设置简洁的 iOS 27 锁定屏幕：选择墙纸，打开紧凑时钟，再用 WidgetLoft 锁定屏幕小组件和快速启动栏添加你的 App。",
+  keywords: [
+    "ios 27 锁定屏幕",
+    "ios 27 紧凑时钟",
+    "ios 27 自定锁定屏幕",
+    "iphone 锁定屏幕 app 启动器",
+    "iphone 锁定屏幕打开 app",
+    "iphone 锁定屏幕小组件 app",
+  ],
+  ogTitle: "一触即开 App 的简洁 iOS 27 锁定屏幕",
+  ogDescription:
+    "紧凑时钟、铺满全屏的墙纸，以及在 iOS 27 锁定屏幕上一触即开的常用 App。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何设置简洁的 iOS 27 锁定屏幕（紧凑时钟与一触即开的 App）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/zh/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "设置一触即开 App 的简洁 iOS 27 锁定屏幕",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "选择墙纸",
+        text: "长按锁定屏幕，轻点“自定”，然后选择一张照片。如果照片没有铺满屏幕，就让 iOS 27 的墙纸扩展功能把它扩展开。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "打开紧凑时钟",
+        text: "在同一个编辑界面中选择紧凑时钟选项，时间会移到顶部，位于日期和小组件旁边。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加 WidgetLoft 锁定屏幕小组件",
+        text: "在 WidgetLoft（原 FolderMini）中用常用 App 建一个分组，然后在锁定屏幕编辑界面添加 WidgetLoft 小组件并选择该分组。它会显示一行，最多 4 个 App。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "打开快速启动栏",
+        text: "在 WidgetLoft 中打开设置，进入“灵动岛与实时活动”，打开快速启动栏。需要在 iOS 设置中允许 WidgetLoft 使用实时活动。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择分组",
+        text: "在“文件夹”中选择要显示的分组。锁定屏幕上最多显示 10 个 App，灵动岛中最多 5 个。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "不解锁能从锁定屏幕打开 App 吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不能。在锁定屏幕上，WidgetLoft 小组件和快速启动栏都会先要求你解锁（例如用 Face ID），然后再打开 App。途中 WidgetLoft 可能会短暂出现。在灵动岛中，App 轻点一下就能打开。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "为什么快速启动栏从锁定屏幕上消失了？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS 会在几个小时后结束实时活动。每次你打开 WidgetLoft，它都会重新启动快速启动栏。如果它从未出现，请检查 iOS 设置中是否允许 WidgetLoft 使用实时活动。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "这套设置需要 iOS 27 吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "只有紧凑时钟和墙纸扩展需要，它们是 iOS 27 的功能。WidgetLoft 本身支持 iOS 18 及更高版本。另外，锁定屏幕小组件只显示顶层 App，分组里的文件夹不会出现在那里。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何设置简洁的 iOS 27 锁定屏幕（紧凑时钟与一触即开的 App）
+
+**快速回答：** 长按锁定屏幕，轻点**自定**，选好墙纸，再打开 iOS 27 的紧凑时钟选项，让时间占用更少空间。然后添加 App：[WidgetLoft](/widgetloft)（原 FolderMini）的锁定屏幕小组件可放一行最多 4 个 App，它的快速启动栏则能在锁定屏幕上放最多 10 个 App。
+
+iOS 27 让锁定屏幕多了不少留白。与其留给更大的时钟，不如用来放你真正常打开的 App。
+
+---
+
+## iOS 27 给锁定屏幕带来了什么变化
+
+对简洁设置来说，iOS 27 有两项变化值得关注：
+
+- **紧凑时钟。** 时间变小，移到顶部，位于日期和小组件旁边，而不是占据屏幕中央。
+- **墙纸扩展。** iOS 可以把照片扩展到铺满整个锁定屏幕，适合尺寸不太合适的照片。
+
+但 iOS 仍然没有一排轻点即可打开的 App。系统自带的锁定屏幕小组件只显示信息，不能启动你的其他 App。[WidgetLoft](/widgetloft) 用两个工具填补了这个空缺：一个始终都在的锁定屏幕小组件，以及快速启动栏，也就是一个能放更多 App 的实时活动。
+
+## 分步操作：设置简洁的 iOS 27 锁定屏幕
+
+1. **选择墙纸。** 长按锁定屏幕，轻点**自定**，选择一张照片。如果照片没有铺满屏幕，就用 iOS 27 的墙纸扩展把它扩展开。
+2. **打开紧凑时钟。** 在同一个编辑界面中选择紧凑时钟选项。时间会移到顶部，位于日期和小组件旁边。
+3. **添加 WidgetLoft 锁定屏幕小组件。** 在 WidgetLoft 中用常用 App 建一个分组。回到锁定屏幕编辑界面，添加 **WidgetLoft** 小组件并选择该分组。它显示一行，最多 4 个 App（大图标时为 3 个）。
+4. **打开快速启动栏。** 打开 WidgetLoft，前往**设置 → 灵动岛与实时活动**，打开**快速启动栏**（Beta）。
+5. **选择分组。** 在**文件夹**中选择你想要的分组。锁定屏幕的横幅中最多显示 10 个 App，灵动岛中最多 5 个。
+
+## 锁定屏幕小组件与快速启动栏对比
+
+| | 锁定屏幕小组件 | 快速启动栏 |
+| --- | --- | --- |
+| App 数量 | 一行最多 4 个（大图标时 3 个） | 锁定屏幕最多 10 个，灵动岛最多 5 个 |
+| 显示时间 | 始终显示，是锁定屏幕的一部分 | 打开 WidgetLoft 后的几个小时内 |
+| 在锁定屏幕上轻点 | 先解锁，再打开 App | 先用 Face ID 解锁，再打开 App |
+| 灵动岛 | 不包含 | 长按灵动岛，轻点 App 即可一触打开 |
+
+不必二选一。把一整天都会打开的 4 个 App 放进小组件，把一段时间内想放在手边的更长列表交给快速启动栏。想进一步了解灵动岛的用法，可以阅读[如何把 App 放进灵动岛](/blog/apps-in-dynamic-island-iphone)。
+
+## 常见问题
+
+**不解锁能从锁定屏幕打开 App 吗？**
+不能。在锁定屏幕上，小组件和快速启动栏都会先要求你解锁（例如用 Face ID），然后再打开 App。途中 WidgetLoft 可能会短暂出现。在灵动岛中，App 轻点一下就能打开。
+
+**为什么快速启动栏从锁定屏幕上消失了？**
+iOS 会在几个小时后结束实时活动。每次你打开 WidgetLoft，它都会重新启动快速启动栏。如果它从未出现，请检查 iOS 设置中是否允许 WidgetLoft 使用实时活动。
+
+**这套设置需要 iOS 27 吗？**
+只有紧凑时钟和墙纸扩展需要。[WidgetLoft](/widgetloft) 本身支持 iOS 18 及更高版本。有一个限制需要了解：锁定屏幕小组件只显示顶层 App，分组里的文件夹不会出现在那里。
+
+---
+
+想要更简洁的锁定屏幕？[在 App Store 下载 WidgetLoft](/widgetloft/download)，让常用 App 一触即开。

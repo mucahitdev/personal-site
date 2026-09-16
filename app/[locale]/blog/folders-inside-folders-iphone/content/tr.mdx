@@ -1,0 +1,157 @@
+export const meta = {
+  title: "iPhone'da Klasör İçine Klasör Nasıl Konur (İç İçe Klasörler)",
+  description:
+    "iOS ana ekran klasörleri başka klasör alamaz. iPhone'da bir widget ile gerçek iç içe klasörler kurmanın yolu: klasör kutucuğuna dokunun, geri kutucuğuyla yerinde açılsın, istediğiniz kadar derine inin.",
+  keywords: [
+    "iphone klasör içinde klasör",
+    "iphone iç içe klasör",
+    "iphone alt klasör oluşturma",
+    "ana ekran klasör içine klasör",
+    "ios klasöre klasör ekleme",
+    "iphone klasör widget",
+  ],
+  ogTitle: "iPhone'da Klasör İçinde Klasör, Sonunda",
+  ogDescription:
+    "iOS klasörleri iç içe koymaz. WidgetLoft widget'ı koyar: klasöre dokunun, geri kutucuğuyla yerinde açılır.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline: "iPhone'da Klasör İçine Klasör Nasıl Konur (İç İçe Klasörler)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/tr/blog/folders-inside-folders-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone'da widget ile iç içe klasörler oluşturma",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Bir grup ve bir klasör oluşturun",
+        text: "WidgetLoft'u (eski adıyla FolderMini) yükleyin, bir grup oluşturun, grubu açın ve Yeni Klasör'e dokunun.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Uygulama ve yeni klasörler ekleyin",
+        text: "Klasöre uygulamalar ekleyin. Bir seviye daha derine inmek için klasörün içinde yine Yeni Klasör'e dokunun.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Klasör kutucuğunun görünümünü seçin",
+        text: "Klasörü içindeki uygulamalardan oluşan 2×2 veya 3×3 mini ızgara olarak gösterin ya da bir fotoğraf veya SF Symbol ile kendi simgesini verin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Widget'ı yerleştirin",
+        text: "Ana ekrana uzun basın, artı düğmesine dokunun, WidgetLoft widget'ını ekleyin ve grubunuzu seçin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Geri kutucuğunu ve otomatik dönüşü ayarlayın",
+        text: "Geri Tuşu düzenleyicisinde geri kutucuğunu biçimlendirip istediğiniz yere sürükleyin, ardından Ayarlar, Widget, Klasöre otomatik dön seçeneğini ayarlayın.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone'da klasörün içine klasör konabilir mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Normal ana ekran klasörleriyle hayır: iOS bir klasörü başka bir klasöre bırakmanıza izin vermez. WidgetLoft gibi bir klasör widget'ı ise bunu destekler. Klasör kutucuğuna dokunduğunuzda widget'ın içinde açılır ve bir üst seviyeye dönmek için geri kutucuğu çıkar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bir WidgetLoft klasörüne kaç uygulama ve alt klasör sığar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Her klasör en fazla 100 uygulama ve 20 alt klasör alır, iç içe geçme derinliğinde sınır yoktur. Ücretsiz sürüm 6 grup ve 21 kütüphane uygulamasına izin verir; WidgetLoft Pro bu sınırları kaldırır.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "İç içe klasörler kilit ekranı widget'ında çalışır mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Kilit ekranı widget'ı yalnızca en üst seviyedeki uygulamalardan oluşan tek bir sıra gösterir. İç içe klasörler ana ekran widget'larında çalışır.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone'da Klasör İçine Klasör Nasıl Konur (İç İçe Klasörler)
+
+**Kısa cevap:** iPhone ana ekranında bir klasörü başka bir klasörün içine koyamazsınız. iOS buna izin vermiyor. Ama [WidgetLoft](/widgetloft) (eski adıyla FolderMini) ile bir widget içinde gerçek iç içe klasörler kurabilirsiniz: klasör kutucuğuna dokunun, widget'ın içinde yerinde açılsın, yukarı çıkmak için geri kutucuğu olsun ve istediğiniz kadar derine inin.
+
+Bir klasörü başka bir klasörün üstüne sürükleyip geri sektiğini mi gördünüz? Yanlış bir şey yapmıyorsunuz. İşte gerçekten işe yarayan çözüm.
+
+---
+
+## iOS neden klasörleri iç içe koymuyor?
+
+Ana ekran klasörleri tek seviyelidir: bir klasörü diğerine sürükleyemezsiniz ve bunu değiştiren bir ayar da yok. Yani "İş" klasörünün içinde "Toplantılar" ve "Belgeler" klasörleri olamaz; sonunda ya tek dev bir klasörünüz ya da küçük klasörlerle dolu bir ana ekranınız olur.
+
+Bir widget, klasörün yapamadığını yapabilir. [WidgetLoft](/widgetloft)'ta bir grup ana ekran widget'ına dönüşür; grup klasörler, o klasörler de başka klasörler içerebilir. Bir klasör kutucuğuna dokunmak o klasörü yerinde açar, geri kutucuğu da sizi bir üst seviyeye götürür.
+
+## Adım adım: iPhone'da iç içe klasörler oluşturma
+
+1. **Bir grup ve bir klasör oluşturun.** [WidgetLoft](/widgetloft)'u yükleyin, bir grup oluşturun, grubu açın ve **Yeni Klasör**'e dokunun.
+2. **Uygulama ve yeni klasörler ekleyin.** Klasöre uygulamalar ekleyin. Bir seviye daha derine inmek için içinde yine **Yeni Klasör**'e dokunun.
+3. **Klasör kutucuğunun görünümünü seçin.** Klasörü içindeki uygulamalardan oluşan 2×2 veya 3×3 mini ızgara olarak gösterin ya da bir fotoğraf veya SF Symbol ile kendi simgesini verin.
+4. **Widget'ı yerleştirin.** Ana ekrana uzun basın, **+** düğmesine dokunun, WidgetLoft widget'ını ekleyin ve grubunuzu seçin.
+5. **Geri kutucuğunu ve otomatik dönüşü ayarlayın.** **Geri Tuşu** düzenleyicisinde bir sembol (12 hazır seçenek veya herhangi bir SF Symbol), sembol rengi, arka plan rengi, yüzde 0 ile 100 arası arka plan opaklığı ve boyut seçin ya da **Varsayılana Sıfırla**'ya dokunun. Geri kutucuğunu istediğiniz yere sürükleyin. Ardından **Ayarlar → Widget → Klasöre otomatik dön** bölümüne gidin.
+
+## iOS klasörleri ve WidgetLoft klasörleri
+
+| | iOS ana ekran klasörleri | WidgetLoft klasörleri |
+| --- | --- | --- |
+| Klasör içinde klasör | Mümkün değil | Evet, sınırsız derinlik |
+| Kapasite | Sadece uygulama, alt klasör yok | Klasör başına 100 uygulama ve 20 alt klasöre kadar |
+| Nerede durur | Ana ekranda bir simge olarak | Ana ekran widget'ının içinde, yerinde açılır |
+| Özel görünüm | İçindeki uygulamaların küçük bir önizlemesi | 2×2 veya 3×3 mini ızgara ya da kendi fotoğraf veya sembol simgesi |
+| Geri dönüş | Klasörün dışına dokunmak | Biçimlendirip taşıyabileceğiniz bir geri kutucuğu |
+
+[WidgetLoft](/widgetloft) ile tek bir widget, klasörlere ayrılmış bütün gününüzü taşıyabilir ve her uygulama kutucuğu yine uygulamasını doğrudan açar.
+
+## Düzenli tutmak için
+
+- **Uygulama türüne göre değil, rutine göre gruplayın.** Haberler, hava durumu ve takviminizin olduğu bir "Sabah" klasörü, içinde arama yapmanız gereken bir "Araçlar" klasöründen daha hızlıdır.
+- **Otomatik dönüşü kullanın.** **Klasöre otomatik dön** açıkken widget, bir uygulamayı açtıktan sonra, bir süre işlem yapılmadığında (10 ile 60 saniye arası, varsayılan 30) ya da her iki durumda en üste döner. Unuttuğunuz bir alt klasöre bir daha düşmezsiniz.
+
+Daha kapsamlı bir düzen için [iPhone ana ekranını düzenleme rehberine](/blog/organize-iphone-home-screen-2026) göz atın.
+
+## Sık sorulan sorular
+
+**iPhone'da klasörün içine klasör konabilir mi?**
+Normal ana ekran klasörleriyle hayır. WidgetLoft gibi bir klasör widget'ı bunu destekler: klasör kutucuğuna dokunun, widget'ın içinde açılsın, yukarı çıkmak için geri kutucuğu olsun.
+
+**Bir klasöre kaç uygulama ve alt klasör sığar?**
+Klasör başına en fazla 100 uygulama ve 20 alt klasör, derinlik sınırı yok. Ücretsiz sürüm 6 grup ve 21 kütüphane uygulamasına izin verir; WidgetLoft Pro bu sınırları kaldırır.
+
+**İç içe klasörler kilit ekranı widget'ında çalışır mı?**
+Hayır. Kilit ekranı widget'ı yalnızca en üst seviyedeki uygulamalardan oluşan tek bir sıra gösterir. İç içe klasörler ana ekran widget'larında çalışır.
+
+---
+
+Hazır mısınız? [App Store'dan WidgetLoft'u indirin](/widgetloft/download) ve bugün klasörlerin içine klasör koyun.

@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Jak otworzyć stronę w Chrome (lub dowolnej przeglądarce) z widżetu na iPhonie",
+  description:
+    "Strony dodane do ekranu początkowego iPhone’a zawsze otwierają się w Safari albo w domyślnej przeglądarce. Oto jak otworzyć stronę prosto z widżetu w Chrome, Firefox, Brave lub na pełnym ekranie, dla wszystkich stron albo tylko jednej.",
+  keywords: [
+    "otworzyć stronę w chrome z ekranu początkowego iphone",
+    "widżet iphone otwórz link w chrome",
+    "dodaj stronę do ekranu początkowego chrome iphone",
+    "skrót na ekranie początkowym otwiera safari",
+    "widżet strony internetowej iphone wybór przeglądarki",
+    "otworzyć stronę na pełnym ekranie z widżetu iphone",
+  ],
+  ogTitle: "Otwieraj strony w Chrome z widżetu na iPhonie",
+  ogDescription:
+    "Wybierz Chrome, Firefox, Brave lub widok pełnoekranowy dla stron w widżecie: dla wszystkich albo tylko dla jednej.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak otworzyć stronę w Chrome (lub dowolnej przeglądarce) z widżetu na iPhonie",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pl/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Otwieranie strony w Chrome lub innej przeglądarce z widżetu na iPhonie",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Dodaj stronę jako kafelek",
+        text: "W WidgetLoft (dawniej FolderMini) przejdź do Biblioteki, stuknij Dodaj kafelki, wybierz Witryna i wklej adres. Ikona i nazwa uzupełnią się same.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Umieść go w widżecie",
+        text: "Dodaj kafelek strony do grupy, a potem dodaj widżet WidgetLoft do ekranu początkowego.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz przeglądarkę dla wszystkich stron",
+        text: "Przejdź do Ustawienia, Widżet, Otwieranie witryn i wybierz Chrome, Firefox, Brave lub inną przeglądarkę albo W WidgetLoft, aby mieć widok pełnoekranowy.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "W razie potrzeby zmień jedną stronę",
+        text: "Otwórz kafelek strony, stuknij Otwieraj w i wybierz inną opcję tylko dla tej strony albo zostaw Według ustawień.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj własną przeglądarkę, jeśli brakuje Twojej",
+        text: "W sekcji Własne przeglądarki stuknij Dodaj przeglądarkę, wpisz nazwę i format adresu zawierający {url}, a potem stuknij Wypróbuj.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Dlaczego strona z ekranu początkowego zawsze otwiera się w Safari?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Zakładka utworzona przez Do ekranu początkowego w Safari otwiera się w Safari, a większość widżetów z linkami przekazuje adres do domyślnej przeglądarki. Aby tylko te linki otwierać w innej przeglądarce, potrzebujesz widżetu z wyborem, takiego jak WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Co się stanie, jeśli wybrana przeglądarka nie jest zainstalowana?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Strona otworzy się w domyślnej przeglądarce, więc stuknięcie kafelka nigdy nie pójdzie na marne.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy w WidgetLoft jestem zalogowany na stronach?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Logowania w przeglądarce WidgetLoft są oddzielne od Safari, więc może być trzeba zalogować się tam raz. Jeśli wolisz obecne sesje, wybierz swoją zwykłą przeglądarkę.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak otworzyć stronę w Chrome (lub dowolnej przeglądarce) z widżetu na iPhonie
+
+**Krótka odpowiedź:** strony dodane do ekranu początkowego iPhone’a otwierają się w Safari lub w domyślnej przeglądarce i nie da się tego zmienić dla pojedynczego linku. W [WidgetLoft](/widgetloft) (dawniej FolderMini) dodajesz stronę jako kafelek widżetu, a potem w Ustawienia → Widżet → Otwieranie witryn wybierasz Chrome, Firefox, Brave, inną przeglądarkę lub widok pełnoekranowy, dla wszystkich stron albo tylko jednej.
+
+Może Safari jest Twoją domyślną przeglądarką, ale panel z pracy działa w Chrome. Jedno stuknięcie na ekranie początkowym powinno prowadzić we właściwe miejsce.
+
+---
+
+## Dlaczego strony z ekranu początkowego zawsze otwierają się w Safari
+
+**Do ekranu początkowego** w Safari tworzy zakładkę, która należy do Safari. Większość widżetów z linkami kończy w tym samym miejscu: przekazuje adres do **domyślnej przeglądarki**.
+
+Zmiana domyślnej przeglądarki zmienia każdy link w każdej aplikacji. Zwykle chodzi o coś węższego: *ta* strona w Chrome, a reszta jak zawsze. Dokładnie to robią kafelki stron w WidgetLoft: jedna przeglądarka dla wszystkich stron i osobny wybór dla dowolnej pojedynczej strony.
+
+## Krok po kroku: otwieranie strony w Chrome z widżetu
+
+1. **Dodaj stronę jako kafelek.** W [WidgetLoft](/widgetloft) przejdź do **Biblioteka** → **Dodaj kafelki** → **Witryna** i wklej adres. Ikona i nazwa strony uzupełnią się same.
+2. **Umieść go w widżecie.** Dodaj kafelek do grupy, a potem dodaj widżet WidgetLoft do ekranu początkowego (przytrzymaj ekran początkowy, stuknij **+**, wyszukaj WidgetLoft).
+3. **Wybierz przeglądarkę dla wszystkich stron.** Przejdź do **Ustawienia** → **Widżet** → **Otwieranie witryn** i wybierz Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha lub Yandex. Albo wybierz **W WidgetLoft**, aby mieć widok pełnoekranowy.
+4. **Zmień jedną stronę (opcjonalnie).** Otwórz kafelek strony, stuknij **Otwieraj w** i wybierz inną opcję. Dotyczy to tylko tej strony. **Według ustawień** przywraca ustawienie ogólne.
+5. **Dodaj własną przeglądarkę (opcjonalnie).** Nie ma jej na liście? Przejdź do **Własne przeglądarki** → **Dodaj przeglądarkę**, podaj nazwę i format adresu zawierający `{url}`, a potem stuknij **Wypróbuj**.
+
+## Którą opcję wybrać
+
+| Opcja | Kiedy jej użyć |
+| --- | --- |
+| Domyślna przeglądarka | Odpowiada Ci przeglądarka, z której korzysta reszta iPhone’a |
+| Wybrana przeglądarka (Chrome, Firefox, Brave i inne) | Zakładki, hasła lub rozszerzenia masz w przeglądarce, która nie jest domyślna |
+| W WidgetLoft | Chcesz mieć stronę na pełnym ekranie bez kart, z przyciskiem **Otwórz w przeglądarce**, gdy go potrzebujesz |
+| Własna przeglądarka | Twojej przeglądarki nie ma na liście, a znasz jej format adresu |
+
+Możesz je dowolnie łączyć. Zostaw ogólne ustawienie [WidgetLoft](/widgetloft) na ulubionej przeglądarce, a jedną stronę banku lub pracy przestaw przez **Otwieraj w** na coś innego.
+
+## Czego się spodziewać
+
+- **Najpierw na chwilę otwiera się WidgetLoft**, gdy wybierzesz cokolwiek innego niż domyślną przeglądarkę. Z domyślną przeglądarką strona otwiera się od razu.
+- **Jeśli wybrana przeglądarka nie jest zainstalowana**, strona otworzy się w domyślnej przeglądarce.
+- **Logowania w przeglądarce WidgetLoft są oddzielne od Safari**, więc może być trzeba zalogować się tam jeszcze raz.
+- **To nie jest tryb aplikacji webowej.** W WidgetLoft to pełnoekranowy widok przeglądarki, a nie osobno zainstalowana aplikacja webowa.
+- **Działa też z Dynamic Island.** Jeśli masz włączony Pasek szybkiego uruchamiania, kafelki stron w Dynamic Island i na banerze na ekranie blokady otwierają się w wybranej przeglądarce.
+
+Strony stoją obok aplikacji w tym samym widżecie. O kafelkach aplikacji przeczytasz w tekście [jak uruchamiać aplikacje z widżetu](/blog/launch-apps-from-widgets-ios).
+
+## Częste pytania
+
+**Dlaczego strona z ekranu początkowego zawsze otwiera się w Safari?**
+Zakładka utworzona przez Do ekranu początkowego w Safari otwiera się w Safari, a większość widżetów z linkami korzysta z domyślnej przeglądarki. Kafelek strony w [WidgetLoft](/widgetloft) pozwala wybrać przeglądarkę.
+
+**Co się stanie, jeśli wybrana przeglądarka nie jest zainstalowana?**
+Strona otworzy się w domyślnej przeglądarce, więc kafelek nadal działa.
+
+**Czy w WidgetLoft jestem zalogowany na stronach?**
+Logowania tam są oddzielne od Safari, więc może być trzeba zalogować się raz. Wolisz obecne sesje? Wybierz swoją zwykłą przeglądarkę.
+
+---
+
+Gotowy, by mieć swoje strony o jedno stuknięcie, w przeglądarce, którą wybierzesz? [Pobierz WidgetLoft z App Store](/widgetloft/download).

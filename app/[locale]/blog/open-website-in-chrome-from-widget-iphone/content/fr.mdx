@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Comment ouvrir un site web dans Chrome (ou n’importe quel navigateur) depuis un widget iPhone",
+  description:
+    "Les sites ajoutés à l’écran d’accueil de l’iPhone s’ouvrent toujours dans Safari ou dans le navigateur par défaut. Voici comment ouvrir un site dans Chrome, Firefox, Brave ou en plein écran directement depuis un widget, pour tous les sites ou un seul.",
+  keywords: [
+    "ouvrir site dans chrome depuis écran d’accueil iphone",
+    "widget iphone ouvrir lien dans chrome",
+    "ajouter site à l’écran d’accueil chrome iphone",
+    "raccourci écran d’accueil s’ouvre dans safari",
+    "widget site web iphone choisir navigateur",
+    "ouvrir site en plein écran depuis widget iphone",
+  ],
+  ogTitle: "Ouvrir un site dans Chrome depuis un widget iPhone",
+  ogDescription:
+    "Choisissez Chrome, Firefox, Brave ou une vue plein écran pour les sites de votre widget, pour tous ou pour un seul.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline:
+      "Comment ouvrir un site web dans Chrome (ou n’importe quel navigateur) depuis un widget iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/fr/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Ouvrir un site web dans Chrome ou un autre navigateur depuis un widget iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Ajouter le site comme tuile",
+        text: "Dans WidgetLoft (anciennement FolderMini), allez dans Bibliothèque, touchez Ajouter des tuiles, choisissez Site web et collez l’adresse. L’icône et le nom sont remplis automatiquement.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Le placer dans un widget",
+        text: "Ajoutez la tuile du site à un groupe, puis ajoutez le widget WidgetLoft à votre écran d’accueil.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisir un navigateur pour tous les sites",
+        text: "Allez dans Réglages, Widget, Ouverture des sites et choisissez Chrome, Firefox, Brave ou un autre navigateur, ou Dans WidgetLoft pour une vue plein écran.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Modifier un seul site si besoin",
+        text: "Ouvrez la tuile du site, touchez S’ouvre dans et choisissez une autre option pour ce site uniquement, ou laissez Utiliser le réglage.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajouter un navigateur perso s’il manque",
+        text: "Sous Navigateurs perso, touchez Ajouter un navigateur, saisissez un nom et un format d’adresse contenant {url}, puis touchez Essayer.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Pourquoi le site de mon écran d’accueil s’ouvre-t-il toujours dans Safari ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Un signet créé avec Sur l’écran d’accueil dans Safari s’ouvre dans Safari, et la plupart des widgets de liens transmettent l’adresse à votre navigateur par défaut. Pour utiliser un autre navigateur uniquement pour ces liens, il faut un widget qui vous laisse choisir, comme WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Que se passe-t-il si le navigateur choisi n’est pas installé ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Le site s’ouvre alors dans votre navigateur par défaut, la tuile n’est donc jamais inutile.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Suis-je connecté aux sites dans WidgetLoft ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Les connexions dans le navigateur de WidgetLoft sont séparées de Safari, vous devrez peut-être vous connecter une fois. Si vous préférez vos sessions existantes, choisissez votre navigateur habituel.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Comment ouvrir un site web dans Chrome (ou n’importe quel navigateur) depuis un widget iPhone
+
+**Réponse rapide :** les sites ajoutés à l’écran d’accueil de l’iPhone s’ouvrent dans Safari ou dans votre navigateur par défaut, et impossible de changer cela lien par lien. Avec [WidgetLoft](/widgetloft) (anciennement FolderMini), vous ajoutez le site comme tuile de widget, puis vous choisissez Chrome, Firefox, Brave, un autre navigateur ou une vue plein écran dans Réglages → Widget → Ouverture des sites, pour tous les sites ou un seul.
+
+Safari est peut-être votre navigateur par défaut, mais votre tableau de bord de travail vit dans Chrome. Un seul appui sur l’écran d’accueil devrait vous mener au bon endroit.
+
+---
+
+## Pourquoi les sites de l’écran d’accueil s’ouvrent toujours dans Safari
+
+**Sur l’écran d’accueil** dans Safari crée un signet qui appartient à Safari. La plupart des widgets de liens finissent au même endroit : ils transmettent l’adresse à votre **navigateur par défaut**.
+
+Changer de navigateur par défaut change chaque lien de chaque app. Ce que l’on veut en général est plus ciblé : *ce* site dans Chrome, tout le reste comme d’habitude. C’est exactement ce que font les tuiles de site de WidgetLoft : un navigateur pour tous les sites, avec une exception pour n’importe quel site.
+
+## Étape par étape : ouvrir un site dans Chrome depuis un widget
+
+1. **Ajoutez le site comme tuile.** Dans [WidgetLoft](/widgetloft), allez dans **Bibliothèque** → **Ajouter des tuiles** → **Site web** et collez l’adresse. L’icône et le nom du site sont remplis automatiquement.
+2. **Placez-le dans un widget.** Ajoutez la tuile à un groupe, puis ajoutez le widget WidgetLoft à votre écran d’accueil (maintenez le doigt sur l’écran d’accueil, touchez **+**, cherchez WidgetLoft).
+3. **Choisissez un navigateur pour tous les sites.** Allez dans **Réglages** → **Widget** → **Ouverture des sites** et choisissez Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha ou Yandex. Ou choisissez **Dans WidgetLoft** pour une vue plein écran.
+4. **Modifiez un seul site (facultatif).** Ouvrez la tuile du site, touchez **S’ouvre dans** et choisissez une autre option. Cela ne s’applique qu’à ce site. **Utiliser le réglage** revient au réglage général.
+5. **Ajoutez un navigateur perso (facultatif).** Absent de la liste ? Allez dans **Navigateurs perso** → **Ajouter un navigateur**, donnez un nom et un format d’adresse contenant `{url}`, puis touchez **Essayer**.
+
+## Quelle option choisir
+
+| Option | Quand l’utiliser |
+| --- | --- |
+| Navigateur par défaut | Le navigateur utilisé par le reste de votre iPhone vous convient |
+| Un navigateur choisi (Chrome, Firefox, Brave et d’autres) | Vos signets, mots de passe ou extensions sont dans un navigateur qui n’est pas celui par défaut |
+| Dans WidgetLoft | Vous voulez le site en plein écran sans onglets, avec un bouton **Ouvrir dans le navigateur** au besoin |
+| Navigateur perso | Votre navigateur n’est pas dans la liste et vous connaissez son format d’adresse |
+
+Vous pouvez les combiner librement. Gardez le réglage général de [WidgetLoft](/widgetloft) sur votre navigateur préféré, puis faites ouvrir un seul site de banque ou de travail ailleurs avec **S’ouvre dans**.
+
+## À quoi s’attendre
+
+- **WidgetLoft s’ouvre un bref instant d’abord** quand vous choisissez autre chose que le navigateur par défaut. Avec le navigateur par défaut, le site s’ouvre directement.
+- **Si le navigateur choisi n’est pas installé**, le site s’ouvre dans votre navigateur par défaut.
+- **Les connexions dans le navigateur de WidgetLoft sont séparées de Safari**, vous devrez peut-être vous reconnecter une fois.
+- **Ce n’est pas un mode web app.** Dans WidgetLoft est une vue de navigateur plein écran, pas une web app installée à part.
+- **Cela marche aussi depuis la Dynamic Island.** Si vous utilisez la Barre de lancement rapide, les tuiles de site dans la Dynamic Island et dans la bannière de l’écran verrouillé s’ouvrent dans le navigateur choisi.
+
+Les sites se rangent à côté de vos apps dans le même widget. Pour les tuiles d’apps, voyez [comment lancer des apps depuis un widget](/blog/launch-apps-from-widgets-ios).
+
+## Questions fréquentes
+
+**Pourquoi le site de mon écran d’accueil s’ouvre-t-il toujours dans Safari ?**
+Un signet créé avec Sur l’écran d’accueil dans Safari s’ouvre dans Safari, et la plupart des widgets de liens utilisent votre navigateur par défaut. Une tuile de site [WidgetLoft](/widgetloft) vous laisse choisir le navigateur.
+
+**Que se passe-t-il si le navigateur choisi n’est pas installé ?**
+Le site s’ouvre dans votre navigateur par défaut, la tuile fonctionne donc toujours.
+
+**Suis-je connecté aux sites dans WidgetLoft ?**
+Les connexions y sont séparées de Safari, vous devrez peut-être vous connecter une fois. Vous préférez vos sessions existantes ? Choisissez votre navigateur habituel.
+
+---
+
+Prêt à garder vos sites à un appui, dans le navigateur de votre choix ? [Téléchargez WidgetLoft sur l’App Store](/widgetloft/download).

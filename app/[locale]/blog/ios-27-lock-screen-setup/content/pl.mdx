@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "Jak ustawić przejrzysty ekran blokady w iOS 27 (kompaktowy zegar i aplikacje jednym stuknięciem)",
+  description:
+    "Ustaw przejrzysty ekran blokady w iOS 27: wybierz tapetę, włącz kompaktowy zegar, a potem dodaj aplikacje za pomocą widżetu WidgetLoft na ekran blokady i paska szybkiego uruchamiania.",
+  keywords: [
+    "ekran blokady ios 27",
+    "kompaktowy zegar ios 27",
+    "dostosuj ekran blokady ios 27",
+    "launcher aplikacji na ekranie blokady iphone",
+    "otwieranie aplikacji z ekranu blokady iphone",
+    "widżet aplikacji ekran blokady iphone",
+  ],
+  ogTitle: "Przejrzysty ekran blokady iOS 27 z aplikacjami na jedno stuknięcie",
+  ogDescription:
+    "Kompaktowy zegar, tapeta na cały ekran i ulubione aplikacje na jedno stuknięcie na ekranie blokady iOS 27.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak ustawić przejrzysty ekran blokady w iOS 27 (kompaktowy zegar i aplikacje jednym stuknięciem)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pl/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Ustaw przejrzysty ekran blokady w iOS 27 z aplikacjami na jedno stuknięcie",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Wybierz tapetę",
+        text: "Przytrzymaj ekran blokady, stuknij Dostosuj i wybierz zdjęcie. Jeśli nie wypełnia ekranu, pozwól, by rozszerzenie tapety w iOS 27 je powiększyło.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Włącz kompaktowy zegar",
+        text: "W tym samym edytorze wybierz opcję kompaktowego zegara, aby godzina przesunęła się na górę obok daty i widżetów.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj widżet WidgetLoft na ekran blokady",
+        text: "Utwórz w WidgetLoft (dawniej FolderMini) grupę z najważniejszymi aplikacjami, potem w edytorze ekranu blokady dodaj widżet WidgetLoft i wybierz tę grupę. Pokazuje jeden rząd do 4 aplikacji.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Włącz pasek szybkiego uruchamiania",
+        text: "W WidgetLoft otwórz Ustawienia, potem Dynamic Island i Aktywność na żywo, i włącz pasek szybkiego uruchamiania. Aktywności na żywo muszą być dozwolone dla WidgetLoft w Ustawieniach iOS.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz grupę",
+        text: "W sekcji Folder wybierz grupę do wyświetlenia. Na ekranie blokady pojawi się do 10 aplikacji, a w Dynamic Island do 5.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy mogę otwierać aplikacje z ekranu blokady bez odblokowania?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Na ekranie blokady zarówno widżet WidgetLoft, jak i pasek szybkiego uruchamiania najpierw proszą o odblokowanie, na przykład przez Face ID, a potem otwierają aplikację. Po drodze WidgetLoft może pojawić się na chwilę. W Dynamic Island aplikacje otwierają się jednym stuknięciem.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Dlaczego pasek szybkiego uruchamiania zniknął z ekranu blokady?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS kończy Aktywności na żywo po kilku godzinach. WidgetLoft uruchamia pasek ponownie za każdym razem, gdy otwierasz aplikację. Jeśli nigdy się nie pojawia, sprawdź, czy Aktywności na żywo są dozwolone dla WidgetLoft w Ustawieniach iOS.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy do tej konfiguracji potrzebuję iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tylko do kompaktowego zegara i rozszerzenia tapety, bo to funkcje iOS 27. Sam WidgetLoft działa na iOS 18 i nowszych. Pamiętaj, że widżet na ekran blokady pokazuje tylko aplikacje z najwyższego poziomu, więc foldery wewnątrz grupy się tam nie pojawiają.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak ustawić przejrzysty ekran blokady w iOS 27 (kompaktowy zegar i aplikacje jednym stuknięciem)
+
+**Krótka odpowiedź:** Przytrzymaj ekran blokady, stuknij **Dostosuj**, wybierz tapetę i włącz opcję kompaktowego zegara z iOS 27, aby godzina zajmowała mniej miejsca. Potem dodaj aplikacje: widżet [WidgetLoft](/widgetloft) (dawniej FolderMini) na ekran blokady mieści jeden rząd do 4 aplikacji, a pasek szybkiego uruchamiania umieszcza na ekranie blokady do 10 aplikacji.
+
+iOS 27 daje ekranowi blokady więcej przestrzeni. Najlepiej wykorzystać ją na aplikacje, które naprawdę otwierasz, a nie tylko na większy zegar.
+
+---
+
+## Co iOS 27 zmienia na ekranie blokady
+
+Dla przejrzystej konfiguracji liczą się dwie zmiany w iOS 27:
+
+- **Kompaktowy zegar.** Godzina staje się mniejsza i trafia na górę, obok daty i widżetów, zamiast zajmować środek ekranu.
+- **Rozszerzenie tapety.** iOS potrafi rozszerzyć zdjęcie tak, by wypełniło cały ekran blokady. Przydaje się to przy zdjęciach, które nie do końca pasują.
+
+Czego iOS nadal nie daje, to rzędu aplikacji otwieranych jednym stuknięciem. Standardowe widżety ekranu blokady pokazują informacje, ale nie uruchamiają innych aplikacji. Tę lukę wypełnia [WidgetLoft](/widgetloft) dwoma narzędziami: widżetem na ekran blokady, który jest zawsze na miejscu, oraz paskiem szybkiego uruchamiania, czyli Aktywnością na żywo z dłuższą listą aplikacji.
+
+## Krok po kroku: przejrzysty ekran blokady w iOS 27
+
+1. **Wybierz tapetę.** Przytrzymaj ekran blokady, stuknij **Dostosuj** i wybierz zdjęcie. Jeśli nie wypełnia ekranu, pozwól, by rozszerzenie tapety w iOS 27 je powiększyło.
+2. **Włącz kompaktowy zegar.** W tym samym edytorze wybierz opcję kompaktowego zegara. Godzina przesunie się na górę, obok daty i widżetów.
+3. **Dodaj widżet WidgetLoft na ekran blokady.** W WidgetLoft utwórz grupę z najważniejszymi aplikacjami. Wróć do edytora ekranu blokady, dodaj widżet **WidgetLoft** i wybierz tę grupę. Pokazuje jeden rząd do 4 aplikacji (3 przy dużych ikonach).
+4. **Włącz pasek szybkiego uruchamiania.** Otwórz WidgetLoft, przejdź do **Ustawienia → Dynamic Island i Aktywność na żywo** i włącz **pasek szybkiego uruchamiania** (Beta).
+5. **Wybierz grupę.** W sekcji **Folder** wybierz odpowiednią grupę. Na banerze na ekranie blokady pojawi się do 10 aplikacji, a w Dynamic Island do 5.
+
+## Widżet na ekran blokady czy pasek szybkiego uruchamiania
+
+| | Widżet na ekran blokady | Pasek szybkiego uruchamiania |
+| --- | --- | --- |
+| Aplikacje | Jeden rząd do 4 (3 przy dużych ikonach) | Do 10 na ekranie blokady, do 5 w Dynamic Island |
+| Kiedy widać | Zawsze, jako część ekranu blokady | Przez kilka godzin po otwarciu WidgetLoft |
+| Stuknięcie na ekranie blokady | Najpierw odblokowanie, potem otwiera się aplikacja | Najpierw odblokowanie przez Face ID, potem otwiera się aplikacja |
+| Dynamic Island | Brak | Przytrzymaj wyspę i stuknij aplikację, by otworzyć ją jednym stuknięciem |
+
+Nie musisz wybierać. Włóż do widżetu 4 aplikacje, które otwierasz przez cały dzień, a pasek szybkiego uruchamiania wykorzystaj na dłuższą listę, którą chcesz mieć pod ręką przez jakiś czas. Więcej o wyspie przeczytasz w artykule [jak dodać aplikacje do Dynamic Island](/blog/apps-in-dynamic-island-iphone).
+
+## Najczęstsze pytania
+
+**Czy mogę otwierać aplikacje z ekranu blokady bez odblokowania?**
+Nie. Na ekranie blokady zarówno widżet, jak i pasek szybkiego uruchamiania najpierw proszą o odblokowanie (na przykład przez Face ID), a potem otwierają aplikację. Po drodze WidgetLoft może pojawić się na chwilę. W Dynamic Island aplikacje otwierają się jednym stuknięciem.
+
+**Dlaczego pasek szybkiego uruchamiania zniknął z ekranu blokady?**
+iOS kończy Aktywności na żywo po kilku godzinach. WidgetLoft uruchamia pasek ponownie za każdym razem, gdy otwierasz aplikację. Jeśli nigdy się nie pojawia, sprawdź, czy Aktywności na żywo są dozwolone dla WidgetLoft w Ustawieniach iOS.
+
+**Czy do tej konfiguracji potrzebuję iOS 27?**
+Tylko do kompaktowego zegara i rozszerzenia tapety. Sam [WidgetLoft](/widgetloft) działa na iOS 18 i nowszych. Jedno ograniczenie warto znać: widżet na ekran blokady pokazuje tylko aplikacje z najwyższego poziomu, więc foldery wewnątrz grupy się tam nie pojawiają.
+
+---
+
+Gotowy na przejrzysty ekran blokady? [Pobierz WidgetLoft z App Store](/widgetloft/download) i miej najważniejsze aplikacje na jedno stuknięcie.

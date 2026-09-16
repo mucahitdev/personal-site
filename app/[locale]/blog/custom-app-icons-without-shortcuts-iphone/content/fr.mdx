@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Comment personnaliser les icônes d’apps sur iPhone sans l’app Raccourcis",
+  description:
+    "La méthode habituelle pour changer les icônes d’apps sur iPhone est un raccourci « Ouvrir l’app » avec une image perso. Voici comment elle fonctionne, et une alternative par widget qui crée des icônes photo, symbole, emoji ou lettre avec des versions Clair et Sombre, tout en ouvrant l’app directement.",
+  keywords: [
+    "changer icône app iphone sans raccourcis",
+    "personnaliser icônes apps iphone",
+    "icônes aesthetic écran d’accueil",
+    "icônes personnalisées iphone sans raccourcis",
+    "widget icônes personnalisées iphone",
+    "icônes personnalisées mode sombre",
+  ],
+  ogTitle: "Icônes d’apps personnalisées sur iPhone, sans l’app Raccourcis",
+  ogDescription:
+    "Créez des icônes photo, SF Symbol, emoji ou lettre pour vos apps, avec des versions Clair et Sombre séparées, et ouvrez l’app directement d’un toucher.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline: "Comment personnaliser les icônes d’apps sur iPhone sans l’app Raccourcis",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/fr/blog/custom-app-icons-without-shortcuts-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Personnaliser les icônes d’apps sur iPhone sans l’app Raccourcis",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Ajoutez l’app",
+        text: "Ouvrez WidgetLoft (anciennement FolderMini), cherchez dans l’App Store depuis l’app ou utilisez Partager, WidgetLoft sur une page de l’App Store, puis ajoutez l’app à un groupe.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ouvrez Changer d’icône",
+        text: "Allez dans l’onglet Bibliothèque, touchez la tuile de l’app, puis touchez Changer d’icône.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisissez une source",
+        text: "Choisissez Photo et recadrez, Symbole (plus de 5 700 SF Symbols), Emoji ou Mono (première lettre, chaque mot ou texte perso jusqu’à 3 caractères).",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Réglez les couleurs pour Clair et Sombre",
+        text: "Choisissez une Couleur de l’icône et un Arrière-plan, ou Aucun arrière-plan, et créez séparément les versions Clair et Sombre.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Placez le widget",
+        text: "Ajoutez le widget WidgetLoft à votre écran d’accueil. Toucher une tuile ouvre l’app directement.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Une icône personnalisée dans WidgetLoft ouvre-t-elle l’app Raccourcis ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non. Une tuile d’app WidgetLoft sur l’écran d’accueil ouvre l’app directement grâce à son identifiant de paquet (bundle ID), avec ou sans icône personnalisée. L’app Raccourcis n’intervient pas.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Est-ce que cela change la vraie icône de l’app sur mon iPhone ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non. Le design personnalisé concerne la tuile dans le widget. L’icône de l’app elle-même ne change pas, et vous pouvez la laisser dans la bibliothèque d’apps pour que votre page n’affiche que le widget.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Une icône personnalisée peut-elle être différente en mode sombre ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui. Le studio d’icônes propose des designs séparés pour Clair et Sombre. Si vous n’en créez pas, les apps populaires ont déjà des icônes sombres toutes prêtes.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Comment personnaliser les icônes d’apps sur iPhone sans l’app Raccourcis
+
+**Réponse rapide :** Vous pouvez donner des icônes personnalisées à vos apps sans l’app Raccourcis en les plaçant dans un widget qui vous laisse concevoir chaque tuile. [WidgetLoft](/widgetloft) (anciennement FolderMini) intègre un studio d’icônes : choisissez une photo, un SF Symbol, un emoji ou une lettre, réglez les couleurs et créez des versions séparées pour Clair et Sombre. La tuile ouvre toujours l’app directement.
+
+Un écran d’accueil aesthetic commence souvent par des icônes assorties. Voici la méthode que montrent la plupart des tutoriels, ce qu’elle vous apporte vraiment, et une façon d’obtenir le même style avec un widget.
+
+---
+
+## Comment fonctionne la méthode Raccourcis
+
+Le tutoriel le plus partagé est le suivant : ouvrez l’app Raccourcis, créez un nouveau raccourci avec l’action « Ouvrir l’app », choisissez l’app, puis ajoutez ce raccourci à l’écran d’accueil avec un nom et une image tirée de vos photos. La nouvelle icône ressemble à une icône d’app personnalisée.
+
+Ça marche, et il est utile de savoir ce que vous obtenez :
+
+- **C’est un raccourci, pas l’app.** Quand vous le touchez, il passe par l’app Raccourcis, qui ouvre ensuite votre app.
+- **Vous avez maintenant deux icônes.** L’app d’origine est toujours installée, donc son icône habituelle est encore quelque part. La plupart des gens la déplacent dans la bibliothèque d’apps pour garder une page nette.
+- **Une icône à la fois.** Chaque app demande son propre raccourci, créé et nommé séparément, avec une seule image pour l’apparence claire et sombre.
+
+Pour une ou deux icônes, c’est très bien. Pour toute une page à thème, un widget est souvent plus simple.
+
+## Étape par étape : des icônes d’apps personnalisées avec WidgetLoft
+
+1. **Ajoutez l’app.** Ouvrez [WidgetLoft](/widgetloft), cherchez dans l’App Store depuis l’app (ou utilisez Partager → WidgetLoft sur n’importe quelle page de l’App Store), puis ajoutez l’app à un groupe.
+2. **Ouvrez Changer d’icône.** Allez dans l’onglet **Bibliothèque**, touchez la tuile de l’app, puis touchez **Changer d’icône**.
+3. **Choisissez une source.** Choisissez **Photo** (faites glisser pour déplacer, pincez pour zoomer lors du recadrage), **Symbole** (plus de 5 700 SF Symbols dans 27 catégories, recherche en anglais), **Emoji** ou **Mono** (la première lettre, chaque mot ou un texte perso jusqu’à 3 caractères).
+4. **Réglez les couleurs pour Clair et Sombre.** Choisissez une **Couleur de l’icône** et un **Arrière-plan**, ou **Aucun arrière-plan** pour un glyphe posé directement sur le widget. Créez séparément les versions Clair et Sombre pour que l’icône s’accorde aux deux apparences.
+5. **Placez le widget.** Maintenez le doigt sur un espace vide de l’écran d’accueil, ajoutez un widget, choisissez WidgetLoft et une taille. Touchez une tuile et l’app s’ouvre directement.
+
+## Méthode Raccourcis ou studio d’icônes WidgetLoft
+
+| | Méthode Raccourcis | Studio d’icônes WidgetLoft |
+| --- | --- | --- |
+| Ouverture de l’app | Passe par l’app Raccourcis | La tuile ouvre l’app directement |
+| Variante sombre | Une image pour les deux apparences | Designs Clair et Sombre séparés |
+| Étapes par icône | Nouveau raccourci, choix de l’app, ajout à l’écran d’accueil, image et nom | Toucher la tuile, Changer d’icône, source et couleurs |
+| Sources d’icônes | Une image de vos photos | Photo, plus de 5 700 SF Symbols, Emoji, lettres Mono |
+| Plusieurs apps à la fois | Une icône d’écran d’accueil par raccourci | Plusieurs tuiles dans un widget |
+
+La différence tient à l’endroit où se fait le travail. Avec [WidgetLoft](/widgetloft), le design et l’ouverture sont réunis dans la même tuile : aucun raccourci en plus par app, et pas d’app Raccourcis sur le chemin quand vous touchez. Les apps sans design personnalisé gardent leurs vraies icônes, vous pouvez donc ne personnaliser que celles que vous voulez.
+
+## Questions fréquentes
+
+**Une icône personnalisée dans WidgetLoft ouvre-t-elle l’app Raccourcis ?**
+Non. Une tuile d’app WidgetLoft sur l’écran d’accueil ouvre l’app directement grâce à son identifiant de paquet (bundle ID), avec ou sans icône personnalisée.
+
+**Est-ce que cela change la vraie icône de l’app sur mon iPhone ?**
+Non. Le design concerne la tuile dans le widget. L’icône de l’app elle-même ne change pas, et vous pouvez la laisser dans la bibliothèque d’apps pour que votre page n’affiche que le widget.
+
+**Une icône personnalisée peut-elle être différente en mode sombre ?**
+Oui. Le studio d’icônes propose des designs séparés pour Clair et Sombre. Si vous n’en créez pas, les apps populaires ont déjà des icônes sombres toutes prêtes (voir [les icônes d’apps en mode sombre sur iPhone](/blog/dark-mode-app-icons-iphone)).
+
+---
+
+Prêt à créer votre set ? [Téléchargez WidgetLoft sur l’App Store](/widgetloft/download) et donnez à chaque app l’icône de votre choix.

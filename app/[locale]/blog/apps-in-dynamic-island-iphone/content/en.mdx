@@ -1,0 +1,150 @@
+export const meta = {
+  title: "How to Put Your Favorite Apps in the Dynamic Island on iPhone",
+  description:
+    "iOS has no way to pin app shortcuts to the Dynamic Island, but a Live Activity can hold them. Here is how to keep up to 5 apps in the island and up to 10 on the Lock Screen.",
+  keywords: [
+    "apps in dynamic island",
+    "dynamic island app shortcuts",
+    "dynamic island app launcher iphone",
+    "put apps in dynamic island",
+    "lock screen app launcher live activity",
+    "quick launch dynamic island",
+  ],
+  ogTitle: "Put Your Favorite Apps in the Dynamic Island",
+  ogDescription:
+    "A Live Activity launcher for iPhone: up to 5 apps in the Dynamic Island, up to 10 on the Lock Screen.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline: "How to Put Your Favorite Apps in the Dynamic Island on iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Put your favorite apps in the Dynamic Island on iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Make a group",
+        text: "Open WidgetLoft (formerly FolderMini), create a group, and add the apps you use most.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Turn on the Quick Launch bar",
+        text: "In WidgetLoft, go to Settings, then Dynamic Island & Live Activity, and switch on Quick Launch bar.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pick the folder",
+        text: "Under Folder, choose the group you want to see in the Dynamic Island and on the Lock Screen.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Allow Live Activities",
+        text: "Make sure Live Activities are allowed for WidgetLoft in the iOS Settings app.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Long-press the island and tap an app",
+        text: "Long-press the Dynamic Island to expand the row of up to 5 apps, then tap one to open it.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Why did my apps disappear from the Dynamic Island?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS ends Live Activities after some hours (about 8 while active). WidgetLoft starts the Quick Launch bar again every time you open the app, so a quick visit brings it back.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I put more than 5 apps in the Dynamic Island?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. The expanded Dynamic Island shows one row of up to 5 apps. The Lock Screen banner shows up to 10 apps from the same group, in two rows.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is the Quick Launch bar finished?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It is marked Beta in WidgetLoft. It relies on iOS Live Activities, so it needs Live Activities allowed for WidgetLoft and it follows the time limits iOS sets for them.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Put Your Favorite Apps in the Dynamic Island on iPhone
+
+**Quick answer:** iOS has no setting to pin app shortcuts to the Dynamic Island. It only shows Live Activities there. [WidgetLoft](/widgetloft) (formerly FolderMini) uses exactly that: its Quick Launch bar is a Live Activity that mirrors one of your groups, so up to 5 apps sit in the Dynamic Island and up to 10 on the Lock Screen.
+
+The Dynamic Island is always in view, which makes it a great spot for the apps you open all day. Here is how to put them there in about a minute.
+
+---
+
+## Why the Dynamic Island doesn't take app shortcuts
+
+Apple built the Dynamic Island for Live Activities: a timer, a food delivery, a live score. You can't drag an app icon into it, and there is no setting that pins one there. The same goes for the Live Activity banner on the Lock Screen.
+
+So the trick is a Live Activity whose content is a row of your own apps. That is what WidgetLoft's **Quick Launch bar** does. It mirrors one group from the app, with the same icons, and keeps it in the island and on the Lock Screen.
+
+## Step-by-step: put apps in the Dynamic Island
+
+1. **Make a group.** Open [WidgetLoft](/widgetloft), create a group in the Groups tab, and add the apps you reach for most. The island shows up to 5, so a group of 5 fits in full.
+2. **Turn on the Quick Launch bar.** Go to Settings → **Dynamic Island & Live Activity** and switch on **Quick Launch bar**.
+3. **Pick the folder.** Under **Folder**, choose the group you just made.
+4. **Allow Live Activities.** If nothing shows up, open the iOS Settings app, find WidgetLoft, and make sure Live Activities are allowed.
+5. **Long-press the island and tap an app.** The compact island shows a grid glyph and the number of apps. Long-press it to expand the row, then tap any icon.
+
+## Dynamic Island vs Lock Screen banner
+
+| | Dynamic Island | Lock Screen banner |
+| --- | --- | --- |
+| Apps shown | Up to 5 | Up to 10 |
+| Rows | One row | One row for up to 5, two rows for 6 to 10 |
+| How a tap works | Opens the app directly, in one tap | Asks you to unlock with Face ID, then opens the app |
+| Website tiles | Open in the browser you picked | Open in the browser you picked |
+| Look | Compact: a grid glyph and the app count | Tinted with the group's color, or system Liquid Glass for a Transparent group |
+
+The one-tap launch from the Dynamic Island is new in [WidgetLoft](/widgetloft) 2.1.0: the app opens straight away, without passing through WidgetLoft first. On the Lock Screen your iPhone is still locked, so you confirm with Face ID and then the app opens. If you are redoing your whole Lock Screen, see [how to set up the iOS 27 Lock Screen](/blog/ios-27-lock-screen-setup) too.
+
+## Common questions
+
+**Why did my apps disappear from the Dynamic Island?**
+iOS ends Live Activities after some hours (about 8 while active). WidgetLoft starts the Quick Launch bar again every time you open the app, so a quick visit brings it back.
+
+**Can I put more than 5 apps in the Dynamic Island?**
+No. The expanded island shows one row of up to 5 apps. The Lock Screen banner shows up to 10 apps from the same group, in two rows.
+
+**Is the Quick Launch bar finished?**
+It is marked Beta in the app. It relies on iOS Live Activities, so it needs Live Activities allowed for WidgetLoft and it follows the time limits iOS sets for them.
+
+---
+
+Ready to try it? [Download WidgetLoft on the App Store](/widgetloft/download) and keep your favorite apps one tap away in the Dynamic Island.

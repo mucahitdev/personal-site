@@ -1,0 +1,159 @@
+export const meta = {
+  title: "Cách tạo widget trong suốt trên iPhone (iOS 26 Liquid Glass)",
+  description:
+    "Hướng dẫn từng bước tạo widget trong suốt và widget kính mờ trên iPhone. Đặt một nhóm WidgetLoft sang Trong suốt trên iOS 26 trở lên để hình nền hiện ra, hoặc dùng widget Liquid Glass để có hiệu ứng kính mờ.",
+  keywords: [
+    "widget trong suốt iphone",
+    "widget trong suốt ios 26",
+    "widget liquid glass iphone",
+    "widget không nền iphone",
+    "widget kính iphone",
+    "cách làm widget trong suốt",
+  ],
+  ogTitle: "Tạo widget trong suốt trên iPhone",
+  ogDescription:
+    "Widget trong suốt và Liquid Glass để lộ hình nền của bạn, trên iOS 26 trở lên.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline: "Cách tạo widget trong suốt trên iPhone (iOS 26 Liquid Glass)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/vi/blog/transparent-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Tạo widget trong suốt hoặc Liquid Glass trên iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Mở một nhóm",
+        text: "Cài WidgetLoft (trước đây là FolderMini), vào tab Nhóm và mở nhóm bạn muốn đặt trên Màn hình chính.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn Trong suốt",
+        text: "Chạm Chỉnh sửa nhóm và đặt chất liệu là Trong suốt. Cần iOS 26 trở lên.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm widget",
+        text: "Mở thư viện widget trên Màn hình chính, tìm WidgetLoft rồi thêm WidgetLoft (hoàn toàn trong suốt) hoặc WidgetLoft · Liquid Glass (kính mờ).",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn kiểu biểu tượng",
+        text: "Với widget Liquid Glass, vào Cài đặt, Widget, Biểu tượng giao diện tối và chọn biểu tượng Sáng hoặc Tối hợp với hình nền.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Hiện tên ứng dụng nếu muốn",
+        text: "Bật Tên ứng dụng cho nhóm để hiện tên từng ứng dụng bên dưới biểu tượng.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Có thể làm widget trong suốt trên iPhone không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có, trên iOS 26 trở lên. Đặt một nhóm WidgetLoft sang chất liệu Trong suốt: widget WidgetLoft thông thường sẽ hoàn toàn trong suốt, còn widget WidgetLoft · Liquid Glass cho hiệu ứng kính mờ.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tại sao tôi không chọn được Trong suốt?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Trong suốt cần iOS 26 trở lên. Trên iOS 18 đến 25, bạn có thể dùng chất liệu Màu thay thế, với 12 chủ đề, công tắc Chuyển sắc và thanh trượt Độ sâu.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Widget Liquid Glass có tự theo Chế độ tối không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không tự động. Với widget Liquid Glass, bạn chọn biểu tượng Sáng hoặc Tối trong Cài đặt, Widget, Biểu tượng giao diện tối. Widget WidgetLoft thông thường có thể theo thiết bị bằng Tự động.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách tạo widget trong suốt trên iPhone (iOS 26 Liquid Glass)
+
+**Trả lời nhanh:** trên iOS 26 trở lên, mở một nhóm trong [WidgetLoft](/widgetloft) (trước đây là FolderMini), chạm **Chỉnh sửa nhóm** và chọn chất liệu **Trong suốt**. Thêm widget **WidgetLoft** thông thường để có giao diện hoàn toàn trong suốt, hoặc **WidgetLoft · Liquid Glass** để có kính mờ. Dù chọn cách nào, hình nền vẫn hiện ra và chỉ có biểu tượng ứng dụng nổi phía trên.
+
+Những khối widget nền đặc có thể che mất hình nền bạn đã chọn kỹ. Widget trong suốt giữ cho bức ảnh luôn hiện rõ mà vẫn cho bạn mở ứng dụng chỉ bằng một chạm.
+
+---
+
+## Widget trong suốt trông như thế nào
+
+Hầu hết widget nằm trên một thẻ nền đặc hoặc có màu. Widget trong suốt bỏ thẻ đó đi, nên các biểu tượng trông như đặt thẳng lên hình nền, giống biểu tượng thông thường trên Màn hình chính, nhưng được xếp trong một lưới gọn gàng do bạn quyết định.
+
+WidgetLoft có hai kiểu trong suốt cho bất kỳ nhóm nào đặt ở Trong suốt:
+
+- **WidgetLoft** (widget thông thường): nền biến mất hoàn toàn.
+- **WidgetLoft · Liquid Glass**: hình nền hiện qua một lớp kính mờ nhẹ, giúp biểu tượng vẫn dễ nhìn trên những bức ảnh nhiều chi tiết.
+
+Cả hai đều mở ứng dụng trực tiếp khi bạn chạm vào ô, giống mọi widget [WidgetLoft](/widgetloft) khác.
+
+## Từng bước: tạo widget trong suốt
+
+1. **Mở một nhóm.** Trong WidgetLoft, vào tab **Nhóm** và mở nhóm bạn muốn đặt trên Màn hình chính (hoặc tạo nhóm mới).
+2. **Chọn Trong suốt.** Chạm **Chỉnh sửa nhóm** và đặt chất liệu là **Trong suốt**. Tùy chọn này cần iOS 26 trở lên.
+3. **Thêm widget.** Chạm và giữ một chỗ trống trên Màn hình chính, mở thư viện widget, tìm WidgetLoft rồi chọn **WidgetLoft** (hoàn toàn trong suốt) hoặc **WidgetLoft · Liquid Glass** (kính mờ). Nếu widget hiện nhóm khác, chạm và giữ widget, chạm **Sửa tiện ích** rồi chọn nhóm bạn đã đặt trong suốt.
+4. **Chọn kiểu biểu tượng.** Với widget Liquid Glass, vào **Cài đặt → Widget → Biểu tượng giao diện tối** và chọn biểu tượng **Sáng** hoặc **Tối**, loại nào dễ nhìn hơn trên hình nền của bạn.
+5. **Hiện tên ứng dụng nếu muốn.** Bật **Tên ứng dụng** cho nhóm để hiện tên từng ứng dụng bên dưới biểu tượng.
+
+## Trong suốt, Liquid Glass hay Màu
+
+| | Trong suốt | Liquid Glass | Màu |
+| --- | --- | --- | --- |
+| Widget cần thêm | WidgetLoft | WidgetLoft · Liquid Glass | WidgetLoft |
+| Giao diện | Hoàn toàn trong suốt, biểu tượng trên hình nền | Kính mờ phủ trên hình nền | Màu chủ đề đặc, chuyển sắc và độ sâu |
+| Hình nền phù hợp nhất | Nền nhẹ nhàng, đơn giản | Ảnh nhiều chi tiết và họa tiết rực rỡ | Bất kỳ, khi bạn muốn widget nổi bật |
+| Biểu tượng tối | Tự động, Sáng hoặc Tối | Chỉ Sáng hoặc Tối | Tự động, Sáng hoặc Tối |
+| Phiên bản iOS | iOS 26 trở lên | iOS 26 trở lên | iOS 18 trở lên |
+
+[WidgetLoft](/widgetloft) cho mỗi nhóm tự chọn chất liệu riêng, nên bạn có thể kết hợp một nhóm trong suốt ở trang này với một nhóm có màu ở trang khác. Muốn thêm cảm hứng bố cục, hãy xem [ý tưởng Màn hình chính iOS 27](/blog/ios-27-home-screen-ideas) của chúng tôi.
+
+## Đang dùng iOS 18 đến 25? Hãy dùng Màu
+
+Hiệu ứng trong suốt chưa có trước iOS 26, nhưng chất liệu **Màu** hoạt động từ iOS 18 trở lên. Trong **Chỉnh sửa nhóm**, chọn một trong 12 chủ đề (Ember, Citrus, Bloom, Dusk, Tide, Aurora, Moss, Neon, Storm, Clay, Ink, Paper) hoặc Tùy chỉnh, bật **Chuyển sắc** và đặt hướng, rồi dùng thanh trượt **Độ sâu** để thẻ phẳng hơn hoặc đậm đà hơn. Chọn chủ đề hợp với hình nền và widget sẽ hòa vào màn hình thật đẹp.
+
+## Câu hỏi thường gặp
+
+**Có thể làm widget trong suốt trên iPhone không?**
+Có, trên iOS 26 trở lên. Đặt một nhóm WidgetLoft sang Trong suốt: widget WidgetLoft thông thường sẽ hoàn toàn trong suốt, còn WidgetLoft · Liquid Glass cho hiệu ứng kính mờ.
+
+**Tại sao tôi không chọn được Trong suốt?**
+Trong suốt cần iOS 26 trở lên. Trên iOS 18 đến 25, hãy dùng chất liệu Màu với 12 chủ đề, Chuyển sắc và Độ sâu.
+
+**Widget Liquid Glass có tự theo Chế độ tối không?**
+Không tự động. Chọn biểu tượng Sáng hoặc Tối trong Cài đặt → Widget → Biểu tượng giao diện tối. Widget WidgetLoft thông thường có thể theo thiết bị bằng Tự động.
+
+---
+
+Muốn thấy lại hình nền của mình? [Tải WidgetLoft trên App Store](/widgetloft/download) và tạo widget trong suốt đầu tiên của bạn.

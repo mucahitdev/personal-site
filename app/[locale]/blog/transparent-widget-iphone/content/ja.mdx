@@ -1,0 +1,159 @@
+export const meta = {
+  title: "iPhoneで透明なウィジェットを作る方法（iOS 26 Liquid Glass）",
+  description:
+    "iPhoneで透明なウィジェットやすりガラス風ウィジェットを作る手順を解説。iOS 26以降でWidgetLoftのグループを「透明」にすると壁紙が透けて見え、Liquid Glassウィジェットならすりガラスの見た目になります。",
+  keywords: [
+    "iphone ウィジェット 透明",
+    "ios 26 透明ウィジェット",
+    "liquid glass ウィジェット",
+    "ウィジェット 背景 透過",
+    "ガラス風 ウィジェット iphone",
+    "ウィジェット 壁紙 透ける",
+  ],
+  ogTitle: "iPhoneで透明なウィジェットを作る",
+  ogDescription:
+    "iOS 26以降で、壁紙が見える透明ウィジェットとLiquid Glassウィジェットを作りましょう。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "ja",
+    headline: "iPhoneで透明なウィジェットを作る方法（iOS 26 Liquid Glass）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/ja/blog/transparent-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "ja",
+    name: "iPhoneで透明またはLiquid Glassのウィジェットを作る",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "グループを開く",
+        text: "WidgetLoft （旧FolderMini）をインストールし、「グループ」タブでホーム画面に置きたいグループを開きます。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "「透明」を選ぶ",
+        text: "「グループを編集」をタップし、素材を「透明」にします。iOS 26以降が必要です。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "ウィジェットを追加する",
+        text: "ホーム画面でウィジェットギャラリーを開き、WidgetLoftを検索して、WidgetLoft（完全に透明）またはWidgetLoft · Liquid Glass（すりガラス）を追加します。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "アイコンの見た目を選ぶ",
+        text: "Liquid Glassウィジェットの場合は、「設定」、「ウィジェット」、「ダークアイコンの外観」で、壁紙に合うライトまたはダークのアイコンを選びます。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "必要ならアプリ名を表示する",
+        text: "グループの「アプリ名」をオンにすると、各アイコンの下にアプリ名が表示されます。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "ja",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhoneでウィジェットを透明にできますか？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "はい、iOS 26以降でできます。WidgetLoftのグループの素材を「透明」にすると、通常のWidgetLoftウィジェットは完全に透明になり、WidgetLoft · Liquid Glassウィジェットはすりガラス風の見た目になります。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "「透明」を選べないのはなぜですか？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "「透明」にはiOS 26以降が必要です。iOS 18から25では、代わりに12のテーマ、「グラデーション」スイッチ、「深み」スライダーを備えた「カラー」素材を使えます。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Liquid Glassウィジェットはダークモードに合わせて切り替わりますか？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "自動では切り替わりません。Liquid Glassウィジェットは「設定」、「ウィジェット」、「ダークアイコンの外観」でライトかダークのアイコンを選びます。通常のWidgetLoftウィジェットは「自動」でデバイスに合わせられます。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhoneで透明なウィジェットを作る方法（iOS 26 Liquid Glass）
+
+**かんたんな答え:** iOS 26以降なら、[WidgetLoft](/widgetloft) （旧FolderMini）でグループを開き、**グループを編集** をタップして素材を **透明** にします。完全に透明にしたいなら通常の **WidgetLoft** ウィジェットを、すりガラス風にしたいなら **WidgetLoft · Liquid Glass** を追加しましょう。どちらも壁紙が見えたまま、アプリのアイコンだけが上に並びます。
+
+塗りつぶしのウィジェットは、こだわって選んだ壁紙を隠してしまいがちです。透明なウィジェットなら写真を見せたまま、アプリをワンタップで開けます。
+
+---
+
+## 透明なウィジェットとは
+
+ほとんどのウィジェットは、塗りつぶしや色付きのカードの上に表示されます。透明なウィジェットはそのカードをなくすので、アイコンが壁紙の上に直接置かれているように見えます。ふつうのホーム画面のアイコンと似ていますが、自分で決めた整ったグリッドに並びます。
+
+WidgetLoftでは「透明」にしたグループに対して、2種類の透明スタイルを使えます。
+
+- **WidgetLoft**（通常のウィジェット）: 背景が完全に消えます。
+- **WidgetLoft · Liquid Glass**: やわらかなすりガラスの層越しに壁紙が見えるので、にぎやかな写真の上でもアイコンが読みやすくなります。
+
+どちらも、ほかの [WidgetLoft](/widgetloft) ウィジェットと同じく、タイルをタップするとアプリが直接開きます。
+
+## ステップ・バイ・ステップ: 透明なウィジェットを作る
+
+1. **グループを開く。** WidgetLoftの **グループ** タブで、ホーム画面に置きたいグループを開きます（新しく作ってもかまいません）。
+2. **「透明」を選ぶ。** **グループを編集** をタップし、素材を **透明** にします。このオプションにはiOS 26以降が必要です。
+3. **ウィジェットを追加する。** ホーム画面の空いている場所を長押ししてウィジェットギャラリーを開き、WidgetLoftを検索して **WidgetLoft**（完全に透明）か **WidgetLoft · Liquid Glass**（すりガラス）を選びます。別のグループが表示された場合は、ウィジェットを長押しして **ウィジェットを編集** をタップし、透明にしたグループを選んでください。
+4. **アイコンの見た目を選ぶ。** Liquid Glassウィジェットの場合は **設定 → ウィジェット → ダークアイコンの外観** で、壁紙の上で見やすいほうの **ライト** か **ダーク** を選びます。
+5. **必要ならアプリ名を表示する。** グループの **アプリ名** をオンにすると、各アイコンの下にアプリ名が表示されます。
+
+## 透明、Liquid Glass、カラーの比較
+
+| | 透明 | Liquid Glass | カラー |
+| --- | --- | --- | --- |
+| 追加するウィジェット | WidgetLoft | WidgetLoft · Liquid Glass | WidgetLoft |
+| 見た目 | 完全に透明、アイコンが壁紙の上に | 壁紙の上にすりガラス | テーマカラーの塗り、グラデーションと深み |
+| 合う壁紙 | 落ち着いたシンプルな背景 | にぎやかな写真や鮮やかな柄 | どれでも、ウィジェットを目立たせたいとき |
+| ダークアイコン | 自動、ライト、ダーク | ライトかダークのみ | 自動、ライト、ダーク |
+| iOSのバージョン | iOS 26以降 | iOS 26以降 | iOS 18以降 |
+
+[WidgetLoft](/widgetloft) ではグループごとに素材を選べるので、あるページには透明なグループ、別のページにはカラーのグループ、という組み合わせもできます。レイアウトのヒントは [iOS 27のホーム画面アイデア](/blog/ios-27-home-screen-ideas) もご覧ください。
+
+## iOS 18から25なら「カラー」を使おう
+
+透明はiOS 26より前では使えませんが、**カラー** 素材はiOS 18以降で使えます。**グループを編集** で12のテーマ（Ember、Citrus、Bloom、Dusk、Tide、Aurora、Moss、Neon、Storm、Clay、Ink、Paper）かカスタムを選び、**グラデーション** をオンにして方向を決め、**深み** スライダーでカードをフラットにも豊かにも調整できます。壁紙に合うテーマを選べば、ウィジェットがきれいになじみます。
+
+## よくある質問
+
+**iPhoneでウィジェットを透明にできますか？**
+はい、iOS 26以降でできます。WidgetLoftのグループを「透明」にすると、通常のWidgetLoftウィジェットは完全に透明に、WidgetLoft · Liquid Glassはすりガラス風になります。
+
+**「透明」を選べないのはなぜですか？**
+「透明」にはiOS 26以降が必要です。iOS 18から25では、12のテーマ、グラデーション、深みを備えた「カラー」素材を使ってください。
+
+**Liquid Glassウィジェットはダークモードに合わせて切り替わりますか？**
+自動では切り替わりません。設定 → ウィジェット → ダークアイコンの外観で、ライトかダークのアイコンを選びます。通常のWidgetLoftウィジェットは「自動」でデバイスに合わせられます。
+
+---
+
+壁紙をもっと見せたいですか？ [App StoreでWidgetLoftをダウンロード](/widgetloft/download) して、最初の透明ウィジェットを作りましょう。

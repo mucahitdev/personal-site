@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Come mostrare i pallini di notifica nei widget di iPhone (iOS 27)",
+  description:
+    "Le icone delle app dentro un widget non mostrano mai i badge di notifica. Ecco come mettere un pallino di notifica su un riquadro del widget con il nuovo attivatore di notifica di Comandi in iOS 27 e WidgetLoft, passo dopo passo e con i limiti reali.",
+  keywords: [
+    "badge notifiche widget iphone",
+    "icone app nel widget senza badge",
+    "pallino di notifica sul widget",
+    "automazione notifica comandi ios 27",
+    "vedere quale app ha notifiche widget",
+    "widget launcher non letti iphone",
+  ],
+  ogTitle: "Pallini di notifica nei widget di iPhone (iOS 27)",
+  ogDescription:
+    "Usa l'attivatore di notifica di Comandi in iOS 27 per mettere un pallino sui riquadri delle app nel tuo widget.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline: "Come mostrare i pallini di notifica nei widget di iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/it/blog/notification-badges-on-widgets-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "it",
+    name: "Mostrare i pallini di notifica sui riquadri delle app in un widget di iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Attiva Pallini di notifica",
+        text: "In WidgetLoft (già FolderMini) apri Impostazioni e vai su Pallini di notifica (Beta). La configurazione è disponibile su iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Crea un'automazione di notifica",
+        text: "Nell'app Comandi vai su Automazione, App, Notifica e scegli l'app a cui vuoi dare un pallino.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Falla eseguire in silenzio",
+        text: "Imposta l'attivatore con Automazione attiva e Notifica disattivata, così parte senza chiederti nulla.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Aggiungi l'azione di WidgetLoft",
+        text: "Aggiungi l'azione Mostra pallino di notifica di WidgetLoft per la stessa app. Ripeti per ogni app, circa un minuto ciascuna.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Facoltativo: cancella il pallino quando apri l'app altrove",
+        text: "Aggiungi per quell'app un'automazione L'app viene aperta con l'azione Cancella pallino di notifica.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Un widget può mostrare il numero di notifiche non lette di un'app?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Un widget di terze parti non può leggere il conteggio dei non letti di un'altra app. Su iOS 27, WidgetLoft può mettere un pallino sul riquadro dell'app quando arriva una notifica, ma è un pallino, non un numero.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Perché il pallino non sparisce dopo che ho letto la notifica?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Leggere una notifica solo sulla schermata di blocco o su Apple Watch non cancella il pallino. Apri l'app dal widget, aggiungi un'automazione L'app viene aperta con Cancella pallino di notifica oppure usa Cancella tutti i pallini in WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "I pallini di notifica funzionano su iOS 26 o precedenti?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. La configurazione si basa sull'attivatore di notifica di Comandi arrivato con iOS 27. WidgetLoft in sé funziona da iOS 18 in poi, solo senza pallini.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Come mostrare i pallini di notifica nei widget di iPhone (iOS 27)
+
+**Risposta rapida:** I widget non possono leggere il conteggio dei non letti di un'altra app, quindi le icone dentro un widget launcher non mostrano mai badge. Su iOS 27, [WidgetLoft](/widgetloft) (già FolderMini) aggira il problema con un'automazione di Comandi: quando un'app invia una notifica, l'automazione mette un pallino sul riquadro di quell'app, e il pallino sparisce quando apri l'app dal widget.
+
+Hai spostato le tue app in un widget per mettere ordine nella Home Screen e ora non capisci quale abbia qualcosa di nuovo. Ecco come riavere quel segnale.
+
+---
+
+## Perché le icone delle app nei widget non mostrano i badge
+
+Il badge rosso con il numero su un'icona della Home Screen lo disegna iOS stesso. Un widget è una vista separata disegnata da un'altra app, e iOS non permette a un widget di terze parti di leggere quante notifiche non lette hanno le tue altre app. Per questo ogni widget launcher mostra icone semplici.
+
+iOS 27 ha cambiato un tassello. Comandi ora offre automazioni che partono quando un'app invia una notifica (vedi [le novità dei widget in iOS 27](/blog/ios-27-widgets-whats-new)). Il conteggio resta privato, ma un'automazione può reagire al momento in cui arriva una notifica, e i Pallini di notifica di WidgetLoft sono costruiti proprio su quell'attivatore.
+
+## Passo dopo passo: aggiungere i pallini di notifica ai riquadri del widget
+
+1. **Attiva Pallini di notifica.** Apri [WidgetLoft](/widgetloft) e vai su **Impostazioni → Pallini di notifica** (Beta). La configurazione è disponibile su iOS 27.
+2. **Crea un'automazione di notifica.** Apri l'app Comandi, vai su **Automazione → App → Notifica** e scegli l'app a cui vuoi dare un pallino.
+3. **Falla eseguire in silenzio.** Imposta l'attivatore con **Automazione** attiva e **Notifica** disattivata, così parte senza chiederti nulla.
+4. **Aggiungi l'azione di WidgetLoft.** Aggiungi l'azione **Mostra pallino di notifica** di WidgetLoft e scegli la stessa app. Ripeti i passi da 2 a 4 per ogni app che vuoi tenere d'occhio. Ognuna richiede circa un minuto.
+5. **Facoltativo: cancella il pallino quando apri l'app altrove.** Il pallino sparisce quando apri l'app dal widget. Se la apri spesso in altro modo, aggiungi per quell'app un'automazione **L'app viene aperta** con l'azione **Cancella pallino di notifica**.
+
+## Pallino di notifica o badge numerico
+
+| Badge numerico su un'icona della Home Screen | Pallino di notifica su un riquadro di WidgetLoft |
+| --- | --- |
+| Mostra un numero, per esempio 3 | Mostra un pallino, senza numero |
+| Aggiornato dall'app stessa | Sparisce aprendo l'app dal widget o con un'automazione Cancella pallino di notifica |
+| Niente da configurare | Un'automazione di Comandi per app, circa un minuto ciascuna |
+| Funziona su qualsiasi versione recente di iOS | Richiede iOS 27 |
+| Compare sulle icone delle app | Compare sui riquadri delle app, non su siti web, riquadri di Comandi o contatti |
+
+Un pallino risponde alla vera domanda dietro un'occhiata: questa app ha qualcosa di nuovo? I riquadri di [WidgetLoft](/widgetloft) aprono ancora l'app direttamente con un tocco, e ora mostrano anche questo segnale.
+
+## Cosa non possono fare i pallini di notifica
+
+È un pallino, non un conteggio: sai che è arrivato qualcosa, non quanto. La configurazione richiede iOS 27 e ogni app ha bisogno della sua automazione.
+
+Leggere una notifica solo sulla schermata di blocco o su Apple Watch non cancella il pallino. Apri l'app dal widget oppure usa il pulsante **Cancella tutti i pallini** in WidgetLoft. Siti web, riquadri di Comandi e contatti non possono avere pallini, e l'intera funzione è ancora contrassegnata come Beta.
+
+## Domande frequenti
+
+**Un widget può mostrare il numero di notifiche non lette di un'app?**
+No. Un widget di terze parti non può leggere il conteggio dei non letti di un'altra app. Su iOS 27, WidgetLoft può mettere un pallino sul riquadro dell'app quando arriva una notifica, ma è un pallino, non un numero.
+
+**Perché il pallino non sparisce dopo che ho letto la notifica?**
+Leggerla solo sulla schermata di blocco o su Apple Watch non cancella il pallino. Apri l'app dal widget, aggiungi un'automazione L'app viene aperta con Cancella pallino di notifica oppure tocca Cancella tutti i pallini.
+
+**I pallini di notifica funzionano su iOS 26 o precedenti?**
+No. La configurazione si basa sull'attivatore di notifica di Comandi arrivato con iOS 27. WidgetLoft in sé funziona da iOS 18 in poi, solo senza pallini.
+
+---
+
+Pronto a vedere le novità con un'occhiata? [Scarica WidgetLoft dall'App Store](/widgetloft/download) e metti un pallino sulle app che contano.

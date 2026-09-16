@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Mappen in mappen zetten op iPhone (geneste mappen)",
+  description:
+    "Mappen op het iOS-beginscherm kunnen geen andere mappen bevatten. Zo krijg je echte geneste mappen op je iPhone met een widget: tik op een map, hij opent ter plekke met een terugknop, zoveel niveaus diep als je wilt.",
+  keywords: [
+    "map in map iphone",
+    "geneste mappen iphone",
+    "submappen iphone beginscherm",
+    "map in een andere map zetten ios",
+    "submap maken iphone",
+    "mappen widget iphone",
+  ],
+  ogTitle: "Mappen in mappen op iPhone, eindelijk",
+  ogDescription:
+    "iOS nest geen mappen. Een WidgetLoft-widget wel: tik op een map en hij opent ter plekke met een terugknop.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline: "Mappen in mappen zetten op iPhone (geneste mappen)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/nl/blog/folders-inside-folders-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "Geneste mappen maken op iPhone met een widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Maak een groep en een map",
+        text: "Installeer WidgetLoft (voorheen FolderMini), maak een groep, open die en tik op Nieuwe map.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Voeg apps en meer mappen toe",
+        text: "Voeg apps toe aan de map. Tik er opnieuw op Nieuwe map om nog een niveau dieper te gaan.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kies hoe de maptegel eruitziet",
+        text: "Toon de map als een 2×2- of 3×3-miniraster van de apps erin, of geef hem een eigen icoon van een foto of een SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Plaats de widget",
+        text: "Houd je vinger op het beginscherm, tik op de plusknop, voeg de WidgetLoft-widget toe en kies je groep.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Stel de terugknop en automatisch terugkeren in",
+        text: "Pas de terugknop aan in de editor en sleep hem naar elke gewenste plek, stel daarna Instellingen, Widget, Automatisch terug naar map in.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kun je op een iPhone een map in een map zetten?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Niet met gewone mappen op het beginscherm: iOS laat je geen map in een andere map slepen. Een mappenwidget zoals WidgetLoft kan het wel. Tik op een map en hij opent in de widget, met een terugknop om een niveau omhoog te gaan.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoeveel apps en submappen passen er in een WidgetLoft-map?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Elke map bevat tot 100 apps en 20 submappen, en er is geen limiet aan hoe diep je nest. De gratis versie staat 6 groepen en 21 apps in de bibliotheek toe; WidgetLoft Pro heft die limieten op.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werken geneste mappen in de widget op het toegangsscherm?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. De widget op het toegangsscherm toont één rij apps van het bovenste niveau. Geneste mappen werken in de widgets op het beginscherm.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Mappen in mappen zetten op iPhone (geneste mappen)
+
+**Kort antwoord:** Op het beginscherm van de iPhone kun je geen map in een andere map zetten. iOS staat het gewoon niet toe. Echte geneste mappen krijg je wel in een widget met [WidgetLoft](/widgetloft) (voorheen FolderMini): tik op een map en hij opent meteen in de widget, met een terugknop om omhoog te gaan, zoveel niveaus diep als je wilt.
+
+Een map op een andere map gesleept en zien terugspringen? Je doet niets verkeerd. Dit is de oplossing die wel werkt.
+
+---
+
+## Waarom iOS geen mappen nest
+
+Mappen op het beginscherm hebben maar één niveau: je kunt geen map in een andere slepen, en geen enkele instelling verandert dat. Een map "Werk" kan dus geen mappen "Vergaderingen" en "Documenten" bevatten, en je eindigt met één enorme map of een beginscherm vol kleine mapjes.
+
+Een widget kan wat een map niet kan. In [WidgetLoft](/widgetloft) wordt een groep een widget op je beginscherm, en een groep kan mappen bevatten, die zelf weer mappen kunnen bevatten. Tik op een maptegel en die map opent ter plekke, en een terugknop brengt je een niveau omhoog.
+
+## Stap voor stap: geneste mappen maken op iPhone
+
+1. **Maak een groep en een map.** Installeer [WidgetLoft](/widgetloft), maak een groep, open die en tik op **Nieuwe map**.
+2. **Voeg apps en meer mappen toe.** Voeg apps toe aan de map. Tik er opnieuw op **Nieuwe map** om nog een niveau dieper te gaan.
+3. **Kies hoe de maptegel eruitziet.** Toon de map als een 2×2- of 3×3-miniraster van de apps erin, of geef hem een eigen icoon van een foto of een SF Symbol.
+4. **Plaats de widget.** Houd je vinger op het beginscherm, tik op **+**, voeg de WidgetLoft-widget toe en kies je groep.
+5. **Stel de terugknop en automatisch terugkeren in.** Kies in de editor **Terugknop** een symbool (12 voorinstellingen of elk SF Symbol), een symboolkleur, een achtergrondkleur, de dekking van de achtergrond van 0 tot 100% en een grootte, of tik op **Herstel naar standaard**. Sleep de terugknop naar elke gewenste plek. Ga daarna naar **Instellingen → Widget → Automatisch terug naar map**.
+
+## iOS-mappen tegenover WidgetLoft-mappen
+
+| | Mappen op het iOS-beginscherm | WidgetLoft-mappen |
+| --- | --- | --- |
+| Mappen in mappen | Niet mogelijk | Ja, onbeperkt diep |
+| Capaciteit | Alleen apps, geen submappen | Tot 100 apps en 20 submappen per map |
+| Waar hij staat | Als icoon op het beginscherm | In een widget op het beginscherm, opent ter plekke |
+| Eigen uiterlijk | Een kleine voorvertoning van de apps erin | 2×2- of 3×3-miniraster, of een eigen foto- of symboolicoon |
+| Teruggaan | Buiten de map tikken | Een terugknop die je kunt aanpassen en verplaatsen |
+
+Met [WidgetLoft](/widgetloft) past je hele dag in één widget, geordend in mappen, en elke apptegel opent zijn app nog steeds direct.
+
+## Houd het overzichtelijk
+
+- **Groepeer op routine, niet op soort app.** Een map "Ochtend" met nieuws, weer en je agenda is sneller dan een map "Hulpprogramma's" waarin je moet zoeken.
+- **Gebruik automatisch terugkeren.** Met **Automatisch terug naar map** gaat de widget terug naar boven nadat je een app opent, na een tijd zonder activiteit (10 tot 60 seconden, standaard 30) of allebei. Nooit meer in een vergeten submap belanden.
+
+Wil je grondiger opruimen? Lees [hoe je het beginscherm van je iPhone organiseert](/blog/organize-iphone-home-screen-2026).
+
+## Veelgestelde vragen
+
+**Kun je op een iPhone een map in een map zetten?**
+Niet met gewone mappen op het beginscherm. Een mappenwidget zoals WidgetLoft kan het wel: tik op een map en hij opent in de widget, met een terugknop om omhoog te gaan.
+
+**Hoeveel apps en submappen passen er in een map?**
+Tot 100 apps en 20 submappen per map, zonder dieptelimiet. De gratis versie staat 6 groepen en 21 apps in de bibliotheek toe; WidgetLoft Pro heft die limieten op.
+
+**Werken geneste mappen in de widget op het toegangsscherm?**
+Nee. De widget op het toegangsscherm toont één rij apps van het bovenste niveau. Geneste mappen werken in de widgets op het beginscherm.
+
+---
+
+Klaar om te nesten? [Download WidgetLoft in de App Store](/widgetloft/download) en zet vandaag nog mappen in mappen.

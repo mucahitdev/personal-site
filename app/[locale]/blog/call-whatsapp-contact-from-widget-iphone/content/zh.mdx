@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "如何通过 iPhone 主屏幕小组件给联系人打电话或发 WhatsApp",
+  description:
+    "把常联系的人变成 iPhone 主屏幕上的快速拨号。轻点一下小组件图块，就能打电话、发起 FaceTime，或打开你们的 WhatsApp、Telegram 聊天。",
+  keywords: [
+    "iphone 快速拨号 主屏幕",
+    "小组件 联系人 打电话 iphone",
+    "whatsapp 联系人 小组件 iphone",
+    "主屏幕 添加联系人 iphone",
+    "一键拨号 小组件 iphone",
+    "facetime 联系人 小组件 iphone",
+  ],
+  ogTitle: "用 iPhone 小组件给联系人打电话或发 WhatsApp",
+  ogDescription:
+    "把最重要的人放到主屏幕上，轻点图块即可打电话、发信息、FaceTime 或打开 WhatsApp 聊天。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何通过 iPhone 主屏幕小组件给联系人打电话或发 WhatsApp",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/call-whatsapp-contact-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在 iPhone 主屏幕小组件中添加一键联系人图块",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "添加联系人图块",
+        text: "在 WidgetLoft （原 FolderMini）中打开素材库标签页，轻点添加图块，然后轻点联系人。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择联系人",
+        text: "轻点从通讯录中选择（无需任何权限），或自己输入姓名和联系方式。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择操作",
+        text: "从打电话、发信息、FaceTime、FaceTime 语音、发邮件、WhatsApp 和 Telegram 中选择，再选择单个操作或包含所有操作的文件夹。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择图标",
+        text: "为图块选择 App 图标、照片或照片 + 角标。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "放进小组件",
+        text: "把图块加入一个群组，然后长按主屏幕，添加 WidgetLoft 小组件并选择该群组。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "可以在 iPhone 主屏幕上设置快速拨号吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。Apple 的通讯录小组件会显示联系人，但轻点之后你仍需选择要做什么。WidgetLoft 的联系人图块每次轻点只执行一个操作，比如给某人打电话或打开聊天。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "小组件能打开和特定联系人的 WhatsApp 聊天吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。把操作设为 WhatsApp，图块就会打开你和该联系人的聊天。它打开的是对话，而不是直接发起通话。Telegram 也是一样，支持用户名或手机号。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft 需要访问我的通讯录吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不需要。从通讯录中选择无需授予 WidgetLoft 任何通讯录权限，你也可以手动输入联系方式。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何通过 iPhone 主屏幕小组件给联系人打电话或发 WhatsApp
+
+**简短回答：** iPhone 没有传统的快速拨号，但小组件里的联系人图块可以做到同样的事。在 [WidgetLoft](/widgetloft) （原 FolderMini）中依次进入素材库、添加图块、联系人，选择联系人和一个操作（比如打电话或 WhatsApp），再把图块放进小组件。轻点一下就能打电话，或打开你们的聊天。
+
+你最常联系的人，不应该藏在三屏之外。下面教你把他们直接放到主屏幕上。
+
+---
+
+## 为什么通讯录小组件算不上真正的快速拨号
+
+Apple 的通讯录小组件会显示你选定的联系人，这是个不错的开始。但轻点一下只走了一半：打开后你还得选择要做什么（打电话、发信息、FaceTime）。如果你一天要给另一半打好几次电话，这多出来的一步就很明显了。
+
+WidgetLoft 的联系人图块省掉了这一步。你只需在设置图块时决定一次操作，之后每次轻点都只做这件事。如果你喜欢保留选择，也可以把联系人做成一个小文件夹，里面放着他的所有操作。
+
+## 分步教程：把联系人添加到主屏幕小组件
+
+1. **添加联系人图块。** 打开 [WidgetLoft](/widgetloft)，进入 **素材库** 标签页，轻点 **添加图块**，再轻点 **联系人**。
+2. **选择联系人。** 轻点 **从通讯录中选择** 挑选一个人，这一步不需要通讯录权限。你也可以自己输入姓名、电话号码或邮箱。
+3. **选择操作。** 选择图块能做的事：打电话、发信息、FaceTime、FaceTime 语音、发邮件、WhatsApp 或 Telegram。然后选择 **单个操作**（轻点一下只做一件事）或 **包含所有操作的文件夹**（先点联系人，再点操作）。
+4. **选择图标。** 可选 **App 图标**、使用对方照片的 **照片**，或在照片上加一个小角标的 **照片 + 角标**。
+5. **放进小组件。** 把图块加入一个群组。然后长按主屏幕，添加 WidgetLoft 小组件并选择该群组。
+
+## 轻点时每个操作会做什么
+
+| 操作 | 轻点后 |
+| --- | --- |
+| 打电话 | 给联系人拨打电话 |
+| 发信息 | 打开你和对方在信息中的对话 |
+| FaceTime 或 FaceTime 语音 | 发起 FaceTime 视频或语音通话 |
+| 发邮件 | 打开一封发往对方地址的邮件 |
+| WhatsApp | 打开你和对方的 WhatsApp 聊天 |
+| Telegram | 通过用户名或手机号打开对方的 Telegram 聊天 |
+
+联系人图块可以和普通 App 图块放在一起，所以一个 [WidgetLoft](/widgetloft) 群组就能同时放下家人的头像和你联系他们用的 App。可以用最重要的三个人做一个小尺寸小组件，也可以做一个混合联系人和 App 的中尺寸小组件。如果你刚接触启动器小组件，可以看看[如何从小组件打开任意 App](/blog/launch-apps-from-widgets-ios)。
+
+## 联系人图块做不到的事
+
+先坦白几点限制，免得你意外：
+
+- **只有电话和 FaceTime 会直接发起通话。** WhatsApp 和 Telegram 图块打开的是对话。如果想在里面语音或视频通话，请点聊天界面里的通话按钮。
+- **Telegram 需要用户名或手机号。** 两者都可以。如果对方的 Telegram 账号用的是另一个号码，就填那个号码。
+- **并非所有聊天 App 都支持。** 没有 Viber、Messenger 或 LINE 的操作。对于这些 App，把 App 本身作为普通图块添加即可。
+
+## 常见问题
+
+**可以在 iPhone 主屏幕上设置快速拨号吗？**
+可以。Apple 的通讯录小组件会显示联系人，但要在轻点之后才选择操作。WidgetLoft 的联系人图块每次轻点只执行一个操作，比如给某人打电话或打开聊天。
+
+**小组件能打开和特定联系人的 WhatsApp 聊天吗？**
+可以。把操作设为 WhatsApp，图块就会打开你和该联系人的聊天。它打开的是对话，而不是直接发起通话。Telegram 也是一样，支持用户名或手机号。
+
+**WidgetLoft 需要访问我的通讯录吗？**
+不需要。从通讯录中选择无需任何通讯录权限，你也可以手动输入联系方式。
+
+---
+
+准备好设置你的快速拨号了吗？[在 App Store 下载 WidgetLoft](/widgetloft/download)，让最重要的人一触即达。

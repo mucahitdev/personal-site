@@ -1,0 +1,150 @@
+export const meta = {
+  title: "如何把常用 App 放进 iPhone 的灵动岛",
+  description:
+    "iOS 不允许把 App 快捷方式固定到灵动岛，但实时活动可以显示它们。本文教你在灵动岛放最多 5 个 App，在锁定屏幕放最多 10 个。",
+  keywords: [
+    "灵动岛 添加 App",
+    "灵动岛 快捷方式",
+    "灵动岛 App 启动器",
+    "iPhone 灵动岛 放 App",
+    "锁定屏幕 App 启动器 实时活动",
+    "灵动岛 快速启动",
+  ],
+  ogTitle: "把常用 App 放进灵动岛",
+  ogDescription:
+    "iPhone 实时活动启动器：灵动岛最多 5 个 App，锁定屏幕最多 10 个。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "如何把常用 App 放进 iPhone 的灵动岛",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/zh/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "把常用 App 放进 iPhone 的灵动岛",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "创建一个分组",
+        text: "打开 WidgetLoft （原 FolderMini），创建一个分组，添加你最常用的 App。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "打开快速启动栏",
+        text: "在 WidgetLoft 中进入设置，再进入灵动岛与实时活动，打开快速启动栏。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择文件夹",
+        text: "在文件夹中选择你想在灵动岛和锁定屏幕上看到的分组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "允许实时活动",
+        text: "在 iOS 的设置 App 中确认已允许 WidgetLoft 使用实时活动。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "长按灵动岛并轻点 App",
+        text: "长按灵动岛展开最多 5 个 App 的一行，然后轻点其中一个即可打开。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "为什么灵动岛里的 App 不见了？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS 会在几个小时后（活跃状态下约 8 小时）结束实时活动。每次你打开 WidgetLoft，它都会重新启动快速启动栏，所以打开一下 App 就能恢复。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "灵动岛里能放超过 5 个 App 吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不能。展开的灵动岛只显示一行，最多 5 个 App。锁定屏幕横幅会以两行显示同一分组中最多 10 个 App。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "快速启动栏是正式功能吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "它在 WidgetLoft 中标记为 Beta。它依赖 iOS 的实时活动，因此需要允许 WidgetLoft 使用实时活动，并受 iOS 为实时活动设定的时间限制。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何把常用 App 放进 iPhone 的灵动岛
+
+**快速回答：** iOS 没有把 App 快捷方式固定到灵动岛的设置，那里只会显示实时活动。[WidgetLoft](/widgetloft) （原 FolderMini）正是利用了这一点：它的快速启动栏是一个同步显示你某个分组的实时活动，这样灵动岛里可以放最多 5 个 App，锁定屏幕上最多 10 个。
+
+灵动岛始终在视线之内，非常适合放那些你一天到晚都在打开的 App。下面教你用大约一分钟把它们放进去。
+
+---
+
+## 为什么灵动岛不能放 App 快捷方式
+
+Apple 为实时活动设计了灵动岛，比如计时器、外卖配送、比赛实时比分。你不能把 App 图标拖进去，也没有任何设置可以把图标固定在那里。锁定屏幕上的实时活动横幅也是一样。
+
+所以诀窍就是使用一个内容为你自己 App 的一行图标的实时活动。WidgetLoft 的**快速启动栏**做的正是这件事。它以相同的图标同步显示 App 中的一个分组，并让它一直留在灵动岛和锁定屏幕上。
+
+## 分步操作：把 App 放进灵动岛
+
+1. **创建一个分组。** 打开 [WidgetLoft](/widgetloft)，在分组标签页中创建一个分组，添加你最常用的 App。灵动岛最多显示 5 个，所以 5 个 App 的分组可以完整放下。
+2. **打开快速启动栏。** 前往设置 → **灵动岛与实时活动**，打开**快速启动栏**。
+3. **选择文件夹。** 在**文件夹**中选择你刚创建的分组。
+4. **允许实时活动。** 如果什么都没出现，打开 iOS 的设置 App，找到 WidgetLoft，确认已允许实时活动。
+5. **长按灵动岛并轻点 App。** 收起状态的灵动岛会显示一个网格图标和 App 数量。长按展开这一行，然后轻点任意图标。
+
+## 灵动岛与锁定屏幕横幅对比
+
+| | 灵动岛 | 锁定屏幕横幅 |
+| --- | --- | --- |
+| 显示的 App | 最多 5 个 | 最多 10 个 |
+| 行数 | 一行 | 5 个以内一行，6 到 10 个两行 |
+| 轻点后 | 一次轻点直接打开 App | 先要求用 Face ID 解锁，然后打开 App |
+| 网站磁贴 | 在你选择的浏览器中打开 | 在你选择的浏览器中打开 |
+| 外观 | 收起时：网格图标和 App 数量 | 使用分组颜色着色，透明分组则为系统 Liquid Glass |
+
+从灵动岛一次轻点直接打开是 [WidgetLoft](/widgetloft) 2.1.0 的新功能：App 会立即打开，不会先经过 WidgetLoft。在锁定屏幕上，iPhone 仍处于锁定状态，所以你需要用 Face ID 确认，之后 App 才会打开。如果你正在重新布置整个锁定屏幕，也可以看看[如何设置 iOS 27 锁定屏幕](/blog/ios-27-lock-screen-setup)。
+
+## 常见问题
+
+**为什么灵动岛里的 App 不见了？**
+iOS 会在几个小时后（活跃状态下约 8 小时）结束实时活动。每次你打开 WidgetLoft，它都会重新启动快速启动栏，所以打开一下 App 就能恢复。
+
+**灵动岛里能放超过 5 个 App 吗？**
+不能。展开的灵动岛只显示一行，最多 5 个 App。锁定屏幕横幅会以两行显示同一分组中最多 10 个 App。
+
+**快速启动栏是正式功能吗？**
+它在 App 中标记为 Beta。它依赖 iOS 的实时活动，因此需要允许 WidgetLoft 使用实时活动，并受 iOS 为实时活动设定的时间限制。
+
+---
+
+准备好试试了吗？[前往 App Store 下载 WidgetLoft](/widgetloft/download)，让常用 App 在灵动岛里一点即开。

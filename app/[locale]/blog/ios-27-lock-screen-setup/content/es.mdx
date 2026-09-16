@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "Cómo configurar una pantalla de bloqueo limpia en iOS 27 (reloj compacto y apps a un toque)",
+  description:
+    "Configura una pantalla de bloqueo limpia en iOS 27: elige un fondo, activa el reloj compacto y añade tus apps con el widget de pantalla de bloqueo de WidgetLoft y la barra de acceso rápido.",
+  keywords: [
+    "pantalla de bloqueo ios 27",
+    "reloj compacto ios 27",
+    "personalizar pantalla de bloqueo ios 27",
+    "lanzador de apps pantalla de bloqueo iphone",
+    "abrir apps desde pantalla de bloqueo iphone",
+    "widget de apps pantalla de bloqueo iphone",
+  ],
+  ogTitle: "Una pantalla de bloqueo limpia en iOS 27 con apps a un toque",
+  ogDescription:
+    "Reloj compacto, un fondo a pantalla completa y tus apps favoritas a un toque en la pantalla de bloqueo de iOS 27.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "es",
+    headline:
+      "Cómo configurar una pantalla de bloqueo limpia en iOS 27 (reloj compacto y apps a un toque)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/es/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "es",
+    name: "Configura una pantalla de bloqueo limpia en iOS 27 con apps a un toque",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Elige un fondo",
+        text: "Mantén pulsada la pantalla de bloqueo, toca Personalizar y elige una foto. Si no llena la pantalla, deja que la extensión de fondo de iOS 27 la amplíe.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Activa el reloj compacto",
+        text: "En el mismo editor, elige la opción de reloj compacto para que la hora suba junto a la fecha y tus widgets.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Añade el widget de pantalla de bloqueo de WidgetLoft",
+        text: "Crea un grupo con tus apps principales en WidgetLoft (antes FolderMini), añade el widget WidgetLoft en el editor de la pantalla de bloqueo y elige ese grupo. Muestra una fila de hasta 4 apps.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Activa la barra de acceso rápido",
+        text: "En WidgetLoft, abre Ajustes, luego Dynamic Island y Actividad en vivo, y activa la barra de acceso rápido. Las Actividades en vivo deben estar permitidas para WidgetLoft en los Ajustes de iOS.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Elige el grupo",
+        text: "En Carpeta, elige el grupo que quieres mostrar. Aparecen hasta 10 apps en la pantalla de bloqueo y hasta 5 en la Dynamic Island.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "es",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Puedo abrir apps desde la pantalla de bloqueo sin desbloquear?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. En la pantalla de bloqueo, tanto el widget de WidgetLoft como la barra de acceso rápido te piden desbloquear primero, por ejemplo con Face ID, y luego abren la app. WidgetLoft puede aparecer un instante por el camino. En la Dynamic Island, las apps se abren con un toque.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Por qué desapareció la barra de acceso rápido de mi pantalla de bloqueo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS termina las Actividades en vivo al cabo de unas horas. WidgetLoft vuelve a iniciar la barra cada vez que abres la app. Si nunca aparece, comprueba que las Actividades en vivo estén permitidas para WidgetLoft en los Ajustes de iOS.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Necesito iOS 27 para esta configuración?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Solo para el reloj compacto y la extensión de fondo, que son funciones de iOS 27. WidgetLoft funciona en iOS 18 y posteriores. Ten en cuenta que el widget de pantalla de bloqueo solo muestra apps del nivel superior, así que las carpetas dentro de un grupo no aparecen ahí.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cómo configurar una pantalla de bloqueo limpia en iOS 27 (reloj compacto y apps a un toque)
+
+**Respuesta rápida:** Mantén pulsada la pantalla de bloqueo, toca **Personalizar**, elige un fondo y activa la opción de reloj compacto de iOS 27 para que la hora ocupe menos espacio. Después añade tus apps: el widget de pantalla de bloqueo de [WidgetLoft](/widgetloft) (antes FolderMini) muestra una fila de hasta 4 apps, y su barra de acceso rápido pone hasta 10 apps en la pantalla de bloqueo.
+
+iOS 27 le da más aire a la pantalla de bloqueo. La mejor forma de aprovechar ese espacio es dedicarlo a las apps que de verdad abres, no solo a un reloj más grande.
+
+---
+
+## Qué cambia iOS 27 en la pantalla de bloqueo
+
+Dos cambios de iOS 27 importan para una configuración limpia:
+
+- **Modo de reloj compacto.** La hora se hace más pequeña y se coloca arriba, junto a la fecha y tus widgets, en lugar de llenar el centro de la pantalla.
+- **Extensión de fondo.** iOS puede ampliar una foto para que llene toda la pantalla de bloqueo, algo útil con imágenes que no encajan del todo.
+
+Lo que iOS sigue sin darte es una fila de apps que puedas tocar para abrirlas. Los widgets estándar de la pantalla de bloqueo muestran información, no abren tus otras apps. Ese hueco lo llena [WidgetLoft](/widgetloft) con dos herramientas: un widget de pantalla de bloqueo que siempre está ahí y la barra de acceso rápido, una Actividad en vivo con una lista de apps más larga.
+
+## Paso a paso: configura una pantalla de bloqueo limpia en iOS 27
+
+1. **Elige un fondo.** Mantén pulsada la pantalla de bloqueo, toca **Personalizar** y elige una foto. Si no llena la pantalla, deja que la extensión de fondo de iOS 27 la amplíe.
+2. **Activa el reloj compacto.** En el mismo editor, elige la opción de reloj compacto. La hora sube arriba, junto a la fecha y tus widgets.
+3. **Añade el widget de pantalla de bloqueo de WidgetLoft.** En WidgetLoft, crea un grupo con tus apps principales. De vuelta en el editor de la pantalla de bloqueo, añade el widget **WidgetLoft** y elige ese grupo. Muestra una fila de hasta 4 apps (3 con iconos grandes).
+4. **Activa la barra de acceso rápido.** Abre WidgetLoft, ve a **Ajustes → Dynamic Island y Actividad en vivo** y activa la **barra de acceso rápido** (Beta).
+5. **Elige el grupo.** En **Carpeta**, elige el grupo que quieras. Aparecen hasta 10 apps en un banner de la pantalla de bloqueo y hasta 5 en la Dynamic Island.
+
+## Widget de pantalla de bloqueo o barra de acceso rápido
+
+| | Widget de pantalla de bloqueo | Barra de acceso rápido |
+| --- | --- | --- |
+| Apps | Una fila de hasta 4 (3 con iconos grandes) | Hasta 10 en la pantalla de bloqueo, hasta 5 en la Dynamic Island |
+| Cuándo se ve | Siempre, como parte de tu pantalla de bloqueo | Durante unas horas después de abrir WidgetLoft |
+| Tocar en la pantalla de bloqueo | Primero desbloqueas y luego se abre la app | Primero desbloqueas con Face ID y luego se abre la app |
+| Dynamic Island | No incluida | Mantén pulsada la isla y toca una app para abrirla con un toque |
+
+No tienes que elegir. Pon en el widget las 4 apps que abres todo el día y usa la barra de acceso rápido para una lista más larga que quieras tener cerca durante un rato. Para saber más sobre la isla, lee [cómo poner apps en la Dynamic Island](/blog/apps-in-dynamic-island-iphone).
+
+## Preguntas frecuentes
+
+**¿Puedo abrir apps desde la pantalla de bloqueo sin desbloquear?**
+No. En la pantalla de bloqueo, tanto el widget como la barra de acceso rápido te piden desbloquear primero (por ejemplo con Face ID) y luego abren la app. WidgetLoft puede aparecer un instante por el camino. En la Dynamic Island, las apps se abren con un toque.
+
+**¿Por qué desapareció la barra de acceso rápido de mi pantalla de bloqueo?**
+iOS termina las Actividades en vivo al cabo de unas horas. WidgetLoft vuelve a iniciar la barra cada vez que abres la app. Si nunca aparece, comprueba que las Actividades en vivo estén permitidas para WidgetLoft en los Ajustes de iOS.
+
+**¿Necesito iOS 27 para esta configuración?**
+Solo para el reloj compacto y la extensión de fondo. [WidgetLoft](/widgetloft) funciona en iOS 18 y posteriores. Un límite a tener en cuenta: el widget de pantalla de bloqueo solo muestra apps del nivel superior, así que las carpetas dentro de un grupo no aparecen ahí.
+
+---
+
+¿Listo para una pantalla de bloqueo más limpia? [Descarga WidgetLoft en la App Store](/widgetloft/download) y ten tus apps principales a un toque.

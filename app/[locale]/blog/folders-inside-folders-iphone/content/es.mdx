@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Cómo poner carpetas dentro de carpetas en iPhone (carpetas anidadas)",
+  description:
+    "Las carpetas de la pantalla de inicio de iOS no admiten otras carpetas. Así consigues carpetas anidadas de verdad en iPhone con un widget: toca una carpeta, se abre en el sitio con un botón atrás, tantos niveles como quieras.",
+  keywords: [
+    "carpeta dentro de carpeta iphone",
+    "carpetas anidadas iphone",
+    "subcarpetas iphone pantalla de inicio",
+    "meter una carpeta en otra carpeta ios",
+    "crear subcarpetas en iphone",
+    "widget de carpetas iphone",
+  ],
+  ogTitle: "Carpetas dentro de carpetas en iPhone, por fin",
+  ogDescription:
+    "iOS no anida carpetas. Un widget de WidgetLoft sí: toca una carpeta y se abre en el sitio con un botón atrás.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "es",
+    headline: "Cómo poner carpetas dentro de carpetas en iPhone (carpetas anidadas)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/es/blog/folders-inside-folders-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "es",
+    name: "Crear carpetas anidadas en iPhone con un widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Crea un grupo y una carpeta",
+        text: "Instala WidgetLoft (antes FolderMini), crea un grupo, ábrelo y toca Nueva carpeta.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Añade apps y más carpetas",
+        text: "Añade apps a la carpeta. Toca de nuevo Nueva carpeta dentro de ella para bajar otro nivel.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Elige el aspecto de la carpeta",
+        text: "Muestra la carpeta como una minicuadrícula de 2×2 o 3×3 con sus apps, o dale su propio icono con una foto o un SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Coloca el widget",
+        text: "Mantén pulsada la pantalla de inicio, toca el botón más, añade el widget de WidgetLoft y elige tu grupo.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajusta el botón atrás y el regreso automático",
+        text: "Personaliza el botón atrás en su editor y arrástralo a cualquier hueco; después configura Ajustes, Widget, Volver automáticamente a la carpeta.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "es",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Se puede poner una carpeta dentro de otra en iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Con las carpetas normales de la pantalla de inicio, no: iOS no deja meter una carpeta en otra. Un widget de carpetas como WidgetLoft sí lo permite. Toca una carpeta y se abre dentro del widget, con un botón atrás para subir un nivel.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuántas apps y subcarpetas caben en una carpeta de WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Cada carpeta admite hasta 100 apps y 20 subcarpetas, y no hay límite de profundidad. La versión gratuita permite 6 grupos y 21 apps en la biblioteca; WidgetLoft Pro elimina esos límites.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Funcionan las carpetas anidadas en el widget de la pantalla de bloqueo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. El widget de la pantalla de bloqueo muestra una sola fila con las apps del nivel superior. Las carpetas anidadas funcionan en los widgets de la pantalla de inicio.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cómo poner carpetas dentro de carpetas en iPhone (carpetas anidadas)
+
+**Respuesta rápida:** No puedes meter una carpeta dentro de otra en la pantalla de inicio del iPhone. iOS simplemente no lo permite. Pero sí puedes tener carpetas anidadas de verdad dentro de un widget con [WidgetLoft](/widgetloft) (antes FolderMini): toca una carpeta y se abre ahí mismo en el widget, con un botón atrás para subir, tantos niveles como quieras.
+
+¿Has arrastrado una carpeta sobre otra y has visto cómo rebotaba? No lo estás haciendo mal. Esta es la solución que funciona.
+
+---
+
+## Por qué iOS no anida carpetas
+
+Las carpetas de la pantalla de inicio tienen un solo nivel: no puedes arrastrar una carpeta dentro de otra y ningún ajuste lo cambia. Así que una carpeta "Trabajo" no puede contener una carpeta "Reuniones" y otra "Documentos", y acabas con una carpeta gigante o con una pantalla de inicio llena de carpetas pequeñas.
+
+Un widget puede hacer lo que una carpeta no. En [WidgetLoft](/widgetloft), un grupo se convierte en un widget de la pantalla de inicio, y un grupo puede contener carpetas, que a su vez pueden contener más carpetas. Al tocar una carpeta, se abre en el sitio, y un botón atrás te lleva un nivel arriba.
+
+## Paso a paso: crear carpetas anidadas en iPhone
+
+1. **Crea un grupo y una carpeta.** Instala [WidgetLoft](/widgetloft), crea un grupo, ábrelo y toca **Nueva carpeta**.
+2. **Añade apps y más carpetas.** Añade apps a la carpeta. Toca de nuevo **Nueva carpeta** dentro de ella para bajar otro nivel.
+3. **Elige el aspecto de la carpeta.** Muéstrala como una minicuadrícula de 2×2 o 3×3 con las apps que contiene, o dale su propio icono con una foto o un SF Symbol.
+4. **Coloca el widget.** Mantén pulsada la pantalla de inicio, toca **+**, añade el widget de WidgetLoft y elige tu grupo.
+5. **Ajusta el botón atrás y el regreso automático.** En el editor **Botón atrás** elige un símbolo (12 preajustes o cualquier SF Symbol), el color del símbolo, el color de fondo, la opacidad del fondo del 0 al 100 % y el tamaño, o toca **Restablecer valores por defecto**. Arrastra el botón atrás a cualquier hueco. Después ve a **Ajustes → Widget → Volver automáticamente a la carpeta**.
+
+## Carpetas de iOS frente a carpetas de WidgetLoft
+
+| | Carpetas de la pantalla de inicio de iOS | Carpetas de WidgetLoft |
+| --- | --- | --- |
+| Carpetas dentro de carpetas | No es posible | Sí, sin límite de profundidad |
+| Capacidad | Solo apps, sin subcarpetas | Hasta 100 apps y 20 subcarpetas por carpeta |
+| Dónde está | En la pantalla de inicio, como un icono | Dentro de un widget de la pantalla de inicio, se abre en el sitio |
+| Aspecto personalizado | Una pequeña vista previa de sus apps | Minicuadrícula de 2×2 o 3×3, o su propio icono de foto o símbolo |
+| Volver atrás | Tocar fuera de la carpeta | Un botón atrás que puedes personalizar y mover |
+
+Con [WidgetLoft](/widgetloft), un solo widget puede contener todo tu día, ordenado en carpetas, y cada app se sigue abriendo directamente.
+
+## Mantenlo ordenado
+
+- **Agrupa por rutina, no por tipo de app.** Una carpeta "Mañana" con noticias, el tiempo y tu calendario es más rápida que una carpeta "Utilidades" en la que tienes que buscar.
+- **Usa el regreso automático.** Con **Volver automáticamente a la carpeta**, el widget vuelve al nivel superior después de abrir una app, tras un rato de inactividad (de 10 a 60 segundos, 30 por defecto) o en ambos casos. Se acabó aterrizar en una subcarpeta olvidada.
+
+Para una limpieza más a fondo, lee [cómo organizar la pantalla de inicio del iPhone](/blog/organize-iphone-home-screen-2026).
+
+## Preguntas frecuentes
+
+**¿Se puede poner una carpeta dentro de otra en iPhone?**
+Con las carpetas normales de la pantalla de inicio, no. Un widget de carpetas como WidgetLoft sí lo permite: toca una carpeta y se abre dentro del widget, con un botón atrás para subir.
+
+**¿Cuántas apps y subcarpetas caben en una carpeta?**
+Hasta 100 apps y 20 subcarpetas por carpeta, sin límite de profundidad. La versión gratuita permite 6 grupos y 21 apps en la biblioteca; WidgetLoft Pro elimina esos límites.
+
+**¿Funcionan las carpetas anidadas en el widget de la pantalla de bloqueo?**
+No. El widget de la pantalla de bloqueo muestra una sola fila con las apps del nivel superior. Las carpetas anidadas funcionan en los widgets de la pantalla de inicio.
+
+---
+
+¿Listo para anidar? [Descarga WidgetLoft en la App Store](/widgetloft/download) y pon carpetas dentro de carpetas hoy mismo.

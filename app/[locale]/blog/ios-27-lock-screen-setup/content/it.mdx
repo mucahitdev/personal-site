@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "Come configurare una schermata di blocco pulita su iOS 27 (orologio compatto e app con un tocco)",
+  description:
+    "Configura una schermata di blocco pulita su iOS 27: scegli uno sfondo, attiva l'orologio compatto e aggiungi le tue app con il widget per la schermata di blocco di WidgetLoft e la barra di avvio rapido.",
+  keywords: [
+    "schermata di blocco ios 27",
+    "orologio compatto ios 27",
+    "personalizzare schermata di blocco ios 27",
+    "avvio app schermata di blocco iphone",
+    "aprire app dalla schermata di blocco iphone",
+    "widget app schermata di blocco iphone",
+  ],
+  ogTitle: "Una schermata di blocco iOS 27 pulita con app a un tocco",
+  ogDescription:
+    "Orologio compatto, uno sfondo a tutto schermo e le tue app preferite a un tocco sulla schermata di blocco di iOS 27.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline:
+      "Come configurare una schermata di blocco pulita su iOS 27 (orologio compatto e app con un tocco)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/it/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "it",
+    name: "Configura una schermata di blocco pulita su iOS 27 con app a un tocco",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Scegli uno sfondo",
+        text: "Tieni premuto sulla schermata di blocco, tocca Personalizza e scegli una foto. Se non riempie lo schermo, lascia che l'estensione dello sfondo di iOS 27 la allarghi.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Attiva l'orologio compatto",
+        text: "Nello stesso editor, scegli l'opzione dell'orologio compatto così l'ora sale in alto accanto alla data e ai tuoi widget.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Aggiungi il widget per la schermata di blocco di WidgetLoft",
+        text: "Crea un gruppo con le tue app principali in WidgetLoft (già FolderMini), poi aggiungi il widget WidgetLoft nell'editor della schermata di blocco e scegli quel gruppo. Mostra una riga di massimo 4 app.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Attiva la barra di avvio rapido",
+        text: "In WidgetLoft apri Impostazioni, poi Dynamic Island e Attività in tempo reale, e attiva la barra di avvio rapido. Le Attività in tempo reale devono essere consentite per WidgetLoft nelle Impostazioni di iOS.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Scegli il gruppo",
+        text: "In Cartella scegli il gruppo da mostrare. Compaiono fino a 10 app sulla schermata di blocco e fino a 5 nella Dynamic Island.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Posso aprire app dalla schermata di blocco senza sbloccare?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Sulla schermata di blocco, sia il widget di WidgetLoft sia la barra di avvio rapido ti chiedono prima di sbloccare, per esempio con Face ID, e poi aprono l'app. WidgetLoft può comparire per un attimo lungo il percorso. Nella Dynamic Island le app si aprono con un tocco.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Perché la barra di avvio rapido è sparita dalla schermata di blocco?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS chiude le Attività in tempo reale dopo alcune ore. WidgetLoft riavvia la barra ogni volta che apri l'app. Se non compare mai, controlla che le Attività in tempo reale siano consentite per WidgetLoft nelle Impostazioni di iOS.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Serve iOS 27 per questa configurazione?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Solo per l'orologio compatto e l'estensione dello sfondo, che sono funzioni di iOS 27. WidgetLoft funziona su iOS 18 e versioni successive. Tieni presente che il widget per la schermata di blocco mostra solo le app di primo livello, quindi le cartelle dentro un gruppo non compaiono lì.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Come configurare una schermata di blocco pulita su iOS 27 (orologio compatto e app con un tocco)
+
+**Risposta rapida:** Tieni premuto sulla schermata di blocco, tocca **Personalizza**, scegli uno sfondo e attiva l'opzione dell'orologio compatto di iOS 27 così l'ora occupa meno spazio. Poi aggiungi le tue app: il widget per la schermata di blocco di [WidgetLoft](/widgetloft) (già FolderMini) mostra una riga di massimo 4 app, e la sua barra di avvio rapido mette fino a 10 app sulla schermata di blocco.
+
+iOS 27 dà più respiro alla schermata di blocco. Il modo migliore per usare quello spazio è dedicarlo alle app che apri davvero, non solo a un orologio più grande.
+
+---
+
+## Cosa cambia iOS 27 nella schermata di blocco
+
+Due novità di iOS 27 contano per una configurazione pulita:
+
+- **Orologio compatto.** L'ora diventa più piccola e si sposta in alto, accanto alla data e ai tuoi widget, invece di riempire il centro dello schermo.
+- **Estensione dello sfondo.** iOS può allargare una foto perché riempia tutta la schermata di blocco, utile con le immagini che non si adattano del tutto.
+
+Quello che iOS ancora non offre è una riga di app da toccare per aprirle. I widget standard della schermata di blocco mostrano informazioni, non avviano le tue altre app. [WidgetLoft](/widgetloft) colma questa lacuna con due strumenti: un widget per la schermata di blocco sempre presente e la barra di avvio rapido, un'Attività in tempo reale con un elenco di app più lungo.
+
+## Passo dopo passo: una schermata di blocco pulita su iOS 27
+
+1. **Scegli uno sfondo.** Tieni premuto sulla schermata di blocco, tocca **Personalizza** e scegli una foto. Se non riempie lo schermo, lascia che l'estensione dello sfondo di iOS 27 la allarghi.
+2. **Attiva l'orologio compatto.** Nello stesso editor, scegli l'opzione dell'orologio compatto. L'ora sale in alto, accanto alla data e ai tuoi widget.
+3. **Aggiungi il widget per la schermata di blocco di WidgetLoft.** In WidgetLoft crea un gruppo con le tue app principali. Tornato nell'editor della schermata di blocco, aggiungi il widget **WidgetLoft** e scegli quel gruppo. Mostra una riga di massimo 4 app (3 con icone grandi).
+4. **Attiva la barra di avvio rapido.** Apri WidgetLoft, vai in **Impostazioni → Dynamic Island e Attività in tempo reale** e attiva la **barra di avvio rapido** (Beta).
+5. **Scegli il gruppo.** In **Cartella** scegli il gruppo che vuoi. Compaiono fino a 10 app in un banner sulla schermata di blocco e fino a 5 nella Dynamic Island.
+
+## Widget per la schermata di blocco o barra di avvio rapido
+
+| | Widget per la schermata di blocco | Barra di avvio rapido |
+| --- | --- | --- |
+| App | Una riga di massimo 4 (3 con icone grandi) | Fino a 10 sulla schermata di blocco, fino a 5 nella Dynamic Island |
+| Quando si vede | Sempre, come parte della schermata di blocco | Per qualche ora dopo che apri WidgetLoft |
+| Tocco sulla schermata di blocco | Prima sblocchi, poi l'app si apre | Prima sblocchi con Face ID, poi l'app si apre |
+| Dynamic Island | Non inclusa | Tieni premuta l'isola e tocca un'app per aprirla con un tocco |
+
+Non devi scegliere. Metti nel widget le 4 app che apri tutto il giorno e usa la barra di avvio rapido per un elenco più lungo da tenere a portata di mano per un po'. Per saperne di più sull'isola, leggi [come mettere app nella Dynamic Island](/blog/apps-in-dynamic-island-iphone).
+
+## Domande frequenti
+
+**Posso aprire app dalla schermata di blocco senza sbloccare?**
+No. Sulla schermata di blocco, sia il widget sia la barra di avvio rapido ti chiedono prima di sbloccare (per esempio con Face ID) e poi aprono l'app. WidgetLoft può comparire per un attimo lungo il percorso. Nella Dynamic Island le app si aprono con un tocco.
+
+**Perché la barra di avvio rapido è sparita dalla schermata di blocco?**
+iOS chiude le Attività in tempo reale dopo alcune ore. WidgetLoft riavvia la barra ogni volta che apri l'app. Se non compare mai, controlla che le Attività in tempo reale siano consentite per WidgetLoft nelle Impostazioni di iOS.
+
+**Serve iOS 27 per questa configurazione?**
+Solo per l'orologio compatto e l'estensione dello sfondo. [WidgetLoft](/widgetloft) funziona su iOS 18 e versioni successive. Un limite da conoscere: il widget per la schermata di blocco mostra solo le app di primo livello, quindi le cartelle dentro un gruppo non compaiono lì.
+
+---
+
+Pronto per una schermata di blocco più pulita? [Scarica WidgetLoft dall'App Store](/widgetloft/download) e tieni le tue app principali a un tocco.

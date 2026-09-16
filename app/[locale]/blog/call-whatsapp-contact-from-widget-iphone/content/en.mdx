@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "How to Call or WhatsApp a Contact from Your iPhone Home Screen Widget",
+  description:
+    "Turn a favorite contact into a speed dial on your iPhone Home Screen. One tap on a widget tile calls them, starts FaceTime, or opens your WhatsApp or Telegram chat.",
+  keywords: [
+    "speed dial iphone home screen",
+    "call contact from widget iphone",
+    "whatsapp contact widget iphone",
+    "favorite contact on home screen iphone",
+    "one tap call widget iphone",
+    "facetime contact widget iphone",
+  ],
+  ogTitle: "Call or WhatsApp a Contact from an iPhone Widget",
+  ogDescription:
+    "Put your favorite people on the Home Screen as one-tap tiles that call, text, FaceTime or open a WhatsApp chat.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "How to Call or WhatsApp a Contact from Your iPhone Home Screen Widget",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/call-whatsapp-contact-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Add a one-tap contact tile to an iPhone Home Screen widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Add a contact tile",
+        text: "In WidgetLoft (formerly FolderMini), open the Library tab, tap Add Tiles, then Contact.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choose the person",
+        text: "Tap Choose from Contacts, which needs no permission, or type the name and details in yourself.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pick the actions",
+        text: "Select from Call, Message, FaceTime, FaceTime Audio, Email, WhatsApp and Telegram, then choose Single action or Folder with all actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choose the icon",
+        text: "Pick App icon, Photo, or Photo + badge for the tile.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Put it on a widget",
+        text: "Add the tile to a group, then long-press the Home Screen, add the WidgetLoft widget and choose that group.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can I make a speed dial on my iPhone Home Screen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Apple's Contacts widget shows people, but you still choose what to do after tapping. A WidgetLoft contact tile does one action per tap, such as calling someone or opening their chat.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can a widget open a WhatsApp chat with a specific person?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Choose WhatsApp as the action and the tile opens your chat with that contact. It opens the conversation rather than starting a call. Telegram works the same way and accepts a username or phone number.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does WidgetLoft need access to my contacts?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Choose from Contacts works without granting WidgetLoft any contacts permission, and you can also type the details in by hand.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Call or WhatsApp a Contact from Your iPhone Home Screen Widget
+
+**Quick answer:** The iPhone has no classic speed dial, but a contact tile in a widget works like one. In [WidgetLoft](/widgetloft) (formerly FolderMini), go to Library, Add Tiles, Contact, pick the person and an action such as Call or WhatsApp, then put the tile in a widget. One tap calls them or opens your chat.
+
+The people you talk to most should not be three screens away. Here is how to put them right on your Home Screen.
+
+---
+
+## Why the Contacts widget is not a real speed dial
+
+Apple's Contacts widget shows the people you choose, which is a good start. But a tap only gets you halfway: you still pick what to do (call, message, FaceTime) after it opens. If you call your partner several times a day, that extra step adds up.
+
+A WidgetLoft contact tile skips it. You decide the action once, when you set the tile up, and every tap after that does exactly that. If you like having options, you can make the contact a small folder that holds all of their actions instead.
+
+## Step-by-step: add a contact to your Home Screen widget
+
+1. **Add a contact tile.** Open [WidgetLoft](/widgetloft), go to the **Library** tab, tap **Add Tiles**, then **Contact**.
+2. **Choose the person.** Tap **Choose from Contacts** to pick someone. No contacts permission is needed for this. You can also type the name, phone number or email in yourself.
+3. **Pick the actions.** Select what the tile can do: Call, Message, FaceTime, FaceTime Audio, Email, WhatsApp or Telegram. Then choose **Single action** (one tap does one thing) or **Folder with all actions** (tap the contact, then the action).
+4. **Choose the icon.** Pick **App icon**, **Photo** for the person's picture, or **Photo + badge** to combine their picture with a small badge.
+5. **Put it on a widget.** Add the tile to a group. Then long-press your Home Screen, add the WidgetLoft widget and choose that group.
+
+## What each action does when you tap
+
+| Action | What a tap does |
+| --- | --- |
+| Call | Starts a phone call to the contact |
+| Message | Opens your Messages conversation with them |
+| FaceTime or FaceTime Audio | Starts a FaceTime video or audio call |
+| Email | Opens an email to their address |
+| WhatsApp | Opens your WhatsApp chat with them |
+| Telegram | Opens their Telegram chat, found by username or phone number |
+
+Contact tiles sit happily next to regular app tiles, so one [WidgetLoft](/widgetloft) group can hold your family's faces and the apps you use to reach them. Make a small widget with your three most important people, or a medium one that mixes contacts and apps. If you are new to launcher widgets, see [how to launch any app from a widget](/blog/launch-apps-from-widgets-ios).
+
+## What contact tiles can't do
+
+A few honest limits, so nothing surprises you:
+
+- **Only Phone and FaceTime start a call directly.** WhatsApp and Telegram tiles open the conversation. If you want a voice or video call there, tap the call button inside the chat.
+- **Telegram needs a username or a phone number.** Either one works. If their Telegram account uses a different number, type that number in.
+- **Not every messenger is supported.** There are no actions for Viber, Messenger or LINE. For those, add the app itself as a regular tile.
+
+## Common questions
+
+**Can I make a speed dial on my iPhone Home Screen?**
+Yes. Apple's Contacts widget shows people, but you choose the action after tapping. A WidgetLoft contact tile does one action per tap, such as calling someone or opening their chat.
+
+**Can a widget open a WhatsApp chat with a specific person?**
+Yes. Choose WhatsApp as the action and the tile opens your chat with that contact. It opens the conversation rather than starting a call. Telegram works the same way and accepts a username or phone number.
+
+**Does WidgetLoft need access to my contacts?**
+No. Choose from Contacts works without granting any contacts permission, and you can also type the details in by hand.
+
+---
+
+Ready to set up your speed dial? [Download WidgetLoft on the App Store](/widgetloft/download) and keep your favorite people one tap away.

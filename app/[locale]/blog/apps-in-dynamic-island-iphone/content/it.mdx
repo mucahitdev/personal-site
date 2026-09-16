@@ -1,0 +1,150 @@
+export const meta = {
+  title: "Come mettere le tue app preferite nella Dynamic Island dell'iPhone",
+  description:
+    "iOS non permette di fissare scorciatoie di app nella Dynamic Island, ma un'Attività in tempo reale può mostrarle. Ecco come tenere fino a 5 app nell'isola e fino a 10 nella schermata di blocco.",
+  keywords: [
+    "app nella dynamic island",
+    "scorciatoie app dynamic island",
+    "launcher app dynamic island iphone",
+    "mettere app nella dynamic island",
+    "launcher app schermata di blocco attività in tempo reale",
+    "avvio rapido dynamic island",
+  ],
+  ogTitle: "Metti le tue app preferite nella Dynamic Island",
+  ogDescription:
+    "Un launcher con Attività in tempo reale per iPhone: fino a 5 app nella Dynamic Island e fino a 10 nella schermata di blocco.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline: "Come mettere le tue app preferite nella Dynamic Island dell'iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/it/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "it",
+    name: "Mettere le tue app preferite nella Dynamic Island dell'iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Crea un gruppo",
+        text: "Apri WidgetLoft (in precedenza FolderMini), crea un gruppo e aggiungi le app che usi di più.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Attiva la barra di avvio rapido",
+        text: "In WidgetLoft vai su Impostazioni, poi su Dynamic Island e Attività in tempo reale, e attiva la barra di avvio rapido.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Scegli la cartella",
+        text: "In Cartella scegli il gruppo che vuoi vedere nella Dynamic Island e nella schermata di blocco.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Consenti le Attività in tempo reale",
+        text: "Controlla nell'app Impostazioni di iOS che le Attività in tempo reale siano consentite per WidgetLoft.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tieni premuta l'isola e tocca un'app",
+        text: "Tieni premuta la Dynamic Island per espandere la riga con fino a 5 app, poi toccane una per aprirla.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Perché le mie app sono sparite dalla Dynamic Island?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS chiude le Attività in tempo reale dopo alcune ore (circa 8 mentre sono attive). WidgetLoft riavvia la barra di avvio rapido ogni volta che apri l'app, quindi basta una breve visita per farla tornare.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Posso mettere più di 5 app nella Dynamic Island?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. La Dynamic Island espansa mostra una riga con fino a 5 app. Il banner della schermata di blocco mostra fino a 10 app dello stesso gruppo, su due righe.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "La barra di avvio rapido è definitiva?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "In WidgetLoft è indicata come Beta. Si basa sulle Attività in tempo reale di iOS, quindi richiede che siano consentite per WidgetLoft e segue i limiti di tempo che iOS impone.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Come mettere le tue app preferite nella Dynamic Island dell'iPhone
+
+**Risposta rapida:** iOS non ha un'impostazione per fissare scorciatoie di app nella Dynamic Island. Lì compaiono solo le Attività in tempo reale. [WidgetLoft](/widgetloft) (in precedenza FolderMini) sfrutta proprio questo: la sua barra di avvio rapido è un'Attività in tempo reale che rispecchia uno dei tuoi gruppi, così hai fino a 5 app nella Dynamic Island e fino a 10 nella schermata di blocco.
+
+La Dynamic Island è sempre in vista, e per questo è il posto ideale per le app che apri tutto il giorno. Ecco come metterle lì in circa un minuto.
+
+---
+
+## Perché la Dynamic Island non accetta scorciatoie di app
+
+Apple ha creato la Dynamic Island per le Attività in tempo reale: un timer, una consegna di cibo, un risultato in diretta. Non puoi trascinarci l'icona di un'app e non esiste un'impostazione che ne fissi una. Lo stesso vale per il banner delle Attività in tempo reale nella schermata di blocco.
+
+Il trucco, quindi, è un'Attività in tempo reale il cui contenuto è una riga con le tue app. È esattamente ciò che fa la **barra di avvio rapido** di WidgetLoft. Rispecchia un gruppo dell'app, con le stesse icone, e lo tiene nell'isola e nella schermata di blocco.
+
+## Passo dopo passo: metti le app nella Dynamic Island
+
+1. **Crea un gruppo.** Apri [WidgetLoft](/widgetloft), crea un gruppo nella scheda Gruppi e aggiungi le app che usi più spesso. L'isola ne mostra fino a 5, quindi un gruppo di 5 app ci sta per intero.
+2. **Attiva la barra di avvio rapido.** Vai su Impostazioni → **Dynamic Island e Attività in tempo reale** e attiva la **barra di avvio rapido**.
+3. **Scegli la cartella.** In **Cartella** scegli il gruppo che hai appena creato.
+4. **Consenti le Attività in tempo reale.** Se non compare nulla, apri l'app Impostazioni di iOS, cerca WidgetLoft e verifica che le Attività in tempo reale siano consentite.
+5. **Tieni premuta l'isola e tocca un'app.** L'isola compatta mostra un simbolo a griglia e il numero di app. Tienila premuta per espandere la riga, poi tocca un'icona qualsiasi.
+
+## Dynamic Island o banner della schermata di blocco
+
+| | Dynamic Island | Banner della schermata di blocco |
+| --- | --- | --- |
+| App mostrate | Fino a 5 | Fino a 10 |
+| Righe | Una riga | Una riga fino a 5, due righe da 6 a 10 |
+| Come funziona un tocco | Apre l'app direttamente, con un solo tocco | Chiede di sbloccare con Face ID, poi apre l'app |
+| Riquadri dei siti web | Si aprono nel browser che hai scelto | Si aprono nel browser che hai scelto |
+| Aspetto | Compatta: un simbolo a griglia e il numero di app | Colorato con il colore del gruppo, o Liquid Glass di sistema per un gruppo Trasparente |
+
+L'apertura con un tocco dalla Dynamic Island è una novità di [WidgetLoft](/widgetloft) 2.1.0: l'app si apre subito, senza passare prima da WidgetLoft. Nella schermata di blocco il tuo iPhone è ancora bloccato, quindi confermi con Face ID e poi l'app si apre. Se stai rifacendo tutta la schermata di blocco, leggi anche [come configurare la schermata di blocco di iOS 27](/blog/ios-27-lock-screen-setup).
+
+## Domande frequenti
+
+**Perché le mie app sono sparite dalla Dynamic Island?**
+iOS chiude le Attività in tempo reale dopo alcune ore (circa 8 mentre sono attive). WidgetLoft riavvia la barra di avvio rapido ogni volta che apri l'app, quindi basta una breve visita per farla tornare.
+
+**Posso mettere più di 5 app nella Dynamic Island?**
+No. L'isola espansa mostra una riga con fino a 5 app. Il banner della schermata di blocco mostra fino a 10 app dello stesso gruppo, su due righe.
+
+**La barra di avvio rapido è definitiva?**
+Nell'app è indicata come Beta. Si basa sulle Attività in tempo reale di iOS, quindi richiede che siano consentite per WidgetLoft e segue i limiti di tempo che iOS impone.
+
+---
+
+Pronto a provarlo? [Scarica WidgetLoft dall'App Store](/widgetloft/download) e tieni le tue app preferite a un tocco nella Dynamic Island.

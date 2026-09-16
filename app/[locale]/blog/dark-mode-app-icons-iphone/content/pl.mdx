@@ -1,0 +1,158 @@
+export const meta = {
+  title: "Jak mieć ciemne ikony wszystkich aplikacji na iPhonie",
+  description:
+    "Włączyłeś ciemne ikony w iOS, a niektóre aplikacje wciąż są jaskrawo białe? Wyjaśniamy dlaczego i jak uzyskać ciemną wersję każdej ikony w widżecie na ekranie początkowym: gotowe ciemne ikony, prawdziwe ikony Apple i ikony tworzone na iPhonie.",
+  keywords: [
+    "ciemne ikony aplikacji iphone",
+    "ciemne ikony wszystkie aplikacje",
+    "ikony nie są ciemne w trybie ciemnym ios",
+    "ciemne ikony aplikacji innych firm ios",
+    "ciemny ekran początkowy iphone",
+    "widżet z ciemnymi ikonami iphone",
+  ],
+  ogTitle: "Ciemne ikony dla każdej aplikacji na iPhonie",
+  ogDescription:
+    "Dlaczego niektóre ikony zostają jasne w trybie ciemnym iOS i jak mieć ciemną wersję każdej aplikacji w widżecie.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline: "Jak mieć ciemne ikony wszystkich aplikacji na iPhonie",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pl/blog/dark-mode-app-icons-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Ciemne ikony wszystkich aplikacji na ekranie początkowym iPhone'a",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Utwórz grupę",
+        text: "Zainstaluj WidgetLoft (dawniej FolderMini) z App Store i utwórz grupę na karcie Grupy.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj aplikacje",
+        text: "Wyszukaj je w App Store wewnątrz WidgetLoft albo użyj Udostępnij, a potem WidgetLoft na dowolnej stronie App Store. Każda aplikacja dostaje ciemną ikonę w chwili dodania.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Umieść widżet",
+        text: "Przytrzymaj ekran początkowy, stuknij przycisk plus, wyszukaj WidgetLoft i dodaj widżet swojej grupy.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz wygląd ikon",
+        text: "W WidgetLoft otwórz Ustawienia, potem Widżet, potem Wygląd ikony ciemny, i wybierz Automatyczny, Jasny lub Ciemny.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dopracuj dowolny kafelek",
+        text: "Jeśli chcesz, otwórz kafelek w Bibliotece, stuknij Zmień ikonę i ustaw osobne zdjęcie dla trybu Jasny i Ciemny.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Dlaczego niektóre ikony aplikacji zostają białe w trybie ciemnym iPhone'a?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ciemne ikony wyglądają dobrze tylko wtedy, gdy twórca aplikacji dołączy ciemną wersję, a wiele aplikacji tego nie robi. Widżet WidgetLoft pokazuje ciemne ikony popularnych aplikacji, prawdziwe ciemne ikony Apple dla aplikacji Apple i tworzy ciemną ikonę na iPhonie dla pozostałych aplikacji, gdy je dodajesz.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy WidgetLoft wysyła moje ikony do sieci, żeby zrobić ciemne wersje?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Ciemna ikona aplikacji, której nie ma w katalogu, powstaje bezpośrednio na telefonie z własnej ikony aplikacji i nic nie jest wysyłane.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Dlaczego mój widżet Liquid Glass nie przełącza się sam na ciemne ikony?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Widżet Liquid Glass nie potrafi sam podążać za wyglądem systemu. W WidgetLoft otwórz Ustawienia, potem Widżet, potem Wygląd ikony ciemny, i wybierz dla niego Jasny lub Ciemny.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak mieć ciemne ikony wszystkich aplikacji na iPhonie
+
+**Szybka odpowiedź:** iOS pokaże prawdziwą ciemną ikonę tylko wtedy, gdy twórca aplikacji ją dołączy, dlatego wiele aplikacji zostaje jasnych. Aby mieć ciemne ikony wszędzie, umieść aplikacje w widżecie [WidgetLoft](/widgetloft) (dawniej FolderMini): popularne aplikacje mają gotowe ciemne ikony, aplikacje Apple używają prawdziwych ciemnych ikon Apple, a pozostałe dostają ciemną ikonę tworzoną bezpośrednio na iPhonie w chwili dodania.
+
+Włączasz ciemne ikony, ekran początkowy wygląda świetnie, aż w rogu zaczyna świecić ta jedna biała aplikacja banku albo jaskrawa ikona sklepu. Oto dlaczego tak się dzieje i jak to naprawić.
+
+---
+
+## Dlaczego niektóre ikony zostają jasne w trybie ciemnym
+
+Ciemnej ikony iOS nie maluje samodzielnie. Twórca projektuje ciemny wariant i dołącza go do aplikacji. Aplikacje Apple go mają, wiele dużych aplikacji też, ale mnóstwo aplikacji nigdy nie dostało takiej aktualizacji. Ich ikona zachowuje białe lub jaskrawe tło bez względu na wybrany wygląd.
+
+Samej ikony nie zmienisz. Możesz za to otwierać te aplikacje z widżetu, którego kafelki pokazują ciemną wersję. [WidgetLoft](/widgetloft) zamienia grupę aplikacji w widżet na ekranie początkowym, a stuknięcie kafelka otwiera aplikację bezpośrednio, bez Skrótów po drodze.
+
+## Krok po kroku: ciemne ikony wszystkich aplikacji
+
+1. **Utwórz grupę.** Zainstaluj [WidgetLoft](/widgetloft) z App Store (możesz wypróbować za darmo) i utwórz grupę na karcie **Grupy**.
+2. **Dodaj aplikacje.** Wyszukaj je w App Store wewnątrz aplikacji albo użyj **Udostępnij → WidgetLoft** na dowolnej stronie App Store. Nowość w 2.1.0: aplikacje spoza katalogu dostają przy dodawaniu ciemną ikonę tworzoną na telefonie z ich własnej ikony. Nic nie jest wysyłane.
+3. **Umieść widżet.** Przytrzymaj ekran początkowy, stuknij **+**, wyszukaj WidgetLoft i dodaj widżet swojej grupy.
+4. **Wybierz wygląd ikon.** Przejdź do **Ustawienia → Widżet → Wygląd ikony ciemny**. Dla zwykłego widżetu wybierz **Automatyczny** (zgodnie z urządzeniem), **Jasny** lub **Ciemny**.
+5. **Dopracuj dowolny kafelek.** Chcesz własny styl? W **Bibliotece** stuknij kafelek, potem **Zmień ikonę**, i ustaw osobne zdjęcie dla trybu Jasny i Ciemny.
+
+## Ciemne ikony iOS a ciemne ikony w widżecie WidgetLoft
+
+| Ciemne ikony iOS | Ciemne ikony w widżecie WidgetLoft |
+| --- | --- |
+| Tylko tak ciemne, jak zrobił je twórca | Gotowe ciemne ikony popularnych aplikacji |
+| Aplikacje Apple używają ciemnych ikon Apple | Aplikacje Apple także tu używają prawdziwych ciemnych ikon Apple |
+| Aplikacje bez ciemnego wariantu zostają jasne | Pozostałe aplikacje dostają przy dodaniu ciemną ikonę tworzoną na iPhonie |
+| Ikona jest taka, jaką ma aplikacja | Osobne zdjęcie dla trybu Jasny i Ciemny na każdym kafelku |
+| Podąża za wyglądem systemu | Automatyczny, Jasny lub Ciemny, wybierany w Ustawienia → Widżet |
+
+Efekt to ekran początkowy, na którym każdy kafelek pasuje do reszty, również aplikacje, które nigdy nie wydały ciemnej ikony. Jeśli już korzystasz z WidgetLoft, jednorazowy ekran pokaże listę aplikacji, które właśnie dostały ciemną ikonę. Szukasz więcej inspiracji? Zobacz nasze [pomysły na ekran początkowy w iOS 27](/blog/ios-27-home-screen-ideas).
+
+## Co zostaje bez zmian
+
+Ciemne ikony mają wyglądać czysto, więc kilku rzeczy nie ruszamy:
+
+- **Ikony, które już są ciemne**, albo zbyt złożone, by je czysto przebarwić, zostają bez zmian.
+- **Strony internetowe** zachowują ikonę strony.
+- **Widżet Liquid Glass** nie potrafi automatycznie podążać za systemem, więc wybierz dla niego **Jasny** lub **Ciemny** w Wyglądzie ikony ciemnym.
+
+## Częste pytania
+
+**Dlaczego niektóre ikony aplikacji zostają białe w trybie ciemnym iPhone'a?**
+Ciemne ikony wyglądają dobrze tylko wtedy, gdy twórca dołączy ciemną wersję, a wiele aplikacji tego nie robi. Widżet WidgetLoft wypełnia tę lukę gotowymi ikonami, ikonami Apple i ikonami tworzonymi na urządzeniu.
+
+**Czy WidgetLoft wysyła moje ikony do sieci, żeby zrobić ciemne wersje?**
+Nie. Dla aplikacji spoza katalogu ciemna ikona powstaje bezpośrednio na telefonie z własnej ikony aplikacji. Nic nie jest wysyłane.
+
+**Dlaczego mój widżet Liquid Glass nie przełącza się sam na ciemne ikony?**
+Widżet Liquid Glass nie potrafi sam podążać za wyglądem systemu. Otwórz Ustawienia → Widżet → Wygląd ikony ciemny i wybierz dla niego Jasny lub Ciemny.
+
+---
+
+Gotowy na całkowicie ciemny ekran początkowy? [Pobierz WidgetLoft z App Store](/widgetloft/download) i daj każdej aplikacji ciemną ikonę.

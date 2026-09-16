@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "iPhone Ana Ekran Widget'ından Bir Kişiyi Arama veya WhatsApp'tan Yazma",
+  description:
+    "Sevdiğiniz bir kişiyi iPhone ana ekranında hızlı arama kutucuğuna dönüştürün. Widget'taki tek dokunuş onu arar, FaceTime başlatır ya da WhatsApp veya Telegram sohbetinizi açar.",
+  keywords: [
+    "iphone hızlı arama ana ekran",
+    "widget'tan kişi arama iphone",
+    "whatsapp kişi widget iphone",
+    "ana ekrana kişi ekleme iphone",
+    "tek dokunuşla arama widget",
+    "iphone favori kişi widget",
+  ],
+  ogTitle: "iPhone Widget'ından Kişiyi Arayın veya WhatsApp'tan Yazın",
+  ogDescription:
+    "En sevdiğiniz kişileri ana ekrana arayan, mesaj atan, FaceTime yapan ya da WhatsApp sohbetini açan tek dokunuşluk kutucuklar olarak koyun.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iPhone Ana Ekran Widget'ından Bir Kişiyi Arama veya WhatsApp'tan Yazma",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/tr/blog/call-whatsapp-contact-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone ana ekran widget'ına tek dokunuşluk kişi kutucuğu ekleme",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Kişi kutucuğu ekleyin",
+        text: "WidgetLoft'ta (eski adıyla FolderMini) Kütüphane sekmesini açın, Kutucuk Ekle'ye, ardından Kişi'ye dokunun.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kişiyi seçin",
+        text: "İzin gerektirmeyen Kişiler'den seç seçeneğine dokunun ya da adı ve bilgileri kendiniz yazın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Eylemleri seçin",
+        text: "Ara, Mesaj, FaceTime, FaceTime Sesli, E-posta, WhatsApp ve Telegram arasından seçin, ardından Tek eylem veya Tüm eylemlerin olduğu klasör seçeneğini belirleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Simgeyi seçin",
+        text: "Kutucuk için Uygulama simgesi, Fotoğraf veya Fotoğraf + rozet seçin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Widget'a yerleştirin",
+        text: "Kutucuğu bir gruba ekleyin, sonra ana ekrana basılı tutun, WidgetLoft widget'ını ekleyin ve o grubu seçin.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone ana ekranında hızlı arama yapabilir miyim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. Apple'ın Kişiler widget'ı kişileri gösterir ama dokunduktan sonra ne yapacağınızı yine siz seçersiniz. WidgetLoft kişi kutucuğu her dokunuşta tek bir eylem yapar; örneğin birini arar ya da sohbetini açar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bir widget belirli bir kişiyle WhatsApp sohbetini açabilir mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. Eylem olarak WhatsApp'ı seçin, kutucuk o kişiyle olan sohbetinizi açar. Arama başlatmaz, sohbeti açar. Telegram da aynı şekilde çalışır ve kullanıcı adı ya da telefon numarası kabul eder.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft kişilerime erişim ister mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Kişiler'den seç, WidgetLoft'a kişiler izni vermeden çalışır; bilgileri elle de yazabilirsiniz.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone Ana Ekran Widget'ından Bir Kişiyi Arama veya WhatsApp'tan Yazma
+
+**Kısa cevap:** iPhone'da klasik bir hızlı arama yok, ama widget içindeki bir kişi kutucuğu tam olarak bu işi görür. [WidgetLoft](/widgetloft) (eski adıyla FolderMini) içinde Kütüphane, Kutucuk Ekle, Kişi yolunu izleyin, kişiyi ve Ara ya da WhatsApp gibi bir eylemi seçin, sonra kutucuğu bir widget'a koyun. Tek dokunuş onu arar ya da sohbetinizi açar.
+
+En çok konuştuğunuz kişiler üç ekran ötede olmamalı. İşte onları doğrudan ana ekranınıza koymanın yolu.
+
+---
+
+## Kişiler widget'ı neden gerçek bir hızlı arama değil?
+
+Apple'ın Kişiler widget'ı seçtiğiniz kişileri gösterir, bu iyi bir başlangıç. Ama dokunuş sizi yarı yola kadar götürür: açıldıktan sonra ne yapacağınızı (arama, mesaj, FaceTime) yine siz seçersiniz. Eşinizi günde birkaç kez arıyorsanız bu fazladan adım birikir.
+
+WidgetLoft kişi kutucuğu bu adımı atlar. Eylemi bir kez, kutucuğu kurarken belirlersiniz ve sonraki her dokunuş tam olarak onu yapar. Seçenekleriniz olsun istiyorsanız, kişiyi tüm eylemlerini barındıran küçük bir klasör olarak da oluşturabilirsiniz.
+
+## Adım adım: ana ekran widget'ınıza kişi ekleme
+
+1. **Kişi kutucuğu ekleyin.** [WidgetLoft](/widgetloft)'u açın, **Kütüphane** sekmesine gidin, **Kutucuk Ekle**'ye, ardından **Kişi**'ye dokunun.
+2. **Kişiyi seçin.** Birini seçmek için **Kişiler'den seç**'e dokunun. Bunun için kişiler izni gerekmez. Adı, telefon numarasını veya e-postayı kendiniz de yazabilirsiniz.
+3. **Eylemleri seçin.** Kutucuğun ne yapabileceğini belirleyin: Ara, Mesaj, FaceTime, FaceTime Sesli, E-posta, WhatsApp veya Telegram. Sonra **Tek eylem** (bir dokunuş tek bir şey yapar) ya da **Tüm eylemlerin olduğu klasör** (önce kişiye, sonra eyleme dokunursunuz) seçin.
+4. **Simgeyi seçin.** **Uygulama simgesi**, kişinin resmi için **Fotoğraf** ya da resmini küçük bir rozetle birleştirmek için **Fotoğraf + rozet** seçin.
+5. **Widget'a yerleştirin.** Kutucuğu bir gruba ekleyin. Sonra ana ekranınıza basılı tutun, WidgetLoft widget'ını ekleyin ve o grubu seçin.
+
+## Her eylem dokununca ne yapar?
+
+| Eylem | Dokunuş ne yapar |
+| --- | --- |
+| Ara | Kişiye telefon araması başlatır |
+| Mesaj | Mesajlar'daki sohbetinizi açar |
+| FaceTime veya FaceTime Sesli | FaceTime görüntülü ya da sesli arama başlatır |
+| E-posta | Adresine bir e-posta açar |
+| WhatsApp | Kişiyle WhatsApp sohbetinizi açar |
+| Telegram | Kullanıcı adı veya telefon numarasıyla Telegram sohbetini açar |
+
+Kişi kutucukları normal uygulama kutucuklarının yanında rahatça durur; böylece tek bir [WidgetLoft](/widgetloft) grubu hem ailenizin yüzlerini hem de onlara ulaştığınız uygulamaları barındırabilir. En önemli üç kişinizle küçük bir widget ya da kişileri ve uygulamaları karıştıran orta boy bir widget yapın. Başlatıcı widget'larda yeniyseniz [widget'tan herhangi bir uygulamayı açma rehberine](/blog/launch-apps-from-widgets-ios) göz atın.
+
+## Kişi kutucuklarının yapamadıkları
+
+Sürpriz olmasın diye birkaç dürüst sınır:
+
+- **Yalnızca Telefon ve FaceTime doğrudan arama başlatır.** WhatsApp ve Telegram kutucukları sohbeti açar. Orada sesli veya görüntülü arama istiyorsanız sohbetin içindeki arama düğmesine dokunun.
+- **Telegram kullanıcı adı ya da telefon numarası ister.** İkisi de olur. Kişinin Telegram hesabı farklı bir numaradaysa o numarayı yazın.
+- **Her mesajlaşma uygulaması desteklenmez.** Viber, Messenger veya LINE için eylem yok. Bunlar için uygulamanın kendisini normal bir kutucuk olarak ekleyin.
+
+## Sık sorulan sorular
+
+**iPhone ana ekranında hızlı arama yapabilir miyim?**
+Evet. Apple'ın Kişiler widget'ı kişileri gösterir ama eylemi dokunduktan sonra siz seçersiniz. WidgetLoft kişi kutucuğu her dokunuşta tek bir eylem yapar; örneğin birini arar ya da sohbetini açar.
+
+**Bir widget belirli bir kişiyle WhatsApp sohbetini açabilir mi?**
+Evet. Eylem olarak WhatsApp'ı seçin, kutucuk o kişiyle olan sohbetinizi açar. Arama başlatmaz, sohbeti açar. Telegram da aynı şekilde çalışır ve kullanıcı adı ya da telefon numarası kabul eder.
+
+**WidgetLoft kişilerime erişim ister mi?**
+Hayır. Kişiler'den seç hiçbir kişiler izni vermeden çalışır; bilgileri elle de yazabilirsiniz.
+
+---
+
+Hızlı aramanızı kurmaya hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve sevdiğiniz kişileri tek dokunuş uzağınızda tutun.

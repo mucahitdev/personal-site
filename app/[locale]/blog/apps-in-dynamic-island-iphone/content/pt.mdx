@@ -1,0 +1,150 @@
+export const meta = {
+  title: "Como colocar seus apps favoritos na Dynamic Island do iPhone",
+  description:
+    "O iOS não permite fixar atalhos de apps na Dynamic Island, mas uma Atividade ao Vivo consegue exibi-los. Veja como manter até 5 apps na ilha e até 10 na Tela Bloqueada.",
+  keywords: [
+    "apps na dynamic island",
+    "atalhos de apps dynamic island",
+    "lançador de apps dynamic island iphone",
+    "colocar apps na dynamic island",
+    "lançador de apps tela bloqueada atividade ao vivo",
+    "acesso rápido dynamic island",
+  ],
+  ogTitle: "Coloque seus apps favoritos na Dynamic Island",
+  ogDescription:
+    "Um lançador com Atividade ao Vivo para iPhone: até 5 apps na Dynamic Island e até 10 na Tela Bloqueada.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pt",
+    headline: "Como colocar seus apps favoritos na Dynamic Island do iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pt/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pt",
+    name: "Colocar seus apps favoritos na Dynamic Island do iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Crie um grupo",
+        text: "Abra o WidgetLoft (antigo FolderMini), crie um grupo e adicione os apps que você mais usa.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ative a Barra de Início Rápido",
+        text: "No WidgetLoft, vá em Ajustes, depois em Dynamic Island e Atividade ao Vivo, e ative a Barra de Início Rápido.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Escolha a pasta",
+        text: "Em Pasta, escolha o grupo que você quer ver na Dynamic Island e na Tela Bloqueada.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Permita as Atividades ao Vivo",
+        text: "Verifique se as Atividades ao Vivo estão permitidas para o WidgetLoft no app Ajustes do iOS.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Toque e segure a ilha e toque em um app",
+        text: "Toque e segure a Dynamic Island para expandir a fileira de até 5 apps e toque em um para abri-lo.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pt",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Por que meus apps sumiram da Dynamic Island?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "O iOS encerra as Atividades ao Vivo depois de algumas horas (cerca de 8 enquanto ativas). O WidgetLoft inicia a Barra de Início Rápido de novo sempre que você abre o app, então uma visita rápida a traz de volta.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Posso colocar mais de 5 apps na Dynamic Island?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Não. A Dynamic Island expandida mostra uma fileira de até 5 apps. O banner da Tela Bloqueada mostra até 10 apps do mesmo grupo, em duas fileiras.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "A Barra de Início Rápido está pronta?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ela está marcada como Beta no WidgetLoft. Depende das Atividades ao Vivo do iOS, então precisa que elas estejam permitidas para o WidgetLoft e segue os limites de tempo que o iOS define para elas.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Como colocar seus apps favoritos na Dynamic Island do iPhone
+
+**Resposta rápida:** o iOS não tem nenhum ajuste para fixar atalhos de apps na Dynamic Island. Ali só aparecem Atividades ao Vivo. O [WidgetLoft](/widgetloft) (antigo FolderMini) usa exatamente isso: a Barra de Início Rápido dele é uma Atividade ao Vivo que espelha um dos seus grupos, então até 5 apps ficam na Dynamic Island e até 10 na Tela Bloqueada.
+
+A Dynamic Island está sempre à vista, o que a torna um ótimo lugar para os apps que você abre o dia todo. Veja como colocá-los lá em cerca de um minuto.
+
+---
+
+## Por que a Dynamic Island não aceita atalhos de apps
+
+A Apple criou a Dynamic Island para as Atividades ao Vivo: um timer, uma entrega de comida, um placar ao vivo. Não dá para arrastar o ícone de um app até ela, e não existe ajuste que fixe um ali. O mesmo vale para o banner de Atividade ao Vivo na Tela Bloqueada.
+
+O truque, então, é uma Atividade ao Vivo cujo conteúdo seja uma fileira com os seus próprios apps. É isso que a **Barra de Início Rápido** do WidgetLoft faz. Ela espelha um grupo do app, com os mesmos ícones, e o mantém na ilha e na Tela Bloqueada.
+
+## Passo a passo: coloque apps na Dynamic Island
+
+1. **Crie um grupo.** Abra o [WidgetLoft](/widgetloft), crie um grupo na aba Grupos e adicione os apps que você mais usa. A ilha mostra até 5, então um grupo de 5 cabe inteiro.
+2. **Ative a Barra de Início Rápido.** Vá em Ajustes → **Dynamic Island e Atividade ao Vivo** e ative a **Barra de Início Rápido**.
+3. **Escolha a pasta.** Em **Pasta**, escolha o grupo que você acabou de criar.
+4. **Permita as Atividades ao Vivo.** Se nada aparecer, abra o app Ajustes do iOS, encontre o WidgetLoft e confira se as Atividades ao Vivo estão permitidas.
+5. **Toque e segure a ilha e toque em um app.** A ilha compacta mostra um ícone de grade e o número de apps. Toque e segure para expandir a fileira e toque em qualquer ícone.
+
+## Dynamic Island vs banner da Tela Bloqueada
+
+| | Dynamic Island | Banner da Tela Bloqueada |
+| --- | --- | --- |
+| Apps exibidos | Até 5 | Até 10 |
+| Fileiras | Uma fileira | Uma fileira até 5, duas fileiras de 6 a 10 |
+| Como funciona o toque | Abre o app diretamente, com um toque | Pede para desbloquear com Face ID e depois abre o app |
+| Blocos de sites | Abrem no navegador que você escolheu | Abrem no navegador que você escolheu |
+| Visual | Compacta: um ícone de grade e o número de apps | Tingido com a cor do grupo, ou Liquid Glass do sistema em um grupo Transparente |
+
+Abrir com um toque pela Dynamic Island é novidade do [WidgetLoft](/widgetloft) 2.1.0: o app abre na hora, sem passar antes pelo WidgetLoft. Na Tela Bloqueada o iPhone ainda está bloqueado, então você confirma com Face ID e o app abre em seguida. Se você está refazendo toda a Tela Bloqueada, veja também [como configurar a Tela Bloqueada do iOS 27](/blog/ios-27-lock-screen-setup).
+
+## Perguntas comuns
+
+**Por que meus apps sumiram da Dynamic Island?**
+O iOS encerra as Atividades ao Vivo depois de algumas horas (cerca de 8 enquanto ativas). O WidgetLoft inicia a Barra de Início Rápido de novo sempre que você abre o app, então uma visita rápida a traz de volta.
+
+**Posso colocar mais de 5 apps na Dynamic Island?**
+Não. A ilha expandida mostra uma fileira de até 5 apps. O banner da Tela Bloqueada mostra até 10 apps do mesmo grupo, em duas fileiras.
+
+**A Barra de Início Rápido está pronta?**
+Ela está marcada como Beta no app. Depende das Atividades ao Vivo do iOS, então precisa que elas estejam permitidas para o WidgetLoft e segue os limites de tempo que o iOS define para elas.
+
+---
+
+Pronto para testar? [Baixe o WidgetLoft na App Store](/widgetloft/download) e deixe seus apps favoritos a um toque na Dynamic Island.

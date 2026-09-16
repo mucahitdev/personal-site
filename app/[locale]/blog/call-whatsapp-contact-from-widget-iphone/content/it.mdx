@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Come chiamare o scrivere su WhatsApp a un contatto da un widget della schermata Home di iPhone",
+  description:
+    "Trasforma un contatto preferito in una chiamata rapida sulla schermata Home di iPhone. Un tocco sul riquadro del widget lo chiama, avvia FaceTime o apre la tua chat WhatsApp o Telegram.",
+  keywords: [
+    "chiamata rapida iphone schermata home",
+    "chiamare contatto da widget iphone",
+    "widget contatto whatsapp iphone",
+    "contatto preferito sulla schermata home iphone",
+    "widget chiamata con un tocco iphone",
+    "widget facetime contatto iphone",
+  ],
+  ogTitle: "Chiama o scrivi su WhatsApp a un contatto da un widget di iPhone",
+  ogDescription:
+    "Metti le persone a cui tieni sulla schermata Home come riquadri che con un tocco chiamano, scrivono, avviano FaceTime o aprono una chat WhatsApp.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline:
+      "Come chiamare o scrivere su WhatsApp a un contatto da un widget della schermata Home di iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/it/blog/call-whatsapp-contact-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "it",
+    name: "Aggiungere un riquadro contatto con un tocco a un widget della schermata Home di iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Aggiungi un riquadro contatto",
+        text: "In WidgetLoft (già FolderMini), apri la scheda Libreria, tocca Aggiungi riquadri e poi Contatto.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Scegli la persona",
+        text: "Tocca Scegli da Contatti, che non richiede alcun permesso, oppure scrivi tu il nome e i dati.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Scegli le azioni",
+        text: "Seleziona tra Chiama, Messaggio, FaceTime, FaceTime audio, Email, WhatsApp e Telegram, poi scegli Una sola azione o Cartella con tutte le azioni.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Scegli l'icona",
+        text: "Scegli Icona dell'app, Foto o Foto + badge per il riquadro.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mettilo in un widget",
+        text: "Aggiungi il riquadro a un gruppo, poi tieni premuto sulla schermata Home, aggiungi il widget di WidgetLoft e scegli quel gruppo.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Posso avere una chiamata rapida sulla schermata Home di iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sì. Il widget Contatti di Apple mostra le persone, ma dopo il tocco devi ancora scegliere cosa fare. Un riquadro contatto di WidgetLoft esegue una sola azione per tocco, come chiamare qualcuno o aprire la sua chat.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Un widget può aprire una chat WhatsApp con una persona specifica?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sì. Scegli WhatsApp come azione e il riquadro apre la tua chat con quel contatto. Apre la conversazione invece di avviare una chiamata. Telegram funziona allo stesso modo e accetta un nome utente o un numero di telefono.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft ha bisogno di accedere ai miei contatti?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Scegli da Contatti funziona senza concedere a WidgetLoft alcun permesso sui contatti, e puoi anche inserire i dati a mano.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Come chiamare o scrivere su WhatsApp a un contatto da un widget della schermata Home di iPhone
+
+**Risposta rapida:** iPhone non ha una chiamata rapida classica, ma un riquadro contatto in un widget fa proprio questo. In [WidgetLoft](/widgetloft) (già FolderMini), vai su Libreria, Aggiungi riquadri, Contatto, scegli la persona e un'azione come Chiama o WhatsApp, poi metti il riquadro in un widget. Un tocco la chiama o apre la vostra chat.
+
+Le persone con cui parli di più non dovrebbero stare a tre schermate di distanza. Ecco come metterle direttamente sulla tua schermata Home.
+
+---
+
+## Perché il widget Contatti non è una vera chiamata rapida
+
+Il widget Contatti di Apple mostra le persone che scegli, ed è un buon inizio. Ma un tocco ti porta solo a metà strada: una volta aperto, devi ancora scegliere cosa fare (chiamare, scrivere, FaceTime). Se chiami il tuo partner più volte al giorno, quel passaggio in più si fa sentire.
+
+Un riquadro contatto di WidgetLoft lo salta. Decidi l'azione una volta sola, quando configuri il riquadro, e ogni tocco successivo fa esattamente quello. Se preferisci avere delle opzioni, puoi invece trasformare il contatto in una piccola cartella con tutte le sue azioni.
+
+## Passo per passo: aggiungi un contatto al widget della schermata Home
+
+1. **Aggiungi un riquadro contatto.** Apri [WidgetLoft](/widgetloft), vai alla scheda **Libreria**, tocca **Aggiungi riquadri** e poi **Contatto**.
+2. **Scegli la persona.** Tocca **Scegli da Contatti** per selezionare qualcuno. Non serve alcun permesso sui contatti. Puoi anche scrivere tu il nome, il numero o l'email.
+3. **Scegli le azioni.** Seleziona cosa può fare il riquadro: Chiama, Messaggio, FaceTime, FaceTime audio, Email, WhatsApp o Telegram. Poi scegli **Una sola azione** (un tocco fa una cosa) oppure **Cartella con tutte le azioni** (tocchi il contatto e poi l'azione).
+4. **Scegli l'icona.** Scegli **Icona dell'app**, **Foto** per l'immagine della persona o **Foto + badge** per unire la sua immagine a un piccolo badge.
+5. **Mettilo in un widget.** Aggiungi il riquadro a un gruppo. Poi tieni premuto sulla schermata Home, aggiungi il widget di WidgetLoft e scegli quel gruppo.
+
+## Cosa fa ogni azione quando tocchi
+
+| Azione | Cosa fa un tocco |
+| --- | --- |
+| Chiama | Avvia una telefonata al contatto |
+| Messaggio | Apre la tua conversazione in Messaggi con la persona |
+| FaceTime o FaceTime audio | Avvia una chiamata FaceTime video o audio |
+| Email | Apre un'email indirizzata alla persona |
+| WhatsApp | Apre la tua chat WhatsApp con la persona |
+| Telegram | Apre la sua chat Telegram, tramite nome utente o numero |
+
+I riquadri contatto stanno benissimo accanto ai normali riquadri delle app, quindi un solo gruppo di [WidgetLoft](/widgetloft) può contenere i volti della tua famiglia e le app che usi per raggiungerli. Crea un widget piccolo con le tre persone più importanti, oppure uno medio che mescola contatti e app. Se i widget launcher sono una novità per te, leggi [come aprire qualsiasi app da un widget](/blog/launch-apps-from-widgets-ios).
+
+## Cosa non possono fare i riquadri contatto
+
+Qualche limite detto onestamente, così nulla ti sorprende:
+
+- **Solo Telefono e FaceTime avviano direttamente una chiamata.** I riquadri WhatsApp e Telegram aprono la conversazione. Se lì vuoi una chiamata vocale o video, tocca il pulsante di chiamata dentro la chat.
+- **Telegram vuole un nome utente o un numero di telefono.** Va bene l'uno o l'altro. Se l'account Telegram della persona usa un numero diverso, inserisci quel numero.
+- **Non tutte le app di messaggistica sono supportate.** Non ci sono azioni per Viber, Messenger o LINE. In quei casi, aggiungi l'app stessa come riquadro normale.
+
+## Domande frequenti
+
+**Posso avere una chiamata rapida sulla schermata Home di iPhone?**
+Sì. Il widget Contatti di Apple mostra le persone, ma scegli l'azione dopo il tocco. Un riquadro contatto di WidgetLoft esegue una sola azione per tocco, come chiamare qualcuno o aprire la sua chat.
+
+**Un widget può aprire una chat WhatsApp con una persona specifica?**
+Sì. Scegli WhatsApp come azione e il riquadro apre la tua chat con quel contatto. Apre la conversazione invece di avviare una chiamata. Telegram funziona allo stesso modo e accetta un nome utente o un numero di telefono.
+
+**WidgetLoft ha bisogno di accedere ai miei contatti?**
+No. Scegli da Contatti funziona senza alcun permesso sui contatti, e puoi anche inserire i dati a mano.
+
+---
+
+Pronto a creare la tua chiamata rapida? [Scarica WidgetLoft dall'App Store](/widgetloft/download) e tieni le persone a cui tieni a un tocco di distanza.

@@ -1,0 +1,159 @@
+export const meta = {
+  title: "如何在 iPhone 上制作透明小组件（iOS 26 Liquid Glass）",
+  description:
+    "在 iPhone 上制作透明小组件和磨砂玻璃小组件的分步指南。在 iOS 26 或更高版本中把 WidgetLoft 群组设为透明，让墙纸透出来；或者使用 Liquid Glass 小组件，获得磨砂玻璃效果。",
+  keywords: [
+    "iphone 透明小组件",
+    "ios 26 透明小组件",
+    "liquid glass 小组件",
+    "小组件 去掉背景 iphone",
+    "玻璃效果 小组件 iphone",
+    "小组件 显示墙纸",
+  ],
+  ogTitle: "在 iPhone 上制作透明小组件",
+  ogDescription:
+    "在 iOS 26 或更高版本中，制作能透出墙纸的透明小组件和 Liquid Glass 小组件。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "如何在 iPhone 上制作透明小组件（iOS 26 Liquid Glass）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/zh/blog/transparent-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在 iPhone 上制作透明或 Liquid Glass 小组件",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "打开一个群组",
+        text: "安装 WidgetLoft （原 FolderMini），进入“群组”标签，打开你想放到主屏幕上的群组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择“透明”",
+        text: "轻点“编辑群组”，把材质设为“透明”。需要 iOS 26 或更高版本。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加小组件",
+        text: "在主屏幕打开小组件库，搜索 WidgetLoft，添加 WidgetLoft（完全透明）或 WidgetLoft · Liquid Glass（磨砂玻璃）。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择图标外观",
+        text: "对于 Liquid Glass 小组件，前往“设置”、“小组件”、“深色图标外观”，根据墙纸选择浅色或深色图标。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "按需显示 App 名称",
+        text: "为该群组打开“应用名称”，每个图标下方就会显示 App 的名称。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone 上可以把小组件变透明吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以，需要 iOS 26 或更高版本。把 WidgetLoft 群组的材质设为“透明”后，普通的 WidgetLoft 小组件会完全透明，而 WidgetLoft · Liquid Glass 小组件会呈现磨砂玻璃效果。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "为什么我选不了“透明”？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "“透明”需要 iOS 26 或更高版本。在 iOS 18 到 25 上，你可以改用“颜色”材质，它提供 12 种主题、“渐变”开关和“深度”滑块。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Liquid Glass 小组件会跟随深色模式吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不会自动跟随。Liquid Glass 小组件需要在“设置”、“小组件”、“深色图标外观”中手动选择浅色或深色图标。普通的 WidgetLoft 小组件可以选择“自动”来跟随设备。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何在 iPhone 上制作透明小组件（iOS 26 Liquid Glass）
+
+**快速回答：** 在 iOS 26 或更高版本中，打开 [WidgetLoft](/widgetloft) （原 FolderMini）里的一个群组，轻点 **编辑群组**，把材质设为 **透明**。想要完全透明，就添加普通的 **WidgetLoft** 小组件；想要磨砂玻璃效果，就添加 **WidgetLoft · Liquid Glass**。无论哪种，墙纸都会透出来，只有 App 图标浮在上面。
+
+实心的小组件方块很容易挡住你精心挑选的墙纸。透明小组件能让照片保持可见，同时依然让你一键打开 App。
+
+---
+
+## 透明小组件是什么样子
+
+大多数小组件都放在一张实心或带颜色的卡片上。透明小组件去掉了这张卡片，图标看起来就像直接摆在墙纸上，和主屏幕上普通的图标很像，但排列在由你掌控的整齐网格里。
+
+对于设为“透明”的群组，WidgetLoft 提供两种透明风格：
+
+- **WidgetLoft**（普通小组件）：背景完全消失。
+- **WidgetLoft · Liquid Glass**：墙纸透过一层柔和的磨砂玻璃显示出来，即使在内容丰富的照片上，图标也清晰易读。
+
+两者和其他 [WidgetLoft](/widgetloft) 小组件一样，轻点图块即可直接打开 App。
+
+## 分步操作：制作透明小组件
+
+1. **打开一个群组。** 在 WidgetLoft 中进入 **群组** 标签，打开你想放到主屏幕上的群组（也可以新建一个）。
+2. **选择“透明”。** 轻点 **编辑群组**，把材质设为 **透明**。此选项需要 iOS 26 或更高版本。
+3. **添加小组件。** 长按主屏幕的空白处，打开小组件库，搜索 WidgetLoft，选择 **WidgetLoft**（完全透明）或 **WidgetLoft · Liquid Glass**（磨砂）。如果显示的是别的群组，长按小组件，轻点 **编辑小组件**，选择你设为透明的那个群组。
+4. **选择图标外观。** 对于 Liquid Glass 小组件，前往 **设置 → 小组件 → 深色图标外观**，选择在你的墙纸上更清晰的 **浅色** 或 **深色**。
+5. **按需显示 App 名称。** 为该群组打开 **应用名称**，每个图标下方就会显示 App 的名称。
+
+## 透明、Liquid Glass 与颜色对比
+
+| | 透明 | Liquid Glass | 颜色 |
+| --- | --- | --- | --- |
+| 要添加的小组件 | WidgetLoft | WidgetLoft · Liquid Glass | WidgetLoft |
+| 外观 | 完全透明，图标直接在墙纸上 | 墙纸上覆盖一层磨砂玻璃 | 实心主题色，可加渐变和深度 |
+| 适合的墙纸 | 安静、简洁的背景 | 内容丰富的照片和鲜艳图案 | 任何墙纸，想让小组件更醒目时 |
+| 深色图标 | 自动、浅色或深色 | 仅浅色或深色 | 自动、浅色或深色 |
+| iOS 版本 | iOS 26 或更高版本 | iOS 26 或更高版本 | iOS 18 或更高版本 |
+
+[WidgetLoft](/widgetloft) 允许每个群组单独选择材质，所以你可以在一页放透明群组，在另一页放彩色群组。想要更多布局灵感，可以看看我们的 [iOS 27 主屏幕灵感](/blog/ios-27-home-screen-ideas)。
+
+## 还在用 iOS 18 到 25？试试“颜色”
+
+iOS 26 之前无法使用透明效果，但 **颜色** 材质在 iOS 18 及更高版本上都能用。在 **编辑群组** 中，从 12 种主题（Ember、Citrus、Bloom、Dusk、Tide、Aurora、Moss、Neon、Storm、Clay、Ink、Paper）或自定中选择，打开 **渐变** 并设置方向，再用 **深度** 滑块让卡片更扁平或更有层次。选一个和墙纸相配的主题，小组件就能很好地融入画面。
+
+## 常见问题
+
+**iPhone 上可以把小组件变透明吗？**
+可以，需要 iOS 26 或更高版本。把 WidgetLoft 群组设为“透明”：普通的 WidgetLoft 小组件会完全透明，WidgetLoft · Liquid Glass 则呈现磨砂玻璃效果。
+
+**为什么我选不了“透明”？**
+“透明”需要 iOS 26 或更高版本。在 iOS 18 到 25 上，请使用带有 12 种主题、渐变和深度的“颜色”材质。
+
+**Liquid Glass 小组件会跟随深色模式吗？**
+不会自动跟随。请在 设置 → 小组件 → 深色图标外观 中选择浅色或深色图标。普通的 WidgetLoft 小组件可以选择“自动”来跟随设备。
+
+---
+
+想让墙纸重新露出来？[在 App Store 下载 WidgetLoft](/widgetloft/download)，做出你的第一个透明小组件。

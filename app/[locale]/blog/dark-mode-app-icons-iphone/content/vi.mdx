@@ -1,0 +1,158 @@
+export const meta = {
+  title: "Cách có biểu tượng chế độ tối cho mọi ứng dụng trên iPhone",
+  description:
+    "Đã bật biểu tượng tối trong iOS nhưng vài ứng dụng vẫn trắng sáng? Đây là lý do, và cách có phiên bản tối cho biểu tượng của mọi ứng dụng trong widget Màn hình chính: biểu tượng tối có sẵn, biểu tượng tối thật của Apple và biểu tượng tối tạo ngay trên iPhone.",
+  keywords: [
+    "biểu tượng tối iphone",
+    "icon chế độ tối cho tất cả ứng dụng",
+    "icon không chuyển tối ios",
+    "icon tối ứng dụng bên thứ ba ios",
+    "màn hình chính tối iphone",
+    "widget icon tối iphone",
+  ],
+  ogTitle: "Biểu tượng chế độ tối cho mọi ứng dụng trên iPhone",
+  ogDescription:
+    "Vì sao một số biểu tượng vẫn sáng trong chế độ tối của iOS, và cách có phiên bản tối của mọi ứng dụng trong widget.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline: "Cách có biểu tượng chế độ tối cho mọi ứng dụng trên iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/vi/blog/dark-mode-app-icons-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Có biểu tượng tối cho mọi ứng dụng trên Màn hình chính iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Tạo một nhóm",
+        text: "Cài WidgetLoft (trước đây là FolderMini) từ App Store và tạo một nhóm trong tab Nhóm.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm ứng dụng",
+        text: "Tìm trên App Store ngay trong WidgetLoft, hoặc dùng Chia sẻ rồi chọn WidgetLoft trên bất kỳ trang App Store nào. Mỗi ứng dụng nhận biểu tượng tối ngay khi được thêm.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Đặt widget",
+        text: "Nhấn giữ Màn hình chính, chạm nút dấu cộng, tìm WidgetLoft và thêm widget cho nhóm của bạn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn giao diện biểu tượng",
+        text: "Trong WidgetLoft mở Cài đặt, rồi Widget, rồi Biểu tượng giao diện tối, và chọn Tự động, Sáng hoặc Tối.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tinh chỉnh ô bất kỳ",
+        text: "Nếu muốn, mở một ô trong Thư viện, chạm Đổi biểu tượng và đặt ảnh riêng cho Sáng và cho Tối.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Vì sao một số biểu tượng ứng dụng vẫn trắng trong chế độ tối của iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Biểu tượng tối chỉ hiển thị đúng khi nhà phát triển ứng dụng cung cấp phiên bản tối, và nhiều ứng dụng không làm vậy. Widget WidgetLoft hiển thị biểu tượng tối cho các ứng dụng phổ biến, biểu tượng tối thật của Apple cho ứng dụng Apple, và tạo biểu tượng tối ngay trên iPhone cho các ứng dụng khác khi bạn thêm chúng.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft có tải biểu tượng ứng dụng của tôi lên mạng để tạo bản tối không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Biểu tượng tối cho ứng dụng không có trong danh mục được tạo ngay trên điện thoại từ chính biểu tượng của ứng dụng, và không có gì được tải lên.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Vì sao widget Liquid Glass của tôi không tự chuyển sang biểu tượng tối?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Widget Liquid Glass không thể tự theo giao diện hệ thống. Trong WidgetLoft mở Cài đặt, rồi Widget, rồi Biểu tượng giao diện tối, và chọn Sáng hoặc Tối cho nó.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách có biểu tượng chế độ tối cho mọi ứng dụng trên iPhone
+
+**Trả lời nhanh:** iOS chỉ hiển thị được biểu tượng tối thật sự khi nhà phát triển ứng dụng cung cấp nó, nên nhiều ứng dụng vẫn sáng. Để có biểu tượng tối cho mọi ứng dụng, hãy đặt ứng dụng vào widget [WidgetLoft](/widgetloft) (trước đây là FolderMini): ứng dụng phổ biến có sẵn biểu tượng tối, ứng dụng Apple dùng biểu tượng tối thật của Apple, còn các ứng dụng khác nhận biểu tượng tối được tạo ngay trên iPhone khi bạn thêm chúng.
+
+Bạn đã bật biểu tượng tối và Màn hình chính trông thật tuyệt, cho đến khi một ứng dụng ngân hàng màu trắng hay biểu tượng mua sắm chói lóa sáng rực ở góc. Dưới đây là lý do và cách khắc phục.
+
+---
+
+## Vì sao một số biểu tượng vẫn sáng trong chế độ tối
+
+Biểu tượng ứng dụng tối không phải thứ iOS tự tô. Nhà phát triển thiết kế một phiên bản tối và đưa nó vào ứng dụng. Ứng dụng của Apple có sẵn, nhiều ứng dụng lớn cũng có, nhưng rất nhiều ứng dụng chưa bao giờ nhận bản cập nhật đó. Biểu tượng của chúng giữ nguyên nền trắng hoặc sáng, dù bạn chọn giao diện nào.
+
+Bạn không thể thay đổi chính biểu tượng đó. Nhưng bạn có thể mở các ứng dụng này từ một widget có các ô hiển thị phiên bản tối. [WidgetLoft](/widgetloft) biến một nhóm ứng dụng thành widget Màn hình chính, và chạm vào một ô sẽ mở thẳng ứng dụng, không qua Phím tắt ở giữa.
+
+## Từng bước: biểu tượng tối cho mọi ứng dụng
+
+1. **Tạo một nhóm.** Cài [WidgetLoft](/widgetloft) từ App Store (có thể dùng thử miễn phí) và tạo một nhóm trong tab **Nhóm**.
+2. **Thêm ứng dụng.** Tìm trên App Store ngay trong ứng dụng, hoặc dùng **Chia sẻ → WidgetLoft** trên bất kỳ trang App Store nào. Mới trong 2.1.0: ứng dụng không có trong danh mục sẽ nhận biểu tượng tối được tạo trên điện thoại từ chính biểu tượng của nó, ngay khi bạn thêm. Không có gì được tải lên.
+3. **Đặt widget.** Nhấn giữ Màn hình chính, chạm **+**, tìm WidgetLoft và thêm widget cho nhóm của bạn.
+4. **Chọn giao diện biểu tượng.** Vào **Cài đặt → Widget → Biểu tượng giao diện tối**. Với widget thường, chọn **Tự động** (theo thiết bị), **Sáng** hoặc **Tối**.
+5. **Tinh chỉnh ô bất kỳ.** Muốn phong cách riêng? Trong **Thư viện**, chạm một ô, rồi **Đổi biểu tượng**, và đặt ảnh riêng cho Sáng và cho Tối.
+
+## Biểu tượng tối của iOS so với biểu tượng tối trong widget WidgetLoft
+
+| Biểu tượng tối của iOS | Biểu tượng tối trong widget WidgetLoft |
+| --- | --- |
+| Chỉ tối đến mức nhà phát triển làm ra | Biểu tượng tối có sẵn cho ứng dụng phổ biến |
+| Ứng dụng Apple dùng biểu tượng tối của Apple | Ứng dụng Apple ở đây cũng dùng biểu tượng tối thật của Apple |
+| Ứng dụng không có bản tối vẫn sáng | Ứng dụng khác nhận biểu tượng tối tạo trên iPhone khi được thêm |
+| Biểu tượng là thứ ứng dụng có sẵn | Ảnh riêng cho Sáng và Tối trên bất kỳ ô nào |
+| Theo giao diện hệ thống | Tự động, Sáng hoặc Tối, chọn trong Cài đặt → Widget |
+
+Kết quả là một Màn hình chính nơi mọi ô đều hài hòa, kể cả những ứng dụng chưa từng ra biểu tượng tối. Nếu bạn đã dùng WidgetLoft, một màn hình hiện một lần sẽ liệt kê các ứng dụng vừa có biểu tượng tối. Cần thêm ý tưởng bố cục? Xem [ý tưởng Màn hình chính iOS 27](/blog/ios-27-home-screen-ideas) của chúng tôi.
+
+## Những gì giữ nguyên
+
+Biểu tượng tối được làm để trông gọn gàng, nên có vài thứ không bị thay đổi:
+
+- **Biểu tượng vốn đã tối**, hoặc quá phức tạp để tô lại màu gọn gàng, được giữ nguyên.
+- **Trang web** giữ biểu tượng của trang.
+- **Widget Liquid Glass** không thể tự động theo hệ thống, nên hãy chọn **Sáng** hoặc **Tối** cho nó trong Biểu tượng giao diện tối.
+
+## Câu hỏi thường gặp
+
+**Vì sao một số biểu tượng ứng dụng vẫn trắng trong chế độ tối của iPhone?**
+Biểu tượng tối chỉ hiển thị đúng khi nhà phát triển cung cấp phiên bản tối, và nhiều ứng dụng không làm vậy. Widget WidgetLoft lấp khoảng trống đó bằng biểu tượng tối có sẵn, của Apple và được tạo trên thiết bị.
+
+**WidgetLoft có tải biểu tượng ứng dụng của tôi lên mạng để tạo bản tối không?**
+Không. Với ứng dụng không có trong danh mục, biểu tượng tối được tạo ngay trên điện thoại từ chính biểu tượng của ứng dụng. Không có gì được tải lên.
+
+**Vì sao widget Liquid Glass của tôi không tự chuyển sang biểu tượng tối?**
+Widget Liquid Glass không thể tự theo giao diện hệ thống. Mở Cài đặt → Widget → Biểu tượng giao diện tối và chọn Sáng hoặc Tối cho nó.
+
+---
+
+Sẵn sàng cho một Màn hình chính tối hoàn toàn? [Tải WidgetLoft trên App Store](/widgetloft/download) và cho mọi ứng dụng một biểu tượng tối.

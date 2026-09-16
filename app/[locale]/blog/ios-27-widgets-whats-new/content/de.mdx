@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Was ist neu bei Widgets in iOS 27 (und wie du es nutzt)",
+  description:
+    "iOS 27 bringt ein Extragroß-Widget, das eine ganze Home-Bildschirm-Seite füllt, einen Mitteilungs-Auslöser für Kurzbefehle-Automationen und eine kompakte Uhr auf dem Sperrbildschirm. Hier erfährst du, was sich geändert hat und wie du es nutzt.",
+  keywords: [
+    "ios 27 widgets",
+    "ios 27 extragroßes widget",
+    "ios 27 neue widget funktionen",
+    "ios 27 sperrbildschirm kompakte uhr",
+    "kurzbefehle mitteilung automation ios 27",
+    "ios 27 home bildschirm widgets",
+  ],
+  ogTitle: "Was ist neu bei Widgets in iOS 27",
+  ogDescription:
+    "Extragroße Widgets, Mitteilungs-Automationen und eine kompakte Sperrbildschirm-Uhr, Schritt für Schritt erklärt.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline: "Was ist neu bei Widgets in iOS 27 (und wie du es nutzt)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/de/blog/ios-27-widgets-whats-new",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "Die neuen Widget-Funktionen von iOS 27 nutzen",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Auf iOS 27 aktualisieren",
+        text: "Öffne Einstellungen, Allgemein, Softwareupdate und installiere iOS 27.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ein extragroßes Widget hinzufügen",
+        text: "Erstelle in WidgetLoft (früher FolderMini) eine Gruppe mit Apps, drücke dann lange auf den Home-Bildschirm, tippe auf +, suche nach WidgetLoft und wähle die Größe Extragroß.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Einen Mitteilungspunkt einrichten",
+        text: "Gehe in Kurzbefehle zu Automation, Apps, Mitteilung, wähle die App, lass Automation an und Mitteilen aus und füge die WidgetLoft-Aktion Mitteilungspunkt anzeigen für dieselbe App hinzu.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Den Sperrbildschirm anpassen",
+        text: "Drücke lange auf den Sperrbildschirm, tippe auf Anpassen, wechsle zur kompakten Uhr und füge ein WidgetLoft-Widget mit bis zu 4 Apps hinzu.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Welche Apps unterstützen das extragroße Widget in iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apples Kalender, Fotos, Musik und Wetter unterstützen es, dazu Apps von Drittanbietern. Auch WidgetLoft unterstützt es und bringt mit kleinen Symbolen bis zu 77 Apps auf eine ganze Home-Bildschirm-Seite.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Können Widgets in iOS 27 die Anzahl der Mitteilungen anzeigen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Keine Anzahl. Mit dem neuen Mitteilungs-Auslöser in Kurzbefehle kann WidgetLoft einen Punkt auf der Kachel einer App anzeigen. Der Punkt verschwindet, wenn du die App über das Widget öffnest. Liest du eine Mitteilung nur auf dem Sperrbildschirm oder der Apple Watch, bleibt er stehen, und Websites, Kurzbefehl-Kacheln und Kontakte können keine Punkte haben.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Brauche ich iOS 27 für WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nein. WidgetLoft läuft ab iOS 18. Nur die Größe Extragroß und die Mitteilungspunkte brauchen iOS 27.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Was ist neu bei Widgets in iOS 27 (und wie du es nutzt)
+
+**Kurze Antwort:** iOS 27, erschienen am 14. September 2026, bringt drei Änderungen rund um Widgets: eine extragroße Widget-Größe, die eine ganze Home-Bildschirm-Seite füllt, einen Mitteilungs-Auslöser für Kurzbefehle-Automationen und einen kompakten Uhrmodus auf dem Sperrbildschirm. App-Starter-Widgets wie [WidgetLoft](/widgetloft) (früher FolderMini) nutzen die ersten beiden: Ein einziges extragroßes Widget fasst bis zu 77 Apps, und Kacheln können einen Punkt zeigen, wenn eine App eine Mitteilung bekommt.
+
+iOS 27 erfindet Widgets nicht neu, aber die Änderungen sind praktisch. Hier liest du, was neu ist, was es für App-Starter-Widgets bedeutet und wie du es einrichtest.
+
+---
+
+## Was sich bei Widgets in iOS 27 geändert hat
+
+**Extragroße Widget-Größe.** Die neue Größe füllt eine ganze Home-Bildschirm-Seite, also einen 4×6-Rasterbereich. Apples Kalender, Fotos, Musik und Wetter unterstützen sie, und auch Apps von Drittanbietern können sie unterstützen.
+
+**Ein Mitteilungs-Auslöser in Kurzbefehle.** Kurzbefehle-Automationen können jetzt starten, wenn eine App eine Mitteilung sendet. Dadurch können auch Widget-Apps auf deine Mitteilungen reagieren.
+
+**Kompakte Uhr auf dem Sperrbildschirm.** Der kompakte Uhrmodus zeigt die Uhrzeit kleiner oben, neben dem Datum und deinen Widgets.
+
+## Was das für App-Starter-Widgets bedeutet
+
+[WidgetLoft](/widgetloft) macht aus App-Gruppen Widgets für den Home-Bildschirm und den Sperrbildschirm, und ein Tipp auf eine Kachel öffnet die App direkt. iOS 27 ergänzt zwei Dinge:
+
+- **Extragroß fasst bis zu 77 Apps.** Mit kleinen Symbolen passen 77 Kacheln in ein ganzseitiges Widget (54 mit mittleren Symbolen, 40 mit großen, 24 mit extragroßen). Auf dem iPad fasst das breite extragroße Widget bis zu 72.
+- **Mitteilungspunkte auf Kacheln.** WidgetLoft nutzt den neuen Mitteilungs-Auslöser, um einen Punkt auf die Kachel einer App zu setzen, wenn diese App eine Mitteilung bekommt. Es ist ein Punkt, keine Zahl, und er verschwindet, wenn du die App über das Widget öffnest.
+
+WidgetLoft 2.1.0 bringt außerdem zwei Funktionen, die gut zu einem großen Widget passen:
+
+- **Dunkle Symbole für jede App.** Beliebte Apps haben fertige dunkle Symbole, und Apples Apps nutzen Apples echte dunkle Symbole. Apps, die du über die App-Store-Suche hinzufügst, bekommen jetzt ein dunkles Symbol, das direkt auf deinem iPhone erstellt wird. Nichts wird hochgeladen.
+- **Dynamic Island mit einem Tipp.** Ist die Schnellstartleiste eingeschaltet, öffnen sich Apps in der Dynamic Island mit einem Tipp, direkt.
+
+## Schritt für Schritt: die neuen Widget-Funktionen von iOS 27 nutzen
+
+1. **Auf iOS 27 aktualisieren.** Öffne **Einstellungen → Allgemein → Softwareupdate** und installiere iOS 27.
+2. **Ein extragroßes Widget hinzufügen.** Erstelle in [WidgetLoft](/widgetloft) im Tab **Gruppen** eine Gruppe und füge deine Apps hinzu. Drücke dann lange auf den Home-Bildschirm, tippe auf **+**, suche nach WidgetLoft und wähle die Größe Extragroß.
+3. **Einen Mitteilungspunkt einrichten.** Öffne in WidgetLoft **Einstellungen → Mitteilungspunkte**. Gehe in Kurzbefehle zu **Automation → Apps → Mitteilung**, wähle die App, lass Automation an und Mitteilen aus und füge die WidgetLoft-Aktion **Mitteilungspunkt anzeigen** für dieselbe App hinzu. Das dauert etwa eine Minute pro App.
+4. **Den Sperrbildschirm anpassen.** Drücke lange auf den Sperrbildschirm, tippe auf **Anpassen**, wechsle zur kompakten Uhr und füge ein WidgetLoft-Widget mit einer Reihe von bis zu 4 Apps hinzu (3 mit großen Symbolen).
+
+## Die Widget-Änderungen in iOS 27 auf einen Blick
+
+| Änderung in iOS 27 | Was du damit machen kannst |
+| --- | --- |
+| Extragroße Widget-Größe | Mit WidgetLoft bis zu 77 Apps auf eine Home-Bildschirm-Seite legen |
+| Kalender, Fotos, Musik und Wetter unterstützen Extragroß | Der Apple-App, die du am häufigsten ansiehst, eine ganze Seite geben |
+| Mitteilungs-Auslöser in Kurzbefehle | Einen Punkt auf einer WidgetLoft-Kachel zeigen, wenn die App eine Mitteilung bekommt |
+| Kompakte Uhr auf dem Sperrbildschirm | Die Uhrzeit klein neben deinen Widgets halten, samt einer Reihe deiner wichtigsten Apps |
+
+Apples Widgets zeigen vor allem Informationen. [WidgetLoft](/widgetloft) nutzt dieselbe neue Größe und denselben Auslöser, um deine Apps zu öffnen, und läuft weiterhin ab iOS 18. Die komplette Einrichtung der Punkte findest du in unserer Anleitung zu [Mitteilungskennzeichen auf Widgets](/blog/notification-badges-on-widgets-iphone).
+
+## Häufige Fragen
+
+**Welche Apps unterstützen das extragroße Widget in iOS 27?**
+Kalender, Fotos, Musik und Wetter, dazu Apps von Drittanbietern. WidgetLoft bringt bis zu 77 Apps in einem unter.
+
+**Können Widgets in iOS 27 die Anzahl der Mitteilungen anzeigen?**
+Keine Anzahl. WidgetLoft zeigt einen Punkt, der verschwindet, wenn du die App über das Widget öffnest. Liest du eine Mitteilung nur auf dem Sperrbildschirm oder der Apple Watch, bleibt er stehen, und Websites, Kurzbefehl-Kacheln und Kontakte können keine Punkte haben.
+
+**Brauche ich iOS 27 für WidgetLoft?**
+Nein. WidgetLoft läuft ab iOS 18. Nur die Größe Extragroß und die Mitteilungspunkte brauchen iOS 27.
+
+---
+
+Bereit, eine ganze Seite mit deinen Apps zu füllen? [Lade WidgetLoft im App Store](/widgetloft/download) und hol das Beste aus den Widgets von iOS 27 heraus.

@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Jak zmienić ikony aplikacji na iPhone bez aplikacji Skróty",
+  description:
+    "Najpopularniejszy sposób na własne ikony aplikacji na iPhone to skrót „Otwórz aplikację” z własnym obrazkiem. Wyjaśniamy, jak działa, i pokazujemy alternatywę w widżecie: ikony ze zdjęcia, symbolu, emoji lub litery, z wersją jasną i ciemną, które nadal otwierają aplikację bezpośrednio.",
+  keywords: [
+    "zmiana ikon aplikacji iphone bez skrótów",
+    "własne ikony aplikacji iphone",
+    "estetyczne ikony ekran początkowy",
+    "jak zmienić ikonę aplikacji iphone",
+    "widżet z własnymi ikonami iphone",
+    "własne ikony tryb ciemny iphone",
+  ],
+  ogTitle: "Własne ikony aplikacji na iPhone bez aplikacji Skróty",
+  ogDescription:
+    "Twórz ikony ze zdjęcia, SF Symbol, emoji lub litery, z osobną wersją jasną i ciemną, i otwieraj aplikację bezpośrednio jednym dotknięciem.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline: "Jak zmienić ikony aplikacji na iPhone bez aplikacji Skróty",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pl/blog/custom-app-icons-without-shortcuts-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Zmiana ikon aplikacji na iPhone bez aplikacji Skróty",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Dodaj aplikację",
+        text: "Otwórz WidgetLoft (dawniej FolderMini), wyszukaj aplikację w App Store bezpośrednio w WidgetLoft albo użyj opcji Udostępnij, WidgetLoft na stronie App Store, i dodaj ją do grupy.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Otwórz Zmień ikonę",
+        text: "Przejdź do karty Biblioteka, stuknij kafelek aplikacji, a potem stuknij Zmień ikonę.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz źródło",
+        text: "Wybierz Zdjęcie i je przytnij, Symbol (ponad 5700 SF Symbols), Emoji lub Mono (pierwsza litera, każde słowo lub własny tekst do 3 znaków).",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ustaw kolory dla wersji Jasny i Ciemny",
+        text: "Wybierz Kolor ikony i Tło albo Bez tła, a wersję jasną i ciemną zaprojektuj osobno.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Umieść widżet",
+        text: "Dodaj widżet WidgetLoft do ekranu początkowego. Stuknięcie kafelka otwiera aplikację bezpośrednio.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy własna ikona w WidgetLoft otwiera aplikację Skróty?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Kafelek aplikacji WidgetLoft na ekranie początkowym otwiera aplikację bezpośrednio po jej identyfikatorze pakietu (bundle ID), z własną ikoną lub bez. Aplikacja Skróty nie bierze w tym udziału.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy to zmienia prawdziwą ikonę aplikacji na moim iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Własny projekt dotyczy kafelka w widżecie. Ikona samej aplikacji pozostaje bez zmian i możesz ją zostawić w bibliotece aplikacji, żeby na stronie był tylko widżet.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy własna ikona może wyglądać inaczej w trybie ciemnym?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. Studio ikon ma osobne projekty dla wersji Jasny i Ciemny. Jeśli nie zaprojektujesz ciemnej, popularne aplikacje mają już gotowe ciemne ikony.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak zmienić ikony aplikacji na iPhone bez aplikacji Skróty
+
+**Szybka odpowiedź:** Możesz nadać aplikacjom własne ikony bez aplikacji Skróty, umieszczając je w widżecie, w którym sam projektujesz każdy kafelek. [WidgetLoft](/widgetloft) (dawniej FolderMini) ma wbudowane studio ikon: wybierz zdjęcie, SF Symbol, emoji lub literę, ustaw kolory i przygotuj osobne wersje Jasny i Ciemny. Kafelek nadal otwiera aplikację bezpośrednio.
+
+Estetyczny ekran początkowy zwykle zaczyna się od pasujących do siebie ikon. Oto metoda z większości poradników, co naprawdę daje, i sposób na ten sam wygląd z pomocą widżetu.
+
+---
+
+## Jak działa metoda ze Skrótami
+
+Najczęściej udostępniany poradnik wygląda tak: otwórz aplikację Skróty, utwórz nowy skrót z czynnością „Otwórz aplikację”, wybierz aplikację, a potem dodaj ten skrót do ekranu początkowego z nazwą i obrazkiem ze swoich zdjęć. Nowa ikona wygląda jak własna ikona aplikacji.
+
+To działa, ale warto wiedzieć, co dostajesz:
+
+- **To skrót, a nie aplikacja.** Po stuknięciu uruchamia się przez aplikację Skróty, która dopiero otwiera Twoją aplikację.
+- **Masz teraz dwie ikony.** Oryginalna aplikacja nadal jest zainstalowana, więc jej zwykła ikona wciąż gdzieś jest. Większość osób przenosi ją do biblioteki aplikacji, żeby strona była czysta.
+- **Jedna ikona naraz.** Każda aplikacja potrzebuje osobnego skrótu, tworzonego i nazywanego oddzielnie, z jednym obrazkiem dla wyglądu jasnego i ciemnego.
+
+Przy jednej czy dwóch ikonach to nie problem. Przy całej stronie w jednym motywie widżet bywa prostszy.
+
+## Krok po kroku: własne ikony aplikacji w WidgetLoft
+
+1. **Dodaj aplikację.** Otwórz [WidgetLoft](/widgetloft), wyszukaj aplikację w App Store bezpośrednio w WidgetLoft (albo użyj Udostępnij → WidgetLoft na dowolnej stronie App Store) i dodaj ją do grupy.
+2. **Otwórz Zmień ikonę.** Przejdź do karty **Biblioteka**, stuknij kafelek aplikacji, a potem stuknij **Zmień ikonę**.
+3. **Wybierz źródło.** Wybierz **Zdjęcie** (podczas kadrowania przeciągaj, by przesunąć, i zsuwaj palce, by powiększyć), **Symbol** (ponad 5700 SF Symbols w 27 kategoriach, wyszukiwanie po angielsku), **Emoji** lub **Mono** (pierwsza litera, każde słowo lub własny tekst do 3 znaków).
+4. **Ustaw kolory dla wersji Jasny i Ciemny.** Wybierz **Kolor ikony** i **Tło** albo **Bez tła**, żeby znak leżał bezpośrednio na widżecie. Wersję jasną i ciemną zaprojektuj osobno, aby ikona pasowała do obu wyglądów.
+5. **Umieść widżet.** Przytrzymaj puste miejsce na ekranie początkowym, dodaj widżet, wybierz WidgetLoft i rozmiar. Stuknij kafelek, a aplikacja otworzy się bezpośrednio.
+
+## Metoda ze Skrótami a studio ikon WidgetLoft
+
+| | Metoda ze Skrótami | Studio ikon WidgetLoft |
+| --- | --- | --- |
+| Jak otwiera się aplikacja | Przez aplikację Skróty | Kafelek otwiera aplikację bezpośrednio |
+| Wersja ciemna | Jeden obrazek dla obu wyglądów | Osobne projekty Jasny i Ciemny |
+| Kroki na ikonę | Nowy skrót, wybór aplikacji, dodanie do ekranu, obrazek i nazwa | Stuknięcie kafelka, Zmień ikonę, źródło i kolory |
+| Źródła ikon | Obrazek z Twoich zdjęć | Zdjęcie, ponad 5700 SF Symbols, Emoji, litery Mono |
+| Wiele aplikacji naraz | Jedna ikona na ekranie na każdy skrót | Wiele kafelków w jednym widżecie |
+
+Różnica polega na tym, gdzie odbywa się praca. W [WidgetLoft](/widgetloft) projekt i otwieranie są w tym samym kafelku: bez dodatkowego skrótu dla każdej aplikacji i bez aplikacji Skróty po drodze, gdy stukasz. Aplikacje bez własnego projektu nadal pokazują prawdziwe ikony, więc zmieniasz tylko te, które chcesz.
+
+## Częste pytania
+
+**Czy własna ikona w WidgetLoft otwiera aplikację Skróty?**
+Nie. Kafelek aplikacji WidgetLoft na ekranie początkowym otwiera aplikację bezpośrednio po jej identyfikatorze pakietu (bundle ID), z własną ikoną lub bez.
+
+**Czy to zmienia prawdziwą ikonę aplikacji na moim iPhone?**
+Nie. Projekt dotyczy kafelka w widżecie. Ikona samej aplikacji pozostaje bez zmian i możesz ją zostawić w bibliotece aplikacji, żeby na stronie był tylko widżet.
+
+**Czy własna ikona może wyglądać inaczej w trybie ciemnym?**
+Tak. Studio ikon ma osobne projekty dla wersji Jasny i Ciemny. Jeśli nie zaprojektujesz ciemnej, popularne aplikacje mają już gotowe ciemne ikony (zobacz [ciemne ikony aplikacji na iPhone](/blog/dark-mode-app-icons-iphone)).
+
+---
+
+Gotowy, aby stworzyć swój zestaw? [Pobierz WidgetLoft z App Store](/widgetloft/download) i daj każdej aplikacji ikonę, jaką chcesz.

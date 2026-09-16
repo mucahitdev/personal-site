@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Cách tạo thư mục trong thư mục trên iPhone (thư mục lồng nhau)",
+  description:
+    "Thư mục trên Màn hình chính iOS không thể chứa thư mục khác. Đây là cách có thư mục lồng nhau thật sự trên iPhone bằng widget: chạm vào thư mục, nó mở ngay tại chỗ với nút quay lại, lồng bao nhiêu cấp tùy bạn.",
+  keywords: [
+    "thư mục trong thư mục iphone",
+    "thư mục lồng nhau iphone",
+    "tạo thư mục con trên iphone",
+    "cho thư mục vào thư mục ios",
+    "thư mục con màn hình chính iphone",
+    "widget thư mục iphone",
+  ],
+  ogTitle: "Thư mục trong thư mục trên iPhone, cuối cùng cũng được",
+  ogDescription:
+    "iOS không lồng được thư mục. Widget WidgetLoft thì được: chạm vào thư mục, nó mở tại chỗ với nút quay lại.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline: "Cách tạo thư mục trong thư mục trên iPhone (thư mục lồng nhau)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/vi/blog/folders-inside-folders-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Tạo thư mục lồng nhau trên iPhone bằng widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Tạo nhóm và thư mục",
+        text: "Cài WidgetLoft (trước đây là FolderMini), tạo một nhóm, mở nhóm đó và chạm vào Thư mục mới.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm ứng dụng và thư mục khác",
+        text: "Thêm ứng dụng vào thư mục. Chạm lại vào Thư mục mới bên trong để xuống thêm một cấp.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn giao diện ô thư mục",
+        text: "Hiển thị thư mục dưới dạng lưới mini 2×2 hoặc 3×3 gồm các ứng dụng bên trong, hoặc đặt biểu tượng riêng từ ảnh hay SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Đặt widget",
+        text: "Chạm và giữ Màn hình chính, chạm nút dấu cộng, thêm widget WidgetLoft và chọn nhóm của bạn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chỉnh nút quay lại và tự động quay lại",
+        text: "Tùy chỉnh nút quay lại trong trình chỉnh sửa và kéo nó tới ô bất kỳ, sau đó đặt Cài đặt, Widget, Tự động quay lại thư mục.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Có thể đặt thư mục trong thư mục trên iPhone không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không với thư mục Màn hình chính thông thường: iOS không cho thả một thư mục vào thư mục khác. Widget thư mục như WidgetLoft thì hỗ trợ. Chạm vào thư mục, nó mở bên trong widget, kèm nút quay lại để lên một cấp.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Một thư mục WidgetLoft chứa được bao nhiêu ứng dụng và thư mục con?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Mỗi thư mục chứa tối đa 100 ứng dụng và 20 thư mục con, không giới hạn số cấp lồng nhau. Bản miễn phí cho phép 6 nhóm và 21 ứng dụng trong thư viện; WidgetLoft Pro bỏ các giới hạn này.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Thư mục lồng nhau có dùng được trên widget Màn hình khóa không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Widget Màn hình khóa chỉ hiển thị một hàng ứng dụng ở cấp cao nhất. Thư mục lồng nhau hoạt động trong các widget Màn hình chính.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách tạo thư mục trong thư mục trên iPhone (thư mục lồng nhau)
+
+**Trả lời nhanh:** Trên Màn hình chính của iPhone, bạn không thể đặt một thư mục vào trong thư mục khác. iOS đơn giản là không cho phép. Nhưng bạn có thể có thư mục lồng nhau thật sự bên trong một widget với [WidgetLoft](/widgetloft) (trước đây là FolderMini): chạm vào ô thư mục, nó mở ngay trong widget, có nút quay lại để đi lên, và lồng bao nhiêu cấp tùy bạn.
+
+Bạn đã từng kéo một thư mục lên thư mục khác rồi thấy nó bật ra? Bạn không làm sai gì cả. Đây là cách thật sự hiệu quả.
+
+---
+
+## Vì sao iOS không cho lồng thư mục
+
+Thư mục trên Màn hình chính chỉ có một cấp: bạn không thể kéo thư mục vào thư mục khác, và không có cài đặt nào thay đổi điều đó. Vì vậy thư mục "Công việc" không thể chứa thư mục "Cuộc họp" và "Tài liệu", và cuối cùng bạn có một thư mục khổng lồ hoặc một Màn hình chính đầy thư mục nhỏ.
+
+Widget làm được điều thư mục không làm được. Trong [WidgetLoft](/widgetloft), một nhóm trở thành widget trên Màn hình chính, nhóm có thể chứa thư mục, và thư mục lại có thể chứa thư mục khác. Chạm vào ô thư mục sẽ mở thư mục đó tại chỗ, còn nút quay lại đưa bạn lên một cấp.
+
+## Từng bước: tạo thư mục lồng nhau trên iPhone
+
+1. **Tạo nhóm và thư mục.** Cài [WidgetLoft](/widgetloft), tạo một nhóm, mở nhóm đó và chạm vào **Thư mục mới**.
+2. **Thêm ứng dụng và thư mục khác.** Thêm ứng dụng vào thư mục. Chạm lại vào **Thư mục mới** bên trong để xuống thêm một cấp.
+3. **Chọn giao diện ô thư mục.** Hiển thị thư mục dưới dạng lưới mini 2×2 hoặc 3×3 gồm các ứng dụng bên trong, hoặc đặt biểu tượng riêng từ ảnh hay SF Symbol.
+4. **Đặt widget.** Chạm và giữ Màn hình chính, chạm **+**, thêm widget WidgetLoft và chọn nhóm của bạn.
+5. **Chỉnh nút quay lại và tự động quay lại.** Trong trình chỉnh sửa **Nút quay lại**, chọn biểu tượng (12 mẫu có sẵn hoặc bất kỳ SF Symbol nào), màu biểu tượng, màu nền, độ mờ nền từ 0 đến 100% và kích thước, hoặc chạm **Đặt lại về mặc định**. Kéo nút quay lại tới ô bất kỳ. Sau đó vào **Cài đặt → Widget → Tự động quay lại thư mục**.
+
+## Thư mục iOS so với thư mục WidgetLoft
+
+| | Thư mục Màn hình chính iOS | Thư mục WidgetLoft |
+| --- | --- | --- |
+| Thư mục trong thư mục | Không thể | Có, không giới hạn số cấp |
+| Sức chứa | Chỉ ứng dụng, không có thư mục con | Tối đa 100 ứng dụng và 20 thư mục con mỗi thư mục |
+| Nằm ở đâu | Trên Màn hình chính dưới dạng biểu tượng | Bên trong widget Màn hình chính, mở tại chỗ |
+| Giao diện riêng | Bản xem trước nhỏ các ứng dụng bên trong | Lưới mini 2×2 hoặc 3×3, hoặc biểu tượng riêng từ ảnh hay ký hiệu |
+| Quay lại | Chạm ra ngoài thư mục | Nút quay lại có thể tùy chỉnh và di chuyển |
+
+Với [WidgetLoft](/widgetloft), một widget có thể chứa cả ngày của bạn, sắp xếp gọn trong các thư mục, và mỗi ô ứng dụng vẫn mở thẳng ứng dụng đó.
+
+## Giữ mọi thứ gọn gàng
+
+- **Nhóm theo thói quen, không theo loại ứng dụng.** Thư mục "Buổi sáng" với tin tức, thời tiết và lịch nhanh hơn một thư mục "Tiện ích" mà bạn phải lục tìm.
+- **Dùng tự động quay lại.** Với **Tự động quay lại thư mục**, widget trở về cấp cao nhất sau khi bạn mở một ứng dụng, sau một khoảng thời gian không dùng (10 đến 60 giây, mặc định 30), hoặc cả hai. Không còn cảnh mở ra đúng thư mục con bạn đã quên.
+
+Muốn dọn dẹp kỹ hơn, hãy đọc [cách sắp xếp Màn hình chính iPhone](/blog/organize-iphone-home-screen-2026).
+
+## Câu hỏi thường gặp
+
+**Có thể đặt thư mục trong thư mục trên iPhone không?**
+Không với thư mục Màn hình chính thông thường. Widget thư mục như WidgetLoft thì hỗ trợ: chạm vào thư mục, nó mở bên trong widget, kèm nút quay lại để đi lên.
+
+**Một thư mục chứa được bao nhiêu ứng dụng và thư mục con?**
+Tối đa 100 ứng dụng và 20 thư mục con mỗi thư mục, không giới hạn số cấp. Bản miễn phí cho phép 6 nhóm và 21 ứng dụng trong thư viện; WidgetLoft Pro bỏ các giới hạn này.
+
+**Thư mục lồng nhau có dùng được trên widget Màn hình khóa không?**
+Không. Widget Màn hình khóa chỉ hiển thị một hàng ứng dụng ở cấp cao nhất. Thư mục lồng nhau hoạt động trong các widget Màn hình chính.
+
+---
+
+Sẵn sàng chưa? [Tải WidgetLoft trên App Store](/widgetloft/download) và tạo thư mục trong thư mục ngay hôm nay.

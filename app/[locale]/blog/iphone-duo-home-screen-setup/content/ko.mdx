@@ -1,0 +1,155 @@
+export const meta = {
+  title:
+    "iPhone Duo 홈 화면 설정 방법 (내부 및 외부 디스플레이)",
+  description:
+    "iPhone Duo 홈 화면 계획 가이드: 5.4인치 외부 디스플레이에는 작은 런처, 7.6인치 내부 디스플레이에는 큰 위젯과 오늘 보기, 그리고 한 페이지짜리 앱 런처로 쓰는 특대형 위젯.",
+  keywords: [
+    "아이폰 듀오 홈 화면 설정",
+    "iphone duo 내부 디스플레이 위젯",
+    "iphone duo 외부 화면 앱",
+    "폴더블 아이폰 홈 화면 꾸미기",
+    "iphone duo 오늘 보기 위젯",
+    "iphone duo 앱 런처 위젯",
+  ],
+  ogTitle: "iPhone Duo 홈 화면, 안과 밖을 함께 계획하기",
+  ogDescription:
+    "외부 디스플레이에서는 한 손으로 빠르게, 내부 디스플레이에서는 큰 위젯으로. 두 화면 모두에서 쓰는 런처 하나.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "ko",
+    headline:
+      "iPhone Duo 홈 화면 설정 방법 (내부 및 외부 디스플레이)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/ko/blog/iphone-duo-home-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "ko",
+    name: "iPhone Duo 내부 및 외부 디스플레이의 홈 화면 설정하기",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "외부 화면 계획하기",
+        text: "폰을 접은 상태에서 한 손으로 여는 앱 몇 개를 적어 두고, 이를 위한 작은 런처 위젯이나 잠금 화면 위젯을 계획합니다.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "내부 화면 계획하기",
+        text: "왼쪽 오늘 보기에 어떤 큰 위젯을 둘지, 홈 화면 한 페이지를 특대형 런처로 만들지 정합니다.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "그룹 만들기",
+        text: "WidgetLoft (구 FolderMini)에서 외부 화면용 빠른 앱 그룹 하나와 내부 화면용 더 큰 그룹을 만듭니다.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "위젯 추가하기",
+        text: "홈 화면을 길게 누르고 편집, 위젯 추가를 차례로 탭한 다음 WidgetLoft와 크기를 선택합니다. 잠금 화면은 길게 누른 뒤 사용자화를 탭합니다.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "빠른 실행 바 추가하기",
+        text: "WidgetLoft에서 설정을 열고 Dynamic Island & Live Activity로 이동해 빠른 실행 바를 켜고 폴더를 선택합니다.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "ko",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "WidgetLoft 위젯은 iPhone Duo에서 작동하나요?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "WidgetLoft의 위젯은 iOS 27을 포함해 iOS 18 이상을 사용하는 모든 iPhone에서 작동하는 표준 iOS 위젯이며, iPhone Duo는 iOS 27.1을 탑재하고 출시됩니다. WidgetLoft는 Duo에서 테스트되지 않았고 Duo 전용 기능도 없습니다.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "내부와 외부 디스플레이에 서로 다른 앱을 두어야 하나요?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "따로 계획하면 도움이 됩니다. 외부 디스플레이에는 한 손으로 쓰는 앱의 짧은 목록을, 내부 디스플레이에는 큰 위젯, 오늘 보기, 한 페이지 전체 런처를 두세요.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iPhone Duo의 정확한 레이아웃 세부 사항은 언제 알 수 있나요?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iPhone Duo는 2026년 10월 23일에 출시됩니다. 일부 레이아웃 세부 사항은 사람들이 실제로 폰을 손에 쥐어야 더 분명해지므로, 이 가이드는 계획으로 삼고 그때 조정하세요.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone Duo 홈 화면 설정 방법 (내부 및 외부 디스플레이)
+
+**간단한 답:** iPhone Duo는 역할이 다른 두 개의 홈 화면으로 계획하세요. 5.4인치 외부 디스플레이는 작은 런처 위젯이나 잠금 화면 위젯으로 한 손으로 빠르게 접근하는 데 쓰고, 7.6인치 내부 디스플레이는 큰 위젯, 오늘 보기, 그리고 한 페이지 런처로 쓰는 특대형 위젯에 쓰세요. [WidgetLoft](/widgetloft) (구 FolderMini) 그룹은 두 화면 어디에서든 그 런처가 될 수 있습니다.
+
+iPhone Duo는 2026년 10월 23일에 출시됩니다. 아이콘을 옮기기 시작하기 전에 무엇을 어디에 둘지 지금 정해 두세요.
+
+---
+
+## iPhone Duo 홈 화면은 무엇이 다른가
+
+iPhone Duo는 Apple의 첫 폴더블 iPhone입니다. 접었을 때는 5.4인치 외부 디스플레이를 사용합니다. 펼치면 화면비가 같은 7.6인치 내부 디스플레이가 나타납니다. iOS 27.1을 탑재하고 출시됩니다.
+
+폰을 펼치면 홈 화면에 두 페이지가 보이고, 왼쪽에는 오늘 보기(세로로 스크롤되는 위젯 목록)가 있습니다. Dynamic Island는 측면에 세로로 자리하고, Split View로 두 앱을 나란히 실행할 수 있습니다.
+
+여기서 간단한 역할 분담이 나옵니다. 외부 디스플레이는 앱 하나를 빠르게 여는 용도, 내부 디스플레이는 한 번에 더 많이 보는 용도입니다. 앱 선택은 [iPhone Duo 커버 화면에 좋은 앱](/blog/iphone-duo-cover-screen-apps) 글을 참고하세요.
+
+## 단계별: iPhone Duo 홈 화면 계획하고 만들기
+
+1. **외부 화면 계획하기.** 폰을 접은 상태에서 한 손으로 여는 앱 몇 개를 적어 보세요. 소형 위젯에는 타일 9개, 잠금 화면 위젯에는 한 줄에 최대 4개의 앱이 들어갑니다.
+2. **내부 화면 계획하기.** 왼쪽 오늘 보기에 둘 큰 위젯을 고르세요. iOS 27에는 홈 화면 한 페이지를 가득 채우는 특대형 위젯도 추가되었으니, 한 페이지를 런처로 만들지 정하세요(작은 아이콘 기준 최대 77개 타일).
+3. **그룹 만들기.** [WidgetLoft](/widgetloft)에서 외부 화면용 짧은 그룹과 내부 화면용 큰 그룹을 만드세요. 앱은 앱 안에서 App Store를 검색해 추가합니다.
+4. **위젯 추가하기.** 홈 화면을 길게 누르고 **편집**, **위젯 추가**를 차례로 탭한 뒤 WidgetLoft와 크기를 선택하세요. 잠금 화면은 길게 누르고 **사용자화**를 탭한 다음 WidgetLoft 위젯을 추가합니다.
+5. **빠른 실행 바 추가하기.** WidgetLoft에서 **설정**, **Dynamic Island & Live Activity**로 이동해 **빠른 실행 바**(베타)를 켜고 **폴더**를 선택하세요. 잠금 화면 배너에는 최대 10개의 앱이 들어갑니다.
+
+## 외부 디스플레이와 내부 디스플레이: 무엇을 어디에 둘까
+
+| 화면 | 둘 것 |
+| --- | --- |
+| 외부 디스플레이 홈 화면 | 한 손으로 쓰는 주요 앱을 담은 소형 또는 중형 런처 |
+| 잠금 화면 | 가장 자주 여는 앱을 최대 4개 담은 잠금 화면 위젯 |
+| 내부 디스플레이, 오늘 보기 | 스크롤하며 보기 좋은 큰 정보 위젯 |
+| 내부 디스플레이 홈 화면 | 한 페이지 런처로 쓰는 특대형 위젯 |
+| 잠금 화면 배너 | 최대 10개의 앱을 담은 빠른 실행 바 |
+
+[WidgetLoft](/widgetloft) 위젯은 iOS 27을 포함해 iOS 18 이상의 모든 iPhone에서 작동하는 표준 iOS 위젯이므로, 같은 그룹을 두 화면 어디에서든 런처로 쓸 수 있습니다. 홈 화면 타일을 탭하면 단축어 앱을 거치지 않고 앱이 바로 열립니다. WidgetLoft는 iPhone Duo에서 테스트되지 않았으니, 이 내용은 출발점이 되는 계획으로 생각하세요.
+
+## 자주 묻는 질문
+
+**WidgetLoft 위젯은 iPhone Duo에서 작동하나요?**
+iOS 27을 포함해 iOS 18 이상의 모든 iPhone에서 작동하는 표준 iOS 위젯이며, Duo는 iOS 27.1을 탑재하고 출시됩니다. WidgetLoft는 Duo에서 테스트되지 않았고 Duo 전용 기능도 없습니다.
+
+**내부와 외부 디스플레이에 서로 다른 앱을 두어야 하나요?**
+따로 계획하면 도움이 됩니다. 바깥에는 한 손으로 쓰는 앱의 짧은 목록을, 안쪽에는 큰 위젯과 한 페이지 전체 런처를 두세요.
+
+**iPhone Duo의 정확한 레이아웃 세부 사항은 언제 알 수 있나요?**
+iPhone Duo는 2026년 10월 23일에 출시됩니다. 일부 레이아웃 세부 사항은 사람들이 실제로 폰을 손에 쥐어야 더 분명해지므로, 이 가이드는 계획으로 삼고 그때 조정하세요.
+
+---
+
+두 화면을 계획할 준비가 되셨나요? [App Store에서 WidgetLoft 다운로드하기](/widgetloft/download) 후 iPhone Duo용 런처 그룹을 만들어 보세요.

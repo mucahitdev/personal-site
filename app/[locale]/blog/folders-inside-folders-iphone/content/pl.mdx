@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Jak umieścić folder w folderze na iPhonie (foldery zagnieżdżone)",
+  description:
+    "Foldery na ekranie początkowym iOS nie mogą zawierać innych folderów. Oto jak mieć prawdziwe zagnieżdżone foldery na iPhonie dzięki widżetowi: stuknij folder, otworzy się w miejscu z przyciskiem wstecz, na dowolną liczbę poziomów.",
+  keywords: [
+    "folder w folderze iphone",
+    "zagnieżdżone foldery iphone",
+    "podfoldery ekran początkowy iphone",
+    "jak włożyć folder do folderu ios",
+    "utworzyć podfolder na iphonie",
+    "widżet z folderami iphone",
+  ],
+  ogTitle: "Foldery w folderach na iPhonie, nareszcie",
+  ogDescription:
+    "iOS nie zagnieżdża folderów. Widżet WidgetLoft tak: stuknij folder, a otworzy się w miejscu z przyciskiem wstecz.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline: "Jak umieścić folder w folderze na iPhonie (foldery zagnieżdżone)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/pl/blog/folders-inside-folders-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Tworzenie zagnieżdżonych folderów na iPhonie za pomocą widżetu",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Utwórz grupę i folder",
+        text: "Zainstaluj WidgetLoft (dawniej FolderMini), utwórz grupę, otwórz ją i stuknij Nowy folder.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj aplikacje i kolejne foldery",
+        text: "Dodaj aplikacje do folderu. Stuknij w nim ponownie Nowy folder, aby zejść poziom niżej.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz wygląd kafelka folderu",
+        text: "Pokaż folder jako minisiatkę 2×2 lub 3×3 z jego aplikacji albo nadaj mu własną ikonę ze zdjęcia lub symbolu SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Umieść widżet",
+        text: "Przytrzymaj palec na ekranie początkowym, stuknij przycisk plus, dodaj widżet WidgetLoft i wybierz grupę.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dostosuj przycisk wstecz i automatyczny powrót",
+        text: "Dostosuj przycisk wstecz w edytorze i przeciągnij go w dowolne miejsce, a potem ustaw Ustawienia, Widżet, Automatyczny powrót do folderu.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy na iPhonie można włożyć folder do folderu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie w zwykłych folderach na ekranie początkowym: iOS nie pozwala wrzucić jednego folderu do drugiego. Widżet z folderami, taki jak WidgetLoft, na to pozwala. Stuknij folder, a otworzy się w widżecie z przyciskiem wstecz, który przenosi poziom wyżej.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ile aplikacji i podfolderów zmieści folder WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Każdy folder mieści do 100 aplikacji i 20 podfolderów, a głębokość zagnieżdżenia nie jest ograniczona. Wersja bezpłatna pozwala na 6 grup i 21 aplikacji w bibliotece; WidgetLoft Pro znosi te limity.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy zagnieżdżone foldery działają w widżecie na ekranie blokady?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Widżet na ekranie blokady pokazuje jeden rząd aplikacji z najwyższego poziomu. Zagnieżdżone foldery działają w widżetach na ekranie początkowym.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak umieścić folder w folderze na iPhonie (foldery zagnieżdżone)
+
+**Szybka odpowiedź:** Na ekranie początkowym iPhone'a nie da się włożyć folderu do innego folderu. iOS po prostu na to nie pozwala. Prawdziwe zagnieżdżone foldery możesz jednak mieć w widżecie dzięki [WidgetLoft](/widgetloft) (dawniej FolderMini): stuknij folder, a otworzy się od razu w widżecie, z przyciskiem wstecz do powrotu wyżej, na dowolną liczbę poziomów.
+
+Przeciągnąłeś folder na inny folder i odskoczył z powrotem? Nie robisz nic źle. Oto rozwiązanie, które naprawdę działa.
+
+---
+
+## Dlaczego iOS nie zagnieżdża folderów
+
+Foldery na ekranie początkowym mają tylko jeden poziom: nie przeciągniesz folderu do innego i żadne ustawienie tego nie zmienia. Folder "Praca" nie może więc zawierać folderów "Spotkania" i "Dokumenty", a ty kończysz z jednym gigantycznym folderem albo ekranem początkowym pełnym małych folderów.
+
+Widżet potrafi to, czego nie potrafi folder. W [WidgetLoft](/widgetloft) grupa staje się widżetem na ekranie początkowym, a grupa może zawierać foldery, które mogą zawierać kolejne foldery. Stuknięcie kafelka folderu otwiera go w miejscu, a przycisk wstecz przenosi cię poziom wyżej.
+
+## Krok po kroku: tworzenie zagnieżdżonych folderów na iPhonie
+
+1. **Utwórz grupę i folder.** Zainstaluj [WidgetLoft](/widgetloft), utwórz grupę, otwórz ją i stuknij **Nowy folder**.
+2. **Dodaj aplikacje i kolejne foldery.** Dodaj aplikacje do folderu. Stuknij w nim ponownie **Nowy folder**, aby zejść poziom niżej.
+3. **Wybierz wygląd kafelka folderu.** Pokaż folder jako minisiatkę 2×2 lub 3×3 z aplikacji w środku albo nadaj mu własną ikonę ze zdjęcia lub symbolu SF Symbol.
+4. **Umieść widżet.** Przytrzymaj palec na ekranie początkowym, stuknij **+**, dodaj widżet WidgetLoft i wybierz grupę.
+5. **Dostosuj przycisk wstecz i automatyczny powrót.** W edytorze **Przycisk wstecz** wybierz symbol (12 gotowych lub dowolny SF Symbol), kolor symbolu, kolor tła, krycie tła od 0 do 100% i rozmiar albo stuknij **Przywróć domyślne**. Przeciągnij przycisk wstecz w dowolne miejsce. Następnie przejdź do **Ustawienia → Widżet → Automatyczny powrót do folderu**.
+
+## Foldery iOS a foldery WidgetLoft
+
+| | Foldery na ekranie początkowym iOS | Foldery WidgetLoft |
+| --- | --- | --- |
+| Foldery w folderach | Niemożliwe | Tak, bez limitu głębokości |
+| Pojemność | Tylko aplikacje, bez podfolderów | Do 100 aplikacji i 20 podfolderów w folderze |
+| Gdzie się znajduje | Na ekranie początkowym jako ikona | W widżecie na ekranie początkowym, otwiera się w miejscu |
+| Własny wygląd | Mały podgląd aplikacji w środku | Minisiatka 2×2 lub 3×3 albo własna ikona ze zdjęcia lub symbolu |
+| Powrót | Stuknięcie poza folderem | Przycisk wstecz, który możesz dostosować i przesunąć |
+
+Z [WidgetLoft](/widgetloft) jeden widżet zmieści cały twój dzień, uporządkowany w foldery, a każdy kafelek nadal otwiera swoją aplikację bezpośrednio.
+
+## Jak utrzymać porządek
+
+- **Grupuj według rutyny, nie typu aplikacji.** Folder "Rano" z wiadomościami, pogodą i kalendarzem jest szybszy niż folder "Narzędzia", który trzeba przeszukiwać.
+- **Korzystaj z automatycznego powrotu.** Z opcją **Automatyczny powrót do folderu** widżet wraca na górę po otwarciu aplikacji, po okresie bezczynności (od 10 do 60 sekund, domyślnie 30) albo w obu przypadkach. Koniec z lądowaniem w zapomnianym podfolderze.
+
+Jeśli chcesz większych porządków, przeczytaj, [jak uporządkować ekran początkowy iPhone'a](/blog/organize-iphone-home-screen-2026).
+
+## Częste pytania
+
+**Czy na iPhonie można włożyć folder do folderu?**
+Nie w zwykłych folderach na ekranie początkowym. Widżet z folderami, taki jak WidgetLoft, na to pozwala: stuknij folder, a otworzy się w widżecie z przyciskiem wstecz.
+
+**Ile aplikacji i podfolderów zmieści folder?**
+Do 100 aplikacji i 20 podfolderów w folderze, bez limitu głębokości. Wersja bezpłatna pozwala na 6 grup i 21 aplikacji w bibliotece; WidgetLoft Pro znosi te limity.
+
+**Czy zagnieżdżone foldery działają w widżecie na ekranie blokady?**
+Nie. Widżet na ekranie blokady pokazuje jeden rząd aplikacji z najwyższego poziomu. Zagnieżdżone foldery działają w widżetach na ekranie początkowym.
+
+---
+
+Gotowy? [Pobierz WidgetLoft z App Store](/widgetloft/download) i już dziś wkładaj foldery do folderów.

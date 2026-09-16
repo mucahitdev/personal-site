@@ -1,0 +1,158 @@
+export const meta = {
+  title: "如何让 iPhone 上的每个 App 都有深色模式图标",
+  description:
+    "在 iOS 中打开了深色图标，却还有些 App 亮得刺眼？本文解释原因，并教你在主屏幕小组件里为每个 App 用上深色图标：现成的深色图标、Apple 真正的深色图标，以及在 iPhone 上直接生成的深色图标。",
+  keywords: [
+    "iphone 深色模式 app 图标",
+    "所有 app 深色图标",
+    "深色模式 图标 不变黑",
+    "ios 第三方 app 深色图标",
+    "iphone 深色主屏幕",
+    "深色图标 小组件 iphone",
+  ],
+  ogTitle: "让 iPhone 上每个 App 都用深色图标",
+  ogDescription:
+    "为什么有些图标在 iOS 深色模式下仍然是浅色的，以及如何在小组件里让每个 App 都显示深色图标。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "如何让 iPhone 上的每个 App 都有深色模式图标",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/zh/blog/dark-mode-app-icons-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "让 iPhone 主屏幕上的每个 App 都显示深色图标",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "创建群组",
+        text: "从 App Store 安装 WidgetLoft （原 FolderMini），在群组标签页中创建一个群组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加 App",
+        text: "在 WidgetLoft 内搜索 App Store，或在任意 App Store 页面点按共享，再选择 WidgetLoft。每个 App 在添加时就会得到深色图标。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "放置小组件",
+        text: "长按主屏幕，点按加号按钮，搜索 WidgetLoft，然后添加你的群组小组件。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择图标外观",
+        text: "在 WidgetLoft 中依次打开设置、小组件、深色图标外观，然后选择自动、浅色或深色。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "微调任意图块",
+        text: "如有需要，在素材库中打开一个图块，点按更改图标，为浅色和深色分别设置照片。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "为什么 iPhone 深色模式下有些 App 图标还是白色的？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "只有当 App 开发者提供了深色版本，深色图标才会显示正确，而很多 App 并没有提供。WidgetLoft 小组件会为热门 App 显示现成的深色图标，为 Apple 的 App 显示 Apple 真正的深色图标，并在你添加其他 App 时直接在 iPhone 上为它们生成深色图标。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft 会上传我的 App 图标来制作深色版本吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不会。对于目录中没有的 App，深色图标是根据该 App 自己的图标直接在手机上生成的，不会上传任何内容。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "为什么我的 Liquid Glass 小组件不会自动切换为深色图标？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Liquid Glass 小组件无法自动跟随系统外观。请在 WidgetLoft 中依次打开设置、小组件、深色图标外观，为它选择浅色或深色。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何让 iPhone 上的每个 App 都有深色模式图标
+
+**快速回答：** 只有 App 开发者提供了深色图标，iOS 才能显示真正的深色图标，所以很多 App 仍然是亮色的。想让每个 App 都用上深色图标，就把它们放进 [WidgetLoft](/widgetloft) （原 FolderMini）小组件：热门 App 自带现成的深色图标，Apple 的 App 使用 Apple 真正的深色图标，其他 App 在你添加时也会直接在 iPhone 上生成深色图标。
+
+你打开了深色图标，主屏幕看起来很棒，直到角落里那个白色的银行 App 或亮眼的购物图标格外刺眼。下面说说为什么会这样，以及怎么解决。
+
+---
+
+## 为什么有些 App 图标在深色模式下仍是浅色
+
+深色 App 图标并不是 iOS 自己画出来的。需要开发者设计一个深色版本并放进 App 里。Apple 的 App 都有，很多大型 App 也有，但还有大量 App 从未做过这项更新。无论你选择哪种外观，它们的图标都保留白色或明亮的背景。
+
+你无法修改图标本身。但你可以从一个小组件里打开这些 App，让小组件的图块显示深色版本。[WidgetLoft](/widgetloft) 能把一组 App 变成主屏幕小组件，点按图块即可直接打开 App，中间不经过快捷指令。
+
+## 分步教程：让每个 App 都有深色图标
+
+1. **创建群组。** 从 App Store 安装 [WidgetLoft](/widgetloft)（可免费试用），在 **群组** 标签页中创建一个群组。
+2. **添加 App。** 在 App 内搜索 App Store，或在任意 App Store 页面使用 **共享 → WidgetLoft**。2.1.0 新功能：目录中没有的 App 在添加时，会根据它自己的图标直接在手机上生成深色图标。不会上传任何内容。
+3. **放置小组件。** 长按主屏幕，点按 **+**，搜索 WidgetLoft，然后添加你的群组小组件。
+4. **选择图标外观。** 前往 **设置 → 小组件 → 深色图标外观**。普通小组件可选 **自动**（跟随设备）、**浅色** 或 **深色**。
+5. **微调任意图块。** 想要自己的风格？在 **素材库** 中点按一个图块，再点按 **更改图标**，为浅色和深色分别设置照片。
+
+## iOS 自带深色图标与 WidgetLoft 小组件深色图标对比
+
+| iOS 自带深色图标 | WidgetLoft 小组件深色图标 |
+| --- | --- |
+| 深色效果完全取决于开发者 | 热门 App 有现成的深色图标 |
+| Apple 的 App 使用 Apple 的深色图标 | Apple 的 App 同样使用 Apple 真正的深色图标 |
+| 没有深色版本的 App 仍是亮色 | 其他 App 在添加时于 iPhone 上生成深色图标 |
+| 图标只能是 App 自带的那一个 | 任意图块都可分别设置浅色和深色照片 |
+| 跟随系统外观 | 在设置 → 小组件中选择自动、浅色或深色 |
+
+最终你会得到一个每个图块都协调统一的主屏幕，包括那些从未推出深色图标的 App。如果你已经在用 WidgetLoft，会出现一次性的页面，列出刚刚获得深色图标的 App。想找更多布局灵感？看看我们的 [iOS 27 主屏幕创意](/blog/ios-27-home-screen-ideas)。
+
+## 哪些内容保持不变
+
+深色图标以干净好看为前提，所以有几种情况不会处理：
+
+- **本身已经是深色的图标**，或太复杂、无法干净重新着色的图标，会保持原样。
+- **网站** 保留网站自己的图标。
+- **Liquid Glass 小组件** 无法自动跟随系统，请在深色图标外观中为它选择 **浅色** 或 **深色**。
+
+## 常见问题
+
+**为什么 iPhone 深色模式下有些 App 图标还是白色的？**
+只有开发者提供了深色版本，深色图标才会显示正确，而很多 App 并没有提供。WidgetLoft 小组件用现成的、Apple 的以及在设备上生成的深色图标填补了这个空缺。
+
+**WidgetLoft 会上传我的 App 图标来制作深色版本吗？**
+不会。对于目录中没有的 App，深色图标是根据该 App 自己的图标直接在手机上生成的。不会上传任何内容。
+
+**为什么我的 Liquid Glass 小组件不会自动切换为深色图标？**
+Liquid Glass 小组件无法自动跟随系统外观。打开设置 → 小组件 → 深色图标外观，为它选择浅色或深色。
+
+---
+
+想要一个全深色的主屏幕？[在 App Store 下载 WidgetLoft](/widgetloft/download)，给每个 App 都换上深色图标。

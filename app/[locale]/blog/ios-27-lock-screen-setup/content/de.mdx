@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "So richtest du einen aufgeräumten iOS 27 Sperrbildschirm ein (kompakte Uhr und Apps per Fingertipp)",
+  description:
+    "Richte einen aufgeräumten Sperrbildschirm in iOS 27 ein: Hintergrundbild wählen, kompakte Uhr einschalten und deine Apps mit dem WidgetLoft Sperrbildschirm-Widget und der Schnellstartleiste hinzufügen.",
+  keywords: [
+    "ios 27 sperrbildschirm",
+    "ios 27 kompakte uhr",
+    "sperrbildschirm anpassen ios 27",
+    "app starter sperrbildschirm iphone",
+    "apps vom sperrbildschirm öffnen iphone",
+    "sperrbildschirm widget apps iphone",
+  ],
+  ogTitle: "Ein aufgeräumter iOS 27 Sperrbildschirm mit Apps per Fingertipp",
+  ogDescription:
+    "Kompakte Uhr, ein bildschirmfüllendes Hintergrundbild und deine Lieblings-Apps nur einen Tipp entfernt auf dem iOS 27 Sperrbildschirm.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline:
+      "So richtest du einen aufgeräumten iOS 27 Sperrbildschirm ein (kompakte Uhr und Apps per Fingertipp)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/de/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "Einen aufgeräumten iOS 27 Sperrbildschirm mit Apps per Fingertipp einrichten",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Hintergrundbild wählen",
+        text: "Lege den Finger lange auf den Sperrbildschirm, tippe auf Anpassen und wähle ein Foto. Füllt es den Bildschirm nicht aus, lass es von der Hintergrunderweiterung in iOS 27 vergrößern.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kompakte Uhr einschalten",
+        text: "Wähle im selben Editor die Option für die kompakte Uhr, damit die Uhrzeit nach oben neben das Datum und deine Widgets rückt.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "WidgetLoft Sperrbildschirm-Widget hinzufügen",
+        text: "Erstelle in WidgetLoft (früher FolderMini) eine Gruppe mit deinen wichtigsten Apps, füge dann im Sperrbildschirm-Editor das WidgetLoft Widget hinzu und wähle diese Gruppe. Es zeigt eine Reihe mit bis zu 4 Apps.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Schnellstartleiste einschalten",
+        text: "Öffne in WidgetLoft die Einstellungen, dann Dynamic Island und Live-Aktivität, und schalte die Schnellstartleiste ein. Live-Aktivitäten müssen für WidgetLoft in den iOS Einstellungen erlaubt sein.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Gruppe wählen",
+        text: "Wähle unter Ordner die Gruppe, die angezeigt werden soll. Bis zu 10 Apps erscheinen auf dem Sperrbildschirm und bis zu 5 in der Dynamic Island.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kann ich Apps vom Sperrbildschirm öffnen, ohne zu entsperren?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nein. Auf dem Sperrbildschirm fordern sowohl das WidgetLoft Widget als auch die Schnellstartleiste zuerst zum Entsperren auf, zum Beispiel mit Face ID, und öffnen dann die App. WidgetLoft kann dabei kurz zu sehen sein. In der Dynamic Island öffnen sich Apps mit einem Tipp.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Warum ist die Schnellstartleiste von meinem Sperrbildschirm verschwunden?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS beendet Live-Aktivitäten nach einigen Stunden. WidgetLoft startet die Leiste jedes Mal neu, wenn du die App öffnest. Erscheint sie nie, prüfe, ob Live-Aktivitäten für WidgetLoft in den iOS Einstellungen erlaubt sind.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Brauche ich iOS 27 für diese Einrichtung?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nur für die kompakte Uhr und die Hintergrunderweiterung, denn das sind Funktionen von iOS 27. WidgetLoft selbst läuft ab iOS 18. Beachte, dass das Sperrbildschirm-Widget nur Apps der obersten Ebene zeigt, Ordner innerhalb einer Gruppe erscheinen dort also nicht.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# So richtest du einen aufgeräumten iOS 27 Sperrbildschirm ein (kompakte Uhr und Apps per Fingertipp)
+
+**Kurze Antwort:** Lege den Finger lange auf den Sperrbildschirm, tippe auf **Anpassen**, wähle ein Hintergrundbild und schalte die kompakte Uhr von iOS 27 ein, damit die Uhrzeit weniger Platz braucht. Dann fügst du deine Apps hinzu: Das Sperrbildschirm-Widget von [WidgetLoft](/widgetloft) (früher FolderMini) zeigt eine Reihe mit bis zu 4 Apps, und die Schnellstartleiste bringt bis zu 10 Apps auf den Sperrbildschirm.
+
+iOS 27 gibt dem Sperrbildschirm mehr Luft. Am besten nutzt du den Platz für die Apps, die du wirklich öffnest, statt nur für eine größere Uhr.
+
+---
+
+## Was iOS 27 am Sperrbildschirm ändert
+
+Zwei Neuerungen in iOS 27 sind für eine aufgeräumte Einrichtung wichtig:
+
+- **Kompakte Uhr.** Die Uhrzeit wird kleiner und sitzt oben neben dem Datum und deinen Widgets, statt die Mitte des Bildschirms zu füllen.
+- **Hintergrunderweiterung.** iOS kann ein Foto so erweitern, dass es den ganzen Sperrbildschirm ausfüllt. Das hilft bei Bildern, die nicht ganz passen.
+
+Was iOS weiterhin nicht bietet, ist eine Reihe von Apps, die du per Tipp öffnest. Normale Sperrbildschirm-Widgets zeigen Informationen, sie starten keine anderen Apps. Genau diese Lücke füllt [WidgetLoft](/widgetloft) mit zwei Werkzeugen: einem Sperrbildschirm-Widget, das immer da ist, und der Schnellstartleiste, einer Live-Aktivität mit einer längeren App-Liste.
+
+## Schritt für Schritt: aufgeräumter Sperrbildschirm in iOS 27
+
+1. **Hintergrundbild wählen.** Lege den Finger lange auf den Sperrbildschirm, tippe auf **Anpassen** und wähle ein Foto. Füllt es den Bildschirm nicht aus, lass es von der Hintergrunderweiterung in iOS 27 vergrößern.
+2. **Kompakte Uhr einschalten.** Wähle im selben Editor die Option für die kompakte Uhr. Die Uhrzeit rückt nach oben neben das Datum und deine Widgets.
+3. **WidgetLoft Sperrbildschirm-Widget hinzufügen.** Erstelle in WidgetLoft eine Gruppe mit deinen wichtigsten Apps. Füge dann im Sperrbildschirm-Editor das **WidgetLoft** Widget hinzu und wähle diese Gruppe. Es zeigt eine Reihe mit bis zu 4 Apps (3 mit großen Symbolen).
+4. **Schnellstartleiste einschalten.** Öffne WidgetLoft, gehe zu **Einstellungen → Dynamic Island und Live-Aktivität** und schalte die **Schnellstartleiste** (Beta) ein.
+5. **Gruppe wählen.** Wähle unter **Ordner** die gewünschte Gruppe. Bis zu 10 Apps erscheinen in einem Banner auf dem Sperrbildschirm und bis zu 5 in der Dynamic Island.
+
+## Sperrbildschirm-Widget oder Schnellstartleiste
+
+| | Sperrbildschirm-Widget | Schnellstartleiste |
+| --- | --- | --- |
+| Apps | Eine Reihe mit bis zu 4 (3 mit großen Symbolen) | Bis zu 10 auf dem Sperrbildschirm, bis zu 5 in der Dynamic Island |
+| Wann sichtbar | Immer, als Teil deines Sperrbildschirms | Einige Stunden, nachdem du WidgetLoft geöffnet hast |
+| Tippen auf dem Sperrbildschirm | Erst entsperren, dann öffnet sich die App | Erst mit Face ID entsperren, dann öffnet sich die App |
+| Dynamic Island | Nicht enthalten | Lange auf die Insel drücken und eine App mit einem Tipp öffnen |
+
+Du musst dich nicht entscheiden. Lege die 4 Apps, die du den ganzen Tag öffnest, ins Widget und nutze die Schnellstartleiste für eine längere Liste, die eine Weile griffbereit sein soll. Mehr zur Insel liest du in [Apps in die Dynamic Island bringen](/blog/apps-in-dynamic-island-iphone).
+
+## Häufige Fragen
+
+**Kann ich Apps vom Sperrbildschirm öffnen, ohne zu entsperren?**
+Nein. Auf dem Sperrbildschirm fordern sowohl das Widget als auch die Schnellstartleiste zuerst zum Entsperren auf (zum Beispiel mit Face ID) und öffnen dann die App. WidgetLoft kann dabei kurz zu sehen sein. In der Dynamic Island öffnen sich Apps mit einem Tipp.
+
+**Warum ist die Schnellstartleiste von meinem Sperrbildschirm verschwunden?**
+iOS beendet Live-Aktivitäten nach einigen Stunden. WidgetLoft startet die Leiste jedes Mal neu, wenn du die App öffnest. Erscheint sie nie, prüfe, ob Live-Aktivitäten für WidgetLoft in den iOS Einstellungen erlaubt sind.
+
+**Brauche ich iOS 27 für diese Einrichtung?**
+Nur für die kompakte Uhr und die Hintergrunderweiterung. [WidgetLoft](/widgetloft) selbst läuft ab iOS 18. Eine Grenze solltest du kennen: Das Sperrbildschirm-Widget zeigt nur Apps der obersten Ebene, Ordner innerhalb einer Gruppe erscheinen dort also nicht.
+
+---
+
+Bereit für einen aufgeräumteren Sperrbildschirm? [Lade WidgetLoft im App Store](/widgetloft/download) und hab deine wichtigsten Apps nur einen Tipp entfernt.

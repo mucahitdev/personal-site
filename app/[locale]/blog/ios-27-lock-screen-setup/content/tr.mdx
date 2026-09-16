@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "iOS 27'de Sade Bir Kilit Ekranı Nasıl Kurulur (Kompakt Saat ve Tek Dokunuşla Uygulamalar)",
+  description:
+    "iOS 27'de sade bir Kilit Ekranı kurun: bir duvar kâğıdı seçin, kompakt saati açın, ardından uygulamalarınızı WidgetLoft Kilit Ekranı widget'ı ve Hızlı Erişim çubuğuyla ekleyin.",
+  keywords: [
+    "ios 27 kilit ekranı",
+    "ios 27 kompakt saat",
+    "ios 27 kilit ekranı özelleştirme",
+    "kilit ekranı uygulama başlatıcı iphone",
+    "kilit ekranından uygulama açma iphone",
+    "kilit ekranı widget uygulama iphone",
+  ],
+  ogTitle: "iOS 27'de Tek Dokunuşla Uygulamalı Sade Kilit Ekranı",
+  ogDescription:
+    "Kompakt saat, tüm ekranı dolduran duvar kâğıdı ve iOS 27 Kilit Ekranı'nda tek dokunuş uzağınızdaki favori uygulamalarınız.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iOS 27'de Sade Bir Kilit Ekranı Nasıl Kurulur (Kompakt Saat ve Tek Dokunuşla Uygulamalar)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/tr/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iOS 27'de tek dokunuşla uygulamalı sade bir Kilit Ekranı kurun",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Duvar kâğıdı seçin",
+        text: "Kilit Ekranı'na uzun basın, Özelleştir'e dokunun ve bir fotoğraf seçin. Ekranı doldurmuyorsa iOS 27'nin duvar kâğıdı genişletme özelliği fotoğrafı büyütsün.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kompakt saati açın",
+        text: "Aynı düzenleyicide kompakt saat seçeneğini seçin; saat, tarihin ve widget'larınızın yanına, en üste taşınır.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "WidgetLoft Kilit Ekranı widget'ını ekleyin",
+        text: "WidgetLoft (eski adıyla FolderMini) içinde en çok kullandığınız uygulamalardan bir grup oluşturun, ardından Kilit Ekranı düzenleyicisinde WidgetLoft widget'ını ekleyip o grubu seçin. Widget tek satırda en fazla 4 uygulama gösterir.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Hızlı Erişim çubuğunu açın",
+        text: "WidgetLoft'ta Ayarlar'ı, ardından Dynamic Island ve Canlı Etkinlik bölümünü açın ve Hızlı Erişim çubuğunu açın. iOS Ayarları'nda WidgetLoft için Canlı Etkinlikler'e izin verilmiş olmalı.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Grubu seçin",
+        text: "Klasör altında gösterilecek grubu seçin. Kilit Ekranı'nda en fazla 10, Dynamic Island'da en fazla 5 uygulama görünür.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kilit Ekranı'ndan kilidi açmadan uygulama açabilir miyim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Kilit Ekranı'nda hem WidgetLoft widget'ı hem de Hızlı Erişim çubuğu önce kilidi açmanızı ister (örneğin Face ID ile), sonra uygulamayı açar. Bu sırada WidgetLoft bir anlığına görünebilir. Dynamic Island'da ise uygulamalar tek dokunuşla açılır.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hızlı Erişim çubuğu Kilit Ekranı'mdan neden kayboldu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS, Canlı Etkinlikler'i birkaç saat sonra sonlandırır. WidgetLoft, uygulamayı her açtığınızda Hızlı Erişim çubuğunu yeniden başlatır. Hiç görünmüyorsa iOS Ayarları'nda WidgetLoft için Canlı Etkinlikler'e izin verildiğini kontrol edin.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bu kurulum için iOS 27 gerekli mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yalnızca kompakt saat ve duvar kâğıdı genişletme için; bunlar iOS 27 özellikleridir. WidgetLoft'un kendisi iOS 18 ve sonrasında çalışır. Kilit Ekranı widget'ı yalnızca en üst seviyedeki uygulamaları gösterir, bu yüzden grubun içindeki klasörler orada görünmez.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27'de Sade Bir Kilit Ekranı Nasıl Kurulur (Kompakt Saat ve Tek Dokunuşla Uygulamalar)
+
+**Kısa cevap:** Kilit Ekranı'na uzun basın, **Özelleştir**'e dokunun, bir duvar kâğıdı seçin ve saatin daha az yer kaplaması için iOS 27'nin kompakt saat seçeneğini açın. Sonra uygulamalarınızı ekleyin: [WidgetLoft](/widgetloft) (eski adıyla FolderMini) Kilit Ekranı widget'ı tek satırda en fazla 4 uygulama tutar, Hızlı Erişim çubuğu ise Kilit Ekranı'na en fazla 10 uygulama koyar.
+
+iOS 27, Kilit Ekranı'na daha fazla nefes alanı veriyor. Bu alanı en iyi kullanmanın yolu, onu daha büyük bir saate değil, gerçekten açtığınız uygulamalara ayırmak.
+
+---
+
+## iOS 27 Kilit Ekranı'nda neleri değiştiriyor
+
+iOS 27'deki iki Kilit Ekranı değişikliği sade bir kurulum için önemli:
+
+- **Kompakt saat modu.** Saat küçülür ve ekranın ortasını doldurmak yerine en üstte, tarihin ve widget'larınızın yanında durur.
+- **Duvar kâğıdı genişletme.** iOS bir fotoğrafı tüm Kilit Ekranı'nı dolduracak şekilde genişletebilir; tam oturmayan fotoğraflar için işe yarar.
+
+iOS'un hâlâ vermediği şey, dokunup açabileceğiniz bir uygulama satırı. Standart Kilit Ekranı widget'ları bilgi gösterir, diğer uygulamalarınızı başlatmaz. [WidgetLoft](/widgetloft) bu boşluğu iki araçla doldurur: her zaman orada duran bir Kilit Ekranı widget'ı ve daha uzun bir uygulama listesi sunan bir Canlı Etkinlik olan Hızlı Erişim çubuğu.
+
+## Adım adım: iOS 27'de sade bir Kilit Ekranı kurun
+
+1. **Duvar kâğıdı seçin.** Kilit Ekranı'na uzun basın, **Özelleştir**'e dokunun ve bir fotoğraf seçin. Ekranı doldurmuyorsa iOS 27'nin duvar kâğıdı genişletme özelliği onu büyütsün.
+2. **Kompakt saati açın.** Aynı düzenleyicide kompakt saat seçeneğini seçin. Saat en üste, tarihin ve widget'larınızın yanına taşınır.
+3. **WidgetLoft Kilit Ekranı widget'ını ekleyin.** WidgetLoft'ta en çok kullandığınız uygulamalarla bir grup oluşturun. Kilit Ekranı düzenleyicisine dönüp **WidgetLoft** widget'ını ekleyin ve o grubu seçin. Widget tek satırda en fazla 4 uygulama gösterir (büyük simgelerle 3).
+4. **Hızlı Erişim çubuğunu açın.** WidgetLoft'u açın, **Ayarlar → Dynamic Island ve Canlı Etkinlik** bölümüne gidin ve **Hızlı Erişim çubuğu**nu (Beta) açın.
+5. **Grubu seçin.** **Klasör** altında istediğiniz grubu seçin. Kilit Ekranı'ndaki bir bantta en fazla 10, Dynamic Island'da en fazla 5 uygulama görünür.
+
+## Kilit Ekranı widget'ı mı, Hızlı Erişim çubuğu mu?
+
+| | Kilit Ekranı widget'ı | Hızlı Erişim çubuğu |
+| --- | --- | --- |
+| Uygulamalar | Tek satırda en fazla 4 (büyük simgelerle 3) | Kilit Ekranı'nda en fazla 10, Dynamic Island'da en fazla 5 |
+| Ne zaman görünür | Her zaman, Kilit Ekranı'nızın bir parçası olarak | WidgetLoft'u açtıktan sonra birkaç saat boyunca |
+| Kilit Ekranı'nda dokunma | Önce kilit açılır, sonra uygulama açılır | Önce Face ID ile kilit açılır, sonra uygulama açılır |
+| Dynamic Island | Yok | Adaya uzun basın, bir uygulamaya dokunun, tek dokunuşla açılsın |
+
+Birini seçmek zorunda değilsiniz. Gün boyu açtığınız 4 uygulamayı widget'a koyun, bir süreliğine yakınınızda olmasını istediğiniz daha uzun listeyi de Hızlı Erişim çubuğuna bırakın. Ada tarafı hakkında daha fazlası için [Dynamic Island'a uygulama koyma](/blog/apps-in-dynamic-island-iphone) yazısını okuyun.
+
+## Sık sorulan sorular
+
+**Kilit Ekranı'ndan kilidi açmadan uygulama açabilir miyim?**
+Hayır. Kilit Ekranı'nda hem widget hem de Hızlı Erişim çubuğu önce kilidi açmanızı ister (örneğin Face ID ile), sonra uygulamayı açar. Bu sırada WidgetLoft bir anlığına görünebilir. Dynamic Island'da ise uygulamalar tek dokunuşla açılır.
+
+**Hızlı Erişim çubuğu Kilit Ekranı'mdan neden kayboldu?**
+iOS, Canlı Etkinlikler'i birkaç saat sonra sonlandırır. WidgetLoft, uygulamayı her açtığınızda çubuğu yeniden başlatır. Hiç görünmüyorsa iOS Ayarları'nda WidgetLoft için Canlı Etkinlikler'e izin verildiğini kontrol edin.
+
+**Bu kurulum için iOS 27 gerekli mi?**
+Yalnızca kompakt saat ve duvar kâğıdı genişletme için. [WidgetLoft](/widgetloft)'un kendisi iOS 18 ve sonrasında çalışır. Bilmeniz gereken bir sınır: Kilit Ekranı widget'ı yalnızca en üst seviyedeki uygulamaları gösterir, bu yüzden grubun içindeki klasörler orada görünmez.
+
+---
+
+Daha sade bir Kilit Ekranı'na hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve en sevdiğiniz uygulamaları tek dokunuş uzağınızda tutun.

@@ -1,0 +1,150 @@
+export const meta = {
+  title: "Cara Menaruh App Favorit di Dynamic Island iPhone",
+  description:
+    "iOS tidak mengizinkan pintasan app disematkan di Dynamic Island, tetapi Aktivitas Langsung bisa menampilkannya. Begini cara menyimpan hingga 5 app di Dynamic Island dan hingga 10 di Layar Terkunci.",
+  keywords: [
+    "app di dynamic island",
+    "pintasan app dynamic island",
+    "peluncur app dynamic island iphone",
+    "cara menaruh app di dynamic island",
+    "peluncur app layar terkunci aktivitas langsung",
+    "buka cepat dynamic island",
+  ],
+  ogTitle: "Taruh App Favorit Anda di Dynamic Island",
+  ogDescription:
+    "Peluncur Aktivitas Langsung untuk iPhone: hingga 5 app di Dynamic Island dan hingga 10 di Layar Terkunci.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "id",
+    headline: "Cara Menaruh App Favorit di Dynamic Island iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/id/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "id",
+    name: "Menaruh app favorit di Dynamic Island iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Buat grup",
+        text: "Buka WidgetLoft (sebelumnya FolderMini), buat grup, lalu tambahkan app yang paling sering Anda pakai.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Nyalakan Bilah Peluncuran Cepat",
+        text: "Di WidgetLoft, buka Pengaturan, lalu Dynamic Island & Aktivitas Langsung, dan nyalakan Bilah Peluncuran Cepat.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pilih folder",
+        text: "Di bagian Folder, pilih grup yang ingin Anda lihat di Dynamic Island dan di Layar Terkunci.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Izinkan Aktivitas Langsung",
+        text: "Pastikan Aktivitas Langsung diizinkan untuk WidgetLoft di app Pengaturan iOS.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tekan lama Dynamic Island dan ketuk app",
+        text: "Tekan lama Dynamic Island untuk membuka baris berisi hingga 5 app, lalu ketuk salah satunya untuk membukanya.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "id",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kenapa app saya hilang dari Dynamic Island?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS mengakhiri Aktivitas Langsung setelah beberapa jam (sekitar 8 jam saat aktif). WidgetLoft memulai lagi Bilah Peluncuran Cepat setiap kali Anda membuka app, jadi cukup buka sebentar untuk memunculkannya kembali.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bisakah saya menaruh lebih dari 5 app di Dynamic Island?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tidak. Dynamic Island yang diperluas menampilkan satu baris berisi hingga 5 app. Banner Layar Terkunci menampilkan hingga 10 app dari grup yang sama, dalam dua baris.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apakah Bilah Peluncuran Cepat sudah final?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Fitur ini ditandai Beta di WidgetLoft. Fitur ini bergantung pada Aktivitas Langsung iOS, jadi Aktivitas Langsung harus diizinkan untuk WidgetLoft dan fitur ini mengikuti batas waktu yang ditetapkan iOS.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cara Menaruh App Favorit di Dynamic Island iPhone
+
+**Jawaban singkat:** iOS tidak punya pengaturan untuk menyematkan pintasan app di Dynamic Island. Di sana hanya muncul Aktivitas Langsung. [WidgetLoft](/widgetloft) (sebelumnya FolderMini) memanfaatkan hal itu: Bilah Peluncuran Cepat miliknya adalah Aktivitas Langsung yang mencerminkan salah satu grup Anda, sehingga hingga 5 app ada di Dynamic Island dan hingga 10 di Layar Terkunci.
+
+Dynamic Island selalu terlihat, jadi tempat ini pas untuk app yang Anda buka sepanjang hari. Begini cara menaruhnya di sana dalam sekitar satu menit.
+
+---
+
+## Kenapa Dynamic Island tidak menerima pintasan app
+
+Apple membuat Dynamic Island untuk Aktivitas Langsung: timer, pesan-antar makanan, skor pertandingan langsung. Anda tidak bisa menyeret ikon app ke sana, dan tidak ada pengaturan untuk menyematkannya. Hal yang sama berlaku untuk banner Aktivitas Langsung di Layar Terkunci.
+
+Jadi triknya adalah Aktivitas Langsung yang isinya berupa baris app milik Anda sendiri. Itulah yang dilakukan **Bilah Peluncuran Cepat** di WidgetLoft. Bilah ini mencerminkan satu grup dari app, dengan ikon yang sama, dan menjaganya tetap ada di Dynamic Island dan Layar Terkunci.
+
+## Langkah demi langkah: menaruh app di Dynamic Island
+
+1. **Buat grup.** Buka [WidgetLoft](/widgetloft), buat grup di tab Grup, lalu tambahkan app yang paling sering Anda buka. Dynamic Island menampilkan hingga 5 app, jadi grup berisi 5 app muat seluruhnya.
+2. **Nyalakan Bilah Peluncuran Cepat.** Buka Pengaturan → **Dynamic Island & Aktivitas Langsung** dan nyalakan **Bilah Peluncuran Cepat**.
+3. **Pilih folder.** Di bagian **Folder**, pilih grup yang baru saja Anda buat.
+4. **Izinkan Aktivitas Langsung.** Jika tidak ada yang muncul, buka app Pengaturan iOS, cari WidgetLoft, dan pastikan Aktivitas Langsung diizinkan.
+5. **Tekan lama Dynamic Island dan ketuk app.** Dynamic Island versi ringkas menampilkan simbol kisi dan jumlah app. Tekan lama untuk membuka barisnya, lalu ketuk ikon mana pun.
+
+## Dynamic Island vs banner Layar Terkunci
+
+| | Dynamic Island | Banner Layar Terkunci |
+| --- | --- | --- |
+| App yang tampil | Hingga 5 | Hingga 10 |
+| Baris | Satu baris | Satu baris hingga 5, dua baris untuk 6 sampai 10 |
+| Cara kerja ketukan | Membuka app langsung, dengan satu ketukan | Meminta buka kunci dengan Face ID dulu, lalu membuka app |
+| Ubin situs web | Terbuka di browser pilihan Anda | Terbuka di browser pilihan Anda |
+| Tampilan | Ringkas: simbol kisi dan jumlah app | Diwarnai sesuai warna grup, atau Liquid Glass sistem untuk grup Transparan |
+
+Membuka dengan satu ketukan dari Dynamic Island adalah fitur baru di [WidgetLoft](/widgetloft) 2.1.0: app langsung terbuka tanpa melewati WidgetLoft lebih dulu. Di Layar Terkunci, iPhone Anda masih terkunci, jadi Anda mengonfirmasi dengan Face ID lalu app terbuka. Jika Anda sedang menata ulang seluruh Layar Terkunci, lihat juga [cara mengatur Layar Terkunci iOS 27](/blog/ios-27-lock-screen-setup).
+
+## Pertanyaan umum
+
+**Kenapa app saya hilang dari Dynamic Island?**
+iOS mengakhiri Aktivitas Langsung setelah beberapa jam (sekitar 8 jam saat aktif). WidgetLoft memulai lagi Bilah Peluncuran Cepat setiap kali Anda membuka app, jadi cukup buka sebentar untuk memunculkannya kembali.
+
+**Bisakah saya menaruh lebih dari 5 app di Dynamic Island?**
+Tidak. Dynamic Island yang diperluas menampilkan satu baris berisi hingga 5 app. Banner Layar Terkunci menampilkan hingga 10 app dari grup yang sama, dalam dua baris.
+
+**Apakah Bilah Peluncuran Cepat sudah final?**
+Fitur ini ditandai Beta di app. Fitur ini bergantung pada Aktivitas Langsung iOS, jadi Aktivitas Langsung harus diizinkan untuk WidgetLoft dan fitur ini mengikuti batas waktu yang ditetapkan iOS.
+
+---
+
+Siap mencobanya? [Unduh WidgetLoft di App Store](/widgetloft/download) dan buka app favorit Anda dari Dynamic Island dengan satu ketukan.

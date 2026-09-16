@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "iPhone Widget'ından Bir Web Sitesi Chrome'da (veya Başka Bir Tarayıcıda) Nasıl Açılır?",
+  description:
+    "iPhone ana ekranına eklediğiniz web siteleri hep Safari'de ya da varsayılan tarayıcıda açılır. Bir siteyi widget'tan doğrudan Chrome, Firefox, Brave ya da tam ekran görünümde açmanın yolu, tüm siteler için veya tek bir site için.",
+  keywords: [
+    "ana ekrandan web sitesini chrome'da açma iphone",
+    "iphone widget linki chrome'da açma",
+    "ana ekrana web sitesi ekleme chrome iphone",
+    "ana ekran kısayolu safari'de açılıyor",
+    "iphone web sitesi widget tarayıcı seçme",
+    "widget'tan web sitesini tam ekran açma iphone",
+  ],
+  ogTitle: "iPhone Widget'ından Web Sitesini Chrome'da Açın",
+  ogDescription:
+    "Ana ekran widget'ınızdaki web siteleri için Chrome, Firefox, Brave ya da tam ekran görünüm seçin: tüm siteler için veya yalnızca biri için.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iPhone Widget'ından Bir Web Sitesi Chrome'da (veya Başka Bir Tarayıcıda) Nasıl Açılır?",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/tr/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone widget'ından bir web sitesini Chrome'da veya başka bir tarayıcıda açma",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Web sitesini kutucuk olarak ekleyin",
+        text: "WidgetLoft'ta (eski adıyla FolderMini) Kütüphane'ye gidin, Kutucuk Ekle'ye dokunun, Web Sitesi'ni seçin ve adresi yapıştırın. İkon ve ad sizin için doldurulur.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Widget'a yerleştirin",
+        text: "Web sitesi kutucuğunu bir gruba ekleyin, ardından WidgetLoft widget'ını ana ekranınıza ekleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tüm web siteleri için tarayıcı seçin",
+        text: "Ayarlar, Widget, Web Sitesi Açılışı bölümüne gidin ve Chrome, Firefox, Brave ya da başka bir tarayıcı seçin. Tam ekran görünüm için WidgetLoft içinde seçeneğini seçin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "İsterseniz tek bir siteyi değiştirin",
+        text: "Web sitesi kutucuğunu açın, Açılış'a dokunun ve yalnızca o site için farklı bir seçenek seçin ya da Genel ayarı kullan'da bırakın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tarayıcınız listede yoksa özel tarayıcı ekleyin",
+        text: "Özel tarayıcılar altında Tarayıcı ekle'ye dokunun, bir ad ve {url} içeren bir adres biçimi girin, ardından Dene'ye dokunun.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Ana ekrandaki web sitem neden hep Safari'de açılıyor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Safari'nin Ana Ekrana Ekle özelliğiyle oluşturulan yer imi Safari'de açılır, çoğu bağlantı widget'ı da adresi varsayılan tarayıcınıza verir. Yalnızca bu bağlantılar için başka bir tarayıcı kullanmak istiyorsanız, WidgetLoft gibi seçim yapmanıza izin veren bir widget gerekir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Seçtiğim tarayıcı yüklü değilse ne olur?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Web sitesi bunun yerine varsayılan tarayıcınızda açılır, yani kutucuk hiçbir zaman boşa dokunulmuş olmaz.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "WidgetLoft içindeki web sitelerinde oturumum açık olur mu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "WidgetLoft tarayıcısındaki oturumlar Safari'den ayrıdır, bu yüzden orada bir kez giriş yapmanız gerekebilir. Mevcut oturumlarınızı kullanmak isterseniz her zamanki tarayıcınızı seçin.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone Widget'ından Bir Web Sitesi Chrome'da (veya Başka Bir Tarayıcıda) Nasıl Açılır?
+
+**Kısa cevap:** iPhone ana ekranına eklediğiniz web siteleri Safari'de ya da varsayılan tarayıcınızda açılır ve bunu bağlantı bazında değiştiremezsiniz. [WidgetLoft](/widgetloft) (eski adıyla FolderMini) ile siteyi bir widget kutucuğu olarak ekler, ardından Ayarlar → Widget → Web Sitesi Açılışı bölümünden Chrome, Firefox, Brave, başka bir tarayıcı ya da tam ekran görünümü seçersiniz: tüm siteler için veya yalnızca biri için.
+
+Belki varsayılan tarayıcınız Safari ama iş panelinizi Chrome'da kullanıyorsunuz. Ana ekranınızdaki tek bir dokunuş sizi doğru yere götürmeli.
+
+---
+
+## Ana ekrandaki web siteleri neden hep Safari'de açılır?
+
+Safari'nin **Ana Ekrana Ekle** özelliği Safari'ye ait bir yer imi oluşturur. Çoğu bağlantı widget'ı da aynı yere çıkar: adresi **varsayılan tarayıcınıza** iletir.
+
+Varsayılan tarayıcıyı değiştirmek, her uygulamadaki her bağlantıyı değiştirir. Genelde istenen daha dar bir şeydir: *bu* site Chrome'da, geri kalan her şey her zamanki gibi. WidgetLoft'un web sitesi kutucukları tam olarak bunu yapar: tüm web siteleri için bir tarayıcı ve istediğiniz tek bir site için ayrı bir seçim.
+
+## Adım adım: widget'tan bir web sitesini Chrome'da açma
+
+1. **Web sitesini kutucuk olarak ekleyin.** [WidgetLoft](/widgetloft) içinde **Kütüphane** → **Kutucuk Ekle** → **Web Sitesi** yolunu izleyin ve adresi yapıştırın. Site ikonu ve adı sizin için doldurulur.
+2. **Widget'a yerleştirin.** Kutucuğu bir gruba ekleyin, ardından WidgetLoft widget'ını ana ekranınıza ekleyin (ana ekrana basılı tutun, **+** simgesine dokunun, WidgetLoft'u arayın).
+3. **Tüm web siteleri için tarayıcı seçin.** **Ayarlar** → **Widget** → **Web Sitesi Açılışı** bölümüne gidin ve Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha ya da Yandex'i seçin. Tam ekran görünüm için **WidgetLoft içinde** seçeneğini seçin.
+4. **Tek bir siteyi değiştirin (isteğe bağlı).** Web sitesi kutucuğunu açın, **Açılış**'a dokunun ve başka bir seçenek seçin. Bu yalnızca o web sitesine uygulanır. **Genel ayarı kullan** eski haline döndürür.
+5. **Özel tarayıcı ekleyin (isteğe bağlı).** Listede yok mu? **Özel tarayıcılar** → **Tarayıcı ekle** yolunu izleyin, bir ad ve `{url}` içeren bir adres biçimi girin, ardından **Dene**'ye dokunun.
+
+## Hangi seçeneği seçmeli?
+
+| Seçenek | Ne zaman kullanılır |
+| --- | --- |
+| Varsayılan tarayıcı | Telefonunuzun geri kalanının kullandığı tarayıcıdan memnunsanız |
+| Seçilen bir tarayıcı (Chrome, Firefox, Brave ve diğerleri) | Yer imleriniz, parolalarınız veya eklentileriniz varsayılan olmayan bir tarayıcıdaysa |
+| WidgetLoft içinde | Siteyi tarayıcı sekmeleri olmadan tam ekran istiyorsanız, gerektiğinde **Tarayıcıda aç** düğmesiyle |
+| Özel tarayıcı | Tarayıcınız listede yoksa ve adres biçimini biliyorsanız |
+
+Bunları dilediğiniz gibi karıştırabilirsiniz. [WidgetLoft](/widgetloft) içinde genel ayarı en sevdiğiniz tarayıcıda tutun, ardından tek bir banka veya iş sitesini **Açılış** ile başka bir yerde açılacak şekilde ayarlayın.
+
+## Nelere hazırlıklı olmalı?
+
+- **WidgetLoft önce kısa bir an açılır**: varsayılan tarayıcı dışında bir seçim yaptığınızda. Varsayılan tarayıcıda site doğrudan açılır.
+- **Seçilen tarayıcı yüklü değilse** site varsayılan tarayıcınızda açılır.
+- **WidgetLoft tarayıcısındaki oturumlar Safari'den ayrıdır**, bu yüzden orada bir kez daha giriş yapmanız gerekebilir.
+- **Bu bir web uygulaması modu değildir.** WidgetLoft içinde seçeneği tam ekran bir tarayıcı görünümüdür, bağımsız yüklenmiş bir web uygulaması değil.
+- **Dynamic Island'dan da çalışır.** Hızlı Erişim çubuğunu kullanıyorsanız, Dynamic Island'daki ve kilit ekranı bandındaki web sitesi kutucukları seçtiğiniz tarayıcıda açılır.
+
+Web siteleri aynı widget'ta uygulamalarınızın yanında durur. Uygulama kutucukları için [widget'tan uygulama nasıl açılır](/blog/launch-apps-from-widgets-ios) yazısına göz atın.
+
+## Sık sorulan sorular
+
+**Ana ekrandaki web sitem neden hep Safari'de açılıyor?**
+Safari'nin Ana Ekrana Ekle özelliğiyle oluşturulan yer imi Safari'de açılır, çoğu bağlantı widget'ı da varsayılan tarayıcınızı kullanır. [WidgetLoft](/widgetloft) web sitesi kutucuğu ise tarayıcıyı seçmenize izin verir.
+
+**Seçtiğim tarayıcı yüklü değilse ne olur?**
+Web sitesi varsayılan tarayıcınızda açılır, yani kutucuk yine çalışır.
+
+**WidgetLoft içindeki web sitelerinde oturumum açık olur mu?**
+Oradaki oturumlar Safari'den ayrıdır, bu yüzden bir kez giriş yapmanız gerekebilir. Mevcut oturumlarınızı mı tercih ediyorsunuz? Her zamanki tarayıcınızı seçin.
+
+---
+
+Sitelerinizi istediğiniz tarayıcıda, tek dokunuş uzağa koymaya hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download).

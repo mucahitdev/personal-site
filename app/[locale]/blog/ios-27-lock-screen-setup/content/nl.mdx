@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "Zo stel je een rustig iOS 27 toegangsscherm in (compacte klok en apps met één tik)",
+  description:
+    "Stel een rustig toegangsscherm in op iOS 27: kies een achtergrond, zet de compacte klok aan en voeg je apps toe met de WidgetLoft widget voor het toegangsscherm en de snelstartbalk.",
+  keywords: [
+    "ios 27 toegangsscherm",
+    "ios 27 compacte klok",
+    "toegangsscherm aanpassen ios 27",
+    "app launcher toegangsscherm iphone",
+    "apps openen vanaf toegangsscherm iphone",
+    "widget apps toegangsscherm iphone",
+  ],
+  ogTitle: "Een rustig iOS 27 toegangsscherm met apps op één tik",
+  ogDescription:
+    "Compacte klok, een schermvullende achtergrond en je favoriete apps op één tik op het iOS 27 toegangsscherm.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline:
+      "Zo stel je een rustig iOS 27 toegangsscherm in (compacte klok en apps met één tik)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/nl/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "Stel een rustig iOS 27 toegangsscherm in met apps op één tik",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Kies een achtergrond",
+        text: "Houd het toegangsscherm ingedrukt, tik op Pas aan en kies een foto. Vult die het scherm niet, laat de achtergrondverlenging van iOS 27 hem dan vergroten.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zet de compacte klok aan",
+        text: "Kies in dezelfde editor de optie voor de compacte klok, zodat de tijd naar boven schuift naast de datum en je widgets.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Voeg de WidgetLoft widget voor het toegangsscherm toe",
+        text: "Maak in WidgetLoft (voorheen FolderMini) een groep met je belangrijkste apps, voeg daarna in de editor van het toegangsscherm de WidgetLoft widget toe en kies die groep. Hij toont één rij met maximaal 4 apps.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zet de snelstartbalk aan",
+        text: "Open in WidgetLoft Instellingen, dan Dynamic Island en Live-activiteit, en zet de snelstartbalk aan. Live-activiteiten moeten voor WidgetLoft zijn toegestaan in de iOS Instellingen.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kies de groep",
+        text: "Kies onder Map de groep die je wilt tonen. Er verschijnen maximaal 10 apps op het toegangsscherm en maximaal 5 in het Dynamic Island.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kan ik apps openen vanaf het toegangsscherm zonder te ontgrendelen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. Op het toegangsscherm vragen zowel de WidgetLoft widget als de snelstartbalk je eerst te ontgrendelen, bijvoorbeeld met Face ID, en openen daarna de app. WidgetLoft kan onderweg even in beeld komen. In het Dynamic Island openen apps met één tik.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Waarom is de snelstartbalk van mijn toegangsscherm verdwenen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS beëindigt live-activiteiten na een aantal uur. WidgetLoft start de balk opnieuw telkens als je de app opent. Verschijnt hij nooit, controleer dan of live-activiteiten voor WidgetLoft zijn toegestaan in de iOS Instellingen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb ik iOS 27 nodig voor deze opzet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Alleen voor de compacte klok en de achtergrondverlenging, want dat zijn functies van iOS 27. WidgetLoft zelf werkt op iOS 18 en nieuwer. Let op: de widget voor het toegangsscherm toont alleen apps op het bovenste niveau, dus mappen binnen een groep verschijnen daar niet.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Zo stel je een rustig iOS 27 toegangsscherm in (compacte klok en apps met één tik)
+
+**Snel antwoord:** Houd het toegangsscherm ingedrukt, tik op **Pas aan**, kies een achtergrond en zet de compacte klok van iOS 27 aan, zodat de tijd minder ruimte inneemt. Voeg daarna je apps toe: de widget voor het toegangsscherm van [WidgetLoft](/widgetloft) (voorheen FolderMini) toont één rij met maximaal 4 apps, en de snelstartbalk zet tot 10 apps op het toegangsscherm.
+
+iOS 27 geeft het toegangsscherm meer lucht. Die ruimte gebruik je het best voor de apps die je echt opent, niet alleen voor een grotere klok.
+
+---
+
+## Wat iOS 27 verandert aan het toegangsscherm
+
+Twee nieuwe dingen in iOS 27 zijn belangrijk voor een rustige opzet:
+
+- **Compacte klok.** De tijd wordt kleiner en staat bovenaan naast de datum en je widgets, in plaats van het midden van het scherm te vullen.
+- **Achtergrondverlenging.** iOS kan een foto uitbreiden zodat die het hele toegangsscherm vult, handig bij foto's die net niet passen.
+
+Wat iOS nog steeds niet biedt, is een rij apps die je met een tik opent. Standaardwidgets op het toegangsscherm tonen informatie, ze starten je andere apps niet. Dat gat vult [WidgetLoft](/widgetloft) met twee hulpmiddelen: een widget voor het toegangsscherm die er altijd staat, en de snelstartbalk, een live-activiteit met een langere lijst apps.
+
+## Stap voor stap: een rustig toegangsscherm op iOS 27
+
+1. **Kies een achtergrond.** Houd het toegangsscherm ingedrukt, tik op **Pas aan** en kies een foto. Vult die het scherm niet, laat de achtergrondverlenging van iOS 27 hem dan vergroten.
+2. **Zet de compacte klok aan.** Kies in dezelfde editor de optie voor de compacte klok. De tijd schuift naar boven, naast de datum en je widgets.
+3. **Voeg de WidgetLoft widget voor het toegangsscherm toe.** Maak in WidgetLoft een groep met je belangrijkste apps. Voeg daarna in de editor van het toegangsscherm de **WidgetLoft** widget toe en kies die groep. Hij toont één rij met maximaal 4 apps (3 met grote iconen).
+4. **Zet de snelstartbalk aan.** Open WidgetLoft, ga naar **Instellingen → Dynamic Island en Live-activiteit** en zet de **snelstartbalk** (bèta) aan.
+5. **Kies de groep.** Kies onder **Map** de groep die je wilt. Er verschijnen maximaal 10 apps in een banner op het toegangsscherm en maximaal 5 in het Dynamic Island.
+
+## Widget voor het toegangsscherm of snelstartbalk
+
+| | Widget voor het toegangsscherm | Snelstartbalk |
+| --- | --- | --- |
+| Apps | Eén rij met maximaal 4 (3 met grote iconen) | Maximaal 10 op het toegangsscherm, maximaal 5 in het Dynamic Island |
+| Wanneer zichtbaar | Altijd, als onderdeel van je toegangsscherm | Een paar uur nadat je WidgetLoft opent |
+| Tikken op het toegangsscherm | Eerst ontgrendelen, dan opent de app | Eerst ontgrendelen met Face ID, dan opent de app |
+| Dynamic Island | Niet inbegrepen | Houd het eiland ingedrukt en tik op een app om hem met één tik te openen |
+
+Je hoeft niet te kiezen. Zet de 4 apps die je de hele dag opent in de widget en gebruik de snelstartbalk voor een langere lijst die je een tijdje dichtbij wilt hebben. Meer over het eiland lees je in [apps in het Dynamic Island zetten](/blog/apps-in-dynamic-island-iphone).
+
+## Veelgestelde vragen
+
+**Kan ik apps openen vanaf het toegangsscherm zonder te ontgrendelen?**
+Nee. Op het toegangsscherm vragen zowel de widget als de snelstartbalk je eerst te ontgrendelen (bijvoorbeeld met Face ID) en openen daarna de app. WidgetLoft kan onderweg even in beeld komen. In het Dynamic Island openen apps met één tik.
+
+**Waarom is de snelstartbalk van mijn toegangsscherm verdwenen?**
+iOS beëindigt live-activiteiten na een aantal uur. WidgetLoft start de balk opnieuw telkens als je de app opent. Verschijnt hij nooit, controleer dan of live-activiteiten voor WidgetLoft zijn toegestaan in de iOS Instellingen.
+
+**Heb ik iOS 27 nodig voor deze opzet?**
+Alleen voor de compacte klok en de achtergrondverlenging. [WidgetLoft](/widgetloft) zelf werkt op iOS 18 en nieuwer. Eén grens om te kennen: de widget voor het toegangsscherm toont alleen apps op het bovenste niveau, dus mappen binnen een groep verschijnen daar niet.
+
+---
+
+Klaar voor een rustiger toegangsscherm? [Download WidgetLoft in de App Store](/widgetloft/download) en houd je belangrijkste apps op één tik afstand.

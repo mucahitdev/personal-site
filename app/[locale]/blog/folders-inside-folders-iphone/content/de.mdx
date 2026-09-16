@@ -1,0 +1,157 @@
+export const meta = {
+  title: "Ordner in Ordnern auf dem iPhone anlegen (verschachtelte Ordner)",
+  description:
+    "Ordner auf dem iOS-Home-Bildschirm können keine anderen Ordner enthalten. So bekommst du echte verschachtelte Ordner auf dem iPhone mit einem Widget: Ordner antippen, er öffnet sich an Ort und Stelle mit einer Zurück-Taste, beliebig viele Ebenen tief.",
+  keywords: [
+    "ordner in ordner iphone",
+    "verschachtelte ordner iphone",
+    "unterordner iphone home bildschirm",
+    "ordner in ordner verschieben ios",
+    "iphone unterordner erstellen",
+    "ordner widget iphone",
+  ],
+  ogTitle: "Ordner in Ordnern auf dem iPhone, endlich",
+  ogDescription:
+    "iOS verschachtelt keine Ordner. Ein WidgetLoft-Widget schon: Ordner antippen, er öffnet sich direkt im Widget mit einer Zurück-Taste.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline: "Ordner in Ordnern auf dem iPhone anlegen (verschachtelte Ordner)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/de/blog/folders-inside-folders-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "Verschachtelte Ordner auf dem iPhone mit einem Widget erstellen",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Gruppe und Ordner erstellen",
+        text: "Installiere WidgetLoft (früher FolderMini), erstelle eine Gruppe, öffne sie und tippe auf Neuer Ordner.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Apps und weitere Ordner hinzufügen",
+        text: "Füge dem Ordner Apps hinzu. Tippe darin erneut auf Neuer Ordner, um eine Ebene tiefer zu gehen.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Aussehen der Ordnerkachel wählen",
+        text: "Zeige den Ordner als 2×2- oder 3×3-Minigitter seiner Apps oder gib ihm ein eigenes Symbol aus einem Foto oder einem SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Widget platzieren",
+        text: "Lege den Finger auf den Home-Bildschirm, tippe auf die Plustaste, füge das WidgetLoft-Widget hinzu und wähle deine Gruppe.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zurück-Taste und automatische Rückkehr einstellen",
+        text: "Gestalte die Zurück-Taste im Editor und zieh sie auf einen beliebigen Platz, dann stelle Einstellungen, Widget, Automatisch zum Ordner zurück ein.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kann man auf dem iPhone einen Ordner in einen Ordner legen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Mit normalen Ordnern auf dem Home-Bildschirm nicht: iOS lässt dich keinen Ordner in einen anderen ziehen. Ein Ordner-Widget wie WidgetLoft kann das. Tippe auf einen Ordner und er öffnet sich im Widget, mit einer Zurück-Taste für eine Ebene nach oben.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wie viele Apps und Unterordner passen in einen WidgetLoft-Ordner?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Jeder Ordner fasst bis zu 100 Apps und 20 Unterordner, und die Verschachtelungstiefe ist unbegrenzt. Die kostenlose Version erlaubt 6 Gruppen und 21 Apps in der Bibliothek; WidgetLoft Pro hebt diese Grenzen auf.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Funktionieren verschachtelte Ordner im Sperrbildschirm-Widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nein. Das Sperrbildschirm-Widget zeigt nur eine Reihe mit Apps der obersten Ebene. Verschachtelte Ordner funktionieren in den Widgets auf dem Home-Bildschirm.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Ordner in Ordnern auf dem iPhone anlegen (verschachtelte Ordner)
+
+**Kurze Antwort:** Auf dem Home-Bildschirm des iPhone kannst du keinen Ordner in einen anderen Ordner legen. iOS lässt das einfach nicht zu. Echte verschachtelte Ordner bekommst du aber in einem Widget mit [WidgetLoft](/widgetloft) (früher FolderMini): Tippe auf einen Ordner, er öffnet sich direkt im Widget, eine Zurück-Taste bringt dich nach oben, und das so viele Ebenen tief, wie du willst.
+
+Du hast einen Ordner auf einen anderen gezogen und er ist zurückgesprungen? Du machst nichts falsch. Hier ist die Lösung, die wirklich funktioniert.
+
+---
+
+## Warum iOS keine Ordner verschachtelt
+
+Ordner auf dem Home-Bildschirm haben nur eine Ebene: Du kannst keinen Ordner in einen anderen ziehen, und keine Einstellung ändert das. Ein Ordner "Arbeit" kann also keine Ordner "Meetings" und "Dokumente" enthalten, und am Ende hast du entweder einen Riesenordner oder einen Home-Bildschirm voller kleiner Ordner.
+
+Ein Widget kann, was ein Ordner nicht kann. In [WidgetLoft](/widgetloft) wird eine Gruppe zu einem Widget auf dem Home-Bildschirm, und eine Gruppe kann Ordner enthalten, die wiederum Ordner enthalten. Tippst du auf eine Ordnerkachel, öffnet sich der Ordner an Ort und Stelle, und eine Zurück-Taste bringt dich eine Ebene nach oben.
+
+## Schritt für Schritt: verschachtelte Ordner auf dem iPhone erstellen
+
+1. **Gruppe und Ordner erstellen.** Installiere [WidgetLoft](/widgetloft), erstelle eine Gruppe, öffne sie und tippe auf **Neuer Ordner**.
+2. **Apps und weitere Ordner hinzufügen.** Füge dem Ordner Apps hinzu. Tippe darin erneut auf **Neuer Ordner**, um eine Ebene tiefer zu gehen.
+3. **Aussehen der Ordnerkachel wählen.** Zeige den Ordner als 2×2- oder 3×3-Minigitter der enthaltenen Apps oder gib ihm ein eigenes Symbol aus einem Foto oder einem SF Symbol.
+4. **Widget platzieren.** Lege den Finger auf den Home-Bildschirm, tippe auf **+**, füge das WidgetLoft-Widget hinzu und wähle deine Gruppe.
+5. **Zurück-Taste und automatische Rückkehr einstellen.** Wähle im Editor **Zurück-Taste** ein Symbol (12 Vorlagen oder ein beliebiges SF Symbol), die Symbolfarbe, die Hintergrundfarbe, die Deckkraft des Hintergrunds von 0 bis 100 % und die Größe, oder tippe auf **Auf Standard zurücksetzen**. Zieh die Zurück-Taste auf einen beliebigen Platz. Öffne dann **Einstellungen → Widget → Automatisch zum Ordner zurück**.
+
+## iOS-Ordner und WidgetLoft-Ordner im Vergleich
+
+| | Ordner auf dem iOS-Home-Bildschirm | WidgetLoft-Ordner |
+| --- | --- | --- |
+| Ordner in Ordnern | Nicht möglich | Ja, unbegrenzt tief |
+| Kapazität | Nur Apps, keine Unterordner | Bis zu 100 Apps und 20 Unterordner pro Ordner |
+| Wo er liegt | Als Symbol auf dem Home-Bildschirm | In einem Widget auf dem Home-Bildschirm, öffnet sich an Ort und Stelle |
+| Eigenes Aussehen | Kleine Vorschau der enthaltenen Apps | 2×2- oder 3×3-Minigitter oder eigenes Foto- oder Symbol-Icon |
+| Zurück | Außerhalb des Ordners tippen | Eine Zurück-Taste, die du gestalten und verschieben kannst |
+
+Mit [WidgetLoft](/widgetloft) passt dein ganzer Tag in ein einziges Widget, sortiert in Ordner, und jede App-Kachel öffnet ihre App weiterhin direkt.
+
+## So bleibt es übersichtlich
+
+- **Nach Routine gruppieren, nicht nach App-Typ.** Ein Ordner "Morgen" mit Nachrichten, Wetter und Kalender ist schneller als ein Ordner "Dienstprogramme", den du erst durchsuchen musst.
+- **Automatische Rückkehr nutzen.** Mit **Automatisch zum Ordner zurück** springt das Widget nach dem Öffnen einer App, nach einer Zeit ohne Nutzung (10 bis 60 Sekunden, standardmäßig 30) oder in beiden Fällen zurück nach oben. Du landest nie wieder in einem vergessenen Unterordner.
+
+Für ein größeres Aufräumen lies, [wie du deinen iPhone-Home-Bildschirm organisierst](/blog/organize-iphone-home-screen-2026).
+
+## Häufige Fragen
+
+**Kann man auf dem iPhone einen Ordner in einen Ordner legen?**
+Mit normalen Ordnern auf dem Home-Bildschirm nicht. Ein Ordner-Widget wie WidgetLoft kann das: Tippe auf einen Ordner, er öffnet sich im Widget, und eine Zurück-Taste bringt dich nach oben.
+
+**Wie viele Apps und Unterordner passen in einen Ordner?**
+Bis zu 100 Apps und 20 Unterordner pro Ordner, ohne Tiefenbegrenzung. Die kostenlose Version erlaubt 6 Gruppen und 21 Apps in der Bibliothek; WidgetLoft Pro hebt diese Grenzen auf.
+
+**Funktionieren verschachtelte Ordner im Sperrbildschirm-Widget?**
+Nein. Das Sperrbildschirm-Widget zeigt nur eine Reihe mit Apps der obersten Ebene. Verschachtelte Ordner funktionieren in den Widgets auf dem Home-Bildschirm.
+
+---
+
+Bereit zum Verschachteln? [Lade WidgetLoft im App Store](/widgetloft/download) und lege noch heute Ordner in Ordner.

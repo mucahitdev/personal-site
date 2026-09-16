@@ -16,6 +16,21 @@ const enPosts = [
 
 // Blog posts translated into every locale (same slug per locale).
 const multilingualPosts = [
+  'iphone-duo-home-screen-setup',
+  'iphone-duo-cover-screen-apps',
+  'best-widgets-iphone-duo',
+  'ios-27-home-screen-ideas',
+  'ios-27-widgets-whats-new',
+  'ios-27-lock-screen-setup',
+  'extra-large-widget-ios-27',
+  'dark-mode-app-icons-iphone',
+  'apps-in-dynamic-island-iphone',
+  'open-website-in-chrome-from-widget-iphone',
+  'folders-inside-folders-iphone',
+  'transparent-widget-iphone',
+  'call-whatsapp-contact-from-widget-iphone',
+  'custom-app-icons-without-shortcuts-iphone',
+  'notification-badges-on-widgets-iphone',
   'launch-apps-from-widgets-ios',
   'organize-iphone-home-screen-2026',
   'find-photos-of-a-person-iphone',

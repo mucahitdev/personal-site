@@ -1,0 +1,161 @@
+export const meta = {
+  title:
+    "iOS 27 Ekstra Büyük Widget'ı Tek Sayfalık Uygulama Başlatıcı Olarak Kullanma",
+  description:
+    "iOS 27, bütün bir Ana Ekran sayfasını kaplayan Ekstra Büyük widget'ı getiriyor. Nasıl ekleneceğini, hangi Apple uygulamalarının desteklediğini ve 77 uygulama kutucuğuna kadar sığan bir başlatıcıya nasıl dönüştürüleceğini öğrenin.",
+  keywords: [
+    "ios 27 ekstra büyük widget",
+    "iphone ekstra büyük widget",
+    "ios 27 tam sayfa widget",
+    "ekstra büyük widget nasıl eklenir",
+    "ios 27 uygulama başlatıcı widget",
+    "iphone tek sayfa ana ekran",
+  ],
+  ogTitle: "iOS 27 Ekstra Büyük Widget ile Tek Sayfalık Başlatıcı",
+  ogDescription:
+    "Yeni tam sayfa widget'ı ekleyin ve 77'ye kadar uygulama, klasör ve bir geri kutucuğuyla doldurun.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iOS 27 Ekstra Büyük Widget'ı Tek Sayfalık Uygulama Başlatıcı Olarak Kullanma",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/tr/blog/extra-large-widget-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iOS 27 Ekstra Büyük widget'ı tek sayfalık uygulama başlatıcıya dönüştürme",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "iOS 27'ye güncelleyin",
+        text: "Ekstra Büyük widget boyutu yalnızca iOS 27'de var, bu yüzden önce iPhone'unuzu Ayarlar, Genel, Yazılım Güncelleme bölümünden güncelleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "WidgetLoft'ta bir grup oluşturun",
+        text: "WidgetLoft'u (eski adıyla FolderMini) açın, bir grup oluşturun ve başlatıcı sayfanızda olmasını istediğiniz uygulamaları ekleyin. Birden fazla sayfa uygulama istiyorsanız alt klasörler ekleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Widget'ı Ekstra Büyük boyutta ekleyin",
+        text: "Ana Ekran'a basılı tutun, Düzenle'ye, ardından Widget Ekle'ye dokunun. WidgetLoft'u seçin, Ekstra Büyük boyuta gelene kadar boyutlar arasında kaydırın ve ekleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Grubunuzu seçin",
+        text: "Yeni widget'a basılı tutun, Widget'ı Düzenle'ye dokunun ve oluşturduğunuz grubu seçin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "İkon boyutu seçin",
+        text: "WidgetLoft'a dönüp grup için bir ikon boyutu seçin: küçük ikonlarla 77, orta ikonlarla 54, büyük ikonlarla 40 ve ekstra büyük ikonlarla 24 kutucuğa kadar sığar.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Ekstra Büyük widget iOS 26 veya daha eski sürümlerde çalışır mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Ekstra Büyük boyut iOS 27 ile geldi ve eski sürümlerde widget galerisinde görünmez. iOS 18 ile 26 arasında en büyük WidgetLoft widget'ı, 49 kutucuğa kadar sığan Büyük boyuttur.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ekstra Büyük widget'a kaç uygulama sığar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "WidgetLoft ile küçük ikonlarla 77, orta ikonlarla 54, büyük ikonlarla 40 ve ekstra büyük ikonlarla 24 kutucuğa kadar. Alt klasörler tek bir kutucuğun arkasına daha fazla uygulama ekler.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ekstra Büyük widget'ı Kilitli Ekran'da kullanabilir miyim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Ekstra Büyük bir Ana Ekran boyutudur. WidgetLoft'un Kilitli Ekran widget'ı 4 uygulamaya kadar, büyük ikonlarla 3 uygulamaya kadar tek bir satır olarak kalır.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27 Ekstra Büyük Widget'ı Tek Sayfalık Uygulama Başlatıcı Olarak Kullanma
+
+**Kısa cevap:** iOS 27, bütün bir Ana Ekran sayfasını dolduran Ekstra Büyük widget'ı getiriyor. Eklemek için Ana Ekran'a basılı tutun, Düzenle'ye, ardından Widget Ekle'ye dokunun, bir uygulama seçin ve Ekstra Büyük boyuta kaydırın. [WidgetLoft](/widgetloft) (eski adıyla FolderMini) ile bu sayfa, alt klasörler ve bir geri kutucuğuyla birlikte 77 uygulama kutucuğuna kadar sığan bir başlatıcıya dönüşür.
+
+Eskiden bütün bir sayfa, sıra sıra dağınık ikonlar demekti. Artık uygulamalarınızı kendi tasarladığınız düzenli bir ızgarada tutan tek bir widget olabilir.
+
+---
+
+## iOS 27'deki Ekstra Büyük widget nedir?
+
+Ekstra Büyük, bütün bir Ana Ekran sayfasını, yani 4×6'lık bir ızgara alanını kaplayan yeni bir widget boyutudur. Yalnızca 14 Eylül 2026'da yayımlanan iOS 27'de bulunur.
+
+İlk sırada Apple'ın kendi uygulamaları vardı: Takvim, Fotoğraflar, Müzik ve Hava Durumu Ekstra Büyük widget sunuyor, üçüncü taraf uygulamalar da bu boyutu destekleyebiliyor. Bir başlatıcı için bu, çok sayıda uygulamaya yer demek. Widget'lardaki değişikliklerin tam listesi için [iOS 27 widget'larındaki yenilikler](/blog/ios-27-widgets-whats-new) yazısını okuyun.
+
+## Adım adım: Ekstra Büyük widget'ı başlatıcıya dönüştürün
+
+1. **iOS 27'ye güncelleyin.** Ayarlar, Genel, Yazılım Güncelleme bölümüne gidin. Ekstra Büyük boyut eski sürümlerde yoktur.
+2. **WidgetLoft'ta bir grup oluşturun.** [WidgetLoft](/widgetloft)'u açın, bir grup oluşturun ve başlatıcı sayfanızda olmasını istediğiniz uygulamaları ekleyin. Bir seviye aşağıda durmasını istediğiniz her şey için **Yeni Klasör**'e dokunun.
+3. **Widget'ı Ekstra Büyük boyutta ekleyin.** Ana Ekran'a basılı tutun, **Düzenle**'ye, ardından **Widget Ekle**'ye dokunun. WidgetLoft'u seçin, Ekstra Büyük boyuta gelene kadar boyutlar arasında kaydırın ve ekleyin.
+4. **Grubunuzu seçin.** Yeni widget'a basılı tutun, **Widget'ı Düzenle**'ye dokunun ve oluşturduğunuz grubu seçin.
+5. **İkon boyutu seçin.** WidgetLoft'a dönüp grup için ikon boyutunu seçin. Küçük ikonlar en çok kutucuğu sığdırır, ekstra büyük ikonlara dokunmak ise en kolayıdır.
+
+Herhangi bir kutucuğa dokunduğunuzda o uygulama doğrudan açılır. Bir klasör kutucuğuna dokunduğunuzda klasör widget'ın içinde açılır, bir üst seviyeye çıkmak için de bir geri kutucuğu bulunur.
+
+## Her widget boyutuna kaç uygulama sığar
+
+| Widget boyutu | En fazla kutucuk (küçük ikonlar) |
+| --- | --- |
+| Küçük | 9 |
+| Orta | 21 |
+| Büyük | 49 |
+| Ekstra Büyük (iOS 27) | 77 |
+
+Büyük ikonlar, kapasiteden feragat edip rahatlık sağlar. Ekstra Büyük widget'ta orta ikonlarla 54, büyük ikonlarla 40 ve ekstra büyük ikonlarla 24 kutucuk sığar. iPad'de geniş Ekstra Büyük boyut 72 kutucuğa kadar alır. [WidgetLoft](/widgetloft) her yuvayı gerçek uygulama ikonlarıyla doldurur, düzeni şekillendirmek için web siteleri, kişiler, Kısayollar kutucukları veya boş ara kutucuklar da ekleyebilirsiniz.
+
+## Tam sayfada alt klasörler ve geri kutucuğu
+
+77 kutucuğun hepsini tek tek uygulamalara harcamak zorunda değilsiniz. Oyunları, seyahat uygulamalarını veya iş araçlarını alt klasörlere koyun. Her klasör 100 uygulamaya ve 20 alt klasöre kadar tutar, iç içe klasörlerde derinlik sınırı yoktur. Geri kutucuğunun görünümü değiştirilebilir ve istediğiniz yuvaya taşınabilir.
+
+Widget'ın kendini sıfırlamasını istiyorsanız Ayarlar, Widget bölümünde **Klasöre otomatik dön** seçeneğini açın.
+
+Dürüst bir not: WidgetLoft'un ücretsiz sürümü kitaplıkta 21 uygulamaya kadar tutar. Bütün bir sayfayı doldurmak için WidgetLoft Pro bu sınırı kaldırır.
+
+## Sık sorulan sorular
+
+**Ekstra Büyük widget iOS 26 veya daha eski sürümlerde çalışır mı?**
+Hayır. iOS 27 ile geldi. iOS 18 ile 26 arasında en büyük WidgetLoft widget'ı, 49 kutucuğa kadar sığan Büyük boyuttur.
+
+**Ekstra Büyük widget'a kaç uygulama sığar?**
+Küçük ikonlarla 77, ortayla 54, büyükle 40 ve ekstra büyük ikonlarla 24 kutucuğa kadar. Alt klasörler tek bir kutucuğun arkasına daha fazla uygulama ekler.
+
+**Ekstra Büyük widget'ı Kilitli Ekran'da kullanabilir miyim?**
+Hayır. Ekstra Büyük bir Ana Ekran boyutudur. WidgetLoft'un Kilitli Ekran widget'ı 4 uygulamaya kadar, büyük ikonlarla 3 uygulamaya kadar tek bir satır olarak kalır.
+
+---
+
+Tek sayfalık başlatıcınızı kurmaya hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve Ekstra Büyük widget'ınızı doldurun.

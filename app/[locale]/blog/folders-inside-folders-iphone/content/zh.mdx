@@ -1,0 +1,157 @@
+export const meta = {
+  title: "如何在 iPhone 上把文件夹放进文件夹（嵌套文件夹）",
+  description:
+    "iOS 主屏幕文件夹里不能再放文件夹。本文介绍如何用小组件在 iPhone 上实现真正的嵌套文件夹：轻点文件夹即在原位打开，用返回按钮回到上一层，层级不限。",
+  keywords: [
+    "iphone 文件夹里面建文件夹",
+    "iphone 嵌套文件夹",
+    "iphone 子文件夹 主屏幕",
+    "ios 文件夹套文件夹",
+    "iphone 多级文件夹",
+    "iphone 文件夹小组件",
+  ],
+  ogTitle: "iPhone 文件夹套文件夹，终于可以了",
+  ogDescription:
+    "iOS 不支持嵌套文件夹，WidgetLoft 小组件支持：轻点文件夹，它会带着返回按钮在原位打开。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "如何在 iPhone 上把文件夹放进文件夹（嵌套文件夹）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/zh/blog/folders-inside-folders-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "用小组件在 iPhone 上创建嵌套文件夹",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "创建群组和文件夹",
+        text: "安装 WidgetLoft （原 FolderMini），创建一个群组，打开它并轻点新建文件夹。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加 App 和更多文件夹",
+        text: "向文件夹添加 App。在其中再次轻点新建文件夹，即可再往下建一层。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择文件夹磁贴的样式",
+        text: "将文件夹显示为其中 App 的 2×2 或 3×3 迷你网格，或用照片或 SF Symbol 为它设置专属图标。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "放置小组件",
+        text: "长按主屏幕，轻点加号按钮，添加 WidgetLoft 小组件并选择你的群组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "调整返回按钮和自动返回",
+        text: "在编辑器中设置返回按钮的样式并把它拖到任意位置，然后设置 设置、小组件、自动返回文件夹。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone 上能把文件夹放进另一个文件夹吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "普通的主屏幕文件夹不行：iOS 不允许把一个文件夹拖进另一个文件夹。WidgetLoft 这类文件夹小组件可以做到。轻点文件夹，它会在小组件内打开，并提供返回按钮回到上一层。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "一个 WidgetLoft 文件夹能放多少 App 和子文件夹？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "每个文件夹最多可放 100 个 App 和 20 个子文件夹，嵌套层数不限。免费版可创建 6 个群组，素材库最多 21 个 App；WidgetLoft Pro 取消这些限制。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "嵌套文件夹在锁定屏幕小组件上能用吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不能。锁定屏幕小组件只显示一排最顶层的 App。嵌套文件夹适用于主屏幕小组件。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何在 iPhone 上把文件夹放进文件夹（嵌套文件夹）
+
+**快速回答：** 在 iPhone 主屏幕上，你无法把一个文件夹放进另一个文件夹，iOS 根本不允许。但借助 [WidgetLoft](/widgetloft) （原 FolderMini），你可以在小组件里实现真正的嵌套文件夹：轻点文件夹，它就在小组件中原位打开，用返回按钮回到上一层，想建多少层都可以。
+
+把文件夹拖到另一个文件夹上，结果被弹了回来？这不是你操作有误。下面是真正可行的办法。
+
+---
+
+## 为什么 iOS 不支持嵌套文件夹
+
+主屏幕文件夹只有一层：你不能把文件夹拖进另一个文件夹，也没有任何设置可以改变这一点。所以"工作"文件夹里放不了"会议"和"文档"两个文件夹，最后你要么有一个超大的文件夹，要么主屏幕上挤满了小文件夹。
+
+文件夹做不到的事，小组件可以做到。在 [WidgetLoft](/widgetloft) 中，群组会变成主屏幕小组件，群组里可以放文件夹，文件夹里还能再放文件夹。轻点文件夹磁贴，该文件夹就会原位打开，返回按钮则带你回到上一层。
+
+## 分步操作：在 iPhone 上创建嵌套文件夹
+
+1. **创建群组和文件夹。** 安装 [WidgetLoft](/widgetloft)，创建一个群组，打开它并轻点 **新建文件夹**。
+2. **添加 App 和更多文件夹。** 向文件夹添加 App。在其中再次轻点 **新建文件夹**，即可再往下建一层。
+3. **选择文件夹磁贴的样式。** 将文件夹显示为其中 App 的 2×2 或 3×3 迷你网格，或用照片或 SF Symbol 为它设置专属图标。
+4. **放置小组件。** 长按主屏幕，轻点 **+**，添加 WidgetLoft 小组件并选择你的群组。
+5. **调整返回按钮和自动返回。** 在 **返回按钮** 编辑器中选择符号（12 个预设或任意 SF Symbol）、符号颜色、背景颜色、0 到 100% 的背景不透明度和大小，或轻点 **重置为默认**。返回按钮可以拖到任意位置。然后前往 **设置 → 小组件 → 自动返回文件夹**。
+
+## iOS 文件夹与 WidgetLoft 文件夹对比
+
+| | iOS 主屏幕文件夹 | WidgetLoft 文件夹 |
+| --- | --- | --- |
+| 文件夹套文件夹 | 不支持 | 支持，层数不限 |
+| 容量 | 只能放 App，没有子文件夹 | 每个文件夹最多 100 个 App 和 20 个子文件夹 |
+| 位置 | 以图标形式放在主屏幕上 | 位于主屏幕小组件内，原位打开 |
+| 自定义外观 | 内部 App 的小预览 | 2×2 或 3×3 迷你网格，或专属照片、符号图标 |
+| 返回方式 | 轻点文件夹外部 | 可自定义样式、可移动位置的返回按钮 |
+
+有了 [WidgetLoft](/widgetloft)，一个小组件就能按文件夹装下你一整天要用的 App，而每个 App 磁贴依然直接打开对应的 App。
+
+## 保持整洁的小技巧
+
+- **按日常场景分组，而不是按 App 类型。** 放着新闻、天气和日历的"早晨"文件夹，比需要翻找的"工具"文件夹快得多。
+- **使用自动返回。** 开启 **自动返回文件夹** 后，小组件会在你打开 App 之后、闲置一段时间之后（10 到 60 秒，默认 30 秒），或两种情况下都回到最顶层。再也不会停留在被遗忘的子文件夹里。
+
+想彻底整理一遍，请阅读 [如何整理 iPhone 主屏幕](/blog/organize-iphone-home-screen-2026)。
+
+## 常见问题
+
+**iPhone 上能把文件夹放进另一个文件夹吗？**
+普通主屏幕文件夹不行。WidgetLoft 这类文件夹小组件可以：轻点文件夹，它会在小组件内打开，并用返回按钮回到上一层。
+
+**一个文件夹能放多少 App 和子文件夹？**
+每个文件夹最多 100 个 App 和 20 个子文件夹，层数不限。免费版可创建 6 个群组，素材库最多 21 个 App；WidgetLoft Pro 取消这些限制。
+
+**嵌套文件夹在锁定屏幕小组件上能用吗？**
+不能。锁定屏幕小组件只显示一排最顶层的 App。嵌套文件夹适用于主屏幕小组件。
+
+---
+
+准备好了吗？[在 App Store 下载 WidgetLoft](/widgetloft/download)，今天就把文件夹放进文件夹。

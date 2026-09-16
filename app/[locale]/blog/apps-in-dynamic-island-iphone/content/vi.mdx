@@ -1,0 +1,150 @@
+export const meta = {
+  title: "Cách đưa ứng dụng yêu thích vào Dynamic Island trên iPhone",
+  description:
+    "iOS không cho ghim phím tắt ứng dụng vào Dynamic Island, nhưng Hoạt động trực tiếp có thể hiển thị chúng. Đây là cách giữ tối đa 5 ứng dụng trong Dynamic Island và tối đa 10 trên Màn hình khóa.",
+  keywords: [
+    "ứng dụng trên dynamic island",
+    "phím tắt ứng dụng dynamic island",
+    "trình mở ứng dụng dynamic island iphone",
+    "cách thêm ứng dụng vào dynamic island",
+    "trình mở ứng dụng màn hình khóa hoạt động trực tiếp",
+    "mở nhanh dynamic island",
+  ],
+  ogTitle: "Đưa ứng dụng yêu thích vào Dynamic Island",
+  ogDescription:
+    "Trình mở ứng dụng dạng Hoạt động trực tiếp cho iPhone: tối đa 5 ứng dụng trong Dynamic Island và tối đa 10 trên Màn hình khóa.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline: "Cách đưa ứng dụng yêu thích vào Dynamic Island trên iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/vi/blog/apps-in-dynamic-island-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Đưa ứng dụng yêu thích vào Dynamic Island trên iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Tạo một nhóm",
+        text: "Mở WidgetLoft (trước đây là FolderMini), tạo một nhóm và thêm các ứng dụng bạn dùng nhiều nhất.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bật thanh Mở nhanh",
+        text: "Trong WidgetLoft, vào Cài đặt, rồi Dynamic Island & Hoạt động trực tiếp, và bật thanh Mở nhanh.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn thư mục",
+        text: "Trong mục Thư mục, chọn nhóm bạn muốn thấy trong Dynamic Island và trên Màn hình khóa.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Cho phép Hoạt động trực tiếp",
+        text: "Kiểm tra trong ứng dụng Cài đặt của iOS rằng Hoạt động trực tiếp đã được cho phép cho WidgetLoft.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Nhấn giữ Dynamic Island và chạm vào ứng dụng",
+        text: "Nhấn giữ Dynamic Island để mở rộng hàng có tối đa 5 ứng dụng, rồi chạm vào một ứng dụng để mở.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Vì sao ứng dụng của tôi biến mất khỏi Dynamic Island?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS kết thúc Hoạt động trực tiếp sau vài giờ (khoảng 8 giờ khi đang hoạt động). WidgetLoft khởi động lại thanh Mở nhanh mỗi khi bạn mở ứng dụng, nên chỉ cần mở ứng dụng một chút là nó quay lại.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tôi có thể đặt hơn 5 ứng dụng vào Dynamic Island không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Dynamic Island khi mở rộng hiển thị một hàng tối đa 5 ứng dụng. Biểu ngữ trên Màn hình khóa hiển thị tối đa 10 ứng dụng của cùng nhóm, trên hai hàng.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Thanh Mở nhanh đã hoàn thiện chưa?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tính năng này được đánh dấu Beta trong WidgetLoft. Nó dựa trên Hoạt động trực tiếp của iOS, nên cần cho phép Hoạt động trực tiếp cho WidgetLoft và tuân theo giới hạn thời gian mà iOS đặt ra.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách đưa ứng dụng yêu thích vào Dynamic Island trên iPhone
+
+**Trả lời nhanh:** iOS không có cài đặt nào để ghim phím tắt ứng dụng vào Dynamic Island. Ở đó chỉ hiển thị Hoạt động trực tiếp. [WidgetLoft](/widgetloft) (trước đây là FolderMini) tận dụng chính điều đó: thanh Mở nhanh của nó là một Hoạt động trực tiếp phản chiếu một nhóm của bạn, nhờ vậy có tối đa 5 ứng dụng trong Dynamic Island và tối đa 10 trên Màn hình khóa.
+
+Dynamic Island luôn nằm trong tầm mắt, nên đây là chỗ lý tưởng cho những ứng dụng bạn mở cả ngày. Dưới đây là cách đưa chúng vào đó trong khoảng một phút.
+
+---
+
+## Vì sao Dynamic Island không nhận phím tắt ứng dụng
+
+Apple tạo ra Dynamic Island cho Hoạt động trực tiếp: đồng hồ hẹn giờ, đơn giao đồ ăn, tỉ số trận đấu trực tiếp. Bạn không thể kéo biểu tượng ứng dụng vào đó, và cũng không có cài đặt nào để ghim biểu tượng. Biểu ngữ Hoạt động trực tiếp trên Màn hình khóa cũng vậy.
+
+Vì thế mẹo là dùng một Hoạt động trực tiếp có nội dung là một hàng ứng dụng của chính bạn. Đó chính là việc **thanh Mở nhanh** của WidgetLoft làm. Nó phản chiếu một nhóm trong ứng dụng, với cùng các biểu tượng, và giữ nhóm đó trong Dynamic Island và trên Màn hình khóa.
+
+## Từng bước: đưa ứng dụng vào Dynamic Island
+
+1. **Tạo một nhóm.** Mở [WidgetLoft](/widgetloft), tạo một nhóm trong tab Nhóm và thêm các ứng dụng bạn dùng thường xuyên nhất. Dynamic Island hiển thị tối đa 5, nên một nhóm 5 ứng dụng sẽ vừa khít.
+2. **Bật thanh Mở nhanh.** Vào Cài đặt → **Dynamic Island & Hoạt động trực tiếp** và bật **thanh Mở nhanh**.
+3. **Chọn thư mục.** Trong mục **Thư mục**, chọn nhóm bạn vừa tạo.
+4. **Cho phép Hoạt động trực tiếp.** Nếu không thấy gì, hãy mở ứng dụng Cài đặt của iOS, tìm WidgetLoft và kiểm tra rằng Hoạt động trực tiếp đã được cho phép.
+5. **Nhấn giữ Dynamic Island và chạm vào ứng dụng.** Dynamic Island thu gọn hiển thị một biểu tượng lưới và số lượng ứng dụng. Nhấn giữ để mở rộng hàng, rồi chạm vào biểu tượng bất kỳ.
+
+## Dynamic Island so với biểu ngữ Màn hình khóa
+
+| | Dynamic Island | Biểu ngữ Màn hình khóa |
+| --- | --- | --- |
+| Số ứng dụng hiển thị | Tối đa 5 | Tối đa 10 |
+| Số hàng | Một hàng | Một hàng khi có tối đa 5, hai hàng khi có 6 đến 10 |
+| Khi chạm | Mở ứng dụng trực tiếp, chỉ một lần chạm | Yêu cầu mở khóa bằng Face ID trước, rồi mới mở ứng dụng |
+| Ô trang web | Mở trong trình duyệt bạn đã chọn | Mở trong trình duyệt bạn đã chọn |
+| Giao diện | Thu gọn: biểu tượng lưới và số lượng ứng dụng | Tô theo màu của nhóm, hoặc Liquid Glass của hệ thống với nhóm Trong suốt |
+
+Mở bằng một lần chạm từ Dynamic Island là tính năng mới trong [WidgetLoft](/widgetloft) 2.1.0: ứng dụng mở ngay lập tức, không phải đi qua WidgetLoft trước. Trên Màn hình khóa, iPhone của bạn vẫn đang khóa, nên bạn xác nhận bằng Face ID rồi ứng dụng mới mở. Nếu bạn đang sắp xếp lại toàn bộ Màn hình khóa, hãy xem thêm [cách thiết lập Màn hình khóa iOS 27](/blog/ios-27-lock-screen-setup).
+
+## Câu hỏi thường gặp
+
+**Vì sao ứng dụng của tôi biến mất khỏi Dynamic Island?**
+iOS kết thúc Hoạt động trực tiếp sau vài giờ (khoảng 8 giờ khi đang hoạt động). WidgetLoft khởi động lại thanh Mở nhanh mỗi khi bạn mở ứng dụng, nên chỉ cần mở ứng dụng một chút là nó quay lại.
+
+**Tôi có thể đặt hơn 5 ứng dụng vào Dynamic Island không?**
+Không. Dynamic Island khi mở rộng hiển thị một hàng tối đa 5 ứng dụng. Biểu ngữ trên Màn hình khóa hiển thị tối đa 10 ứng dụng của cùng nhóm, trên hai hàng.
+
+**Thanh Mở nhanh đã hoàn thiện chưa?**
+Tính năng này được đánh dấu Beta trong ứng dụng. Nó dựa trên Hoạt động trực tiếp của iOS, nên cần cho phép Hoạt động trực tiếp cho WidgetLoft và tuân theo giới hạn thời gian mà iOS đặt ra.
+
+---
+
+Sẵn sàng dùng thử chưa? [Tải WidgetLoft trên App Store](/widgetloft/download) và mở ứng dụng yêu thích từ Dynamic Island chỉ bằng một lần chạm.

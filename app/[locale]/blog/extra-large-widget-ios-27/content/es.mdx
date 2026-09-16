@@ -1,0 +1,161 @@
+export const meta = {
+  title:
+    "Cómo usar el widget extragrande de iOS 27 como lanzador de apps de una página",
+  description:
+    "iOS 27 añade un widget extragrande que ocupa una página entera de la pantalla de inicio. Aprende a añadirlo, qué apps de Apple lo admiten y cómo convertirlo en un lanzador con hasta 77 mosaicos de apps.",
+  keywords: [
+    "widget extragrande ios 27",
+    "widget extragrande iphone",
+    "widget de página completa ios 27",
+    "cómo añadir widget extragrande",
+    "widget lanzador de apps ios 27",
+    "pantalla de inicio de una página iphone",
+  ],
+  ogTitle: "El widget extragrande de iOS 27 como lanzador de una página",
+  ogDescription:
+    "Añade el nuevo widget de página completa y llénalo con hasta 77 apps, carpetas y un mosaico para volver.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "es",
+    headline:
+      "Cómo usar el widget extragrande de iOS 27 como lanzador de apps de una página",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/es/blog/extra-large-widget-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "es",
+    name: "Convierte el widget extragrande de iOS 27 en un lanzador de apps de una página",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Actualiza a iOS 27",
+        text: "El tamaño extragrande solo existe en iOS 27, así que primero actualiza tu iPhone en Ajustes, General, Actualización de software.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Crea un grupo en WidgetLoft",
+        text: "Abre WidgetLoft (antes FolderMini), crea un grupo y añade las apps que quieres en tu página lanzadora. Añade subcarpetas si quieres más de una página de apps.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Añade el widget en tamaño extragrande",
+        text: "Mantén pulsada la pantalla de inicio, toca Editar y luego Añadir widget. Elige WidgetLoft y desliza por los tamaños hasta llegar a Extragrande; después, añádelo.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Elige tu grupo",
+        text: "Mantén pulsado el nuevo widget, toca Editar widget y elige el grupo que creaste.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Elige un tamaño de icono",
+        text: "De vuelta en WidgetLoft, elige un tamaño de icono para el grupo: los iconos pequeños admiten hasta 77 mosaicos, los medianos 54, los grandes 40 y los extragrandes 24.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "es",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿El widget extragrande funciona en iOS 26 o anterior?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. El tamaño extragrande es nuevo en iOS 27 y no aparece en la galería de widgets de versiones anteriores. De iOS 18 a iOS 26, el widget más grande de WidgetLoft es el grande, con hasta 49 mosaicos.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuántas apps caben en el widget extragrande?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Con WidgetLoft, hasta 77 mosaicos con iconos pequeños, 54 con iconos medianos, 40 con iconos grandes y 24 con iconos extragrandes. Las subcarpetas añaden más apps detrás de un solo mosaico.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Puedo usar un widget extragrande en la pantalla bloqueada?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Extragrande es un tamaño de la pantalla de inicio. El widget de pantalla bloqueada de WidgetLoft sigue siendo una fila de hasta 4 apps, o 3 con iconos grandes.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cómo usar el widget extragrande de iOS 27 como lanzador de apps de una página
+
+**Respuesta rápida:** iOS 27 añade un widget extragrande que llena una página completa de la pantalla de inicio. Para añadirlo, mantén pulsada la pantalla de inicio, toca Editar y luego Añadir widget, elige una app y desliza hasta el tamaño extragrande. Con [WidgetLoft](/widgetloft) (antes FolderMini) esa página se convierte en un lanzador con hasta 77 mosaicos de apps, además de subcarpetas y un mosaico para volver.
+
+Antes, una página entera significaba filas de iconos sueltos. Ahora puede ser un solo widget que reúne tus apps en una cuadrícula ordenada diseñada por ti.
+
+---
+
+## ¿Qué es el widget extragrande de iOS 27?
+
+Extragrande es un nuevo tamaño de widget que cubre una página completa de la pantalla de inicio, un área de cuadrícula de 4×6. Solo existe en iOS 27, publicado el 14 de septiembre de 2026.
+
+Las propias apps de Apple fueron las primeras: Calendario, Fotos, Música y Tiempo ofrecen un widget extragrande, y las apps de terceros también pueden admitirlo. Para un lanzador, significa espacio para muchísimas apps. Si quieres la lista completa de cambios en los widgets, lee [las novedades de los widgets en iOS 27](/blog/ios-27-widgets-whats-new).
+
+## Paso a paso: convierte el widget extragrande en un lanzador
+
+1. **Actualiza a iOS 27.** Ve a Ajustes, General, Actualización de software. El tamaño extragrande no existe en versiones anteriores.
+2. **Crea un grupo en WidgetLoft.** Abre [WidgetLoft](/widgetloft), crea un grupo y añade las apps que quieres en tu página lanzadora. Toca **Nueva carpeta** para todo lo que quieras un nivel más abajo.
+3. **Añade el widget en tamaño extragrande.** Mantén pulsada la pantalla de inicio, toca **Editar** y luego **Añadir widget**. Elige WidgetLoft y desliza por los tamaños hasta llegar a Extragrande; después, añádelo.
+4. **Elige tu grupo.** Mantén pulsado el nuevo widget, toca **Editar widget** y elige el grupo que creaste.
+5. **Elige un tamaño de icono.** De vuelta en WidgetLoft, elige el tamaño de icono del grupo. Los iconos pequeños admiten más mosaicos; los extragrandes son los más fáciles de tocar.
+
+Toca cualquier mosaico y esa app se abre directamente. Toca un mosaico de carpeta y se abre ahí mismo en el widget, con un mosaico para volver un nivel atrás.
+
+## Cuántas apps caben en cada tamaño de widget
+
+| Tamaño del widget | Máximo de mosaicos (iconos pequeños) |
+| --- | --- |
+| Pequeño | 9 |
+| Mediano | 21 |
+| Grande | 49 |
+| Extragrande (iOS 27) | 77 |
+
+Los iconos más grandes cambian capacidad por comodidad. En el widget extragrande, los iconos medianos admiten 54 mosaicos, los grandes 40 y los extragrandes 24. En el iPad, el tamaño extragrande ancho admite hasta 72. [WidgetLoft](/widgetloft) llena cada hueco con iconos reales de apps, y puedes añadir sitios web, contactos, mosaicos de Atajos o espacios en blanco para dar forma a la distribución.
+
+## Subcarpetas y el mosaico para volver en una página completa
+
+No tienes que gastar los 77 mosaicos en apps sueltas. Pon los juegos, las apps de viaje o las herramientas de trabajo en subcarpetas. Cada carpeta admite hasta 100 apps y 20 subcarpetas, y el anidamiento no tiene límite de profundidad. El mosaico para volver se puede personalizar y mover a cualquier hueco.
+
+Si quieres que el widget se reinicie solo, activa **Volver automáticamente a la carpeta** en Ajustes, Widget.
+
+Una nota honesta: la versión gratuita de WidgetLoft admite hasta 21 apps en la biblioteca. Para llenar una página completa, WidgetLoft Pro elimina ese límite.
+
+## Preguntas frecuentes
+
+**¿El widget extragrande funciona en iOS 26 o anterior?**
+No. Es nuevo en iOS 27. De iOS 18 a iOS 26, el widget más grande de WidgetLoft es el grande, con hasta 49 mosaicos.
+
+**¿Cuántas apps caben en el widget extragrande?**
+Hasta 77 mosaicos con iconos pequeños, 54 con medianos, 40 con grandes y 24 con iconos extragrandes. Las subcarpetas añaden más apps detrás de un solo mosaico.
+
+**¿Puedo usar un widget extragrande en la pantalla bloqueada?**
+No. Extragrande es un tamaño de la pantalla de inicio. El widget de pantalla bloqueada de WidgetLoft sigue siendo una fila de hasta 4 apps, o 3 con iconos grandes.
+
+---
+
+¿Listo para crear tu lanzador de una página? [Descarga WidgetLoft en la App Store](/widgetloft/download) y llena tu widget extragrande.

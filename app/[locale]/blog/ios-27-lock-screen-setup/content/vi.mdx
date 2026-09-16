@@ -1,0 +1,154 @@
+export const meta = {
+  title:
+    "Cách thiết lập Màn hình khóa iOS 27 gọn gàng (đồng hồ thu gọn và mở app bằng một chạm)",
+  description:
+    "Thiết lập Màn hình khóa iOS 27 gọn gàng: chọn hình nền, bật đồng hồ thu gọn, rồi thêm app bằng widget Màn hình khóa của WidgetLoft và Thanh Mở nhanh.",
+  keywords: [
+    "màn hình khóa ios 27",
+    "đồng hồ thu gọn ios 27",
+    "tùy chỉnh màn hình khóa ios 27",
+    "trình khởi chạy app màn hình khóa iphone",
+    "mở app từ màn hình khóa iphone",
+    "widget app màn hình khóa iphone",
+  ],
+  ogTitle: "Màn hình khóa iOS 27 gọn gàng với app mở bằng một chạm",
+  ogDescription:
+    "Đồng hồ thu gọn, hình nền tràn màn hình và các app yêu thích chỉ cách một chạm trên Màn hình khóa iOS 27.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Cách thiết lập Màn hình khóa iOS 27 gọn gàng (đồng hồ thu gọn và mở app bằng một chạm)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/vi/blog/ios-27-lock-screen-setup",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Thiết lập Màn hình khóa iOS 27 gọn gàng với app mở bằng một chạm",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Chọn hình nền",
+        text: "Chạm và giữ Màn hình khóa, chạm Tùy chỉnh và chọn một ảnh. Nếu ảnh không lấp đầy màn hình, hãy để tính năng mở rộng hình nền của iOS 27 kéo giãn nó.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bật đồng hồ thu gọn",
+        text: "Trong cùng trình chỉnh sửa, chọn tùy chọn đồng hồ thu gọn để giờ chuyển lên trên, cạnh ngày và các widget của bạn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm widget Màn hình khóa của WidgetLoft",
+        text: "Tạo một nhóm gồm các app chính trong WidgetLoft (trước đây là FolderMini), sau đó thêm widget WidgetLoft trong trình chỉnh sửa Màn hình khóa và chọn nhóm đó. Widget hiển thị một hàng tối đa 4 app.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bật Thanh Mở nhanh",
+        text: "Trong WidgetLoft, mở Cài đặt, rồi Dynamic Island & Hoạt động trực tiếp, và bật Thanh Mở nhanh. Hoạt động trực tiếp phải được cho phép với WidgetLoft trong Cài đặt iOS.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn nhóm",
+        text: "Trong Thư mục, chọn nhóm muốn hiển thị. Tối đa 10 app xuất hiện trên Màn hình khóa và tối đa 5 app trong Dynamic Island.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Tôi có thể mở app từ Màn hình khóa mà không cần mở khóa không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Trên Màn hình khóa, cả widget WidgetLoft và Thanh Mở nhanh đều yêu cầu bạn mở khóa trước, ví dụ bằng Face ID, rồi mới mở app. WidgetLoft có thể hiện lên trong chốc lát. Trong Dynamic Island, app mở chỉ với một chạm.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Vì sao Thanh Mở nhanh biến mất khỏi Màn hình khóa?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iOS kết thúc Hoạt động trực tiếp sau vài giờ. WidgetLoft khởi động lại thanh mỗi khi bạn mở app. Nếu thanh không bao giờ xuất hiện, hãy kiểm tra xem Hoạt động trực tiếp đã được cho phép với WidgetLoft trong Cài đặt iOS chưa.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tôi có cần iOS 27 cho thiết lập này không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Chỉ cần cho đồng hồ thu gọn và mở rộng hình nền, vì đó là tính năng của iOS 27. Bản thân WidgetLoft chạy trên iOS 18 trở lên. Lưu ý rằng widget Màn hình khóa chỉ hiển thị app ở cấp cao nhất, nên thư mục bên trong nhóm sẽ không xuất hiện ở đó.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách thiết lập Màn hình khóa iOS 27 gọn gàng (đồng hồ thu gọn và mở app bằng một chạm)
+
+**Trả lời nhanh:** Chạm và giữ Màn hình khóa, chạm **Tùy chỉnh**, chọn hình nền và bật tùy chọn đồng hồ thu gọn của iOS 27 để giờ chiếm ít chỗ hơn. Sau đó thêm app: widget Màn hình khóa của [WidgetLoft](/widgetloft) (trước đây là FolderMini) chứa một hàng tối đa 4 app, còn Thanh Mở nhanh đặt tối đa 10 app lên Màn hình khóa.
+
+iOS 27 cho Màn hình khóa nhiều khoảng trống hơn. Cách tốt nhất để dùng khoảng trống đó là dành cho những app bạn thật sự hay mở, chứ không chỉ là một chiếc đồng hồ to hơn.
+
+---
+
+## iOS 27 thay đổi gì trên Màn hình khóa
+
+Có hai thay đổi trong iOS 27 quan trọng cho một thiết lập gọn gàng:
+
+- **Đồng hồ thu gọn.** Giờ nhỏ lại và nằm ở phía trên, cạnh ngày và các widget, thay vì chiếm phần giữa màn hình.
+- **Mở rộng hình nền.** iOS có thể mở rộng ảnh để lấp đầy toàn bộ Màn hình khóa, hữu ích với những ảnh không vừa khít.
+
+Điều iOS vẫn chưa có là một hàng app chạm vào là mở. Widget Màn hình khóa mặc định chỉ hiển thị thông tin, không mở các app khác của bạn. [WidgetLoft](/widgetloft) lấp khoảng trống đó bằng hai công cụ: một widget Màn hình khóa luôn có mặt, và Thanh Mở nhanh, một Hoạt động trực tiếp với danh sách app dài hơn.
+
+## Từng bước: thiết lập Màn hình khóa iOS 27 gọn gàng
+
+1. **Chọn hình nền.** Chạm và giữ Màn hình khóa, chạm **Tùy chỉnh** và chọn một ảnh. Nếu ảnh không lấp đầy màn hình, hãy để tính năng mở rộng hình nền của iOS 27 kéo giãn nó.
+2. **Bật đồng hồ thu gọn.** Trong cùng trình chỉnh sửa, chọn tùy chọn đồng hồ thu gọn. Giờ chuyển lên trên, cạnh ngày và các widget của bạn.
+3. **Thêm widget Màn hình khóa của WidgetLoft.** Trong WidgetLoft, tạo một nhóm gồm các app chính. Quay lại trình chỉnh sửa Màn hình khóa, thêm widget **WidgetLoft** và chọn nhóm đó. Widget hiển thị một hàng tối đa 4 app (3 app khi dùng biểu tượng lớn).
+4. **Bật Thanh Mở nhanh.** Mở WidgetLoft, vào **Cài đặt → Dynamic Island & Hoạt động trực tiếp** và bật **Thanh Mở nhanh** (Beta).
+5. **Chọn nhóm.** Trong **Thư mục**, chọn nhóm bạn muốn. Tối đa 10 app xuất hiện trong một banner trên Màn hình khóa và tối đa 5 app trong Dynamic Island.
+
+## Widget Màn hình khóa hay Thanh Mở nhanh
+
+| | Widget Màn hình khóa | Thanh Mở nhanh |
+| --- | --- | --- |
+| Số app | Một hàng tối đa 4 (3 với biểu tượng lớn) | Tối đa 10 trên Màn hình khóa, tối đa 5 trong Dynamic Island |
+| Khi nào hiển thị | Luôn luôn, như một phần của Màn hình khóa | Trong vài giờ sau khi bạn mở WidgetLoft |
+| Chạm trên Màn hình khóa | Mở khóa trước, rồi app mở | Mở khóa bằng Face ID trước, rồi app mở |
+| Dynamic Island | Không có | Chạm và giữ đảo, rồi chạm một app để mở bằng một chạm |
+
+Bạn không cần phải chọn một. Đặt 4 app bạn mở cả ngày vào widget, và dùng Thanh Mở nhanh cho danh sách dài hơn muốn để gần tay trong một thời gian. Để biết thêm về phần đảo, hãy đọc [cách đưa app vào Dynamic Island](/blog/apps-in-dynamic-island-iphone).
+
+## Câu hỏi thường gặp
+
+**Tôi có thể mở app từ Màn hình khóa mà không cần mở khóa không?**
+Không. Trên Màn hình khóa, cả widget và Thanh Mở nhanh đều yêu cầu bạn mở khóa trước (ví dụ bằng Face ID), rồi mới mở app. WidgetLoft có thể hiện lên trong chốc lát. Trong Dynamic Island, app mở chỉ với một chạm.
+
+**Vì sao Thanh Mở nhanh biến mất khỏi Màn hình khóa?**
+iOS kết thúc Hoạt động trực tiếp sau vài giờ. WidgetLoft khởi động lại thanh mỗi khi bạn mở app. Nếu thanh không bao giờ xuất hiện, hãy kiểm tra xem Hoạt động trực tiếp đã được cho phép với WidgetLoft trong Cài đặt iOS chưa.
+
+**Tôi có cần iOS 27 cho thiết lập này không?**
+Chỉ cần cho đồng hồ thu gọn và mở rộng hình nền. Bản thân [WidgetLoft](/widgetloft) chạy trên iOS 18 trở lên. Một giới hạn nên biết: widget Màn hình khóa chỉ hiển thị app ở cấp cao nhất, nên thư mục bên trong nhóm sẽ không xuất hiện ở đó.
+
+---
+
+Sẵn sàng cho Màn hình khóa gọn gàng hơn? [Tải WidgetLoft trên App Store](/widgetloft/download) và giữ các app chính chỉ cách một chạm.

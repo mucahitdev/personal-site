@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "如何从 iPhone 小组件用 Chrome（或任意浏览器）打开网站",
+  description:
+    "添加到 iPhone 主屏幕的网站总是在 Safari 或默认浏览器中打开。本文介绍如何直接从小组件用 Chrome、Firefox、Brave 或全屏视图打开网站，可以对所有网站统一设置，也可以只设置某一个。",
+  keywords: [
+    "iphone 主屏幕 网站 用chrome打开",
+    "iphone 小组件 链接 chrome 打开",
+    "添加到主屏幕 chrome iphone",
+    "主屏幕书签 总是用safari打开",
+    "iphone 网站小组件 选择浏览器",
+    "小组件 全屏打开网站 iphone",
+  ],
+  ogTitle: "从 iPhone 小组件用 Chrome 打开网站",
+  ogDescription:
+    "为小组件里的网站选择 Chrome、Firefox、Brave 或全屏视图，可以统一设置，也可以单独设置某个网站。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何从 iPhone 小组件用 Chrome（或任意浏览器）打开网站",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "从 iPhone 小组件用 Chrome 或其他浏览器打开网站",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "把网站添加为图块",
+        text: "在 WidgetLoft （原 FolderMini）中进入素材库，轻点添加图块，选择网站并粘贴网址。图标和名称会自动填好。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "放进小组件",
+        text: "把网站图块添加到一个群组，然后把 WidgetLoft 小组件添加到主屏幕。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "为所有网站选择浏览器",
+        text: "前往设置、小组件、网站打开方式，选择 Chrome、Firefox、Brave 或其他浏览器；想要全屏视图就选择在 WidgetLoft 内。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "按需单独修改某个网站",
+        text: "打开网站图块，轻点打开方式，只为该网站选择其他选项，或保持跟随设置。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "列表里没有你的浏览器时添加自定浏览器",
+        text: "在自定浏览器中轻点添加浏览器，输入名称和包含 {url} 的地址格式，然后轻点试一试。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "为什么主屏幕上的网站总是在 Safari 中打开？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "用 Safari 的添加到主屏幕创建的书签会在 Safari 中打开，而大多数链接类小组件会把网址交给默认浏览器。如果只想让这些链接用其他浏览器打开，就需要一个能选择浏览器的小组件，比如 WidgetLoft。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "如果我选的浏览器没有安装会怎样？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "网站会改用默认浏览器打开，所以点了图块不会毫无反应。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "在 WidgetLoft 内打开的网站会保持登录吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "WidgetLoft 内置浏览器的登录与 Safari 相互独立，因此你可能需要在那里登录一次。如果想沿用现有的登录状态，请选择你平时用的浏览器。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何从 iPhone 小组件用 Chrome（或任意浏览器）打开网站
+
+**简短回答：** 添加到 iPhone 主屏幕的网站会在 Safari 或默认浏览器中打开，而且无法按链接单独更改。使用 [WidgetLoft](/widgetloft) （原 FolderMini），你可以把网站添加为小组件图块，然后在设置 → 小组件 → 网站打开方式中选择 Chrome、Firefox、Brave、其他浏览器或全屏视图，可以对所有网站生效，也可以只针对某一个。
+
+也许你的默认浏览器是 Safari，但工作用的后台面板在 Chrome 里。主屏幕上轻点一下，就应该直接到对的地方。
+
+---
+
+## 为什么主屏幕上的网站总是在 Safari 中打开
+
+Safari 的**添加到主屏幕**会创建一个属于 Safari 的书签。大多数链接类小组件最后也是同样的结果：把网址交给你的**默认浏览器**。
+
+更改默认浏览器会影响所有 App 里的所有链接。你通常想要的其实更具体：*这个*网站用 Chrome，其余照旧。WidgetLoft 的网站图块正好做到这一点：所有网站使用一个浏览器，任意单个网站都可以另外设置。
+
+## 分步操作：从小组件用 Chrome 打开网站
+
+1. **把网站添加为图块。** 在 [WidgetLoft](/widgetloft) 中进入**素材库** → **添加图块** → **网站**，粘贴网址。网站图标和名称会自动填好。
+2. **放进小组件。** 把图块添加到一个群组，然后把 WidgetLoft 小组件添加到主屏幕（长按主屏幕，轻点 **+**，搜索 WidgetLoft）。
+3. **为所有网站选择浏览器。** 前往**设置** → **小组件** → **网站打开方式**，在 Safari、Chrome、Firefox、Edge、Brave、DuckDuckGo、Opera、Opera GX、Aloha、Yandex 中选择。想要全屏视图，就选**在 WidgetLoft 内**。
+4. **单独修改某个网站（可选）。** 打开网站图块，轻点**打开方式**并选择其他选项。只对该网站生效。选**跟随设置**即可恢复。
+5. **添加自定浏览器（可选）。** 列表里没有？前往**自定浏览器** → **添加浏览器**，填写名称和包含 `{url}` 的地址格式，然后轻点**试一试**。
+
+## 该选哪个选项
+
+| 选项 | 适用场景 |
+| --- | --- |
+| 默认浏览器 | 你对手机其他地方使用的浏览器很满意 |
+| 指定浏览器（Chrome、Firefox、Brave 等） | 你的书签、密码或扩展在一个非默认的浏览器里 |
+| 在 WidgetLoft 内 | 你想全屏查看网站、不要标签页，需要时再用**在浏览器中打开**按钮 |
+| 自定浏览器 | 你的浏览器不在列表里，而你知道它的地址格式 |
+
+这些选项可以随意搭配。把 [WidgetLoft](/widgetloft) 的全局设置设为你最常用的浏览器，再用**打开方式**让某个银行或工作网站在别处打开。
+
+## 需要了解的情况
+
+- **WidgetLoft 会先短暂打开一下**：当你选择默认浏览器以外的选项时。选默认浏览器时，网站会直接打开。
+- **如果所选浏览器没有安装**，网站会在默认浏览器中打开。
+- **WidgetLoft 内置浏览器的登录与 Safari 相互独立**，所以可能需要在那里再登录一次。
+- **这不是网页 App 模式。** 在 WidgetLoft 内是全屏浏览器视图，而不是单独安装的网页 App。
+- **在灵动岛中同样适用。** 如果你使用快速启动栏，灵动岛和锁定屏幕横幅中的网站图块也会在你选的浏览器中打开。
+
+网站和 App 可以放在同一个小组件里。关于 App 图块，请参阅[如何通过小组件启动 App](/blog/launch-apps-from-widgets-ios)。
+
+## 常见问题
+
+**为什么主屏幕上的网站总是在 Safari 中打开？**
+用 Safari 的添加到主屏幕创建的书签会在 Safari 中打开，而大多数链接类小组件使用默认浏览器。[WidgetLoft](/widgetloft) 的网站图块则可以让你自己选择浏览器。
+
+**如果我选的浏览器没有安装会怎样？**
+网站会在默认浏览器中打开，图块依然可用。
+
+**在 WidgetLoft 内打开的网站会保持登录吗？**
+那里的登录与 Safari 相互独立，所以可能需要登录一次。想沿用现有登录状态？选择你平时用的浏览器即可。
+
+---
+
+想让常用网站一键直达，并用你喜欢的浏览器打开？[前往 App Store 下载 WidgetLoft](/widgetloft/download)。

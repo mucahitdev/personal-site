@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Como abrir um site no Chrome (ou em qualquer navegador) a partir de um widget do iPhone",
+  description:
+    "Os sites que você adiciona à Tela de Início do iPhone sempre abrem no Safari ou no navegador padrão. Veja como abrir um site no Chrome, Firefox, Brave ou em tela cheia direto de um widget, para todos os sites ou só para um.",
+  keywords: [
+    "abrir site no chrome pela tela de início iphone",
+    "widget iphone abrir link no chrome",
+    "adicionar site à tela de início chrome iphone",
+    "atalho da tela de início abre no safari",
+    "widget de site iphone escolher navegador",
+    "abrir site em tela cheia pelo widget iphone",
+  ],
+  ogTitle: "Abra um site no Chrome a partir de um widget do iPhone",
+  ogDescription:
+    "Escolha Chrome, Firefox, Brave ou uma visualização em tela cheia para os sites do seu widget, para todos ou só para um.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pt",
+    headline:
+      "Como abrir um site no Chrome (ou em qualquer navegador) a partir de um widget do iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pt/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pt",
+    name: "Abrir um site no Chrome ou em outro navegador a partir de um widget do iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Adicione o site como bloco",
+        text: "No WidgetLoft (antes FolderMini), vá em Biblioteca, toque em Adicionar Blocos, escolha Site e cole o endereço. O ícone e o nome são preenchidos para você.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Coloque-o em um widget",
+        text: "Adicione o bloco do site a um grupo e depois adicione o widget do WidgetLoft à sua Tela de Início.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Escolha um navegador para todos os sites",
+        text: "Vá em Ajustes, Widget, Abrir sites e escolha Chrome, Firefox, Brave ou outro navegador, ou Dentro do WidgetLoft para uma visualização em tela cheia.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mude só um site, se quiser",
+        text: "Abra o bloco do site, toque em Abre em e escolha outra opção só para esse site, ou deixe em Usar o ajuste.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Adicione um navegador personalizado se o seu não estiver na lista",
+        text: "Em Navegadores personalizados, toque em Adicionar navegador, informe um nome e um formato de endereço contendo {url} e toque em Testar.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pt",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Por que o site da minha Tela de Início sempre abre no Safari?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Um favorito criado com Adicionar à Tela de Início do Safari abre no Safari, e a maioria dos widgets de links envia o endereço ao seu navegador padrão. Para usar outro navegador só nesses links, você precisa de um widget que permita escolher, como o WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "O que acontece se o navegador que escolhi não estiver instalado?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "O site abre no seu navegador padrão, então o bloco nunca fica sem fazer nada.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Fico conectado aos sites dentro do WidgetLoft?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Os logins dentro do navegador do WidgetLoft são separados do Safari, então talvez você precise entrar uma vez lá. Se preferir usar suas sessões atuais, escolha seu navegador de sempre.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Como abrir um site no Chrome (ou em qualquer navegador) a partir de um widget do iPhone
+
+**Resposta rápida:** os sites que você adiciona à Tela de Início do iPhone abrem no Safari ou no seu navegador padrão, e não dá para mudar isso link por link. Com o [WidgetLoft](/widgetloft) (antes FolderMini), você adiciona o site como um bloco de widget e escolhe Chrome, Firefox, Brave, outro navegador ou uma visualização em tela cheia em Ajustes → Widget → Abrir sites, para todos os sites ou só para um.
+
+Talvez o Safari seja seu navegador padrão, mas seu painel de trabalho fica no Chrome. Um toque na Tela de Início deveria levar você ao lugar certo.
+
+---
+
+## Por que os sites da Tela de Início sempre abrem no Safari
+
+O **Adicionar à Tela de Início** do Safari cria um favorito que pertence ao Safari. A maioria dos widgets de links acaba no mesmo lugar: envia o endereço ao seu **navegador padrão**.
+
+Trocar o navegador padrão muda todos os links de todos os apps. O que você costuma querer é mais específico: *este* site no Chrome e todo o resto como sempre. Os blocos de site do WidgetLoft fazem exatamente isso: um navegador para todos os sites, com uma exceção para qualquer site específico.
+
+## Passo a passo: abrir um site no Chrome a partir de um widget
+
+1. **Adicione o site como bloco.** No [WidgetLoft](/widgetloft), vá em **Biblioteca** → **Adicionar Blocos** → **Site** e cole o endereço. O ícone e o nome do site são preenchidos para você.
+2. **Coloque-o em um widget.** Adicione o bloco a um grupo e depois adicione o widget do WidgetLoft à Tela de Início (toque e segure a Tela de Início, toque em **+** e procure WidgetLoft).
+3. **Escolha um navegador para todos os sites.** Vá em **Ajustes** → **Widget** → **Abrir sites** e escolha Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha ou Yandex. Ou escolha **Dentro do WidgetLoft** para uma visualização em tela cheia.
+4. **Mude só um site (opcional).** Abra o bloco do site, toque em **Abre em** e escolha outra opção. Vale apenas para esse site. **Usar o ajuste** volta ao padrão.
+5. **Adicione um navegador personalizado (opcional).** Não está na lista? Vá em **Navegadores personalizados** → **Adicionar navegador**, dê um nome e um formato de endereço contendo `{url}` e toque em **Testar**.
+
+## Qual opção escolher
+
+| Opção | Quando usar |
+| --- | --- |
+| Navegador padrão | Você está satisfeito com o navegador que o resto do iPhone usa |
+| Um navegador escolhido (Chrome, Firefox, Brave e outros) | Seus favoritos, senhas ou extensões estão em um navegador que não é o padrão |
+| Dentro do WidgetLoft | Você quer o site em tela cheia, sem abas, com um botão **Abrir no navegador** quando precisar |
+| Navegador personalizado | Seu navegador não está na lista e você conhece o formato de endereço dele |
+
+Você pode combinar à vontade. Deixe o ajuste geral do [WidgetLoft](/widgetloft) no seu navegador favorito e faça um único site do banco ou do trabalho abrir em outro lugar com **Abre em**.
+
+## O que esperar
+
+- **O WidgetLoft abre por um instante antes** quando você escolhe qualquer opção diferente do navegador padrão. Com o navegador padrão, o site abre direto.
+- **Se o navegador escolhido não estiver instalado**, o site abre no seu navegador padrão.
+- **Os logins dentro do navegador do WidgetLoft são separados do Safari**, então talvez você precise entrar mais uma vez lá.
+- **Não é um modo de web app.** Dentro do WidgetLoft é uma visualização de navegador em tela cheia, não um web app instalado à parte.
+- **Funciona também na Dynamic Island.** Se você usa a Barra de Início Rápido, os blocos de site na Dynamic Island e no banner da Tela Bloqueada abrem no navegador que você escolheu.
+
+Os sites ficam ao lado dos seus apps no mesmo widget. Para blocos de apps, veja [como abrir apps a partir de um widget](/blog/launch-apps-from-widgets-ios).
+
+## Perguntas comuns
+
+**Por que o site da minha Tela de Início sempre abre no Safari?**
+Um favorito criado com Adicionar à Tela de Início do Safari abre no Safari, e a maioria dos widgets de links usa seu navegador padrão. Um bloco de site do [WidgetLoft](/widgetloft) permite escolher o navegador.
+
+**O que acontece se o navegador que escolhi não estiver instalado?**
+O site abre no seu navegador padrão, então o bloco continua funcionando.
+
+**Fico conectado aos sites dentro do WidgetLoft?**
+Os logins ali são separados do Safari, então talvez você precise entrar uma vez. Prefere suas sessões atuais? Escolha seu navegador de sempre.
+
+---
+
+Pronto para deixar seus sites a um toque, no navegador que você quiser? [Baixe o WidgetLoft na App Store](/widgetloft/download).

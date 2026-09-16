@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "So öffnest du eine Website in Chrome (oder einem anderen Browser) über ein iPhone-Widget",
+  description:
+    "Websites auf dem iPhone-Home-Bildschirm öffnen sich immer in Safari oder im Standardbrowser. So öffnest du eine Seite direkt aus einem Widget in Chrome, Firefox, Brave oder im Vollbild, für alle Seiten oder nur eine.",
+  keywords: [
+    "website vom home bildschirm in chrome öffnen iphone",
+    "iphone widget link in chrome öffnen",
+    "website zum home bildschirm hinzufügen chrome iphone",
+    "home bildschirm lesezeichen öffnet safari",
+    "website widget iphone browser wählen",
+    "website im vollbild aus widget öffnen iphone",
+  ],
+  ogTitle: "Website über ein iPhone-Widget in Chrome öffnen",
+  ogDescription:
+    "Wähle Chrome, Firefox, Brave oder eine Vollbildansicht für die Websites in deinem Widget, für alle Seiten oder nur eine.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline:
+      "So öffnest du eine Website in Chrome (oder einem anderen Browser) über ein iPhone-Widget",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/de/blog/open-website-in-chrome-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "Eine Website über ein iPhone-Widget in Chrome oder einem anderen Browser öffnen",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Website als Kachel hinzufügen",
+        text: "Öffne in WidgetLoft (früher FolderMini) die Bibliothek, tippe auf Kacheln hinzufügen, wähle Website und füge die Adresse ein. Symbol und Name werden automatisch ausgefüllt.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "In ein Widget legen",
+        text: "Füge die Website-Kachel einer Gruppe hinzu und lege dann das WidgetLoft-Widget auf deinen Home-Bildschirm.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Browser für alle Websites wählen",
+        text: "Öffne Einstellungen, Widget, Websites öffnen und wähle Chrome, Firefox, Brave oder einen anderen Browser, oder In WidgetLoft für eine Vollbildansicht.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bei Bedarf eine einzelne Seite anpassen",
+        text: "Öffne die Website-Kachel, tippe auf Öffnen in und wähle nur für diese Seite eine andere Option, oder belasse es bei Einstellung verwenden.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Eigenen Browser hinzufügen, falls deiner fehlt",
+        text: "Tippe unter Eigene Browser auf Browser hinzufügen, gib einen Namen und ein Adressformat mit {url} ein und tippe auf Testen.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Warum öffnet sich meine Website vom Home-Bildschirm immer in Safari?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ein Lesezeichen, das mit Zum Home-Bildschirm von Safari erstellt wurde, öffnet sich in Safari, und die meisten Link-Widgets geben die Adresse an deinen Standardbrowser weiter. Um nur für diese Links einen anderen Browser zu nutzen, brauchst du ein Widget mit Auswahl, etwa WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Was passiert, wenn der gewählte Browser nicht installiert ist?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Die Website öffnet sich dann in deinem Standardbrowser, die Kachel bleibt also nie ohne Wirkung.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bin ich auf Websites in WidgetLoft angemeldet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Anmeldungen im Browser von WidgetLoft sind von Safari getrennt, du musst dich dort also eventuell einmal anmelden. Wenn du lieber deine bestehenden Sitzungen nutzt, wähle deinen gewohnten Browser.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# So öffnest du eine Website in Chrome (oder einem anderen Browser) über ein iPhone-Widget
+
+**Kurze Antwort:** Websites, die du zum Home-Bildschirm des iPhone hinzufügst, öffnen sich in Safari oder in deinem Standardbrowser, und das lässt sich nicht pro Link ändern. Mit [WidgetLoft](/widgetloft) (früher FolderMini) fügst du die Seite als Widget-Kachel hinzu und wählst unter Einstellungen → Widget → Websites öffnen Chrome, Firefox, Brave, einen anderen Browser oder eine Vollbildansicht, für alle Seiten oder nur eine.
+
+Vielleicht ist Safari dein Standardbrowser, aber dein Arbeits-Dashboard läuft in Chrome. Ein Tipp auf dem Home-Bildschirm sollte trotzdem am richtigen Ort landen.
+
+---
+
+## Warum Websites vom Home-Bildschirm immer in Safari öffnen
+
+**Zum Home-Bildschirm** in Safari erstellt ein Lesezeichen, das zu Safari gehört. Die meisten Link-Widgets landen am selben Ort: Sie geben die Adresse an deinen **Standardbrowser** weiter.
+
+Wenn du den Standardbrowser änderst, änderst du jeden Link in jeder App. Meist willst du etwas Gezielteres: *diese* Seite in Chrome, alles andere wie gewohnt. Genau das machen die Website-Kacheln von WidgetLoft: ein Browser für alle Websites, mit einer Ausnahme für jede beliebige einzelne Seite.
+
+## Schritt für Schritt: eine Website über ein Widget in Chrome öffnen
+
+1. **Website als Kachel hinzufügen.** Gehe in [WidgetLoft](/widgetloft) zu **Bibliothek** → **Kacheln hinzufügen** → **Website** und füge die Adresse ein. Symbol und Name der Seite werden automatisch ausgefüllt.
+2. **In ein Widget legen.** Füge die Kachel einer Gruppe hinzu und lege dann das WidgetLoft-Widget auf deinen Home-Bildschirm (Home-Bildschirm gedrückt halten, auf **+** tippen, nach WidgetLoft suchen).
+3. **Browser für alle Websites wählen.** Gehe zu **Einstellungen** → **Widget** → **Websites öffnen** und wähle Safari, Chrome, Firefox, Edge, Brave, DuckDuckGo, Opera, Opera GX, Aloha oder Yandex. Oder wähle **In WidgetLoft** für eine Vollbildansicht.
+4. **Eine einzelne Seite anpassen (optional).** Öffne die Website-Kachel, tippe auf **Öffnen in** und wähle eine andere Option. Das gilt nur für diese Website. **Einstellung verwenden** setzt es zurück.
+5. **Eigenen Browser hinzufügen (optional).** Nicht in der Liste? Gehe zu **Eigene Browser** → **Browser hinzufügen**, gib einen Namen und ein Adressformat mit `{url}` ein und tippe auf **Testen**.
+
+## Welche Option passt
+
+| Option | Wann sie sinnvoll ist |
+| --- | --- |
+| Standardbrowser | Du bist mit dem Browser zufrieden, den der Rest deines iPhone nutzt |
+| Ein gewählter Browser (Chrome, Firefox, Brave und mehr) | Deine Lesezeichen, Passwörter oder Erweiterungen liegen in einem Browser, der nicht dein Standard ist |
+| In WidgetLoft | Du willst die Seite im Vollbild ohne Browser-Tabs, mit einer Taste **Im Browser öffnen**, wenn du sie brauchst |
+| Eigener Browser | Dein Browser fehlt in der Liste und du kennst sein Adressformat |
+
+Du kannst sie frei kombinieren. Lass die allgemeine Einstellung in [WidgetLoft](/widgetloft) auf deinem Lieblingsbrowser und stelle eine einzelne Bank- oder Arbeitsseite mit **Öffnen in** auf etwas anderes.
+
+## Was dich erwartet
+
+- **WidgetLoft öffnet sich kurz zuerst**, wenn du etwas anderes als den Standardbrowser wählst. Mit dem Standardbrowser öffnet sich die Seite direkt.
+- **Ist der gewählte Browser nicht installiert**, öffnet sich die Seite in deinem Standardbrowser.
+- **Anmeldungen im Browser von WidgetLoft sind von Safari getrennt**, du musst dich dort also eventuell noch einmal anmelden.
+- **Es ist kein Web-App-Modus.** In WidgetLoft ist eine Browseransicht im Vollbild, keine eigenständig installierte Web-App.
+- **Es funktioniert auch in der Dynamic Island.** Wenn du die Schnellstartleiste nutzt, öffnen sich Website-Kacheln in der Dynamic Island und im Banner auf dem Sperrbildschirm im gewählten Browser.
+
+Websites liegen im selben Widget neben deinen Apps. Für App-Kacheln lies, [wie du Apps über ein Widget startest](/blog/launch-apps-from-widgets-ios).
+
+## Häufige Fragen
+
+**Warum öffnet sich meine Website vom Home-Bildschirm immer in Safari?**
+Ein Lesezeichen über Zum Home-Bildschirm von Safari öffnet sich in Safari, und die meisten Link-Widgets nutzen deinen Standardbrowser. Mit einer Website-Kachel in [WidgetLoft](/widgetloft) wählst du den Browser selbst.
+
+**Was passiert, wenn der gewählte Browser nicht installiert ist?**
+Die Website öffnet sich in deinem Standardbrowser, die Kachel funktioniert also weiterhin.
+
+**Bin ich auf Websites in WidgetLoft angemeldet?**
+Anmeldungen dort sind von Safari getrennt, du musst dich also eventuell einmal anmelden. Lieber deine bestehenden Sitzungen? Wähle deinen gewohnten Browser.
+
+---
+
+Bereit, deine Seiten einen Tipp entfernt im Browser deiner Wahl zu haben? [Lade WidgetLoft im App Store](/widgetloft/download) herunter.
