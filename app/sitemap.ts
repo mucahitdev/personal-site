@@ -67,30 +67,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // WidgetLoft: translated in en + tr (other locales fall back to English,
-  // so only the two authored languages are advertised).
-  for (const locale of ['en', 'tr']) {
-    entries.push({
-      url: localePath(locale, 'widgetloft'),
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-      alternates: {
-        languages: {
-          en: `${base}/widgetloft`,
-          tr: `${base}/tr/widgetloft`,
-        },
-      },
-    })
-  }
-  for (const l of legal) {
-    entries.push({
-      url: `${base}/widgetloft/${l}`,
-      lastModified: now,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    })
-  }
+  // WidgetLoft's app page and legal pages now live on widgetloft.app (these
+  // mucahitk.com addresses redirect there), so none are listed here.
 
   // FaceIdent: translated in en + tr (page + legal pages authored in both).
   for (const locale of ['en', 'tr']) {

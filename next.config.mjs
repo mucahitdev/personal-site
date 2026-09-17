@@ -53,6 +53,49 @@ const nextConfig = {
         destination: 'https://apps.apple.com/app/id6782827870',
         permanent: false,
       },
+      // WidgetLoft has its own site now. The app page (and the old /foldermini
+      // address) goes there in the reader's language; blog posts link here.
+      {
+        source: '/:app(widgetloft|foldermini)',
+        destination: 'https://widgetloft.app',
+        permanent: true,
+      },
+      {
+        source:
+          '/:locale(tr|es|pt|de|fr|it|nl|ru|pl|ja|ko|zh|ar|hi|id|vi)/:app(widgetloft|foldermini)',
+        destination: 'https://widgetloft.app/:locale',
+        permanent: true,
+      },
+      // WidgetLoft's legal pages moved to widgetloft.app. The shipped app, its App
+      // Store listing and older links still point here (under /widgetloft and the
+      // older /foldermini), so send every variant straight to the new home.
+      {
+        source: '/:app(widgetloft|foldermini)/privacy-policy',
+        destination: 'https://widgetloft.app/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/tr/:app(widgetloft|foldermini)/privacy-policy',
+        destination: 'https://widgetloft.app/tr/privacy-policy',
+        permanent: true,
+      },
+      {
+        source:
+          '/:locale(es|pt|de|fr|it|nl|ru|pl|ja|ko|zh|ar|hi|id|vi)/:app(widgetloft|foldermini)/privacy-policy',
+        destination: 'https://widgetloft.app/privacy-policy',
+        permanent: true,
+      },
+      {
+        source:
+          '/:locale(tr|es|pt|de|fr|it|nl|ru|pl|ja|ko|zh|ar|hi|id|vi)/:app(widgetloft|foldermini)/terms-of-use',
+        destination: 'https://widgetloft.app/terms-of-use',
+        permanent: true,
+      },
+      {
+        source: '/:app(widgetloft|foldermini)/terms-of-use',
+        destination: 'https://widgetloft.app/terms-of-use',
+        permanent: true,
+      },
       // FolderMini was renamed to WidgetLoft; the App Store listing and older
       // links still point at /foldermini, so keep them resolving.
       {

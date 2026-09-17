@@ -52,7 +52,7 @@ export const PROJECTS: Project[] = [
     technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'WidgetKit' }],
     links: {
       ios: 'https://apps.apple.com/app/id6782827870',
-      website: 'https://mucahitk.com/widgetloft',
+      website: 'https://widgetloft.app',
     },
   },
   {
