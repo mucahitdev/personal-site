@@ -94,17 +94,35 @@ function ProjectVideo({ src }: ProjectVideoProps) {
   )
 }
 
+/**
+ * Goal names go into a dashboard column, so they have to survive labels written
+ * for humans: "X (Twitter)" would otherwise arrive with a space and brackets.
+ */
+const slugGoal = (label: string) =>
+  label
+    .toLowerCase()
+    // Fold Turkish letters first, or "Koç Diyalog" loses the c and arrives as
+    // "ko_diyalog" once the non-ASCII strip below runs.
+    .replace(/[çğıöşü]/g, (c) => 'cgiosu'['çğıöşü'.indexOf(c)])
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_|_$/g, '')
+
 function MagneticSocialLink({
   children,
   link,
+  network,
 }: {
   children: React.ReactNode
   link: string
+  /** Reported as a property of one shared "social" goal, like the project links. */
+  network?: string
 }) {
   return (
     <Magnetic springOptions={{ bounce: 0 }} intensity={0.3}>
       <a
         href={link}
+        data-fast-goal={network ? 'social' : undefined}
+        data-fast-goal-network={network}
         className="group relative inline-flex shrink-0 items-center gap-[1px] rounded-full bg-zinc-100 px-2.5 py-1 text-sm text-black transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50 dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700"
       >
         {children}
@@ -131,9 +149,16 @@ function MagneticSocialLink({
 const ProjectLinks = ({
   links,
   platform,
+  projectName,
 }: {
   links?: Project['links']
   platform: 'web' | 'mobile'
+  /**
+   * The goal property is built from the project's NAME, not its id: the older
+   * entries carry placeholder ids like "project2", which tells you nothing in a
+   * dashboard breakdown, while "speedy_bunny" does.
+   */
+  projectName: string
 }) => {
   if (!links) return null
 
@@ -152,6 +177,7 @@ const ProjectLinks = ({
           key={type}
           href={links[type] as string}
           type={type}
+          project={slugGoal(projectName)}
           position={
             availableLinks.length === 1
               ? 'single'
@@ -498,6 +524,7 @@ export default function Personal() {
                       <ProjectLinks
                         links={project.links}
                         platform={project.platform}
+                        projectName={project.name}
                       />
                     </div>
                   </div>
@@ -551,13 +578,21 @@ export default function Personal() {
         <h3 className="mb-5 text-lg font-medium">Connect</h3>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
           Feel free to contact me at{' '}
-          <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
+          <a
+            className="underline dark:text-zinc-300"
+            href={`mailto:${EMAIL}`}
+            data-fast-goal="email"
+          >
             {EMAIL}
           </a>
         </p>
         <div className="flex flex-wrap items-center justify-start gap-3">
           {SOCIAL_LINKS.map((link) => (
-            <MagneticSocialLink key={link.label} link={link.link}>
+            <MagneticSocialLink
+              key={link.label}
+              link={link.link}
+              network={slugGoal(link.label)}
+            >
               {link.label}
             </MagneticSocialLink>
           ))}

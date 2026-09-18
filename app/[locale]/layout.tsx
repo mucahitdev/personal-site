@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import Script from 'next/script'
 import '../globals.css'
 import { ThemeProvider } from 'next-themes'
 import { Analytics } from '@vercel/analytics/react'
@@ -76,6 +77,14 @@ export const metadata: Metadata = {
   },
 }
 
+// DataFast web analytics. Both paths are proxied through this domain to get past
+// content blockers, see the rewrites in next.config.mjs. The cookieless script is
+// deliberate: it sets no cookies, so the site needs no consent banner in the EU.
+// Its only trade-off is that it cannot recognize a visitor across days, which
+// feeds Stripe revenue attribution, and nothing here sells anything.
+// The id is public, it ships in the HTML of every page.
+const DATAFAST_ID = 'dfid_Ng89GKEbaJuLkJLiRk3eQ'
+
 const geist = Geist({
   variable: '--font-geist',
   subsets: ['latin'],
@@ -121,6 +130,12 @@ export default async function RootLayout({
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />
+        <Script
+          src="/js/script.js"
+          data-website-id={DATAFAST_ID}
+          data-domain="mucahitk.com"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

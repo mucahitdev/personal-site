@@ -5,6 +5,21 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  // Serve DataFast from this domain. Content blockers block requests to datafa.st
+  // by name, and a developer's audience runs them, so measuring from the
+  // third-party host would undercount badly. DataFast picks up a proxied setup on
+  // its own as long as both the script and /api/events come from us, so the tag
+  // needs no data-api-url. Keep these paths in sync with the Script in
+  // app/[locale]/layout.tsx. middleware.ts must not claim /api.
+  async rewrites() {
+    return [
+      {
+        source: '/js/script.js',
+        destination: 'https://datafa.st/js/script.cookieless.js',
+      },
+      { source: '/api/events', destination: 'https://datafa.st/api/events' },
+    ];
+  },
   async headers() {
     return [
       {

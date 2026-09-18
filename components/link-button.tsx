@@ -4,6 +4,15 @@ type LinkButtonProps = {
   href: string
   type: 'website' | 'github' | 'android' | 'ios'
   position?: 'start' | 'middle' | 'end' | 'single'
+  /**
+   * Which project this button belongs to, reported as a property of one shared
+   * "project_link" goal rather than as twenty-eight separate goal names. A funnel
+   * step takes exactly one goal name, so per-project names could never be a single
+   * step, and the goal list would be unreadable. As properties, project and target
+   * still break down under the goal in the dashboard, which answers the real
+   * question: which project drew interest, and where did it send people.
+   */
+  project?: string
 }
 
 const BUTTON_ICONS = {
@@ -71,12 +80,16 @@ export function LinkButton({
   href,
   type,
   position = 'middle',
+  project,
 }: LinkButtonProps) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      data-fast-goal={project ? 'project_link' : undefined}
+      data-fast-goal-project={project}
+      data-fast-goal-target={project ? type : undefined}
       className={cn(
         'flex flex-1 items-center justify-center gap-1 px-2 py-1.5 text-sm text-white transition-colors hover:bg-zinc-800 dark:text-black dark:hover:bg-zinc-200',
         position === 'start' && 'rounded-l-full',
